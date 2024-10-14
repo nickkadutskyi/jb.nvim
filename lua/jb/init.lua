@@ -47,9 +47,13 @@ function M.setup()
         local last_attr = nil
         for attr, value in pairs(attrs) do
           last_attr = attr
-          local props = util.get_hl_props(colors, value, profile)
-          last_hl_name = string.gsub(value, "|", "_")
-          hl[attr] = props.prop or props.hl[attr]
+          if type(value) == "string" and string.find(value, "|") ~= nil then
+            last_hl_name = string.gsub(value, "|", "_")
+            local props = util.get_hl_props(colors, value, profile)
+            hl[attr] = props.prop or props.hl[attr]
+          else
+            hl[attr] = value
+          end
         end
         local group_name = tablelength(attrs) == 1
             and last_hl_name .. "-" .. last_attr

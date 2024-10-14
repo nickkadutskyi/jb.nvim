@@ -67,10 +67,12 @@
         "Breadcrumbs": null,
         "Caret": {
           "light": {
-            "fg": "#000000"
+            "bg": "#000000",
+            "fg": "#BCBEC4"
           },
           "dark": {
-            "fg": "#CED0D6"
+            "bg": "#CED0D6",
+            "fg": "#080808"
           }
         },
         "CaretRow": {
@@ -558,15 +560,9 @@
         "bg": "DiffMerge|ChangedLines|Changed.fg",
         "fg": "General|SearchResults|TextSearchResult.fg"
       },
-      "Cursor": {
-        "bg": "General|Editor|Caret.fg"
-      },
-      "lCursor": {
-        "bg": "General|Editor|Caret.fg"
-      },
-      "CursorIM": {
-        "bg": "General|Editor|Caret.fg"
-      },
+      "Cursor": "General|Editor|Caret",
+      "lCursor": "General|Editor|Caret",
+      "CursorIM": "General|Editor|Caret",
       "CursorColumn": "General|Editor|CaretRow",
       "CursorLine": "General|Editor|CaretRow",
       "Directory": null,
