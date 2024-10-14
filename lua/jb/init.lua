@@ -2,6 +2,12 @@ local M = {}
 
 local util = require("jb.util")
 
+local function tablelength(T)
+  local count = 0
+  for _ in pairs(T) do count = count + 1 end
+  return count
+end
+
 function M.dump(o)
   if type(o) == 'table' then
     local s = '{ '
@@ -37,12 +43,19 @@ function M.setup()
           hl.link = props.name
         end
       elseif type(attrs) == "table" then
+        local last_hl_name = nil
+        local last_attr = nil
         for attr, value in pairs(attrs) do
+          last_attr = attr
           local props = util.get_hl_props(colors, value, profile)
+          last_hl_name = string.gsub(value, "|", "_")
           hl[attr] = props.prop or props.hl[attr]
         end
-        vim.api.nvim_set_hl(0, group .. "_Custom", hl)
-        hl.link = group .. "_Custom"
+        local group_name = tablelength(attrs) == 1
+            and last_hl_name .. "-" .. last_attr
+            or group .. "_Custom"
+        vim.api.nvim_set_hl(0, group_name, hl)
+        hl.link = group_name
       end
       if attrs ~= nil and attrs ~= "" then
         local props = hl.link ~= nil and { link = hl.link } or hl

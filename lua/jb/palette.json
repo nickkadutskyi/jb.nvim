@@ -15,16 +15,29 @@
           "dark": {}
         },
         "LineNumber": {
-          "light": {},
-          "dark": {}
+          "light": {
+            "fg": "#AEB3C2"
+          },
+          "dark": {
+            "fg": "#4B5059"
+          }
         },
         "LineNumberOnCaretRow": {
-          "light": {},
-          "dark": {}
+          "light": {
+            "fg": "#767A8A"
+          },
+          "dark": {
+            "fg": "#A1A3AB"
+          }
         },
         "MatchedBrace": {
-          "light": {},
-          "dark": {}
+          "light": {
+            "bg": "#93D9D9"
+          },
+          "dark": {
+            "bg": "#43454A",
+            "bold": true
+          }
         },
         "MethodSeparatorColor": {
           "light": {},
@@ -41,11 +54,33 @@
           }
         },
         "UnmatchedBrace": {
-          "light": {},
-          "dark": {}
+          "light": {
+            "bg": "#FFDCDC"
+          },
+          "dark": {
+            "fg": "#F75464"
+          }
         }
       },
       "Editor": {
+        "Bookmarks": null,
+        "Breadcrumbs": null,
+        "Caret": {
+          "light": {
+            "fg": "#000000"
+          },
+          "dark": {
+            "fg": "#CED0D6"
+          }
+        },
+        "CaretRow": {
+          "light": {
+            "bg": "#F5F8FE"
+          },
+          "dark": {
+            "bg": "#26282E"
+          }
+        },
         "Guides": {
           "HardWrapGuide": {
             "dark": {
@@ -193,7 +228,28 @@
       "LiveTemplates": {},
       "PopupsAndHints": {},
       "Preview": {},
-      "SearchResults": {},
+      "SearchResults": {
+        "SearchResult": {
+          "light": {},
+          "dark": {}
+        },
+        "SearchResultWriteAccess)": {
+          "light": {},
+          "dark": {}
+        },
+        "TextSearchResult": {
+          "light": {
+            "fg": "#000000",
+            "bg": "#FCD47E"
+          },
+          "dark": {
+            "fg": "",
+            "bg": "#114957",
+            "sp": "#165E70",
+            "underline": true
+          }
+        }
+      },
       "Text": {
         "BackgroundInReadOnlyFiles": {
           "light": {},
@@ -214,8 +270,14 @@
           "dark": {}
         },
         "FoldedText": {
-          "light": {},
-          "dark": {}
+          "light": {
+            "fg": "#414D41",
+            "bg": "#E9F5E6"
+          },
+          "dark": {
+            "fg": "#868991",
+            "bg": "#393B40"
+          }
         },
         "FoldedTextWithHighlighting": {
           "light": {},
@@ -491,12 +553,23 @@
       "ColorColumn": {
         "bg": "General|Editor|Guides|VisualGuides.fg"
       },
-      "Conceal": "",
-      "CurSearch": "",
-      "Cursor": "",
-      "CursorColumn": "",
-      "CursorLine": "",
-      "Directory": "",
+      "Conceal": "General|Code|LineNumber",
+      "CurSearch": {
+        "bg": "DiffMerge|ChangedLines|Changed.fg",
+        "fg": "General|SearchResults|TextSearchResult.fg"
+      },
+      "Cursor": {
+        "bg": "General|Editor|Caret.fg"
+      },
+      "lCursor": {
+        "bg": "General|Editor|Caret.fg"
+      },
+      "CursorIM": {
+        "bg": "General|Editor|Caret.fg"
+      },
+      "CursorColumn": "General|Editor|CaretRow",
+      "CursorLine": "General|Editor|CaretRow",
+      "Directory": null,
       "DiffAdd": {
         "bg": "DiffMerge|ChangedLines|Inserted.bg"
       },
@@ -509,16 +582,77 @@
       "DiffText": {
         "bg": "DiffMerge|ChangedLines|Changed.fg"
       },
-      "EndOfBuffer": "",
-      "NonText": "",
-      "Normal": "General|Text|DefaultText",
-      "NormalFloat": "",
-      "FloatBorder": "",
-      "FloatTitle": "",
-      "FloatFooter": "",
-      "NormalNC": "",
-      "Pmenu": "",
-      "PmenuSel": ""
+      "EndOfBuffer": null,
+      "TermCursor": null,
+      "TermCursorNC": null,
+      "ErrorMsg": null,
+      "WinSeparator": null,
+      "Folded": "General|Text|FoldedText",
+      "FoldColumn": "General|Text|FoldedText",
+      "SignColumn": {
+        "fg": "General|Text|DefaultText"
+      },
+      "IncSearch": {
+        "bg": "DiffMerge|ChangedLines|Changed.fg"
+      },
+      "Substitute": null,
+      "LineNr": "General|Code|LineNumber",
+      "LineNrAbove": "",
+      "LineNrBelow": "",
+      "CursorLineNr": "General|Code|LineNumberOnCaretRow",
+      "CursorLineFold": null,
+      "CursorLineSign": null,
+      "MatchParen": "General|Code|MatchedBrace",
+      "ModeMsg": null,
+      "MsgArea": null,
+      "MsgSeparator": null,
+      "MoreMsg": null,
+      "NonText": null,
+      "Normal": {
+        "fg": "General|Text|DefaultText"
+      },
+      "NormalFloat": null,
+      "FloatBorder": null,
+      "FloatTitle": null,
+      "FloatFooter": null,
+      "NormalNC": {
+        "fg": "General|Text|DefaultText"
+      },
+      "Pmenu": null,
+      "PmenuSel": null,
+      "PmenuKind": null,
+      "PmenuKindSel": null,
+      "PmenuExtra": null,
+      "PmenuExtraSel": null,
+      "PmenuSbar": null,
+      "PmenuThumb": null,
+      "Question": null,
+      "QuickFixLine": null,
+      "Search": "General|SearchResults|TextSearchResult",
+      "SnippetTabstop": null,
+      "SpecialKey": null,
+      "SpellBad": null,
+      "SpellCap": null,
+      "SpellLocal": null,
+      "SpellRare": null,
+      "StatusLine": null,
+      "StatusLineNC": null,
+      "TabLine": null,
+      "TabLineFill": null,
+      "TabLineSel": null,
+      "Title": "LanguageDefaults|Identifiers|Constant",
+      "Visual": null,
+      "VisualNOS": null,
+      "WarningMsg": null,
+      "Whitespace": null,
+      "WildMenu": null,
+      "WinBar": null,
+      "WinBarNC": null
+    },
+    "Builtin.GUI": {
+      "Menu": null,
+      "Scrollbar": null,
+      "Tooltip": null
     },
     "Builtin.Languages": {
       "Comment": "LanguageDefaults|Comments|LineComment",
@@ -549,7 +683,9 @@
       "Special": "LanguageDefaults|String|EscapeSequence|Valid",
       "SpecialChar": "LanguageDefaults|String|EscapeSequence|Valid",
       "Tag": "LanguageDefaults|Keyword",
-      "Delimiter": "General|Text|DefaultText",
+      "Delimiter": {
+        "fg": "General|Text|DefaultText"
+      },
       "SpecialComment": "LanguageDefaults|Keyword",
       "Debug": "LanguageDefaults|Keyword",
       "Underlined": "General|Hyperlinks|Inactive",
