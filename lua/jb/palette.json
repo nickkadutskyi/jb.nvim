@@ -64,7 +64,13 @@
       },
       "Editor": {
         "Bookmarks": null,
-        "Breadcrumbs": null,
+        "Breadcrumbs": {
+          "Border": null,
+          "Current": null,
+          "Default": null,
+          "Hovered": null,
+          "Inactive": null
+        },
         "Caret": {
           "light": {
             "bg": "#000000",
@@ -103,18 +109,63 @@
               "fg": "#DAE6FD"
             }
           }
+        },
+        "GutterBackground": null,
+        "NotificationBackground": null,
+        "SelectionBackground": {
+          "light": {
+            "bg": "#A6D2FF"
+          },
+          "dark": {
+            "bg": "#214283"
+          }
+        },
+        "SelectionForeground": null,
+        "StickyLines": null,
+        "Tabs": {
+          "ModifiedIcon color": null,
+          "SelectedTab": {
+            "light": {
+              "bg": "#"
+            },
+            "dark": {
+              "bg": "#"
+            }
+          },
+          "SelectedTabInactive": null,
+          "Underline": null,
+          "UnderlineInactive": null
+        },
+        "TearLine": null,
+        "TearLineSelection": null,
+        "VerticalScrollbar": {
+          "Thumb": {
+            "light": {
+              "bg": "#ABABAB"
+            },
+            "dark": {
+              "bg": "#3B3C3E"
+            }
+          },
+          "ThumbWhileScrolling": null
         }
       },
       "ErrorsAndWarnings": {
         "DeprecatedSymbol": {
-          "light": {},
-          "dark": {}
+          "light": {
+            "sp": "#404040",
+            "strikethrough": true
+          },
+          "dark": {
+            "sp": "#BCBEC4",
+            "strikethrough": true
+          }
         },
         "DeprecatedSymbolMarkedForRemoval": {
           "light": {},
           "dark": {}
         },
-        "Duplicate from server": {
+        "DuplicateFromServer": {
           "light": {},
           "dark": {}
         },
@@ -128,53 +179,77 @@
             "undercurl": true
           }
         },
-        "Grammar error": {
+        "GrammarError": {
           "light": {},
           "dark": {}
         },
-        "Problem from server": {
+        "ProblemFromServer": {
           "light": {},
           "dark": {}
         },
-        "": {
+        "RuntimeProblem": {
           "light": {},
           "dark": {}
         },
-        "Runtime problem": {
+        "TextStyleError": {
           "light": {},
           "dark": {}
         },
-        "Text style error": {
+        "TextStyleSuggestion": {
           "light": {},
           "dark": {}
         },
-        "Text style suggestion": {
+        "TextStyleWarning": {
+          "light": {
+            "sp": "#EDA200",
+            "underdotted": true
+          },
+          "dark": {
+            "sp": "#BA9752",
+            "underdotted": true
+          }
+        },
+        "Typo": {
+          "light": {
+            "sp": "#B0D1AB",
+            "undercurl": true
+          },
+          "dark": {
+            "sp": "#7EC482",
+            "undercurl": true
+          }
+        },
+        "UnknownSymbol": {
           "light": {},
           "dark": {}
         },
-        "Text style warning": {
-          "light": {},
-          "dark": {}
-        },
-        "Туро": {
-          "light": {},
-          "dark": {}
-        },
-        "Unknown symbol": {
-          "light": {},
-          "dark": {}
-        },
-        "Unused code": {
-          "light": {},
-          "dark": {}
+        "UnusedCode": {
+          "light": {
+            "fg": "#808080"
+          },
+          "dark": {
+            "fg": "#6F737A"
+          }
         },
         "Warning": {
-          "light": {},
-          "dark": {}
+          "light": {
+            "sp": "#F2C55C",
+            "bg": "#FCF4D4"
+          },
+          "dark": {
+            "sp": "#F2C55C",
+            "undercurl": true
+          }
         },
-        "Weak Warning": {
-          "light": {},
-          "dark": {}
+        "WeakWarning": {
+          "light": {
+            "sp": "#CCCCCC",
+            "undercurl": true
+          },
+          "dark": {
+            "sp": "#857042",
+            "undercurl": true
+          }
         }
       },
       "Hyperlinks": {
@@ -228,7 +303,35 @@
       "Identifiers": {},
       "LineCoverage": {},
       "LiveTemplates": {},
-      "PopupsAndHints": {},
+      "PopupsAndHints": {
+        "CodeLens": {
+          "light": {
+            "sp": "#818594",
+            "underline": true
+          },
+          "dark": {
+            "sp": "#868A91",
+            "underline": true
+          }
+        },
+        "Completion": {
+          "light": {
+            "bg": "#FFFFFF"
+          },
+          "dark": {
+            "bg": "#2B2D30"
+          }
+        },
+        "Documentation": null,
+        "ErrorHint": null,
+        "HintBorder": null,
+        "InformationHint": null,
+        "PromotionPane": null,
+        "QuestionHint": null,
+        "RecentLocationsSelection": null,
+        "Tooltip": null,
+        "WarningHint": null
+      },
       "Preview": {},
       "SearchResults": {
         "SearchResult": {
@@ -293,13 +396,14 @@
           "light": {},
           "dark": {}
         },
-        "Tabs": {
-          "light": {},
-          "dark": {}
-        },
+        "Tabs": "General|Text|Whitespaces",
         "Whitespaces": {
-          "light": {},
-          "dark": {}
+          "light": {
+            "fg": "#F0F0F0"
+          },
+          "dark": {
+            "fg": "#303136"
+          }
         }
       }
     },
@@ -361,11 +465,9 @@
       "Identifiers": {
         "Constant": {
           "light": {
-            "italic": true,
             "fg": "#871094"
           },
           "dark": {
-            "italic": true,
             "fg": "#C77DBB"
           }
         },
@@ -394,7 +496,22 @@
         "ReassignedLocalVariable": {},
         "ReassignedParameter": {}
       },
-      "InlineHints": {},
+      "InlineHints": {
+        "Default": {
+          "light": {
+            "fg": "#7A7A7A",
+            "bg": "#EDEDED"
+          },
+          "dark": {
+            "fg": "#868A91",
+            "bg": "#393B40"
+          }
+        },
+        "Parameters": null,
+        "": null,
+        "Refactoring options": null,
+        "Text without background": null
+      },
       "Keyword": {
         "light": {
           "fg": "#0033B3"
@@ -466,8 +583,77 @@
     },
     "ConsoleColors": {
       "ANSIColors": {},
-      "Console": {},
-      "LogConsole": {},
+      "Console": {
+        "Background": null,
+        "ErrorOutput": {
+          "light": {
+            "fg": "#7F0000"
+          },
+          "dark": {
+            "fg": "#F75464"
+          }
+        },
+        "StandardOutput": null,
+        "SystemOutput": null,
+        "UserInput": {
+          "light": {
+            "italic": true,
+            "fg": "#007F00"
+          },
+          "dark": {
+            "fg": "#6AAB73",
+            "italic": true
+          }
+        }
+      },
+      "LogConsole": {
+        "Debug": {
+          "light": {
+            "fg": "#00CCCC"
+          },
+          "dark": {
+            "fg": "#299999"
+          }
+        },
+        "Error": {
+          "light": {
+            "fg": "#CD0000"
+          },
+          "dark": {
+            "fg": "#F75464"
+          }
+        },
+        "ExpiredEntry": {
+          "light": {
+            "fg": "#555555"
+          },
+          "dark": {
+            "fg": "#555555"
+          }
+        },
+        "Info": {
+          "light": {
+            "fg": "#00CD00"
+          },
+          "dark": {
+            "fg": "#E0BB65"
+          }
+        },
+        "Verbose": {
+          "light": {
+            "fg": "#0000EE"
+          },
+          "dark": {
+            "fg": "#56A8F5"
+          }
+        },
+        "Warning": {
+          "light": {
+            "fg": "#A66F00"
+          },
+          "dark": {}
+        }
+      },
       "Terminal": {}
     },
     "Debugger": {},
@@ -515,6 +701,18 @@
     "VCS": {
       "EditorGutter": {},
       "VCSAnnotations": {}
+    },
+    "Custom": {
+      "StatusBar": {
+        "light": {
+          "fg": "#7F828D",
+          "bg": "#F7F8FA"
+        },
+        "dark": {
+          "fg": "#9A9CA4",
+          "bg": "#2B2D30"
+        }
+      }
     },
     "Cpp": {
       "BadCharacter": {},
@@ -565,7 +763,7 @@
       "CursorIM": "General|Editor|Caret",
       "CursorColumn": "General|Editor|CaretRow",
       "CursorLine": "General|Editor|CaretRow",
-      "Directory": null,
+      "Directory": "Normal",
       "DiffAdd": {
         "bg": "DiffMerge|ChangedLines|Inserted.bg"
       },
@@ -578,11 +776,11 @@
       "DiffText": {
         "bg": "DiffMerge|ChangedLines|Changed.fg"
       },
-      "EndOfBuffer": null,
-      "TermCursor": null,
-      "TermCursorNC": null,
-      "ErrorMsg": null,
-      "WinSeparator": null,
+      "EndOfBuffer": "",
+      "TermCursor": "",
+      "TermCursorNC": "",
+      "ErrorMsg": "ConsoleColors|LogConsole|Error",
+      "WinSeparator": "General|Editor|Guides|HardWrapGuide",
       "Folded": "General|Text|FoldedText",
       "FoldColumn": "General|Text|FoldedText",
       "SignColumn": {
@@ -591,64 +789,80 @@
       "IncSearch": {
         "bg": "DiffMerge|ChangedLines|Changed.fg"
       },
-      "Substitute": null,
+      "Substitute": "",
       "LineNr": "General|Code|LineNumber",
       "LineNrAbove": "",
       "LineNrBelow": "",
-      "CursorLineNr": "General|Code|LineNumberOnCaretRow",
-      "CursorLineFold": null,
-      "CursorLineSign": null,
+      "CursorLineNr": {
+        "fg": "General|Code|LineNumberOnCaretRow",
+        "bg": "General|Editor|CaretRow"
+      },
+      "CursorLineFold": "CursorLineNr",
+      "CursorLineSign": "CursorLineNr",
       "MatchParen": "General|Code|MatchedBrace",
-      "ModeMsg": null,
-      "MsgArea": null,
-      "MsgSeparator": null,
-      "MoreMsg": null,
-      "NonText": null,
+      "ModeMsg": {
+        "fg": "General|Text|DefaultText"
+      },
+      "MsgArea": "General|PopupsAndHints|Completion",
+      "MsgSeparator": "",
+      "MoreMsg": "ConsoleColors|LogConsole|Info",
+      "NonText": "",
       "Normal": {
         "fg": "General|Text|DefaultText"
       },
-      "NormalFloat": null,
-      "FloatBorder": null,
-      "FloatTitle": null,
-      "FloatFooter": null,
+      "NormalFloat": "Normal",
+      "FloatBorder": {
+        "fg": "General|Editor|Caret.bg"
+      },
+      "FloatTitle": "",
+      "FloatFooter": "",
       "NormalNC": {
         "fg": "General|Text|DefaultText"
       },
-      "Pmenu": null,
-      "PmenuSel": null,
-      "PmenuKind": null,
-      "PmenuKindSel": null,
-      "PmenuExtra": null,
-      "PmenuExtraSel": null,
-      "PmenuSbar": null,
-      "PmenuThumb": null,
-      "Question": null,
-      "QuickFixLine": null,
+      "Pmenu": "General|PopupsAndHints|Completion",
+      "PmenuSel": "General|Editor|SelectionBackground",
+      "PmenuKind": "",
+      "PmenuKindSel": "",
+      "PmenuExtra": "",
+      "PmenuExtraSel": "",
+      "PmenuSbar": "",
+      "PmenuThumb": "General|Editor|VerticalScrollbar|Thumb",
+      "Question": "ConsoleColors|Console|UserInput",
+      "QuickFixLine": "General|ErrorsAndWarnings|Warning",
       "Search": "General|SearchResults|TextSearchResult",
-      "SnippetTabstop": null,
-      "SpecialKey": null,
-      "SpellBad": null,
-      "SpellCap": null,
-      "SpellLocal": null,
-      "SpellRare": null,
-      "StatusLine": null,
-      "StatusLineNC": null,
-      "TabLine": null,
-      "TabLineFill": null,
-      "TabLineSel": null,
+      "SnippetTabstop": "",
+      "SpecialKey": "General|Text|Whitespaces",
+      "SpellBad": "General|ErrorsAndWarnings|Typo",
+      "SpellCap": "General|ErrorsAndWarnings|TextStyleWarning",
+      "SpellLocal": "General|ErrorsAndWarnings|TextStyleWarning",
+      "SpellRare": "General|ErrorsAndWarnings|TextStyleWarning",
+      "StatusLine": "Custom|StatusBar",
+      "StatusLineNC": "StatusLine",
+      "TabLine": "",
+      "TabLineFill": "",
+      "TabLineSel": {
+        "sp": "General|Editor|SelectionBackground.bg",
+        "underdouble": true,
+        "bold": true,
+        "bg": "Custom|StatusBar.bg"
+      },
       "Title": "LanguageDefaults|Identifiers|Constant",
-      "Visual": null,
-      "VisualNOS": null,
-      "WarningMsg": null,
-      "Whitespace": null,
-      "WildMenu": null,
-      "WinBar": null,
-      "WinBarNC": null
+      "Visual": "General|Editor|SelectionBackground",
+      "VisualNOS": {
+        "bg": "General|Editor|SelectionBackground.bg",
+        "underline": true
+      },
+      "WarningMsg": "ConsoleColors|LogConsole|Warning",
+      "Whitespace": "General|Text|Whitespaces",
+      "WhiteSpace": "General|Text|Whitespaces",
+      "WildMenu": "Pmenu",
+      "WinBar": "StatusLine",
+      "WinBarNC": "StatusLine"
     },
     "Builtin.GUI": {
-      "Menu": null,
-      "Scrollbar": null,
-      "Tooltip": null
+      "Menu": "",
+      "Scrollbar": "General|Editor|VerticalScrollbar|Thumb",
+      "Tooltip": "General|Text|DefaultText"
     },
     "Builtin.Languages": {
       "Comment": "LanguageDefaults|Comments|LineComment",
@@ -698,9 +912,88 @@
         "bg": "DiffMerge|ChangedLines|Deleted.bg"
       }
     },
+    "Builtin.Diagnostic": {
+      "DiagnosticError": {
+        "fg": "General|ErrorsAndWarnings|Error.sp"
+      },
+      "DiagnosticWarn": {
+        "fg": "General|ErrorsAndWarnings|Warning.sp"
+      },
+      "DiagnosticInfo": {
+        "fg": "ConsoleColors|LogConsole|Verbose"
+      },
+      "DiagnosticHint": {
+        "fg": "General|ErrorsAndWarnings|WeakWarning.sp"
+      },
+      "DiagnosticOk": {
+        "fg": "ConsoleColors|Console|UserInput"
+      },
+      "DiagnosticVirtualTextError": "",
+      "DiagnosticVirtualTextWarn": "",
+      "DiagnosticVirtualTextInfo": "",
+      "DiagnosticVirtualTextHint": "",
+      "DiagnosticVirtualTextOk": "",
+      "DiagnosticUnderlineError": "General|ErrorsAndWarnings|Error",
+      "DiagnosticUnderlineWarn": "General|ErrorsAndWarnings|Warning",
+      "DiagnosticUnderlineInfo": {
+        "sp": "ConsoleColors|LogConsole|Verbose.fg",
+        "underline": true
+      },
+      "DiagnosticUnderlineHint": "General|ErrorsAndWarnings|WeakWarning",
+      "DiagnosticUnderlineOk": {
+        "sp": "ConsoleColors|Console|UserInput.fg",
+        "underline": true
+      },
+      "DiagnosticFloatingError": "",
+      "DiagnosticFloatingWarn": "",
+      "DiagnosticFloatingInfo": "",
+      "DiagnosticFloatingHint": "",
+      "DiagnosticFloatingOk": "",
+      "DiagnosticSignError": "",
+      "DiagnosticSignWarn": "",
+      "DiagnosticSignInfo": "",
+      "DiagnosticSignHint": "",
+      "DiagnosticSignOk": "",
+      "DiagnosticDeprecated": "General|ErrorsAndWarnings|DeprecatedSymbol",
+      "DiagnosticUnnecessary": "General|ErrorsAndWarnings|UnusedCode",
+      "LspDiagnosticsDefaultError": "DiagnosticError",
+      "LspDiagnosticsDefaultWarning": "DiagnosticWarn",
+      "LspDiagnosticsDefaultInformation": "DiagnosticInfo",
+      "LspDiagnosticsDefaultHint": "DiagnosticHint",
+      "LspDiagnosticsVirtualTextError": "DiagnosticVirtualTextError",
+      "LspDiagnosticsVirtualTextWarning": "DiagnosticVirtualTextWarn",
+      "LspDiagnosticsVirtualTextInformation": "DiagnosticVirtualTextInfo",
+      "LspDiagnosticsVirtualTextHint": "DiagnosticVirtualTextHint",
+      "LspDiagnosticsUnderlineError": "DiagnosticUnderlineError",
+      "LspDiagnosticsUnderlineWarning": "DiagnosticUnderlineWarn",
+      "LspDiagnosticsUnderlineInformation": "DiagnosticUnderlineInfo",
+      "LspDiagnosticsUnderlineHint": "DiagnosticUnderlineHint",
+      "LspDiagnosticsFloatingError": "DiagnosticFloatingError",
+      "LspDiagnosticsFloatingWarning": "DiagnosticFloatingWarn",
+      "LspDiagnosticsFloatingInformation": "DiagnosticFloatingInfo",
+      "LspDiagnosticsFloatingHint": "DiagnosticFloatingHint",
+      "LspDiagnosticsSignError": "DiagnosticSignError",
+      "LspDiagnosticsSignWarning": "DiagnosticSignWarn",
+      "LspDiagnosticsSignInformation": "DiagnosticSignInfo",
+      "LspDiagnosticsSignHint": "DiagnosticSignHint",
+      "LspReferenceText": "DiffAdd",
+      "LspReferenceRead": "DiffAdd",
+      "LspReferenceWrite": "DiffAdd",
+      "LspInlayHint": {
+        "fg": "LanguageDefaults|InlineHints|Default"
+      },
+      "LspCodeLens": "General|PopupsAndHints|CodeLens",
+      "LspCodeLensSeparator": "",
+      "LspSignatureActiveParameter": "Search",
+      "LspInfoBorder": "Normal",
+      "healthError": "Error",
+      "healthSuccess": "DiagnosticOk",
+      "healthWarning": "General|ErrorsAndWarnings|Warning"
+    },
     "Custom": {
       "General_Editor_Guides_VisualGuides": "General|Editor|Guides|VisualGuides",
-      "General_Editor_Guides_HardWrapGuide": "General|Editor|Guides|HardWrapGuide"
+      "General_Editor_Guides_HardWrapGuide": "General|Editor|Guides|HardWrapGuide",
+      "General_Text_DefaultText": "General|Text|DefaultText"
     },
     "Treesitter.cpp": {
       "@keyword.import.c": "Cpp|Preprocessor|Directive",

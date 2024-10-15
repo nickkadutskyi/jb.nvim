@@ -27,11 +27,12 @@ function M.setup()
   local colors = palette.colors
   local highlights = palette.highlights
   local hl_groups = {}
+  local set_hl_delayed = {}
 
   for _, groups in pairs(highlights) do
     for group, attrs in pairs(groups) do
       local hl = {}
-      if type(attrs) == "string" and attrs ~= "" then
+      if type(attrs) == "string" and string.find(attrs, "|") ~= nil then -- Handling paths
         local props = util.get_hl_props(colors, attrs, profile)
         if group == props.name then
           hl = props.hl
@@ -42,9 +43,13 @@ function M.setup()
           end
           hl.link = props.name
         end
-      elseif type(attrs) == "table" then
+      elseif type(attrs) == "string" and attrs ~= "" then -- Handling links
+        hl.link = attrs
+        set_hl_delayed[group] = hl
+      elseif type(attrs) == "table" then -- Handling attributes
         local last_hl_name = nil
         local last_attr = nil
+        -- Iterate over attributes and set hl properties
         for attr, value in pairs(attrs) do
           last_attr = attr
           if type(value) == "string" and string.find(value, "|") ~= nil then
@@ -55,17 +60,23 @@ function M.setup()
             hl[attr] = value
           end
         end
-        local group_name = tablelength(attrs) == 1
+        -- Customize group name if only one attribute is set
+        local group_name = (tablelength(attrs) == 1 and last_hl_name ~= nil)
             and last_hl_name .. "-" .. last_attr
             or group .. "_Custom"
         vim.api.nvim_set_hl(0, group_name, hl)
         hl.link = group_name
       end
+      -- Set hl group properties
       if attrs ~= nil and attrs ~= "" then
         local props = hl.link ~= nil and { link = hl.link } or hl
         vim.api.nvim_set_hl(0, group, props)
       end
     end
+  end
+  -- Set delayed highlights after all groups are defined
+  for group, hl in pairs(set_hl_delayed) do
+    vim.api.nvim_set_hl(0, group, hl)
   end
 end
 
