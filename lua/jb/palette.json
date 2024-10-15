@@ -2,18 +2,9 @@
   "colors": {
     "General": {
       "Code": {
-        "IdentifierUnderCaret": {
-          "light": {},
-          "dark": {}
-        },
-        "IdentifierUnderCaretWrite": {
-          "light": {},
-          "dark": {}
-        },
-        "InjectedLanguageFragment": {
-          "light": {},
-          "dark": {}
-        },
+        "IdentifierUnderCaret": null,
+        "IdentifierUnderCaretWrite": null,
+        "InjectedLanguageFragment": null,
         "LineNumber": {
           "light": {
             "fg": "#AEB3C2"
@@ -39,10 +30,7 @@
             "bold": true
           }
         },
-        "MethodSeparatorColor": {
-          "light": {},
-          "dark": {}
-        },
+        "MethodSeparatorColor": null,
         "TODODefaults": {
           "light": {
             "fg": "#008DDE",
@@ -98,9 +86,9 @@
               "fg": "#EBECF0"
             }
           },
-          "IndentGuide": {},
-          "IndentGuideSelected": {},
-          "MatchedBraceGuide": {},
+          "IndentGuide": null,
+          "IndentGuideSelected": null,
+          "MatchedBraceGuide": null,
           "VisualGuides": {
             "dark": {
               "fg": "#2B2D30"
@@ -161,14 +149,8 @@
             "strikethrough": true
           }
         },
-        "DeprecatedSymbolMarkedForRemoval": {
-          "light": {},
-          "dark": {}
-        },
-        "DuplicateFromServer": {
-          "light": {},
-          "dark": {}
-        },
+        "DeprecatedSymbolMarkedForRemoval": null,
+        "DuplicateFromServer": null,
         "Error": {
           "light": {
             "sp": "#FF0000",
@@ -179,26 +161,11 @@
             "undercurl": true
           }
         },
-        "GrammarError": {
-          "light": {},
-          "dark": {}
-        },
-        "ProblemFromServer": {
-          "light": {},
-          "dark": {}
-        },
-        "RuntimeProblem": {
-          "light": {},
-          "dark": {}
-        },
-        "TextStyleError": {
-          "light": {},
-          "dark": {}
-        },
-        "TextStyleSuggestion": {
-          "light": {},
-          "dark": {}
-        },
+        "GrammarError": null,
+        "ProblemFromServer": null,
+        "RuntimeProblem": null,
+        "TextStyleError": null,
+        "TextStyleSuggestion": null,
         "TextStyleWarning": {
           "light": {
             "sp": "#EDA200",
@@ -219,10 +186,7 @@
             "undercurl": true
           }
         },
-        "UnknownSymbol": {
-          "light": {},
-          "dark": {}
-        },
+        "UnknownSymbol": null,
         "UnusedCode": {
           "light": {
             "fg": "#808080"
@@ -300,9 +264,9 @@
           }
         }
       },
-      "Identifiers": {},
-      "LineCoverage": {},
-      "LiveTemplates": {},
+      "Identifiers": null,
+      "LineCoverage": null,
+      "LiveTemplates": null,
       "PopupsAndHints": {
         "CodeLens": {
           "light": {
@@ -332,16 +296,10 @@
         "Tooltip": null,
         "WarningHint": null
       },
-      "Preview": {},
+      "Preview": null,
       "SearchResults": {
-        "SearchResult": {
-          "light": {},
-          "dark": {}
-        },
-        "SearchResultWriteAccess)": {
-          "light": {},
-          "dark": {}
-        },
+        "SearchResult": null,
+        "SearchResultWriteAccess": null,
         "TextSearchResult": {
           "light": {
             "fg": "#000000",
@@ -356,10 +314,7 @@
         }
       },
       "Text": {
-        "BackgroundInReadOnlyFiles": {
-          "light": {},
-          "dark": {}
-        },
+        "BackgroundInReadOnlyFiles": null,
         "DefaultText": {
           "light": {
             "fg": "#080808",
@@ -370,10 +325,7 @@
             "bg": "#1E1F22"
           }
         },
-        "DeletedText": {
-          "light": {},
-          "dark": {}
-        },
+        "DeletedText": null,
         "FoldedText": {
           "light": {
             "fg": "#414D41",
@@ -384,18 +336,9 @@
             "bg": "#393B40"
           }
         },
-        "FoldedTextWithHighlighting": {
-          "light": {},
-          "dark": {}
-        },
-        "ReadOnlyFragmentBackground": {
-          "light": {},
-          "dark": {}
-        },
-        "SoftWrapSign": {
-          "light": {},
-          "dark": {}
-        },
+        "FoldedTextWithHighlighting": null,
+        "ReadOnlyFragmentBackground": null,
+        "SoftWrapSign": null,
         "Tabs": "General|Text|Whitespaces",
         "Whitespaces": {
           "light": {
@@ -408,41 +351,17 @@
       }
     },
     "LanguageDefaults": {
-      "BadCharacter": {
-        "light": {},
-        "dark": {}
-      },
+      "BadCharacter": null,
       "BracesAndOperators": {
-        "Braces": {
-          "light": {},
-          "dark": {}
-        },
-        "Brackets": {
-          "light": {},
-          "dark": {}
-        },
-        "Comma": {
-          "light": {},
-          "dark": {}
-        },
-        "Dot": {
-          "light": {},
-          "dark": {}
-        },
-        "OperationSign": {
-          "light": {},
-          "dark": {}
-        },
-        "Parentheses": {
-          "light": {},
-          "dark": {}
-        },
-        "Semicolon": {
-          "light": {},
-          "dark": {}
-        }
+        "Braces": null,
+        "Brackets": null,
+        "Comma": null,
+        "Dot": null,
+        "OperationSign": null,
+        "Parentheses": null,
+        "Semicolon": null
       },
-      "Classes": {},
+      "Classes": null,
       "Comments": {
         "BlockComment": {
           "light": {
@@ -878,7 +797,7 @@
       "Conditional": "LanguageDefaults|Keyword",
       "Repeat": "LanguageDefaults|Keyword",
       "Label": "LanguageDefaults|Keyword",
-      "Operator": "LanguageDefaults|BracesAndOperators|OperationSign",
+      "Operator": {},
       "Keyword": "LanguageDefaults|Keyword",
       "Exception": "General|ErrorsAndWarnings|Error",
       "PreProc": "Cpp|Preprocessor|Directive",
