@@ -354,7 +354,22 @@
         "Parentheses": null,
         "Semicolon": null
       },
-      "Classes": null,
+      "Classes": {
+        "ClassName": null,
+        "ClassReference": null,
+        "InstanceField": {
+          "light": {
+            "fg": "#871094"
+          },
+          "dark": {
+            "fg": "#C77DBB"
+          }
+        },
+        "InstanceMethod": null,
+        "InterfaceName": null,
+        "StaticField": null,
+        "StaticMethod": null
+      },
       "Comments": {
         "BlockComment": {
           "light": {
@@ -651,6 +666,22 @@
       "Templates": null,
       "Typedef": null,
       "Variables": null
+    },
+    "JSON": {
+      "BlockComment": null,
+      "Braces": null,
+      "Brackets": null,
+      "Colon": null,
+      "Comma": null,
+      "InvalidEscapeSequence": null,
+      "Keyword": "LanguageDefaults|Keyword",
+      "LineComment": null,
+      "Number": null,
+      "Parameter": null,
+      "PropertyKey": "LanguageDefaults|Classes|InstanceField",
+      "SemanticHighlighting": null,
+      "String": null,
+      "ValidEscapeSequence": null
     }
   },
   "highlights": {
@@ -907,6 +938,10 @@
       "@constant.c": {
         "fg": "LanguageDefaults|Identifiers|Constant.fg"
       }
+    },
+    "Treesitter.json": {
+      "@property.json": "JSON|PropertyKey",
+      "@constant.builtin.json": "JSON|Keyword"
     }
   }
 }
