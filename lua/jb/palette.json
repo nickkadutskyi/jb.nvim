@@ -111,15 +111,8 @@
         "SelectionForeground": null,
         "StickyLines": null,
         "Tabs": {
-          "ModifiedIcon color": null,
-          "SelectedTab": {
-            "light": {
-              "bg": "#"
-            },
-            "dark": {
-              "bg": "#"
-            }
-          },
+          "ModifiedIconColor": null,
+          "SelectedTab": null,
           "SelectedTabInactive": null,
           "Underline": null,
           "UnderlineInactive": null
@@ -398,7 +391,7 @@
             "fg": "#BCBEC4"
           }
         },
-        "FunctionCall": {},
+        "FunctionCall": null,
         "FunctionDeclaration": {
           "light": {
             "fg": "#00627A"
@@ -408,12 +401,12 @@
           }
         },
         "GlobalVariable": "LanguageDefaults|Identifiers|Default",
-        "Label": {},
+        "Label": null,
         "LocalVariable": "LanguageDefaults|Identifiers|Default",
-        "Parameter": {},
-        "PredefinedSymbol": {},
-        "ReassignedLocalVariable": {},
-        "ReassignedParameter": {}
+        "Parameter": null,
+        "PredefinedSymbol": null,
+        "ReassignedLocalVariable": null,
+        "ReassignedParameter": null
       },
       "InlineHints": {
         "Default": {
@@ -427,9 +420,8 @@
           }
         },
         "Parameters": null,
-        "": null,
-        "Refactoring options": null,
-        "Text without background": null
+        "RefactoringOptions": null,
+        "TextWithoutBackground": null
       },
       "Keyword": {
         "light": {
@@ -439,7 +431,7 @@
           "fg": "#CF8E6D"
         }
       },
-      "Markup": {},
+      "Markup": null,
       "Metadata": {
         "light": {
           "fg": "#9E880D"
@@ -482,10 +474,7 @@
             }
           }
         },
-        "HighlightedReference": {
-          "light": {},
-          "dark": {}
-        },
+        "HighlightedReference": null,
         "StringText": {
           "light": {
             "fg": "#067D17"
@@ -495,13 +484,10 @@
           }
         }
       },
-      "TemplateLanguage": {
-        "light": {},
-        "dark": {}
-      }
+      "TemplateLanguage": null
     },
     "ConsoleColors": {
-      "ANSIColors": {},
+      "ANSIColors": null,
       "Console": {
         "Background": null,
         "ErrorOutput": {
@@ -573,9 +559,9 @@
           "dark": {}
         }
       },
-      "Terminal": {}
+      "Terminal": null
     },
-    "Debugger": {},
+    "Debugger": null,
     "DiffMerge": {
       "ChangedLines": {
         "Changed": {
@@ -615,11 +601,11 @@
           }
         }
       },
-      "FoldedUnchangedFragments": {}
+      "FoldedUnchangedFragments": null
     },
     "VCS": {
-      "EditorGutter": {},
-      "VCSAnnotations": {}
+      "EditorGutter": null,
+      "VCSAnnotations": null
     },
     "Custom": {
       "StatusBar": {
@@ -634,14 +620,14 @@
       }
     },
     "Cpp": {
-      "BadCharacter": {},
-      "BracesAndOperators": {},
-      "ClassStructEnumUnion": {},
-      "Comments": {},
-      "ConditionallyNonCompiledCode": {},
-      "EnumConstant": {},
-      "Function": {},
-      "Keywords": {},
+      "BadCharacter": null,
+      "BracesAndOperators": null,
+      "ClassStructEnumUnion": null,
+      "Comments": null,
+      "ConditionallyNonCompiledCode": null,
+      "EnumConstant": null,
+      "Function": null,
+      "Keywords": null,
       "MacroName": {
         "light": {
           "fg": "#1F542E",
@@ -652,19 +638,19 @@
           "bold": true
         }
       },
-      "Namespace": {},
+      "Namespace": null,
       "Number": "LanguageDefaults|Number",
-      "Parameters": {},
+      "Parameters": null,
       "Preprocessor": {
         "Directive": "LanguageDefaults|Metadata",
-        "HeaderPath": {}
+        "HeaderPath": null
       },
-      "SemanticHighlighting": {},
-      "String": {},
-      "StructField": {},
-      "Templates": {},
-      "Typedef": {},
-      "Variables": {}
+      "SemanticHighlighting": null,
+      "String": null,
+      "StructField": null,
+      "Templates": null,
+      "Typedef": null,
+      "Variables": null
     }
   },
   "highlights": {
