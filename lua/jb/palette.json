@@ -673,7 +673,7 @@
       "InvalidEscapeSequence": null,
       "Keyword": "LanguageDefaults|Keyword",
       "LineComment": null,
-      "Number": null,
+      "Number": "LanguageDefaults|Number",
       "Parameter": null,
       "PropertyKey": "LanguageDefaults|Classes|InstanceField",
       "SemanticHighlighting": null,
@@ -928,7 +928,7 @@
       "General_Editor_Guides_HardWrapGuide": "General|Editor|Guides|HardWrapGuide",
       "General_Text_DefaultText": "General|Text|DefaultText"
     },
-    "Treesitter.cpp": {
+    "Cpp": {
       "@keyword.import.c": "Cpp|Preprocessor|Directive",
       "@keyword.directive": "Cpp|Preprocessor|Directive",
       "@function.macro": "Cpp|MacroName",
@@ -936,7 +936,11 @@
         "fg": "LanguageDefaults|Identifiers|Constant.fg"
       }
     },
-    "Treesitter.json": {
+    "JSON": {
+      "jsonKeyword": "JSON|PropertyKey",
+      "jsonBoolean": "JSON|Keyword",
+      "jsonNull": "JSON|Keyword",
+      "jsonNumber": "JSON|Number",
       "@property.json": "JSON|PropertyKey",
       "@constant.builtin.json": "JSON|Keyword"
     }
