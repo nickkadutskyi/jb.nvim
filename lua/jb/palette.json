@@ -346,17 +346,52 @@
     "LanguageDefaults": {
       "BadCharacter": null,
       "BracesAndOperators": {
-        "Braces": null,
-        "Brackets": null,
-        "Comma": null,
-        "Dot": null,
-        "OperationSign": null,
-        "Parentheses": null,
-        "Semicolon": null
+        "Braces": {
+          "light": {},
+          "dark": {
+            "fg": "#BCBEC4"
+          }
+        },
+        "Brackets": {
+          "light": {},
+          "dark": {
+            "fg": "#BCBEC4"
+          }
+        },
+        "Comma": {
+          "light": {},
+          "dark": {
+            "fg": "#BCBEC4"
+          }
+        },
+        "Dot": {
+          "light": {},
+          "dark": {
+            "fg": "#BCBEC4"
+          }
+        },
+        "OperationSign": {
+          "light": {},
+          "dark": {
+            "fg": "#BCBEC4"
+          }
+        },
+        "Parentheses": {
+          "light": {},
+          "dark": {
+            "fg": "#BCBEC4"
+          }
+        },
+        "Semicolon": {
+          "light": {},
+          "dark": {
+            "fg": "#BCBEC4"
+          }
+        }
       },
       "Classes": {
         "ClassName": null,
-        "ClassReference": null,
+        "ClassReference": "LanguageDefaults|Identifiers|Default",
         "InstanceField": {
           "light": {
             "fg": "#871094"
@@ -365,10 +400,35 @@
             "fg": "#C77DBB"
           }
         },
-        "InstanceMethod": null,
+        "InstanceMethod": {
+          "light": {
+            "fg": "#00627A"
+          },
+          "dark": {
+            "fg": "#57AAF7"
+          }
+        },
         "InterfaceName": null,
-        "StaticField": null,
-        "StaticMethod": null
+        "StaticField": {
+          "light": {
+            "fg": "#871094",
+            "italic": true
+          },
+          "dark": {
+            "fg": "#C77DBB",
+            "italic": true
+          }
+        },
+        "StaticMethod": {
+          "light": {
+            "fg": "#00627A",
+            "italic": true
+          },
+          "dark": {
+            "fg": "#57AAF7",
+            "italic": true
+          }
+        }
       },
       "Comments": {
         "BlockComment": {
@@ -379,7 +439,32 @@
             "fg": "#7A7E85"
           }
         },
-        "DocComment": null,
+        "DocComment": {
+          "Code block": null,
+          "Inline code fragment": null,
+          "Link in rendered view": null,
+          "Markup": null,
+          "Shortcut": null,
+          "Tag": {
+            "light": {
+              "sp": "#999999",
+              "underline": true
+            },
+            "dark": {
+              "fg": "#67A37C"
+            }
+          },
+          "Tag value": null,
+          "Text": {
+            "light": {
+              "fg": "#8C8C8C"
+            },
+            "dark": {
+              "fg": "#5F826B"
+            }
+          },
+          "Vertical guide for rendered view": null
+        },
         "LineComment": {
           "light": {
             "fg": "#8C8C8C"
@@ -499,7 +584,33 @@
       "TemplateLanguage": null
     },
     "ConsoleColors": {
-      "ANSIColors": null,
+      "ANSIColors": {
+        "Black": null,
+        "Blue": null,
+        "BrightBlack": null,
+        "BrightBlue": null,
+        "BrightCyan": {
+          "light": {
+            "fg": "#15C1C1",
+            "bg": "#8CF1F1"
+          },
+          "dark": {
+            "fg": "#00E5E5",
+            "bg": "#006E6E"
+          }
+        },
+        "BrightGreen": null,
+        "BrightMagenta": null,
+        "BrightRed": null,
+        "BrightWhite": null,
+        "BrightYellow": null,
+        "Cyan": null,
+        "Green": null,
+        "Magenta": null,
+        "Red": null,
+        "WhiteGray": null,
+        "Yellow": null
+      },
       "Console": {
         "Background": null,
         "ErrorOutput": {
@@ -615,6 +726,25 @@
       },
       "FoldedUnchangedFragments": null
     },
+    "UserDefinedFileTypes": {
+      "BlockComment": null,
+      "InvalidStringEscape": null,
+      "Keyword1": null,
+      "Keyword2": null,
+      "Keyword3": {
+        "light": {
+          "fg": "#008080"
+        },
+        "dark": {
+          "fg": "#0DA19E"
+        }
+      },
+      "Keyword4": null,
+      "LineComment": null,
+      "Number": null,
+      "String": null,
+      "ValidStringEscape": null
+    },
     "VCS": {
       "EditorGutter": null,
       "VCSAnnotations": null
@@ -664,6 +794,19 @@
       "Typedef": null,
       "Variables": null
     },
+    "GitToolBoxColors": {
+      "EditorInlineBlame": {
+        "light": {
+          "fg": "#B7B7B7",
+          "italic": true
+        },
+        "dark": {
+          "fg": "#666D75",
+          "italic": true
+        }
+      },
+      "ProjectView": null
+    },
     "JSON": {
       "BlockComment": null,
       "Braces": null,
@@ -679,6 +822,71 @@
       "SemanticHighlighting": null,
       "String": null,
       "ValidEscapeSequence": null
+    },
+    "Lua": {
+      "BracesAndOperators": {
+        "Braces": "LanguageDefaults|BracesAndOperators|Braces",
+        "Brackets": "LanguageDefaults|BracesAndOperators|Brackets",
+        "Comma": "LanguageDefaults|BracesAndOperators|Comma",
+        "Dot": "LanguageDefaults|BracesAndOperators|Dot",
+        "Operators": "LanguageDefaults|BracesAndOperators|OperationSign",
+        "Parentheses": "LanguageDefaults|BracesAndOperators|Parentheses",
+        "Semicolon": "LanguageDefaults|BracesAndOperators|Semicolon"
+      },
+      "ClassMembers": {
+        "Field": {
+          "light": {},
+          "dark": {}
+        },
+        "InstanceMethod": "LanguageDefaults|Classes|InstanceMethod",
+        "StaticMethod": "LanguageDefaults|Classes|StaticMethod"
+      },
+      "Comments": {
+        "DocComment": "LanguageDefaults|Comments|DocComment|Text",
+        "EmmyDoc": {
+          "ClassNameReference": "LanguageDefaults|Classes|ClassReference",
+          "Tag": "LanguageDefaults|Comments|DocComment|Tag"
+        }
+      },
+      "Keywords": "LanguageDefaults|Keyword",
+      "NilTrueFalse": {
+        "light": {
+          "fg": "#D700FF"
+        },
+        "dark": {
+          "fg": "#00E5E5",
+          "bg": "#006E6E"
+        }
+      },
+      "StdApi": {
+        "light": {
+          "fg": "#CC542E"
+        },
+        "dark": {
+          "fg": "#CC542E"
+        }
+      },
+      "Variables": {
+        "GlobalFunction": "LanguageDefaults|Classes|StaticField",
+        "GlobalVariable": "LanguageDefaults|Classes|StaticField",
+        "LocalFunction": "LanguageDefaults|Identifiers|LocalVariable",
+        "LocalVariable": "LanguageDefaults|Identifiers|LocalVariable",
+        "Parameter": "UserDefinedFileTypes|Keyword3",
+        "UpValue": {
+          "light": {
+            "sp": "#050505",
+            "underline": true,
+            "bold": true,
+            "italic": true
+          },
+          "dark": {
+            "sp": "#A8C023",
+            "underline": true,
+            "bold": true,
+            "italic": true
+          }
+        }
+      }
     }
   },
   "highlights": {
@@ -928,7 +1136,7 @@
       "General_Editor_Guides_HardWrapGuide": "General|Editor|Guides|HardWrapGuide",
       "General_Text_DefaultText": "General|Text|DefaultText"
     },
-    "Cpp": {
+    "Treesitter.Cpp": {
       "@keyword.import.c": "Cpp|Preprocessor|Directive",
       "@keyword.directive": "Cpp|Preprocessor|Directive",
       "@function.macro": "Cpp|MacroName",
@@ -936,13 +1144,58 @@
         "fg": "LanguageDefaults|Identifiers|Constant.fg"
       }
     },
-    "JSON": {
+    "Syntax.JSON": {
       "jsonKeyword": "JSON|PropertyKey",
       "jsonBoolean": "JSON|Keyword",
       "jsonNull": "JSON|Keyword",
-      "jsonNumber": "JSON|Number",
+      "jsonNumber": "JSON|Number"
+    },
+    "Treesitter.JSON": {
       "@property.json": "JSON|PropertyKey",
       "@constant.builtin.json": "JSON|Keyword"
+    },
+    "Plugin.GitSigns": {
+      "GitSignsCurrentLineBlame": "GitToolBoxColors|EditorInlineBlame"
+    },
+    "Syntax.Lua": {
+      "luaTable": "LanguageDefaults|BracesAndOperators|Braces",
+      "luaFunction": "Lua|Keywords",
+      "luaFunctionBlock": "Lua|Variables|LocalFunction",
+      "luaFunc": "Lua|StdApi",
+      "luaCondStart": "Lua|Variables|Parameter",
+      "luaCondEnd": "Lua|Variables|Parameter",
+      "luaConstant": "Lua|NilTrueFalse"
+    },
+    "Treesitter.Lua": {
+      "@variable.lua": "LanguageDefaults|Identifiers|LocalVariable",
+      "@constant.lua": "LanguageDefaults|Identifiers|LocalVariable",
+      "@constant.builtin.lua": "Lua|NilTrueFalse",
+      "@boolean.lua": "Lua|NilTrueFalse",
+      "@constructor.lua": {},
+      "@function.builtin.lua": "Lua|StdApi",
+      "@module.builtin.lua": "Lua|StdApi",
+      "@function.lua": "Lua|Variables|LocalFunction",
+      "@function.call.lua": {
+        "fg": "Lua|ClassMembers|StaticMethod"
+      },
+      "@variable.parameter.lua": "Lua|Variables|Parameter",
+      "@variable.member.lua": "Lua|ClassMembers|Field",
+      "@comment.documentation.lua": "Lua|Comments|DocComment",
+      "@punctuation.bracket.lua": "Lua|BracesAndOperators|Brackets",
+      "@_method.lua": "Lua|StdApi"
+    },
+    "Semantic.Lua": {
+      "@lsp.typemod.parameter.declaration.lua": "Lua|Variables|Parameter",
+      "@lsp.type.type.lua": "Lua|Comments|EmmyDoc|ClassNameReference",
+      "@lsp.type.variable.lua": "LanguageDefaults|Identifiers|LocalVariable",
+      "@lsp.mod.defaultLibrary.lua": "Lua|StdApi",
+      "@lsp.mod.documentation.lua": "Lua|Comments|EmmyDoc|Tag",
+      "@lsp.typemod.function.declaration.lua": "Lua|Variables|LocalFunction",
+      "@lsp.type.comment.lua": {},
+      "@lsp.type.method.lua": "Lua|ClassMembers|StaticMethod",
+      "@lsp.type.parameter.lua": "Lua|Variables|Parameter",
+      "@lsp.typemod.function.global.lua": "Lua|Variables|GlobalFunction",
+      "@lsp.typemod.variable.global.lua": "Lua|Variables|GlobalVariable"
     }
   }
 }
