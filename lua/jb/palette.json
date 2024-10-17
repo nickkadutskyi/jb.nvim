@@ -457,10 +457,12 @@
           "Tag value": null,
           "Text": {
             "light": {
-              "fg": "#8C8C8C"
+              "fg": "#8C8C8C",
+              "italic": true
             },
             "dark": {
-              "fg": "#5F826B"
+              "fg": "#5F826B",
+              "italic": true
             }
           },
           "Vertical guide for rendered view": null
@@ -1180,7 +1182,9 @@
       },
       "@variable.parameter.lua": "Lua|Variables|Parameter",
       "@variable.member.lua": "Lua|ClassMembers|Field",
-      "@comment.documentation.lua": "Lua|Comments|DocComment",
+      "@comment.documentation.lua": {
+        "fg": "Lua|Comments|DocComment"
+      },
       "@punctuation.bracket.lua": "Lua|BracesAndOperators|Brackets",
       "@_method.lua": "Lua|StdApi"
     },
@@ -1189,7 +1193,7 @@
       "@lsp.type.type.lua": "Lua|Comments|EmmyDoc|ClassNameReference",
       "@lsp.type.variable.lua": "LanguageDefaults|Identifiers|LocalVariable",
       "@lsp.mod.defaultLibrary.lua": "Lua|StdApi",
-      "@lsp.mod.documentation.lua": "Lua|Comments|EmmyDoc|Tag",
+      "@lsp.typemod.keyword.documentation.lua": "Lua|Comments|EmmyDoc|Tag",
       "@lsp.typemod.function.declaration.lua": "Lua|Variables|LocalFunction",
       "@lsp.type.comment.lua": {},
       "@lsp.type.method.lua": "Lua|ClassMembers|StaticMethod",
