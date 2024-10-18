@@ -1,6 +1,9 @@
 local M = {}
 
+---@alias profile "light" | "dark"
+
 -- Function to read the JSON palette
+---@return table
 function M.read_palette()
     local plugin_dir = vim.fn.expand("<sfile>:p:h:h")
     local palette_path = plugin_dir .. "/lua/jb/palette.json"
@@ -21,7 +24,7 @@ end
 ---@param colors table
 ---@param path string
 ---@param inherit_level ?number
----@return table
+---@return {light: table|string, dark: table|string}
 function M.resolve_path(colors, path, inherit_level)
     inherit_level = inherit_level or 0
     local path_spl = M.split(path, "|")
@@ -29,7 +32,13 @@ function M.resolve_path(colors, path, inherit_level)
     for i, v in pairs(path_spl) do
         if i < #path_spl and type(node[v]) == "table" then
             node = node[v]
-        elseif i == #path_spl and type(node[v]) == "table" and node[v].light ~= nil and node[v].dark ~= nil then
+        elseif
+            i == #path_spl
+            and type(node[v]) == "table"
+            -- Have to have both light and dark colors
+            and node[v].light ~= nil
+            and node[v].dark ~= nil
+        then
             return node[v]
         elseif
             i == #path_spl
@@ -48,29 +57,28 @@ end
 -- Function to get colors from palette table
 ---@param colors table
 ---@param path_prop string
----@return {name: string, hl: table, prop: string|nil}
+---@param profile profile
+---@return {name: string, hl: table, prop: string|nil|boolean}
 function M.get_hl_props(colors, path_prop, profile)
     local path_prop_spl = M.split(path_prop, ".")
     local prop = path_prop_spl[2]
     local node = M.resolve_path(colors, path_prop_spl[1])
-    local hl_group_name = string.gsub(path_prop_spl[1], "|", "_")
-    if prop ~= nil then
-        if type(node[profile][prop]) ~= "string" then
-            error("Invalid property: " .. prop .. " for " .. path_prop)
-        end
-        return { name = hl_group_name, hl = node[profile], prop = node[profile][prop] }
-    else
-        return { name = hl_group_name, hl = node[profile], prop = nil }
+    local hl = node[profile]
+    if type(hl) == "string" then
+        hl = M.resolve_path(colors, hl)[profile]
     end
+    local hl_group_name = string.gsub(path_prop_spl[1], "|", "_")
+    if prop ~= nil and type(hl[prop]) == nil then
+        error("Invalid property: " .. prop .. " for " .. path_prop)
+    end
+    return { name = hl_group_name, hl = hl, prop = hl[prop] }
 end
 
-function M.split(inputstr, sep)
-    if sep == nil then
-        sep = "%s"
-    end
+function M.split(str, sep)
+    sep = sep or "%s"
     local t = {}
-    for str in string.gmatch(inputstr, "([^" .. sep .. "]+)") do
-        table.insert(t, str)
+    for substr in string.gmatch(str, "([^" .. sep .. "]+)") do
+        table.insert(t, substr)
     end
     return t
 end

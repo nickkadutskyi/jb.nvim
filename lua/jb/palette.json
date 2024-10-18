@@ -847,7 +847,14 @@
         "DocComment": "LanguageDefaults|Comments|DocComment|Text",
         "EmmyDoc": {
           "ClassNameReference": "LanguageDefaults|Classes|ClassReference",
-          "Tag": "LanguageDefaults|Comments|DocComment|Tag"
+          "Tag": {
+            "light": {
+              "sp": "#999999",
+              "underline": true,
+              "fg": "#000000"
+            },
+            "dark": "LanguageDefaults|Comments|DocComment|Tag"
+          }
         }
       },
       "Keywords": "LanguageDefaults|Keyword",
@@ -1199,7 +1206,8 @@
       "@lsp.type.method.lua": "Lua|ClassMembers|StaticMethod",
       "@lsp.type.parameter.lua": "Lua|Variables|Parameter",
       "@lsp.typemod.function.global.lua": "Lua|Variables|GlobalFunction",
-      "@lsp.typemod.variable.global.lua": "Lua|Variables|GlobalVariable"
+      "@lsp.typemod.variable.global.lua": "Lua|Variables|GlobalVariable",
+      "@lsp.typemod.property.declaration.lua": "Lua|Comments|DocComment"
     }
   }
 }
