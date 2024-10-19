@@ -152,13 +152,23 @@
         "DeprecatedSymbolMarkedForRemoval": null,
         "DuplicateFromServer": null,
         "Error": {
-          "light": {
-            "sp": "#FF0000",
-            "undercurl": true
+          "Default": {
+            "light": {
+              "sp": "#FF0000",
+              "undercurl": true
+            },
+            "dark": {
+              "sp": "#FA6675",
+              "undercurl": true
+            }
           },
-          "dark": {
-            "sp": "#FA6675",
-            "undercurl": true
+          "ErrorStripeMark": {
+            "light": {
+              "fg": "#CF5B56"
+            },
+            "dark": {
+              "fg": "#D64D5B"
+            }
           }
         },
         "GrammarError": null,
@@ -196,13 +206,23 @@
           }
         },
         "Warning": {
-          "light": {
-            "sp": "#F2C55C",
-            "bg": "#FCF4D4"
+          "Default": {
+            "light": {
+              "sp": "#F2C55C",
+              "bg": "#FCF4D4"
+            },
+            "dark": {
+              "sp": "#F2C55C",
+              "undercurl": true
+            }
           },
-          "dark": {
-            "sp": "#F2C55C",
-            "undercurl": true
+          "ErrorStripeMark": {
+            "light": {
+              "fg": "#F2BF57"
+            },
+            "dark": {
+              "fg": "#C29E4A"
+            }
           }
         },
         "WeakWarning": {
@@ -301,15 +321,25 @@
         "SearchResult": null,
         "SearchResultWriteAccess": null,
         "TextSearchResult": {
-          "light": {
-            "fg": "#000000",
-            "bg": "#FCD47E"
+          "Default": {
+            "light": {
+              "fg": "#000000",
+              "bg": "#FCD47E"
+            },
+            "dark": {
+              "fg": "",
+              "bg": "#114957",
+              "sp": "#165E70",
+              "underline": true
+            }
           },
-          "dark": {
-            "fg": "",
-            "bg": "#114957",
-            "sp": "#165E70",
-            "underline": true
+          "ErrorStripeMark": {
+            "light": {
+              "fg": "#C47233"
+            },
+            "dark": {
+              "fg": "#72D6D6"
+            }
           }
         }
       },
@@ -697,39 +727,79 @@
     "DiffMerge": {
       "ChangedLines": {
         "Changed": {
-          "light": {
-            "fg": "#C2D8F2",
-            "bg": "#E8EFF9"
+          "Important": {
+            "light": {
+              "fg": "#C2D8F2",
+              "bg": "#E8EFF9"
+            },
+            "dark": {
+              "fg": "#385570",
+              "bg": "#2B3540"
+            }
           },
-          "dark": {
-            "fg": "#385570",
-            "bg": "#2B3540"
+          "ErrorStripeMark": {
+            "light": {
+              "fg": "#B6D2F2"
+            },
+            "dark": {
+              "fg": "#43698D"
+            }
           }
         },
         "Conflict": {
-          "light": {
-            "fg": "#FFD5CC",
-            "bg": "#FCEFEC"
+          "Important": {
+            "light": {
+              "fg": "#FFD5CC",
+              "bg": "#FCEFEC"
+            },
+            "dark": {
+              "fg": "#45302B",
+              "bg": "#2D2626"
+            }
           },
-          "dark": {
-            "fg": "#45302B",
-            "bg": "#2D2626"
+          "ErrorStripeMark": {
+            "light": {
+              "fg": "#FFC8BD"
+            },
+            "dark": {
+              "fg": "#8F5247"
+            }
           }
         },
         "Deleted": {
-          "light": {
-            "bg": "#D6D6D6"
+          "Important": {
+            "light": {
+              "bg": "#D6D6D6"
+            },
+            "dark": {
+              "bg": "#484A4A"
+            }
           },
-          "dark": {
-            "bg": "#484A4A"
+          "ErrorStripeMark": {
+            "light": {
+              "fg": "#C8C8C8"
+            },
+            "dark": {
+              "fg": "#656E76"
+            }
           }
         },
         "Inserted": {
-          "light": {
-            "bg": "#BEE6BE"
+          "Important": {
+            "light": {
+              "bg": "#BEE6BE"
+            },
+            "dark": {
+              "bg": "#294436"
+            }
           },
-          "dark": {
-            "bg": "#294436"
+          "ErrorStripeMark": {
+            "light": {
+              "fg": "#AADEAA"
+            },
+            "dark": {
+              "fg": "#447152"
+            }
           }
         }
       },
@@ -912,8 +982,8 @@
       },
       "Conceal": "General|Code|LineNumber",
       "CurSearch": {
-        "bg": "DiffMerge|ChangedLines|Changed.fg",
-        "fg": "General|SearchResults|TextSearchResult.fg"
+        "bg": "DiffMerge|ChangedLines|Changed|Important.fg",
+        "fg": "General|SearchResults|TextSearchResult|Default.fg"
       },
       "Cursor": "General|Editor|Caret",
       "lCursor": "General|Editor|Caret",
@@ -922,16 +992,16 @@
       "CursorLine": "General|Editor|CaretRow",
       "Directory": "Normal",
       "DiffAdd": {
-        "bg": "DiffMerge|ChangedLines|Inserted.bg"
+        "bg": "DiffMerge|ChangedLines|Inserted|Important.bg"
       },
       "DiffChange": {
-        "bg": "DiffMerge|ChangedLines|Changed.bg"
+        "bg": "DiffMerge|ChangedLines|Changed|Important.bg"
       },
       "DiffDelete": {
-        "bg": "DiffMerge|ChangedLines|Deleted.bg"
+        "bg": "DiffMerge|ChangedLines|Deleted|Important.bg"
       },
       "DiffText": {
-        "bg": "DiffMerge|ChangedLines|Changed.fg"
+        "bg": "DiffMerge|ChangedLines|Changed|Important.fg"
       },
       "EndOfBuffer": "",
       "TermCursor": "",
@@ -944,7 +1014,7 @@
         "fg": "General|Text|DefaultText"
       },
       "IncSearch": {
-        "bg": "DiffMerge|ChangedLines|Changed.fg"
+        "bg": "DiffMerge|ChangedLines|Changed|Important.fg"
       },
       "Substitute": "",
       "LineNr": "General|Code|LineNumber",
@@ -985,8 +1055,8 @@
       "PmenuSbar": "",
       "PmenuThumb": "General|Editor|VerticalScrollbar|Thumb",
       "Question": "ConsoleColors|Console|UserInput",
-      "QuickFixLine": "General|ErrorsAndWarnings|Warning",
-      "Search": "General|SearchResults|TextSearchResult",
+      "QuickFixLine": "General|ErrorsAndWarnings|Warning|Default",
+      "Search": "General|SearchResults|TextSearchResult|Default",
       "SnippetTabstop": "",
       "SpecialKey": "General|Text|Whitespaces",
       "SpellBad": "General|ErrorsAndWarnings|Typo",
@@ -1037,7 +1107,7 @@
       "Label": "LanguageDefaults|Keyword",
       "Operator": {},
       "Keyword": "LanguageDefaults|Keyword",
-      "Exception": "General|ErrorsAndWarnings|Error",
+      "Exception": "General|ErrorsAndWarnings|Error|Default",
       "PreProc": "Cpp|Preprocessor|Directive",
       "Include": "Cpp|Preprocessor|Directive",
       "Define": "Cpp|Preprocessor|Directive",
@@ -1057,24 +1127,24 @@
       "Debug": "LanguageDefaults|Keyword",
       "Underlined": "General|Hyperlinks|Inactive",
       "Ignore": {},
-      "Error": "General|ErrorsAndWarnings|Error",
+      "Error": "General|ErrorsAndWarnings|Error|Default",
       "Todo": "General|Code|TODODefaults",
       "Added": {
-        "bg": "DiffMerge|ChangedLines|Inserted.bg"
+        "bg": "DiffMerge|ChangedLines|Inserted|Important.bg"
       },
       "Changed": {
-        "bg": "DiffMerge|ChangedLines|Changed.bg"
+        "bg": "DiffMerge|ChangedLines|Changed|Important.bg"
       },
       "Removed": {
-        "bg": "DiffMerge|ChangedLines|Deleted.bg"
+        "bg": "DiffMerge|ChangedLines|Deleted|Important.bg"
       }
     },
     "Builtin.Diagnostic": {
       "DiagnosticError": {
-        "fg": "General|ErrorsAndWarnings|Error.sp"
+        "fg": "General|ErrorsAndWarnings|Error|Default.sp"
       },
       "DiagnosticWarn": {
-        "fg": "General|ErrorsAndWarnings|Warning.sp"
+        "fg": "General|ErrorsAndWarnings|Warning|Default.sp"
       },
       "DiagnosticInfo": {
         "fg": "ConsoleColors|LogConsole|Verbose"
@@ -1090,8 +1160,8 @@
       "DiagnosticVirtualTextInfo": "",
       "DiagnosticVirtualTextHint": "",
       "DiagnosticVirtualTextOk": "",
-      "DiagnosticUnderlineError": "General|ErrorsAndWarnings|Error",
-      "DiagnosticUnderlineWarn": "General|ErrorsAndWarnings|Warning",
+      "DiagnosticUnderlineError": "General|ErrorsAndWarnings|Error|Default",
+      "DiagnosticUnderlineWarn": "General|ErrorsAndWarnings|Warning|Default",
       "DiagnosticUnderlineInfo": {
         "sp": "ConsoleColors|LogConsole|Verbose.fg",
         "underline": true
@@ -1145,7 +1215,7 @@
       "LspInfoBorder": "Normal",
       "healthError": "Error",
       "healthSuccess": "DiagnosticOk",
-      "healthWarning": "General|ErrorsAndWarnings|Warning"
+      "healthWarning": "General|ErrorsAndWarnings|Warning|Default"
     },
     "Custom": {
       "General_Editor_Guides_VisualGuides": "General|Editor|Guides|VisualGuides",
@@ -1217,8 +1287,60 @@
       "@lsp.typemod.variable.global.lua": "Lua|Variables|GlobalVariable",
       "@lsp.typemod.property.declaration.lua": "Lua|Comments|DocComment"
     },
-    "Plugin.rcarriga/nvim-notify":{
+    "Plugin.rcarriga/nvim-notify": {
       "NotifyBackground": "General|Editor|NotificationBackground"
+    },
+    "Plugin.petertriho/nvim-scrollbar": {
+      "ScrollbarHandle": "General|Editor|VerticalScrollbar|Thumb",
+      "ScrollbarCursorHandle": "ScrollbarHandle",
+      "ScrollbarCursor": {},
+      "ScrollbarSearchHandle": {
+        "fg": "General|SearchResults|TextSearchResult|ErrorStripeMark",
+        "bg": "General|Editor|VerticalScrollbar|Thumb"
+      },
+      "ScrollbarSearch": "General|SearchResults|TextSearchResult|ErrorStripeMark",
+      "ScrollbarErrorHandle": {
+        "fg": "General|ErrorsAndWarnings|Error|ErrorStripeMark",
+        "bg": "General|Editor|VerticalScrollbar|Thumb"
+      },
+      "ScrollbarError": {
+        "fg": "General|ErrorsAndWarnings|Error|ErrorStripeMark"
+      },
+      "ScrollbarWarnHandle": {
+        "fg": "General|ErrorsAndWarnings|Warning|ErrorStripeMark",
+        "bg": "General|Editor|VerticalScrollbar|Thumb"
+      },
+      "ScrollbarWarn": {
+        "fg": "General|ErrorsAndWarnings|Warning|ErrorStripeMark"
+      },
+      "ScrollbarInfoHandle": "ScrollbarHandle",
+      "ScrollbarInfo": {
+        "fg": "ConsoleColors|LogConsole|Verbose"
+      },
+      "ScrollbarHintHandle": {
+        "fg": "General|ErrorsAndWarnings|WeakWarning.sp",
+        "bg": "General|Editor|VerticalScrollbar|Thumb"
+      },
+      "ScrollbarHint": {
+        "fg": "General|ErrorsAndWarnings|WeakWarning.sp"
+      },
+      "ScrollbarMiscHandle": "ScrollbarHandle",
+      "ScrollbarMisc": {},
+      "ScrollbarGitAdd": "DiffMerge|ChangedLines|Inserted|ErrorStripeMark",
+      "ScrollbarGitAddHandle": {
+        "fg": "DiffMerge|ChangedLines|Inserted|ErrorStripeMark.fg",
+        "bg": "General|Editor|VerticalScrollbar|Thumb"
+      },
+      "ScrollbarGitChange": "DiffMerge|ChangedLines|Changed|ErrorStripeMark",
+      "ScrollbarGitChangeHandle": {
+        "fg": "DiffMerge|ChangedLines|Changed|ErrorStripeMark.fg",
+        "bg": "General|Editor|VerticalScrollbar|Thumb"
+      },
+      "ScrollbarGitDelete": "DiffMerge|ChangedLines|Deleted|ErrorStripeMark",
+      "ScrollbarGitDeleteHandle": {
+        "fg": "DiffMerge|ChangedLines|Deleted|ErrorStripeMark.fg",
+        "bg": "General|Editor|VerticalScrollbar|Thumb"
+      }
     }
   }
 }
