@@ -99,7 +99,14 @@
           }
         },
         "GutterBackground": null,
-        "NotificationBackground": null,
+        "NotificationBackground": {
+          "light": {
+            "bg": "#FFF8E3"
+          },
+          "dark": {
+            "bg": "#25324D"
+          }
+        },
         "SelectionBackground": {
           "light": {
             "bg": "#A6D2FF"
@@ -1143,7 +1150,8 @@
     "Custom": {
       "General_Editor_Guides_VisualGuides": "General|Editor|Guides|VisualGuides",
       "General_Editor_Guides_HardWrapGuide": "General|Editor|Guides|HardWrapGuide",
-      "General_Text_DefaultText": "General|Text|DefaultText"
+      "General_Text_DefaultText": "General|Text|DefaultText",
+      "General_Editor_NotificationBackground": "General|Editor|NotificationBackground"
     },
     "Treesitter.Cpp": {
       "@keyword.import.c": "Cpp|Preprocessor|Directive",
@@ -1208,6 +1216,9 @@
       "@lsp.typemod.function.global.lua": "Lua|Variables|GlobalFunction",
       "@lsp.typemod.variable.global.lua": "Lua|Variables|GlobalVariable",
       "@lsp.typemod.property.declaration.lua": "Lua|Comments|DocComment"
+    },
+    "Plugin.rcarriga/nvim-notify":{
+      "NotifyBackground": "General|Editor|NotificationBackground"
     }
   }
 }
