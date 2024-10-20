@@ -1,4 +1,4 @@
-# JB for Neovim
+# 🎨 JB for Neovim
 
 <p>Color scheme for Neovim, inspired by JetBrains IDEs.</p>
 
