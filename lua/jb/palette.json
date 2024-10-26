@@ -2,8 +2,42 @@
   "colors": {
     "General": {
       "Code": {
-        "IdentifierUnderCaret": null,
-        "IdentifierUnderCaretWrite": null,
+        "IdentifierUnderCaret": {
+          "Default": {
+            "light": {
+              "bg": "#EDEBFC"
+            },
+            "dark": {
+              "bg": "#373B39"
+            }
+          },
+          "ErrorStripeMark": {
+            "light": {
+              "fg": "#D0A1FF"
+            },
+            "dark": {
+              "fg": "#5B786A"
+            }
+          }
+        },
+        "IdentifierUnderCaretWrite": {
+          "Default": {
+            "light": {
+              "bg": "#FCE8F4"
+            },
+            "dark": {
+              "bg": "#402F33"
+            }
+          },
+          "ErrorStripeMark": {
+            "light": {
+              "fg": "#F0A8D2"
+            },
+            "dark": {
+              "fg": "#BA6387"
+            }
+          }
+        },
         "InjectedLanguageFragment": null,
         "LineNumber": {
           "light": {
@@ -150,7 +184,14 @@
           }
         },
         "DeprecatedSymbolMarkedForRemoval": null,
-        "DuplicateFromServer": null,
+        "DuplicateFromServer": {
+          "light": {
+            "bg": "#F5F7F0"
+          },
+          "dark": {
+            "bg": "#5E5339"
+          }
+        },
         "Error": {
           "Default": {
             "light": {
@@ -622,6 +663,16 @@
       },
       "TemplateLanguage": null
     },
+    "CodeWithMe": {
+      "UserOneSelection": {
+        "light": {
+          "bg": "#E3F7E7"
+        },
+        "dark": {
+          "bg": "#375239"
+        }
+      }
+    },
     "ConsoleColors": {
       "ANSIColors": {
         "Black": null,
@@ -1030,7 +1081,10 @@
       "ModeMsg": {
         "fg": "General|Text|DefaultText"
       },
-      "MsgArea": "General|PopupsAndHints|Completion",
+      "MsgArea": {
+        "bg": "Custom|StatusBar.bg",
+        "fg": "General|Text|DefaultText"
+      },
       "MsgSeparator": "",
       "MoreMsg": "ConsoleColors|LogConsole|Info",
       "NonText": "",
@@ -1203,9 +1257,9 @@
       "LspDiagnosticsSignWarning": "DiagnosticSignWarn",
       "LspDiagnosticsSignInformation": "DiagnosticSignInfo",
       "LspDiagnosticsSignHint": "DiagnosticSignHint",
-      "LspReferenceText": "DiffAdd",
-      "LspReferenceRead": "DiffAdd",
-      "LspReferenceWrite": "DiffAdd",
+      "LspReferenceText": "CodeWithMe|UserOneSelection",
+      "LspReferenceRead": "General|Code|IdentifierUnderCaret|Default",
+      "LspReferenceWrite": "General|Code|IdentifierUnderCaretWrite|Default",
       "LspInlayHint": {
         "fg": "LanguageDefaults|InlineHints|Default"
       },
