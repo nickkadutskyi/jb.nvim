@@ -120,8 +120,22 @@
               "fg": "#EBECF0"
             }
           },
-          "IndentGuide": null,
-          "IndentGuideSelected": null,
+          "IndentGuide": {
+            "light": {
+              "fg": "#EBECF0"
+            },
+            "dark": {
+              "fg": "#313438"
+            }
+          },
+          "IndentGuideSelected": {
+            "light": {
+              "fg": "#AEB3C2"
+            },
+            "dark": {
+              "fg": "#666870"
+            }
+          },
           "MatchedBraceGuide": null,
           "VisualGuides": {
             "dark": {
@@ -468,7 +482,7 @@
         }
       },
       "Classes": {
-        "ClassName": null,
+        "ClassName": "LanguageDefaults|Identifiers|Default",
         "ClassReference": "LanguageDefaults|Identifiers|Default",
         "InstanceField": {
           "light": {
@@ -1024,6 +1038,61 @@
           }
         }
       }
+    },
+    "PHP": {
+      "Attributes": null,
+      "BracesAndOperators": {
+        "Braces": "LanguageDefaults|BracesAndOperators|Braces",
+        "Brackets": "LanguageDefaults|BracesAndOperators|Brackets",
+        "Comma": "LanguageDefaults|BracesAndOperators|Comma",
+        "Operators": "LanguageDefaults|BracesAndOperators|OperationSign",
+        "Parentheses": "LanguageDefaults|BracesAndOperators|Parentheses",
+        "Semicolon": "LanguageDefaults|BracesAndOperators|Semicolon"
+      },
+      "ClassesAndProperties": {
+        "Class": "LanguageDefaults|Classes|ClassName",
+        "Instance Property": null,
+        "Interface": null,
+        "Private Instance Property": null,
+        "Protected Instance Property": null,
+        "Static Property": null
+      },
+      "Comments": null,
+      "DQLBuilder": null,
+      "FunctionsAndMethods": {
+        "Declaration": null,
+        "FunctionCall": null,
+        "InstanceMethodCall": null,
+        "Parameter": null,
+        "PrivateInstanceMethodCall": null,
+        "ProtectedInstanceMethod Call": null,
+        "StaticMethodCall": "LanguageDefaults|Classes|StaticMethod"
+      },
+      "Heredoc": null,
+      "Identifiers": {
+        "ThisVariable": null,
+        "AliasReference": null,
+        "Constant": null,
+        "Default": "LanguageDefaults|Identifiers|Default",
+        "GotoLabel": null,
+        "MagicMemberAccess": null,
+        "PredefinedSymbols": null,
+        "PrimitiveTypeHint": null,
+        "Variable": null,
+        "VariableVariable": null
+      },
+      "Keywords": "LanguageDefaults|Keyword",
+      "NamedArguments": null,
+      "Numbers": null,
+      "PHPCode": {
+        "Background": null,
+        "Tags": "LanguageDefaults|Keyword"
+      },
+      "PHPDOC": null,
+      "SemanticHighlighting": null,
+      "ShellCommand": null,
+      "Strings": null,
+      "UnknownCharacter": null
     }
   },
   "highlights": {
@@ -1341,6 +1410,21 @@
       "@lsp.typemod.variable.global.lua": "Lua|Variables|GlobalVariable",
       "@lsp.typemod.property.declaration.lua": "Lua|Comments|DocComment"
     },
+    "Treesitter.Nix": {},
+    "Semantic.Nix": {
+      "@lsp.type.comment.nix": null
+    },
+    "Treesitter.PHP": {
+      "@tag.php": "PHP|PHPCode|Tags",
+      "@keyword.type.php": "PHP|Keywords",
+      "@keyword.import.php": "PHP|Keywords",
+      "@keyword.operator.php": "PHP|Keywords",
+      "@module.php": "PHP|Identifiers|Default",
+      "@punctuation.bracket.php": "PHP|BracesAndOperators|Braces",
+      "@punctuation.delimiter.php": "PHP|BracesAndOperators|Operators",
+      "@type.php": "PHP|ClassesAndProperties|Class",
+      "@type.definition.php": "PHP|ClassesAndProperties|Class"
+    },
     "Plugin.rcarriga/nvim-notify": {
       "NotifyBackground": "General|Editor|NotificationBackground"
     },
@@ -1395,6 +1479,10 @@
         "fg": "DiffMerge|ChangedLines|Deleted|ErrorStripeMark.fg",
         "bg": "General|Editor|VerticalScrollbar|Thumb"
       }
+    },
+    "Plugin.lukas-reineke/indent-blankline.nvim": {
+      "IblIndent": "General|Editor|Guides|IndentGuide",
+      "IblScope": "General|Editor|Guides|IndentGuideSelected"
     }
   }
 }
