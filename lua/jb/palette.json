@@ -890,7 +890,59 @@
       "ValidStringEscape": null
     },
     "VCS": {
-      "EditorGutter": null,
+      "EditorGutter": {
+        "AddedIgnoredLinesBorder": {
+          "light": {
+            "fg": "#7FC784"
+          },
+          "dark": {
+            "fg": "#549159"
+          }
+        },
+        "AddedLines": {
+          "light": {
+            "fg": "#7FC784"
+          },
+          "dark": {
+            "fg": "#549159"
+          }
+        },
+        "Border": null,
+        "ChangedLinesPopup": null,
+        "DeletedIgnoredLinesBorder": {
+          "light": {
+            "fg": "#767A8A"
+          },
+          "dark": {
+            "fg": "#868A91"
+          }
+        },
+        "DeletedLines": {
+          "light": {
+            "fg": "#767A8A"
+          },
+          "dark": {
+            "fg": "#868A91"
+          }
+        },
+        "ModifiedIgnoredLinesBorder": {
+          "light": {
+            "fg": "#88ADF7"
+          },
+          "dark": {
+            "fg": "#375FAD"
+          }
+        },
+        "ModifiedLines": {
+          "light": {
+            "fg": "#88ADF7"
+          },
+          "dark": {
+            "fg": "#375FAD"
+          }
+        },
+        "WhitespaceModifiedLines": null
+      },
       "VCSAnnotations": null
     },
     "Custom": {
@@ -1364,8 +1416,70 @@
       "@property.json": "JSON|PropertyKey",
       "@constant.builtin.json": "JSON|Keyword"
     },
-    "Plugin.GitSigns": {
-      "GitSignsCurrentLineBlame": "GitToolBoxColors|EditorInlineBlame"
+    "Plugin.lewis6991/gitsigns.nvim": {
+      "GitGutterAdd": "VCS|EditorGutter|AddedLines",
+      "SignifySignAdd": "VCS|EditorGutter|AddedLines",
+      "DiffAddedGutter": "VCS|EditorGutter|AddedLines",
+      "GitSignsAdd": "VCS|EditorGutter|AddedLines",
+      "GitSignsStagedAdd": "VCS|EditorGutter|AddedIgnoredLinesBorder",
+      "GitGutterChange": "VCS|EditorGutter|ModifiedLines",
+      "SignifySignChange": "VCS|EditorGutter|ModifiedLines",
+      "DiffModifiedGutter": "VCS|EditorGutter|ModifiedLines",
+      "GitSignsChange": "VCS|EditorGutter|ModifiedLines",
+      "GitSignsStagedChange": "VCS|EditorGutter|ModifiedIgnoredLinesBorder",
+      "GitGutterDelete": "VCS|EditorGutter|DeletedLines",
+      "SignifySignDelete": "VCS|EditorGutter|DeletedLines",
+      "DiffRemovedGutter": "VCS|EditorGutter|DeletedLines",
+      "GitSignsDelete": "VCS|EditorGutter|DeletedLines",
+      "GitSignsStagedDelete": "VCS|EditorGutter|DeletedIgnoredLinesBorder",
+      "GitSignsChangedelete": "VCS|EditorGutter|ModifiedLines",
+      "GitSignsStagedChangedelete": "VCS|EditorGutter|ModifiedIgnoredLinesBorder",
+      "GitSignsTopdelete": "VCS|EditorGutter|DeletedLines",
+      "GitSignsStagedTopdelete": "VCS|EditorGutter|DeletedIgnoredLinesBorder",
+      "GitSignsUntracked": "VCS|EditorGutter|AddedLines",
+      "GitSignsAddNr": "",
+      "GitSignsStagedAddNr": "",
+      "GitSignsChangeNr": "",
+      "GitSignsStagedChangeNr": "",
+      "GitSignsDeleteNr": "",
+      "GitSignsStagedDeleteNr": "",
+      "GitSignsChangedeleteNr": "",
+      "GitSignsStagedChangedeleteNr": "",
+      "GitSignsTopdeleteNr": "",
+      "GitSignsStagedTopdeleteNr": "",
+      "GitSignsUntrackedNr": "",
+      "GitSignsAddLn": "",
+      "GitSignsStagedAddLn": "",
+      "GitSignsChangeLn": "",
+      "GitSignsStagedChangeLn": "",
+      "GitSignsChangedeleteLn": "",
+      "GitSingsStagedChangedeleteLn": "",
+      "GitSignsTopdeleteLn": "",
+      "GitSignsStagedTopdeleteLn": "",
+      "GitSignsUntrackedLn": "",
+      "GitSignsAddCul": "",
+      "GitSignsStagedAddCul": "",
+      "GitSignsChangeCul": "",
+      "GitSignsStagedChangeCul": "",
+      "GitSignsDeleteCul": "",
+      "GitSignsStagedDeleteCul": "",
+      "GitSignsChangedeleteCul": "",
+      "GitSingsStagedChangedeleteCul": "",
+      "GitSignsTopdeleteCul": "",
+      "GitSignsStagedTopdeleteCul": "",
+      "GitSignsUntrackedCul": "",
+      "GitSignsAddPreview": "DiffMerge|ChangedLines|Inserted|Important",
+      "GitSignsDeletePreview": "DiffMerge|ChangedLines|Deleted|Important",
+      "GitSignsCurrentLineBlame": "GitToolBoxColors|EditorInlineBlame",
+      "GitSignsAddInline": "DiffMerge|ChangedLines|Inserted|Important",
+      "GitSignsDeleteInline": "DiffMerge|ChangedLines|Deleted|Important",
+      "GitSignsChangeInline": "DiffMerge|ChangedLines|Changed|Important",
+      "GitSignsAddLnInline": "DiffMerge|ChangedLines|Inserted|Important",
+      "GitSignsChangeLnInline": "DiffMerge|ChangedLines|Changed|Important",
+      "GitSignsDeleteLnInline": "DiffMerge|ChangedLines|Deleted|Important",
+      "GitSignsDeleteVirtLn": "DiffMerge|ChangedLines|Deleted|Important",
+      "GitSignsDeleteVirtLnInLine": "DiffMerge|ChangedLines|Deleted|Important",
+      "GitSignsVirtLnum": ""
     },
     "Syntax.Lua": {
       "luaTable": "LanguageDefaults|BracesAndOperators|Braces",
