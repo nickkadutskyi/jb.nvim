@@ -402,12 +402,10 @@
         "BackgroundInReadOnlyFiles": null,
         "DefaultText": {
           "light": {
-            "fg": "#080808",
-            "bg": "#FFFFFF"
+            "fg": "#080808"
           },
           "dark": {
-            "fg": "#BCBEC4",
-            "bg": "#1E1F22"
+            "fg": "#BCBEC4"
           }
         },
         "DeletedText": null,
@@ -439,43 +437,43 @@
       "BadCharacter": null,
       "BracesAndOperators": {
         "Braces": {
-          "light": {},
+          "light": "General|Text|DefaultText",
           "dark": {
             "fg": "#BCBEC4"
           }
         },
         "Brackets": {
-          "light": {},
+          "light": "General|Text|DefaultText",
           "dark": {
             "fg": "#BCBEC4"
           }
         },
         "Comma": {
-          "light": {},
+          "light": "General|Text|DefaultText",
           "dark": {
             "fg": "#BCBEC4"
           }
         },
         "Dot": {
-          "light": {},
+          "light": "General|Text|DefaultText",
           "dark": {
             "fg": "#BCBEC4"
           }
         },
         "OperationSign": {
-          "light": {},
+          "light": "General|Text|DefaultText",
           "dark": {
             "fg": "#BCBEC4"
           }
         },
         "Parentheses": {
-          "light": {},
+          "light": "General|Text|DefaultText",
           "dark": {
             "fg": "#BCBEC4"
           }
         },
         "Semicolon": {
-          "light": {},
+          "light": "General|Text|DefaultText",
           "dark": {
             "fg": "#BCBEC4"
           }
@@ -625,7 +623,21 @@
           "fg": "#CF8E6D"
         }
       },
-      "Markup": null,
+      "Markup": {
+        "Attribute": {
+          "light": {
+            "fg": "#174AD4"
+          },
+          "dark": "LanguageDefaults|Identifiers|Default"
+        },
+        "Entity": null,
+        "Tag": {
+          "light": "General|Text|DefaultText",
+          "dark": {
+            "fg": "#BCBEC4"
+          }
+        }
+      },
       "Metadata": {
         "light": {
           "fg": "#9E880D"
@@ -783,7 +795,7 @@
           "light": {
             "fg": "#A66F00"
           },
-          "dark": {}
+          "dark": "General|Text|DefaultText"
         }
       },
       "Terminal": null
@@ -1037,6 +1049,38 @@
       },
       "ProjectView": null
     },
+    "HTML": {
+      "AttributeName": {
+        "light": "LanguageDefaults|Markup|Attribute",
+        "dark": {
+          "fg": "#BABABA"
+        }
+      },
+      "AttributeValue": "LanguageDefaults|String|StringText",
+      "Comment": null,
+      "CustomTagName": null,
+      "EntityReference": null,
+      "HTMLCode": null,
+      "InjectedLanguageFragment": null,
+      "Tag": {
+        "light": "LanguageDefaults|Markup|Tag",
+        "dark": {
+          "fg": "#D5B778"
+        }
+      },
+      "TagName": {
+        "light": "LanguageDefaults|Keyword",
+        "dark": {
+          "fg": "#D5B778"
+        }
+      },
+      "TagTreeLevel1": null,
+      "TagTreeLevel2": null,
+      "TagTreeLevel3": null,
+      "TagTreeLevel4": null,
+      "TagTreeLevel5": null,
+      "TagTreeLevel6": null
+    },
     "JSON": {
       "BlockComment": null,
       "Braces": null,
@@ -1065,8 +1109,8 @@
       },
       "ClassMembers": {
         "Field": {
-          "light": {},
-          "dark": {}
+          "light": "General|Text|DefaultText",
+          "dark": "General|Text|DefaultText"
         },
         "InstanceMethod": "LanguageDefaults|Classes|InstanceMethod",
         "StaticMethod": "LanguageDefaults|Classes|StaticMethod"
@@ -1149,7 +1193,14 @@
         "Declaration": null,
         "FunctionCall": null,
         "InstanceMethodCall": null,
-        "Parameter": null,
+        "Parameter": {
+          "light": {
+            "fg": "#660000"
+          },
+          "dark": {
+            "fg": "#9876AA"
+          }
+        },
         "PrivateInstanceMethodCall": null,
         "ProtectedInstanceMethod Call": null,
         "StaticMethodCall": "LanguageDefaults|Classes|StaticMethod"
@@ -1164,7 +1215,14 @@
         "MagicMemberAccess": null,
         "PredefinedSymbols": null,
         "PrimitiveTypeHint": null,
-        "Variable": null,
+        "Variable": {
+          "light": {
+            "fg": "#660000"
+          },
+          "dark": {
+            "fg": "#9876AA"
+          }
+        },
         "VariableVariable": null
       },
       "Keywords": "LanguageDefaults|Keyword",
@@ -1174,7 +1232,17 @@
         "Background": null,
         "Tags": "LanguageDefaults|Keyword"
       },
-      "PHPDOC": null,
+      "PHPDoc": {
+        "Identifier": "PHP|Identifiers|Default",
+        "Markup": null,
+        "Method Declaration": null,
+        "Parameter": "PHP|FunctionsAndMethods|Parameter",
+        "Property": null,
+        "Tag": "LanguageDefaults|Comments|DocComment|Tag",
+        "Template Type": null,
+        "Text": null,
+        "Variable": null
+      },
       "SemanticHighlighting": null,
       "ShellCommand": null,
       "Strings": null,
@@ -1233,25 +1301,19 @@
       "CursorLineFold": "CursorLineNr",
       "CursorLineSign": "CursorLineNr",
       "MatchParen": "General|Code|MatchedBrace",
-      "ModeMsg": {
-        "fg": "General|Text|DefaultText"
-      },
+      "ModeMsg": "General|Text|DefaultText",
       "MsgArea": "Custom|DialogWindow",
       "MsgSeparator": "",
       "MoreMsg": "Custom|DialogWindow",
       "NonText": "",
-      "Normal": {
-        "fg": "General|Text|DefaultText"
-      },
+      "Normal": "General|Text|DefaultText",
       "NormalFloat": "Normal",
       "FloatBorder": {
         "fg": "General|Editor|Caret.bg"
       },
       "FloatTitle": "",
       "FloatFooter": "",
-      "NormalNC": {
-        "fg": "General|Text|DefaultText"
-      },
+      "NormalNC": "General|Text|DefaultText",
       "Pmenu": "General|PopupsAndHints|Completion",
       "PmenuSel": "General|Editor|SelectionBackground",
       "PmenuKind": "",
@@ -1311,7 +1373,7 @@
       "Conditional": "LanguageDefaults|Keyword",
       "Repeat": "LanguageDefaults|Keyword",
       "Label": "LanguageDefaults|Keyword",
-      "Operator": {},
+      "Operator": "LanguageDefaults|BracesAndOperators|OperationSign",
       "Keyword": "LanguageDefaults|Keyword",
       "Exception": "General|ErrorsAndWarnings|Error|Default",
       "PreProc": "Cpp|Preprocessor|Directive",
@@ -1326,9 +1388,7 @@
       "Special": "LanguageDefaults|String|EscapeSequence|Valid",
       "SpecialChar": "LanguageDefaults|String|EscapeSequence|Valid",
       "Tag": "LanguageDefaults|Keyword",
-      "Delimiter": {
-        "fg": "General|Text|DefaultText"
-      },
+      "Delimiter": "General|Text|DefaultText",
       "SpecialComment": "LanguageDefaults|Keyword",
       "Debug": "LanguageDefaults|Keyword",
       "Underlined": "General|Hyperlinks|Inactive",
@@ -1436,6 +1496,12 @@
       "@constant.c": {
         "fg": "LanguageDefaults|Identifiers|Constant.fg"
       }
+    },
+    "Treesitter.HTML": {
+      "@tag.delimiter.html": "HTML|Tag",
+      "@tag.html": "HTML|TagName",
+      "@tag.attribute.html": "HTML|AttributeName",
+      "@string.html": "HTML|AttributeValue"
     },
     "Syntax.JSON": {
       "jsonKeyword": "JSON|PropertyKey",
@@ -1560,6 +1626,8 @@
       "@lsp.type.comment.nix": null
     },
     "Treesitter.PHP": {
+      "@variable.php": "PHP|Identifiers|Variable",
+      "@variable.parameter.php": "PHP|FunctionsAndMethods|Parameter",
       "@tag.php": "PHP|PHPCode|Tags",
       "@keyword.type.php": "PHP|Keywords",
       "@keyword.import.php": "PHP|Keywords",
@@ -1568,7 +1636,11 @@
       "@punctuation.bracket.php": "PHP|BracesAndOperators|Braces",
       "@punctuation.delimiter.php": "PHP|BracesAndOperators|Operators",
       "@type.php": "PHP|ClassesAndProperties|Class",
-      "@type.definition.php": "PHP|ClassesAndProperties|Class"
+      "@type.definition.php": "PHP|ClassesAndProperties|Class",
+      "@attribute.phpdoc": "PHP|PHPDoc|Tag",
+      "@type.phpdoc": "PHP|PHPDoc|Identifier",
+      "@variable.phpdoc": "PHP|PHPDoc|Parameter",
+      "@keyword.phpdoc": null
     },
     "Plugin.rcarriga/nvim-notify": {
       "NotifyBackground": "General|Editor|NotificationBackground"
