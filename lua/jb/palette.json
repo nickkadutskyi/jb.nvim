@@ -955,6 +955,38 @@
           "fg": "#9A9CA4",
           "bg": "#2B2D30"
         }
+      },
+      "DialogWindow": {
+        "light": {
+          "fg": "#000000",
+          "bg": "#F7F8FA"
+        },
+        "dark": {
+          "fg": "#dee0e4",
+          "bg": "#2B2D30"
+        }
+      },
+      "DialogWindowDefaultOption": {
+        "light": {
+          "bg": "#3b78e9",
+          "fg": "#FFFFFF",
+          "underline": true
+        },
+        "dark": {
+          "bg": "#3b78e9",
+          "fg": "#FFFFFF",
+          "underline": true
+        }
+      },
+      "TabLine": {
+        "light": {
+          "fg": "#000000",
+          "bg": "#f7f8fa"
+        },
+        "dark": {
+          "fg": "#cbcdd3",
+          "bg": "#2b2d30"
+        }
       }
     },
     "Cpp": {
@@ -1202,12 +1234,9 @@
       "ModeMsg": {
         "fg": "General|Text|DefaultText"
       },
-      "MsgArea": {
-        "bg": "Custom|StatusBar.bg",
-        "fg": "General|Text|DefaultText"
-      },
+      "MsgArea": "Custom|DialogWindow",
       "MsgSeparator": "",
-      "MoreMsg": "ConsoleColors|LogConsole|Info",
+      "MoreMsg": "Custom|DialogWindow",
       "NonText": "",
       "Normal": {
         "fg": "General|Text|DefaultText"
@@ -1229,7 +1258,7 @@
       "PmenuExtraSel": "",
       "PmenuSbar": "",
       "PmenuThumb": "General|Editor|VerticalScrollbar|Thumb",
-      "Question": "ConsoleColors|Console|UserInput",
+      "Question": "Custom|DialogWindowDefaultOption",
       "QuickFixLine": "General|ErrorsAndWarnings|Warning|Default",
       "Search": "General|SearchResults|TextSearchResult|Default",
       "SnippetTabstop": "",
