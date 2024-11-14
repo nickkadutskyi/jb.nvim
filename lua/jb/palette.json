@@ -969,11 +969,13 @@
       "DialogWindowDefaultOption": {
         "light": {
           "bg": "#3b78e9",
+          "sp": "#F7F8FA",
           "fg": "#FFFFFF",
           "underline": true
         },
         "dark": {
           "bg": "#3b78e9",
+          "sp": "#2B2D30",
           "fg": "#FFFFFF",
           "underline": true
         }
