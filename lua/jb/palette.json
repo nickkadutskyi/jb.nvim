@@ -593,7 +593,13 @@
           }
         },
         "GlobalVariable": "LanguageDefaults|Identifiers|Default",
-        "Label": null,
+        "Label": {
+          "light": {
+            "sp": "#808080",
+            "underline": true
+          },
+          "dark": "LanguageDefaults|Identifiers|Default"
+        },
         "LocalVariable": "LanguageDefaults|Identifiers|Default",
         "Parameter": null,
         "PredefinedSymbol": null,
@@ -1003,6 +1009,38 @@
         }
       }
     },
+    "BashSupportPro": {
+      "Arithmetic": null,
+      "Backquote": null,
+      "BinaryData": null,
+      "Braces": null,
+      "Commands": {
+        "Builtin": null,
+        "GenericCommand": {
+          "light": {
+            "fg": "#0073BF"
+          },
+          "dark": {
+            "fg": "#C57633"
+          }
+        },
+        "SubshellCommand": null
+      },
+      "Comments": null,
+      "ConditionalOperators": null,
+      "FunctionDeclaration": null,
+      "HereDocument": null,
+      "Keyword": null,
+      "PipelineOperators": null,
+      "Redirection": null,
+      "StringLiterals": {
+        "RawString": null,
+        "String": null,
+        "UnquotedWord": "LanguageDefaults|Identifiers|Default"
+      },
+      "Variables": null,
+      "Zsh": null
+    },
     "Cpp": {
       "BadCharacter": null,
       "BracesAndOperators": null,
@@ -1170,7 +1208,7 @@
       }
     },
     "PHP": {
-      "Attributes": null,
+      "Attributes": "LanguageDefaults|Metadata",
       "BracesAndOperators": {
         "Braces": "LanguageDefaults|BracesAndOperators|Braces",
         "Brackets": "LanguageDefaults|BracesAndOperators|Brackets",
@@ -1181,13 +1219,13 @@
       },
       "ClassesAndProperties": {
         "Class": "LanguageDefaults|Classes|ClassName",
-        "Instance Property": null,
+        "InstanceProperty": "LanguageDefaults|Classes|InstanceField",
         "Interface": null,
-        "Private Instance Property": null,
-        "Protected Instance Property": null,
-        "Static Property": null
+        "PrivateInstanceProperty": null,
+        "ProtectedInstanceProperty": null,
+        "StaticProperty": "LanguageDefaults|Classes|StaticField"
       },
-      "Comments": null,
+      "Comments": "LanguageDefaults|Comments|LineComment",
       "DQLBuilder": null,
       "FunctionsAndMethods": {
         "Declaration": null,
@@ -1205,11 +1243,20 @@
         "ProtectedInstanceMethod Call": null,
         "StaticMethodCall": "LanguageDefaults|Classes|StaticMethod"
       },
-      "Heredoc": null,
+      "Heredoc": {
+        "HeredocContent": "LanguageDefaults|String|StringText",
+        "HeredocID": "LanguageDefaults|Identifiers|Label"
+      },
       "Identifiers": {
         "ThisVariable": null,
         "AliasReference": null,
-        "Constant": null,
+        "Constant": {
+          "light": "LanguageDefaults|Identifiers|Constant",
+          "dark": {
+            "fg": "#9876AA",
+            "italic": true
+          }
+        },
         "Default": "LanguageDefaults|Identifiers|Default",
         "GotoLabel": null,
         "MagicMemberAccess": null,
@@ -1226,7 +1273,14 @@
         "VariableVariable": null
       },
       "Keywords": "LanguageDefaults|Keyword",
-      "NamedArguments": null,
+      "NamedArguments": {
+        "light": {
+          "fg": "#4A86E8"
+        },
+        "dark": {
+          "fg": "#467CDA"
+        }
+      },
       "Numbers": null,
       "PHPCode": {
         "Background": null,
@@ -1237,10 +1291,26 @@
         "Markup": null,
         "Method Declaration": null,
         "Parameter": "PHP|FunctionsAndMethods|Parameter",
-        "Property": null,
+        "Property": "PHP|ClassesAndProperties|InstanceProperty",
         "Tag": "LanguageDefaults|Comments|DocComment|Tag",
-        "Template Type": null,
-        "Text": null,
+        "TemplateType": {
+          "light": {
+            "fg": "#007E8A"
+          },
+          "dark": {
+            "fg": "#16BAAC"
+          }
+        },
+        "Text": {
+          "light": {
+            "fg": "#8C8C8C",
+            "italic": true
+          },
+          "dark": {
+            "fg": "#5F826B",
+            "italic": true
+          }
+        },
         "Variable": null
       },
       "SemanticHighlighting": null,
@@ -1489,6 +1559,10 @@
       "General_Text_DefaultText": "General|Text|DefaultText",
       "General_Editor_NotificationBackground": "General|Editor|NotificationBackground"
     },
+    "Treesitter.Bash": {
+      "@function.call.bash": "BashSupportPro|Commands|GenericCommand",
+      "@variable.parameter.bash": "BashSupportPro|StringLiterals|UnquotedWord"
+    },
     "Treesitter.Cpp": {
       "@keyword.import.c": "Cpp|Preprocessor|Directive",
       "@keyword.directive": "Cpp|Preprocessor|Directive",
@@ -1626,8 +1700,16 @@
       "@lsp.type.comment.nix": null
     },
     "Treesitter.PHP": {
+      "@comment.php": {
+        "fg": "PHP|Comments.fg",
+        "italic": true
+      },
+      "@comment.documentation.php": "PHP|PHPDoc|Text",
+      "@attribute.php": "PHP|Attributes",
       "@variable.php": "PHP|Identifiers|Variable",
       "@variable.parameter.php": "PHP|FunctionsAndMethods|Parameter",
+      "@variable.member.php": "PHP|ClassesAndProperties|InstanceProperty",
+      "@variable.member.static.php": "PHP|ClassesAndProperties|StaticProperty",
       "@tag.php": "PHP|PHPCode|Tags",
       "@keyword.type.php": "PHP|Keywords",
       "@keyword.import.php": "PHP|Keywords",
@@ -1636,11 +1718,24 @@
       "@punctuation.bracket.php": "PHP|BracesAndOperators|Braces",
       "@punctuation.delimiter.php": "PHP|BracesAndOperators|Operators",
       "@type.php": "PHP|ClassesAndProperties|Class",
+      "@type.template.phpdoc": "PHP|PHPDoc|TemplateType",
       "@type.definition.php": "PHP|ClassesAndProperties|Class",
       "@attribute.phpdoc": "PHP|PHPDoc|Tag",
       "@type.phpdoc": "PHP|PHPDoc|Identifier",
       "@variable.phpdoc": "PHP|PHPDoc|Parameter",
-      "@keyword.phpdoc": null
+      "@variable.parameter.phpdoc": "PHP|PHPDoc|Parameter",
+      "@variable.member.phpdoc": "PHP|PHPDoc|Property",
+      "@keyword.phpdoc": null,
+      "@label.php": "PHP|Heredoc|HeredocID",
+      "@property.php": "PHP|ClassesAndProperties|InstanceProperty",
+      "@property.static.php": "PHP|ClassesAndProperties|StaticProperty",
+      "@constructor.php": "PHP|Identifiers|Default",
+      "@variable.builtin.php": "",
+      "@constant.php": {
+        "fg": "PHP|Identifiers|Constant.fg",
+        "italic": true
+      },
+      "@variable.parameter.named.php": "PHP|NamedArguments"
     },
     "Plugin.rcarriga/nvim-notify": {
       "NotifyBackground": "General|Editor|NotificationBackground"
