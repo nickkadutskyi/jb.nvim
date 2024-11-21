@@ -1730,8 +1730,13 @@
       "@property.php": "PHP|ClassesAndProperties|InstanceProperty",
       "@property.static.php": "PHP|ClassesAndProperties|StaticProperty",
       "@constructor.php": "PHP|Identifiers|Default",
-      "@variable.builtin.php": "",
-      "@constant.php": {
+      "@variable.builtin.php": "PHP|Keywords",
+      "@constant.php": null,
+      "@constant.only.php": {
+        "fg": "PHP|Identifiers|Constant.fg",
+        "italic": true
+      },
+      "@constant.builtin.php": {
         "fg": "PHP|Identifiers|Constant.fg",
         "italic": true
       },

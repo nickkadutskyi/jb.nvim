@@ -29,7 +29,7 @@
 
 ; For static property access like SomeClass::$shared
 (scoped_property_access_expression
-  scope: (_) @type
+  scope: (_)
   name: (variable_name) @variable.member.static)
 
 ; For static property declarations like public static $shared
@@ -41,3 +41,31 @@
 ; Capture doc comments (/** ... */)
 ((comment) @comment.documentation
   (#match? @comment.documentation "^/\\*\\*"))
+
+; Redefined @constant to avoid matching `_GET` part in `$_GET` as a constant
+; and fixes `Type::A()` where `A` is captured as a constant
+((name) @constant.only
+  (#lua-match? @constant.only "^_?[A-Z][A-Z%d_]*$")
+  (#not-has-parent? @constant.only variable_name scoped_call_expression))
+
+(const_declaration
+  (const_element
+    (name) @constant.only))
+
+(namespace_use_clause
+  type: "const"
+  [
+    (name) @constant.only
+    (qualified_name
+      (name) @constant.only)
+    alias: (name) @constant.only
+  ])
+
+(class_constant_access_expression
+  .
+  [
+    (name)
+    (qualified_name
+      (name))
+  ]
+  (name) @constant.only)
