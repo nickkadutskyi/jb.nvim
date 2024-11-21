@@ -1,6 +1,6 @@
 local M = {}
 
-local util = require("jb.util")
+local utils = require("jb.utils")
 
 ---@type fun(t: table): number
 local function table_length(t)
@@ -30,7 +30,7 @@ end
 ---@type fun()
 function M.setup()
     local profile = vim.o.background -- 'dark' or 'light'
-    local palette = util.read_palette()
+    local palette = utils.read_palette()
     local colors = palette.colors
     local highlights = palette.highlights
     local hl_groups = {}
@@ -41,7 +41,7 @@ function M.setup()
             local hl = {}
             if type(attrs) == "string" and string.find(attrs, "|") ~= nil then
                 -- Handling paths
-                local props = util.get_hl_props(colors, attrs, profile)
+                local props = utils.get_hl_props(colors, attrs, profile)
                 if group == props.name then
                     hl = props.hl
                 else
@@ -64,7 +64,7 @@ function M.setup()
                     last_attr = attr
                     if type(value) == "string" and string.find(value, "|") ~= nil then
                         last_hl_name = string.gsub(value, "|", "_")
-                        local props = util.get_hl_props(colors, value, profile)
+                        local props = utils.get_hl_props(colors, value, profile)
                         hl[attr] = props.prop or props.hl[attr]
                     else
                         hl[attr] = value
@@ -88,6 +88,9 @@ function M.setup()
     for group, hl in pairs(set_hl_delayed) do
         vim.api.nvim_set_hl(0, group, hl)
     end
+
+    -- Set ProjectColor highlight group
+    vim.api.nvim_set_hl(0, "ProjectColor", utils.get_project_color_hl())
 end
 
 return M

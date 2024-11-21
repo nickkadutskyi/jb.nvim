@@ -1317,6 +1317,50 @@
       "ShellCommand": null,
       "Strings": null,
       "UnknownCharacter": null
+    },
+    "IdeaVim": {
+      "Modes": {
+        "Normal": {
+          "light": {
+            "bg": "#94a863",
+            "fg": "#FFFFFF"
+          },
+          "dark": {
+            "bg": "#94a863",
+            "fg": "#000000"
+          }
+        },
+        "Insert": {
+          "light": {
+            "bg": "#ecc180",
+            "fg": "#FFFFFF"
+          },
+          "dark": {
+            "bg": "#ecc180",
+            "fg": "#000000"
+          }
+        },
+        "Visual": {
+          "light": {
+            "bg": "#769eb3",
+            "fg": "#FFFFFF"
+          },
+          "dark": {
+            "bg": "#769eb3",
+            "fg": "#000000"
+          }
+        },
+        "Replace": {
+          "light": {
+            "bg": "#a44a45",
+            "fg": "#FFFFFF"
+          },
+          "dark": {
+            "bg": "#a44a45",
+            "fg": "#000000"
+          }
+        }
+      }
     }
   },
   "highlights": {
@@ -1557,7 +1601,12 @@
       "General_Editor_Guides_VisualGuides": "General|Editor|Guides|VisualGuides",
       "General_Editor_Guides_HardWrapGuide": "General|Editor|Guides|HardWrapGuide",
       "General_Text_DefaultText": "General|Text|DefaultText",
-      "General_Editor_NotificationBackground": "General|Editor|NotificationBackground"
+      "General_Editor_NotificationBackground": "General|Editor|NotificationBackground",
+      "IdeaVim_Modes_Normal": "IdeaVim|Modes|Normal",
+      "IdeaVim_Modes_Insert": "IdeaVim|Modes|Insert",
+      "IdeaVim_Modes_Visual": "IdeaVim|Modes|Visual",
+      "IdeaVim_Modes_Replace": "IdeaVim|Modes|Replace",
+      "Custom_TabLine": "Custom|TabLine"
     },
     "Treesitter.Bash": {
       "@function.call.bash": "BashSupportPro|Commands|GenericCommand",

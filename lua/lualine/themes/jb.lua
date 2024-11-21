@@ -1,0 +1,51 @@
+return {
+    normal = {
+        a = "ProjectColor",
+        b = "Custom_TabLine",
+        c = "StatusLine",
+        y = "StatusLine",
+        z = "IdeaVim_Modes_Normal",
+    },
+    insert = {
+        a = "ProjectColor",
+        b = "Custom_TabLine",
+        c = "StatusLine",
+        y = "StatusLine",
+        z = "IdeaVim_Modes_Insert",
+    },
+    visual = {
+        a = "ProjectColor",
+        b = "Custom_TabLine",
+        c = "StatusLine",
+        y = "StatusLine",
+        z = "IdeaVim_Modes_Visual",
+    },
+    replace = {
+        a = "ProjectColor",
+        b = "Custom_TabLine",
+        c = "StatusLine",
+        y = "StatusLine",
+        z = "IdeaVim_Modes_Replace",
+    },
+    command = {
+        a = "ProjectColor",
+        b = "Custom_TabLine",
+        c = "StatusLine",
+        y = "StatusLine",
+        z = "IdeaVim_Modes_Normal",
+    },
+    terminal = {
+        a = "ProjectColor",
+        b = "Custom_TabLine",
+        c = "StatusLine",
+        y = "StatusLine",
+        z = "IdeaVim_Modes_Insert",
+    },
+    inactive = {
+        a = "ProjectColor",
+        b = "Custom_TabLine",
+        c = "StatusLine",
+        y = "StatusLine",
+        z = "IdeaVim_Modes_Normal",
+    },
+}
