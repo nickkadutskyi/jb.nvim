@@ -1043,6 +1043,14 @@
             "fg": "#70AEFF"
           }
         },
+        "Renamed": {
+          "light": {
+            "fg": "#007C7C"
+          },
+          "dark": {
+            "fg": "#007C7C"
+          }
+        },
         "Unknown": {
           "light": {
             "fg": "#E88F89"
@@ -1707,6 +1715,7 @@
       "VCS_Merged": "VCS|FileStatusColors|Merged",
       "VCS_MergedWithConflicts": "VCS|FileStatusColors|MergedWithConflicts",
       "VCS_Modified": "VCS|FileStatusColors|Modified",
+      "VCS_Renamed": "VCS|FileStatusColors|Renamed",
       "VCS_Unknown": "VCS|FileStatusColors|Unknown",
       "VCS_Added_StatusLine": {
         "fg": "VCS|FileStatusColors|Added.fg",
@@ -1746,6 +1755,10 @@
       },
       "VCS_Modified_StatusLine": {
         "fg": "VCS|FileStatusColors|Modified.fg",
+        "bg": "Custom|TabLine.bg"
+      },
+      "VCS_Renamed_StatusLine": {
+        "fg": "VCS|FileStatusColors|Renamed.fg",
         "bg": "Custom|TabLine.bg"
       },
       "VCS_Unknown_StatusLine": {
