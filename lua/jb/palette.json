@@ -965,7 +965,7 @@
       "FileStatusColors": {
         "Added": {
           "light": {
-            "fg": "#73BD79"
+            "fg": "#0A7700"
           },
           "dark": {
             "fg": "#73BD79"
@@ -973,7 +973,7 @@
         },
         "Deleted": {
           "light": {
-            "fg": "#6F737A"
+            "fg": "#616161"
           },
           "dark": {
             "fg": "#6F737A"
@@ -981,7 +981,7 @@
         },
         "DeletedFromFileSystem": {
           "light": {
-            "fg": "#6F737A"
+            "fg": "#773895"
           },
           "dark": {
             "fg": "#6F737A"
@@ -989,7 +989,7 @@
         },
         "HaveChangedDescendants": {
           "light": {
-            "fg": "#70AEFF"
+            "fg": "#8AA4C8"
           },
           "dark": {
             "fg": "#70AEFF"
@@ -997,7 +997,7 @@
         },
         "HaveImmediateChangedChildren": {
           "light": {
-            "fg": "#70AEFF"
+            "fg": "#3264B4"
           },
           "dark": {
             "fg": "#70AEFF"
@@ -1005,7 +1005,7 @@
         },
         "Ignored": {
           "light": {
-            "fg": "#D69A6B"
+            "fg": "#727238"
           },
           "dark": {
             "fg": "#D69A6B"
@@ -1021,7 +1021,7 @@
         },
         "Merged": {
           "light": {
-            "fg": "#CF84CF"
+            "fg": "#7503DC"
           },
           "dark": {
             "fg": "#CF84CF"
@@ -1029,7 +1029,7 @@
         },
         "MergedWithConflicts": {
           "light": {
-            "fg": "#DE6A66"
+            "fg": "#FF0000"
           },
           "dark": {
             "fg": "#DE6A66"
@@ -1037,7 +1037,7 @@
         },
         "Modified": {
           "light": {
-            "fg": "#70AEFF"
+            "fg": "#0032A0"
           },
           "dark": {
             "fg": "#70AEFF"
@@ -1048,12 +1048,12 @@
             "fg": "#007C7C"
           },
           "dark": {
-            "fg": "#007C7C"
+            "fg": "#3A8484"
           }
         },
         "Unknown": {
           "light": {
-            "fg": "#E88F89"
+            "fg": "#993300"
           },
           "dark": {
             "fg": "#E88F89"
