@@ -84,13 +84,28 @@ end
 --- @return vim.api.keyset.highlight
 function M.get_project_color_hl()
     local cwd = vim.fn.getcwd()
+    ---@type string
     local name = vim.fs.basename(cwd)
     local parent = vim.fs.basename(vim.fs.dirname(cwd))
     local parent_parent = vim.fs.basename(vim.fs.dirname(vim.fn.fnamemodify(cwd, ":h")))
-    local hue = (M.string_to_hex(parent_parent) + M.string_to_hex(parent) + M.string_to_hex(name)) % 360 / 360
+    ---Add numbers to hashs to make it more random
+    local num_parent = tonumber(parent) or 1
+    local num_name = 1
+    for _, v in ipairs({ name:byte(-3, -1) }) do
+        num_name = num_name + v
+    end
+    ---Get hashs and ensure within 0-255 range
+    ---@type number
+    local r, g, b =
+        M.string_to_hash(parent_parent) % 255,
+        (M.string_to_hash(parent) * num_parent) % 255,
+        (M.string_to_hash(name) * num_name) % 255
+
+    ---Calculate hue from sum of hashs
+    local hue = (r + g + b) % 360 / 360
 
     -- Background: High saturation (0.8) and lightness (0.5)
-    local r1, g1, b1 = M.hsl_to_rgb(hue, 0.6, 0.5)
+    local r1, g1, b1 = M.hsl_to_rgb(hue, 0.7, 0.5)
 
     -- Foreground: White or near-white
     local r2, g2, b2 = 255, 255, 255
@@ -98,16 +113,53 @@ function M.get_project_color_hl()
     return { bg = string.format("#%02X%02X%02X", r1, g1, b1), fg = string.format("#%02X%02X%02X", r2, g2, b2) }
 end
 
-function M.string_to_hex(str)
-    if str == nil or str == "" then
-        return "00"
+---@param str string
+---@return number
+function M.string_to_hash(str)
+    if str == "" then
+        return 0
     end
 
     local hash = 0
     for i = 1, #str do
-        hash = hash + string.byte(str, i) * 31 ^ (#str - i)
+        local char = string.byte(str, i)
+        -- Simulate Java's 32-bit integer arithmetic
+        hash = ((hash * 31) + char) % 0x100000000
+        -- Handle negative numbers (Java's int is signed)
+        if hash >= 0x80000000 then
+            hash = hash - 0x100000000
+        end
     end
-    return hash % 255
+    return hash
+end
+
+function M.rgb_to_hue(r, g, b)
+    -- Normalize RGB values to 0-1 range
+    r = r / 255
+    g = g / 255
+    b = b / 255
+
+    local max = math.max(r, g, b)
+    local min = math.min(r, g, b)
+    local delta = max - min
+    local hue = 0
+
+    if delta == 0 then
+        return 0
+    elseif max == r then
+        hue = 60 * (((g - b) / delta) % 6)
+    elseif max == g then
+        hue = 60 * (((b - r) / delta) + 2)
+    elseif max == b then
+        hue = 60 * (((r - g) / delta) + 4)
+    end
+
+    -- Ensure hue is positive
+    if hue < 0 then
+        hue = hue + 360
+    end
+
+    return hue
 end
 
 function M.hsl_to_rgb(h, s, l)
