@@ -1,9 +1,12 @@
 return {
     normal = {
+        ---Auto generated ProjectColor based on cwd, 1st and 2nd parent dirs
+        ---to quickly distinguish between projects
         a = "ProjectColor",
         b = "Custom_TabLine",
         c = "StatusLine",
         y = "StatusLine",
+        ---Mode dependend colors
         z = "IdeaVim_Modes_Normal",
     },
     insert = {
