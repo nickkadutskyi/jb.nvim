@@ -961,7 +961,97 @@
         },
         "WhitespaceModifiedLines": null
       },
-      "VCSAnnotations": null
+      "VCSAnnotations": null,
+      "FileStatusColors": {
+        "Added": {
+          "light": {
+            "fg": "#73BD79"
+          },
+          "dark": {
+            "fg": "#73BD79"
+          }
+        },
+        "Deleted": {
+          "light": {
+            "fg": "#6F737A"
+          },
+          "dark": {
+            "fg": "#6F737A"
+          }
+        },
+        "DeletedFromFileSystem": {
+          "light": {
+            "fg": "#6F737A"
+          },
+          "dark": {
+            "fg": "#6F737A"
+          }
+        },
+        "HaveChangedDescendants": {
+          "light": {
+            "fg": "#70AEFF"
+          },
+          "dark": {
+            "fg": "#70AEFF"
+          }
+        },
+        "HaveImmediateChangedChildren": {
+          "light": {
+            "fg": "#70AEFF"
+          },
+          "dark": {
+            "fg": "#70AEFF"
+          }
+        },
+        "Ignored": {
+          "light": {
+            "fg": "#D69A6B"
+          },
+          "dark": {
+            "fg": "#D69A6B"
+          }
+        },
+        "IgnoredIgnorePlugin": {
+          "light": {
+            "fg": "#808080"
+          },
+          "dark": {
+            "fg": "#808080"
+          }
+        },
+        "Merged": {
+          "light": {
+            "fg": "#CF84CF"
+          },
+          "dark": {
+            "fg": "#CF84CF"
+          }
+        },
+        "MergedWithConflicts": {
+          "light": {
+            "fg": "#DE6A66"
+          },
+          "dark": {
+            "fg": "#DE6A66"
+          }
+        },
+        "Modified": {
+          "light": {
+            "fg": "#70AEFF"
+          },
+          "dark": {
+            "fg": "#70AEFF"
+          }
+        },
+        "Unknown": {
+          "light": {
+            "fg": "#E88F89"
+          },
+          "dark": {
+            "fg": "#E88F89"
+          }
+        }
+      }
     },
     "Custom": {
       "StatusBar": {
@@ -1606,7 +1696,62 @@
       "IdeaVim_Modes_Insert": "IdeaVim|Modes|Insert",
       "IdeaVim_Modes_Visual": "IdeaVim|Modes|Visual",
       "IdeaVim_Modes_Replace": "IdeaVim|Modes|Replace",
-      "Custom_TabLine": "Custom|TabLine"
+      "Custom_TabLine": "Custom|TabLine",
+      "VCS_Added": "VCS|FileStatusColors|Added",
+      "VCS_Deleted": "VCS|FileStatusColors|Deleted",
+      "VCS_DeletedFromFileSystem": "VCS|FileStatusColors|DeletedFromFileSystem",
+      "VCS_HaveChangedDescendants": "VCS|FileStatusColors|HaveChangedDescendants",
+      "VCS_HaveImmediateChangedChildren": "VCS|FileStatusColors|HaveImmediateChangedChildren",
+      "VCS_Ignored": "VCS|FileStatusColors|Ignored",
+      "VCS_IgnoredIgnorePlugin": "VCS|FileStatusColors|IgnoredIgnorePlugin",
+      "VCS_Merged": "VCS|FileStatusColors|Merged",
+      "VCS_MergedWithConflicts": "VCS|FileStatusColors|MergedWithConflicts",
+      "VCS_Modified": "VCS|FileStatusColors|Modified",
+      "VCS_Unknown": "VCS|FileStatusColors|Unknown",
+      "VCS_Added_StatusLine": {
+        "fg": "VCS|FileStatusColors|Added.fg",
+        "bg": "Custom|TabLine.bg"
+      },
+      "VCS_Deleted_StatusLine": {
+        "fg": "VCS|FileStatusColors|Deleted.fg",
+        "bg": "Custom|TabLine.bg"
+      },
+      "VCS_DeletedFromFileSystem_StatusLine": {
+        "fg": "VCS|FileStatusColors|DeletedFromFileSystem.fg",
+        "bg": "Custom|TabLine.bg"
+      },
+      "VCS_HaveChangedDescendants_StatusLine": {
+        "fg": "VCS|FileStatusColors|HaveChangedDescendants.fg",
+        "bg": "Custom|TabLine.bg"
+      },
+      "VCS_HaveImmediateChangedChildren_StatusLine": {
+        "fg": "VCS|FileStatusColors|HaveImmediateChangedChildren.fg",
+        "bg": "Custom|TabLine.bg"
+      },
+      "VCS_Ignored_StatusLine": {
+        "fg": "VCS|FileStatusColors|Ignored.fg",
+        "bg": "Custom|TabLine.bg"
+      },
+      "VCS_IgnoredIgnorePlugin_StatusLine": {
+        "fg": "VCS|FileStatusColors|IgnoredIgnorePlugin.fg",
+        "bg": "Custom|TabLine.bg"
+      },
+      "VCS_Merged_StatusLine": {
+        "fg": "VCS|FileStatusColors|Merged.fg",
+        "bg": "Custom|TabLine.bg"
+      },
+      "VCS_MergedWithConflicts_StatusLine": {
+        "fg": "VCS|FileStatusColors|MergedWithConflicts.fg",
+        "bg": "Custom|TabLine.bg"
+      },
+      "VCS_Modified_StatusLine": {
+        "fg": "VCS|FileStatusColors|Modified.fg",
+        "bg": "Custom|TabLine.bg"
+      },
+      "VCS_Unknown_StatusLine": {
+        "fg": "VCS|FileStatusColors|Unknown.fg",
+        "bg": "Custom|TabLine.bg"
+      }
     },
     "Treesitter.Bash": {
       "@function.call.bash": "BashSupportPro|Commands|GenericCommand",
