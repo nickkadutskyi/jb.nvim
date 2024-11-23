@@ -812,12 +812,18 @@
         "Changed": {
           "Important": {
             "light": {
-              "fg": "#C2D8F2",
-              "bg": "#E8EFF9"
+              "bg": "#C2D8F2"
             },
             "dark": {
-              "fg": "#385570",
-              "bg": "#2B3540"
+              "bg": "#385570"
+            }
+          },
+          "Ignored": {
+            "light": {
+              "bg": "#E7EFFA"
+            },
+            "dark": {
+              "bg": "#283541"
             }
           },
           "ErrorStripeMark": {
@@ -832,12 +838,18 @@
         "Conflict": {
           "Important": {
             "light": {
-              "fg": "#FFD5CC",
-              "bg": "#FCEFEC"
+              "bg": "#FFD5CC"
             },
             "dark": {
-              "fg": "#45302B",
-              "bg": "#2D2626"
+              "bg": "#45302B"
+            }
+          },
+          "Ignored": {
+            "light": {
+              "bg": "#FFEEEB"
+            },
+            "dark": {
+              "bg": "#2E2626"
             }
           },
           "ErrorStripeMark": {
@@ -858,6 +870,14 @@
               "bg": "#484A4A"
             }
           },
+          "Ignored": {
+            "light": {
+              "bg": "#EFEFEF"
+            },
+            "dark": {
+              "bg": "#2F3032"
+            }
+          },
           "ErrorStripeMark": {
             "light": {
               "fg": "#C8C8C8"
@@ -874,6 +894,14 @@
             },
             "dark": {
               "bg": "#294436"
+            }
+          },
+          "Ignored": {
+            "light": {
+              "bg": "#E5F5E5"
+            },
+            "dark": {
+              "bg": "#222E2A"
             }
           },
           "ErrorStripeMark": {
@@ -961,7 +989,64 @@
         },
         "WhitespaceModifiedLines": null
       },
-      "VCSAnnotations": null,
+      "VCSAnnotations": {
+        "BackgroundColor1": {
+          "light": {
+            "bg": "#A1BEF7"
+          },
+          "dark": {
+            "bg": "#2F5194"
+          }
+        },
+        "BackgroundColor2": {
+          "light": {
+            "bg": "#C9DAFB"
+          },
+          "dark": {
+            "bg": "#2D416B"
+          }
+        },
+        "BackgroundColor3": {
+          "light": {
+            "bg": "#DEE8FC"
+          },
+          "dark": {
+            "bg": "#283754"
+          }
+        },
+        "BackgroundColor4": {
+          "light": {
+            "bg": "#EDF2FA"
+          },
+          "dark": {
+            "bg": "#242D42"
+          }
+        },
+        "BackgroundColor5": {
+          "light": {
+            "bg": "#F7F8FA"
+          },
+          "dark": {
+            "bg": "#22252E"
+          }
+        },
+        "Foreground": {
+          "light": {
+            "fg": "#5A5D6B"
+          },
+          "dark": {
+            "fg": "#8D9199"
+          }
+        },
+        "ForegroundForLastCommit": {
+          "light": {
+            "fg": "#000000"
+          },
+          "dark": {
+            "fg": "#CED0D6"
+          }
+        }
+      },
       "FileStatusColors": {
         "Added": {
           "light": {
@@ -969,6 +1054,14 @@
           },
           "dark": {
             "fg": "#73BD79"
+          }
+        },
+        "Copied": {
+          "light": {
+            "fg": "#0A7700"
+          },
+          "dark": {
+            "fg": "#0A7700"
           }
         },
         "Deleted": {
@@ -1096,13 +1189,33 @@
           "underline": true
         }
       },
-      "TabLine": {
+      "Tab": {
+        "light": {
+          "fg": "#5b5d6a",
+          "bg": "#ebecf0"
+        },
+        "dark": {
+          "fg": "#b5b8be",
+          "bg": "#131314"
+        }
+      },
+      "TabFocused": {
+        "light": {
+          "fg": "#5c5e6b",
+          "bg": "#dfe1e5"
+        },
+        "dark": {
+          "fg": "#b5b8be",
+          "bg": "#1a1a1b"
+        }
+      },
+      "TabSel": {
         "light": {
           "fg": "#000000",
           "bg": "#f7f8fa"
         },
         "dark": {
-          "fg": "#cbcdd3",
+          "fg": "#ced0d5",
           "bg": "#2b2d30"
         }
       }
@@ -1468,7 +1581,7 @@
       },
       "Conceal": "General|Code|LineNumber",
       "CurSearch": {
-        "bg": "DiffMerge|ChangedLines|Changed|Important.fg",
+        "bg": "DiffMerge|ChangedLines|Changed|Important.bg",
         "fg": "General|SearchResults|TextSearchResult|Default.fg"
       },
       "Cursor": "General|Editor|Caret",
@@ -1481,13 +1594,13 @@
         "bg": "DiffMerge|ChangedLines|Inserted|Important.bg"
       },
       "DiffChange": {
-        "bg": "DiffMerge|ChangedLines|Changed|Important.bg"
+        "bg": "DiffMerge|ChangedLines|Changed|Ignored.bg"
       },
       "DiffDelete": {
         "bg": "DiffMerge|ChangedLines|Deleted|Important.bg"
       },
       "DiffText": {
-        "bg": "DiffMerge|ChangedLines|Changed|Important.fg"
+        "bg": "DiffMerge|ChangedLines|Changed|Important.bg"
       },
       "EndOfBuffer": "",
       "TermCursor": "",
@@ -1500,7 +1613,7 @@
         "fg": "General|Text|DefaultText"
       },
       "IncSearch": {
-        "bg": "DiffMerge|ChangedLines|Changed|Important.fg"
+        "bg": "DiffMerge|ChangedLines|Changed|Important.bg"
       },
       "Substitute": "",
       "LineNr": "General|Code|LineNumber",
@@ -1608,13 +1721,13 @@
       "Error": "General|ErrorsAndWarnings|Error|Default",
       "Todo": "General|Code|TODODefaults",
       "Added": {
-        "bg": "DiffMerge|ChangedLines|Inserted|Important.bg"
+        "bg": "DiffMerge|ChangedLines|Inserted|Ignored.bg"
       },
       "Changed": {
-        "bg": "DiffMerge|ChangedLines|Changed|Important.bg"
+        "bg": "DiffMerge|ChangedLines|Changed|Ignored.bg"
       },
       "Removed": {
-        "bg": "DiffMerge|ChangedLines|Deleted|Important.bg"
+        "bg": "DiffMerge|ChangedLines|Deleted|Ignored.bg"
       }
     },
     "Builtin.Diagnostic": {
@@ -1704,8 +1817,9 @@
       "IdeaVim_Modes_Insert": "IdeaVim|Modes|Insert",
       "IdeaVim_Modes_Visual": "IdeaVim|Modes|Visual",
       "IdeaVim_Modes_Replace": "IdeaVim|Modes|Replace",
-      "Custom_TabLine": "Custom|TabLine",
+      "Custom_TabSel": "Custom|TabSel",
       "VCS_Added": "VCS|FileStatusColors|Added",
+      "VCS_Copied": "VCS|FileStatusColors|Copied",
       "VCS_Deleted": "VCS|FileStatusColors|Deleted",
       "VCS_DeletedFromFileSystem": "VCS|FileStatusColors|DeletedFromFileSystem",
       "VCS_HaveChangedDescendants": "VCS|FileStatusColors|HaveChangedDescendants",
@@ -1719,51 +1833,55 @@
       "VCS_Unknown": "VCS|FileStatusColors|Unknown",
       "VCS_Added_StatusLine": {
         "fg": "VCS|FileStatusColors|Added.fg",
-        "bg": "Custom|TabLine.bg"
+        "bg": "Custom|TabSel.bg"
+      },
+      "VCS_Copied_StatusLine": {
+        "fg": "VCS|FileStatusColors|Copied.fg",
+        "bg": "Custom|TabSel.bg"
       },
       "VCS_Deleted_StatusLine": {
         "fg": "VCS|FileStatusColors|Deleted.fg",
-        "bg": "Custom|TabLine.bg"
+        "bg": "Custom|TabSel.bg"
       },
       "VCS_DeletedFromFileSystem_StatusLine": {
         "fg": "VCS|FileStatusColors|DeletedFromFileSystem.fg",
-        "bg": "Custom|TabLine.bg"
+        "bg": "Custom|TabSel.bg"
       },
       "VCS_HaveChangedDescendants_StatusLine": {
         "fg": "VCS|FileStatusColors|HaveChangedDescendants.fg",
-        "bg": "Custom|TabLine.bg"
+        "bg": "Custom|TabSel.bg"
       },
       "VCS_HaveImmediateChangedChildren_StatusLine": {
         "fg": "VCS|FileStatusColors|HaveImmediateChangedChildren.fg",
-        "bg": "Custom|TabLine.bg"
+        "bg": "Custom|TabSel.bg"
       },
       "VCS_Ignored_StatusLine": {
         "fg": "VCS|FileStatusColors|Ignored.fg",
-        "bg": "Custom|TabLine.bg"
+        "bg": "Custom|TabSel.bg"
       },
       "VCS_IgnoredIgnorePlugin_StatusLine": {
         "fg": "VCS|FileStatusColors|IgnoredIgnorePlugin.fg",
-        "bg": "Custom|TabLine.bg"
+        "bg": "Custom|TabSel.bg"
       },
       "VCS_Merged_StatusLine": {
         "fg": "VCS|FileStatusColors|Merged.fg",
-        "bg": "Custom|TabLine.bg"
+        "bg": "Custom|TabSel.bg"
       },
       "VCS_MergedWithConflicts_StatusLine": {
         "fg": "VCS|FileStatusColors|MergedWithConflicts.fg",
-        "bg": "Custom|TabLine.bg"
+        "bg": "Custom|TabSel.bg"
       },
       "VCS_Modified_StatusLine": {
         "fg": "VCS|FileStatusColors|Modified.fg",
-        "bg": "Custom|TabLine.bg"
+        "bg": "Custom|TabSel.bg"
       },
       "VCS_Renamed_StatusLine": {
         "fg": "VCS|FileStatusColors|Renamed.fg",
-        "bg": "Custom|TabLine.bg"
+        "bg": "Custom|TabSel.bg"
       },
       "VCS_Unknown_StatusLine": {
         "fg": "VCS|FileStatusColors|Unknown.fg",
-        "bg": "Custom|TabLine.bg"
+        "bg": "Custom|TabSel.bg"
       }
     },
     "Treesitter.Bash": {
@@ -1772,7 +1890,6 @@
     },
     "Treesitter.Cpp": {
       "@keyword.import.c": "Cpp|Preprocessor|Directive",
-      "@keyword.directive": "Cpp|Preprocessor|Directive",
       "@function.macro": "Cpp|MacroName",
       "@constant.c": {
         "fg": "LanguageDefaults|Identifiers|Constant.fg"
@@ -1851,9 +1968,9 @@
       "GitSignsCurrentLineBlame": "GitToolBoxColors|EditorInlineBlame",
       "GitSignsAddInline": "DiffMerge|ChangedLines|Inserted|Important",
       "GitSignsDeleteInline": "DiffMerge|ChangedLines|Deleted|Important",
-      "GitSignsChangeInline": "DiffMerge|ChangedLines|Changed|Important",
+      "GitSignsChangeInline": "DiffMerge|ChangedLines|Changed|Ignored",
       "GitSignsAddLnInline": "DiffMerge|ChangedLines|Inserted|Important",
-      "GitSignsChangeLnInline": "DiffMerge|ChangedLines|Changed|Important",
+      "GitSignsChangeLnInline": "DiffMerge|ChangedLines|Changed|Ignored",
       "GitSignsDeleteLnInline": "DiffMerge|ChangedLines|Deleted|Important",
       "GitSignsDeleteVirtLn": "DiffMerge|ChangedLines|Deleted|Important",
       "GitSignsDeleteVirtLnInLine": "DiffMerge|ChangedLines|Deleted|Important",
@@ -2007,6 +2124,97 @@
     "Plugin.lukas-reineke/indent-blankline.nvim": {
       "IblIndent": "General|Editor|Guides|IndentGuide",
       "IblScope": "General|Editor|Guides|IndentGuideSelected"
+    },
+    "Plugin.NeogitOrg/neogit": {
+      "NeogitBranch": {
+        "bold": true
+      },
+      "NeogitBranchHead": {
+        "bold": true
+      },
+      "NeogitRemote": {
+        "bold": true
+      },
+      "NeogitObjectId": "Comment",
+      "NeogitStash": "",
+      "NeogitFold": "",
+      "NeogitRebaseDone": "",
+      "NeogitTagName": {
+        "bold": true
+      },
+      "NeogitTagDistance": "",
+      "NeogitStatusHEAD": "",
+      "NeogitSectionHeader": {
+        "bold": true
+      },
+      "NeogitChangeModified": "VCS|FileStatusColors|Modified",
+      "NeogitChangeAdded": "VCS|FileStatusColors|Added",
+      "NeogitChangeDeleted": "VCS|FileStatusColors|Deleted",
+      "NeogitChangeRenamed": "VCS|FileStatusColors|Renamed",
+      "NeogitChangeUpdated": "VCS|FileStatusColors|MergedWithConflicts",
+      "NeogitChangeCopied": "VCS|FileStatusColors|Copied",
+      "NeogitChangeNewFile": "VCS|FileStatusColors|Added",
+      "NeogitChangeUnmerged": "VCS|FileStatusColors|MergedWithConflicts",
+      "NeogitChangeUntrackeduntracked": "VCS|FileStatusColors|Unknown",
+      "NeogitChangeUntrackedunstaged": "VCS|FileStatusColors|Unknown",
+      "NeogitChangeUntrackedstaged": "VCS|FileStatusColors|Unknown",
+      "NeogitHunkHeader": {
+        "bg": "VCS|VCSAnnotations|BackgroundColor3",
+        "fg": "VCS|VCSAnnotations|Foreground"
+      },
+      "NeogitHunkHeaderHighlight": {
+        "bold": true,
+        "bg": "VCS|VCSAnnotations|BackgroundColor1",
+        "fg": "VCS|VCSAnnotations|Foreground"
+      },
+      "NeogitHunkHeaderCursor": {
+        "bold": true,
+        "bg": "VCS|VCSAnnotations|BackgroundColor4",
+        "fg": "VCS|VCSAnnotations|Foreground"
+      },
+      "NeogitDiffContext": "VCS|VCSAnnotations|BackgroundColor5",
+      "NeogitDiffContextHighlight": "VCS|VCSAnnotations|BackgroundColor5",
+      "NeogitDiffContextCursor": "CursorLine",
+      "NeogitDiffAdd": {
+        "bg": "DiffMerge|ChangedLines|Inserted|Important.bg"
+      },
+      "NeogitDiffAddHighlight": {
+        "bg": "DiffMerge|ChangedLines|Inserted|Important.bg"
+      },
+      "NeogitDiffAddCursor": {
+        "bg": "DiffMerge|ChangedLines|Inserted|Ignored.bg"
+      },
+      "NeogitDiffDelete": {
+        "bg": "DiffMerge|ChangedLines|Deleted|Important.bg"
+      },
+      "NeogitDiffDeleteHighlight": {
+        "bg": "DiffMerge|ChangedLines|Deleted|Important.bg"
+      },
+      "NeogitDiffDeleteCursor": {
+        "bg": "DiffMerge|ChangedLines|Deleted|Ignored.bg"
+      },
+      "NeogitDiffHeader": {
+        "bold": true,
+        "bg": "Custom|Tab.bg",
+        "fg": "Custom|Tab.fg"
+      },
+      "NeogitDiffHeaderHighlight": {
+        "bold": true,
+        "bg": "Custom|TabSel.bg",
+        "fg": "Custom|TabSel.fg"
+      },
+      "NeogitDiffHeaderCursor": {
+        "bold": true,
+        "bg": "Custom|TabFocused.bg",
+        "fg": "Custom|TabFocused.fg"
+      },
+      "NeogitFilePath": {
+        "bold": true,
+        "italic": true
+      },
+      "NeogitCommitViewHeader": "",
+      "NeogitCommitViewDescription": {"bold": true},
+      "NeogitGraphAuthor": {"bold": true}
     }
   }
 }
