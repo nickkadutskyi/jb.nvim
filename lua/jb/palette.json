@@ -1631,6 +1631,7 @@
       }
     }
   },
+
   "highlights": {
     "Builtin.Common": {
       "ColorColumn": {
