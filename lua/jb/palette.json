@@ -2000,17 +2000,17 @@
       "GitSignsTopdelete": "VCS|EditorGutter|DeletedLines",
       "GitSignsStagedTopdelete": "VCS|EditorGutter|DeletedIgnoredLinesBorder",
       "GitSignsUntracked": "VCS|EditorGutter|AddedLines",
-      "GitSignsAddNr": "",
-      "GitSignsStagedAddNr": "",
-      "GitSignsChangeNr": "",
-      "GitSignsStagedChangeNr": "",
-      "GitSignsDeleteNr": "",
-      "GitSignsStagedDeleteNr": "",
-      "GitSignsChangedeleteNr": "",
-      "GitSignsStagedChangedeleteNr": "",
-      "GitSignsTopdeleteNr": "",
-      "GitSignsStagedTopdeleteNr": "",
-      "GitSignsUntrackedNr": "",
+      "GitSignsAddNr": "VCS|EditorGutter|AddedLines",
+      "GitSignsStagedAddNr": "VCS|EditorGutter|AddedIgnoredLinesBorder",
+      "GitSignsChangeNr": "VCS|EditorGutter|ModifiedLines",
+      "GitSignsStagedChangeNr": "VCS|EditorGutter|ModifiedIgnoredLinesBorder",
+      "GitSignsDeleteNr": "VCS|EditorGutter|DeletedLines",
+      "GitSignsStagedDeleteNr": "VCS|EditorGutter|DeletedIgnoredLinesBorder",
+      "GitSignsChangedeleteNr": "VCS|EditorGutter|ModifiedLines",
+      "GitSignsStagedChangedeleteNr": "VCS|EditorGutter|ModifiedIgnoredLinesBorder",
+      "GitSignsTopdeleteNr": "VCS|EditorGutter|DeletedLines",
+      "GitSignsStagedTopdeleteNr": "VCS|EditorGutter|DeletedIgnoredLinesBorder",
+      "GitSignsUntrackedNr": "VCS|EditorGutter|AddedLines",
       "GitSignsAddLn": "",
       "GitSignsStagedAddLn": "",
       "GitSignsChangeLn": "",
@@ -2020,17 +2020,50 @@
       "GitSignsTopdeleteLn": "",
       "GitSignsStagedTopdeleteLn": "",
       "GitSignsUntrackedLn": "",
-      "GitSignsAddCul": "",
-      "GitSignsStagedAddCul": "",
-      "GitSignsChangeCul": "",
-      "GitSignsStagedChangeCul": "",
-      "GitSignsDeleteCul": "",
-      "GitSignsStagedDeleteCul": "",
-      "GitSignsChangedeleteCul": "",
-      "GitSingsStagedChangedeleteCul": "",
-      "GitSignsTopdeleteCul": "",
-      "GitSignsStagedTopdeleteCul": "",
-      "GitSignsUntrackedCul": "",
+      "GitSignsAddCul": {
+        "fg": "VCS|EditorGutter|AddedLines",
+        "bg": "General|Editor|CaretRow"
+      },
+      "GitSignsStagedAddCul": {
+        "fg": "VCS|EditorGutter|AddedIgnoredLinesBorder",
+        "bg": "General|Editor|CaretRow"
+      },
+      "GitSignsChangeCul": {
+        "fg": "VCS|EditorGutter|ModifiedLines",
+        "bg": "General|Editor|CaretRow"
+      },
+      "GitSignsStagedChangeCul": {
+        "fg": "VCS|EditorGutter|ModifiedIgnoredLinesBorder",
+        "bg": "General|Editor|CaretRow"
+      },
+      "GitSignsDeleteCul": {
+        "fg": "VCS|EditorGutter|DeletedLines",
+        "bg": "General|Editor|CaretRow"
+      },
+      "GitSignsStagedDeleteCul": {
+        "fg": "VCS|EditorGutter|DeletedIgnoredLinesBorder",
+        "bg": "General|Editor|CaretRow"
+      },
+      "GitSignsChangedeleteCul": {
+        "fg": "VCS|EditorGutter|ModifiedLines",
+        "bg": "General|Editor|CaretRow"
+      },
+      "GitSingsStagedChangedeleteCul": {
+        "fg": "VCS|EditorGutter|ModifiedIgnoredLinesBorder",
+        "bg": "General|Editor|CaretRow"
+      },
+      "GitSignsTopdeleteCul": {
+        "fg": "VCS|EditorGutter|DeletedLines",
+        "bg": "General|Editor|CaretRow"
+      },
+      "GitSignsStagedTopdeleteCul": {
+        "fg": "VCS|EditorGutter|DeletedIgnoredLinesBorder",
+        "bg": "General|Editor|CaretRow"
+      },
+      "GitSignsUntrackedCul": {
+        "fg": "VCS|EditorGutter|AddedLines",
+        "bg": "General|Editor|CaretRow"
+      },
       "GitSignsAddPreview": "DiffMerge|ChangedLines|Inserted|Important",
       "GitSignsDeletePreview": "DiffMerge|ChangedLines|Deleted|Important",
       "GitSignsCurrentLineBlame": "GitToolBoxColors|EditorInlineBlame",
