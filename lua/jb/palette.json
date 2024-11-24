@@ -169,7 +169,14 @@
           "ModifiedIconColor": null,
           "SelectedTab": null,
           "SelectedTabInactive": null,
-          "Underline": null,
+          "Underline": {
+            "light": {
+              "sp": "#4573e8"
+            },
+            "dark": {
+              "sp": "#4573e8"
+            }
+          },
           "UnderlineInactive": null
         },
         "TearLine": null,
@@ -406,6 +413,14 @@
           },
           "dark": {
             "fg": "#BCBEC4"
+          }
+        },
+        "DefaultTextBg": {
+          "light": {
+            "bg": "#FFFFFF"
+          },
+          "dark": {
+            "bg": "#1E1F22"
           }
         },
         "DeletedText": null,
@@ -1658,13 +1673,12 @@
       "SpellRare": "General|ErrorsAndWarnings|TextStyleWarning",
       "StatusLine": "Custom|StatusBar",
       "StatusLineNC": "StatusLine",
-      "TabLine": "",
-      "TabLineFill": "",
+      "TabLine": "Normal",
+      "TabLineFill": "General|Text|DefaultTextBg",
       "TabLineSel": {
-        "sp": "General|Editor|SelectionBackground.bg",
-        "underdouble": true,
-        "bold": true,
-        "bg": "Custom|StatusBar.bg"
+        "sp": "General|Editor|Tabs|Underline",
+        "undercurl": true,
+        "bold": true
       },
       "Title": "LanguageDefaults|Identifiers|Constant",
       "Visual": "General|Editor|SelectionBackground",
@@ -2213,8 +2227,45 @@
         "italic": true
       },
       "NeogitCommitViewHeader": "",
-      "NeogitCommitViewDescription": {"bold": true},
-      "NeogitGraphAuthor": {"bold": true}
+      "NeogitCommitViewDescription": {
+        "bold": true
+      },
+      "NeogitGraphAuthor": {
+        "bold": true
+      }
+    },
+    "Plugin.SmiteshP/nvim-navic": {
+      "NavicIconsFile": null,
+      "NavicIconsModule": null,
+      "NavicIconsNamespace": null,
+      "NavicIconsPackage": null,
+      "NavicIconsClass": null,
+      "NavicIconsMethod": null,
+      "NavicIconsProperty": null,
+      "NavicIconsField": null,
+      "NavicIconsConstructor": null,
+      "NavicIconsEnum": null,
+      "NavicIconsInterface": null,
+      "NavicIconsFunction": null,
+      "NavicIconsVariable": null,
+      "NavicIconsConstant": null,
+      "NavicIconsString": null,
+      "NavicIconsNumber": null,
+      "NavicIconsBoolean": null,
+      "NavicIconsArray": null,
+      "NavicIconsObject": null,
+      "NavicIconsKey": null,
+      "NavicIconsNull": null,
+      "NavicIconsEnumMember": null,
+      "NavicIconsStruct": null,
+      "NavicIconsEvent": null,
+      "NavicIconsOperator": null,
+      "NavicIconsTypeParameter": null,
+      "NavicText": {},
+      "NavicSeparator": {
+        "fg": "Red",
+        "default": true
+      }
     }
   }
 }
