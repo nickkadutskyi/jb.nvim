@@ -2238,7 +2238,7 @@
       },
       "NeogitHunkHeaderHighlight": {
         "bold": true,
-        "bg": "VCS|VCSAnnotations|BackgroundColor1",
+        "bg": "VCS|VCSAnnotations|BackgroundColor2",
         "fg": "VCS|VCSAnnotations|Foreground"
       },
       "NeogitHunkHeaderCursor": {
@@ -2268,25 +2268,26 @@
         "bg": "DiffMerge|ChangedLines|Deleted|Ignored.bg"
       },
       "NeogitDiffHeader": {
-        "bold": true,
-        "bg": "Custom|Tab.bg",
-        "fg": "Custom|Tab.fg"
+        "bg": "VCS|VCSAnnotations|BackgroundColor1",
+        "fg": "VCS|VCSAnnotations|Foreground"
       },
       "NeogitDiffHeaderHighlight": {
         "bold": true,
-        "bg": "Custom|TabSel.bg",
-        "fg": "Custom|TabSel.fg"
+        "bg": "VCS|VCSAnnotations|BackgroundColor1",
+        "fg": "VCS|VCSAnnotations|Foreground"
       },
       "NeogitDiffHeaderCursor": {
         "bold": true,
         "bg": "Custom|TabFocused.bg",
-        "fg": "Custom|TabFocused.fg"
+        "fg": "VCS|VCSAnnotations|Foreground"
       },
       "NeogitFilePath": {
         "bold": true,
         "italic": true
       },
-      "NeogitCommitViewHeader": "",
+      "NeogitCommitViewHeader": {
+        "bold": true
+      },
       "NeogitCommitViewDescription": {
         "bold": true
       },
