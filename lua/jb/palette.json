@@ -1,5 +1,25 @@
 {
   "colors": {
+    "Appearance": {
+      "FileColors": {
+        "NonProjectFile": {
+          "light": {
+            "bg": "#FDF5DE"
+          },
+          "dark": {
+            "bg": "#3B3225"
+          }
+        },
+        "Tests": {
+          "light": {
+            "bg": "#E7F6E8"
+          },
+          "dark": {
+            "bg": "#2B3829"
+          }
+        }
+      }
+    },
     "General": {
       "Code": {
         "IdentifierUnderCaret": {
@@ -167,7 +187,14 @@
         "StickyLines": null,
         "Tabs": {
           "ModifiedIconColor": null,
-          "SelectedTab": null,
+          "SelectedTab": {
+            "light": {
+              "fg": "#050505"
+            },
+            "dark": {
+              "fg": "#dedfe3"
+            }
+          },
           "SelectedTabInactive": null,
           "Underline": {
             "light": {
@@ -177,7 +204,22 @@
               "sp": "#4573e8"
             }
           },
-          "UnderlineInactive": null
+          "UnderlineInactive": {
+            "light": {
+              "sp": "#a5a9b8"
+            },
+            "dark": {
+              "sp": "#57595e"
+            }
+          },
+          "CustomTab": {
+            "light": {
+              "fg": "#515151"
+            },
+            "dark": {
+              "fg": "#bbbdc0"
+            }
+          }
         },
         "TearLine": null,
         "TearLineSelection": null,
@@ -1673,9 +1715,19 @@
       "SpellRare": "General|ErrorsAndWarnings|TextStyleWarning",
       "StatusLine": "Custom|StatusBar",
       "StatusLineNC": "StatusLine",
-      "TabLine": "Normal",
-      "TabLineFill": "General|Text|DefaultTextBg",
+      "TabLine": {
+        "fg": "General|Editor|Tabs|CustomTab",
+        "sp": "General|Editor|Guides|HardWrapGuide.fg",
+        "underline": true,
+        "bg": "General|Text|DefaultTextBg"
+      },
+      "TabLineFill": {
+        "bg": "General|Text|DefaultTextBg",
+        "sp": "General|Editor|Guides|HardWrapGuide.fg",
+        "underline": true
+      },
       "TabLineSel": {
+        "fg": "General|Editor|Tabs|SelectedTab",
         "sp": "General|Editor|Tabs|Underline",
         "undercurl": true,
         "bold": true
@@ -1896,7 +1948,9 @@
       "VCS_Unknown_StatusLine": {
         "fg": "VCS|FileStatusColors|Unknown.fg",
         "bg": "Custom|TabSel.bg"
-      }
+      },
+      "Appearance_FileColors_NonProjectFile": "Appearance|FileColors|NonProjectFile",
+      "Appearance_FileColors_Tests": "Appearance|FileColors|Tests"
     },
     "Treesitter.Bash": {
       "@function.call.bash": "BashSupportPro|Commands|GenericCommand",
