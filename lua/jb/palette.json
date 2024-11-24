@@ -2051,13 +2051,19 @@
       "luaFunc": "Lua|StdApi",
       "luaCondStart": "Lua|Variables|Parameter",
       "luaCondEnd": "Lua|Variables|Parameter",
-      "luaConstant": "Lua|NilTrueFalse"
+      "luaConstant": {
+        "fg": "Lua|NilTrueFalse"
+      }
     },
     "Treesitter.Lua": {
       "@variable.lua": "LanguageDefaults|Identifiers|LocalVariable",
       "@constant.lua": "LanguageDefaults|Identifiers|LocalVariable",
-      "@constant.builtin.lua": "Lua|NilTrueFalse",
-      "@boolean.lua": "Lua|NilTrueFalse",
+      "@constant.builtin.lua": {
+        "fg": "Lua|NilTrueFalse"
+      },
+      "@boolean.lua": {
+        "fg": "Lua|NilTrueFalse"
+      },
       "@constructor.lua": {},
       "@function.builtin.lua": "Lua|StdApi",
       "@module.builtin.lua": "Lua|StdApi",
