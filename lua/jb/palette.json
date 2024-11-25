@@ -1,6 +1,68 @@
 {
   "colors": {
     "Appearance": {
+      "VCS": {
+        "Labels": {
+          "HEAD": {
+            "light": {
+              "fg": "#F3B747"
+            },
+            "dark": {
+              "fg": "#E3C97C"
+            }
+          },
+          "Local": {
+            "light": {
+              "fg": "#5B9A61"
+            },
+            "dark": {
+              "fg": "#6EA368"
+            }
+          },
+          "Remote": {
+            "light": {
+              "fg": "#835AE8"
+            },
+            "dark": {
+              "fg": "#A685DB"
+            }
+          },
+          "Tag": {
+            "light": {
+              "fg": "#6F727F"
+            },
+            "dark": {
+              "fg": "#80848A"
+            }
+          },
+          "SignatureIconVerified": {
+            "light": {
+              "fg": "#6DA66F"
+            },
+            "dark": {
+              "fg": "#5F9A5C"
+            }
+          },
+          "SignatureIconUnverified": {
+            "light": {
+              "fg": "#E2A539"
+            },
+            "dark": {
+              "fg": "#E5AA4C"
+            }
+          }
+        },
+        "Logs": {
+          "Background": {
+            "light": {
+              "bg": "#EEF3FE"
+            },
+            "dark": {
+              "bg": "#2A3042"
+            }
+          }
+        }
+      },
       "Window": {
         "Title": {
           "light": {
@@ -34,6 +96,86 @@
           },
           "dark": {
             "bg": "#32426B"
+          }
+        },
+        "SectionTitle": {
+          "light": {
+            "fg": "#000000",
+            "bold": true
+          },
+          "dark": {
+            "fg": "#DFE1E5",
+            "bold": true
+          }
+        },
+        "Checkbox": {
+          "light": {
+            "fg": "#000000",
+            "bg": "#FFFFFF",
+            "sp": "#A9ADBC",
+            "underline": true
+          },
+          "dark": {
+            "fg": "#D8DADE",
+            "bg": "#2B2D30",
+            "sp": "#5B5D62",
+            "underline": true
+          }
+        },
+        "CheckboxSelected": {
+          "light": {
+            "fg": "#FFFFFF",
+            "bg": "#4573E8",
+            "bold": true
+          },
+          "dark": {
+            "fg": "#FFFFFF",
+            "bg": "#4573E8",
+            "bold": true
+          }
+        },
+        "CheckboxDisabled": {
+          "light": {
+            "fg": "#B3B6C3",
+            "bg": "#F7F8FA",
+            "sp": "#DFE1E5",
+            "underline": true
+          },
+          "dark": {
+            "fg": "#DFE1E5",
+            "bg": "#393B40",
+            "sp": "#5B5D62",
+            "underline": true
+          }
+        },
+        "SwitchKnob": {
+          "light": {
+            "bg": "#C4C4C4",
+            "sp": "#C9CCD5"
+          },
+          "dark": {
+            "bg": "#646464",
+            "sp": "#4F5156"
+          }
+        },
+        "SwitchDisabled": {
+          "light": {
+            "bg": "#F2F2F2",
+            "fg": "#8E8E8E"
+          },
+          "dark": {
+            "bg": "#2B2D30",
+            "fg": "#575A5F"
+          }
+        },
+        "SwitchEnabled": {
+          "light": {
+            "bg": "#5C9051",
+            "fg": "#FEFFFE"
+          },
+          "dark": {
+            "bg": "#53684F",
+            "fg": "#DFE1E5"
           }
         }
       },
@@ -1998,7 +2140,11 @@
       "Window_Normal": {
         "fg": "General|Text|DefaultText",
         "bg": "Appearance|Window|Background"
-      }
+      },
+      "VCS_VCSAnnotations_BackgroundColor1": "VCS|VCSAnnotations|BackgroundColor1",
+      "VCS_VCSAnnotations_BackgroundColor2": "VCS|VCSAnnotations|BackgroundColor2",
+      "VCS_VCSAnnotations_BackgroundColor3": "VCS|VCSAnnotations|BackgroundColor3",
+      "VCS_VCSAnnotations_BackgroundColor4": "VCS|VCSAnnotations|BackgroundColor4"
     },
     "Treesitter.Bash": {
       "@function.call.bash": "BashSupportPro|Commands|GenericCommand",
@@ -2282,23 +2428,27 @@
     },
     "Plugin.NeogitOrg/neogit": {
       "NeogitBranch": {
-        "bold": true
+        "bold": true,
+        "fg": "Appearance|VCS|Labels|Local"
       },
       "NeogitBranchHead": {
+        "fg": "Appearance|VCS|Labels|HEAD",
         "bold": true
       },
       "NeogitRemote": {
+        "fg": "Appearance|VCS|Labels|Remote",
         "bold": true
       },
       "NeogitObjectId": "Comment",
-      "NeogitStash": "",
-      "NeogitFold": "",
-      "NeogitRebaseDone": "",
+      "NeogitStash": null,
+      "NeogitFold": null,
+      "NeogitRebaseDone": null,
       "NeogitTagName": {
-        "bold": true
+        "bold": true,
+        "fg": "Appearance|VCS|Labels|Tag"
       },
-      "NeogitTagDistance": "",
-      "NeogitStatusHEAD": "",
+      "NeogitTagDistance": {},
+      "NeogitStatusHEAD": {},
       "NeogitSectionHeader": {
         "bold": true
       },
@@ -2375,9 +2525,21 @@
       "NeogitGraphAuthor": {
         "bold": true
       },
+      "NeogitSignatureGood": "Appearance|VCS|Labels|SignatureIconVerified",
+      "NeogitSignatureBad": null,
+      "NeogitSignatureMissing": "Appearance|VCS|Labels|SignatureIconUnverified",
+      "NeogitSignatureNone": null,
+      "NeogitSignatureGoodUnknown": null,
+      "NeogitSignatureGoodExpired": null,
+      "NeogitSignatureGoodExpiredKey": null,
+      "NeogitSignatureGoodRevokedKey": null,
       "NeogitNormal": {
         "fg": "General|Text|DefaultText",
         "bg": "Appearance|Window|Background"
+      },
+      "CustomNeogitLogsNormal": {
+        "fg": "General|Text|DefaultText",
+        "bg": "Appearance|VCS|Logs|Background"
       },
       "NeogitWinSeparator": {
         "fg": "Appearance|Window|Border",
@@ -2387,20 +2549,58 @@
       "NeogitCursorLineNr": "Appearance|Window|RowSelected",
       "NeogitCursorLineEditor": {},
       "NeogitCursorLineNrEditor": {},
-      "NeogitPopupSectionTitle": "Appearance|Window|Title",
-      "NeogitPopupBranchName": null,
-      "NeogitPopupBold": null,
-      "NeogitPopupSwitchKey": null,
-      "NeogitPopupSwitchEnabled": null,
-      "NeogitPopupSwitchDisabled": null,
-      "NeogitPopupOptionKey": null,
-      "NeogitPopupOptionEnabled": null,
-      "NeogitPopupOptionDisabled": null,
-      "NeogitPopupConfigKey": null,
-      "NeogitPopupConfigEnabled": null,
-      "NeogitPopupConfigDisabled": null,
-      "NeogitPopupActionKey": null,
-      "NeogitPopupActionDisabled": null
+      "NeogitPopupSectionTitle": "Appearance|Window|SectionTitle",
+      "NeogitPopupBranchName": "Appearance|VCS|Labels|Local",
+      "NeogitPopupBold": {
+        "fg": "Yellow"
+      },
+      "NeogitPopupSwitchKey": {
+        "fg": "Appearance|Window|Checkbox.fg",
+        "sp": "Appearance|Window|Checkbox",
+        "underline": true
+      },
+      "NeogitPopupSwitchEnabled": {
+        "fg": "Appearance|Window|CheckboxSelected.bg",
+        "bold": true
+      },
+      "NeogitPopupSwitchDisabled": {
+        "fg": "Appearance|Window|CheckboxDisabled.fg"
+      },
+      "NeogitPopupOptionKey": {
+        "fg": "Appearance|Window|CheckboxSelected.bg",
+        "sp": "Appearance|Window|Checkbox",
+        "underline": true
+      },
+      "NeogitPopupOptionEnabled": {
+        "fg": "Appearance|Window|CheckboxSelected.bg",
+        "bold": true
+      },
+      "NeogitPopupOptionDisabled": {
+        "fg": "Appearance|Window|CheckboxDisabled.fg"
+      },
+      "NeogitPopupConfigKey": {
+        "fg": "Appearance|Window|SwitchEnabled.bg",
+        "sp": "Appearance|Window|SwitchKnob.sp",
+        "underline": true
+      },
+      "NeogitPopupConfigEnabled": {
+        "fg": "Appearance|Window|SwitchEnabled.bg",
+        "bold": true
+      },
+      "NeogitPopupConfigDisabled": {
+        "fg": "Appearance|Window|SwitchDisabled.fg"
+      },
+      "NeogitPopupActionKey": {
+        "sp": "Appearance|Window|Checkbox",
+        "underline": true
+      },
+      "NeogitPopupActionDisabled": {
+        "fg": "Appearance|Window|CheckboxDisabled.fg"
+      },
+      "NeogitCommandText": {},
+      "NeogitCommandTime": {},
+      "NeogitCommandCodeNormal": {},
+      "NeogitCommandCodeError": {}
     },
     "Plugin.SmiteshP/nvim-navic": {
       "NavicIconsFile": null,
