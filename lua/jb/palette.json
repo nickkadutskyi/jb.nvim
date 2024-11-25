@@ -142,7 +142,7 @@
             "underline": true
           },
           "dark": {
-            "fg": "#DFE1E5",
+            "fg": "#57595F",
             "bg": "#393B40",
             "sp": "#5B5D62",
             "underline": true
@@ -2513,8 +2513,7 @@
         "fg": "VCS|VCSAnnotations|Foreground"
       },
       "NeogitFilePath": {
-        "bold": true,
-        "italic": true
+        "underline": true
       },
       "NeogitCommitViewHeader": {
         "bold": true
