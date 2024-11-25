@@ -58,10 +58,6 @@ function M.get_hl_props(colors, path_prop, profile)
     local path_prop_spl = M.split(path_prop, ".")
     local prop = path_prop_spl[2]
     local hl = M.resolve_path(colors, path_prop_spl[1], profile)
-    -- local hl = node[profile]
-    -- if type(hl) == "string" then
-    --     hl = M.resolve_path(colors, hl)[profile]
-    -- end
     local hl_group_name = string.gsub(path_prop_spl[1], "|", "_")
     if prop ~= nil and type(hl[prop]) == nil then
         error("Invalid property: " .. prop .. " for " .. path_prop)

@@ -1,6 +1,42 @@
 {
   "colors": {
     "Appearance": {
+      "Window": {
+        "Title": {
+          "light": {
+            "fg": "#565757"
+          },
+          "dark": {
+            "fg": "#9FA0A2"
+          }
+        },
+        "Background": {
+          "light": {
+            "bg": "#F7F8FA"
+          },
+          "dark": {
+            "bg": "#2B2D30"
+          }
+        },
+        "Border": {
+          "light": {
+            "fg": "#B5B5B5",
+            "bg": "#FBFCFD"
+          },
+          "dark": {
+            "fg": "#6F7072",
+            "bg": "#252629"
+          }
+        },
+        "RowSelected": {
+          "light": {
+            "bg": "#D7E1FC"
+          },
+          "dark": {
+            "bg": "#32426B"
+          }
+        }
+      },
       "FileColors": {
         "NonProjectFile": {
           "light": {
@@ -1689,12 +1725,20 @@
       "MoreMsg": "Custom|DialogWindow",
       "NonText": "",
       "Normal": "General|Text|DefaultText",
-      "NormalFloat": "Normal",
-      "FloatBorder": {
-        "fg": "General|Editor|Caret.bg"
+      "NormalFloat": {
+        "fg": "General|Text|DefaultText",
+        "bg": "Appearance|Window|Background"
       },
-      "FloatTitle": "",
-      "FloatFooter": "",
+      "FloatBorder": {
+        "fg": "Appearance|Window|Border",
+        "bg": "Appearance|Window|Border"
+      },
+      "FloatTitle": {
+        "fg": "Appearance|Window|Title",
+        "bg": "Appearance|Window|Border",
+        "bold": true
+      },
+      "FloatFooter": "Appearance|Window|Title",
       "NormalNC": "General|Text|DefaultText",
       "Pmenu": "General|PopupsAndHints|Completion",
       "PmenuSel": "General|Editor|SelectionBackground",
@@ -1950,7 +1994,11 @@
         "bg": "Custom|TabSel.bg"
       },
       "Appearance_FileColors_NonProjectFile": "Appearance|FileColors|NonProjectFile",
-      "Appearance_FileColors_Tests": "Appearance|FileColors|Tests"
+      "Appearance_FileColors_Tests": "Appearance|FileColors|Tests",
+      "Window_Normal": {
+        "fg": "General|Text|DefaultText",
+        "bg": "Appearance|Window|Background"
+      }
     },
     "Treesitter.Bash": {
       "@function.call.bash": "BashSupportPro|Commands|GenericCommand",
@@ -2276,11 +2324,11 @@
       },
       "NeogitHunkHeaderCursor": {
         "bold": true,
-        "bg": "VCS|VCSAnnotations|BackgroundColor4",
+        "bg": "VCS|VCSAnnotations|BackgroundColor2",
         "fg": "VCS|VCSAnnotations|Foreground"
       },
-      "NeogitDiffContext": "VCS|VCSAnnotations|BackgroundColor5",
-      "NeogitDiffContextHighlight": "VCS|VCSAnnotations|BackgroundColor5",
+      "NeogitDiffContext": "General|Text|DefaultTextBg",
+      "NeogitDiffContextHighlight": "General|Text|DefaultTextBg",
       "NeogitDiffContextCursor": "CursorLine",
       "NeogitDiffAdd": {
         "bg": "DiffMerge|ChangedLines|Inserted|Important.bg"
@@ -2326,7 +2374,33 @@
       },
       "NeogitGraphAuthor": {
         "bold": true
-      }
+      },
+      "NeogitNormal": {
+        "fg": "General|Text|DefaultText",
+        "bg": "Appearance|Window|Background"
+      },
+      "NeogitWinSeparator": {
+        "fg": "Appearance|Window|Border",
+        "bg": "Appearance|Window|Border"
+      },
+      "NeogitCursorLine": "Appearance|Window|RowSelected",
+      "NeogitCursorLineNr": "Appearance|Window|RowSelected",
+      "NeogitCursorLineEditor": {},
+      "NeogitCursorLineNrEditor": {},
+      "NeogitPopupSectionTitle": "Appearance|Window|Title",
+      "NeogitPopupBranchName": null,
+      "NeogitPopupBold": null,
+      "NeogitPopupSwitchKey": null,
+      "NeogitPopupSwitchEnabled": null,
+      "NeogitPopupSwitchDisabled": null,
+      "NeogitPopupOptionKey": null,
+      "NeogitPopupOptionEnabled": null,
+      "NeogitPopupOptionDisabled": null,
+      "NeogitPopupConfigKey": null,
+      "NeogitPopupConfigEnabled": null,
+      "NeogitPopupConfigDisabled": null,
+      "NeogitPopupActionKey": null,
+      "NeogitPopupActionDisabled": null
     },
     "Plugin.SmiteshP/nvim-navic": {
       "NavicIconsFile": null,
