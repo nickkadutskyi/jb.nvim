@@ -456,16 +456,34 @@
         "GrammarError": null,
         "ProblemFromServer": null,
         "RuntimeProblem": null,
-        "TextStyleError": null,
-        "TextStyleSuggestion": null,
+        "TextStyleError": {
+          "light": {
+            "sp": "#DB5860",
+            "underdashed": true
+          },
+          "dark": {
+            "sp": "#CF514E",
+            "underdashed": true
+          }
+        },
+        "TextStyleSuggestion": {
+          "light": {
+            "sp": "#389FD6",
+            "underdashed": true
+          },
+          "dark": {
+            "sp": "#3592C4",
+            "underdashed": true
+          }
+        },
         "TextStyleWarning": {
           "light": {
             "sp": "#EDA200",
-            "underdotted": true
+            "underdashed": true
           },
           "dark": {
             "sp": "#BA9752",
-            "underdotted": true
+            "underdashed": true
           }
         },
         "Typo": {
@@ -854,7 +872,14 @@
         },
         "Parameters": null,
         "RefactoringOptions": null,
-        "TextWithoutBackground": null
+        "TextWithoutBackground": {
+          "light": {
+            "fg": "#7A7A7A"
+          },
+          "dark": {
+            "fg": "#727782"
+          }
+        }
       },
       "Keyword": {
         "light": {
@@ -1816,8 +1841,10 @@
       },
       "Conceal": "General|Code|LineNumber",
       "CurSearch": {
-        "bg": "DiffMerge|ChangedLines|Changed|Important.bg",
-        "fg": "General|SearchResults|TextSearchResult|Default.fg"
+        "bg": "General|Editor|SelectionBackground.bg",
+        "fg": "General|Text|DefaultText",
+        "sp": "General|Text|DefaultText.fg",
+        "underline": true
       },
       "Cursor": "General|Editor|Caret",
       "lCursor": "General|Editor|Caret",
@@ -2630,6 +2657,15 @@
       "NavicIconsTypeParameter": null,
       "NavicText": {},
       "NavicSeparator": {}
+    },
+    "Plugin.github/copilot.vim": {
+      "CopilotSuggestion": "LanguageDefaults|InlineHints|TextWithoutBackground",
+      "CopilotAnnotation": "LanguageDefaults|InlineHints|TextWithoutBackground"
+    },
+    "Plugin.SupermavenSuggestion": {
+      "SupermavenSuggestion": {
+        "fg": "LanguageDefaults|InlineHints|TextWithoutBackground"
+      }
     }
   }
 }
