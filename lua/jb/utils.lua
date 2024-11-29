@@ -101,7 +101,7 @@ function M.get_project_color_hl()
     local hue = (r + g + b) % 360 / 360
 
     -- Background: High saturation (0.8) and lightness (0.5)
-    local r1, g1, b1 = M.hsl_to_rgb(hue, 0.5, 0.5)
+    local r1, g1, b1 = M.hsl_to_rgb(hue, 0.8, 0.5)
 
     -- Foreground: White or near-white
     local r2, g2, b2 = 255, 255, 255

@@ -469,11 +469,11 @@
         "TextStyleSuggestion": {
           "light": {
             "sp": "#389FD6",
-            "underdashed": true
+            "underdotted": true
           },
           "dark": {
             "sp": "#3592C4",
-            "underdashed": true
+            "underdotted": true
           }
         },
         "TextStyleWarning": {
@@ -1924,8 +1924,8 @@
       "SpecialKey": "General|Text|Whitespaces",
       "SpellBad": "General|ErrorsAndWarnings|Typo",
       "SpellCap": "General|ErrorsAndWarnings|TextStyleWarning",
-      "SpellLocal": "General|ErrorsAndWarnings|TextStyleWarning",
-      "SpellRare": "General|ErrorsAndWarnings|TextStyleWarning",
+      "SpellLocal": "General|ErrorsAndWarnings|TextStyleSuggestion",
+      "SpellRare": "General|ErrorsAndWarnings|TextStyleSuggestion",
       "StatusLine": "Custom|StatusBar",
       "StatusLineNC": "StatusLine",
       "TabLine": {
@@ -1942,7 +1942,7 @@
       "TabLineSel": {
         "fg": "General|Editor|Tabs|SelectedTab",
         "sp": "General|Editor|Tabs|Underline",
-        "undercurl": true,
+        "underdouble": true,
         "bold": true
       },
       "Title": "LanguageDefaults|Identifiers|Constant",
