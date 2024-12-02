@@ -63,6 +63,40 @@
           }
         }
       },
+      "Search": {
+        "PromptIcon": {
+          "light": {
+            "fg": "#747783"
+          },
+          "dark": {
+            "bg": "#CED0D5"
+          }
+        },
+        "MatchedText": {
+          "light": {
+            "bg": "#FAE7B7"
+          },
+          "dark": {
+            "bg": "#B4985C"
+          }
+        },
+        "MatchedTextContrast": {
+          "light": {
+            "bg": "#fcb500"
+          },
+          "dark": {
+            "bg": "#ffae00"
+          }
+        },
+        "Header": {
+          "light": {
+            "bg": "#F7F8FA"
+          },
+          "dark": {
+            "bg": "#393B40"
+          }
+        }
+      },
       "Window": {
         "Title": {
           "light": {
@@ -80,14 +114,30 @@
             "bg": "#2B2D30"
           }
         },
+        "BackgroundEditArea": {
+          "light": {
+            "bg": "#FFFFFF"
+          },
+          "dark": {
+            "bg": "#2B2D30"
+          }
+        },
         "Border": {
           "light": {
-            "fg": "#B5B5B5",
+            "fg": "#D4D4D4",
             "bg": "#FBFCFD"
           },
           "dark": {
-            "fg": "#6F7072",
+            "fg": "#43454A",
             "bg": "#252629"
+          }
+        },
+        "BorderSubtle": {
+          "light": {
+            "fg": "#EBECF0"
+          },
+          "dark": {
+            "fg": "#393B40"
           }
         },
         "RowSelected": {
@@ -176,6 +226,14 @@
           "dark": {
             "bg": "#53684F",
             "fg": "#DFE1E5"
+          }
+        },
+        "SubtleText": {
+          "light": {
+            "fg": "#828593"
+          },
+          "dark": {
+            "fg": "#707379"
           }
         }
       },
@@ -618,7 +676,24 @@
       },
       "Preview": null,
       "SearchResults": {
-        "SearchResult": null,
+        "SearchResult": {
+          "Default": {
+            "light": {
+              "bg": "#CCCCFF"
+            },
+            "dark": {
+              "bg": "#2D543F"
+            }
+          },
+          "ErrorStripeMark": {
+            "light": {
+              "fg": "#8E8EB2"
+            },
+            "dark": {
+              "fg": "#42BD77"
+            }
+          }
+        },
         "SearchResultWriteAccess": null,
         "TextSearchResult": {
           "Default": {
@@ -2666,6 +2741,104 @@
       "SupermavenSuggestion": {
         "fg": "LanguageDefaults|InlineHints|TextWithoutBackground"
       }
+    },
+    "Plugin.ibhagwan/fzf-lua": {
+      "FzfLuaNormal": {
+        "fg": "Appearance|Window|Title.fg",
+        "bg": "Appearance|Window|BackgroundEditArea.bg"
+      },
+      "FzfLuaBorder": {
+        "fg": "Appearance|Window|Border",
+        "bg": "Appearance|Window|Border.bg"
+      },
+      "FzfLuaTitle": {
+        "fg": "Appearance|Window|SectionTitle.fg",
+        "bg": "Appearance|Window|Border.bg",
+        "bold": true
+      },
+      "FzfLuaBackdrop": {
+        "bg": "Appearance|Window|BackgroundEditArea.bg"
+      },
+      "FzfLuaPreviewNormal": {
+        "fg": "Appearance|Window|Title.fg",
+        "bg": "General|Text|DefaultTextBg"
+      },
+      "FzfLuaPreviewBorder": {
+        "fg": "Appearance|Window|Border",
+        "bg": "Appearance|Window|Border.bg"
+      },
+      "FzfLuaPreviewTitle": {
+        "fg": "Appearance|Window|SectionTitle.fg",
+        "bg": "Appearance|Window|Border.bg",
+        "bold": true
+      },
+      "FzfLuaCursor": "",
+      "FzfLuaCursorLine": "",
+      "FzfLuaCursorLineNr": "",
+      "FzfLuaSearch": "",
+      "FzfLuaScrollBorderEmpty": "",
+      "FzfLuaScrollBorderFull": "",
+      "FzfLuaScrollFloatEmpty": "",
+      "FzfLuaScrollFloatFull": "",
+      "FzfLuaHelpNormal": "",
+      "FzfLuaHelpBorder": "",
+      "FzfLuaHeaderBind": {
+        "fg": "Appearance|Window|SubtleText.fg",
+        "bold": true
+      },
+      "FzfLuaHeaderText": {
+        "fg": "Appearance|Window|SubtleText.fg"
+      },
+      "FzfLuaPathColNr": "General|Code|LineNumber",
+      "FzfLuaPathLineNr": "General|Code|LineNumber",
+      "FzfLuaBufName": "General|Text|DefaultText",
+      "FzfLuaBufNr": "General|Text|DefaultText",
+      "FzfLuaBufFlagCur": {
+        "fg": "General|Editor|Tabs|Underline.sp"
+      },
+      "FzfLuaBufFlagAlt": {
+        "fg": "General|Text|DefaultText"
+      },
+      "FzfLuaTabTitle": "General|Text|DefaultText",
+      "FzfLuaTabMarker": "",
+      "FzfLuaDirIcon": "",
+      "FzfLuaDirPart": "",
+      "FzfLuaFilePart": {
+        "fg": "Red"
+      },
+      "FzfLuaLiveSym": "",
+      "FzfLuaFzfNormal": {
+        "fg": "General|Text|DefaultText",
+        "bg": "Appearance|Window|BackgroundEditArea.bg"
+      },
+      "FzfLuaFzfCursorLine": {
+        "fg": "General|Text|DefaultText",
+        "bg": "Appearance|Window|RowSelected.bg"
+      },
+      "FzfLuaFzfMatch": {
+        "fg": "Appearance|Search|MatchedTextContrast.bg"
+      },
+      "FzfLuaFzfBorder": {
+        "fg": "Appearance|Window|BorderSubtle.fg"
+      },
+      "FzfLuaFzfScrollbar": {
+        "fg": "General|Editor|VerticalScrollbar|Thumb.bg"
+      },
+      "FzfLuaFzfSeparator": "Appearance|Window|BorderSubtle",
+      "FzfLuaFzfGutter": "Appearance|Window|BackgroundEditArea",
+      "FzfLuaFzfHeader": {
+        "fg": "Appearance|Window|SubtleText.fg"
+      },
+      "FzfLuaFzfInfo": {
+        "fg": "Appearance|Window|SubtleText.fg"
+      },
+      "FzfLuaFzfPointer": {
+        "fg": "Appearance|Window|BackgroundEditArea.bg"
+      },
+      "FzfLuaFzfMarker": null,
+      "FzfLuaFzfSpinner": "Appearance|Window|SubtleText",
+      "FzfLuaFzfPrompt": "Appearance|Search|PromptIcon",
+      "FzfLuaFzfQuery": "General|Text|DefaultText"
     }
   }
 }
