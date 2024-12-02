@@ -2903,11 +2903,26 @@
         "fg": "General|Text|DefaultText",
         "bold": true
       },
-      "NotifyERRORBody": "General|Text|DefaultText",
-      "NotifyWARNBody": "General|Text|DefaultText",
-      "NotifyINFOBody": "General|Text|DefaultText",
-      "NotifyDEBUGBody": "General|Text|DefaultText",
-      "NotifyTRACEBody": "General|Text|DefaultText",
+      "NotifyERRORBody": {
+        "fg": "General|Text|DefaultText",
+        "bg": "Appearance|Notifications|Background"
+      },
+      "NotifyWARNBody": {
+        "fg": "General|Text|DefaultText",
+        "bg": "Appearance|Notifications|Background"
+      },
+      "NotifyINFOBody": {
+        "fg": "General|Text|DefaultText",
+        "bg": "Appearance|Notifications|Background"
+      },
+      "NotifyDEBUGBody": {
+        "fg": "General|Text|DefaultText",
+        "bg": "Appearance|Notifications|Background"
+      },
+      "NotifyTRACEBody": {
+        "fg": "General|Text|DefaultText",
+        "bg": "Appearance|Notifications|Background"
+      },
       "NotifyLogTime": "General|ErrorsAndWarnings|UnusedCode",
       "NotifyLogTitle": "General|Text|DefaultText"
     }
