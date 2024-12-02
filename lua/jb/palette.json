@@ -2908,7 +2908,7 @@
       "NotifyINFOBody": "General|Text|DefaultText",
       "NotifyDEBUGBody": "General|Text|DefaultText",
       "NotifyTRACEBody": "General|Text|DefaultText",
-      "NotifyLogTime": "General|Text|DefaultText",
+      "NotifyLogTime": "General|ErrorsAndWarnings|UnusedCode",
       "NotifyLogTitle": "General|Text|DefaultText"
     }
   }
