@@ -63,6 +63,40 @@
           }
         }
       },
+      "Notifications": {
+        "Background": {
+          "light": {
+            "bg": "#FFFFFF"
+          },
+          "dark": {
+            "bg": "#393B40"
+          }
+        },
+        "IconError": {
+          "light": {
+            "fg": "#D46068"
+          },
+          "dark": {
+            "fg": "#D46068"
+          }
+        },
+        "IconWarn": {
+          "light": {
+            "fg": "#F4B340"
+          },
+          "dark": {
+            "fg": "#EBC66D"
+          }
+        },
+        "IconInfo": {
+          "light": {
+            "fg": "#517DEB"
+          },
+          "dark": {
+            "fg": "#5D85EB"
+          }
+        }
+      },
       "Search": {
         "PromptIcon": {
           "light": {
@@ -2469,9 +2503,6 @@
       },
       "@variable.parameter.named.php": "PHP|NamedArguments"
     },
-    "Plugin.rcarriga/nvim-notify": {
-      "NotifyBackground": "General|Editor|NotificationBackground"
-    },
     "Plugin.petertriho/nvim-scrollbar": {
       "ScrollbarHandle": "General|Editor|VerticalScrollbar|Thumb",
       "ScrollbarCursorHandle": "ScrollbarHandle",
@@ -2839,6 +2870,46 @@
       "FzfLuaFzfSpinner": "Appearance|Window|SubtleText",
       "FzfLuaFzfPrompt": "Appearance|Search|PromptIcon",
       "FzfLuaFzfQuery": "General|Text|DefaultText"
+    },
+    "Plugin.rcarriga/nvim-notify": {
+      "NotifyBackground": "Appearance|Notifications|Background",
+      "NotifyERRORBorder": "Appearance|Window|Border",
+      "NotifyWARNBorder": "Appearance|Window|Border",
+      "NotifyINFOBorder": "Appearance|Window|Border",
+      "NotifyDEBUGBorder": "Appearance|Window|Border",
+      "NotifyTRACEBorder": "Appearance|Window|Border",
+      "NotifyERRORIcon": "Appearance|Notifications|IconError",
+      "NotifyWARNIcon": "Appearance|Notifications|IconWarn",
+      "NotifyINFOIcon": "Appearance|Notifications|IconInfo",
+      "NotifyDEBUGIcon": "General|Text|DefaultText",
+      "NotifyTRACEIcon": "General|Text|DefaultText",
+      "NotifyERRORTitle": {
+        "fg": "General|Text|DefaultText",
+        "bold": true
+      },
+      "NotifyWARNTitle": {
+        "fg": "General|Text|DefaultText",
+        "bold": true
+      },
+      "NotifyINFOTitle": {
+        "fg": "General|Text|DefaultText",
+        "bold": true
+      },
+      "NotifyDEBUGTitle": {
+        "fg": "General|Text|DefaultText",
+        "bold": true
+      },
+      "NotifyTRACETitle": {
+        "fg": "General|Text|DefaultText",
+        "bold": true
+      },
+      "NotifyERRORBody": "General|Text|DefaultText",
+      "NotifyWARNBody": "General|Text|DefaultText",
+      "NotifyINFOBody": "General|Text|DefaultText",
+      "NotifyDEBUGBody": "General|Text|DefaultText",
+      "NotifyTRACEBody": "General|Text|DefaultText",
+      "NotifyLogTime": "General|Text|DefaultText",
+      "NotifyLogTitle": "General|Text|DefaultText"
     }
   }
 }
