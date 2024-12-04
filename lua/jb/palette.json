@@ -131,16 +131,8 @@
           }
         }
       },
-      "Window": {
+      "ToolWindow": {
         "Title": {
-          "light": {
-            "fg": "#565757"
-          },
-          "dark": {
-            "fg": "#9FA0A2"
-          }
-        },
-        "ToolWindowTitle": {
           "light": {
             "fg": "#1D1D1D"
           },
@@ -148,12 +140,30 @@
             "fg": "#DFE1E5"
           }
         },
+        "Border": {
+          "light": {
+            "fg": "#EBECF0"
+          },
+          "dark": {
+            "fg": "#2B2D30"
+          }
+        }
+      },
+      "Window": {
         "Background": {
           "light": {
             "bg": "#F7F8FA"
           },
           "dark": {
             "bg": "#2B2D30"
+          }
+        },
+        "Title": {
+          "light": {
+            "fg": "#565757"
+          },
+          "dark": {
+            "fg": "#9FA0A2"
           }
         },
         "BackgroundEditArea": {
@@ -2206,12 +2216,12 @@
     },
     "Custom": {
       "NetrwFloatTitle": {
-        "fg": "Appearance|Window|ToolWindowTitle",
+        "fg": "Appearance|ToolWindow|Title",
         "bg": "Appearance|Window|Background",
         "bold": true
       },
       "NetrwFloatFooter": {
-        "fg": "Appearance|Window|ToolWindowTitle",
+        "fg": "Appearance|ToolWindow|Title",
         "bg": "Appearance|Window|Background",
         "sp": "Appearance|Window|BorderSubtle.fg",
         "underline": true
@@ -2221,7 +2231,7 @@
       },
       "NetrwFloatBorder": {
         "bg": "Appearance|Window|Border",
-        "fg": "Appearance|Window|BorderSubtle"
+        "fg": "Appearance|ToolWindow|Border"
       },
       "NetrwCursorLine": "Appearance|Window|RowSelected",
       "General_Editor_Guides_VisualGuides": "General|Editor|Guides|VisualGuides",
