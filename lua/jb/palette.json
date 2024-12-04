@@ -140,6 +140,14 @@
             "fg": "#9FA0A2"
           }
         },
+        "ToolWindowTitle": {
+          "light": {
+            "fg": "#1D1D1D"
+          },
+          "dark": {
+            "fg": "#DFE1E5"
+          }
+        },
         "Background": {
           "light": {
             "bg": "#F7F8FA"
@@ -2030,7 +2038,7 @@
       "QuickFixLine": "General|ErrorsAndWarnings|Warning|Default",
       "Search": "General|SearchResults|TextSearchResult|Default",
       "SnippetTabstop": "",
-      "SpecialKey": "General|Text|Whitespaces",
+      "SpecialKey": "General|ErrorsAndWarnings|UnusedCode",
       "SpellBad": "General|ErrorsAndWarnings|Typo",
       "SpellCap": "General|ErrorsAndWarnings|TextStyleWarning",
       "SpellLocal": "General|ErrorsAndWarnings|TextStyleSuggestion",
@@ -2197,6 +2205,25 @@
       "healthWarning": "General|ErrorsAndWarnings|Warning|Default"
     },
     "Custom": {
+      "NetrwFloatTitle": {
+        "fg": "Appearance|Window|ToolWindowTitle",
+        "bg": "Appearance|Window|Background",
+        "bold": true
+      },
+      "NetrwFloatFooter": {
+        "fg": "Appearance|Window|ToolWindowTitle",
+        "bg": "Appearance|Window|Background",
+        "sp": "Appearance|Window|BorderSubtle.fg",
+        "underline": true
+      },
+      "NetrwFloatBorderTop": {
+        "bg": "Appearance|Window|Background"
+      },
+      "NetrwFloatBorder": {
+        "bg": "Appearance|Window|Border",
+        "fg": "Appearance|Window|BorderSubtle"
+      },
+      "NetrwCursorLine": "Appearance|Window|RowSelected",
       "General_Editor_Guides_VisualGuides": "General|Editor|Guides|VisualGuides",
       "General_Editor_Guides_HardWrapGuide": "General|Editor|Guides|HardWrapGuide",
       "General_Text_DefaultText": "General|Text|DefaultText",
