@@ -175,6 +175,14 @@
           "dark": {
             "bg": "#2B2D30"
           }
+        },
+        "Item": {
+          "light": {
+            "fg": "#000000"
+          },
+          "dark": {
+            "fg": "#DFE1E5"
+          }
         }
       },
       "Window": {
@@ -3061,11 +3069,11 @@
       "netrwTreeBar": "Appearance|ProjectView|IndentGuide",
       "netrwClassify": "ConsoleColors|ANSIColors|BrightBlack",
       "netrwSpecial": "ConsoleColors|ANSIColors|Green",
-      "netrwDir": "ConsoleColors|ANSIColors|Blue",
-      "netrwSymLink": "ConsoleColors|ANSIColors|Magenta",
+      "netrwDir": "netrwPlain",
+      "netrwSymLink": "netrwPlain",
       "netrwLink": "ConsoleColors|Console|StandardOutput",
-      "netrwPlain": "ConsoleColors|Console|StandardOutput",
-      "netrwExe": "ConsoleColors|ANSIColors|Red",
+      "netrwPlain": "Appearance|ToolWindow|Item",
+      "netrwExe": "netrwPlain",
       "NetrwCursorLine": "Appearance|Window|RowSelected"
     }
   }
