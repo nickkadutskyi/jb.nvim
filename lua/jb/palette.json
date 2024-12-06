@@ -131,6 +131,24 @@
           }
         }
       },
+      "ProjectView": {
+        "IndentGuide": {
+          "light": {
+            "fg": "#EBECEF"
+          },
+          "dark": {
+            "fg": "#3D3F43"
+          }
+        },
+        "SymLink": {
+          "light": {
+            "fg": "#1D1D1D"
+          },
+          "dark": {
+            "fg": "#DFE1E5"
+          }
+        }
+      },
       "ToolWindow": {
         "Title": {
           "light": {
@@ -142,10 +160,20 @@
         },
         "Border": {
           "light": {
-            "fg": "#EBECF0"
+            "fg": "#F7F8FA",
+            "bg": "#F7F8FA"
           },
           "dark": {
-            "fg": "#2B2D30"
+            "fg": "#2B2D30",
+            "bg": "#2B2D30"
+          }
+        },
+        "Background": {
+          "light": {
+            "bg": "#F7F8FA"
+          },
+          "dark": {
+            "bg": "#2B2D30"
           }
         }
       },
@@ -1094,9 +1122,30 @@
     },
     "ConsoleColors": {
       "ANSIColors": {
-        "Black": null,
-        "Blue": null,
-        "BrightBlack": null,
+        "Black": {
+          "light": {
+            "fg": "#000000"
+          },
+          "dark": {
+            "fg": "#000000"
+          }
+        },
+        "Blue": {
+          "light": {
+            "fg": "#063FDB"
+          },
+          "dark": {
+            "fg": "#3993D4"
+          }
+        },
+        "BrightBlack": {
+          "light": {
+            "fg": "#656565"
+          },
+          "dark": {
+            "fg": "#595959"
+          }
+        },
         "BrightBlue": null,
         "BrightCyan": {
           "light": {
@@ -1113,12 +1162,54 @@
         "BrightRed": null,
         "BrightWhite": null,
         "BrightYellow": null,
-        "Cyan": null,
-        "Green": null,
-        "Magenta": null,
-        "Red": null,
-        "WhiteGray": null,
-        "Yellow": null
+        "Cyan": {
+          "light": {
+            "fg": "#000000"
+          },
+          "dark": {
+            "fg": "#028E8E"
+          }
+        },
+        "Green": {
+          "light": {
+            "fg": "#067D17"
+          },
+          "dark": {
+            "fg": "#5C962C"
+          }
+        },
+        "Magenta": {
+          "light": {
+            "fg": "#B309B3"
+          },
+          "dark": {
+            "fg": "#A771BF"
+          }
+        },
+        "Red": {
+          "light": {
+            "fg": "#CE0505"
+          },
+          "dark": {
+            "fg": "#F0524F"
+          }
+        },
+        "WhiteGray": {
+          "light": {
+            "fg": "#929292"
+          },
+          "dark": {
+            "fg": "#808080"
+          }
+        },
+        "Yellow": {
+          "light": {
+            "fg": "#B28C00"
+          },
+          "dark": {
+            "fg": "#A68A0D"
+          }
+        }
       },
       "Console": {
         "Background": null,
@@ -1130,7 +1221,14 @@
             "fg": "#F75464"
           }
         },
-        "StandardOutput": null,
+        "StandardOutput": {
+          "light": {
+            "fg": "#000000"
+          },
+          "dark": {
+            "fg": "#BCBEC4"
+          }
+        },
         "SystemOutput": null,
         "UserInput": {
           "light": {
@@ -2222,7 +2320,7 @@
       },
       "NetrwFloatFooter": {
         "fg": "Appearance|ToolWindow|Title",
-        "bg": "Appearance|Window|Background",
+        "bg": "Appearance|ToolWindow|Background",
         "sp": "Appearance|Window|BorderSubtle.fg",
         "underline": true
       },
@@ -2230,7 +2328,7 @@
         "bg": "Appearance|Window|Background"
       },
       "NetrwFloatBorder": {
-        "bg": "Appearance|Window|Border",
+        "bg": "Appearance|ToolWindow|Border",
         "fg": "Appearance|ToolWindow|Border"
       },
       "NetrwCursorLine": "Appearance|Window|RowSelected",
@@ -2962,6 +3060,16 @@
       },
       "NotifyLogTime": "General|ErrorsAndWarnings|UnusedCode",
       "NotifyLogTitle": "General|Text|DefaultText"
+    },
+    "Netrw": {
+      "netrwTreeBar": "Appearance|ProjectView|IndentGuide",
+      "netrwClassify": "ConsoleColors|ANSIColors|BrightBlack",
+      "netrwSpecial": "ConsoleColors|ANSIColors|Green",
+      "netrwDir": "ConsoleColors|ANSIColors|Blue",
+      "netrwSymLink": "ConsoleColors|ANSIColors|Magenta",
+      "netrwLink": "ConsoleColors|Console|StandardOutput",
+      "netrwPlain": "ConsoleColors|Console|StandardOutput",
+      "netrwExe": "ConsoleColors|ANSIColors|Red"
     }
   }
 }
