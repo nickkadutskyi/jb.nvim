@@ -160,11 +160,11 @@
         },
         "Border": {
           "light": {
-            "fg": "#F7F8FA",
+            "fg": "#EBECF0",
             "bg": "#F7F8FA"
           },
           "dark": {
-            "fg": "#2B2D30",
+            "fg": "#1E1F22",
             "bg": "#2B2D30"
           }
         },
@@ -2321,16 +2321,13 @@
       "ToolWindowFloatFooter": {
         "fg": "Appearance|ToolWindow|Title",
         "bg": "Appearance|ToolWindow|Background",
-        "sp": "Appearance|Window|BorderSubtle.fg",
+        "sp": "Appearance|ToolWindow|Border.fg",
         "underline": true
       },
       "ToolWindowFloatBorderTop": {
         "bg": "Appearance|Window|Background"
       },
-      "ToolWindowFloatBorder": {
-        "bg": "Appearance|ToolWindow|Border",
-        "fg": "Appearance|ToolWindow|Border"
-      },
+      "ToolWindowFloatBorder": "Appearance|ToolWindow|Border",
       "General_Editor_Guides_VisualGuides": "General|Editor|Guides|VisualGuides",
       "General_Editor_Guides_HardWrapGuide": "General|Editor|Guides|HardWrapGuide",
       "General_Text_DefaultText": "General|Text|DefaultText",
