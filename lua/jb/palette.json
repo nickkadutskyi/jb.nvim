@@ -2313,25 +2313,6 @@
       "healthWarning": "General|ErrorsAndWarnings|Warning|Default"
     },
     "Custom": {
-      "NetrwFloatTitle": {
-        "fg": "Appearance|ToolWindow|Title",
-        "bg": "Appearance|Window|Background",
-        "bold": true
-      },
-      "NetrwFloatFooter": {
-        "fg": "Appearance|ToolWindow|Title",
-        "bg": "Appearance|ToolWindow|Background",
-        "sp": "Appearance|Window|BorderSubtle.fg",
-        "underline": true
-      },
-      "NetrwFloatBorderTop": {
-        "bg": "Appearance|Window|Background"
-      },
-      "NetrwFloatBorder": {
-        "bg": "Appearance|ToolWindow|Border",
-        "fg": "Appearance|ToolWindow|Border"
-      },
-      "NetrwCursorLine": "Appearance|Window|RowSelected",
       "General_Editor_Guides_VisualGuides": "General|Editor|Guides|VisualGuides",
       "General_Editor_Guides_HardWrapGuide": "General|Editor|Guides|HardWrapGuide",
       "General_Text_DefaultText": "General|Text|DefaultText",
@@ -3069,7 +3050,26 @@
       "netrwSymLink": "ConsoleColors|ANSIColors|Magenta",
       "netrwLink": "ConsoleColors|Console|StandardOutput",
       "netrwPlain": "ConsoleColors|Console|StandardOutput",
-      "netrwExe": "ConsoleColors|ANSIColors|Red"
+      "netrwExe": "ConsoleColors|ANSIColors|Red",
+      "NetrwFloatTitle": {
+        "fg": "Appearance|ToolWindow|Title",
+        "bg": "Appearance|Window|Background",
+        "bold": true
+      },
+      "NetrwFloatFooter": {
+        "fg": "Appearance|ToolWindow|Title",
+        "bg": "Appearance|ToolWindow|Background",
+        "sp": "Appearance|Window|BorderSubtle.fg",
+        "underline": true
+      },
+      "NetrwFloatBorderTop": {
+        "bg": "Appearance|Window|Background"
+      },
+      "NetrwFloatBorder": {
+        "bg": "Appearance|ToolWindow|Border",
+        "fg": "Appearance|ToolWindow|Border"
+      },
+      "NetrwCursorLine": "Appearance|Window|RowSelected"
     }
   }
 }
