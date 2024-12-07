@@ -101,13 +101,37 @@ function M.get_project_color_hl()
     local hue = (r + g + b) % 360 / 360
 
     -- Background: High saturation (0.8) and lightness (0.5)
-    local r1, g1, b1 = M.hsl_to_rgb(hue, 0.8, 0.5)
+    local r1, g1, b1 = M.hsl_to_rgb(hue, 0.7, 0.5)
 
     -- Foreground: White or near-white
     local r2, g2, b2 = 255, 255, 255
 
     return { bg = string.format("#%02X%02X%02X", r1, g1, b1), fg = string.format("#%02X%02X%02X", r2, g2, b2) }
 end
+
+--- Blend two colors together
+---@param color1 string # Hex color in format "#RRGGBB"
+---@param color2 string # Hex color in format "#RRGGBB"
+---@param factor number # Blend factor (0.0 to 1.0, where 0.0 is full color1, 1.0 is full color2)
+---@return string # Resulting hex color
+function M.blend_colors(color1, color2, factor)
+    -- Remove '#' if present
+    color1 = color1:gsub("#", "")
+    color2 = color2:gsub("#", "")
+
+    -- Convert hex to RGB
+    local r1, g1, b1 = tonumber(color1:sub(1,2), 16), tonumber(color1:sub(3,4), 16), tonumber(color1:sub(5,6), 16)
+    local r2, g2, b2 = tonumber(color2:sub(1,2), 16), tonumber(color2:sub(3,4), 16), tonumber(color2:sub(5,6), 16)
+
+    -- Blend colors
+    local r = math.floor(r1 + (r2 - r1) * factor)
+    local g = math.floor(g1 + (g2 - g1) * factor)
+    local b = math.floor(b1 + (b2 - b1) * factor)
+
+    -- Convert back to hex
+    return string.format("#%02X%02X%02X", r, g, b)
+end
+
 
 ---@param str string
 ---@return number

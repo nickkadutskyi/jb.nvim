@@ -2321,6 +2321,7 @@
       "healthWarning": "General|ErrorsAndWarnings|Warning|Default"
     },
     "Custom": {
+      "CustomStatusLine": "Custom|StatusBar",
       "ToolWindowFloatTitle": {
         "fg": "Appearance|ToolWindow|Title",
         "bg": "Appearance|Window|Background",

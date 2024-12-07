@@ -95,7 +95,44 @@ function M.setup()
     end
 
     -- Set ProjectColor highlight group
-    vim.api.nvim_set_hl(0, "ProjectColor", utils.get_project_color_hl())
+    local project_color = utils.get_project_color_hl()
+    local status_line_color = utils.get_hl_props(colors, "Custom|StatusBar.bg", profile)
+    vim.api.nvim_set_hl(0, "ProjectColor", project_color)
+    vim.api.nvim_set_hl(0, "StatusLineTinted", {
+        bg = utils.blend_colors(status_line_color.hl.bg, project_color.bg, 0.1),
+    })
+    vim.api.nvim_set_hl(0, "StatusLineTintedNormal", {
+        fg = status_line_color.hl.fg,
+        bg = utils.blend_colors(
+            status_line_color.hl.bg,
+            utils.get_hl_props(colors, "IdeaVim|Modes|Normal", profile).hl.bg,
+            0.1
+        ),
+    })
+    vim.api.nvim_set_hl(0, "StatusLineTintedInsert", {
+        fg = status_line_color.hl.fg,
+        bg = utils.blend_colors(
+            status_line_color.hl.bg,
+            utils.get_hl_props(colors, "IdeaVim|Modes|Insert", profile).hl.bg,
+            0.1
+        ),
+    })
+    vim.api.nvim_set_hl(0, "StatusLineTintedVisual", {
+        fg = status_line_color.hl.fg,
+        bg = utils.blend_colors(
+            status_line_color.hl.bg,
+            utils.get_hl_props(colors, "IdeaVim|Modes|Visual", profile).hl.bg,
+            0.1
+        ),
+    })
+    vim.api.nvim_set_hl(0, "StatusLineTintedReplace", {
+        fg = status_line_color.hl.fg,
+        bg = utils.blend_colors(
+            status_line_color.hl.bg,
+            utils.get_hl_props(colors, "IdeaVim|Modes|Replace", profile).hl.bg,
+            0.1
+        ),
+    })
 end
 
 return M
