@@ -98,9 +98,16 @@ function M.setup()
     local project_color = utils.get_project_color_hl()
     local status_line_color = utils.get_hl_props(colors, "Custom|StatusBar.bg", profile)
     vim.api.nvim_set_hl(0, "ProjectColor", project_color)
+    -- Tinted variants based on project color
+    local tinted_status_line_bg = utils.blend_colors(status_line_color.hl.bg, project_color.bg, 0.1)
     vim.api.nvim_set_hl(0, "StatusLineTinted", {
-        bg = utils.blend_colors(status_line_color.hl.bg, project_color.bg, 0.1),
+        bg = tinted_status_line_bg,
     })
+    local tinted_status_line_secondary_bg = utils.blend_colors(status_line_color.hl.bg, project_color.bg, 0.025)
+    vim.api.nvim_set_hl(0, "StatusLineSecondaryTinted", {
+        bg = tinted_status_line_secondary_bg,
+    })
+    -- Tinted modes
     vim.api.nvim_set_hl(0, "StatusLineTintedNormal", {
         fg = status_line_color.hl.fg,
         bg = utils.blend_colors(
@@ -132,6 +139,34 @@ function M.setup()
             utils.get_hl_props(colors, "IdeaVim|Modes|Replace", profile).hl.bg,
             0.1
         ),
+    })
+    -- Tinted file VCS status
+
+    local vcs_hls = {
+        "VCS_Added_StatusLine",
+        "VCS_Copied_StatusLine",
+        "VCS_Deleted_StatusLine",
+        "VCS_DeletedFromFileSystem_StatusLine",
+        "VCS_HaveChangedDescendants_StatusLine",
+        "VCS_HaveImmediateChangedChildren_StatusLine",
+        "VCS_Ignored_StatusLine",
+        "VCS_IgnoredIgnorePlugin_StatusLine",
+        "VCS_Merged_StatusLine",
+        "VCS_MergedWithConflicts_StatusLine",
+        "VCS_Modified_StatusLine",
+        "VCS_Renamed_StatusLine",
+        "VCS_Unknown_StatusLine",
+    }
+    for _, hl in ipairs(vcs_hls) do
+        local hl_props = vim.api.nvim_get_hl(0, { name = hl .. "_Custom" })
+        vim.api.nvim_set_hl(0, hl .. "_Tinted", {
+            fg = "#" .. string.format("%06x", (hl_props.fg or "")),
+            bg = tinted_status_line_secondary_bg,
+        })
+    end
+    vim.api.nvim_set_hl(0, "Custom_TabSel_Tinted", {
+        fg = utils.get_hl_props(colors, "Custom|TabSel", profile).hl.fg,
+        bg = tinted_status_line_secondary_bg,
     })
 end
 

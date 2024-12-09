@@ -2329,9 +2329,7 @@
       },
       "ToolWindowFloatFooter": {
         "fg": "Appearance|ToolWindow|Title",
-        "bg": "Appearance|ToolWindow|Background",
-        "sp": "Appearance|ToolWindow|Border.fg",
-        "underline": true
+        "bg": "Appearance|ToolWindow|Background"
       },
       "ToolWindowFloatBorderTop": {
         "bg": "Appearance|Window|Background"
