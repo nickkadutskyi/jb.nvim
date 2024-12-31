@@ -852,6 +852,12 @@
     "LanguageDefaults": {
       "BadCharacter": null,
       "BracesAndOperators": {
+        "Default": {
+          "light": "General|Text|DefaultText",
+          "dark": {
+            "fg": "#BCBEC4"
+          }
+        },
         "Braces": {
           "light": "General|Text|DefaultText",
           "dark": {
@@ -975,20 +981,24 @@
         },
         "LineComment": {
           "light": {
-            "fg": "#8C8C8C"
+            "fg": "#8C8C8C",
+            "italic": true
           },
           "dark": {
-            "fg": "#7A7E85"
+            "fg": "#7A7E85",
+            "italic": true
           }
         }
       },
       "Identifiers": {
         "Constant": {
           "light": {
-            "fg": "#871094"
+            "fg": "#871094",
+            "italic": true
           },
           "dark": {
-            "fg": "#C77DBB"
+            "fg": "#C77DBB",
+            "italic": true
           }
         },
         "Default": {
@@ -1912,24 +1922,14 @@
       }
     },
     "PHP": {
-      "Attributes": "LanguageDefaults|Metadata",
-      "BracesAndOperators": {
-        "Braces": "LanguageDefaults|BracesAndOperators|Braces",
-        "Brackets": "LanguageDefaults|BracesAndOperators|Brackets",
-        "Comma": "LanguageDefaults|BracesAndOperators|Comma",
-        "Operators": "LanguageDefaults|BracesAndOperators|OperationSign",
-        "Parentheses": "LanguageDefaults|BracesAndOperators|Parentheses",
-        "Semicolon": "LanguageDefaults|BracesAndOperators|Semicolon"
-      },
       "ClassesAndProperties": {
-        "Class": "LanguageDefaults|Classes|ClassName",
         "InstanceProperty": "LanguageDefaults|Classes|InstanceField",
         "Interface": null,
         "PrivateInstanceProperty": null,
         "ProtectedInstanceProperty": null,
         "StaticProperty": "LanguageDefaults|Classes|StaticField"
       },
-      "Comments": "LanguageDefaults|Comments|LineComment",
+      "Comments": "LanguageDefaults|Comments|LineCommentItalic",
       "DQLBuilder": null,
       "FunctionsAndMethods": {
         "Declaration": null,
@@ -1976,7 +1976,6 @@
         },
         "VariableVariable": null
       },
-      "Keywords": "LanguageDefaults|Keyword",
       "NamedArguments": {
         "light": {
           "fg": "#4A86E8"
@@ -2003,16 +2002,6 @@
           },
           "dark": {
             "fg": "#16BAAC"
-          }
-        },
-        "Text": {
-          "light": {
-            "fg": "#8C8C8C",
-            "italic": true
-          },
-          "dark": {
-            "fg": "#5F826B",
-            "italic": true
           }
         },
         "Variable": null
@@ -2420,6 +2409,23 @@
       "VCS_VCSAnnotations_BackgroundColor3": "VCS|VCSAnnotations|BackgroundColor3",
       "VCS_VCSAnnotations_BackgroundColor4": "VCS|VCSAnnotations|BackgroundColor4"
     },
+    "Treesitter.Common": {
+      "@attribute": "LanguageDefaults|Metadata",
+      "@comment": "LanguageDefaults|Comments|LineComment",
+      "@comment.documentation": "LanguageDefaults|Comments|DocComment|Text",
+      "@constant": "LanguageDefaults|Identifiers|Constant",
+      "@constructor.php": "LanguageDefaults|Identifiers|Default",
+      "@keyword": "LanguageDefaults|Keyword",
+      "@label": "LanguageDefaults|Identifiers|Label",
+      "@module": "LanguageDefaults|Identifiers|Default",
+      "@property": "LanguageDefaults|Classes|InstanceField",
+      "@property.static": "LanguageDefaults|Classes|StaticField",
+      "@punctuation": "LanguageDefaults|BracesAndOperators|Default",
+      "@type": "LanguageDefaults|Identifiers|Default",
+      "@variable.builtin": "LanguageDefaults|Keyword",
+      "@variable.member": "LanguageDefaults|Classes|InstanceField",
+      "@variable.member.static": "LanguageDefaults|Classes|StaticField"
+    },
     "Treesitter.Bash": {
       "@function.call.bash": "BashSupportPro|Commands|GenericCommand",
       "@variable.parameter.bash": "BashSupportPro|StringLiterals|UnquotedWord"
@@ -2599,46 +2605,18 @@
       "@lsp.type.comment.nix": null
     },
     "Treesitter.PHP": {
-      "@comment.php": {
-        "fg": "PHP|Comments.fg",
-        "italic": true
-      },
-      "@comment.documentation.php": "PHP|PHPDoc|Text",
-      "@attribute.php": "PHP|Attributes",
+      "@attribute.phpdoc": "PHP|PHPDoc|Tag",
+      "@tag.php": "PHP|PHPCode|Tags",
       "@variable.php": "PHP|Identifiers|Variable",
       "@variable.parameter.php": "PHP|FunctionsAndMethods|Parameter",
-      "@variable.member.php": "PHP|ClassesAndProperties|InstanceProperty",
-      "@variable.member.static.php": "PHP|ClassesAndProperties|StaticProperty",
-      "@tag.php": "PHP|PHPCode|Tags",
-      "@keyword.type.php": "PHP|Keywords",
-      "@keyword.import.php": "PHP|Keywords",
-      "@keyword.operator.php": "PHP|Keywords",
-      "@module.php": "PHP|Identifiers|Default",
-      "@punctuation.bracket.php": "PHP|BracesAndOperators|Braces",
-      "@punctuation.delimiter.php": "PHP|BracesAndOperators|Operators",
-      "@type.php": "PHP|ClassesAndProperties|Class",
       "@type.template.phpdoc": "PHP|PHPDoc|TemplateType",
-      "@type.definition.php": "PHP|ClassesAndProperties|Class",
-      "@attribute.phpdoc": "PHP|PHPDoc|Tag",
-      "@type.phpdoc": "PHP|PHPDoc|Identifier",
       "@variable.phpdoc": "PHP|PHPDoc|Parameter",
       "@variable.parameter.phpdoc": "PHP|PHPDoc|Parameter",
       "@variable.member.phpdoc": "PHP|PHPDoc|Property",
       "@keyword.phpdoc": null,
-      "@label.php": "PHP|Heredoc|HeredocID",
-      "@property.php": "PHP|ClassesAndProperties|InstanceProperty",
-      "@property.static.php": "PHP|ClassesAndProperties|StaticProperty",
-      "@constructor.php": "PHP|Identifiers|Default",
-      "@variable.builtin.php": "PHP|Keywords",
-      "@constant.php": null,
-      "@constant.only.php": {
-        "fg": "PHP|Identifiers|Constant.fg",
-        "italic": true
-      },
-      "@constant.builtin.php": {
-        "fg": "PHP|Identifiers|Constant.fg",
-        "italic": true
-      },
+      "@constant.php": "PHP|Identifiers|Constant",
+      "@constant.only.php": "PHP|Identifiers|Constant",
+      "@constant.builtin.php": "PHP|Identifiers|Constant",
       "@variable.parameter.named.php": "PHP|NamedArguments"
     },
     "Plugin.petertriho/nvim-scrollbar": {
