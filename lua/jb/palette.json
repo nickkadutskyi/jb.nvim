@@ -1857,15 +1857,6 @@
       "ValidEscapeSequence": null
     },
     "Lua": {
-      "BracesAndOperators": {
-        "Braces": "LanguageDefaults|BracesAndOperators|Braces",
-        "Brackets": "LanguageDefaults|BracesAndOperators|Brackets",
-        "Comma": "LanguageDefaults|BracesAndOperators|Comma",
-        "Dot": "LanguageDefaults|BracesAndOperators|Dot",
-        "Operators": "LanguageDefaults|BracesAndOperators|OperationSign",
-        "Parentheses": "LanguageDefaults|BracesAndOperators|Parentheses",
-        "Semicolon": "LanguageDefaults|BracesAndOperators|Semicolon"
-      },
       "ClassMembers": {
         "Field": {
           "light": "General|Text|DefaultText",
@@ -1894,8 +1885,7 @@
           "fg": "#D700FF"
         },
         "dark": {
-          "fg": "#00E5E5",
-          "bg": "#006E6E"
+          "fg": "#00E5E5"
         }
       },
       "StdApi": {
@@ -1910,7 +1900,6 @@
         "GlobalFunction": "LanguageDefaults|Classes|StaticField",
         "GlobalVariable": "LanguageDefaults|Classes|StaticField",
         "LocalFunction": "LanguageDefaults|Identifiers|LocalVariable",
-        "LocalVariable": "LanguageDefaults|Identifiers|LocalVariable",
         "Parameter": "UserDefinedFileTypes|Keyword3",
         "UpValue": {
           "light": {
@@ -2429,6 +2418,7 @@
       "@property.static": "LanguageDefaults|Classes|StaticField",
       "@punctuation": "LanguageDefaults|BracesAndOperators|Default",
       "@type": "LanguageDefaults|Identifiers|Default",
+      "@variable": "LanguageDefaults|Identifiers|LocalVariable",
       "@variable.builtin": "LanguageDefaults|Keyword",
       "@variable.member": "LanguageDefaults|Classes|InstanceField",
       "@variable.member.static": "LanguageDefaults|Classes|StaticField"
@@ -2570,30 +2560,21 @@
       }
     },
     "Treesitter.Lua": {
-      "@variable.lua": "LanguageDefaults|Identifiers|LocalVariable",
-      "@constant.lua": "LanguageDefaults|Identifiers|LocalVariable",
-      "@constant.builtin.lua": {
-        "fg": "Lua|NilTrueFalse"
-      },
-      "@boolean.lua": {
-        "fg": "Lua|NilTrueFalse"
-      },
-      "@constructor.lua": {},
+      "@boolean.lua": "Lua|NilTrueFalse",
+      "@constant.builtin.lua": "Lua|NilTrueFalse",
+      "@constructor.lua": "LanguageDefaults|BracesAndOperators|Default",
       "@function.builtin.lua": "Lua|StdApi",
-      "@module.builtin.lua": "Lua|StdApi",
+      "@function.call.lua": "Lua|ClassMembers|StaticMethod",
       "@function.lua": "Lua|Variables|LocalFunction",
-      "@function.call.lua": {
-        "fg": "Lua|ClassMembers|StaticMethod"
-      },
-      "@variable.parameter.lua": "Lua|Variables|Parameter",
+      "@module.builtin.lua": "Lua|StdApi",
       "@variable.member.lua": "Lua|ClassMembers|Field",
-      "@comment.documentation.lua": {
-        "fg": "Lua|Comments|DocComment"
-      },
-      "@punctuation.bracket.lua": "Lua|BracesAndOperators|Brackets",
+      "@variable.parameter.lua": "Lua|Variables|Parameter",
       "@_method.lua": "Lua|StdApi"
     },
     "Semantic.Lua": {
+      "@lsp.mod.global.lua": "Lua|Variables|GlobalVariable",
+      "@lsp.type.property.lua": null,
+
       "@lsp.typemod.parameter.declaration.lua": "Lua|Variables|Parameter",
       "@lsp.type.type.lua": "Lua|Comments|EmmyDoc|ClassNameReference",
       "@lsp.type.variable.lua": "LanguageDefaults|Identifiers|LocalVariable",
@@ -2604,8 +2585,8 @@
       "@lsp.type.method.lua": "Lua|ClassMembers|StaticMethod",
       "@lsp.type.parameter.lua": "Lua|Variables|Parameter",
       "@lsp.typemod.function.global.lua": "Lua|Variables|GlobalFunction",
-      "@lsp.typemod.variable.global.lua": "Lua|Variables|GlobalVariable",
       "@lsp.typemod.property.declaration.lua": "Lua|Comments|DocComment"
+
     },
     "Treesitter.Nix": {},
     "Semantic.Nix": {
