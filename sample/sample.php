@@ -19,6 +19,7 @@ use AnotherClass as SomeAlias;
    public static $shared;
    const CONSTANT = 0987654321;
    /**
+    * @author Hello <hell@hello.com>
     * Description by <a href="mailto:">user@host.dom</a>
     * Semantic highlighting:
     * Generated spectrum to pick colors for local variables and parameters:

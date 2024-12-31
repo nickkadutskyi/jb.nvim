@@ -955,7 +955,14 @@
           "Code block": null,
           "Inline code fragment": null,
           "Link in rendered view": null,
-          "Markup": null,
+          "Markup": {
+            "light": {
+              "bg": "#E2FFE2"
+            },
+            "dark": {
+              "bg": "#68A67E"
+            }
+          },
           "Shortcut": null,
           "Tag": {
             "light": {
@@ -1991,7 +1998,7 @@
       },
       "PHPDoc": {
         "Identifier": "PHP|Identifiers|Default",
-        "Markup": null,
+        "Markup": "LanguageDefaults|Comments|DocComment|Markup",
         "Method Declaration": null,
         "Parameter": "PHP|FunctionsAndMethods|Parameter",
         "Property": "PHP|ClassesAndProperties|InstanceProperty",
@@ -2606,18 +2613,18 @@
     },
     "Treesitter.PHP": {
       "@attribute.phpdoc": "PHP|PHPDoc|Tag",
+      "@constant.builtin.php": "PHP|Identifiers|Constant",
+      "@constant.only.php": "PHP|Identifiers|Constant",
+      "@constant.php": "PHP|Identifiers|Constant",
+      "@keyword.phpdoc": "PHP|PHPDoc|Markup",
       "@tag.php": "PHP|PHPCode|Tags",
-      "@variable.php": "PHP|Identifiers|Variable",
-      "@variable.parameter.php": "PHP|FunctionsAndMethods|Parameter",
       "@type.template.phpdoc": "PHP|PHPDoc|TemplateType",
-      "@variable.phpdoc": "PHP|PHPDoc|Parameter",
+      "@variable.parameter.named.php": "PHP|NamedArguments",
+      "@variable.parameter.php": "PHP|FunctionsAndMethods|Parameter",
       "@variable.parameter.phpdoc": "PHP|PHPDoc|Parameter",
       "@variable.member.phpdoc": "PHP|PHPDoc|Property",
-      "@keyword.phpdoc": null,
-      "@constant.php": "PHP|Identifiers|Constant",
-      "@constant.only.php": "PHP|Identifiers|Constant",
-      "@constant.builtin.php": "PHP|Identifiers|Constant",
-      "@variable.parameter.named.php": "PHP|NamedArguments"
+      "@variable.php": "PHP|Identifiers|Variable",
+      "@variable.phpdoc": "PHP|PHPDoc|Parameter"
     },
     "Plugin.petertriho/nvim-scrollbar": {
       "ScrollbarHandle": "General|Editor|VerticalScrollbar|Thumb",
