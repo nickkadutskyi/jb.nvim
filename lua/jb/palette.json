@@ -2560,6 +2560,7 @@
       }
     },
     "Treesitter.Lua": {
+      "@_method.lua": "Lua|StdApi",
       "@boolean.lua": "Lua|NilTrueFalse",
       "@constant.builtin.lua": "Lua|NilTrueFalse",
       "@constructor.lua": "LanguageDefaults|BracesAndOperators|Default",
@@ -2567,9 +2568,9 @@
       "@function.call.lua": "Lua|ClassMembers|StaticMethod",
       "@function.lua": "Lua|Variables|LocalFunction",
       "@module.builtin.lua": "Lua|StdApi",
+      "@property.lua": "LanguageDefaults|Identifiers|Default",
       "@variable.member.lua": "Lua|ClassMembers|Field",
-      "@variable.parameter.lua": "Lua|Variables|Parameter",
-      "@_method.lua": "Lua|StdApi"
+      "@variable.parameter.lua": "Lua|Variables|Parameter"
     },
     "Semantic.Lua": {
       "@lsp.mod.global.lua": "Lua|Variables|GlobalVariable",
