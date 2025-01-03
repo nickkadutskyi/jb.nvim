@@ -22,6 +22,17 @@
 - Supports both light and dark themes
 - Terminal colors.
 
+
+<details>
+<summary>Supported Languages</summary>
+
+| Language | Treesitter | Semantic |
+|----------|------------|----------|
+| C/C++    | ✅         | ⚠️       |
+
+</details>
+
+
 <details>
 <summary>Supported Plugins</summary>
 
