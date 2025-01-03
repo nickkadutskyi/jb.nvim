@@ -2417,7 +2417,7 @@
       "@property": "LanguageDefaults|Classes|InstanceField",
       "@property.static": "LanguageDefaults|Classes|StaticField",
       "@punctuation": "LanguageDefaults|BracesAndOperators|Default",
-      "@type": "LanguageDefaults|Identifiers|Default",
+      "@type": "LanguageDefaults|Classes|ClassName",
       "@variable": "LanguageDefaults|Identifiers|LocalVariable",
       "@variable.builtin": "LanguageDefaults|Keyword",
       "@variable.member": "LanguageDefaults|Classes|InstanceField",
