@@ -1438,7 +1438,14 @@
       "BlockComment": null,
       "InvalidStringEscape": null,
       "Keyword1": null,
-      "Keyword2": null,
+      "Keyword2": {
+        "light": {
+          "fg": "#74118C"
+        },
+        "dark": {
+          "fg": "#C77DBB"
+        }
+      },
       "Keyword3": {
         "light": {
           "fg": "#008080"
@@ -1919,7 +1926,8 @@
               "fg": "#000000"
             },
             "dark": "LanguageDefaults|Comments|DocComment|Tag"
-          }
+          },
+          "TagValue": "LanguageDefaults|Comments|DocComment|TagValue"
         }
       },
       "Keywords": "LanguageDefaults|Keyword",
@@ -1931,6 +1939,7 @@
           "fg": "#00E5E5"
         }
       },
+      "Self": "UserDefinedFileTypes|Keyword2",
       "StdApi": {
         "light": {
           "fg": "#CC542E"
@@ -2453,7 +2462,9 @@
       "@comment": "LanguageDefaults|Comments|LineComment",
       "@comment.documentation": "LanguageDefaults|Comments|DocComment|Text",
       "@constant": "LanguageDefaults|Identifiers|Constant",
+      "@constant.macro": "LanguageDefaults|Metadata",
       "@constructor.php": "LanguageDefaults|Identifiers|Default",
+      "@function.macro": "LanguageDefaults|Metadata",
       "@keyword": "LanguageDefaults|Keyword",
       "@keyword.directive": "LanguageDefaults|Metadata",
       "@label": "LanguageDefaults|Identifiers|Label",
@@ -2625,26 +2636,31 @@
       "@constant.builtin.lua": "Lua|NilTrueFalse",
       "@constructor.lua": "LanguageDefaults|BracesAndOperators|Default",
       "@function.builtin.lua": "Lua|StdApi",
-      "@function.call.lua": "Lua|ClassMembers|StaticMethod",
+      "@function.call.lua": "Lua|Variables|LocalFunction",
       "@function.lua": "Lua|Variables|LocalFunction",
       "@keyword.luadoc": "Lua|Comments|EmmyDoc|Tag",
+      "@keyword.return.luadoc": "Lua|Comments|EmmyDoc|Tag",
       "@module.builtin.lua": "Lua|StdApi",
       "@property.lua": "LanguageDefaults|Identifiers|Default",
+      "@punctuation.special.luadoc": "LanguageDefaults|BracesAndOperators|Default",
+      "@variable.builtin.lua": "Lua|Self",
       "@variable.member.lua": "Lua|ClassMembers|Field",
-      "@variable.parameter.lua": "Lua|Variables|Parameter"
+      "@variable.member.luadoc": "Lua|Comments|EmmyDoc|TagValue",
+      "@variable.parameter.lua": "Lua|Variables|Parameter",
+      "@variable.parameter.luadoc": "LanguageDefaults|Comments|DocComment|TagValue"
     },
     "Semantic.Lua": {
       "@lsp.mod.defaultLibrary.lua": "Lua|StdApi",
       "@lsp.mod.global.lua": "Lua|Variables|GlobalVariable",
       "@lsp.type.property.lua": "Lua|ClassMembers|Field",
       "@lsp.typemod.parameter.declaration.lua": "Lua|Variables|Parameter",
-      "@lsp.type.type.lua": "Lua|Comments|EmmyDoc|ClassNameReference",
       "@lsp.typemod.function.declaration.lua": "Lua|Variables|LocalFunction",
       "@lsp.type.comment.lua": {},
+      "@lsp.type.function.lua": "Lua|Variables|LocalFunction",
       "@lsp.type.method.lua": "Lua|ClassMembers|StaticMethod",
       "@lsp.type.parameter.lua": "Lua|Variables|Parameter",
-      "@lsp.typemod.function.global.lua": "Lua|Variables|GlobalFunction",
-      "@lsp.typemod.property.declaration.lua": "Lua|Comments|DocComment"
+      "@lsp.type.variable.lua": null,
+      "@lsp.typemod.function.global.lua": "Lua|Variables|GlobalFunction"
     },
     "Treesitter.Nix": {},
     "Semantic.Nix": {

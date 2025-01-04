@@ -9,17 +9,23 @@ local a, b, c = true, false, nil
 ---@param par1 Par1Type @comments
 function var:fun(par1, par2)
    print('hello')
-   return self.len + 2
+   local test = par1
+   return self.len + 2 + self.get()
 end
 
 ---@overload fun(name:string):Emmy
 function var.staticFun()
 end
 --endregion end my class members region
-
+local hey = function() end
+local function hey4() end
 ---@return Emmy
 function findEmmy()
-   return "string" .. var
+   local hey0 = ""
+   local hey2 = function() end
+   function hey3() end
+   local function hey5() end
+   return "string" .. var .. hey() .. hey2() .. hey3() .. hey4() .. hey5() .. hey0
 end
 
 local value = ""

@@ -29,6 +29,7 @@
 | Language | Treesitter | Semantic |
 |----------|------------|----------|
 | C/C++    | ✅         | ⚠️       |
+| Lua      | ✅         | ✅       |
 
 </details>
 
