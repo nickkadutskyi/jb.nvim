@@ -2517,10 +2517,6 @@
       "jsonNull": "JSON|Keyword",
       "jsonNumber": "JSON|Number"
     },
-    "Treesitter.JSON": {
-      "@property.json": "JSON|PropertyKey",
-      "@constant.builtin.json": "JSON|Keyword"
-    },
     "Plugin.lewis6991/gitsigns.nvim": {
       "GitGutterAdd": "VCS|EditorGutter|AddedLines",
       "SignifySignAdd": "VCS|EditorGutter|AddedLines",
