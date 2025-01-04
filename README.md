@@ -26,12 +26,12 @@
 <details>
 <summary>Supported Languages</summary>
 
-| Language | Treesitter | Semantic |
-|----------|------------|----------|
-| C/C++    | ✅         | ⚠️       |
-| JSON     | ⚠️         | ⚠️       |
-| Lua      | ✅         | ✅       |
-| PHP      | ✅         | ✅       |
+| Language | Treesitter      | Semantic |
+|----------|-----------------|----------|
+| C/C++    | ✅ (c,cpp)      | ⚠️       |
+| JSON     | ⚠️ (json)       | ⚠️       |
+| Lua      | ✅ (lua,luadoc) | ✅       |
+| PHP      | ✅ (php,phpdoc) | ✅       |
 
 </details>
 

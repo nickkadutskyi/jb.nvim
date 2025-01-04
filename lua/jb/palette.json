@@ -2667,11 +2667,11 @@
       "@lsp.type.comment.nix": null
     },
     "Treesitter.PHP": {
-      "@attribute.phpdoc": "PHP|PHPDoc|Tag",
+      "@attribute.phpdoc": "LanguageDefaults|Comments|DocComment|Tag",
       "@constant.builtin.php": "PHP|Identifiers|Constant",
       "@constant.only.php": "PHP|Identifiers|Constant",
       "@constant.php": "PHP|Identifiers|Constant",
-      "@keyword.phpdoc": "PHP|PHPDoc|Markup",
+      "@keyword.phpdoc": null,
       "@tag.php": "PHP|PHPCode|Tags",
       "@type.template.phpdoc": "PHP|PHPDoc|TemplateType",
       "@variable.parameter.named.php": "PHP|NamedArguments",
