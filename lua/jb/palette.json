@@ -2655,7 +2655,7 @@
       "@lsp.type.property.lua": "Lua|ClassMembers|Field",
       "@lsp.typemod.parameter.declaration.lua": "Lua|Variables|Parameter",
       "@lsp.typemod.function.declaration.lua": "Lua|Variables|LocalFunction",
-      "@lsp.type.comment.lua": {},
+      "@lsp.type.comment.lua": null,
       "@lsp.type.function.lua": "Lua|Variables|LocalFunction",
       "@lsp.type.method.lua": "Lua|ClassMembers|StaticMethod",
       "@lsp.type.parameter.lua": "Lua|Variables|Parameter",

@@ -29,7 +29,9 @@
 | Language | Treesitter | Semantic |
 |----------|------------|----------|
 | C/C++    | ✅         | ⚠️       |
+| JSON     | ⚠️         | ⚠️       |
 | Lua      | ✅         | ✅       |
+| PHP      | ✅         | ✅       |
 
 </details>
 
