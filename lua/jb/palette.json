@@ -1845,6 +1845,36 @@
       },
       "Variables": null
     },
+    "CSS": {
+      "AmpersandSelector": null,
+      "At-keyword": "LanguageDefaults|Keyword",
+      "AttributeName": null,
+      "BadCharacter": null,
+      "Braces": null,
+      "Brackets": null,
+      "ClassName": "CSS|Identifier",
+      "Colon": null,
+      "Comma": null,
+      "Comment": null,
+      "Dot": null,
+      "Function": "HTML|TagName",
+      "HexColor": null,
+      "IdSelector": "CSS|Identifier",
+      "Identifier": "HTML|TagName",
+      "Important": null,
+      "Number": null,
+      "OperationSign": null,
+      "Parenthesis": null,
+      "PropertyName": "HTML|AttributeName",
+      "PropertyValue": null,
+      "PseudoSelector": "CSS|Identifier",
+      "Semicolon": null,
+      "String": null,
+      "TagName": "HTML|TagName",
+      "UnicodeRange": null,
+      "Unit": null,
+      "URL": null
+    },
     "GitToolBoxColors": {
       "EditorInlineBlame": {
         "light": {
@@ -2500,6 +2530,17 @@
       "@type.cpp": "Cpp|ClassStructEnumUnion",
       "@type.definition.cpp": "Cpp|Typedef",
       "@variable.member.cpp": "Cpp|StructField"
+    },
+    "Treesitter.CSS": {
+      "@attribute.css": "CSS|PseudoSelector",
+      "@character.special.css": "CSS|Identifier",
+      "@constant.css": "CSS|IdSelector",
+      "@function.css": "CSS|Function",
+      "@keyword.directive.css": "CSS|At-keyword",
+      "@property.css": "CSS|PropertyName",
+      "@tag.css": "CSS|TagName",
+      "@type.css": "CSS|ClassName",
+      "@variable.css": "CSS|Identifier"
     },
     "Treesitter.Doxygen": {
       "@keyword.doxygen": "LanguageDefaults|Comments|DocComment|Tag",

@@ -1,0 +1,45 @@
+@import "manual.css";
+
+@font-face {
+  font-family: DroidSans;
+  src: url(DroidSans.ttf);
+  unicode-range: U+000-5FF, U+1e00-1fff, U+2000-2300;
+}
+
+:root {
+  --primary-color: #FFA500;
+}
+
+@media (max-width: 320px) and (orientation: portrait) {
+  :root {
+    --primary-color: hsl(22deg, 100%, 42%);
+  }
+}
+
+h2.special-title:lang(en) {
+  color: blue; /* comment */
+
+  &:hover {
+    color: var(--primary-color, red);
+  }
+}
+
+a[type$=".pdf"]:after {
+  content: '(' url(pdf.svg) attr(data-size) ')';
+}
+
+#main-logo {
+  border: 1px solid rgb(255, 0, 0);
+}
+
+div > p,
+p ~ ul,
+p + blockquote {
+  width: 80% !important;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+!
