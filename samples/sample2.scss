@@ -1,0 +1,239 @@
+@import '../../bourbon/bourbon';
+@import '../colors';
+@import '../../default_vars_v4';
+@import 'spec_vars';
+@import '../../base_v5';
+@import '../footer';
+
+header .logo {
+    width: 449px;
+    height: 304px;
+    padding: 84px 0 0 36px;
+    float: left;
+    border-right: 4px solid $border;
+    img {
+        width: 364px;
+    }
+}
+
+header .schedule {
+    width: 420px;
+    height: 172px;
+    float: left;
+    overflow: hidden;
+}
+
+.bottom-section {
+    height: 132px;
+    width: 420px;
+    background-color: $main;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    overflow: hidden;
+}
+
+.border-colors {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 20px;
+
+    img {
+        margin-left: -50px;
+    }
+}
+
+.section .section-content {
+    .heading, .row {
+        overflow: hidden;
+    }
+
+    .row, .row ul {
+        height: initial;
+        white-space: initial;
+        .row-title {
+            height: initial;
+            white-space: initial;
+        }
+    }
+
+    @include standard-style('.h-title', (
+        color: $text-heading,
+        width: 780px,
+        padding: 0 0 0 17px,
+        font-family: '\'Frutiger LT Pro Condensed\'',
+        font-size: 32px,
+        line-height: 38px,
+        font-style: normal,
+        font-weight: 900,
+    ));
+
+    .heading.price-col-num-2 {
+        .h-title {
+            width: 695px;
+        }
+    }
+
+    .heading.style-2 {
+        height: 69px;
+
+        .h-title {
+            font-size: 36px;
+            line-height: 61px;
+        }
+
+        .h-prop {
+            font-size: 25px;
+            padding-top: 25px;
+        }
+    }
+
+    @include standard-style('.h-prop', (
+        color: $text-h-prop,
+        width: 85px,
+        padding: 0 18px 0 0,
+        font-family: '\'Frutiger LT Pro Condensed\'',
+        font-size: 25px,
+        line-height: 37px,
+        font-style: normal,
+        font-weight: 700,
+        text-align: right,
+    ));
+
+    .h-price {
+        text-align: right;
+    }
+
+    @include standard-style('.row-title', (
+        color: $text-row,
+        width: 780px,
+        padding: 0 0 0 17px,
+        font-family: '\'Frutiger LT Pro Condensed\'',
+        font-size: 27px,
+        line-height: 38px,
+        font-style: normal,
+        font-weight: 700,
+    ));
+
+    .row.full-width-title {
+        .row-title {
+            width: 100%;
+        }
+        .row-price {
+            display: none;
+        }
+    }
+
+    .wrapped-row {
+        height: 76px;
+        .row-title {
+            line-height: 32px;
+            margin-top: 3px;
+        }
+        .row-price {
+            line-height: 32px;
+            margin-top: 3px;
+        }
+    }
+
+    .row.price-col-num-2 {
+        .row-title {
+            width: 695px;
+        }
+    }
+    .row.price-col-num-1 {
+        .row-price:last-child {
+            display: none;
+        }
+    }
+
+    .row-title .row-images {
+        display: inline-block;
+        width: initial;
+        padding: 0 5px;
+
+        .icon-container {
+            margin-right: -5px;
+            margin-left: -5px;
+            height: 30px;
+            width: 36px;
+            margin-bottom: -4px;
+        }
+    }
+
+    @include standard-style('.row-prop', (
+        color: $text-row-prop,
+        width: 85px,
+        padding: 0 18px 0 5px,
+        font-family: '\'Frutiger LT Pro Condensed\'',
+        font-size: 25px,
+        line-height: 37px,
+        font-style: normal,
+        font-weight: 700,
+    ));
+
+    .row-price {
+        text-align: right;
+    }
+
+    @include standard-style('.row-description p', (
+        color: $text-description,
+        width: 100%,
+        height: initial,
+        padding: 0 0 0 17px,
+        font-family: '\'Frutiger LT Pro Condensed\'',
+        font-size: 24px,
+        line-height: 38px,
+        font-style: italic,
+        font-weight: 700,
+    ));
+
+    .row-description, .row-description p {
+        height: initial;
+        white-space: initial;
+    }
+}
+
+.section.additional-section .section-content {
+    .h-title {
+        width: 460px;
+        padding: 7px 0 0 21px;
+    }
+
+    .h-prop {
+        padding-top: 31px;
+    }
+
+    .row-title {
+        padding: 0px 0 0 24px;
+        width: 460px;
+    }
+}
+
+.section.right-section .section-content {
+    .heading, .heading ul {
+        width: 100%;
+    }
+
+    .h-title {
+        text-align: center;
+        width: 100%;
+        text-transform: uppercase;
+    }
+
+    .heading.style-3 {
+        background: transparent;
+
+        .h-title {
+            color: $bg-heading-1;
+        }
+    }
+
+    .row, .row ul, .row-title {
+        width: 100%;
+        text-align: center;
+    }
+
+}
+
