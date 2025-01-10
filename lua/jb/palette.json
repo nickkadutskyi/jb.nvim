@@ -1999,6 +1999,26 @@
         }
       }
     },
+    "Markdown": {
+      "Blockquote": {
+        "Blockquote": "LanguageDefaults|String|StringText"
+      },
+      "Code": {
+        "CodeFence": "LanguageDefaults|String|StringText",
+        "CodeSpan": "LanguageDefaults|String|StringText"
+      },
+      "DefinitionList": null,
+      "Header": null,
+      "HorizontalRule": null,
+      "HTML": null,
+      "Links": {
+        "LinkDestination": "LanguageDefaults|Classes|StaticMethod"
+      },
+      "Lists": null,
+      "Style": null,
+      "TableSeparator": null,
+      "Text": null
+    },
     "PHP": {
       "ClassesAndProperties": {
         "InstanceProperty": "LanguageDefaults|Classes|InstanceField",
@@ -2699,6 +2719,15 @@
       "@lsp.type.parameter.lua": "Lua|Variables|Parameter",
       "@lsp.type.variable.lua": null,
       "@lsp.typemod.function.global.lua": "Lua|Variables|GlobalFunction"
+    },
+    "Treesitter.Markdown": {
+      "@conceal.markdown_inline": "LanguageDefaults|Keyword",
+      "@markup.link": "General|Hyperlinks|Unfollowed",
+      "@markup.link.label": "LanguageDefaults|Keyword",
+      "@markup.link.url": "Markdown|Links|LinkDestination",
+      "@markup.raw.block.markdown": "Markdown|Code|CodeFence",
+      "@markup.raw.markdown_inline": "Markdown|Code|CodeSpan",
+      "@markup.quote.markdown": "Markdown|Blockquote|Blockquote"
     },
     "Treesitter.Nix": {},
     "Semantic.Nix": {
