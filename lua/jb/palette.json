@@ -2724,7 +2724,11 @@
       "@conceal.markdown_inline": "LanguageDefaults|Keyword",
       "@markup.link": "General|Hyperlinks|Unfollowed",
       "@markup.link.label": "LanguageDefaults|Keyword",
-      "@markup.link.url": "Markdown|Links|LinkDestination",
+      "@markup.link.url": {
+        "fg": "Markdown|Links|LinkDestination",
+        "italic": true,
+        "underline": true
+      },
       "@markup.raw.block.markdown": "Markdown|Code|CodeFence",
       "@markup.raw.markdown_inline": "Markdown|Code|CodeSpan",
       "@markup.quote.markdown": "Markdown|Blockquote|Blockquote"
