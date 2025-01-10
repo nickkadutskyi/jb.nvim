@@ -1,0 +1,37 @@
+Languages
+- [ ] Provide better Tree-sitter queries for CSS/SCSS/Sass
+- [ ] Add Tree-sitter styles for:
+  - [ ] Nix
+  - [ ] Shell Script
+  - [ ] BashSupportPro
+  - [ ] JSON
+  - [ ] JavaScript
+  - [ ] TypeScript
+  - [ ] RegExp
+  - [ ] HTML
+  - [ ] TOML
+  - [ ] YAML
+  - [ ] Ini
+  - [ ] XML
+  - [ ] GraphQL
+  - [ ] Python
+  - [ ] Zig
+  - [ ] Rust
+  - [ ] Ruby
+  - [ ] Java (is anyone writing Java in Neovim?)
+Plugins
+- [ ] Add support for:
+  - [ ] nvim-navic
+  - [ ] cloak.nvim
+  - [ ] conform.nvim
+  - [ ] CopilotChat.nvim
+  - [ ] diffview.nvim
+  - [ ] Lazy.nvim
+  - [ ] netrw.nvim
+  - [ ] which-key.nvim
+  - [ ] trouble.nvim
+  - [ ] Comment.nvim
+  - [ ] Telescope.nvim
+  - [ ] nvim-hlslens
+Performance
+- [ ] Measure performance on startup
