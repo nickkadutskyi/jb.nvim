@@ -42,9 +42,16 @@
 <details>
 <summary>Supported Plugins</summary>
 
-| Plugin                                                         | Source                                                                        |
-|----------------------------------------------------------------|-------------------------------------------------------------------------------|
-| [nvim-scrollbar](https://github.com/petertriho/nvim-scrollbar) | [`highlights["Plugin.petertriho/nvim-scrollbar"]`](lua/jb/palette.json#L1295) |
+| Plugin                                                                          | Source |
+|---------------------------------------------------------------------------------|--------|
+| [copilot.vim](https://github.com/github/copilot.vim)                            | n/a    |
+| [fzf-lua](https://github.com/ibhagwan/fzf-lua)                                  | n/a    |
+| [gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim)                     | n/a    |
+| [indent-blankline.nvim](https://github.com/lukas-reineke/indent-blankline.nvim) | n/a    |
+| [neogit](https://github.com/NeogitOrg/neogit)                                   | n/a    |
+| [nvim-notify](https://github.com/rcarriga/nvim-notify)                          | n/a    |
+| [nvim-scrollbar](https://github.com/petertriho/nvim-scrollbar)                  | n/a    |
+| [supermaven-nvim](https://github.com/supermaven-inc/supermaven-nvim)            | n/a    |
 
 </details>
 

@@ -3102,7 +3102,7 @@
       "CopilotSuggestion": "LanguageDefaults|InlineHints|TextWithoutBackground",
       "CopilotAnnotation": "LanguageDefaults|InlineHints|TextWithoutBackground"
     },
-    "Plugin.SupermavenSuggestion": {
+    "Plugin.supermaven-inc/supermaven-nvim": {
       "SupermavenSuggestion": {
         "fg": "LanguageDefaults|InlineHints|TextWithoutBackground"
       }
