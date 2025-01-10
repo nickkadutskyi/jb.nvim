@@ -1858,7 +1858,12 @@
       "Comment": null,
       "Dot": null,
       "Function": "HTML|TagName",
-      "HexColor": null,
+      "HexColor": {
+        "light": "CSS|Identifier",
+        "dark": {
+          "fg": "#56A8F5"
+        }
+      },
       "IdSelector": "CSS|Identifier",
       "Identifier": "HTML|TagName",
       "Important": null,
@@ -1866,14 +1871,19 @@
       "OperationSign": null,
       "Parenthesis": null,
       "PropertyName": "HTML|AttributeName",
-      "PropertyValue": null,
+      "PropertyValue": "HTML|AttributeValue",
       "PseudoSelector": "CSS|Identifier",
       "Semicolon": null,
       "String": null,
       "TagName": "HTML|TagName",
-      "UnicodeRange": null,
+      "UnicodeRange": "CSS|Identifier",
       "Unit": null,
-      "URL": null
+      "URL": {
+        "light": "HTML|AttributeValue",
+        "dark": {
+          "fg": "#5C92FF"
+        }
+      }
     },
     "GitToolBoxColors": {
       "EditorInlineBlame": {
@@ -2599,6 +2609,18 @@
       "@type.definition.cpp": "Cpp|Typedef",
       "@variable.member.cpp": "Cpp|StructField"
     },
+    "Syntax.CSS": {
+      "cssAttrRegion": "CSS|PropertyValue",
+      "cssColor": "CSS|HexColor",
+      "cssBorderAttr": "CSS|PropertyValue",
+      "cssBoxAttr": "CSS|PropertyValue",
+      "cssFontDescriptorAttr": "CSS|UnicodeRange",
+      "cssFunction": "CSS|Identifier",
+      "cssMediaAttr": "CSS|PropertyValue",
+      "cssPositioningAttr": "CSS|PropertyValue",
+      "cssUIAttr": "CSS|PropertyValue",
+      "cssUrl": "CSS|URL"
+    },
     "Treesitter.CSS": {
       "@attribute.css": "CSS|PseudoSelector",
       "@character.special.css": "CSS|Identifier",
@@ -2607,6 +2629,7 @@
       "@keyword.directive.css": "CSS|AtKeyword",
       "@property.css": "CSS|PropertyName",
       "@tag.css": "CSS|TagName",
+      "@tag.attribute.css": "CSS|AttributeName",
       "@type.css": "CSS|ClassName",
       "@variable.css": "CSS|Identifier"
     },
@@ -2625,6 +2648,9 @@
       "jsonBoolean": "JSON|Keyword",
       "jsonNull": "JSON|Keyword",
       "jsonNumber": "JSON|Number"
+    },
+    "Syntax.SassSCSS": {
+      "sassVariable": "SassSCSS|Variable"
     },
     "Treesitter.SassSCSS": {
       "@attribute.scss": "SassSCSS|PseudoSelector",
