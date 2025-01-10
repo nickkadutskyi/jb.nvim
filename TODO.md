@@ -7,6 +7,9 @@ Languages
   - [ ] JSON
   - [ ] JavaScript
   - [ ] TypeScript
+  - [ ] Blade
+  - [ ] Twig
+  - [ ] EditorConfig
   - [ ] RegExp
   - [ ] HTML
   - [ ] TOML
@@ -19,6 +22,9 @@ Languages
   - [ ] Rust
   - [ ] Ruby
   - [ ] Java (is anyone writing Java in Neovim?)
+  - [ ] AppleScript
+  - [ ] Apache Config
+  - [ ] .ignore files
         
 Plugins
 - [ ] Add support for:
