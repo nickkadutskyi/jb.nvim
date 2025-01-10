@@ -1847,8 +1847,8 @@
     },
     "CSS": {
       "AmpersandSelector": null,
-      "At-keyword": "LanguageDefaults|Keyword",
-      "AttributeName": null,
+      "AtKeyword": "LanguageDefaults|Keyword",
+      "AttributeName": "CSS|Identifier",
       "BadCharacter": null,
       "Braces": null,
       "Brackets": null,
@@ -2108,6 +2108,54 @@
       "ShellCommand": null,
       "Strings": null,
       "UnknownCharacter": null
+    },
+    "SassSCSS": {
+      "AtKeyword": null,
+      "AttributeName": "CSS|AttributeName",
+      "BadCharacter": null,
+      "Braces": null,
+      "Brackets": null,
+      "ClassName": "CSS|ClassName",
+      "Colon": null,
+      "Comma": null,
+      "Comment": {
+        "light": "LanguageDefaults|Comments|LineComment",
+        "dark": {
+          "fg": "#BC9455",
+          "italic": true
+        }
+      },
+      "Default": null,
+      "Dot": null,
+      "Extend": "CSS|AtKeyword",
+      "Function": "CSS|Function",
+      "Global": null,
+      "HexColor": null,
+      "IdSelector": null,
+      "Identifier": "CSS|Identifier",
+      "Important": null,
+      "Interpolation": null,
+      "Mixin": null,
+      "Number": null,
+      "Operation sign": null,
+      "Optional": null,
+      "ParentSelector": null,
+      "Parenthesis": null,
+      "PropertyName": "CSS|PropertyName",
+      "PropertyValue": null,
+      "PseudoSelector": "CSS|PseudoSelector",
+      "Semicolon": null,
+      "String": null,
+      "TagName": "CSS|TagName",
+      "UnicodeRange": null,
+      "Unit": null,
+      "URL": null,
+      "Variable": {
+        "light": "LanguageDefaults|Classes|InstanceField",
+        "dark": {
+          "fg": "#6D9CBE"
+        }
+      }
     },
     "IdeaVim": {
       "Modes": {
@@ -2556,7 +2604,7 @@
       "@character.special.css": "CSS|Identifier",
       "@constant.css": "CSS|IdSelector",
       "@function.css": "CSS|Function",
-      "@keyword.directive.css": "CSS|At-keyword",
+      "@keyword.directive.css": "CSS|AtKeyword",
       "@property.css": "CSS|PropertyName",
       "@tag.css": "CSS|TagName",
       "@type.css": "CSS|ClassName",
@@ -2578,7 +2626,18 @@
       "jsonNull": "JSON|Keyword",
       "jsonNumber": "JSON|Number"
     },
-    "Treesitter.SASS": {},
+    "Treesitter.SassSCSS": {
+      "@attribute.scss": "SassSCSS|PseudoSelector",
+      "@comment.scss": "SassSCSS|Comment",
+      "@function.scss": "SassSCSS|Function",
+      "@keyword.directive.scss": "SassSCSS|Extend",
+      "@property.scss": "SassSCSS|PropertyName",
+      "@tag.scss": "SassSCSS|TagName",
+      "@tag.attribute.scss": "SassSCSS|AttributeName",
+      "@type.scss": "SassSCSS|ClassName",
+      "@variable.scss": "SassSCSS|Variable",
+      "@variable.parameter.scss": "SassSCSS|Variable"
+    },
     "Plugin.lewis6991/gitsigns.nvim": {
       "GitGutterAdd": "VCS|EditorGutter|AddedLines",
       "SignifySignAdd": "VCS|EditorGutter|AddedLines",

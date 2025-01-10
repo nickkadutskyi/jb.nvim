@@ -26,14 +26,15 @@
 <details>
 <summary>Supported Languages</summary>
 
-| Language | Treesitter                    | Semantic |
-|----------|-------------------------------|----------|
-| C/C++    | ✅ (c,cpp)                    | n/a      |
-| CSS      | ✅ (css)                      | n/a      |
-| JSON     | ✅ (json)                     | n/a      |
-| Lua      | ✅ (lua,luadoc)               | ✅       |
-| PHP      | ✅ (php,phpdoc)               | n/a      |
-| Markdown | ✅ (markdown,markdown_inline) | n/a      |
+| Language  | Treesitter                    | Semantic |
+|-----------|-------------------------------|----------|
+| C/C++     | ✅ (c,cpp)                    | n/a      |
+| CSS       | ✅ (css)                      | n/a      |
+| JSON      | ✅ (json)                     | n/a      |
+| Lua       | ✅ (lua,luadoc)               | ✅       |
+| Markdown  | ✅ (markdown,markdown_inline) | n/a      |
+| PHP       | ✅ (php,phpdoc)               | n/a      |
+| Sass/SCSS | ✅ (scss)                     | n/a      |
 
 </details>
 
