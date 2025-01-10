@@ -19,6 +19,7 @@ Languages
   - [ ] Rust
   - [ ] Ruby
   - [ ] Java (is anyone writing Java in Neovim?)
+        
 Plugins
 - [ ] Add support for:
   - [ ] nvim-navic
@@ -33,5 +34,6 @@ Plugins
   - [ ] Comment.nvim
   - [ ] Telescope.nvim
   - [ ] nvim-hlslens
+        
 Performance
 - [ ] Measure performance on startup
