@@ -1,10 +1,10 @@
 Languages
 - [ ] Provide better Tree-sitter queries for CSS/SCSS/Sass
 - [ ] Add Tree-sitter styles for:
-  - [ ] Nix
+  - [x] Nix
   - [ ] Shell Script
   - [ ] BashSupportPro
-  - [ ] JSON
+  - [x] JSON
   - [ ] JavaScript
   - [ ] TypeScript
   - [ ] Blade
@@ -25,7 +25,7 @@ Languages
   - [ ] AppleScript
   - [ ] Apache Config
   - [ ] .ignore files
-        
+
 Plugins
 - [ ] Add support for:
   - [ ] nvim-navic
@@ -40,6 +40,6 @@ Plugins
   - [ ] Comment.nvim
   - [ ] Telescope.nvim
   - [ ] nvim-hlslens
-        
+
 Performance
 - [ ] Measure performance on startup
