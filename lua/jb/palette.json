@@ -2029,6 +2029,27 @@
       "TableSeparator": null,
       "Text": null
     },
+    "Nix": {
+      "Braces": null,
+      "BuiltInConstantsAndFunctions": {
+        "ImportFunction": "LanguageDefaults|Keyword",
+        "Literals": "LanguageDefaults|Keyword",
+        "OtherBuiltIns": {
+          "light": {
+            "fg": "#000080"
+          },
+          "dark": {
+            "fg": "#8888C6"
+          }
+        }
+      },
+      "Comments": null,
+      "Keyword": null,
+      "LiteralsAndValues": null,
+      "Operators": null,
+      "SemanticHighlighting": null,
+      "VariablesAndAttributes": null
+    },
     "PHP": {
       "ClassesAndProperties": {
         "InstanceProperty": "LanguageDefaults|Classes|InstanceField",
@@ -2818,9 +2839,19 @@
       "@markup.raw.markdown_inline": "Markdown|Code|CodeSpan",
       "@markup.quote.markdown": "Markdown|Blockquote|Blockquote"
     },
-    "Treesitter.Nix": {},
+    "Treesitter.Nix": {
+      "@function.builtin.nix": "Nix|BuiltInConstantsAndFunctions|OtherBuiltIns",
+      "@keyword.import.nix": "Nix|BuiltInConstantsAndFunctions|ImportFunction",
+      "@punctuation.special.nix": "LanguageDefaults|BracesAndOperators|Braces",
+      "@string.special.path.nix": "LanguageDefaults|String|StringText",
+      "@variable.member.nix": "LanguageDefaults|Identifiers|Default"
+    },
     "Semantic.Nix": {
-      "@lsp.type.comment.nix": null
+      "@lsp.type.function.nix": null,
+      "@lsp.type.property.nix": "LanguageDefaults|Identifiers|Default",
+      "@lsp.type.string.nix": null,
+      "@lsp.mod.escape.nix": "LanguageDefaults|String|EscapeSequence|Valid",
+      "@lsp.mod.builtin.nix": null
     },
     "Treesitter.PHP": {
       "@attribute.phpdoc": "LanguageDefaults|Comments|DocComment|Tag",
