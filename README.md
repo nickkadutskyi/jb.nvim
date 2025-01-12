@@ -26,16 +26,17 @@
 <details>
 <summary>Supported Languages</summary>
 
-| Language  | Syntax | Treesitter                    | Semantic     |
-|-----------|--------|-------------------------------|--------------|
-| C/C++     | ⚠️     | ✅ (c,cpp)                    | n/a          |
-| CSS       | ⚠️     | ✅ (css)                      | n/a          |
-| JSON      | ✅     | ✅ (json)                     | n/a          |
-| Lua       | ⚠️     | ✅ (lua,luadoc)               | ✅ (lua_ls)  |
-| Markdown  | ⚠️     | ✅ (markdown,markdown_inline) | n/a          |
-| Nix       | ⚠️     | ✅ (nix)                      | ✅ (nil_lsp) |
-| PHP       | ⚠️     | ✅ (php,phpdoc)               | n/a          |
-| Sass/SCSS | ⚠️     | ✅ (scss)                     | n/a          |
+| Language   | Syntax | Treesitter                    | Semantic     |
+|------------|--------|-------------------------------|--------------|
+| C/C++      | ⚠️     | ✅ (c,cpp)                    | n/a          |
+| CSS        | ⚠️     | ✅ (css)                      | n/a          |
+| JavaScript | ⚠️     | ✅ (javascript)               | ✅ (ts_ls)   |
+| JSON       | ✅     | ✅ (json)                     | n/a          |
+| Lua        | ⚠️     | ✅ (lua,luadoc)               | ✅ (lua_ls)  |
+| Markdown   | ⚠️     | ✅ (markdown,markdown_inline) | n/a          |
+| Nix        | ⚠️     | ✅ (nix)                      | ✅ (nil_lsp) |
+| PHP        | ⚠️     | ✅ (php,phpdoc)               | n/a          |
+| Sass/SCSS  | ⚠️     | ✅ (scss)                     | n/a          |
 
 </details>
 

@@ -1930,6 +1930,63 @@
       "TagTreeLevel5": null,
       "TagTreeLevel6": null
     },
+    "JavaScript": {
+      "BadCharacter": null,
+      "BracesAndOperators": null,
+      "Classes": null,
+      "Comments": null,
+      "Decorator": null,
+      "Identifiers": {
+        "ExportedFunction": null,
+        "ExportedVariable": null,
+        "GlobalFunction": null,
+        "GlobalVariable": {
+          "light": {
+            "fg": "#830091"
+          },
+          "dark": {
+            "fg": "#C77DBA",
+            "italic": true
+          }
+        },
+        "Label": null,
+        "LocalFunction": null,
+        "LocalVariable": {
+          "light": {
+            "fg": "#2A8C7C"
+          },
+          "dark": {
+            "fg": "#A9B7C6"
+          }
+        },
+        "Parameter": {
+          "light": {
+            "fg": "#000000",
+            "underline": true
+          },
+          "dark": "LanguageDefaults|Identifiers|Parameter"
+        }
+      },
+      "InjectedLanguageFragment": null,
+      "JSXClientComponent": null,
+      "Keyword": null,
+      "Number": null,
+      "Object": {
+        "Method": {
+          "light": {
+            "fg": "#914C07"
+          },
+          "dark": {
+            "fg": "#56A8F5"
+          }
+        },
+        "Property": null
+      },
+      "RegularExpression": null,
+      "SemanticHighlighting": null,
+      "String": null,
+      "TemplateLiteral": null
+    },
     "JSON": {
       "BlockComment": null,
       "Braces": null,
@@ -2663,6 +2720,18 @@
       "@tag.html": "HTML|TagName",
       "@tag.attribute.html": "HTML|AttributeName",
       "@string.html": "HTML|AttributeValue"
+    },
+    "Treesitter.JavaScript": {
+      "@function.method.javascript": "JavaScript|Object|Method",
+      "@function.method.call.javascript": "JavaScript|Object|Method",
+      "@variable.javascript": "JavaScript|Identifiers|LocalVariable",
+      "@variable.parameter.javascript": "JavaScript|Identifiers|Parameter"
+    },
+    "Semantic.JavaScript": {
+      "@lsp.type.variable.javascript": null,
+      "@lsp.type.parameter.javascript": "JavaScript|Identifiers|Parameter",
+      "@lsp.typemod.class.defaultLibrary.javascript": "JavaScript|Identifiers|GlobalVariable",
+      "@lsp.typemod.property.static.javascript": "LanguageDefaults|Classes|StaticField"
     },
     "Syntax.JSON": {
       "jsonKeyword": "JSON|PropertyKey",
