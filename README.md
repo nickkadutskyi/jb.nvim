@@ -37,6 +37,7 @@
 | Nix        | ⚠️     | ✅ (nix)                      | ✅ (nil_lsp) |
 | PHP        | ⚠️     | ✅ (php,phpdoc)               | n/a          |
 | Sass/SCSS  | ⚠️     | ✅ (scss)                     | n/a          |
+| TypeScript | ⚠️     | ✅ (typescript)               | ✅ (ts_ls)   |
 
 </details>
 
