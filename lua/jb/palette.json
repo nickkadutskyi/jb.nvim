@@ -1810,6 +1810,13 @@
       "Variables": null,
       "Zsh": null
     },
+    "Blade": {
+      "Background": null,
+      "Comment": null,
+      "Directive": null,
+      "Illegal character": null,
+      "Text block delimiter": null
+    },
     "Cpp": {
       "BadCharacter": null,
       "BracesAndOperators": null,
@@ -2755,6 +2762,8 @@
       "@punctuation.special.bash": "BashSupportPro|PipelineOperators",
       "@string.special.path.bash": "BashSupportPro|StringLiterals|UnquotedWord",
       "@variable.parameter.bash": "BashSupportPro|StringLiterals|UnquotedWord"
+    },
+    "Treesitter.Blade": {
     },
     "Treesitter.Cpp": {
       "@function.macro.c": "Cpp|MacroName",
