@@ -1,0 +1,7 @@
+{# Comment #}
+{% macro input(name, value, type, size) %}
+    <input type="{{ type|default('text') }}" name="{{ name }}" value="{{ value|e }}" size="{{ size|default(20) }}" />
+{% endmacro %}
+{% if loop.index is not divisibleby(3) %}
+    {% set foo = [1, {"foo": "bar"}] %}
+{% endif %}

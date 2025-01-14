@@ -7,8 +7,8 @@ Languages
   - [x] JSON
   - [x] JavaScript
   - [x] TypeScript
-  - [ ] Blade
-  - [ ] Twig
+  - [x] Blade
+  - [x] Twig
   - [ ] EditorConfig
   - [ ] RegExp
   - [ ] HTML

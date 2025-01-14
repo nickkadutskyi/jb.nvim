@@ -1000,8 +1000,7 @@
             "italic": true
           },
           "dark": {
-            "fg": "#7A7E85",
-            "italic": true
+            "fg": "#7A7E85"
           }
         }
       },
@@ -2303,6 +2302,17 @@
       "String": null,
       "Variables": null
     },
+    "Twig": {
+      "Bad character": null,
+      "Brackets": null,
+      "Comment": null,
+      "Identifier": null,
+      "Keyword": null,
+      "Number": null,
+      "Operator": null,
+      "String": null,
+      "Twig code": null
+    },
     "TypeScript": {
       "Bad character": null,
       "Braces and Operators": null,
@@ -2763,8 +2773,7 @@
       "@string.special.path.bash": "BashSupportPro|StringLiterals|UnquotedWord",
       "@variable.parameter.bash": "BashSupportPro|StringLiterals|UnquotedWord"
     },
-    "Treesitter.Blade": {
-    },
+    "Treesitter.Blade": {},
     "Treesitter.Cpp": {
       "@function.macro.c": "Cpp|MacroName",
       "@function.macro.cpp": "Cpp|MacroName",
@@ -2844,6 +2853,10 @@
       "@type.scss": "SassSCSS|ClassName",
       "@variable.scss": "SassSCSS|Variable",
       "@variable.parameter.scss": "SassSCSS|Variable"
+    },
+    "Treesitter.Twig": {
+      "@tag.delimiter.twig": "LanguageDefaults|BracesAndOperators|Brackets",
+      "@operator.twig": "LanguageDefaults|Keyword"
     },
     "Treesitter.TypeScript": {
       "@function.method.typescript": "JavaScript|Object|Method",
