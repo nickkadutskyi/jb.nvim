@@ -39,6 +39,7 @@
 | PHP           | ⚠️     | ✅ (php,phpdoc)                | n/a          |
 | Sass/SCSS     | ⚠️     | ✅ (scss)                      | n/a          |
 | Shell Script  | ⚠️     | ✅ (bash)                      | n/a          |
+| Twig          | n/a    | ✅ (twig)                      | n/a          |
 | TypeScript    | ⚠️     | ✅ (typescript)                | ✅ (ts_ls)   |
 
 </details>
