@@ -1967,7 +1967,12 @@
       "AttributeValue": "LanguageDefaults|String|StringText",
       "Comment": null,
       "CustomTagName": null,
-      "EntityReference": null,
+      "EntityReference": {
+        "light": "LanguageDefaults|Markup|Entity",
+        "dark": {
+          "fg": "#56A8F5"
+        }
+      },
       "HTMLCode": null,
       "InjectedLanguageFragment": null,
       "Tag": {
@@ -2865,10 +2870,18 @@
       "@character.special.editorconfig": "EditorConfig|SpecialSymbol"
     },
     "Treesitter.HTML": {
+      "@character.special.html": "HTML|EntityReference",
       "@tag.delimiter.html": "HTML|Tag",
       "@tag.html": "HTML|TagName",
       "@tag.attribute.html": "HTML|AttributeName",
-      "@string.html": "HTML|AttributeValue"
+      "@string.html": "HTML|AttributeValue",
+      "@markup.heading.html": "General|Text|DefaultText",
+      "@markup.heading.1.html": "General|Text|DefaultText",
+      "@markup.heading.2.html": "General|Text|DefaultText",
+      "@markup.heading.3.html": "General|Text|DefaultText",
+      "@markup.heading.4.html": "General|Text|DefaultText",
+      "@markup.heading.5.html": "General|Text|DefaultText",
+      "@markup.heading.6.html": "General|Text|DefaultText"
     },
     "Treesitter.JavaScript": {
       "@function.method.javascript": "JavaScript|Object|Method",

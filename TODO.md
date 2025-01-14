@@ -9,9 +9,9 @@ Languages
   - [x] TypeScript
   - [x] Blade
   - [x] Twig
-  - [ ] EditorConfig
-  - [ ] RegExp
-  - [ ] HTML
+  - [x] EditorConfig
+  - [x] RegExp
+  - [x] HTML
   - [ ] TOML
   - [ ] YAML
   - [ ] Ini

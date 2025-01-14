@@ -32,6 +32,7 @@
 | C/C++         | ⚠️     | ✅ (c,cpp)                     | n/a          |
 | CSS           | ⚠️     | ✅ (css)                       | n/a          |
 | EditorConfig  | n/a    | ✅ (editorconfig)              | n/a          |
+| HTML          | ⚠️     | ✅ (html)                      | n/a          |
 | JavaScript    | ⚠️     | ✅ (javascript)                | ✅ (ts_ls)   |
 | JSON          | ✅     | ✅ (json)                      | n/a          |
 | Lua           | ⚠️     | ✅ (lua,luadoc)                | ✅ (lua_ls)  |
