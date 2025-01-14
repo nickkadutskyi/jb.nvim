@@ -9,10 +9,10 @@
   </tr>
   <tr>
     <td>
-        <img width="512" alt="dark-js" src="https://github.com/user-attachments/assets/d04726cf-5b59-4b92-ace5-9894eb83d8a5" />
+        <img width="512" alt="dark-js" src="https://github.com/user-attachments/assets/dcff0247-868e-4aa4-bac1-22729099fb46" />
     </td>
     <td>
-      <img width="512" alt="light-js" src="https://github.com/user-attachments/assets/591bf1f9-162f-438c-91a5-0bcfab74b800" />
+        <img width="512" alt="light-js" src="https://github.com/user-attachments/assets/89863d62-5c69-45f3-b21e-9e8c17cc3281" />
     </td>
   </tr>
 </table>
