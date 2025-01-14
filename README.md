@@ -9,10 +9,10 @@
   </tr>
   <tr>
     <td>
-      <img src="" alt="Dark" />
+        <img width="512" alt="dark-js" src="https://github.com/user-attachments/assets/d04726cf-5b59-4b92-ace5-9894eb83d8a5" />
     </td>
     <td>
-      <img src="" alt="Light" />
+      <img width="512" alt="light-js" src="https://github.com/user-attachments/assets/591bf1f9-162f-438c-91a5-0bcfab74b800" />
     </td>
   </tr>
 </table>
