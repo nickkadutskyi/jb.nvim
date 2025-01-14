@@ -38,6 +38,10 @@ class DownloadButton extends HTMLButtonElement {
     }
 }
 
+var reg = /^[\w\.-]+@([\w\-]+|\.)+[A-Z0-9]{2,4}(?x)/
+reg = /\x0g\#\p{Alpha}\1(?#comment)/
+reg = /.*\Q...\E$# end-of-line comment/
+
 var test = new DownloadButton();
 
 export const EXPORTED_VARIABLE = 1;

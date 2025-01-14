@@ -31,12 +31,14 @@
 | Blade         | n/a    | ✅ (EmranMR/tree-sitter-blade) | n/a          |
 | C/C++         | ⚠️     | ✅ (c,cpp)                     | n/a          |
 | CSS           | ⚠️     | ✅ (css)                       | n/a          |
+| EditorConfig  | n/a    | ✅ (editorconfig)              | n/a          |
 | JavaScript    | ⚠️     | ✅ (javascript)                | ✅ (ts_ls)   |
 | JSON          | ✅     | ✅ (json)                      | n/a          |
 | Lua           | ⚠️     | ✅ (lua,luadoc)                | ✅ (lua_ls)  |
 | Markdown      | ⚠️     | ✅ (markdown,markdown_inline)  | n/a          |
 | Nix           | ⚠️     | ✅ (nix)                       | ✅ (nil_lsp) |
 | PHP           | ⚠️     | ✅ (php,phpdoc)                | n/a          |
+| RegExp        | ⚠️     | ✅ (regex)                     | n/a          |
 | Sass/SCSS     | ⚠️     | ✅ (scss)                      | n/a          |
 | Shell Script  | ⚠️     | ✅ (bash)                      | n/a          |
 | Twig          | n/a    | ✅ (twig)                      | n/a          |

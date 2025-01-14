@@ -1083,7 +1083,12 @@
           },
           "dark": "LanguageDefaults|Identifiers|Default"
         },
-        "Entity": null,
+        "Entity": {
+          "light": {
+            "fg": "#174BE6"
+          },
+          "dark": "LanguageDefaults|Identifiers|Default"
+        },
         "Tag": {
           "light": "General|Text|DefaultText",
           "dark": {
@@ -2251,6 +2256,32 @@
       "Strings": null,
       "UnknownCharacter": null
     },
+    "RegExp": {
+      "Bad character": null,
+      "Brace": null,
+      "Bracket": null,
+      "CharacterClass": {
+        "light": "LanguageDefaults|Markup|Entity",
+        "dark": {
+          "fg": "#B2AE60",
+          "bold": true
+        }
+      },
+      "Comma": null,
+      "Comment": null,
+      "Dot": "LanguageDefaults|BracesAndOperators|Dot",
+      "Escaped character": null,
+      "Inline option": null,
+      "Invalid escape sequence": null,
+      "Matched groups": null,
+      "Name": null,
+      "OperatorCharacter": "LanguageDefaults|Keyword",
+      "Parenthesis": null,
+      "PlainCharacter": "LanguageDefaults|String|StringText",
+      "Quantifier": "LanguageDefaults|Number",
+      "Quote escape": null,
+      "Redundant escape sequence": null
+    },
     "SassSCSS": {
       "AtKeyword": null,
       "AttributeName": "CSS|AttributeName",
@@ -2856,6 +2887,16 @@
       "jsonBoolean": "JSON|Keyword",
       "jsonNull": "JSON|Keyword",
       "jsonNumber": "JSON|Number"
+    },
+    "Treesitter.RegExp": {
+      "@operator.regex": "RegExp|Quantifier",
+      "@number.regex": "RegExp|Quantifier",
+      "@constant.regex": "RegExp|PlainCharacter",
+      "@string.escape.regex": "RegExp|CharacterClass",
+      "@string.regexp.regex": "RegExp|PlainCharacter",
+      "@string.regexp.javascript": "RegExp|PlainCharacter",
+      "@punctuation.delimiter.regex": "RegExp|OperatorCharacter",
+      "@variable.builtin.regex": "RegExp|Dot"
     },
     "Syntax.SassSCSS": {
       "sassVariable": "SassSCSS|Variable"
