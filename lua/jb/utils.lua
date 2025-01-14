@@ -2,6 +2,15 @@ local M = {}
 
 ---@alias profile "light" | "dark"
 
+---@type fun(t: table): number
+function M.table_length(t)
+    local count = 0
+    for _ in pairs(t) do
+        count = count + 1
+    end
+    return count
+end
+
 -- Function to read the JSON palette
 ---@return table
 function M.read_palette()
@@ -120,8 +129,8 @@ function M.blend_colors(color1, color2, factor)
     color2 = color2:gsub("#", "")
 
     -- Convert hex to RGB
-    local r1, g1, b1 = tonumber(color1:sub(1,2), 16), tonumber(color1:sub(3,4), 16), tonumber(color1:sub(5,6), 16)
-    local r2, g2, b2 = tonumber(color2:sub(1,2), 16), tonumber(color2:sub(3,4), 16), tonumber(color2:sub(5,6), 16)
+    local r1, g1, b1 = tonumber(color1:sub(1, 2), 16), tonumber(color1:sub(3, 4), 16), tonumber(color1:sub(5, 6), 16)
+    local r2, g2, b2 = tonumber(color2:sub(1, 2), 16), tonumber(color2:sub(3, 4), 16), tonumber(color2:sub(5, 6), 16)
 
     -- Blend colors
     local r = math.floor(r1 + (r2 - r1) * factor)
@@ -131,7 +140,6 @@ function M.blend_colors(color1, color2, factor)
     -- Convert back to hex
     return string.format("#%02X%02X%02X", r, g, b)
 end
-
 
 ---@param str string
 ---@return number

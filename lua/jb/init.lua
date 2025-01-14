@@ -1,15 +1,9 @@
-local M = {}
-
+local config = require("jb.config")
 local utils = require("jb.utils")
 
----@type fun(t: table): number
-local function table_length(t)
-    local count = 0
-    for _ in pairs(t) do
-        count = count + 1
-    end
-    return count
-end
+local M = {}
+
+M.setup = config.setup
 
 ---@type fun(o: table): string
 function M.dump(o)
@@ -28,7 +22,7 @@ function M.dump(o)
 end
 
 ---@type fun()
-function M.setup()
+function M.load()
     local profile = vim.o.background -- 'dark' or 'light'
     local palette = utils.read_palette()
     local colors = palette.colors
@@ -63,23 +57,32 @@ function M.setup()
                 -- If table is empty then it creates a cleared hl group
                 local last_hl_name = nil
                 local last_attr = nil
+                local nolink = false
                 -- Iterate over attributes and set hl properties
                 for attr, value in pairs(attrs) do
-                    last_attr = attr
-                    if type(value) == "string" and string.find(value, "|") ~= nil then
-                        last_hl_name = string.gsub(value, "|", "_")
-                        local props = utils.get_hl_props(colors, value, profile)
-                        hl[attr] = props.prop or props.hl[attr]
+                    if attr == "nolink" then
+                        nolink = value
                     else
-                        hl[attr] = value
+                        last_attr = attr
+                        if type(value) == "string" and string.find(value, "|") ~= nil then
+                            last_hl_name = string.gsub(value, "|", "_")
+                            local props = utils.get_hl_props(colors, value, profile)
+                            hl[attr] = props.prop or props.hl[attr]
+                        else
+                            hl[attr] = value
+                        end
                     end
                 end
                 -- Customize group name if only one attribute is set
-                local group_name = (table_length(attrs) == 1 and last_hl_name ~= nil)
+                local group_name = (utils.table_length(attrs) == 1 and last_hl_name ~= nil)
                         and last_hl_name .. "-" .. last_attr
                     or group .. "_Custom"
-                vim.api.nvim_set_hl(0, group_name, hl)
-                hl.link = group_name
+                if not nolink then
+                    vim.api.nvim_set_hl(0, group_name, hl)
+                    hl.link = group_name
+                else
+                    hl = hl
+                end
             end
             -- Set hl group properties if value is not `nil` or `""`
             if attrs ~= nil and attrs ~= "" then

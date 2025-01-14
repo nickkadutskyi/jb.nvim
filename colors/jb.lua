@@ -8,4 +8,4 @@ vim.o.termguicolors = true
 vim.g.colors_name = "jb"
 
 -- Load and apply the color scheme
-require("jb").setup()
+require("jb").load()

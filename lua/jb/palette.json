@@ -810,18 +810,20 @@
         "BackgroundInReadOnlyFiles": null,
         "DefaultText": {
           "light": {
-            "fg": "#080808"
+            "fg": "#080808",
+            "bg": "#FFFFFF"
           },
           "dark": {
-            "fg": "#BCBEC4"
+            "fg": "#BCBEC4",
+            "bg": "#1E1F22"
           }
         },
         "DefaultTextBg": {
           "light": {
-            "bg": "#FFFFFF"
+            "bg": "#FFFFFE"
           },
           "dark": {
-            "bg": "#1E1F22"
+            "bg": "#1E1F21"
           }
         },
         "DeletedText": null,
@@ -2492,7 +2494,11 @@
       "MsgSeparator": "",
       "MoreMsg": "Custom|DialogWindow",
       "NonText": "",
-      "Normal": "General|Text|DefaultText",
+      "Normal": {
+        "fg": "General|Text|DefaultText",
+        "bg": "General|Text|DefaultText",
+        "nolink": true
+      },
       "NormalFloat": {
         "fg": "General|Text|DefaultText",
         "bg": "Appearance|Window|Background"
