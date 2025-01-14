@@ -1924,6 +1924,21 @@
         }
       }
     },
+    "EditorConfig": {
+      "Brace": null,
+      "Bracket": null,
+      "Comma": null,
+      "Comment": null,
+      "Identifier": null,
+      "Invalid char escape": null,
+      "Pattern": null,
+      "Property key": null,
+      "Property value": null,
+      "Qualified key part": null,
+      "Separator": null,
+      "SpecialSymbol": "LanguageDefaults|BracesAndOperators|OperationSign",
+      "Valid char escape": null
+    },
     "GitToolBoxColors": {
       "EditorInlineBlame": {
         "light": {
@@ -2814,6 +2829,9 @@
     "Treesitter.Doxygen": {
       "@keyword.doxygen": "LanguageDefaults|Comments|DocComment|Tag",
       "@variable.parameter.doxygen": "Cpp|Doxygen|CommandValue"
+    },
+    "Treesitter.EditorConfig": {
+      "@character.special.editorconfig": "EditorConfig|SpecialSymbol"
     },
     "Treesitter.HTML": {
       "@tag.delimiter.html": "HTML|Tag",

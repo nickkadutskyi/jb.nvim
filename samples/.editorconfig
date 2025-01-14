@@ -1,0 +1,23 @@
+root = true
+
+# this is a comment
+
+unexpected_symbol
+
+[*.java] ; this is comment, too
+key = value1, value2:value3
+
+# some special symbols
+[[!abcdef]?{*.kt, *.kts}]
+key = other-value
+
+# valid escapes
+[\#\*\\]
+
+# invalid escapes
+[\JetBrains]
+great = true
+
+# .NET keys
+dotnet_naming_rule.my_rule.severity = warning
+
