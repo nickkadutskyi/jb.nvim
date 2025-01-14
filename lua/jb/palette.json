@@ -1718,6 +1718,10 @@
           "underline": true
         }
       },
+      "Normal_Opaque": {
+        "fg": "General|Text|DefaultText",
+        "bg": "General|Text|DefaultTextBg"
+      },
       "Tab": {
         "light": {
           "fg": "#5b5d6a",
