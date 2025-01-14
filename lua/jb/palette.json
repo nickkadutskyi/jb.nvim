@@ -1751,7 +1751,7 @@
       "BinaryData": null,
       "Braces": null,
       "Commands": {
-        "Builtin": null,
+        "Builtin": "LanguageDefaults|Keyword",
         "GenericCommand": {
           "light": {
             "fg": "#0073BF"
@@ -1762,12 +1762,45 @@
         },
         "SubshellCommand": null
       },
-      "Comments": null,
+      "Comments": {
+        "LineComment": null,
+        "ShebangComment": {
+          "light": {
+            "fg": "#080808",
+            "bold": true,
+            "italic": true
+          },
+          "dark": {
+            "fg": "#BCBEC4",
+            "bold": true,
+            "italic": true
+          }
+        },
+        "ShellCheckCode": null
+      },
       "ConditionalOperators": null,
-      "FunctionDeclaration": null,
-      "HereDocument": null,
+      "FunctionDeclaration": {
+        "light": {
+          "fg": "#C57633"
+        },
+        "dark": "LanguageDefaults|Identifiers|FunctionDeclaration"
+      },
+      "HereDocument": {
+        "HereDocument": null,
+        "HereDocumentEnd": null,
+        "HereDocumentStart": {
+          "light": {
+            "fg": "#080808",
+            "bold": true
+          },
+          "dark": {
+            "fg": "#BCBEC4",
+            "bold": true
+          }
+        }
+      },
       "Keyword": null,
-      "PipelineOperators": null,
+      "PipelineOperators": "LanguageDefaults|Keyword",
       "Redirection": null,
       "StringLiterals": {
         "RawString": null,
@@ -2245,6 +2278,24 @@
         }
       }
     },
+    "ShellScript": {
+      "Backquotes": null,
+      "Braces": null,
+      "Commands": null,
+      "Conditional operators": null,
+      "Function declaration": null,
+      "Here documents": null,
+      "Here documents end": null,
+      "Here documents start": null,
+      "Keyword": null,
+      "Line comment": null,
+      "Number": null,
+      "Raw string": null,
+      "Redirection": null,
+      "ShebangComment": null,
+      "String": null,
+      "Variables": null
+    },
     "TypeScript": {
       "Bad character": null,
       "Braces and Operators": null,
@@ -2693,7 +2744,16 @@
       "@lsp.type.documentation": "LanguageDefaults|Comments|DocComment|Text"
     },
     "Treesitter.Bash": {
+      "@constant.bash": null,
+      "@keyword.directive.bash": "BashSupportPro|Comments|ShebangComment",
+      "@label.bash": "BashSupportPro|HereDocument|HereDocumentStart",
+      "@function.bash": "BashSupportPro|FunctionDeclaration",
+      "@function.builtin.bash": "BashSupportPro|Commands|Builtin",
       "@function.call.bash": "BashSupportPro|Commands|GenericCommand",
+      "@operator.bash": "BashSupportPro|PipelineOperators",
+      "@punctuation.delimiter.bash": "LanguageDefaults|Keyword",
+      "@punctuation.special.bash": "BashSupportPro|PipelineOperators",
+      "@string.special.path.bash": "BashSupportPro|StringLiterals|UnquotedWord",
       "@variable.parameter.bash": "BashSupportPro|StringLiterals|UnquotedWord"
     },
     "Treesitter.Cpp": {

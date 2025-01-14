@@ -2,11 +2,11 @@ Languages
 - [ ] Provide better Tree-sitter queries for CSS/SCSS/Sass
 - [ ] Add Tree-sitter styles for:
   - [x] Nix
-  - [ ] Shell Script
-  - [ ] BashSupportPro
+  - [x] Shell Script
+  - [x] BashSupportPro
   - [x] JSON
-  - [ ] JavaScript
-  - [ ] TypeScript
+  - [x] JavaScript
+  - [x] TypeScript
   - [ ] Blade
   - [ ] Twig
   - [ ] EditorConfig
