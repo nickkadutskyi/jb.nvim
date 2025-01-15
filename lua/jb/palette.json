@@ -811,11 +811,11 @@
         "DefaultText": {
           "light": {
             "fg": "#080808",
-            "bg": "#FFFFFF"
+            "bg": "#FFFFFE"
           },
           "dark": {
             "fg": "#BCBEC4",
-            "bg": "#1E1F22"
+            "bg": "#1E1F21"
           }
         },
         "DefaultTextBg": {
@@ -2513,7 +2513,11 @@
         "bold": true
       },
       "FloatFooter": "Appearance|Window|Title",
-      "NormalNC": "General|Text|DefaultText",
+      "NormalNC": {
+        "fg": "General|Text|DefaultText",
+        "bg": "General|Text|DefaultText",
+        "nolink": true
+      },
       "Pmenu": "General|PopupsAndHints|Completion",
       "PmenuSel": "General|Editor|SelectionBackground",
       "PmenuKind": "",

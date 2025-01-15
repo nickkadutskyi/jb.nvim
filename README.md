@@ -76,6 +76,7 @@ return {
     priority = 1000,
     opts = {},
     config = function()
+        -- require("jb").setup({transparent = true})
         vim.cmd("colorscheme jb")
     end,
 }
@@ -91,9 +92,38 @@ vim.cmd("colorscheme jb")
 colorscheme jb
 ```
 
+Change light/dark theme:
+
+```lua
+vim.o.background = "light"
+```
+
+```vim
+set background=light
+```
+
 ## Configuration
 
-n/a
+> [!IMPORTANT]
+> Set the configuration **BEFORE** loading the color scheme `colorscheme jb`.
+
+<details>
+  <summary>Default Options</summary>
+
+<!-- config:start -->
+
+```lua
+
+---@class jb.Config
+M.defaults = {
+    -- Enable this to remove background from Normal and NormalNC
+    transparent = false,
+}
+```
+
+<!-- config:end -->
+
+</details>
 
 ## Overriding Colors & Highlight Groups
 

@@ -1,6 +1,17 @@
 local config = require("jb.config")
 local utils = require("jb.utils")
 
+local opts_per_hl = {
+    Normal = { transparent = true },
+    NormalNC = { transparent = true },
+}
+
+setmetatable(opts_per_hl, {
+    __index = function(_, k)
+        return {}
+    end,
+})
+
 local M = {}
 
 M.setup = config.setup
@@ -21,8 +32,9 @@ function M.dump(o)
     end
 end
 
----@type fun()
-function M.load()
+---@type fun(opts?: jb.Config)
+function M.load(opts)
+    opts = require("jb.config").extend(opts)
     local profile = vim.o.background -- 'dark' or 'light'
     local palette = utils.read_palette()
     local colors = palette.colors
@@ -34,6 +46,7 @@ function M.load()
         for group, attrs in pairs(groups) do
             -- groups with `nil` or `""` values are skipped
             local hl = {}
+            local transparent = opts_per_hl[group].transparent and opts.transparent or false
             if type(attrs) == "string" and string.find(attrs, "|") ~= nil then
                 -- Handling paths like `General|Text|...` pointing to a color
                 -- in the palette from JB's colors
@@ -81,6 +94,7 @@ function M.load()
                     vim.api.nvim_set_hl(0, group_name, hl)
                     hl.link = group_name
                 else
+                    hl.bg = transparent and "NONE" or hl.bg
                     hl = hl
                 end
             end
