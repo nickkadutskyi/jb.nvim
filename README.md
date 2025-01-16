@@ -21,6 +21,7 @@
 
 - Supports both light and dark themes
 - Terminal colors.
+- Has lualine theme
 
 
 <details>
