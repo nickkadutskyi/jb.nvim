@@ -17,9 +17,9 @@ Languages
   - [ ] Ini
   - [ ] XML
   - [ ] GraphQL
-  - [ ] Python
+  - [x] Python
   - [ ] Zig
-  - [ ] Rust
+  - [x] Rust
   - [ ] Ruby
   - [ ] Java (is anyone writing Java in Neovim?)
   - [ ] AppleScript
