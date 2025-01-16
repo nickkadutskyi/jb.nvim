@@ -1025,7 +1025,7 @@
             "fg": "#BCBEC4"
           }
         },
-        "FunctionCall": null,
+        "FunctionCall": "LanguageDefaults|Identifiers|Default",
         "FunctionDeclaration": {
           "light": {
             "fg": "#00627A"
@@ -2267,6 +2267,80 @@
       "Strings": null,
       "UnknownCharacter": null
     },
+    "Python": {
+      "Braces and Operators": null,
+      "BuiltinName": {
+        "light": {
+          "fg": "#000080"
+        },
+        "dark": {
+          "fg": "#8888C6"
+        }
+      },
+      "Class definition": null,
+      "Decorator": "LanguageDefaults|Metadata",
+      "Docstring": {
+        "Text": "LanguageDefaults|Comments|DocComment|Text"
+      },
+      "Functions": {
+        "FunctionCall": "LanguageDefaults|Identifiers|FunctionCall",
+        "Function definition": null,
+        "MethodCall": "Python|Functions|FunctionCall",
+        "Nested function definition": null
+      },
+      "Keyword": null,
+      "KeywordArgument": {
+        "light": {
+          "fg": "#660099"
+        },
+        "dark": {
+          "fg": "#AA4926"
+        }
+      },
+      "Line comment": null,
+      "Local variables": null,
+      "Number": null,
+      "Parameters": {
+        "SelfParameter": {
+          "light": {
+            "fg": "#94558D"
+          },
+          "dark": {
+            "fg": "#94558D"
+          }
+        }
+      },
+      "Semantic highlighting": null,
+      "SpecialNames": {
+        "Definition": {
+          "light": {
+            "fg": "#B200B2"
+          },
+          "dark": {
+            "fg": "#B200B2"
+          }
+        }
+      },
+      "String": {
+        "BinaryBbytes": {
+          "light": {
+            "fg": "#8A822D"
+          },
+          "dark": {
+            "fg": "#A5C261"
+          }
+        },
+        "Escape sequence": null,
+        "f-string": {
+          "ExpressionBraces": "LanguageDefaults|String|EscapeSequence|Valid",
+          "Format specifier start": null,
+          "TypeConversion": "LanguageDefaults|String|EscapeSequence|Valid"
+        },
+        "Text (unicode)": null
+      },
+      "Type annotation": null,
+      "Type parameters": null
+    },
     "RegExp": {
       "Bad character": null,
       "Brace": null,
@@ -3138,6 +3212,21 @@
       "@variable.member.phpdoc": "PHP|PHPDoc|Property",
       "@variable.php": "PHP|Identifiers|Variable",
       "@variable.phpdoc": "PHP|PHPDoc|Parameter"
+    },
+    "Treesitter.Python": {
+      "@attribute.builtin.python": "Python|Decorator",
+      "@constructor.python": "Python|SpecialNames|Definition",
+      "@function.call.python": "Python|Functions|FunctionCall",
+      "@function.builtin.python": "Python|Functions|FunctionCall",
+      "@function.method.call.python": "Python|Functions|FunctionCall",
+      "@function.macro.python": "Python|String|f-string|TypeConversion",
+      "@punctuation.special.python": "Python|String|f-string|ExpressionBraces",
+      "@string.bytes.python": "Python|String|BinaryBbytes",
+      "@string.documentation.python": "Python|Docstring|Text",
+      "@type.builtin.python": "Python|BuiltinName",
+      "@variable.builtin.python": "Python|Parameters|SelfParameter",
+      "@variable.parameter.decorator.python": "Python|KeywordArgument",
+      "@variable.parameter.keyword_argument.python": "Python|KeywordArgument"
     },
     "Plugin.petertriho/nvim-scrollbar": {
       "ScrollbarHandle": "General|Editor|VerticalScrollbar|Thumb",

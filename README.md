@@ -39,6 +39,7 @@
 | Markdown      | ⚠️     | ✅ (markdown,markdown_inline)  | n/a          |
 | Nix           | ⚠️     | ✅ (nix)                       | ✅ (nil_lsp) |
 | PHP           | ⚠️     | ✅ (php,phpdoc)                | n/a          |
+| Python        | ⚠️     | ✅ (python)                    | n/a          |
 | RegExp        | ⚠️     | ✅ (regex)                     | n/a          |
 | Sass/SCSS     | ⚠️     | ✅ (scss)                      | n/a          |
 | Shell Script  | ⚠️     | ✅ (bash)                      | n/a          |
