@@ -43,3 +43,6 @@ Plugins
 
 Performance
 - [ ] Measure performance on startup
+
+Distribution
+- [ ] Package for nixos (https://www.reddit.com/r/neovim/comments/1i1kt9p/comment/m7cnyr1/)
