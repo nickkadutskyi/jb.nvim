@@ -46,3 +46,9 @@ Performance
 
 Distribution
 - [ ] Package for nixos (https://www.reddit.com/r/neovim/comments/1i1kt9p/comment/m7cnyr1/)
+
+Extras
+- [ ] Add my Alacritty and Ghostty themes
+- [ ] Add Tmux themes
+- [ ] Add fzf themes
+- [ ] Add starship themes
