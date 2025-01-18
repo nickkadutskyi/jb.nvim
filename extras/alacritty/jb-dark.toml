@@ -1,0 +1,63 @@
+# Dark theme
+[bell]
+color = "#1E1F22"
+
+[colors]
+draw_bold_text_with_bright_colors = false
+
+[colors.primary] # ConsoleColors
+foreground = "#BCBEC4" # Console|StandardOutput
+background = "#1E1F22" # Console|Background
+
+[colors.cursor] #
+text = "CellBackground"
+cursor = "#CED0D6"
+# cursor = "CellForeground"
+
+[colors.vi_mode_cursor] #
+text = "CellBackground"
+cursor = "#CED0D6"
+# cursor = "CellForeground"
+
+[colors.search]
+matches = { foreground = "#BCBEC4", background = "#114957" }
+focused_match = { foreground = "#BCBEC4", background = "#214283" }
+
+[colors.hints]
+# What is this?
+
+[colors.line_indicator]
+foreground = "#6B6D74"
+background = "#1E1F22"
+
+[colors.footer_bar]
+foreground = "#BCBEC4"
+background = "#1E1F22"
+
+[colors.selection]
+foreground = "#BCBEC4"
+background = "#214283"
+
+[colors.normal]
+black = "#000000"
+red = "#F0524F"
+green = "#5C962C"
+yellow = "#A68A0D"
+blue = "#3993D4"
+magenta = "#A771BF"
+cyan = "#00A3A3"
+white = "#808080"
+
+[colors.bright]
+black = "#595959"
+red = "#FF4050"
+green = "#4FC414"
+yellow = "#E5BF00"
+blue = "#1FB0FF"
+magenta = "#ED7EED"
+cyan = "#00E5E5"
+white = "#FFFFFF"
+
+[colors.dim]
+# Auto-generated
+
