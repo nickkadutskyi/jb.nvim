@@ -2365,6 +2365,37 @@
       "Type annotation": null,
       "Type parameters": null
     },
+    "Ruby": {
+      "Function": {
+        "dark": "LanguageDefaults|Identifiers|FunctionCall"
+      },
+      "ClassName": {
+        "dark": {
+         "fg": "#FFC66D"
+        }
+      },
+      "Variable": {
+        "dark": {
+          "fg": "#CAA81E"
+        }
+      },
+      "Symbol": {
+        "dark": {
+          "fg": "#769eb3"
+        }
+      },
+      "Builtin": {
+        "dark": {
+          "fg": "#EDA200"
+        }
+      },
+      "Type": {
+        "dark": {
+          "fg": "#EBECF0",
+          "bold": true
+        }
+      }
+    },
     "RegExp": {
       "Bad character": null,
       "Brace": null,
@@ -3140,6 +3171,21 @@
       "@string.regexp.javascript": "RegExp|PlainCharacter",
       "@punctuation.delimiter.regex": "RegExp|OperatorCharacter",
       "@variable.builtin.regex": "RegExp|Dot"
+    },
+    "Treesitter.Ruby": {
+      "@function.ruby": "Ruby|ClassName",
+      "@function.call.ruby": "LanguageDefaults|Classes|ClassName",
+      "@function.builtin.ruby": "Ruby|Builtin",
+      "@keyword.modifier.ruby": "Ruby|Builtin",
+      "@lsp.type.class.ruby": "Ruby|ClassName",
+      "@lsp.type.method.ruby": "LanguageDefaults|Classes|ClassName",
+      "@lsp.type.parameter.ruby": "Ruby|Variable",
+      "@lsp.type.namespace.ruby": "Ruby|ClassName",
+      "@lsp.type.variable.ruby": "Ruby|Variable",
+      "@lsp.mod.default_library.ruby": "LanguageDefaults|Keyword",
+      "@variable.parameter.ruby": "Ruby|Variable",
+      "@string.special.symbol.ruby": "Ruby|Symbol",
+      "@type.ruby": "Ruby|Type"
     },
     "Syntax.SassSCSS": {
       "sassVariable": "SassSCSS|Variable"
