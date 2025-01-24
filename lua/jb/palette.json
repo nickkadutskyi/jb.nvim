@@ -2588,7 +2588,7 @@
       "Namespace Prefix": null,
       "Prologue": null,
       "Tag": {
-        "light": "LanguageDefaults|Keyword",
+        "light": "LanguageDefaults|Markup|Tag",
         "dark": {
           "fg": "#D5B778"
         }
@@ -3170,7 +3170,8 @@
       "@tag.attribute.tsx": "XML|AttributeName",
       "@tag.delimiter.tsx": "XML|Tag",
       "@tag.builtin.tsx": "XML|TagName",
-      "@variable.tsx": "TypeScript|Identifiers|LocalVariable"
+      "@variable.tsx": "TypeScript|Identifiers|LocalVariable",
+      "@variable.exported.tsx": "TypeScript|Identifiers|ExportedVariable"
     },
     "Semantic.TypeScriptReact": {
       "@lsp.type.variable.typescriptreact": null
@@ -3179,7 +3180,8 @@
       "@function.method.typescript": "JavaScript|Object|Method",
       "@function.method.call.typescript": "JavaScript|Object|Method",
       "@variable.typescript": "JavaScript|Identifiers|LocalVariable",
-      "@variable.parameter.typescript": "JavaScript|Identifiers|Parameter"
+      "@variable.parameter.typescript": "JavaScript|Identifiers|Parameter",
+      "@variable.exported.typescript": "TypeScript|Identifiers|ExportedVariable"
     },
     "Semantic.TypeScript": {
       "@lsp.type.variable.typescript": null,
