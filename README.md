@@ -47,6 +47,8 @@
 | Shell Script  | ⚠️     | ✅ (bash)                      | n/a          |
 | Twig          | n/a    | ✅ (twig)                      | n/a          |
 | TypeScript    | ⚠️     | ✅ (typescript)                | ✅ (ts_ls)   |
+| TSX/JSX       | ⚠️     | ✅ (tsx)                       | ✅ (ts_ls)   |
+| XML           | ⚠️     | ✅ (xml)                       | n/a          |
 
 </details>
 

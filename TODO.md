@@ -15,7 +15,7 @@ Languages
   - [ ] TOML
   - [ ] YAML
   - [ ] Ini
-  - [ ] XML
+  - [x] XML
   - [ ] GraphQL
   - [x] Python
   - [ ] Zig
@@ -25,6 +25,7 @@ Languages
   - [ ] AppleScript
   - [ ] Apache Config
   - [ ] .ignore files
+  - [x] TSX/JSX
 
 Plugins
 - [ ] Add support for:

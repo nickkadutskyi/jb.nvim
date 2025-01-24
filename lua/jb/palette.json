@@ -2545,7 +2545,16 @@
       "Comments": null,
       "Decorator": null,
       "Enum": null,
-      "Identifiers": null,
+      "Identifiers": {
+        "Exported function": null,
+        "ExportedVariable": "TypeScript|Identifiers|GlobalVariable",
+        "Global function": null,
+        "GlobalVariable": "JavaScript|Identifiers|GlobalVariable",
+        "Label": null,
+        "Local function": null,
+        "LocalVariable": "JavaScript|Identifiers|LocalVariable",
+        "Parameter": null
+      },
       "Injected Language Fragment": null,
       "Interface": null,
       "Keyword": null,
@@ -2557,6 +2566,40 @@
       "String": null,
       "Template literal": null,
       "Types": null
+    },
+    "XML": {
+      "AttributeName": {
+        "light": "LanguageDefaults|Markup|Attribute",
+        "dark": {
+          "fg": "#BCBEC4"
+        }
+      },
+      "AttributeValue": "LanguageDefaults|String|StringText",
+      "Comment": null,
+      "Custom Tag Name": null,
+      "EntityReference": {
+        "light": "LanguageDefaults|Markup|Entity",
+        "dark": {
+          "fg": "#56A8F5"
+        }
+      },
+      "Injected Language Fragment": null,
+      "Matched Tag": null,
+      "Namespace Prefix": null,
+      "Prologue": null,
+      "Tag": {
+        "light": "LanguageDefaults|Keyword",
+        "dark": {
+          "fg": "#D5B778"
+        }
+      },
+      "TagData": "General|Text|DefaultTextFg",
+      "TagName": {
+        "light": "LanguageDefaults|Keyword",
+        "dark": {
+          "fg": "#D5B778"
+        }
+      }
     },
     "IdeaVim": {
       "Modes": {
@@ -3112,6 +3155,26 @@
       "@tag.delimiter.twig": "LanguageDefaults|BracesAndOperators|Brackets",
       "@operator.twig": "LanguageDefaults|Keyword"
     },
+    "Treesitter.JSX": {
+      "@character.special.javascript": "XML|EntityReference",
+      "@string.special.javascript": "XML|AttributeValue",
+      "@string.tsx": "XML|AttributeValue",
+      "@tag.attribute.javascript": "XML|AttributeName",
+      "@tag.delimiter.javascript": "XML|Tag",
+      "@tag.builtin.javascript": "XML|TagName"
+    },
+    "Treesitter.TSX": {
+      "@character.special.tsx": "XML|EntityReference",
+      "@string.special.tsx": "XML|AttributeValue",
+      "@string.tsx": "XML|AttributeValue",
+      "@tag.attribute.tsx": "XML|AttributeName",
+      "@tag.delimiter.tsx": "XML|Tag",
+      "@tag.builtin.tsx": "XML|TagName",
+      "@variable.tsx": "TypeScript|Identifiers|LocalVariable"
+    },
+    "Semantic.TypeScriptReact": {
+      "@lsp.type.variable.typescriptreact": null
+    },
     "Treesitter.TypeScript": {
       "@function.method.typescript": "JavaScript|Object|Method",
       "@function.method.call.typescript": "JavaScript|Object|Method",
@@ -3123,6 +3186,17 @@
       "@lsp.typemod.class.defaultLibrary.typescript": "JavaScript|Identifiers|GlobalVariable",
       "@lsp.typemod.property.static.typescript": "LanguageDefaults|Classes|StaticField",
       "@lsp.type.parameter.typescript": "JavaScript|Identifiers|Parameter"
+    },
+    "Treesitter.XML": {
+      "@character.xml": "XML|EntityReference",
+      "@constant.builtin.xml": "XML|EntityReference",
+      "@markup.raw.xml": "XML|TagData",
+      "@string.special.xml": "XML|AttributeValue",
+      "@string.xml": "XML|AttributeValue",
+      "@tag.attribute.xml": "XML|AttributeName",
+      "@tag.delimiter.xml": "XML|Tag",
+      "@tag.xml": "XML|TagName",
+      "@type.definition.xml": "XML|AttributeName"
     },
     "Plugin.lewis6991/gitsigns.nvim": {
       "GitGutterAdd": "VCS|EditorGutter|AddedLines",
