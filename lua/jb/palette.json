@@ -2028,7 +2028,12 @@
       "Identifiers": {
         "ExportedFunction": null,
         "ExportedVariable": null,
-        "GlobalFunction": null,
+        "GlobalFunction": {
+          "light": {
+            "italic": true
+          },
+          "dark": "LanguageDefaults|Identifiers|FunctionDeclaration"
+        },
         "GlobalVariable": {
           "light": {
             "fg": "#830091"
@@ -2546,9 +2551,9 @@
       "Decorator": null,
       "Enum": null,
       "Identifiers": {
-        "Exported function": null,
+        "ExportedFunction": "TypeScript|Identifiers|GlobalFunction",
         "ExportedVariable": "TypeScript|Identifiers|GlobalVariable",
-        "Global function": null,
+        "GlobalFunction": "JavaScript|Identifiers|GlobalFunction",
         "GlobalVariable": "JavaScript|Identifiers|GlobalVariable",
         "Label": null,
         "Local function": null,
@@ -3171,7 +3176,8 @@
       "@tag.delimiter.tsx": "XML|Tag",
       "@tag.builtin.tsx": "XML|TagName",
       "@variable.tsx": "TypeScript|Identifiers|LocalVariable",
-      "@variable.exported.tsx": "TypeScript|Identifiers|ExportedVariable"
+      "@variable.exported.tsx": "TypeScript|Identifiers|ExportedVariable",
+      "@function.exported.tsx": "TypeScript|Identifiers|ExportedFunction"
     },
     "Semantic.TypeScriptReact": {
       "@lsp.type.variable.typescriptreact": null
@@ -3181,7 +3187,8 @@
       "@function.method.call.typescript": "JavaScript|Object|Method",
       "@variable.typescript": "JavaScript|Identifiers|LocalVariable",
       "@variable.parameter.typescript": "JavaScript|Identifiers|Parameter",
-      "@variable.exported.typescript": "TypeScript|Identifiers|ExportedVariable"
+      "@variable.exported.typescript": "TypeScript|Identifiers|ExportedVariable",
+      "@function.exported.typescript": "TypeScript|Identifiers|ExportedFunction"
     },
     "Semantic.TypeScript": {
       "@lsp.type.variable.typescript": null,

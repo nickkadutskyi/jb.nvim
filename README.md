@@ -62,6 +62,7 @@
 | [fzf-lua](https://github.com/ibhagwan/fzf-lua)                                  | n/a    |
 | [gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim)                     | n/a    |
 | [indent-blankline.nvim](https://github.com/lukas-reineke/indent-blankline.nvim) | n/a    |
+| [netrw](#)                                   | n/a    |
 | [neogit](https://github.com/NeogitOrg/neogit)                                   | n/a    |
 | [nvim-notify](https://github.com/rcarriga/nvim-notify)                          | n/a    |
 | [nvim-scrollbar](https://github.com/petertriho/nvim-scrollbar)                  | n/a    |
