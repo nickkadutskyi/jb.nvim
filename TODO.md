@@ -23,7 +23,7 @@ Languages
   - [x] Ruby
   - [ ] Java (is anyone writing Java in Neovim?)
   - [ ] AppleScript
-  - [ ] Apache Config
+  - [x] Apache Config
   - [ ] .ignore files
   - [x] TSX/JSX
 
