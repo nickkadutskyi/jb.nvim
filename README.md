@@ -51,6 +51,7 @@
 | TypeScript    | ⚠️     | ✅ (typescript)                | ✅ (ts_ls)   |
 | TSX/JSX       | ⚠️     | ✅ (tsx)                       | ✅ (ts_ls)   |
 | XML           | ⚠️     | ✅ (xml)                       | n/a          |
+| YAML          | ⚠️     | ✅ (yaml)                      | n/a          |
 
 </details>
 

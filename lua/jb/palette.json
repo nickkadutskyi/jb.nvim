@@ -2747,6 +2747,24 @@
         }
       }
     },
+    "YAML": {
+      "'>' block": null,
+      "I' block": null,
+      "AnchorAlias": {
+        "light": {
+          "fg": "#0000E6"
+        },
+        "dark": {
+          "fg": "#E8BF6A"
+        }
+      },
+      "Comment": "LanguageDefaults|Comments|DocComment|Text",
+      "Double quoted string": null,
+      "Key": "LanguageDefaults|Keyword",
+      "Sign: brace, comma, etc": null,
+      "String": null,
+      "Text": "General|Text|DefaultTextFg"
+    },
     "IdeaVim": {
       "Modes": {
         "Normal": {
@@ -3355,6 +3373,13 @@
       "@tag.delimiter.xml": "XML|Tag",
       "@tag.xml": "XML|TagName",
       "@type.definition.xml": "XML|AttributeName"
+    },
+    "Treesitter.YAML": {
+      "@boolean.yaml": "YAML|Text",
+      "@comment.yaml": "YAML|Comment",
+      "@label.yaml": "YAML|AnchorAlias",
+      "@number.yaml": "YAML|Text",
+      "@property.yaml": "YAML|Key"
     },
     "Plugin.lewis6991/gitsigns.nvim": {
       "GitGutterAdd": "VCS|EditorGutter|AddedLines",

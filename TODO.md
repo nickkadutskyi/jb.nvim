@@ -13,7 +13,7 @@ Languages
   - [x] RegExp
   - [x] HTML
   - [x] TOML
-  - [ ] YAML
+  - [x] YAML
   - [ ] Ini
   - [x] XML
   - [ ] GraphQL
