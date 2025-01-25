@@ -14,7 +14,7 @@ Languages
   - [x] HTML
   - [x] TOML
   - [x] YAML
-  - [ ] Ini
+  - [x] Ini
   - [x] XML
   - [ ] GraphQL
   - [x] Python

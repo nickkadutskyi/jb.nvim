@@ -34,6 +34,7 @@
 | CSS           | ⚠️     | ✅ (css)                       | n/a          |
 | EditorConfig  | n/a    | ✅ (editorconfig)              | n/a          |
 | HTML          | ⚠️     | ✅ (html)                      | n/a          |
+| Ini           | ⚠️     | ✅ (ini)                       | n/a          |
 | JavaScript    | ⚠️     | ✅ (javascript)                | ✅ (ts_ls)   |
 | JSON          | ✅     | ✅ (json)                      | n/a          |
 | Lua           | ⚠️     | ✅ (lua,luadoc)                | ✅ (lua_ls)  |
