@@ -3286,6 +3286,7 @@
     "Treesitter.JavaScript": {
       "@function.method.javascript": "JavaScript|Object|Method",
       "@function.method.call.javascript": "JavaScript|Object|Method",
+      "@tag.javascript": "JavaScript|JSXClientComponent",
       "@variable.javascript": "JavaScript|Identifiers|LocalVariable",
       "@variable.parameter.javascript": "JavaScript|Identifiers|Parameter"
     },
