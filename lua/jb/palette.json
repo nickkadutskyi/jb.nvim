@@ -2391,6 +2391,127 @@
       "Quote escape": null,
       "Redundant escape sequence": null
     },
+    "Ruby": {
+      "Bad character": null,
+      "Braces and Operators": null,
+      "Comment": null,
+      "Constants": {
+        "Constant": {
+          "light": "LanguageDefaults|Identifiers|Constant",
+          "dark": {
+            "fg": "#FEFFF9"
+          }
+        },
+        "ConstantDeclaration": {
+          "light": "LanguageDefaults|Identifiers|Constant",
+          "dark": {
+            "italic": true,
+            "fg": "#FFC66D"
+          }
+        }
+      },
+      "Hashes": {
+        "HashKey": "Ruby|StringsAndSymbols|Symbol",
+        "HashRocket": {
+          "light": "LanguageDefaults|Identifiers|Default",
+          "dark": {
+            "fg": "#FEFFF9"
+          }
+        }
+      },
+      "Identifiers": {
+        "Identifier": "LanguageDefaults|Identifiers|Default",
+        "Parameter": {
+          "light": {
+            "fg": "#C37522",
+            "italic": true
+          },
+          "dark": {
+            "fg": "#D4B01D",
+            "italic": true
+          }
+        }
+      },
+      "Keyword": null,
+      "Methods": {
+        "MethodName": {
+          "light": {
+            "fg": "#0000FF",
+            "italic": true
+          },
+          "dark": {
+            "fg": "#FFC66D"
+          }
+        },
+        "RailsSpecialCall": {
+          "light": "LanguageDefaults|Classes|StaticMethod",
+          "dark": {
+            "fg": "#FC9800"
+          }
+        },
+        "RubySpecialCall": {
+          "light": "LanguageDefaults|Classes|StaticMethod",
+          "dark": {
+            "fg": "#FC9800"
+          }
+        }
+      },
+      "Number": {
+        "light": "LanguageDefaults|Number",
+        "dark": {
+          "fg": "#74A4C8"
+        }
+      },
+      "StringsAndSymbols": {
+        "Escape Sequence": null,
+        "Heredoc": {
+          "Content": {
+            "light": {
+              "fg": "#297BDE",
+              "bold": true
+            },
+            "dark": {
+              "fg": "#979E5A"
+            }
+          },
+          "Marker": {
+            "light": {
+              "fg": "#000000",
+              "underline": true,
+              "sp": "#000000"
+            },
+            "dark": {
+              "fg": "#979E5A"
+            }
+          }
+        },
+        "Interpolated String": null,
+        "RegExp": null,
+        "String": null,
+        "Symbol": {
+          "light": "LanguageDefaults|Classes|InstanceField",
+          "dark": {
+            "fg": "#89A6AF"
+          }
+        },
+        "Word": null
+      },
+      "Variables": {
+        "Class variable": null,
+        "Global variable": null,
+        "Instance variable": null,
+        "LocalVariable": {
+          "light": {
+            "fg": "#003C5A",
+            "italic": true
+          },
+          "dark": {
+            "fg": "#D4B01D",
+            "italic": true
+          }
+        }
+      }
+    },
     "Rust": {
       "Attribute": "LanguageDefaults|Metadata",
       "Braces and Operators": null,
@@ -3136,8 +3257,7 @@
       "@number.regex": "RegExp|Quantifier",
       "@constant.regex": "RegExp|PlainCharacter",
       "@string.escape.regex": "RegExp|CharacterClass",
-      "@string.regexp.regex": "RegExp|PlainCharacter",
-      "@string.regexp.javascript": "RegExp|PlainCharacter",
+      "@string.regexp": "RegExp|PlainCharacter",
       "@punctuation.delimiter.regex": "RegExp|OperatorCharacter",
       "@variable.builtin.regex": "RegExp|Dot"
     },
@@ -3404,6 +3524,26 @@
       "@variable.builtin.python": "Python|Parameters|SelfParameter",
       "@variable.parameter.decorator.python": "Python|KeywordArgument",
       "@variable.parameter.keyword_argument.python": "Python|KeywordArgument"
+    },
+    "Treesitter.Ruby": {
+      "@constant.ruby": "Ruby|Constants|ConstantDeclaration",
+      "@function.ruby": "Ruby|Methods|MethodName",
+      "@function.builtin.ruby": "Ruby|Methods|RubySpecialCall",
+      "@function.call.ruby": "Ruby|Identifiers|Identifier",
+      "@keyword.import.ruby": "Ruby|Methods|RubySpecialCall",
+      "@label.ruby": "Ruby|StringsAndSymbols|Heredoc|Marker",
+      "@number.ruby": "Ruby|Number",
+      "@string.special.symbol.ruby": "Ruby|Hashes|HashKey",
+      "@type.ruby": "Ruby|Constants|Constant",
+      "@variable.parameter.ruby": "Ruby|Identifiers|Parameter",
+      "@variable.ruby": "Ruby|Variables|LocalVariable"
+    },
+    "Semantic.Ruby": {
+      "@lsp.type.class.ruby": null,
+      "@lsp.type.method.ruby": null,
+      "@lsp.typemod.class.declaration.ruby": "Ruby|Constants|ConstantDeclaration",
+      "@lsp.type.parameter.ruby": "Ruby|Identifiers|Parameter",
+      "@lsp.type.variable.ruby": "Ruby|Variables|LocalVariable"
     },
     "Treesitter.Rust": {
       "@constant.builtin.rust": "Rust|Types|EnumVariant",

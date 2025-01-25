@@ -20,7 +20,7 @@ Languages
   - [x] Python
   - [ ] Zig
   - [x] Rust
-  - [ ] Ruby
+  - [x] Ruby
   - [ ] Java (is anyone writing Java in Neovim?)
   - [ ] AppleScript
   - [ ] Apache Config

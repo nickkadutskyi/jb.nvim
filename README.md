@@ -42,6 +42,7 @@
 | PHP           | ⚠️     | ✅ (php,phpdoc)                | n/a          |
 | Python        | ⚠️     | ✅ (python)                    | n/a          |
 | RegExp        | ⚠️     | ✅ (regex)                     | n/a          |
+| Ruby          | ⚠️     | ✅ (ruby)                      | ✅ (ruby_lsp)|
 | Rust          | ⚠️     | ✅ (rust)                      | n/a          |
 | Sass/SCSS     | ⚠️     | ✅ (scss)                      | n/a          |
 | Shell Script  | ⚠️     | ✅ (bash)                      | n/a          |
