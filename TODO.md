@@ -12,7 +12,7 @@ Languages
   - [x] EditorConfig
   - [x] RegExp
   - [x] HTML
-  - [ ] TOML
+  - [x] TOML
   - [ ] YAML
   - [ ] Ini
   - [x] XML

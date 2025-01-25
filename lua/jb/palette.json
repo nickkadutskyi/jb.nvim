@@ -1052,7 +1052,12 @@
         },
         "LocalVariable": "LanguageDefaults|Identifiers|Default",
         "Parameter": "LanguageDefaults|Identifiers|Default",
-        "PredefinedSymbol": null,
+        "PredefinedSymbol": {
+          "light": {
+            "italic": true
+          },
+          "dark": "LanguageDefaults|Identifiers|Default"
+        },
         "ReassignedLocalVariable": {
           "light": {
             "fg": "#080808",
@@ -2660,6 +2665,14 @@
       "String": null,
       "Variables": null
     },
+    "TOML": {
+      "Boolean": "LanguageDefaults|Identifiers|PredefinedSymbol",
+      "Comments": null,
+      "Date": "LanguageDefaults|Identifiers|PredefinedSymbol",
+      "Keys": "LanguageDefaults|Keyword",
+      "Number": null,
+      "String": null
+    },
     "Twig": {
       "Bad character": null,
       "Brackets": null,
@@ -3282,6 +3295,11 @@
       "@type.scss": "SassSCSS|ClassName",
       "@variable.scss": "SassSCSS|Variable",
       "@variable.parameter.scss": "SassSCSS|Variable"
+    },
+    "Treesitter.TOML": {
+      "@boolean.toml": "TOML|Boolean",
+      "@property.toml": "TOML|Keys",
+      "@string.special.toml": "TOML|Date"
     },
     "Treesitter.Twig": {
       "@tag.delimiter.twig": "LanguageDefaults|BracesAndOperators|Brackets",

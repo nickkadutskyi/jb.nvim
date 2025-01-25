@@ -46,6 +46,7 @@
 | Rust          | ⚠️     | ✅ (rust)                      | n/a          |
 | Sass/SCSS     | ⚠️     | ✅ (scss)                      | n/a          |
 | Shell Script  | ⚠️     | ✅ (bash)                      | n/a          |
+| TOML          | ⚠️     | ✅ (toml)                      | n/a          |
 | Twig          | n/a    | ✅ (twig)                      | n/a          |
 | TypeScript    | ⚠️     | ✅ (typescript)                | ✅ (ts_ls)   |
 | TSX/JSX       | ⚠️     | ✅ (tsx)                       | ✅ (ts_ls)   |
