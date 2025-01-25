@@ -2062,7 +2062,14 @@
         }
       },
       "InjectedLanguageFragment": null,
-      "JSXClientComponent": null,
+      "JSXClientComponent": {
+        "light": {
+          "fg": "#AD6339"
+        },
+        "dark": {
+          "fg": "#9C9CFF"
+        }
+      },
       "Keyword": null,
       "Number": null,
       "Object": {
@@ -2679,7 +2686,7 @@
         "Label": null,
         "Local function": null,
         "LocalVariable": "JavaScript|Identifiers|LocalVariable",
-        "Parameter": null
+        "Parameter": "JavaScript|Identifiers|Parameter"
       },
       "Injected Language Fragment": null,
       "Interface": null,
@@ -3295,12 +3302,16 @@
       "@tag.attribute.tsx": "XML|AttributeName",
       "@tag.delimiter.tsx": "XML|Tag",
       "@tag.builtin.tsx": "XML|TagName",
+      "@tag.tsx": "JavaScript|JSXClientComponent",
       "@variable.tsx": "TypeScript|Identifiers|LocalVariable",
       "@variable.exported.tsx": "TypeScript|Identifiers|ExportedVariable",
+      "@variable.parameter.tsx": "TypeScript|Identifiers|Parameter",
       "@function.exported.tsx": "TypeScript|Identifiers|ExportedFunction"
     },
     "Semantic.TypeScriptReact": {
-      "@lsp.type.variable.typescriptreact": null
+      "@lsp.type.variable.typescriptreact": null,
+      "@lsp.type.function.typescriptreact": null,
+      "@lsp.type.parameter.typescriptreact": "TypeScript|Identifiers|Parameter"
     },
     "Treesitter.TypeScript": {
       "@function.method.typescript": "JavaScript|Object|Method",
