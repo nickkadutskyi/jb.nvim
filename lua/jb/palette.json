@@ -1987,6 +1987,26 @@
       },
       "ProjectView": null
     },
+    "GraphQL": {
+      "Argument": null,
+      "Comment": null,
+      "Constant": null,
+      "Directive": null,
+      "Field alias": null,
+      "Field name": null,
+      "Fragment definition": null,
+      "Fragment spread": null,
+      "Keyword": "LanguageDefaults|Keyword",
+      "Number": null,
+      "Object field": null,
+      "OperationDefinition": "LanguageDefaults|Identifiers|FunctionDeclaration",
+      "Parameter": null,
+      "String": null,
+      "Type name": null,
+      "Unused fragment": null,
+      "Variable": null,
+      "Variable definition": null
+    },
     "HTML": {
       "AttributeName": {
         "light": "LanguageDefaults|Markup|Attribute",
@@ -3264,6 +3284,10 @@
     },
     "Treesitter.EditorConfig": {
       "@character.special.editorconfig": "EditorConfig|SpecialSymbol"
+    },
+    "Treesitter.GraphQL": {
+      "@punctuation.special.graphql": "GraphQL|Keyword",
+      "@variable.graphql": "GraphQL|OperationDefinition"
     },
     "Treesitter.HTML": {
       "@character.special.html": "HTML|EntityReference",

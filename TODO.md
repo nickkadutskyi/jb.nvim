@@ -16,7 +16,7 @@ Languages
   - [x] YAML
   - [x] Ini
   - [x] XML
-  - [ ] GraphQL
+  - [x] GraphQL
   - [x] Python
   - [ ] Zig
   - [x] Rust
