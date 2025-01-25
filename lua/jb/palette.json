@@ -1779,6 +1779,11 @@
         }
       }
     },
+    "ApacheConfig": {
+      "Argument": "LanguageDefaults|String|StringText",
+      "Comment": null,
+      "DirectiveName": "LanguageDefaults|Keyword"
+    },
     "BashSupportPro": {
       "Arithmetic": null,
       "Backquote": null,
@@ -3226,6 +3231,13 @@
     "Semantic.Common": {
       "@lsp.typemod.keyword.documentation": "LanguageDefaults|Comments|DocComment|Tag",
       "@lsp.type.documentation": "LanguageDefaults|Comments|DocComment|Text"
+    },
+    "Syntax.ApacheConfig": {
+      "apacheAnything": "ApacheConfig|Argument",
+      "apacheDeclaration": "ApacheConfig|DirectiveName",
+      "apacheOption": "ApacheConfig|Argument",
+      "apacheSection": "ApacheConfig|DirectiveName",
+      "apacheString": "ApacheConfig|Argument"
     },
     "Treesitter.Bash": {
       "@constant.bash": null,
