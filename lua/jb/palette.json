@@ -1779,6 +1779,17 @@
         }
       }
     },
+    "IgnoreFiles": {
+      "Brackets": null,
+      "Comment": null,
+      "Header": null,
+      "Negation": null,
+      "Section": null,
+      "Slash": null,
+      "Syntax": null,
+      "Unused entry": null,
+      "Value": null
+    },
     "ApacheConfig": {
       "Argument": "LanguageDefaults|String|StringText",
       "Comment": null,
@@ -1993,17 +2004,17 @@
       "ProjectView": null
     },
     "GraphQL": {
-      "Argument": null,
+      "Argument": "LanguageDefaults|Identifiers|Parameter",
       "Comment": null,
       "Constant": null,
       "Directive": null,
-      "Field alias": null,
+      "FieldAlias": "LanguageDefaults|Identifiers|Label",
       "Field name": null,
-      "Fragment definition": null,
+      "FragmentDefinition": "LanguageDefaults|Identifiers|FunctionDeclaration",
       "Fragment spread": null,
       "Keyword": "LanguageDefaults|Keyword",
       "Number": null,
-      "Object field": null,
+      "ObjectField": "GraphQL|Argument",
       "OperationDefinition": "LanguageDefaults|Identifiers|FunctionDeclaration",
       "Parameter": null,
       "String": null,
@@ -3298,8 +3309,11 @@
       "@character.special.editorconfig": "EditorConfig|SpecialSymbol"
     },
     "Treesitter.GraphQL": {
-      "@punctuation.special.graphql": "GraphQL|Keyword",
-      "@variable.graphql": "GraphQL|OperationDefinition"
+      "@field.alias.graphql": "GraphQL|FieldAlias",
+      "@fragment.name.graphql": "GraphQL|FragmentDefinition",
+      "@object.field.graphql": "GraphQL|ObjectField",
+      "@operation.definition.graphql": "GraphQL|OperationDefinition",
+      "@punctuation.special.graphql": "GraphQL|Keyword"
     },
     "Treesitter.HTML": {
       "@character.special.html": "HTML|EntityReference",

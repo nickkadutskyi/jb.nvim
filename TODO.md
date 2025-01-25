@@ -22,7 +22,7 @@ Languages
   - [x] Rust
   - [x] Ruby
   - [ ] Java (is anyone writing Java in Neovim?)
-  - [ ] AppleScript
+  - [ ] ~~AppleScript~~ (no Syntax or Treesitter support)
   - [x] Apache Config
   - [ ] .ignore files
   - [x] TSX/JSX

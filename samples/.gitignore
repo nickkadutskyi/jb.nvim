@@ -1,0 +1,19 @@
+### Header element
+
+## First section
+*.jar
+*.war
+*.ear
+out/
+
+## Second section
+.gradle/
+build/
+
+# .gitignore negations
+!out/foo.txt
+!bar/
+
+# Mercurial syntax switch
+syntax: glob
+
