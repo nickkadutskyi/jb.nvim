@@ -29,6 +29,7 @@
 
 | Language      | Syntax | Treesitter                     | Semantic     |
 |---------------|--------|--------------------------------|--------------|
+| ApacheConfig  | ✅     | n/a                            | n/a          |
 | Blade         | n/a    | ✅ (EmranMR/tree-sitter-blade) | n/a          |
 | C/C++         | ⚠️     | ✅ (c,cpp)                     | n/a          |
 | CSS           | ⚠️     | ✅ (css)                       | n/a          |
