@@ -2024,6 +2024,13 @@
       "TagTreeLevel5": null,
       "TagTreeLevel6": null
     },
+    "Ini": {
+      "Comment": null,
+      "Equal": null,
+      "PropertyKey": "LanguageDefaults|Markup|Attribute",
+      "PropertyValue": null,
+      "Section": "LanguageDefaults|Keyword"
+    },
     "JavaScript": {
       "BadCharacter": null,
       "BracesAndOperators": null,
@@ -3271,6 +3278,10 @@
       "@markup.heading.4.html": "General|Text|DefaultText",
       "@markup.heading.5.html": "General|Text|DefaultText",
       "@markup.heading.6.html": "General|Text|DefaultText"
+    },
+    "Treesitter.Ini": {
+      "@markup.heading.ini": "Ini|Section",
+      "@property.ini": "Ini|PropertyKey"
     },
     "Treesitter.JavaScript": {
       "@function.method.javascript": "JavaScript|Object|Method",
