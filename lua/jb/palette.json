@@ -2858,6 +2858,31 @@
       "String": null,
       "Text": "General|Text|DefaultTextFg"
     },
+    "Zig": {
+      "Bad character": null,
+      "Builtin": "LanguageDefaults|Classes|StaticMethod",
+      "Character literal": null,
+      "Comment": null,
+      "Enum": null,
+      "ErrorTag": {
+        "Declaration": "LanguageDefaults|Classes|StaticField",
+        "Reference": "Zig|ErrorTag|Declaration"
+      },
+      "Function": null,
+      "Keyword": null,
+      "Label": null,
+      "Method": null,
+      "Namespace": null,
+      "Number": null,
+      "Operator": null,
+      "Parameter": null,
+      "Property": null,
+      "String": null,
+      "Struct": null,
+      "Туре": null,
+      "Type parameter": null,
+      "Variable": null
+    },
     "IdeaVim": {
       "Modes": {
         "Normal": {
@@ -3501,6 +3526,15 @@
       "@label.yaml": "YAML|AnchorAlias",
       "@number.yaml": "YAML|Text",
       "@property.yaml": "YAML|Key"
+    },
+    "Treesitter.Zig": {
+      "@function.builtin.zig": "Zig|Builtin",
+      "@keyword.import.zig": "Zig|Builtin"
+    },
+    "Semantic.Zig": {
+      "@lsp.type.errorTag.zig": "Zig|ErrorTag|Reference",
+      "@lsp.type.string.zig": null,
+      "@lsp.typemod.errorTag.declaration.zig": "Zig|ErrorTag|Declaration"
     },
     "Plugin.lewis6991/gitsigns.nvim": {
       "GitGutterAdd": "VCS|EditorGutter|AddedLines",

@@ -56,6 +56,7 @@
 | TSX/JSX       | ⚠️     | ✅ (tsx)                       | ✅ (ts_ls)   |
 | XML           | ⚠️     | ✅ (xml)                       | n/a          |
 | YAML          | ⚠️     | ✅ (yaml)                      | n/a          |
+| Zig           | ⚠️     | ✅ (zig)                       | ✅ (zls)     |
 
 </details>
 

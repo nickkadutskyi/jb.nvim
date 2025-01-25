@@ -18,7 +18,7 @@ Languages
   - [x] XML
   - [x] GraphQL
   - [x] Python
-  - [ ] Zig
+  - [x] Zig
   - [x] Rust
   - [x] Ruby
   - [ ] Java (is anyone writing Java in Neovim?)
