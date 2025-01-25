@@ -24,7 +24,7 @@ Languages
   - [ ] Java (is anyone writing Java in Neovim?)
   - [ ] ~~AppleScript~~ (no Syntax or Treesitter support)
   - [x] Apache Config
-  - [ ] .ignore files
+  - [x] .ignore files
   - [x] TSX/JSX
 
 Plugins

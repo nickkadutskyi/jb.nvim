@@ -1781,14 +1781,64 @@
     },
     "IgnoreFiles": {
       "Brackets": null,
-      "Comment": null,
-      "Header": null,
-      "Negation": null,
-      "Section": null,
-      "Slash": null,
+      "Comment": {
+        "light": {
+          "fg": "#808080"
+        },
+        "dark": {
+          "fg": "#808080"
+        }
+      },
+      "Header": {
+        "light": {
+          "fg": "#808080",
+          "bg": "#ECFAEB",
+          "bold": true
+        },
+        "dark": {
+          "fg": "#8C8C8C",
+          "bg": "#3A3A3A",
+          "bold": true
+        }
+      },
+      "Negation": {
+        "light": {
+          "fg": "#CC7832",
+          "bold": true
+        },
+        "dark": {
+          "fg": "#CC7832",
+          "bold": true
+        }
+      },
+      "Section": {
+        "light": {
+          "fg": "#808080",
+          "bg": "#ECFAEB"
+        },
+        "dark": {
+          "fg": "#8C8C8C",
+          "bg": "#3A3A3A"
+        }
+      },
+      "Slash": {
+        "light": {
+          "fg": "#808080"
+        },
+        "dark": {
+          "fg": "#808080"
+        }
+      },
       "Syntax": null,
       "Unused entry": null,
-      "Value": null
+      "Value": {
+        "light": {
+          "fg": "#5C9F30"
+        },
+        "dark": {
+          "fg": "#629755"
+        }
+      }
     },
     "ApacheConfig": {
       "Argument": "LanguageDefaults|String|StringText",
@@ -3242,6 +3292,15 @@
     "Semantic.Common": {
       "@lsp.typemod.keyword.documentation": "LanguageDefaults|Comments|DocComment|Tag",
       "@lsp.type.documentation": "LanguageDefaults|Comments|DocComment|Text"
+    },
+    "Treesitter.IgnoreFiles": {
+      "@character.special.gitignore": "IgnoreFiles|Value",
+      "@comment.gitignore": "IgnoreFiles|Comment",
+      "@header.gitignore": "IgnoreFiles|Header",
+      "@punctuation.delimiter.gitignore": "IgnoreFiles|Slash",
+      "@punctuation.special.gitignore": "IgnoreFiles|Negation",
+      "@section.gitignore": "IgnoreFiles|Section",
+      "@string.special.path.gitignore": "IgnoreFiles|Value"
     },
     "Syntax.ApacheConfig": {
       "apacheAnything": "ApacheConfig|Argument",
