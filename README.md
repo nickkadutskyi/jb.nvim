@@ -38,6 +38,7 @@
 | GraphQL       | ⚠️     | ✅ (graphql)                   | n/a          |
 | HTML          | ⚠️     | ✅ (html)                      | n/a          |
 | Ini           | ⚠️     | ✅ (ini)                       | n/a          |
+| Java          | ⚠️     | ✅ (java)                      | n/a          |
 | JavaScript    | ⚠️     | ✅ (javascript)                | ✅ (ts_ls)   |
 | JSON          | ✅     | ✅ (json)                      | n/a          |
 | Lua           | ⚠️     | ✅ (lua,luadoc)                | ✅ (lua_ls)  |

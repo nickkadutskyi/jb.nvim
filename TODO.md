@@ -1,6 +1,6 @@
 Languages
 - [ ] Provide better Tree-sitter queries for CSS/SCSS/Sass
-- [ ] Add Tree-sitter styles for:
+- [x] Add Tree-sitter styles for:
   - [x] Nix
   - [x] Shell Script
   - [x] BashSupportPro
@@ -21,8 +21,8 @@ Languages
   - [x] Zig
   - [x] Rust
   - [x] Ruby
-  - [ ] Java (is anyone writing Java in Neovim?)
-  - [ ] ~~AppleScript~~ (no Syntax or Treesitter support)
+  - [x] Java (is anyone writing Java in Neovim?)
+  - [x] ~~AppleScript~~ (no Syntax or Treesitter support)
   - [x] Apache Config
   - [x] .ignore files
   - [x] TSX/JSX

@@ -2117,6 +2117,43 @@
       "PropertyValue": null,
       "Section": "LanguageDefaults|Keyword"
     },
+    "Java": {
+      "Annotations": null,
+      "Braces and Operators": null,
+      "Class Fields": null,
+      "Classes and Interfaces": null,
+      "Comments": null,
+      "Keyword": null,
+      "Methods": {
+        "Abstract method": null,
+        "Constructor call": null,
+        "ConstructorDeclaration": "LanguageDefaults|Identifiers|FunctionDeclaration",
+        "Inherited method": null,
+        "MethodCall": "LanguageDefaults|Identifiers|FunctionCall",
+        "Method declaration": null,
+        "Static imported method call": null,
+        "Static method": null
+      },
+      "Number": null,
+      "Parameters": {
+        "Implicit anonymous class parameter": null,
+        "Lambda parameter": null,
+        "Parameter": null,
+        "Reassigned parameter": null,
+        "TypeParameter": {
+          "light": {
+            "fg": "#007E8A"
+          },
+          "dark": {
+            "fg": "#16BAAC"
+          }
+        }
+      },
+      "Semantic highlighting": null,
+      "String": null,
+      "Variables": null,
+      "Visibility": null
+    },
     "JavaScript": {
       "BadCharacter": null,
       "BracesAndOperators": null,
@@ -3416,6 +3453,11 @@
     "Treesitter.Ini": {
       "@markup.heading.ini": "Ini|Section",
       "@property.ini": "Ini|PropertyKey"
+    },
+    "Treesitter.Java": {
+      "@constructor.declaration.java": "Java|Methods|ConstructorDeclaration",
+      "@function.method.call.java": "Java|Methods|MethodCall",
+      "@type.parameter.java": "Java|Parameters|TypeParameter"
     },
     "Treesitter.JavaScript": {
       "@function.method.javascript": "JavaScript|Object|Method",
