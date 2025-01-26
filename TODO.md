@@ -52,7 +52,7 @@ Extras
 - [x] Add Ghostty themes
 - [x] Add Alacritty themes
 - [ ] Add Tmux themes
-- [ ] Add fzf themes
+- [x] Add fzf themes
 - [ ] Add starship themes
 - [ ] Add Windows Terminal themes
 - [ ] Test kitty theme
