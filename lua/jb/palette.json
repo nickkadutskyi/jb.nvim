@@ -3616,6 +3616,7 @@
       "@lsp.typemod.errorTag.declaration.zig": "Zig|ErrorTag|Declaration"
     },
     "Plugin.hrsh7th/nvim-cmp": {
+      "CmpItemAbbr": "General|Text|DefaultTextFg",
       "CmpItemAbbrDeprecated": {
         "fg": "General|Text|DefaultTextFg",
         "strikethrough": true
