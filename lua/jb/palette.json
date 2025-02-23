@@ -1777,6 +1777,32 @@
           "fg": "#ced0d5",
           "bg": "#2b2d30"
         }
+      },
+      "Completion": {
+        "Selected": {
+          "light": {
+            "bg": "#D7E1FC"
+          },
+          "dark": {
+            "bg": "#32426B"
+          }
+        },
+        "Match": {
+          "light": {
+            "fg": "#4573E8"
+          },
+          "dark": {
+            "fg": "#6089EF"
+          }
+        },
+        "Kind": {
+          "light": {
+            "fg": "#828593"
+          },
+          "dark": {
+            "fg": "#707379"
+          }
+        }
       }
     },
     "IgnoreFiles": {
@@ -3049,11 +3075,22 @@
         "nolink": true
       },
       "Pmenu": "General|PopupsAndHints|Completion",
-      "PmenuSel": "General|Editor|SelectionBackground",
-      "PmenuKind": "",
-      "PmenuKindSel": "",
-      "PmenuExtra": "",
-      "PmenuExtraSel": "",
+      "PmenuSel": "Custom|Completion|Selected",
+      "PmenuKind": "Custom|Completion|Kind",
+      "PmenuKindSel": {
+        "fg": "Custom|Completion|Kind",
+        "bg": "Custom|Completion|Selected"
+      },
+      "PmenuMatch": "Custom|Completion|Match",
+      "PmenuMatchSel": {
+        "fg": "Custom|Completion|Match",
+        "bg": "Custom|Completion|Selected"
+      },
+      "PmenuExtra": "Custom|Completion|Kind",
+      "PmenuExtraSel": {
+        "fg": "Custom|Completion|Kind",
+        "bg": "Custom|Completion|Selected"
+      },
       "PmenuSbar": "",
       "PmenuThumb": "General|Editor|VerticalScrollbar|Thumb",
       "Question": "Custom|DialogWindowDefaultOption",
@@ -3577,6 +3614,17 @@
       "@lsp.type.errorTag.zig": "Zig|ErrorTag|Reference",
       "@lsp.type.string.zig": null,
       "@lsp.typemod.errorTag.declaration.zig": "Zig|ErrorTag|Declaration"
+    },
+    "Plugin.hrsh7th/nvim-cmp": {
+      "CmpItemAbbrDeprecated": {
+        "fg": "General|Text|DefaultTextFg",
+        "strikethrough": true
+      },
+      "CmpItemAbbrMatch": "Custom|Completion|Match",
+      "CmpItemAbbrMatchFuzzy": "Custom|Completion|Match",
+      "CmpItemKind": "Custom|Completion|Kind",
+      "CmpItemKindCopilot": "Custom|Completion|Kind",
+      "CmpItemMenu": "Custom|Completion|Kind"
     },
     "Plugin.lewis6991/gitsigns.nvim": {
       "GitGutterAdd": "VCS|EditorGutter|AddedLines",

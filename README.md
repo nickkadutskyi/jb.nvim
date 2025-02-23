@@ -76,6 +76,7 @@
 | [nvim-notify](https://github.com/rcarriga/nvim-notify)                          | n/a    |
 | [nvim-scrollbar](https://github.com/petertriho/nvim-scrollbar)                  | n/a    |
 | [supermaven-nvim](https://github.com/supermaven-inc/supermaven-nvim)            | n/a    |
+| [nvim-cmp](https://github.com/hrsh7th/nvim-cmp)                                 | n/a    |
 
 </details>
 
@@ -96,6 +97,23 @@ return {
     end,
 }
 ```
+### Plugin Notes
+
+#### hrsh7th/nvim-cmp
+
+If you use `custom` view for entries (opts>view>entries>name) cmp creates
+a custom window instead of native built-in popup. To improve the view you
+can link highlight groups like this:
+
+```lua
+window = {
+    completion = cmp.config.window.bordered({
+        winhighlight = "Normal:Normal,FloatBorder:FloatBorder,CursorLine:PmenuSel,Search:None",
+    }),
+    documentation = cmp.config.window.bordered(),
+},
+```
+You can have any config just make sure `CursorLine:PmenuSel` is present in `winhighlight`.
 
 ### Usage
 
