@@ -110,12 +110,15 @@ can link highlight groups like this:
 ```lua
 window = {
     completion = cmp.config.window.bordered({
-        winhighlight = "Normal:Normal,FloatBorder:FloatBorder,CursorLine:PmenuSel,Search:None",
+        winhighlight = "Normal:Pmenu,FloatBorder:FloatBorder,CursorLine:PmenuSel,Search:None",
     }),
-    documentation = cmp.config.window.bordered(),
+    documentation = cmp.config.window.bordered({
+        winhighlight = "Normal:Pmenu,FloatBorder:FloatBorder,CursorLine:PmenuSel,Search:None",
+    }),
 },
 ```
-You can have any config just make sure `CursorLine:PmenuSel` is present in `winhighlight`.
+You can have any config just make sure `Normal:Pmenu` and
+`CursorLine:PmenuSel` is present in `winhighlight`.
 
 ### Usage
 
