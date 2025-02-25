@@ -4276,15 +4276,58 @@
       "NotifyLogTime": "General|ErrorsAndWarnings|UnusedCode",
       "NotifyLogTitle": "General|Text|DefaultText"
     },
-    "Netrw": {
+    "Plugin.yetone/avante.nvim": {
+      "AvanteTitle": "ToolWindowFloatTitle",
+      "AvanteReversedTitle": {
+        "fg": "Custom|StatusBar.bg"
+      },
+      "AvanteSubtitle": "ToolWindowFloatTitle",
+      "AvanteReversedSubtitle": {
+        "fg": "Custom|StatusBar.bg"
+      },
+      "AvanteThirdTitle": "ToolWindowFloatTitle",
+      "AvanteReversedThirdTitle": {
+        "fg": "Custom|StatusBar.bg"
+      },
+      "AvanteConflictCurrent": {
+        "bg": "DiffMerge|ChangedLines|Changed|Ignored.bg"
+      },
+      "AvanteConflictIncoming": {
+        "bg": "DiffMerge|ChangedLines|Inserted|Ignored.bg"
+      },
+      "AvanteConflictCurrentLabel": {
+        "fg": "DiffMerge|ChangedLines|Changed|ErrorStripeMark.fg",
+        "bold": true
+      },
+      "AvanteConflictIncomingLabel": {
+        "fg": "DiffMerge|ChangedLines|Inserted|ErrorStripeMark.fg",
+        "bold": true
+      },
+      "AvantePopupHint": "LanguageDefaults|InlineHints|Default",
+      "AvanteInlineHint": "LanguageDefaults|InlineHints|TextWithoutBackground"
+    },
+    "Plugin.vim-scripts/netrw.vim": {
       "netrwTreeBar": "Appearance|ProjectView|IndentGuide",
-      "netrwClassify": "ConsoleColors|ANSIColors|BrightBlack",
-      "netrwSpecial": "ConsoleColors|ANSIColors|Green",
-      "netrwDir": "netrwPlain",
-      "netrwSymLink": "netrwPlain",
-      "netrwLink": "ConsoleColors|Console|StandardOutput",
+      "netrwClassify": "Appearance|Window|SubtleText",
+      "netrwSpecial": "ConsoleColors|ANSIColors|Yellow",
+      "netrwDir": {
+        "fg": "General|Text|DefaultText",
+        "bold": true
+      },
+      "netrwSymLink": "Appearance|ProjectView|SymLink",
+      "netrwLink": "General|Hyperlinks|Reference",
       "netrwPlain": "Appearance|ToolWindow|Item",
-      "netrwExe": "netrwPlain",
+      "netrwExe": {
+        "fg": "ConsoleColors|ANSIColors|Green",
+        "bold": true
+      },
+      "netrwHelpCmd": "General|PopupsAndHints|CodeLens",
+      "netrwQuickHelp": "LanguageDefaults|Comments|DocComment|Text",
+      "netrwHide": "Appearance|Window|SubtleText",
+      "netrwBookmark": "General|Code|TODODefaults",
+      "netrwComment": "LanguageDefaults|Comments|LineComment",
+      "netrwList": "Appearance|Window|SubtleText",
+      "netrwVersion": "Appearance|Window|SubtleText",
       "NetrwCursorLine": "Appearance|Window|RowSelected"
     }
   }

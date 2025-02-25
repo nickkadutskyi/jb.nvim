@@ -77,6 +77,8 @@
 | [nvim-scrollbar](https://github.com/petertriho/nvim-scrollbar)                  | n/a    |
 | [supermaven-nvim](https://github.com/supermaven-inc/supermaven-nvim)            | n/a    |
 | [nvim-cmp](https://github.com/hrsh7th/nvim-cmp)                                 | n/a    |
+| [avante.nvim](https://github.com/yetone/avante.nvim)                            | n/a    |
+| [netrw.vim](https://github.com/vim-scripts/netrw.vim)                           | n/a    |
 
 </details>
 

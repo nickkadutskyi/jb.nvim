@@ -35,12 +35,13 @@ Plugins
   - [ ] CopilotChat.nvim
   - [ ] diffview.nvim
   - [ ] Lazy.nvim
-  - [ ] netrw.nvim
+  - [x] netrw.nvim
   - [ ] which-key.nvim
   - [ ] trouble.nvim
   - [ ] Comment.nvim
   - [ ] Telescope.nvim
   - [ ] nvim-hlslens
+  - [x] avante.nvim
 
 Performance
 - [ ] Measure performance on startup
