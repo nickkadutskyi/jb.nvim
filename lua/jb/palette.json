@@ -3479,13 +3479,13 @@
       "@tag.html": "HTML|TagName",
       "@tag.attribute.html": "HTML|AttributeName",
       "@string.html": "HTML|AttributeValue",
-      "@markup.heading.html": "General|Text|DefaultText",
-      "@markup.heading.1.html": "General|Text|DefaultText",
-      "@markup.heading.2.html": "General|Text|DefaultText",
-      "@markup.heading.3.html": "General|Text|DefaultText",
-      "@markup.heading.4.html": "General|Text|DefaultText",
-      "@markup.heading.5.html": "General|Text|DefaultText",
-      "@markup.heading.6.html": "General|Text|DefaultText"
+      "@markup.heading.html": "General|Text|DefaultTextFg",
+      "@markup.heading.1.html": "General|Text|DefaultTextFg",
+      "@markup.heading.2.html": "General|Text|DefaultTextFg",
+      "@markup.heading.3.html": "General|Text|DefaultTextFg",
+      "@markup.heading.4.html": "General|Text|DefaultTextFg",
+      "@markup.heading.5.html": "General|Text|DefaultTextFg",
+      "@markup.heading.6.html": "General|Text|DefaultTextFg"
     },
     "Treesitter.Ini": {
       "@markup.heading.ini": "Ini|Section",
