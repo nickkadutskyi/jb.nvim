@@ -2708,10 +2708,12 @@
         "Const parameter": null,
         "Lifetime": {
           "light": {
-            "fg": "#20999D"
+            "fg": "#20999D",
+            "italic": true
           },
           "dark": {
-            "fg": "#20999D"
+            "fg": "#20999D",
+            "italic": true
           }
         },
         "Mutable parameter": null,
@@ -3851,7 +3853,8 @@
       "@type.parameter_lifetime.rust": "Rust|Parameters|Lifetime",
       "@type.parameter.rust": "Rust|Parameters|TypeParameter",
       "@unsafe.rust": "Rust|UnsafeCode",
-      "@variable.mutable_static.rust": "Rust|Variables|MutableStatic"
+      "@variable.mutable_static.rust": "Rust|Variables|MutableStatic",
+      "@label.rust": null
     },
     "Plugin.petertriho/nvim-scrollbar": {
       "ScrollbarHandle": "General|Editor|VerticalScrollbar|Thumb",
