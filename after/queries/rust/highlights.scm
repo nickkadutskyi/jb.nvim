@@ -21,11 +21,8 @@
   type: (reference_type
     (mutable_specifier)))
 
-(type_parameters
-  (type_identifier) @type.parameter)
-
-(constrained_type_parameter
-  left: (type_identifier) @type.parameter)
+(type_parameter
+  name: (type_identifier) @type.parameter)
 
 (type_arguments
   (type_identifier) @type.parameter)
