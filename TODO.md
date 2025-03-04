@@ -1,4 +1,5 @@
 Languages
+- [ ] Style definition popup
 - [ ] Provide better Tree-sitter queries for CSS/SCSS/Sass
 - [x] Add Tree-sitter styles for:
   - [x] Nix
