@@ -4133,7 +4133,7 @@
       },
       "FzfLuaBorder": {
         "fg": "Appearance|Window|Border",
-        "bg": "Appearance|Window|Border.bg"
+        "bg": "Appearance|Window|BackgroundEditArea.bg"
       },
       "FzfLuaTitle": {
         "fg": "Appearance|Window|SectionTitle.fg",
@@ -4149,7 +4149,7 @@
       },
       "FzfLuaPreviewBorder": {
         "fg": "Appearance|Window|Border",
-        "bg": "Appearance|Window|Border.bg"
+        "bg": "Appearance|Window|BackgroundEditArea.bg"
       },
       "FzfLuaPreviewTitle": {
         "fg": "Appearance|Window|SectionTitle.fg",
@@ -4226,11 +4226,26 @@
     },
     "Plugin.rcarriga/nvim-notify": {
       "NotifyBackground": "Appearance|Notifications|Background",
-      "NotifyERRORBorder": "Appearance|Window|Border",
-      "NotifyWARNBorder": "Appearance|Window|Border",
-      "NotifyINFOBorder": "Appearance|Window|Border",
-      "NotifyDEBUGBorder": "Appearance|Window|Border",
-      "NotifyTRACEBorder": "Appearance|Window|Border",
+      "NotifyERRORBorder": {
+        "fg": "Appearance|Window|Border",
+        "bg": "Appearance|Notifications|Background"
+      },
+      "NotifyWARNBorder": {
+        "fg": "Appearance|Window|Border",
+        "bg": "Appearance|Notifications|Background"
+      },
+      "NotifyINFOBorder": {
+        "fg": "Appearance|Window|Border",
+        "bg": "Appearance|Notifications|Background"
+      },
+      "NotifyDEBUGBorder": {
+        "fg": "Appearance|Window|Border",
+        "bg": "Appearance|Notifications|Background"
+      },
+      "NotifyTRACEBorder": {
+        "fg": "Appearance|Window|Border",
+        "bg": "Appearance|Notifications|Background"
+      },
       "NotifyERRORIcon": "Appearance|Notifications|IconError",
       "NotifyWARNIcon": "Appearance|Notifications|IconWarn",
       "NotifyINFOIcon": "Appearance|Notifications|IconInfo",
