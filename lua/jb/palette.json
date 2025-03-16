@@ -4175,6 +4175,7 @@
       },
       "FzfLuaPathColNr": "General|Code|LineNumber",
       "FzfLuaPathLineNr": "General|Code|LineNumber",
+      "FzfLuaLivePrompt": "General|Text|DefaultText",
       "FzfLuaBufName": "General|Text|DefaultText",
       "FzfLuaBufNr": "General|Text|DefaultText",
       "FzfLuaBufFlagCur": {
@@ -4186,11 +4187,14 @@
       "FzfLuaTabTitle": "General|Text|DefaultText",
       "FzfLuaTabMarker": "",
       "FzfLuaDirIcon": "",
-      "FzfLuaDirPart": "",
+      "FzfLuaDirPart": "LanguageDefaults|Comments|LineComment",
       "FzfLuaFilePart": {
-        "fg": "Red"
+        "fg": "General|Text|DefaultText"
       },
-      "FzfLuaLiveSym": "",
+      "FzfLuaLiveSym": {
+        "fg": "General|Text|DefaultText",
+        "bold": false
+      },
       "FzfLuaFzfNormal": {
         "fg": "General|Text|DefaultText",
         "bg": "Appearance|Window|BackgroundEditArea.bg"
