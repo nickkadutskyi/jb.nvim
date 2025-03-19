@@ -59,3 +59,4 @@ Extras
 - [ ] Add Windows Terminal themes
 - [ ] Test kitty theme
 - [ ] Provide kitty light mode theme
+- [ ] Create bath theme generator and add generated theme to the repo
