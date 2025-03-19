@@ -4,6 +4,12 @@ local M = {}
 M.defaults = {
     -- Enable this to remove background from Normal and NormalNC
     transparent = false,
+    snacks = {
+        explorer = {
+            -- Enable folke/snacks.nvim styling for explorer
+            enabled = true,
+        },
+    },
 }
 
 ---@type jb.Config

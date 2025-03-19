@@ -42,6 +42,10 @@ function M.load(opts)
     local hl_groups = {}
     local set_hl_delayed = {}
 
+    if not opts.snacks.explorer.enabled then
+        -- Remove explorer highlights if snacks.nvim is not enabled
+        highlights["Plugin.folke/snacks.nvim.explorer"] = nil
+    end
     for _, groups in pairs(highlights) do
         for group, attrs in pairs(groups) do
             -- groups with `nil` or `""` values are skipped

@@ -79,6 +79,7 @@
 | [nvim-cmp](https://github.com/hrsh7th/nvim-cmp)                                 | n/a    |
 | [avante.nvim](https://github.com/yetone/avante.nvim)                            | n/a    |
 | [netrw.vim](https://github.com/vim-scripts/netrw.vim)                           | n/a    |
+| [snacks.nvim](https://github.com/folke/snack.nvim)                              | n/a    |
 
 </details>
 
@@ -156,6 +157,12 @@ set background=light
 M.defaults = {
     -- Enable this to remove background from Normal and NormalNC
     transparent = false,
+    snacks = {
+        explorer = {
+            -- Enable folke/snacks.nvim styling for explorer
+            enabled = true,
+        },
+    },
 }
 ```
 
