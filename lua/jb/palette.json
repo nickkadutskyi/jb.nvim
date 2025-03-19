@@ -4206,7 +4206,10 @@
       "SnacksPickerInputCursorLine": "",
       "SnacksPickerInputFooter": "",
       "SnacksPickerInputSearch": "",
-      "SnacksPickerInputTitle": "Appearance|ToolWindow|Title",
+      "SnacksPickerInputTitle": {
+        "fg": "Appearance|ToolWindow|Title",
+        "bold": true
+      },
       "SnacksPickerKeymapLhs": "",
       "SnacksPickerKeymapMode": "",
       "SnacksPickerKeymapNowait": "",
