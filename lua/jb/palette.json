@@ -147,6 +147,14 @@
           "dark": {
             "fg": "#DFE1E5"
           }
+        },
+        "DirectoryIcon": {
+          "light": {
+            "fg": "#6D707D"
+          },
+          "dark": {
+            "fg": "#CED0D5"
+          }
         }
       },
       "ToolWindow": {
@@ -3010,7 +3018,7 @@
       "CursorIM": "General|Editor|Caret",
       "CursorColumn": "General|Editor|CaretRow",
       "CursorLine": "General|Editor|CaretRow",
-      "Directory": "Normal",
+      "Directory": null,
       "DiffAdd": {
         "bg": "DiffMerge|ChangedLines|Inserted|Important.bg"
       },
@@ -4199,15 +4207,20 @@
       "SnacksPickerIconTypeParameter": "",
       "SnacksPickerIconVariable": "",
       "SnacksPickerIdx": "",
-      "SnacksPickerInput": "General|Text|DefaultText",
+      "SnacksPickerInput": {
+        "bg": "Appearance|ToolWindow|Background"
+      },
       "SnacksPickerInputBorder": {
-        "fg": "General|Text|DefaultTextBg.bg"
+        "fg": "Appearance|ToolWindow|Background.bg",
+        "sp": "Appearance|ToolWindow|Background.bg",
+        "bg": "Appearance|ToolWindow|Background.bg"
       },
       "SnacksPickerInputCursorLine": "",
       "SnacksPickerInputFooter": "",
       "SnacksPickerInputSearch": "",
       "SnacksPickerInputTitle": {
         "fg": "Appearance|ToolWindow|Title",
+        "bg": "Appearance|ToolWindow|Background",
         "bold": true
       },
       "SnacksPickerKeymapLhs": "",
@@ -4217,7 +4230,10 @@
       "SnacksPickerLabel": "",
       "SnacksPickerLink": "",
       "SnacksPickerLinkBroken": "",
-      "SnacksPickerList": "General|Text|DefaultText",
+      "SnacksPickerList": {
+        "fg": "Appearance|ProjectView|DirectoryIcon",
+        "bg": "Appearance|ToolWindow|Background"
+      },
       "SnacksPickerListBorder": "",
       "SnacksPickerListCursorLine": "NetrwCursorLine",
       "SnacksPickerListFooter": "",
@@ -4240,7 +4256,7 @@
       "SnacksPickerPreviewFooter": "",
       "SnacksPickerPreviewTitle": "Appearance|ToolWindow|Title",
       "SnacksPickerPrompt": {
-        "fg": "General|Text|DefaultTextBg.bg"
+        "fg": "Appearance|ToolWindow|Background.bg"
       },
       "SnacksPickerRegister": "",
       "SnacksPickerRow": "",
@@ -4257,7 +4273,9 @@
       "SnacksPickerToggleModified": "",
       "SnacksPickerToggleRegex": "",
       "SnacksPickerTotals": "VCS|FileStatusColors|IgnoredIgnorePlugin",
-      "SnacksPickerTree": "Appearance|ProjectView|IndentGuide",
+      "SnacksPickerTree": {
+        "fg": "Appearance|ProjectView|IndentGuide.fg"
+      },
       "SnacksPickerUndoAdded": "",
       "SnacksPickerUndoCurrent": "",
       "SnacksPickerUndoRemoved": "",
