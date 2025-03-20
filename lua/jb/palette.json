@@ -3262,9 +3262,7 @@
       "LspReferenceText": "CodeWithMe|UserOneSelection",
       "LspReferenceRead": "General|Code|IdentifierUnderCaret|Default",
       "LspReferenceWrite": "General|Code|IdentifierUnderCaretWrite|Default",
-      "LspInlayHint": {
-        "fg": "LanguageDefaults|InlineHints|Default"
-      },
+      "LspInlayHint": "LanguageDefaults|InlineHints|Default",
       "LspCodeLens": "General|PopupsAndHints|CodeLens",
       "LspCodeLensSeparator": "",
       "LspSignatureActiveParameter": "Search",
