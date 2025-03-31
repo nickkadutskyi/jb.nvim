@@ -12,10 +12,13 @@ function M.table_length(t)
 end
 
 -- Function to read the JSON palette
+---@param path? string
 ---@return table
-function M.read_palette()
+function M.read_palette(path)
+    local default_path = "/lua/jb/palette.json"
+    path = path == "" and default_path or (path or default_path)
     local plugin_dir = vim.fn.expand("<sfile>:p:h:h")
-    local palette_path = plugin_dir .. "/lua/jb/palette.json"
+    local palette_path = plugin_dir .. path
     local file = io.open(palette_path, "r")
     if not file then
         error("Could not open palette.json at " .. palette_path)

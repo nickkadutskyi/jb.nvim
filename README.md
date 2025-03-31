@@ -152,17 +152,22 @@ set background=light
 <!-- config:start -->
 
 ```lua
-
 ---@class jb.Config
 M.defaults = {
-    -- Enable this to remove background from Normal and NormalNC
-    transparent = false,
+    -- Disable bold or italic for all highlights
+    disable_hl_args = {
+        bold = false,
+        italic = false,
+    },
+    -- Control snacks.nvim related styles
     snacks = {
         explorer = {
             -- Enable folke/snacks.nvim styling for explorer
             enabled = true,
         },
     },
+    -- Enable this to remove background from Normal and NormalNC
+    transparent = false,
 }
 ```
 

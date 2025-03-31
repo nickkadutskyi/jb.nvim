@@ -33,7 +33,6 @@ Plugins
   - [ ] nvim-navic
   - [ ] cloak.nvim
   - [ ] conform.nvim
-  - [ ] CopilotChat.nvim
   - [ ] diffview.nvim
   - [ ] Lazy.nvim
   - [x] netrw.nvim

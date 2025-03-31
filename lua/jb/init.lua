@@ -32,20 +32,33 @@ function M.dump(o)
     end
 end
 
+function M.disable_hl_args(hl, opts)
+    if opts.disable_hl_args.bold then
+        hl.bold = nil
+    end
+    if opts.disable_hl_args.italic then
+        hl.italic = nil
+    end
+    return hl
+end
+
 ---@type fun(opts?: jb.Config)
 function M.load(opts)
     opts = require("jb.config").extend(opts)
+
     local profile = vim.o.background -- 'dark' or 'light'
-    local palette = utils.read_palette()
+    local palette = utils.read_palette("/lua/jb/palette.json")
     local colors = palette.colors
     local highlights = palette.highlights
     local hl_groups = {}
     local set_hl_delayed = {}
 
+    -- Apply snacks.nvim configs
     if not opts.snacks.explorer.enabled then
         -- Remove explorer highlights if snacks.nvim is not enabled
         highlights["Plugin.folke/snacks.nvim.explorer"] = nil
     end
+
     for _, groups in pairs(highlights) do
         for group, attrs in pairs(groups) do
             -- groups with `nil` or `""` values are skipped
@@ -59,7 +72,7 @@ function M.load(opts)
                     hl = props.hl
                 else
                     if hl_groups[props.name] == nil then
-                        vim.api.nvim_set_hl(0, props.name, props.hl)
+                        vim.api.nvim_set_hl(0, props.name, M.disable_hl_args(props.hl, opts))
                         hl_groups[props.name] = true
                     end
                     hl.link = props.name
@@ -95,7 +108,7 @@ function M.load(opts)
                         and last_hl_name .. "-" .. last_attr
                     or group .. "_Custom"
                 if not nolink then
-                    vim.api.nvim_set_hl(0, group_name, hl)
+                    vim.api.nvim_set_hl(0, group_name, M.disable_hl_args(hl, opts))
                     hl.link = group_name
                 else
                     hl.bg = transparent and "NONE" or hl.bg
@@ -105,20 +118,20 @@ function M.load(opts)
             -- Set hl group properties if value is not `nil` or `""`
             if attrs ~= nil and attrs ~= "" then
                 local props = hl.link ~= nil and { link = hl.link } or hl
-                vim.api.nvim_set_hl(0, group, props)
+                vim.api.nvim_set_hl(0, group, M.disable_hl_args(props, opts))
             end
         end
     end
 
     -- Set delayed highlights after all groups are defined
     for group, hl in pairs(set_hl_delayed) do
-        vim.api.nvim_set_hl(0, group, hl)
+        vim.api.nvim_set_hl(0, group, M.disable_hl_args(hl, opts))
     end
 
     -- Set ProjectColor highlight group
     local project_color = utils.get_project_color_hl()
     local status_line_color = utils.get_hl_props(colors, "Custom|StatusBar.bg", profile)
-    vim.api.nvim_set_hl(0, "ProjectColor", project_color)
+    vim.api.nvim_set_hl(0, "ProjectColor", M.disable_hl_args(project_color, opts))
     -- Tinted variants based on project color
     local tinted_status_line_bg = utils.blend_colors(status_line_color.hl.bg, project_color.bg, 0.1)
     vim.api.nvim_set_hl(0, "StatusLineTinted", {
