@@ -2192,7 +2192,16 @@
       "BadCharacter": null,
       "BracesAndOperators": null,
       "Classes": null,
-      "Comments": null,
+      "Comments": {
+        "BlockComment": null,
+        "JSDoc": {
+          "Tag": "LanguageDefaults|Comments|DocComment|Tag",
+          "TagNamepath": "LanguageDefaults|Comments|DocComment|TagValue",
+          "Text": "LanguageDefaults|Comments|DocComment|Text",
+          "Type": "JavaScript|Comments|JSDoc|TagNamepath"
+        },
+        "LineComment": null
+      },
       "Decorator": null,
       "Identifiers": {
         "ExportedFunction": null,
@@ -3509,7 +3518,9 @@
       "@function.method.call.javascript": "JavaScript|Object|Method",
       "@tag.javascript": "JavaScript|JSXClientComponent",
       "@variable.javascript": "JavaScript|Identifiers|LocalVariable",
-      "@variable.parameter.javascript": "JavaScript|Identifiers|Parameter"
+      "@variable.parameter.javascript": "JavaScript|Identifiers|Parameter",
+      "@keyword.jsdoc": "JavaScript|Comments|JSDoc|Tag",
+      "@type.jsdoc": "JavaScript|Comments|JSDoc|Type"
     },
     "Semantic.JavaScript": {
       "@lsp.type.variable.javascript": null,
