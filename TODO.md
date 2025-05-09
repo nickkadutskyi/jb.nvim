@@ -32,17 +32,17 @@ Plugins
 - [ ] Add support for:
   - [ ] blink.nvim
   - [ ] Telescope.nvim
+  - [ ] diffview.nvim
   - [ ] avante.nvim new interface
   - [ ] nvim-navic
-  - [ ] cloak.nvim
-  - [ ] conform.nvim
-  - [ ] diffview.nvim
   - [ ] Lazy.nvim
-  - [x] netrw.nvim
-  - [ ] which-key.nvim
+  - [ ] conform.nvim
   - [ ] trouble.nvim
+  - [ ] cloak.nvim
+  - [ ] which-key.nvim
   - [ ] Comment.nvim
   - [ ] nvim-hlslens
+  - [x] netrw.nvim
   - [x] avante.nvim
 
 Performance
