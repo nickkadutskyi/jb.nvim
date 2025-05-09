@@ -30,6 +30,9 @@ Languages
 
 Plugins
 - [ ] Add support for:
+  - [ ] blink.nvim
+  - [ ] Telescope.nvim
+  - [ ] avante.nvim new interface
   - [ ] nvim-navic
   - [ ] cloak.nvim
   - [ ] conform.nvim
@@ -39,7 +42,6 @@ Plugins
   - [ ] which-key.nvim
   - [ ] trouble.nvim
   - [ ] Comment.nvim
-  - [ ] Telescope.nvim
   - [ ] nvim-hlslens
   - [x] avante.nvim
 
