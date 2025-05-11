@@ -4650,24 +4650,19 @@
     "Plugin.rcarriga/nvim-notify": {
       "NotifyBackground": "Appearance|Notifications|Background",
       "NotifyERRORBorder": {
-        "fg": "Appearance|Window|Border",
-        "bg": "Appearance|Notifications|Background"
+        "fg": "Appearance|Window|Border"
       },
       "NotifyWARNBorder": {
-        "fg": "Appearance|Window|Border",
-        "bg": "Appearance|Notifications|Background"
+        "fg": "Appearance|Window|Border"
       },
       "NotifyINFOBorder": {
-        "fg": "Appearance|Window|Border",
-        "bg": "Appearance|Notifications|Background"
+        "fg": "Appearance|Window|Border"
       },
       "NotifyDEBUGBorder": {
-        "fg": "Appearance|Window|Border",
-        "bg": "Appearance|Notifications|Background"
+        "fg": "Appearance|Window|Border"
       },
       "NotifyTRACEBorder": {
-        "fg": "Appearance|Window|Border",
-        "bg": "Appearance|Notifications|Background"
+        "fg": "Appearance|Window|Border"
       },
       "NotifyERRORIcon": "Appearance|Notifications|IconError",
       "NotifyWARNIcon": "Appearance|Notifications|IconWarn",
