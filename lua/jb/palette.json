@@ -1179,7 +1179,14 @@
           }
         }
       },
-      "TemplateLanguage": null
+      "TemplateLanguage": {
+        "light": {
+          "bg": "#F7FAFF"
+        },
+        "dark": {
+          "bg": "#2B2D30"
+        }
+      }
     },
     "CodeWithMe": {
       "UserOneSelection": {
@@ -1789,10 +1796,10 @@
       "Completion": {
         "Selected": {
           "light": {
-            "bg": "#D7E1FC"
+            "bg": "#DFE1E5"
           },
           "dark": {
-            "bg": "#32426B"
+            "bg": "#43454A"
           }
         },
         "Match": {
@@ -1809,6 +1816,208 @@
           },
           "dark": {
             "fg": "#707379"
+          }
+        }
+      },
+      "Icons": {
+        "Text": {
+          "light": {
+            "fg": "#6C707D"
+          },
+          "dark": {
+            "fg": "#CED0D6"
+          }
+        },
+        "Method": {
+          "light": {
+            "fg": "#D04B50"
+          },
+          "dark": {
+            "fg": "#D1655F"
+          }
+        },
+        "Function": {
+          "light": {
+            "fg": "#D04A4F"
+          },
+          "dark": {
+            "fg": "#D1655F"
+          }
+        },
+        "Constructor": {
+          "light": {
+            "fg": "#D04B50"
+          },
+          "dark": {
+            "fg": "#D1655F"
+          }
+        },
+        "Field": {
+          "light": {
+            "fg": "#DD7430"
+          },
+          "dark": {
+            "fg": "#C1805B"
+          }
+        },
+        "Variable": {
+          "light": {
+            "fg": "#DE7633"
+          },
+          "dark": {
+            "fg": "#C1805B"
+          }
+        },
+        "Property": {
+          "light": {
+            "fg": "#7A58E8"
+          },
+          "dark": {
+            "fg": "#AF8EE6"
+          }
+        },
+        "Class": {
+          "light": {
+            "fg": "#3877E8"
+          },
+          "dark": {
+            "fg": "#578CF0"
+          }
+        },
+        "Interface": {
+          "light": {
+            "fg": "#3C8745"
+          },
+          "dark": {
+            "fg": "#629361"
+          }
+        },
+        "Struct": {
+          "light": {
+            "fg": "#7A58E8"
+          },
+          "dark": {
+            "fg": "#AF8EE6"
+          }
+        },
+        "Module": {
+          "light": {
+            "fg": "#3877E8"
+          },
+          "dark": {
+            "fg": "#578CF0"
+          }
+        },
+        "Unit": {
+          "light": {
+            "fg": ""
+          },
+          "dark": {
+            "fg": ""
+          }
+        },
+        "Value": {
+          "light": {
+            "fg": "#7A58E8"
+          },
+          "dark": {
+            "fg": "#9E78DF"
+          }
+        },
+        "Enum": {
+          "light": {
+            "fg": "#7A58E8"
+          },
+          "dark": {
+            "fg": "#9E78DF"
+          }
+        },
+        "EnumMember": {
+          "light": {
+            "fg": "#DD7430"
+          },
+          "dark": {
+            "fg": "#C1805B"
+          }
+        },
+        "Keyword": {
+          "light": {
+            "fg": "#6C707D"
+          },
+          "dark": {
+            "fg": "#CED0D6"
+          }
+        },
+        "Constant": {
+          "light": {
+            "fg": "#DD7430"
+          },
+          "dark": {
+            "fg": "#C1805B"
+          }
+        },
+        "Snippet": {
+          "light": {
+            "fg": "#6C707D"
+          },
+          "dark": {
+            "fg": "#CED0D6"
+          }
+        },
+        "Color": {
+          "light": {
+            "fg": "#6C707D"
+          },
+          "dark": {
+            "fg": "#CED0D6"
+          }
+        },
+        "File": {
+          "light": {
+            "fg": "#6C707D"
+          },
+          "dark": {
+            "fg": "#CED0D6"
+          }
+        },
+        "Reference": {
+          "light": {
+            "fg": "#DD7430"
+          },
+          "dark": {
+            "fg": "#C1805B"
+          }
+        },
+        "Folder": {
+          "light": {
+            "fg": "#6C707D"
+          },
+          "dark": {
+            "fg": "#CED0D6"
+          }
+        },
+        "Event": {
+          "light": {
+            "fg": "#DD7430"
+          },
+          "dark": {
+            "fg": "#C1805B"
+          }
+        },
+        "Operator": {
+          "light": {
+            "fg": "#6C707D"
+          },
+          "dark": {
+            "fg": "#CED0D6"
+          }
+        },
+        "TypeParameter": {
+          "light": {
+            "fg": "#3877E8"
+          },
+          "dark": {
+            "fg": "#578CF0"
           }
         }
       }
@@ -4290,6 +4499,46 @@
       "SnacksPickerUndoRemoved": "",
       "SnacksPickerUndoSaved": "",
       "SnacksPickerUnselected": ""
+    },
+    "Plugin.Saghen/blink.cmp": {
+      "BlinkCmpMenu": "Pmenu",
+      "BlinkCmpMenuBorder": {
+        "fg": "Appearance|Window|Border.fg"
+      },
+      "BlinkCmpMenuSelection": "PmenuSel",
+      "BlinkCmpLabel": "General|Text|DefaultTextFg",
+      "BlinkCmpLabelDeprecated": {
+        "fg": "General|Text|DefaultTextFg",
+        "strikethrough": true
+      },
+      "BlinkCmpLabelMatch": "Custom|Completion|Match",
+      "BlinkCmpDocBorder": "BlinkCmpMenuBorder",
+      "BlinkCmpSignatureHelpBorder": "BlinkCmpMenuBorder",
+      "BlinkCmpKindText": "Custom|Icons|Text",
+      "BlinkCmpKindMethod": "Custom|Icons|Method",
+      "BlinkCmpKindFunction": "Custom|Icons|Function",
+      "BlinkCmpKindConstructor": "Custom|Icons|Constructor",
+      "BlinkCmpKindField": "Custom|Icons|Field",
+      "BlinkCmpKindVariable": "Custom|Icons|Variable",
+      "BlinkCmpKindProperty": "Custom|Icons|Property",
+      "BlinkCmpKindClass": "Custom|Icons|Class",
+      "BlinkCmpKindInterface": "Custom|Icons|Interface",
+      "BlinkCmpKindStruct": "Custom|Icons|Struct",
+      "BlinkCmpKindModule": "Custom|Icons|Module",
+      "BlinkCmpKindUnit": "Custom|Icons|Unit",
+      "BlinkCmpKindValue": "Custom|Icons|Value",
+      "BlinkCmpKindEnum": "Custom|Icons|Enum",
+      "BlinkCmpKindEnumMember": "Custom|Icons|EnumMember",
+      "BlinkCmpKindKeyword": "Custom|Icons|Keyword",
+      "BlinkCmpKindConstant": "Custom|Icons|Constant",
+      "BlinkCmpKindSnippet": "Custom|Icons|Snippet",
+      "BlinkCmpKindColor": "Custom|Icons|Color",
+      "BlinkCmpKindFile": "Custom|Icons|File",
+      "BlinkCmpKindReference": "Custom|Icons|Reference",
+      "BlinkCmpKindFolder": "Custom|Icons|Folder",
+      "BlinkCmpKindEvent": "Custom|Icons|Event",
+      "BlinkCmpKindOperator": "Custom|Icons|Operator",
+      "BlinkCmpKindTypeParameter": "Custom|Icons|TypeParameter"
     },
     "Plugin.supermaven-inc/supermaven-nvim": {
       "SupermavenSuggestion": {
