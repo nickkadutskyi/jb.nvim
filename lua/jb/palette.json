@@ -4538,7 +4538,10 @@
       "BlinkCmpKindFolder": "Custom|Icons|Folder",
       "BlinkCmpKindEvent": "Custom|Icons|Event",
       "BlinkCmpKindOperator": "Custom|Icons|Operator",
-      "BlinkCmpKindTypeParameter": "Custom|Icons|TypeParameter"
+      "BlinkCmpKindTypeParameter": "Custom|Icons|TypeParameter",
+      "BlinkCmpKindAvante": "Custom|Icons|Text",
+      "BlinkCmpKindAvanteCmd": "Custom|Icons|Text",
+      "BlinkCmpKindAvanteMention": "Custom|Icons|Text"
     },
     "Plugin.supermaven-inc/supermaven-nvim": {
       "SupermavenSuggestion": {
