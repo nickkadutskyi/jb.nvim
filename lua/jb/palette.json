@@ -1796,10 +1796,10 @@
       "Completion": {
         "Selected": {
           "light": {
-            "bg": "#DFE1E5"
+            "bg": "#D7E1FC"
           },
           "dark": {
-            "bg": "#43454A"
+            "bg": "#32426B"
           }
         },
         "Match": {
