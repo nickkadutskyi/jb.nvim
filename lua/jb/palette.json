@@ -3288,8 +3288,7 @@
         "bg": "Appearance|Window|Background"
       },
       "FloatBorder": {
-        "fg": "Appearance|Window|Border",
-        "bg": "Appearance|Window|Border"
+        "fg": "Appearance|Window|Border"
       },
       "FloatTitle": {
         "fg": "Appearance|Window|Title",
@@ -4554,8 +4553,7 @@
         "bg": "Appearance|Window|BackgroundEditArea.bg"
       },
       "FzfLuaBorder": {
-        "fg": "Appearance|Window|Border",
-        "bg": "Appearance|Window|BackgroundEditArea.bg"
+        "fg": "Appearance|Window|Border"
       },
       "FzfLuaTitle": {
         "fg": "Appearance|Window|SectionTitle.fg",
@@ -4570,8 +4568,7 @@
         "bg": "General|Text|DefaultTextBg"
       },
       "FzfLuaPreviewBorder": {
-        "fg": "Appearance|Window|Border",
-        "bg": "Appearance|Window|BackgroundEditArea.bg"
+        "fg": "Appearance|Window|Border"
       },
       "FzfLuaPreviewTitle": {
         "fg": "Appearance|Window|SectionTitle.fg",
