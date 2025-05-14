@@ -108,10 +108,12 @@
         },
         "MatchedText": {
           "light": {
-            "bg": "#FAE7B7"
+            "fg": "#323232",
+            "bg": "#FCE6B7"
           },
           "dark": {
-            "bg": "#B4985C"
+            "fg": "#000000",
+            "bg": "#B7975C"
           }
         },
         "MatchedTextContrast": {
@@ -4587,7 +4589,7 @@
       "FzfLuaCursor": "",
       "FzfLuaCursorLine": "",
       "FzfLuaCursorLineNr": "",
-      "FzfLuaSearch": "",
+      "FzfLuaSearch": "General|SearchResults|SearchResult|Default",
       "FzfLuaScrollBorderEmpty": "",
       "FzfLuaScrollBorderFull": "",
       "FzfLuaScrollFloatEmpty": "",
@@ -4655,6 +4657,112 @@
       "FzfLuaFzfSpinner": "Appearance|Window|SubtleText",
       "FzfLuaFzfPrompt": "Appearance|Search|PromptIcon",
       "FzfLuaFzfQuery": "General|Text|DefaultText"
+    },
+    "Plugin.nvim-telescope/telescope.nvim": {
+      "TelescopeSelection": {
+        "fg": "General|Text|DefaultText",
+        "bg": "Appearance|Window|RowSelected.bg"
+      },
+      "TelescopeSelectionCaret": {
+        "fg": "Appearance|Window|RowSelected.bg",
+        "bg": "Appearance|Window|RowSelected.bg"
+      },
+      "TelescopeMultiSelection": "",
+      "TelescopeMultiIcon": "",
+      "TelescopeNormal": {
+        "fg": "General|Text|DefaultText",
+        "bg": "Appearance|Window|BackgroundEditArea.bg"
+      },
+      "TelescopePreviewNormal": {
+        "fg": "Appearance|Window|Title.fg",
+        "bg": "General|Text|DefaultTextBg"
+      },
+      "TelescopePromptNormal": {
+        "fg": "General|Text|DefaultText",
+        "bg": "Appearance|Window|BackgroundEditArea.bg"
+      },
+      "TelescopeResultsNormal": {
+        "fg": "General|Text|DefaultText",
+        "bg": "Appearance|Window|BackgroundEditArea.bg"
+      },
+      "TelescopeBorder": {
+        "fg": "Appearance|Window|Border"
+      },
+      "TelescopePromptBorder": {
+        "fg": "Appearance|Window|Border"
+      },
+      "TelescopeResultsBorder": {
+        "fg": "Appearance|Window|Border"
+      },
+      "TelescopePreviewBorder": {
+        "fg": "Appearance|Window|Border"
+      },
+      "TelescopeTitle": {
+        "fg": "Appearance|Window|SectionTitle.fg",
+        "bg": "Appearance|Window|Border.bg",
+        "bold": true
+      },
+      "TelescopePromptTitle": {
+        "fg": "Appearance|Window|SectionTitle.fg",
+        "bg": "Appearance|Window|Border.bg",
+        "bold": true
+      },
+      "TelescopeResultsTitle": {
+        "fg": "Appearance|Window|SectionTitle.fg",
+        "bg": "Appearance|Window|Border.bg",
+        "bold": true
+      },
+      "TelescopePreviewTitle": {
+        "fg": "Appearance|Window|SectionTitle.fg",
+        "bg": "Appearance|Window|Border.bg",
+        "bold": true
+      },
+      "TelescopePromptCounter": {
+        "fg": "Appearance|Window|SubtleText.fg"
+      },
+      "TelescopeMatching": {
+        "fg": "Appearance|Search|MatchedText.fg",
+        "bg": "Appearance|Search|MatchedText.bg"
+      },
+      "TelescopePromptPrefix": {
+        "fg": "Appearance|Search|PromptIcon"
+      },
+      "TelescopePreviewLine": null,
+      "TelescopePreviewMatch": null,
+      "TelescopePreviewPipe": null,
+      "TelescopePreviewCharDev": null,
+      "TelescopePreviewDirectory": null,
+      "TelescopePreviewBlock": null,
+      "TelescopePreviewLink": null,
+      "TelescopePreviewSocket": null,
+      "TelescopePreviewRead": null,
+      "TelescopePreviewWrite": null,
+      "TelescopePreviewExecute": null,
+      "TelescopePreviewHyphen": null,
+      "TelescopePreviewSticky": null,
+      "TelescopePreviewSize": null,
+      "TelescopePreviewUser": null,
+      "TelescopePreviewGroup": null,
+      "TelescopePreviewDate": null,
+      "TelescopePreviewMessage": null,
+      "TelescopePreviewMessageFillchar": null,
+      "TelescopeResultsClass": null,
+      "TelescopeResultsConstant": null,
+      "TelescopeResultsField": null,
+      "TelescopeResultsFunction": null,
+      "TelescopeResultsMethod": null,
+      "TelescopeResultsOperator": null,
+      "TelescopeResultsStruct": null,
+      "TelescopeResultsVariable": null,
+      "TelescopeResultsLineNr": null,
+      "TelescopeResultsIdentifier": null,
+      "TelescopeResultsNumber": null,
+      "TelescopeResultsComment": null,
+      "TelescopeResultsSpecialComment": null,
+      "TelescopeResultsDiffChange": null,
+      "TelescopeResultsDiffAdd": null,
+      "TelescopeResultsDiffDelete": null,
+      "TelescopeResultsDiffUntracked": null
     },
     "Plugin.rcarriga/nvim-notify": {
       "NotifyBackground": "Appearance|Notifications|Background",
