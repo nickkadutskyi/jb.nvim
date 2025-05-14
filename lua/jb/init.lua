@@ -228,6 +228,10 @@ function M.load(opts)
     -- Generates JB icons highlight groups
     for icon, attrs in pairs(colors.Custom.Icons) do
         vim.api.nvim_set_hl(0, "JBIcon" .. icon, attrs[profile])
+        -- blink.cmp icons
+        vim.api.nvim_set_hl(0, "BlinkCmpKind" .. icon, { link = "JBIcon" .. icon })
+        -- nvim-navic icons
+        vim.api.nvim_set_hl(0, "NavicIcons" .. icon, { link = "JBIcon" .. icon })
     end
 end
 

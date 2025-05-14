@@ -30,6 +30,7 @@ M.icons = {
 
     -- No icon for builtin keywords
     Keyword = "",
+    Key = "",
 
     -- JB template
     Snippet = "󰴹",
