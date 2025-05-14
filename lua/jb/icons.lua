@@ -49,7 +49,7 @@ M.icons = {
     -- TODO: Reconsider theses icons
     Array = "",
     Object = "",
-    Null = "󰟢",
+    Null = "∅",
 }
 
 return M
