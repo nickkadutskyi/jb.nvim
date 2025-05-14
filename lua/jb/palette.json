@@ -2029,6 +2029,70 @@
           "dark": {
             "fg": "#578CF0"
           }
+        },
+        "Namespace": {
+          "light": {
+            "fg": "#4573E8"
+          },
+          "dark": {
+            "fg": "#6089EF"
+          }
+        },
+        "Package": {
+          "light": {
+            "fg": "#6D707D"
+          },
+          "dark": {
+            "fg": "#CED0D5"
+          }
+        },
+        "String": {
+          "light": {
+            "fg": "#6C707D"
+          },
+          "dark": {
+            "fg": "#CED0D6"
+          }
+        },
+        "Number": {
+          "light": {
+            "fg": "#6C707D"
+          },
+          "dark": {
+            "fg": "#CED0D6"
+          }
+        },
+        "Boolean": {
+          "light": {
+            "fg": "#6C707D"
+          },
+          "dark": {
+            "fg": "#CED0D6"
+          }
+        },
+        "Array": {
+          "light": {
+            "fg": "#6C707D"
+          },
+          "dark": {
+            "fg": "#CED0D6"
+          }
+        },
+        "Object": {
+          "light": {
+            "fg": "#6C707D"
+          },
+          "dark": {
+            "fg": "#CED0D6"
+          }
+        },
+        "Null": {
+          "light": {
+            "fg": "#6C707D"
+          },
+          "dark": {
+            "fg": "#CED0D6"
+          }
         }
       }
     },

@@ -20,9 +20,11 @@
 ## Features
 
 - Supports both light and dark themes
-- Terminal colors.
+- Terminal colors
 - Has lualine theme
-
+- Generates `ProjectColor` highlight group based on the path
+- Generates highlights for icons `JBIcon<Kind>`
+- Provides a table with icons visually similar to JB's ones
 
 <details>
 <summary>Supported Languages</summary>
@@ -183,7 +185,10 @@ n/a
 
 ## Extras
 
-n/a
+Extra color configs for [Kitty](https://sw.kovidgoyal.net/kitty/conf.html),
+[Alacritty](https://github.com/alacritty/alacritty),
+[Ghostty](https://ghostty.org/) can be found in [extras](extras/).
+To use them, refer to their respective documentation.
 
 ## Contributing
 

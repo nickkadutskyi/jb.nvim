@@ -61,11 +61,11 @@ function M.resolve_path(colors, path, profile, inherit_level)
     error("Nothing to resolve from.")
 end
 
---- Function to get colors from palette table
---- @param colors table
---- @param path_prop string
---- @param profile profile
---- @return {name: string, hl: table, prop: string|nil|boolean}
+---Function to get colors from palette table
+---@param colors table
+---@param path_prop string
+---@param profile profile
+---@return {name: string, hl: table, prop: string|nil|boolean}
 function M.get_hl_props(colors, path_prop, profile)
     local path_prop_spl = M.split(path_prop, ".")
     local prop = path_prop_spl[2]
