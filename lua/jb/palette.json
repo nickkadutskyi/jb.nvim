@@ -3298,7 +3298,8 @@
         "bg": "Appearance|Window|Background"
       },
       "FloatBorder": {
-        "fg": "Appearance|Window|Border"
+        "fg": "Appearance|Window|Border",
+        "bg": "Appearance|Window|BackgroundEditArea.bg"
       },
       "FloatTitle": {
         "fg": "Appearance|Window|Title",
@@ -3493,7 +3494,10 @@
       "LspCodeLens": "General|PopupsAndHints|CodeLens",
       "LspCodeLensSeparator": "",
       "LspSignatureActiveParameter": "Search",
-      "LspInfoBorder": "Normal",
+      "LspInfoBorder": {
+        "fg": "Appearance|Window|Border",
+        "bg": "Appearance|Window|BackgroundEditArea.bg"
+      },
       "healthError": "Error",
       "healthSuccess": "DiagnosticOk",
       "healthWarning": "General|ErrorsAndWarnings|Warning|Default"
@@ -4513,7 +4517,8 @@
     "Plugin.Saghen/blink.cmp": {
       "BlinkCmpMenu": "Pmenu",
       "BlinkCmpMenuBorder": {
-        "fg": "Appearance|Window|Border.fg"
+        "fg": "Appearance|Window|Border.fg",
+        "bg": "Appearance|Window|BackgroundEditArea.bg"
       },
       "BlinkCmpMenuSelection": "PmenuSel",
       "BlinkCmpLabel": "General|Text|DefaultTextFg",
@@ -4564,7 +4569,8 @@
         "bg": "Appearance|Window|BackgroundEditArea.bg"
       },
       "FzfLuaBorder": {
-        "fg": "Appearance|Window|Border"
+        "fg": "Appearance|Window|Border",
+        "bg": "Appearance|Window|BackgroundEditArea.bg"
       },
       "FzfLuaTitle": {
         "fg": "Appearance|Window|SectionTitle.fg",
@@ -4579,7 +4585,8 @@
         "bg": "General|Text|DefaultTextBg"
       },
       "FzfLuaPreviewBorder": {
-        "fg": "Appearance|Window|Border"
+        "fg": "Appearance|Window|Border",
+        "bg": "Appearance|Window|BackgroundEditArea.bg"
       },
       "FzfLuaPreviewTitle": {
         "fg": "Appearance|Window|SectionTitle.fg",
@@ -4686,16 +4693,20 @@
         "bg": "Appearance|Window|BackgroundEditArea.bg"
       },
       "TelescopeBorder": {
-        "fg": "Appearance|Window|Border"
+        "fg": "Appearance|Window|Border",
+        "bg": "Appearance|Window|BackgroundEditArea.bg"
       },
       "TelescopePromptBorder": {
-        "fg": "Appearance|Window|Border"
+        "fg": "Appearance|Window|Border",
+        "bg": "Appearance|Window|BackgroundEditArea.bg"
       },
       "TelescopeResultsBorder": {
-        "fg": "Appearance|Window|Border"
+        "fg": "Appearance|Window|Border",
+        "bg": "Appearance|Window|BackgroundEditArea.bg"
       },
       "TelescopePreviewBorder": {
-        "fg": "Appearance|Window|Border"
+        "fg": "Appearance|Window|Border",
+        "bg": "Appearance|Window|BackgroundEditArea.bg"
       },
       "TelescopeTitle": {
         "fg": "Appearance|Window|SectionTitle.fg",
@@ -4765,21 +4776,28 @@
       "TelescopeResultsDiffUntracked": null
     },
     "Plugin.rcarriga/nvim-notify": {
-      "NotifyBackground": "Appearance|Notifications|Background",
+      "NotifyBackground": {
+        "bg": "Appearance|Window|BackgroundEditArea.bg"
+      },
       "NotifyERRORBorder": {
-        "fg": "Appearance|Window|Border"
+        "fg": "Appearance|Window|Border",
+        "bg": "Appearance|Window|BackgroundEditArea.bg"
       },
       "NotifyWARNBorder": {
-        "fg": "Appearance|Window|Border"
+        "fg": "Appearance|Window|Border",
+        "bg": "Appearance|Window|BackgroundEditArea.bg"
       },
       "NotifyINFOBorder": {
-        "fg": "Appearance|Window|Border"
+        "fg": "Appearance|Window|Border",
+        "bg": "Appearance|Window|BackgroundEditArea.bg"
       },
       "NotifyDEBUGBorder": {
-        "fg": "Appearance|Window|Border"
+        "fg": "Appearance|Window|Border",
+        "bg": "Appearance|Window|BackgroundEditArea.bg"
       },
       "NotifyTRACEBorder": {
-        "fg": "Appearance|Window|Border"
+        "fg": "Appearance|Window|Border",
+        "bg": "Appearance|Window|BackgroundEditArea.bg"
       },
       "NotifyERRORIcon": "Appearance|Notifications|IconError",
       "NotifyWARNIcon": "Appearance|Notifications|IconWarn",
@@ -4808,23 +4826,23 @@
       },
       "NotifyERRORBody": {
         "fg": "General|Text|DefaultText",
-        "bg": "Appearance|Notifications|Background"
+        "bg": "Appearance|Window|BackgroundEditArea.bg"
       },
       "NotifyWARNBody": {
         "fg": "General|Text|DefaultText",
-        "bg": "Appearance|Notifications|Background"
+        "bg": "Appearance|Window|BackgroundEditArea.bg"
       },
       "NotifyINFOBody": {
         "fg": "General|Text|DefaultText",
-        "bg": "Appearance|Notifications|Background"
+        "bg": "Appearance|Window|BackgroundEditArea.bg"
       },
       "NotifyDEBUGBody": {
         "fg": "General|Text|DefaultText",
-        "bg": "Appearance|Notifications|Background"
+        "bg": "Appearance|Window|BackgroundEditArea.bg"
       },
       "NotifyTRACEBody": {
         "fg": "General|Text|DefaultText",
-        "bg": "Appearance|Notifications|Background"
+        "bg": "Appearance|Window|BackgroundEditArea.bg"
       },
       "NotifyLogTime": "General|ErrorsAndWarnings|UnusedCode",
       "NotifyLogTitle": "General|Text|DefaultText"
@@ -4862,7 +4880,10 @@
         "fg": "General|Text|DefaultText",
         "bg": "Appearance|Window|BackgroundEditArea.bg"
       },
-      "AvantePromptInputBorder": "Appearance|Window|Border"
+      "AvantePromptInputBorder": {
+        "fg": "Appearance|Window|Border",
+        "bg": "Appearance|Window|BackgroundEditArea.bg"
+      }
     },
     "Plugin.vim-scripts/netrw.vim": {
       "netrwTreeBar": "Appearance|ProjectView|IndentGuide",
