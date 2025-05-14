@@ -37,9 +37,10 @@ M.icons = {
     Unit = "",
     Operator = "󱖦",
 
-    Color = "",
+    Color = "󰕰",
     Reference = "󰬳",
     Event = "󱐋",
+
     TypeParameter = "󰰦",
 
     String = "󰯫",
