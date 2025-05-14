@@ -103,7 +103,7 @@
             "fg": "#747783"
           },
           "dark": {
-            "bg": "#CED0D5"
+            "fg": "#CED0D5"
           }
         },
         "MatchedText": {
