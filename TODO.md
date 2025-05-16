@@ -30,15 +30,23 @@ Languages
 
 Plugins
 - [ ] Add support for:
-  - [ ] blink.nvim
-  - [ ] Telescope.nvim
+  - [x] snacks.nvim explorer
+  - [ ] snacks.nvim picker
+  - [ ] snacks.nvim notifier
+  - [ ] snacks.nvim scope
+  - [ ] snacks.nvim statuscolumn
+  - [ ] snacks.nvim words
+  - [ ] snacks.nvim input
+  - [ ] snacks.nvim dashboard
+  - [x] blink.nvim
+  - [x] Telescope.nvim
   - [ ] diffview.nvim
-  - [ ] avante.nvim new interface
+  - [x] avante.nvim new interface
   - [ ] nvim-navic
   - [ ] Lazy.nvim
   - [ ] conform.nvim
   - [ ] trouble.nvim
-  - [ ] cloak.nvim
+  - [x] cloak.nvim
   - [ ] which-key.nvim
   - [ ] Comment.nvim
   - [ ] nvim-hlslens
