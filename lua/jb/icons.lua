@@ -3,6 +3,8 @@
 
 local M = {}
 
+-- Even though colors help to distinguish between different types of icons,
+-- the shape of the icon is more important.
 M.icons = {
     File = "",
     Folder = "",
@@ -18,11 +20,13 @@ M.icons = {
     Field = "󰯺",
 
     Enum = "󰯹",
+    -- Same as Constant (as in IntelliJ) since you already in the context of an enum
     EnumMember = "󰯱",
     Struct = "󰰡",
 
     Function = "󰯼",
     Variable = "󰰬",
+    -- Should be rhomboid with `c` but not available in Nerd Font
     Constant = "󰯱",
 
     Text = "",
@@ -40,17 +44,20 @@ M.icons = {
 
     Color = "󰕰",
     Reference = "󰬳",
-    Event = "󱐋",
+    Event = "󱐌",
 
     TypeParameter = "󰰦",
 
+    -- IntelliJ's icons for String & Text look the same so picked something else
     String = "󰯫",
     Number = "󰽾",
     Boolean = "",
-    -- TODO: Reconsider theses icons
+    Null = "∅",
+
+    -- TODO: Reconsider theses icons, looks how LSs use theses kinds
     Array = "",
     Object = "",
-    Null = "∅",
+
 }
 
 return M
