@@ -3582,6 +3582,35 @@
         "bg": "Appearance|Window|Background"
       },
       "ToolWindowFloatBorder": "Appearance|ToolWindow|Border",
+      "DialogFloatBorder": {
+        "fg": "Appearance|Window|Border",
+        "bg": "Appearance|Window|BackgroundEditArea.bg"
+      },
+      "DialogFloatBorderEditorArea": {
+        "fg": "Appearance|Window|Border",
+        "bg": "General|Text|DefaultTextBg"
+      },
+      "DialogFloatBorderTop": {
+        "bg": "Appearance|Search|Header"
+      },
+      "DialogFloatBorderCorner": {
+        "fg": "Appearance|Window|Border",
+        "bg": "Appearance|Search|Header"
+      },
+      "DialogFloatBorderBetween": {
+        "fg": "Appearance|Window|BorderSubtle.fg",
+        "bg": "Appearance|Window|BackgroundEditArea.bg"
+      },
+      "DialogFloatBorderCornerBetween": {
+        "fg": "Appearance|Window|Border",
+        "bg": "Appearance|Search|Header"
+      },
+      "DialogFloatTitle": {},
+      "DialogFloatFooter": {},
+      "PopupFloatBorder": {},
+      "PopupFloatBorderTop": {},
+      "PopupFloatTitle": {},
+      "PopupFloatFooter": {},
       "General_Editor_Guides_VisualGuides": "General|Editor|Guides|VisualGuides",
       "General_Editor_Guides_HardWrapGuide": "General|Editor|Guides|HardWrapGuide",
       "General_Text_DefaultText": "General|Text|DefaultText",
@@ -4584,9 +4613,10 @@
       },
       "FzfLuaTitle": {
         "fg": "Appearance|Window|SectionTitle.fg",
-        "bg": "Appearance|Window|Border.bg",
+        "bg": "Appearance|Search|Header.bg",
         "bold": true
       },
+      "FzfLuaTitleFlags": "Appearance|Window|CheckboxSelected",
       "FzfLuaBackdrop": {
         "bg": "Appearance|Window|BackgroundEditArea.bg"
       },
@@ -4600,8 +4630,7 @@
       },
       "FzfLuaPreviewTitle": {
         "fg": "Appearance|Window|SectionTitle.fg",
-        "bg": "Appearance|Window|Border.bg",
-        "bold": true
+        "bg": "Appearance|Window|BackgroundEditArea.bg"
       },
       "FzfLuaCursor": "",
       "FzfLuaCursorLine": "",
@@ -4629,7 +4658,8 @@
         "fg": "General|Editor|Tabs|Underline.sp"
       },
       "FzfLuaBufFlagAlt": {
-        "fg": "General|Text|DefaultText"
+        "fg": "General|Text|DefaultText",
+        "bg": "Red"
       },
       "FzfLuaTabTitle": "General|Text|DefaultText",
       "FzfLuaTabMarker": "",
