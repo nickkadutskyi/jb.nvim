@@ -1767,10 +1767,12 @@
         "Subtitle": {
           "light": {
             "fg": "#000000",
+            "bg": "#F7F8FA",
             "bold": true
           },
           "dark": {
             "fg": "#DFE1E5",
+            "bg": "#2B2D30",
             "bold": true
           }
         },
@@ -1817,20 +1819,24 @@
         "Tabs": {
           "Default": {
             "light": {
-              "fg": "#101010"
+              "fg": "#101010",
+              "bg": "#F7F8FA"
             },
             "dark": {
-              "fg": "#DBDDE0"
+              "fg": "#DBDDE0",
+              "bg": "#2B2D30"
             }
           },
           "Selected": {
             "light": {
               "fg": "#101010",
+              "bg": "#F7F8FA",
               "underline": true,
               "sp": "#3877E9"
             },
             "dark": {
               "fg": "#DBDDE0",
+              "bg": "#2B2D30",
               "underline": true,
               "sp": "#3877E9"
             }
