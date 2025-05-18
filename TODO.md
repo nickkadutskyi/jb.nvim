@@ -27,6 +27,7 @@ Languages
   - [x] Apache Config
   - [x] .ignore files
   - [x] TSX/JSX
+  - [ ] Conventional Commit (from Conventional Commit IntelliJ Plugin)
 
 Plugins
 - [ ] Add support for:
