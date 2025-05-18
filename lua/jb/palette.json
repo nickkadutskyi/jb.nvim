@@ -4658,8 +4658,7 @@
         "fg": "General|Editor|Tabs|Underline.sp"
       },
       "FzfLuaBufFlagAlt": {
-        "fg": "General|Text|DefaultText",
-        "bg": "Red"
+        "fg": "General|Text|DefaultText"
       },
       "FzfLuaTabTitle": "General|Text|DefaultText",
       "FzfLuaTabMarker": "",
