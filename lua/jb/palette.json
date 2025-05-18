@@ -2512,7 +2512,25 @@
           "italic": true
         }
       },
-      "ProjectView": null
+      "ProjectView": null,
+      "Icons": {
+        "Clean": {
+          "light": {
+            "fg": "#6F6F70"
+          },
+          "dark": {
+            "fg": "#DCDCDC"
+          }
+        },
+        "Dirty": {
+          "light": {
+            "fg": "#5E97EA"
+          },
+          "dark": {
+            "fg": "#2560B2"
+          }
+        }
+      }
     },
     "GraphQL": {
       "Argument": "LanguageDefaults|Identifiers|Parameter",
@@ -3711,6 +3729,12 @@
       "healthWarning": "General|ErrorsAndWarnings|Warning|Default"
     },
     "Custom": {
+      "StatusBarHasUnsavedBuffers": {
+        "fg": "General|ErrorsAndWarnings|Error|ErrorStripeMark",
+        "bg": "Custom|StatusBar.bg"
+      },
+      "GitToolBoxColorsIconsClean": "GitToolBoxColors|Icons|Clean",
+      "GitToolBoxColorsIconsDirty": "GitToolBoxColors|Icons|Dirty",
       "WindowBackgroundShowExcluded": "Appearance|Window|BackgroundShowExcluded",
       "CustomStatusLine": "Custom|StatusBar",
       "ToolWindowFloatTitle": {
