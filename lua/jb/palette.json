@@ -660,7 +660,14 @@
             "undercurl": true
           }
         },
-        "UnknownSymbol": null,
+        "UnknownSymbol": {
+          "light": {
+            "fg": "#F50000"
+          },
+          "dark": {
+            "fg": "#F75464"
+          }
+        },
         "UnusedCode": {
           "light": {
             "fg": "#808080"
@@ -1745,6 +1752,91 @@
           "bg": "#2B2D30"
         }
       },
+      "Dialog": {
+        "Window": {
+          "light": {
+            "fg": "#000000",
+            "bg": "#F7F8FA"
+          },
+          "dark": {
+            "fg": "#dee0e4",
+            "bg": "#2B2D30"
+          }
+        },
+        "Title": "Appearance|Window|Title",
+        "Subtitle": {
+          "light": {
+            "fg": "#000000",
+            "bold": true
+          },
+          "dark": {
+            "fg": "#DFE1E5",
+            "bold": true
+          }
+        },
+        "SectionTitle": {
+          "light": {
+            "fg": "#000000"
+          },
+          "dark": {
+            "fg": "#DFE1E5"
+          }
+        },
+        "PropertyName": {
+          "light": {
+            "fg": "#000000"
+          },
+          "dark": {
+            "fg": "#DFE1E5"
+          }
+        },
+        "PropertyValueEditable": {
+          "light": {
+            "fg": "#000000",
+            "underline": true,
+            "sp": "#FFFFFF"
+          },
+          "dark": {
+            "fg": "#DFE1E5",
+            "underline": true,
+            "sp": "#4E5156"
+          }
+        },
+        "PropertyValueNonEditable": {
+          "light": {
+            "fg": "#818593",
+            "underline": true,
+            "sp": "#DFE1E5"
+          },
+          "dark": {
+            "fg": "#6F7379",
+            "underline": true,
+            "sp": "#43454A"
+          }
+        },
+        "Tabs": {
+          "Default": {
+            "light": {
+              "fg": "#101010"
+            },
+            "dark": {
+              "fg": "#DBDDE0"
+            }
+          },
+          "Selected": {
+            "light": {
+              "fg": "#101010",
+              "underline": true,
+              "sp": "#3877E9"
+            },
+            "dark": {
+              "fg": "#DBDDE0",
+              "underline": true,
+              "sp": "#3877E9"
+            }
+          }
+        }
+      },
       "DialogWindow": {
         "light": {
           "fg": "#000000",
@@ -1767,6 +1859,52 @@
           "sp": "#2B2D30",
           "fg": "#FFFFFF",
           "underline": true
+        }
+      },
+      "Settings": {
+        "Plugins": {
+          "EditableArea": {
+            "light": {
+              "bg": "#FFFFFF"
+            },
+            "dark": {
+              "bg": "#2B2D30"
+            }
+          },
+          "AdditionalInfo": {
+            "PropertyName": {
+              "light": {
+                "fg": "#898C99"
+              },
+              "dark": {
+                "fg": "#66696F"
+              }
+            },
+            "PropertyValue": {
+              "light": {
+                "fg": "#898C99"
+              },
+              "dark": {
+                "fg": "#66696F"
+              }
+            },
+            "Link": {
+              "light": {
+                "fg": "#3361B7"
+              },
+              "dark": {
+                "fg": "#6E9DF4"
+              }
+            },
+            "VerifiedOrg": {
+              "light": {
+                "fg": "#62A06D"
+              },
+              "dark": {
+                "fg": "#5F8F5E"
+              }
+            }
+          }
         }
       },
       "Normal_Opaque": {
@@ -3949,6 +4087,63 @@
       "@lsp.type.errorTag.zig": "Zig|ErrorTag|Reference",
       "@lsp.type.string.zig": null,
       "@lsp.typemod.errorTag.declaration.zig": "Zig|ErrorTag|Declaration"
+    },
+    "Plugin.folke/lazy.nvim": {
+      "LazyBold": {
+        "bold": true
+      },
+      "LazyButton": "Custom|Dialog|Tabs|Default",
+      "LazyButtonActive": "Custom|Dialog|Tabs|Selected",
+      "LazyComment": "LanguageDefaults|Comments|LineComment",
+      "LazyCommit": "Custom|Settings|Plugins|AdditionalInfo|Link",
+      "LazyCommitIssue": "LanguageDefaults|Keyword",
+      "LazyCommitScope": "Custom|Icons|EnumMember",
+      "LazyCommitType": "Custom|Icons|Enum",
+      "LazyDimmed": {
+        "fg": "Appearance|Window|SubtleText.fg"
+      },
+      "LazyDir": "Custom|Settings|Plugins|AdditionalInfo|Link",
+      "LazyError": {
+        "fg": "General|ErrorsAndWarnings|Error|Default.sp"
+      },
+      "LazyH1": "Custom|Dialog|Subtitle",
+      "LazyH2": "Custom|Dialog|SectionTitle",
+      "LazyInfo": {
+        "fg": "ConsoleColors|LogConsole|Verbose"
+      },
+      "LazyItalic": {
+        "italic": true
+      },
+      "LazyLocal": {
+        "fg": "Appearance|Window|SwitchEnabled.bg"
+      },
+      "LazyNoCond": {
+        "fg": "Appearance|Window|CheckboxDisabled.fg"
+      },
+      "LazyNormal": "Custom|Settings|Plugins|EditableArea",
+      "LazyProgressDone": null,
+      "LazyProgressTodo": null,
+      "LazyProp": "Custom|Settings|Plugins|AdditionalInfo|PropertyName",
+      "LazyReasonInit": "LanguageDefaults|Identifiers|FunctionDeclaration",
+      "LazyReasonCmd": "BashSupportPro|Commands|GenericCommand",
+      "LazyReasonEvent": "Custom|Icons|Event",
+      "LazyReasonFt": "UserDefinedFileTypes|Keyword2",
+      "LazyReasonImport": "LanguageDefaults|Keyword",
+      "LazyReasonKeys": "LanguageDefaults|Keyword",
+      "LazyReasonPlugin": "Custom|Icons|Module",
+      "LazyReasonRequire": "Lua|StdApi",
+      "LazyReasonRuntime": "LanguageDefaults|Keyword",
+      "LazyReasonSource": "Cpp|Preprocessor|Directive",
+      "LazyReasonStart": "Custom|Icons|Constructor",
+      "LazySpecial": {
+        "fg": "Appearance|Window|CheckboxSelected.bg"
+      },
+      "LazyTaskOutput": null,
+      "LazyUrl": "Custom|Settings|Plugins|AdditionalInfo|Link",
+      "LazyValue": "Custom|Settings|Plugins|AdditionalInfo|PropertyValue",
+      "LazyWarning": {
+        "fg": "General|ErrorsAndWarnings|Warning|Default.sp"
+      }
     },
     "Plugin.hrsh7th/nvim-cmp": {
       "CmpItemAbbr": "General|Text|DefaultTextFg",
