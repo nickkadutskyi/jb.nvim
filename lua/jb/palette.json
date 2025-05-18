@@ -4084,7 +4084,7 @@
       "@module.builtin.lua": "Lua|StdApi",
       "@property.lua": "LanguageDefaults|Identifiers|Default",
       "@punctuation.special.luadoc": "LanguageDefaults|BracesAndOperators|Default",
-      "@variable.builtin.lua": "Lua|Self",
+      "@variable.builtin.lua": "@module.builtin.lua",
       "@variable.member.lua": "Lua|ClassMembers|Field",
       "@variable.member.luadoc": "Lua|Comments|EmmyDoc|TagValue",
       "@variable.parameter.lua": "Lua|Variables|Parameter",
