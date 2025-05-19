@@ -578,6 +578,14 @@
         }
       },
       "ErrorsAndWarnings": {
+        "IconsText": {
+          "light": {
+            "fg": "#6E6E6E"
+          },
+          "dark": {
+            "fg": "#BBBBBB"
+          }
+        },
         "DeprecatedSymbol": {
           "light": {
             "sp": "#404040",
@@ -598,6 +606,14 @@
           }
         },
         "Error": {
+          "Icon": {
+            "light": {
+              "fg": "#C1625A"
+            },
+            "dark": {
+              "fg": "#C1625A"
+            }
+          },
           "Default": {
             "light": {
               "sp": "#FF0000",
@@ -677,6 +693,14 @@
           }
         },
         "Warning": {
+          "Icon": {
+            "light": {
+              "fg": "#EAC168"
+            },
+            "dark": {
+              "fg": "#BC9F57"
+            }
+          },
           "Default": {
             "light": {
               "sp": "#F2C55C",
@@ -697,13 +721,23 @@
           }
         },
         "WeakWarning": {
-          "light": {
-            "sp": "#CCCCCC",
-            "undercurl": true
+          "Icon": {
+            "light": {
+              "fg": "#D7CFB1"
+            },
+            "dark": {
+              "fg": "#827148"
+            }
           },
-          "dark": {
-            "sp": "#857042",
-            "undercurl": true
+          "Default": {
+            "light": {
+              "sp": "#CCCCCC",
+              "undercurl": true
+            },
+            "dark": {
+              "sp": "#857042",
+              "undercurl": true
+            }
           }
         }
       },
@@ -3657,10 +3691,10 @@
         "fg": "General|ErrorsAndWarnings|Warning|Default.sp"
       },
       "DiagnosticInfo": {
-        "fg": "ConsoleColors|LogConsole|Verbose"
+        "fg": "General|ErrorsAndWarnings|WeakWarning|Default.sp"
       },
       "DiagnosticHint": {
-        "fg": "General|ErrorsAndWarnings|WeakWarning.sp"
+        "fg": "General|ErrorsAndWarnings|UnusedCode"
       },
       "DiagnosticOk": {
         "fg": "ConsoleColors|Console|UserInput"
@@ -3672,13 +3706,13 @@
       "DiagnosticVirtualTextOk": "",
       "DiagnosticUnderlineError": "General|ErrorsAndWarnings|Error|Default",
       "DiagnosticUnderlineWarn": "General|ErrorsAndWarnings|Warning|Default",
-      "DiagnosticUnderlineInfo": {
-        "sp": "ConsoleColors|LogConsole|Verbose.fg",
-        "underline": true
+      "DiagnosticUnderlineInfo": "General|ErrorsAndWarnings|WeakWarning|Default",
+      "DiagnosticUnderlineHint": {
+        "sp": "General|ErrorsAndWarnings|UnusedCode.fg",
+        "underdotted": true
       },
-      "DiagnosticUnderlineHint": "General|ErrorsAndWarnings|WeakWarning",
       "DiagnosticUnderlineOk": {
-        "sp": "ConsoleColors|Console|UserInput.fg",
+        "sp": "Custom|Settings|Plugins|AdditionalInfo|VerifiedOrg.fg",
         "underline": true
       },
       "DiagnosticFloatingError": "",
@@ -3686,11 +3720,21 @@
       "DiagnosticFloatingInfo": "",
       "DiagnosticFloatingHint": "",
       "DiagnosticFloatingOk": "",
-      "DiagnosticSignError": "",
-      "DiagnosticSignWarn": "",
-      "DiagnosticSignInfo": "",
-      "DiagnosticSignHint": "",
-      "DiagnosticSignOk": "",
+      "DiagnosticSignError": {
+        "fg": "General|ErrorsAndWarnings|Error|Icon"
+      },
+      "DiagnosticSignWarn": {
+        "fg": "General|ErrorsAndWarnings|Warning|Icon"
+      },
+      "DiagnosticSignInfo": {
+        "fg": "General|ErrorsAndWarnings|WeakWarning|Icon"
+      },
+      "DiagnosticSignHint": {
+        "fg": "Appearance|Notifications|IconInfo"
+      },
+      "DiagnosticSignOk": {
+        "fg": "Custom|Settings|Plugins|AdditionalInfo|VerifiedOrg"
+      },
       "DiagnosticDeprecated": "General|ErrorsAndWarnings|DeprecatedSymbol",
       "DiagnosticUnnecessary": "General|ErrorsAndWarnings|UnusedCode",
       "LspDiagnosticsDefaultError": "DiagnosticError",
@@ -4118,6 +4162,12 @@
       "@lsp.type.string.zig": null,
       "@lsp.typemod.errorTag.declaration.zig": "Zig|ErrorTag|Declaration"
     },
+    "Plugin.b0o/incline.nvim": {
+      "InclineNormal": {
+        "fg": "General|ErrorsAndWarnings|IconsText"
+      },
+      "InclineNormalNC": "InclineNormal"
+    },
     "Plugin.folke/lazy.nvim": {
       "LazyBold": {
         "bold": true
@@ -4442,11 +4492,11 @@
         "fg": "ConsoleColors|LogConsole|Verbose"
       },
       "ScrollbarHintHandle": {
-        "fg": "General|ErrorsAndWarnings|WeakWarning.sp",
+        "fg": "General|ErrorsAndWarnings|WeakWarning|Default.sp",
         "bg": "General|Editor|VerticalScrollbar|Thumb"
       },
       "ScrollbarHint": {
-        "fg": "General|ErrorsAndWarnings|WeakWarning.sp"
+        "fg": "General|ErrorsAndWarnings|WeakWarning|Default.sp"
       },
       "ScrollbarMiscHandle": "ScrollbarHandle",
       "ScrollbarMisc": {},
