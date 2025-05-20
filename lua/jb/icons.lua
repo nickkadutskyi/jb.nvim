@@ -22,6 +22,7 @@ M.diagnostic = {
 
 -- Even though colors help to distinguish between different types of icons,
 -- the shape of the icon is more important.
+---@type table<string, string>
 M.kind = {
     File = "",
     Folder = "",
