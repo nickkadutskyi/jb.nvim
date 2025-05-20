@@ -428,13 +428,23 @@
         },
         "MethodSeparatorColor": null,
         "TODODefaults": {
-          "light": {
-            "fg": "#008DDE",
-            "italic": true
+          "Default": {
+            "light": {
+              "fg": "#008DDE",
+              "italic": true
+            },
+            "dark": {
+              "fg": "#8BB33D",
+              "italic": true
+            }
           },
-          "dark": {
-            "fg": "#8BB33D",
-            "italic": true
+          "ErrorStripeMark": {
+            "light": {
+              "fg": "#54AAE3"
+            },
+            "dark": {
+              "fg": "#73AD2B"
+            }
           }
         },
         "UnmatchedBrace": {
@@ -685,11 +695,21 @@
           }
         },
         "UnusedCode": {
-          "light": {
-            "fg": "#808080"
+          "Default": {
+            "light": {
+              "fg": "#808080"
+            },
+            "dark": {
+              "fg": "#6F737A"
+            }
           },
-          "dark": {
-            "fg": "#6F737A"
+          "ErrorStripeMark": {
+            "light": {
+              "fg": "#EBC700"
+            },
+            "dark": {
+              "fg": "#6F737A"
+            }
           }
         },
         "Warning": {
@@ -3595,7 +3615,7 @@
       "QuickFixLine": "General|ErrorsAndWarnings|Warning|Default",
       "Search": "General|SearchResults|TextSearchResult|Default",
       "SnippetTabstop": "",
-      "SpecialKey": "General|ErrorsAndWarnings|UnusedCode",
+      "SpecialKey": "General|ErrorsAndWarnings|UnusedCode|Default",
       "SpellBad": "General|ErrorsAndWarnings|Typo",
       "SpellCap": "General|ErrorsAndWarnings|TextStyleWarning",
       "SpellLocal": "General|ErrorsAndWarnings|TextStyleSuggestion",
@@ -3672,7 +3692,7 @@
       "Underlined": "General|Hyperlinks|Inactive",
       "Ignore": {},
       "Error": "General|ErrorsAndWarnings|Error|Default",
-      "Todo": "General|Code|TODODefaults",
+      "Todo": "General|Code|TODODefaults|Default",
       "Added": {
         "bg": "DiffMerge|ChangedLines|Inserted|Ignored.bg"
       },
@@ -3694,7 +3714,7 @@
         "fg": "General|ErrorsAndWarnings|WeakWarning|Default.sp"
       },
       "DiagnosticHint": {
-        "fg": "General|ErrorsAndWarnings|UnusedCode"
+        "fg": "General|ErrorsAndWarnings|UnusedCode|Default"
       },
       "DiagnosticOk": {
         "fg": "ConsoleColors|Console|UserInput"
@@ -3708,7 +3728,7 @@
       "DiagnosticUnderlineWarn": "General|ErrorsAndWarnings|Warning|Default",
       "DiagnosticUnderlineInfo": "General|ErrorsAndWarnings|WeakWarning|Default",
       "DiagnosticUnderlineHint": {
-        "sp": "General|ErrorsAndWarnings|UnusedCode.fg",
+        "sp": "General|ErrorsAndWarnings|UnusedCode|Default.fg",
         "underdotted": true
       },
       "DiagnosticUnderlineOk": {
@@ -3746,7 +3766,7 @@
         "fg": "Custom|Settings|Plugins|AdditionalInfo|VerifiedOrg"
       },
       "DiagnosticDeprecated": "General|ErrorsAndWarnings|DeprecatedSymbol",
-      "DiagnosticUnnecessary": "General|ErrorsAndWarnings|UnusedCode",
+      "DiagnosticUnnecessary": "General|ErrorsAndWarnings|UnusedCode|Default",
       "LspDiagnosticsDefaultError": "DiagnosticError",
       "LspDiagnosticsDefaultWarning": "DiagnosticWarn",
       "LspDiagnosticsDefaultInformation": "DiagnosticInfo",
@@ -3939,6 +3959,21 @@
       "VCS_VCSAnnotations_BackgroundColor2": "VCS|VCSAnnotations|BackgroundColor2",
       "VCS_VCSAnnotations_BackgroundColor3": "VCS|VCSAnnotations|BackgroundColor3",
       "VCS_VCSAnnotations_BackgroundColor4": "VCS|VCSAnnotations|BackgroundColor4"
+    },
+    "Treesitter.Comment": {
+      "@comment.todo": "General|Code|TODODefaults|Default",
+      "@comment.note": {
+        "fg": "General|ErrorsAndWarnings|UnusedCode|Default",
+        "italic": true
+      },
+      "@comment.warning": {
+        "fg": "General|ErrorsAndWarnings|Warning|ErrorStripeMark",
+        "italic": true
+      },
+      "@comment.error": {
+        "fg": "General|ErrorsAndWarnings|Error|ErrorStripeMark",
+        "italic": true
+      }
     },
     "Treesitter.Common": {
       "@attribute": "LanguageDefaults|Metadata",
@@ -5190,7 +5225,7 @@
         "fg": "General|Text|DefaultText",
         "bg": "Appearance|Window|BackgroundEditArea.bg"
       },
-      "NotifyLogTime": "General|ErrorsAndWarnings|UnusedCode",
+      "NotifyLogTime": "General|ErrorsAndWarnings|UnusedCode|Default",
       "NotifyLogTitle": "General|Text|DefaultText"
     },
     "Plugin.yetone/avante.nvim": {
@@ -5249,7 +5284,7 @@
       "netrwHelpCmd": "General|PopupsAndHints|CodeLens",
       "netrwQuickHelp": "LanguageDefaults|Comments|DocComment|Text",
       "netrwHide": "Appearance|Window|SubtleText",
-      "netrwBookmark": "General|Code|TODODefaults",
+      "netrwBookmark": "General|Code|TODODefaults|Default",
       "netrwComment": "LanguageDefaults|Comments|LineComment",
       "netrwList": "Appearance|Window|SubtleText",
       "netrwVersion": "Appearance|Window|SubtleText",
