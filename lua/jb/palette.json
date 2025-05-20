@@ -3715,11 +3715,11 @@
         "sp": "Custom|Settings|Plugins|AdditionalInfo|VerifiedOrg.fg",
         "underline": true
       },
-      "DiagnosticFloatingError": "",
-      "DiagnosticFloatingWarn": "",
-      "DiagnosticFloatingInfo": "",
-      "DiagnosticFloatingHint": "",
-      "DiagnosticFloatingOk": "",
+      "DiagnosticFloatingError": "NormalFloat",
+      "DiagnosticFloatingWarn": "NormalFloat",
+      "DiagnosticFloatingInfo": "NormalFloat",
+      "DiagnosticFloatingHint": "NormalFloat",
+      "DiagnosticFloatingOk": "NormalFloat",
       "DiagnosticSignError": {
         "fg": "General|ErrorsAndWarnings|Error|Icon"
       },

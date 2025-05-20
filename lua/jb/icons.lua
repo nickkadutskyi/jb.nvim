@@ -8,6 +8,14 @@ M.diagnostic = {
     WARN = "",
     INFO = "", -- Weak Warning
     HINT = "󰋼", -- Consideration
+    [1] = "󰀨",
+    [2] = "",
+    [3] = "",
+    [4] = "󰋼",
+    E = "󰀨",
+    W = "",
+    I = "",
+    N = "󰋼",
 }
 
 -- Even though colors help to distinguish between different types of icons,
