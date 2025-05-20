@@ -56,6 +56,8 @@ Plugins
 
 Performance
 - [ ] Measure performance on startup
+- [ ] Separate pallet into files for each plugin and make it possible to disable them
+- [ ] Move plugin config to lua tables instead of JSON
 
 Distribution
 - [ ] Package for nixos (https://www.reddit.com/r/neovim/comments/1i1kt9p/comment/m7cnyr1/)
