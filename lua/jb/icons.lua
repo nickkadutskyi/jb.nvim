@@ -3,9 +3,16 @@
 
 local M = {}
 
+M.diagnostic = {
+    ERROR = "󰀨",
+    WARN = "",
+    INFO = "", -- Weak Warning
+    HINT = "󰋼", -- Consideration
+}
+
 -- Even though colors help to distinguish between different types of icons,
 -- the shape of the icon is more important.
-M.icons = {
+M.kind = {
     File = "",
     Folder = "",
     Module = "󱓼",
@@ -57,7 +64,6 @@ M.icons = {
     -- TODO: Reconsider theses icons, looks how LSs use theses kinds
     Array = "",
     Object = "",
-
 }
 
 return M
