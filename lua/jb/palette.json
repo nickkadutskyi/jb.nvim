@@ -1,5 +1,12 @@
 {
   "colors": {
+    "UIComponents": {
+      "ToolWindow": {},
+      "Dialog": {},
+      "Popup": {},
+      "NotificationBalloon": {},
+      "SearchPopup": {}
+    },
     "Appearance": {
       "VCS": {
         "Labels": {
