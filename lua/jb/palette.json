@@ -1577,6 +1577,24 @@
       "ValidStringEscape": null
     },
     "VCS": {
+      "Icons": {
+        "Unpulled": {
+          "light": {
+            "fg": "#3778E9"
+          },
+          "dark": {
+            "fg": "#578DF0"
+          }
+        },
+        "Unmerged": {
+          "light": {
+            "fg": "#4C9357"
+          },
+          "dark": {
+            "fg": "#629362"
+          }
+        }
+      },
       "EditorGutter": {
         "AddedIgnoredLinesBorder": {
           "light": {
@@ -3809,6 +3827,8 @@
       },
       "GitToolBoxColorsIconsClean": "GitToolBoxColors|Icons|Clean",
       "GitToolBoxColorsIconsDirty": "GitToolBoxColors|Icons|Dirty",
+      "VCSIconsUnpulled": "VCS|Icons|Unpulled",
+      "VCSIconsUnmerged": "VCS|Icons|Unmerged",
       "WindowBackgroundShowExcluded": "Appearance|Window|BackgroundShowExcluded",
       "CustomStatusLine": "Custom|StatusBar",
       "ToolWindowFloatTitle": {
