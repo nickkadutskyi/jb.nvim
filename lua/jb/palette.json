@@ -3844,6 +3844,10 @@
         "bg": "Appearance|Window|Background"
       },
       "ToolWindowFloatBorder": "Appearance|ToolWindow|Border",
+      "ToolWindowFloatNormal": {
+        "fg": "General|Text|DefaultText",
+        "bg": "Appearance|ToolWindow|Background"
+      },
       "DialogFloatBorder": {
         "fg": "Appearance|Window|Border",
         "bg": "Appearance|Window|BackgroundEditArea.bg"
