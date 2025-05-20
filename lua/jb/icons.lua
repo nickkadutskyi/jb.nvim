@@ -1,8 +1,10 @@
 -- Provides icons similar to the ones used in JetBrains IDEs
 -- Source: https://intellij-icons.jetbrains.design/
 
+---@class jb.icons
 local M = {}
 
+---@type table<vim.diagnostic.Severity, string>
 M.diagnostic = {
     ERROR = "󰀨",
     WARN = "",
