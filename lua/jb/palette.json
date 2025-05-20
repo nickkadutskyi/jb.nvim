@@ -3555,11 +3555,11 @@
       },
       "NormalFloat": {
         "fg": "General|Text|DefaultText",
-        "bg": "Appearance|Window|Background"
+        "bg": "Appearance|Notifications|Background"
       },
       "FloatBorder": {
-        "fg": "Appearance|Window|Border",
-        "bg": "Appearance|Window|BackgroundEditArea.bg"
+        "bg": "Appearance|Notifications|Background",
+        "fg": "Appearance|Window|Border"
       },
       "FloatTitle": {
         "fg": "Appearance|Window|Title",
@@ -3715,11 +3715,21 @@
         "sp": "Custom|Settings|Plugins|AdditionalInfo|VerifiedOrg.fg",
         "underline": true
       },
-      "DiagnosticFloatingError": "NormalFloat",
-      "DiagnosticFloatingWarn": "NormalFloat",
-      "DiagnosticFloatingInfo": "NormalFloat",
-      "DiagnosticFloatingHint": "NormalFloat",
-      "DiagnosticFloatingOk": "NormalFloat",
+      "DiagnosticFloatingError": {
+        "fg": "General|Text|DefaultText"
+      },
+      "DiagnosticFloatingWarn": {
+        "fg": "General|Text|DefaultText"
+      },
+      "DiagnosticFloatingInfo": {
+        "fg": "General|Text|DefaultText"
+      },
+      "DiagnosticFloatingHint": {
+        "fg": "General|Text|DefaultText"
+      },
+      "DiagnosticFloatingOk": {
+        "fg": "General|Text|DefaultText"
+      },
       "DiagnosticSignError": {
         "fg": "General|ErrorsAndWarnings|Error|Icon"
       },
@@ -3823,6 +3833,28 @@
       "PopupFloatBorderTop": {},
       "PopupFloatTitle": {},
       "PopupFloatFooter": {},
+      "PopupCodeViewFloat": {
+        "fg": "General|Text|DefaultText",
+        "bg": "Appearance|Notifications|Background"
+      },
+      "PopupCodeViewFloatBorder": {
+        "bg": "Appearance|Notifications|Background",
+        "fg": "Appearance|Window|Border"
+      },
+      "PopupCodeViewFloatBorderTop": {
+        "fg": "Appearance|Window|Border",
+        "bg": "Appearance|Notifications|Background"
+      },
+      "PopupCodeViewFloatBorderBottom": {
+        "fg": "Appearance|Window|Border",
+        "bg": "Appearance|Notifications|Background"
+      },
+      "PopupCodeViewFloatBorderBottomCorner": {
+        "fg": "Appearance|Window|Border",
+        "bg": "Appearance|Notifications|Background"
+      },
+      "PopupCodeViewFloatTitle": {},
+      "PopupCodeViewFloatFooter": {},
       "General_Editor_Guides_VisualGuides": "General|Editor|Guides|VisualGuides",
       "General_Editor_Guides_HardWrapGuide": "General|Editor|Guides|HardWrapGuide",
       "General_Text_DefaultText": "General|Text|DefaultText",
