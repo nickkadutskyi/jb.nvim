@@ -3994,7 +3994,7 @@
     "Treesitter.Comment": {
       "@comment.todo": "General|Code|TODODefaults|Default",
       "@comment.note": {
-        "fg": "General|ErrorsAndWarnings|UnusedCode|Default",
+        "fg": "General|Text|DefaultText",
         "italic": true
       },
       "@comment.warning": {
