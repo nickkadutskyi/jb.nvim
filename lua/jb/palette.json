@@ -1048,9 +1048,9 @@
           }
         },
         "DocComment": {
-          "Code block": null,
-          "Inline code fragment": null,
-          "Link in rendered view": null,
+          "CodeBlock": null,
+          "InlineCodeFragment": null,
+          "LinkInRenderedView": null,
           "Markup": {
             "light": {
               "bg": "#E2FFE2"
@@ -1088,7 +1088,7 @@
               "italic": true
             }
           },
-          "Vertical guide for rendered view": null
+          "VerticalGuideForRenderedView": null
         },
         "LineComment": {
           "light": {
@@ -2370,7 +2370,7 @@
         }
       },
       "Syntax": null,
-      "Unused entry": null,
+      "UnusedEntry": null,
       "Value": {
         "light": {
           "fg": "#5C9F30"
@@ -2454,8 +2454,8 @@
       "Background": null,
       "Comment": null,
       "Directive": null,
-      "Illegal character": null,
-      "Text block delimiter": null
+      "IllegalCharacter": null,
+      "TextBlockDelimiter": null
     },
     "Cpp": {
       "BadCharacter": null,
@@ -2571,14 +2571,14 @@
       "Comma": null,
       "Comment": null,
       "Identifier": null,
-      "Invalid char escape": null,
+      "InvalidCharEscape": null,
       "Pattern": null,
-      "Property key": null,
-      "Property value": null,
-      "Qualified key part": null,
+      "PropertyKey": null,
+      "PropertyValue": null,
+      "QualifiedKeyPart": null,
       "Separator": null,
       "SpecialSymbol": "LanguageDefaults|BracesAndOperators|OperationSign",
-      "Valid char escape": null
+      "ValidCharEscape": null
     },
     "GitToolBoxColors": {
       "EditorInlineBlame": {
@@ -2611,25 +2611,121 @@
         }
       }
     },
+    "Go": {
+      "BadCharacter": null,
+      "BracesAndOperators": {
+        "Braces": null,
+        "Brackets": null,
+        "Colon": null,
+        "Comma": null,
+        "Dot": null,
+        "Operator": null,
+        "Parentheses": null,
+        "Semicolon": null
+      },
+      "Comments": {
+        "BlockComment": null,
+        "BuildConstraints": {
+          "Operators": null,
+          "Parentheses": null,
+          "Tag": null
+        },
+        "CommentKeyword": null,
+        "CommentReference": null,
+        "LineComment": null
+      },
+      "Declarations": {
+        "Constants": {
+          "BuiltinConstant": null,
+          "LocalConstant": null,
+          "PackageExportedConstant": null,
+          "PackageLocalConstant": null
+        },
+        "FunctionParameter": null,
+        "Functions": {
+          "BuiltinFunction": null,
+          "ExportedFunction": null,
+          "PackageLocalFunction": null
+        },
+        "Label": null,
+        "MethodReceiver": null,
+        "Package": null,
+        "StructTags": {
+          "ArbitraryText": null,
+          "Colon": null,
+          "Key": null,
+          "Value": null
+        },
+        "Types": {
+          "PackageExportedInterface": null,
+          "PackageExportedStruct": null,
+          "PackageLocalInterface": null,
+          "PackageLocalStruct": null,
+          "TypeSpecification": null
+        },
+        "Variables": {
+          "BuiltinVariable": null,
+          "LocalVariable": null,
+          "PackageExportedVariable": null,
+          "PackageLocalVariable": null,
+          "ReassignmentInShortVariableDeclaration": null,
+          "ScopeDeclaredVariable": null,
+          "ShadowingVariable": null,
+          "StructExportedMember": null,
+          "StructLocalMember": null
+        }
+      },
+      "Identifier": null,
+      "Keyword": null,
+      "Number": null,
+      "References": {
+        "FunctionCalls": {
+          "BuiltinFunctionCall": null,
+          "ExportedFunctionCall": null,
+          "LocalFunctionCall": null
+        },
+        "TypeReferences": {
+          "BuiltinTypeReference": null,
+          "PackageExportedInterface": null,
+          "PackageExportedStruct": null,
+          "PackageLocalInterface": null,
+          "PackageLocalStruct": null,
+          "TypeSpecification": null
+        },
+        "VariableCalls": {
+          "ExportedVariableCall": null,
+          "LocalVariableCall": null,
+          "PackageLocalVariableCall": null,
+          "StructExportedMemberCall": null,
+          "StructLocalMemberCall": null
+        }
+      },
+      "SemanticHighlighting": null,
+      "String": {
+        "InvalidEscape": null,
+        "Text": null,
+        "ValidEscape": null
+      }
+    },
     "GraphQL": {
       "Argument": "LanguageDefaults|Identifiers|Parameter",
       "Comment": null,
       "Constant": null,
       "Directive": null,
       "FieldAlias": "LanguageDefaults|Identifiers|Label",
-      "Field name": null,
+      "FieldName": null,
       "FragmentDefinition": "LanguageDefaults|Identifiers|FunctionDeclaration",
-      "Fragment spread": null,
+      "FragmentSpread": null,
       "Keyword": "LanguageDefaults|Keyword",
       "Number": null,
       "ObjectField": "GraphQL|Argument",
       "OperationDefinition": "LanguageDefaults|Identifiers|FunctionDeclaration",
       "Parameter": null,
       "String": null,
-      "Type name": null,
-      "Unused fragment": null,
+      "TypeName": null,
+      "UnusedFragment": null,
       "Variable": null,
-      "Variable definition": null
+      "VariableDefinition": null
     },
     "HTML": {
       "AttributeName": {
@@ -2677,27 +2773,27 @@
     },
     "Java": {
       "Annotations": null,
-      "Braces and Operators": null,
-      "Class Fields": null,
-      "Classes and Interfaces": null,
+      "BracesAndOperators": null,
+      "ClassFields": null,
+      "ClassesAndInterfaces": null,
       "Comments": null,
       "Keyword": null,
       "Methods": {
-        "Abstract method": null,
-        "Constructor call": null,
+        "AbstractMethod": null,
+        "ConstructorCall": null,
         "ConstructorDeclaration": "LanguageDefaults|Identifiers|FunctionDeclaration",
-        "Inherited method": null,
+        "InheritedMethod": null,
         "MethodCall": "LanguageDefaults|Identifiers|FunctionCall",
-        "Method declaration": null,
-        "Static imported method call": null,
-        "Static method": null
+        "MethodDeclaration": null,
+        "StaticImportedMethodCall": null,
+        "StaticMethod": null
       },
       "Number": null,
       "Parameters": {
-        "Implicit anonymous class parameter": null,
-        "Lambda parameter": null,
+        "ImplicitAnonymousClassParameter": null,
+        "LambdaParameter": null,
         "Parameter": null,
-        "Reassigned parameter": null,
+        "ReassignedParameter": null,
         "TypeParameter": {
           "light": {
             "fg": "#007E8A"
@@ -2707,7 +2803,7 @@
           }
         }
       },
-      "Semantic highlighting": null,
+      "SemanticHighlighting": null,
       "String": null,
       "Variables": null,
       "Visibility": null
@@ -2933,7 +3029,7 @@
           }
         },
         "PrivateInstanceMethodCall": null,
-        "ProtectedInstanceMethod Call": null,
+        "ProtectedInstanceMethodCall": null,
         "StaticMethodCall": "LanguageDefaults|Classes|StaticMethod"
       },
       "Heredoc": {
@@ -2981,7 +3077,7 @@
       "PHPDoc": {
         "Identifier": "PHP|Identifiers|Default",
         "Markup": "LanguageDefaults|Comments|DocComment|Markup",
-        "Method Declaration": null,
+        "MethodDeclaration": null,
         "Parameter": "PHP|FunctionsAndMethods|Parameter",
         "Property": "PHP|ClassesAndProperties|InstanceProperty",
         "Tag": "LanguageDefaults|Comments|DocComment|Tag",
@@ -3001,7 +3097,7 @@
       "UnknownCharacter": null
     },
     "Python": {
-      "Braces and Operators": null,
+      "BracesAndOperators": null,
       "BuiltinName": {
         "light": {
           "fg": "#000080"
@@ -3010,16 +3106,16 @@
           "fg": "#8888C6"
         }
       },
-      "Class definition": null,
+      "ClassDefinition": null,
       "Decorator": "LanguageDefaults|Metadata",
       "Docstring": {
         "Text": "LanguageDefaults|Comments|DocComment|Text"
       },
       "Functions": {
         "FunctionCall": "LanguageDefaults|Identifiers|FunctionCall",
-        "Function definition": null,
+        "FunctionDefinition": null,
         "MethodCall": "Python|Functions|FunctionCall",
-        "Nested function definition": null
+        "NestedFunctionDefinition": null
       },
       "Keyword": null,
       "KeywordArgument": {
@@ -3030,8 +3126,8 @@
           "fg": "#AA4926"
         }
       },
-      "Line comment": null,
-      "Local variables": null,
+      "LineComment": null,
+      "LocalVariables": null,
       "Number": null,
       "Parameters": {
         "SelfParameter": {
@@ -3043,7 +3139,7 @@
           }
         }
       },
-      "Semantic highlighting": null,
+      "SemanticHighlighting": null,
       "SpecialNames": {
         "Definition": {
           "light": {
@@ -3063,19 +3159,19 @@
             "fg": "#A5C261"
           }
         },
-        "Escape sequence": null,
+        "EscapeSequence": null,
         "f-string": {
           "ExpressionBraces": "LanguageDefaults|String|EscapeSequence|Valid",
-          "Format specifier start": null,
+          "FormatSpecifierStart": null,
           "TypeConversion": "LanguageDefaults|String|EscapeSequence|Valid"
         },
         "Text (unicode)": null
       },
-      "Type annotation": null,
-      "Type parameters": null
+      "TypeAnnotation": null,
+      "TypeParameters": null
     },
     "RegExp": {
-      "Bad character": null,
+      "BadCharacter": null,
       "Brace": null,
       "Bracket": null,
       "CharacterClass": {
@@ -3088,21 +3184,21 @@
       "Comma": null,
       "Comment": null,
       "Dot": "LanguageDefaults|BracesAndOperators|Dot",
-      "Escaped character": null,
-      "Inline option": null,
-      "Invalid escape sequence": null,
-      "Matched groups": null,
+      "EscapedCharacter": null,
+      "InlineOption": null,
+      "InvalidEscapeSequence": null,
+      "MatchedGroups": null,
       "Name": null,
       "OperatorCharacter": "LanguageDefaults|Keyword",
       "Parenthesis": null,
       "PlainCharacter": "LanguageDefaults|String|StringText",
       "Quantifier": "LanguageDefaults|Number",
-      "Quote escape": null,
-      "Redundant escape sequence": null
+      "QuoteEscape": null,
+      "RedundantEscapeSequence": null
     },
     "Ruby": {
-      "Bad character": null,
-      "Braces and Operators": null,
+      "BadCharacter": null,
+      "BracesAndOperators": null,
       "Comment": null,
       "Constants": {
         "Constant": {
@@ -3172,7 +3268,7 @@
         }
       },
       "StringsAndSymbols": {
-        "Escape Sequence": null,
+        "EscapeSequence": null,
         "Heredoc": {
           "Content": {
             "light": {
@@ -3194,7 +3290,7 @@
             }
           }
         },
-        "Interpolated String": null,
+        "InterpolatedString": null,
         "RegExp": null,
         "String": null,
         "Symbol": {
@@ -3206,9 +3302,9 @@
         "Word": null
       },
       "Variables": {
-        "Class variable": null,
-        "Global variable": null,
-        "Instance variable": null,
+        "ClassVariable": null,
+        "GlobalVariable": null,
+        "InstanceVariable": null,
         "LocalVariable": {
           "light": {
             "fg": "#003C5A",
@@ -3223,14 +3319,14 @@
     },
     "Rust": {
       "Attribute": "LanguageDefaults|Metadata",
-      "Braces and Operators": null,
+      "BracesAndOperators": null,
       "Comments": null,
-      "Conditionally disabled code": null,
+      "ConditionallyDisabledCode": null,
       "Functions": {
-        "Associated function call": null,
-        "Associated function declaration": null,
-        "Function call": null,
-        "Function declaration": null,
+        "AssociatedFunctionCall": null,
+        "AssociatedFunctionDeclaration": null,
+        "FunctionCall": null,
+        "FunctionDeclaration": null,
         "Macro": {
           "light": {
             "fg": "#DD6718"
@@ -3239,14 +3335,14 @@
             "fg": "#FFC66D"
           }
         },
-        "Method call": null,
-        "Method declaration": null
+        "MethodCall": null,
+        "MethodDeclaration": null
       },
-      "Items generated by macros": null,
+      "ItemsGeneratedByMacros": null,
       "Keywords": null,
       "Literals": null,
       "Parameters": {
-        "Const parameter": null,
+        "ConstParameter": null,
         "Lifetime": {
           "light": {
             "fg": "#20999D",
@@ -3257,9 +3353,9 @@
             "italic": true
           }
         },
-        "Mutable parameter": null,
+        "MutableParameter": null,
         "Parameter": null,
-        "Self parameter": null,
+        "SelfParameter": null,
         "TypeParameter": {
           "light": {
             "fg": "#007E8A"
@@ -3278,7 +3374,7 @@
         "Primitive": null,
         "Struct": null,
         "Trait": null,
-        "Type alias": null,
+        "TypeAlias": null,
         "Union": null
       },
       "UnsafeCode": {
@@ -3326,7 +3422,7 @@
       "Interpolation": null,
       "Mixin": null,
       "Number": null,
-      "Operation sign": null,
+      "OperationSign": null,
       "Optional": null,
       "ParentSelector": null,
       "Parenthesis": null,
@@ -3350,15 +3446,15 @@
       "Backquotes": null,
       "Braces": null,
       "Commands": null,
-      "Conditional operators": null,
-      "Function declaration": null,
-      "Here documents": null,
-      "Here documents end": null,
-      "Here documents start": null,
+      "ConditionalOperators": null,
+      "FunctionDeclaration": null,
+      "HereDocuments": null,
+      "HereDocumentsEnd": null,
+      "HereDocumentsStart": null,
       "Keyword": null,
-      "Line comment": null,
+      "LineComment": null,
       "Number": null,
-      "Raw string": null,
+      "RawString": null,
       "Redirection": null,
       "ShebangComment": null,
       "String": null,
@@ -3373,7 +3469,7 @@
       "String": null
     },
     "Twig": {
-      "Bad character": null,
+      "BadCharacter": null,
       "Brackets": null,
       "Comment": null,
       "Identifier": null,
@@ -3381,11 +3477,11 @@
       "Number": null,
       "Operator": null,
       "String": null,
-      "Twig code": null
+      "TwigCode": null
     },
     "TypeScript": {
-      "Bad character": null,
-      "Braces and Operators": null,
+      "BadCharacter": null,
+      "BracesAndOperators": null,
       "Classes": null,
       "Comments": null,
       "Decorator": null,
@@ -3396,20 +3492,20 @@
         "GlobalFunction": "JavaScript|Identifiers|GlobalFunction",
         "GlobalVariable": "JavaScript|Identifiers|GlobalVariable",
         "Label": null,
-        "Local function": null,
+        "LocalFunction": null,
         "LocalVariable": "JavaScript|Identifiers|LocalVariable",
         "Parameter": "JavaScript|Identifiers|Parameter"
       },
-      "Injected Language Fragment": null,
+      "InjectedLanguageFragment": null,
       "Interface": null,
       "Keyword": null,
-      "Module name": null,
+      "ModuleName": null,
       "Number": null,
       "Object": null,
-      "Regular expression": null,
-      "Semantic highlighting": null,
+      "RegularExpression": null,
+      "SemanticHighlighting": null,
       "String": null,
-      "Template literal": null,
+      "TemplateLiteral": null,
       "Types": null
     },
     "XML": {
@@ -3421,16 +3517,16 @@
       },
       "AttributeValue": "LanguageDefaults|String|StringText",
       "Comment": null,
-      "Custom Tag Name": null,
+      "CustomTagName": null,
       "EntityReference": {
         "light": "LanguageDefaults|Markup|Entity",
         "dark": {
           "fg": "#56A8F5"
         }
       },
-      "Injected Language Fragment": null,
-      "Matched Tag": null,
-      "Namespace Prefix": null,
+      "InjectedLanguageFragment": null,
+      "MatchedTag": null,
+      "NamespacePrefix": null,
       "Prologue": null,
       "Tag": {
         "light": "LanguageDefaults|Markup|Tag",
@@ -3447,8 +3543,8 @@
       }
     },
     "YAML": {
-      "'>' block": null,
-      "I' block": null,
+      "'>'Block": null,
+      "I'Block": null,
       "AnchorAlias": {
         "light": {
           "fg": "#0000E6"
@@ -3458,16 +3554,16 @@
         }
       },
       "Comment": "LanguageDefaults|Comments|DocComment|Text",
-      "Double quoted string": null,
+      "DoubleQuotedString": null,
       "Key": "LanguageDefaults|Keyword",
-      "Sign: brace, comma, etc": null,
+      "Sign:Brace,Comma,Etc": null,
       "String": null,
       "Text": "General|Text|DefaultTextFg"
     },
     "Zig": {
-      "Bad character": null,
+      "BadCharacter": null,
       "Builtin": "LanguageDefaults|Classes|StaticMethod",
-      "Character literal": null,
+      "CharacterLiteral": null,
       "Comment": null,
       "Enum": null,
       "ErrorTag": {
@@ -3486,7 +3582,7 @@
       "String": null,
       "Struct": null,
       "Туре": null,
-      "Type parameter": null,
+      "TypeParameter": null,
       "Variable": null
     },
     "IdeaVim": {
