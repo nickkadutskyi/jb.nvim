@@ -1041,7 +1041,8 @@
       "Comments": {
         "BlockComment": {
           "light": {
-            "fg": "#8C8C8C"
+            "fg": "#8C8C8C",
+            "italic": true
           },
           "dark": {
             "fg": "#7A7E85"
@@ -2624,7 +2625,7 @@
         "Semicolon": null
       },
       "Comments": {
-        "BlockComment": null,
+        "BlockComment": "",
         "BuildConstraints": {
           "Operators": null,
           "Parentheses": null,
@@ -2632,7 +2633,7 @@
         },
         "CommentKeyword": null,
         "CommentReference": null,
-        "LineComment": null
+        "LineComment": ""
       },
       "Declarations": {
         "Constants": {
@@ -2649,7 +2650,7 @@
         },
         "Label": null,
         "MethodReceiver": null,
-        "Package": null,
+        "Package": "",
         "StructTags": {
           "ArbitraryText": null,
           "Colon": null,
@@ -2676,7 +2677,7 @@
         }
       },
       "Identifier": null,
-      "Keyword": null,
+      "Keyword": "",
       "Number": null,
       "References": {
         "FunctionCalls": {
@@ -4204,6 +4205,9 @@
     },
     "Treesitter.EditorConfig": {
       "@character.special.editorconfig": "EditorConfig|SpecialSymbol"
+    },
+    "Treesitter.Go": {
+      "@comment.documentation.go": "LanguageDefaults|Comments|BlockComment"
     },
     "Treesitter.GraphQL": {
       "@field.alias.graphql": "GraphQL|FieldAlias",

@@ -38,24 +38,52 @@ end
 --- @param profile profile
 --- @param inherit_level ?number
 --- @return vim.api.keyset.highlight
-function M.resolve_path(colors, path, profile, inherit_level)
+function M.resolve_path(colors, path, profile, inherit_level, prev_paths)
+    profile = profile or "light"
     inherit_level = inherit_level or 0
+    prev_paths = prev_paths or {}
+
+    assert(colors, "`colors` table is required.")
+    assert(type(colors) == "table", string.format("Invalid palette structure. Expected a table, got %s.", type(colors)))
+    assert(path, "`path` is required.")
+    assert(type(path) == "string", string.format("`path` must be a string, got %s.", type(path)))
+
     local path_spl = M.split(path, "|")
     local node = colors
+
     for i, v in pairs(path_spl) do
+        if node[v] == nil then
+            error(string.format("Missing node '%s' in path '%s'.", v, path))
+        end
+
         if i < #path_spl and type(node[v]) == "table" then
+            -- If not last node, go deeper
             node = node[v]
         elseif i == #path_spl and type(node[v]) == "table" and type(node[v][profile]) == "table" then
+            -- If last node is a table, return the profile
             return node[v][profile]
         elseif
             i == #path_spl
-            and (type(node[v]) == "string" or type(node[v][profile]) == "string")
+            and (type(node[v]) == "string" or (type(node[v]) == "table" and type(node[v][profile]) == "string"))
             -- Allows only three levels of inheritance
             and inherit_level <= 3
         then
-            return M.resolve_path(colors, (node[v][profile] or node[v]), profile, inherit_level + 1)
+            -- If last node is a string or a table with a profile that is a string,
+            -- try to resolve it as a path
+            return M.resolve_path(colors, (node[v][profile] or node[v]), profile, inherit_level + 1, prev_paths)
+        elseif node[v] == nil then
+            error(string.format("Missing node '%s' in path '%s'.", v, path))
         else
-            error("Invalid path: " .. path .. "; Missing node: " .. v)
+            error(
+                string.format(
+                    "Node '%s' is not defined properly in path '%s'.\n"
+                        .. "Expecting a table with keys 'light' and 'dark'.\n"
+                        .. "Got: %s\n",
+                    v,
+                    path,
+                    vim.inspect(node[v])
+                )
+            )
         end
     end
     error("Nothing to resolve from.")
@@ -83,8 +111,12 @@ end
 function M.split(str, sep)
     sep = sep or "%s"
     local t = {}
-    for substr in string.gmatch(str, "([^" .. sep .. "]+)") do
-        table.insert(t, substr)
+    if str == "" then
+        return { "" }
+    else
+        for substr in string.gmatch(str, "([^" .. sep .. "]+)") do
+            table.insert(t, substr)
+        end
     end
     return t
 end
