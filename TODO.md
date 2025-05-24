@@ -28,6 +28,9 @@ Languages
   - [x] .ignore files
   - [x] TSX/JSX
   - [ ] Conventional Commit (from Conventional Commit IntelliJ Plugin)
+  - [ ] Go lang Treesitter
+  - [ ] Go lang Semantic
+  - [ ] Go Templates Treesitter
 
 Plugins
 - [ ] Add support for:
