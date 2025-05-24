@@ -33,11 +33,14 @@ function M.read_palette(path)
 end
 
 --- Function to resolve a path in the palette
---- @param colors table
---- @param path string
---- @param profile profile
---- @param inherit_level ?number
---- @return vim.api.keyset.highlight
+---
+---@param colors table
+---@param path string
+---@param profile profile
+---@param inherit_level ?number
+---@param prev_paths ?table<string>
+---
+---@return vim.api.keyset.highlight
 function M.resolve_path(colors, path, profile, inherit_level, prev_paths)
     profile = profile or "light"
     inherit_level = inherit_level or 0
@@ -52,9 +55,9 @@ function M.resolve_path(colors, path, profile, inherit_level, prev_paths)
     local node = colors
 
     for i, v in pairs(path_spl) do
-        if node[v] == nil then
-            error(string.format("Missing node '%s' in path '%s'.", v, path))
-        end
+        -- if node[v] == nil then
+        --     error(string.format("Missing node '%s' in path '%s'.", v, path))
+        -- end
 
         if i < #path_spl and type(node[v]) == "table" then
             -- If not last node, go deeper
@@ -70,14 +73,19 @@ function M.resolve_path(colors, path, profile, inherit_level, prev_paths)
         then
             -- If last node is a string or a table with a profile that is a string,
             -- try to resolve it as a path
+            table.insert(prev_paths, path)
             return M.resolve_path(colors, (node[v][profile] or node[v]), profile, inherit_level + 1, prev_paths)
+        elseif node[v] == vim.NIL then
+            -- NOTE: vim.NIL is null in JSON and it just clears hl group
+            return {}
         elseif node[v] == nil then
-            error(string.format("Missing node '%s' in path '%s'.", v, path))
+            local p = (vim.tbl_count(prev_paths) > 0 and table.concat(prev_paths, " > ") .. " > " or "") .. path
+            error(string.format("Missing node '%s' in path '%s'.", v, p))
         else
             error(
                 string.format(
                     "Node '%s' is not defined properly in path '%s'.\n"
-                        .. "Expecting a table with keys 'light' and 'dark'.\n"
+                        .. "Expecting a table with keys 'light' and 'dark' or nil.\n"
                         .. "Got: %s\n",
                     v,
                     path,

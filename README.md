@@ -37,6 +37,7 @@
 | C/C++         | ⚠️     | ✅ (c,cpp)                     | n/a          |
 | CSS           | ⚠️     | ✅ (css)                       | n/a          |
 | EditorConfig  | n/a    | ✅ (editorconfig)              | n/a          |
+| Go            | ⚠️     | ✅ (go)                        | Planned      |
 | GraphQL       | ⚠️     | ✅ (graphql)                   | n/a          |
 | HTML          | ⚠️     | ✅ (html)                      | n/a          |
 | Ini           | ⚠️     | ✅ (ini)                       | n/a          |

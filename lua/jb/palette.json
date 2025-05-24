@@ -2621,7 +2621,7 @@
         "Comma": null,
         "Dot": null,
         "Operator": null,
-        "Parentheses": null,
+        "Parentheses": "",
         "Semicolon": null
       },
       "Comments": {
@@ -2639,18 +2639,35 @@
         "Constants": {
           "BuiltinConstant": null,
           "LocalConstant": null,
-          "PackageExportedConstant": null,
+          "PackageExportedConstant": {
+            "light": {
+              "fg": "#871094"
+            },
+            "dark": "LanguageDefaults|Identifiers|Constant"
+          },
           "PackageLocalConstant": null
         },
         "FunctionParameter": null,
         "Functions": {
           "BuiltinFunction": null,
-          "ExportedFunction": null,
+          "ExportedFunction": {
+            "light": {
+              "fg": "#286D73"
+            },
+            "dark": "LanguageDefaults|Identifiers|FunctionDeclaration"
+          },
           "PackageLocalFunction": null
         },
-        "Label": null,
+        "Label": "",
         "MethodReceiver": null,
-        "Package": "",
+        "Package": {
+          "light": {
+            "fg": "#805900"
+          },
+          "dark": {
+            "fg": "#AFBF7E"
+          }
+        },
         "StructTags": {
           "ArbitraryText": null,
           "Colon": null,
@@ -2658,7 +2675,7 @@
           "Value": null
         },
         "Types": {
-          "PackageExportedInterface": null,
+          "PackageExportedInterface": "",
           "PackageExportedStruct": null,
           "PackageLocalInterface": null,
           "PackageLocalStruct": null,
@@ -2667,31 +2684,59 @@
         "Variables": {
           "BuiltinVariable": null,
           "LocalVariable": null,
-          "PackageExportedVariable": null,
+          "PackageExportedVariable": "",
           "PackageLocalVariable": null,
           "ReassignmentInShortVariableDeclaration": null,
           "ScopeDeclaredVariable": null,
           "ShadowingVariable": null,
-          "StructExportedMember": null,
+          "StructExportedMember": "LanguageDefaults|Identifiers|GlobalVariable",
           "StructLocalMember": null
         }
       },
       "Identifier": null,
       "Keyword": "",
-      "Number": null,
+      "Number": "",
       "References": {
         "FunctionCalls": {
-          "BuiltinFunctionCall": null,
-          "ExportedFunctionCall": null,
+          "BuiltinFunctionCall": {
+            "light": {
+              "fg": "#0033B3"
+            },
+            "dark": {
+              "fg": "#CC7832"
+            }
+          },
+          "ExportedFunctionCall": {
+            "light": {
+              "fg": "#36666B"
+            },
+            "dark": {
+              "fg": "#B09D79"
+            }
+          },
           "LocalFunctionCall": null
         },
         "TypeReferences": {
-          "BuiltinTypeReference": null,
+          "BuiltinTypeReference": {
+            "light": {
+              "fg": "#0033B3"
+            },
+            "dark": {
+              "fg": "#CC7832"
+            }
+          },
           "PackageExportedInterface": null,
-          "PackageExportedStruct": null,
+          "PackageExportedStruct":  "Go|References|TypeReferences|TypeSpecification",
           "PackageLocalInterface": null,
           "PackageLocalStruct": null,
-          "TypeSpecification": null
+          "TypeSpecification": {
+            "light": {
+              "fg": "#336ECC"
+            },
+            "dark": {
+              "fg": "#6FAFBD"
+            }
+          }
         },
         "VariableCalls": {
           "ExportedVariableCall": null,
@@ -2704,7 +2749,7 @@
       "SemanticHighlighting": null,
       "String": {
         "InvalidEscape": null,
-        "Text": null,
+        "Text": "",
         "ValidEscape": null
       }
     },
@@ -4207,7 +4252,16 @@
       "@character.special.editorconfig": "EditorConfig|SpecialSymbol"
     },
     "Treesitter.Go": {
-      "@comment.documentation.go": "LanguageDefaults|Comments|BlockComment"
+      "@comment.documentation.go": "LanguageDefaults|Comments|BlockComment",
+      "@module.go": "Go|Declarations|Package",
+      "@type.builtin.go": "Go|References|TypeReferences|BuiltinTypeReference",
+      "@variable.member.go": "Go|Declarations|Variables|StructExportedMember",
+      "@constant.go": "Go|Declarations|Constants|PackageExportedConstant",
+      "@function.method.go": "Go|Declarations|Functions|ExportedFunction",
+      "@function.method.call.go": "Go|References|FunctionCalls|ExportedFunctionCall",
+      "@function.call.go": "Go|References|FunctionCalls|ExportedFunctionCall",
+      "@function.builtin.go": "Go|References|FunctionCalls|BuiltinFunctionCall",
+      "@type.go": "Go|References|TypeReferences|PackageExportedStruct"
     },
     "Treesitter.GraphQL": {
       "@field.alias.graphql": "GraphQL|FieldAlias",
