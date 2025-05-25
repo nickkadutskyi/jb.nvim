@@ -2726,7 +2726,7 @@
             }
           },
           "PackageExportedInterface": null,
-          "PackageExportedStruct":  "Go|References|TypeReferences|TypeSpecification",
+          "PackageExportedStruct": "Go|References|TypeReferences|TypeSpecification",
           "PackageLocalInterface": null,
           "PackageLocalStruct": null,
           "TypeSpecification": {
@@ -2752,6 +2752,23 @@
         "Text": "",
         "ValidEscape": null
       }
+    },
+    "GoTemplate": {
+      "Background": "LanguageDefaults|TemplateLanguage",
+      "BadCharacter": null,
+      "Braces": "",
+      "Comma": null,
+      "Comment": null,
+      "Delimiters": "",
+      "Dot": "",
+      "Identifier": "LanguageDefaults|Identifiers|Default",
+      "Keyword": "LanguageDefaults|Keyword",
+      "Number": "",
+      "Operator": "",
+      "Parentheses": "",
+      "Punctuation": "",
+      "String": "",
+      "Variable": ""
     },
     "GraphQL": {
       "Argument": "LanguageDefaults|Identifiers|Parameter",
@@ -4262,6 +4279,10 @@
       "@function.call.go": "Go|References|FunctionCalls|ExportedFunctionCall",
       "@function.builtin.go": "Go|References|FunctionCalls|BuiltinFunctionCall",
       "@type.go": "Go|References|TypeReferences|PackageExportedStruct"
+    },
+    "Treesitter.Gotmpl": {
+      "@function.builtin.gotmpl": "GoTemplate|Keyword",
+      "@variable.member.gotmpl": "GoTemplate|Identifier"
     },
     "Treesitter.GraphQL": {
       "@field.alias.graphql": "GraphQL|FieldAlias",
