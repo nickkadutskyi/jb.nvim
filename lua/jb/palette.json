@@ -1016,7 +1016,7 @@
             "fg": "#57AAF7"
           }
         },
-        "InterfaceName": null,
+        "InterfaceName": "LanguageDefaults|Identifiers|Default",
         "StaticField": {
           "light": {
             "fg": "#871094",
@@ -2656,7 +2656,12 @@
             },
             "dark": "LanguageDefaults|Identifiers|FunctionDeclaration"
           },
-          "PackageLocalFunction": null
+          "PackageLocalFunction": {
+            "light": {
+              "fg": "#286D73"
+            },
+            "dark": "LanguageDefaults|Identifiers|FunctionDeclaration"
+          }
         },
         "Label": "",
         "MethodReceiver": null,
@@ -2675,14 +2680,21 @@
           "Value": null
         },
         "Types": {
-          "PackageExportedInterface": "",
+          "PackageExportedInterface": "LanguageDefaults|Classes|InterfaceName",
           "PackageExportedStruct": null,
           "PackageLocalInterface": null,
           "PackageLocalStruct": null,
-          "TypeSpecification": null
+          "TypeSpecification": "LanguageDefaults|Classes|ClassName"
         },
         "Variables": {
-          "BuiltinVariable": null,
+          "BuiltinVariable": {
+            "light": {
+              "fg": "#0033B3"
+            },
+            "dark": {
+              "fg": "#CC7832"
+            }
+          },
           "LocalVariable": null,
           "PackageExportedVariable": "",
           "PackageLocalVariable": null,
@@ -4270,15 +4282,26 @@
     },
     "Treesitter.Go": {
       "@comment.documentation.go": "LanguageDefaults|Comments|BlockComment",
+      "@constant.go": "Go|Declarations|Constants|PackageExportedConstant",
+      "@function.builtin.go": "Go|References|FunctionCalls|BuiltinFunctionCall",
+      "@function.call.go": "Go|References|FunctionCalls|ExportedFunctionCall",
+      "@function.method.call.go": "Go|References|FunctionCalls|ExportedFunctionCall",
+      "@lsp.mod.signature.go": "Go|References|FunctionCalls|ExportedFunctionCall",
+      "@function.method.go": "Go|Declarations|Functions|ExportedFunction",
+      "@lsp.mod.defaultLibrary.go": "Go|References|TypeReferences|BuiltinTypeReference",
+      "@lsp.typemod.variable.defaultLibrary.go": "Go|Declarations|Variables|BuiltinVariable",
+      "@lsp.mod.definition.go": "Go|Declarations|Types|TypeSpecification",
+      "@lsp.mod.interface.go": "Go|Declarations|Types|PackageExportedInterface",
+      "@lsp.mod.readonly.go": "Go|Declarations|Constants|PackageExportedConstant",
+      "@lsp.type.namespace.go": "Go|Declarations|Package",
+      "@lsp.type.type.go": "Go|References|TypeReferences|PackageExportedStruct",
+      "@lsp.typemod.function.definition.go": "Go|Declarations|Functions|PackageLocalFunction",
+      "@lsp.typemod.method.definition.go": "Go|Declarations|Functions|PackageLocalFunction",
+      "@lsp.typemod.variable.readonly.go": "Go|Declarations|Constants|PackageExportedConstant",
       "@module.go": "Go|Declarations|Package",
       "@type.builtin.go": "Go|References|TypeReferences|BuiltinTypeReference",
-      "@variable.member.go": "Go|Declarations|Variables|StructExportedMember",
-      "@constant.go": "Go|Declarations|Constants|PackageExportedConstant",
-      "@function.method.go": "Go|Declarations|Functions|ExportedFunction",
-      "@function.method.call.go": "Go|References|FunctionCalls|ExportedFunctionCall",
-      "@function.call.go": "Go|References|FunctionCalls|ExportedFunctionCall",
-      "@function.builtin.go": "Go|References|FunctionCalls|BuiltinFunctionCall",
-      "@type.go": "Go|References|TypeReferences|PackageExportedStruct"
+      "@type.go": "Go|References|TypeReferences|PackageExportedStruct",
+      "@variable.member.go": "Go|Declarations|Variables|StructExportedMember"
     },
     "Treesitter.Gotmpl": {
       "@function.builtin.gotmpl": "GoTemplate|Keyword",
