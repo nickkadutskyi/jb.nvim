@@ -236,6 +236,8 @@ function M.load(opts)
         vim.api.nvim_set_hl(0, "CmpItemKind" .. icon, { link = "JBIcon" .. icon })
         -- trouble icons
         vim.api.nvim_set_hl(0, "TroubleIcon" .. icon, { link = "JBIcon" .. icon })
+        -- snacks icons
+        vim.api.nvim_set_hl(0, "SnacksPickerIcon" .. icon, { link = "JBIcon" .. icon })
     end
 end
 

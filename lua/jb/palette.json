@@ -4521,6 +4521,7 @@
         "fg": "General|ErrorsAndWarnings|Warning|Default.sp"
       }
     },
+    "Plugin.folke/trouble.nvim": {},
     "Plugin.hrsh7th/nvim-cmp": {
       "CmpItemAbbr": "General|Text|DefaultTextFg",
       "CmpItemAbbrDeprecated": {
