@@ -129,7 +129,7 @@ function M.split(str, sep)
     return t
 end
 
---- @return vim.api.keyset.highlight
+---@return vim.api.keyset.highlight, vim.api.keyset.highlight
 function M.get_project_color_hl()
     local cwd = vim.fn.getcwd()
     ---@type string
@@ -152,13 +152,22 @@ function M.get_project_color_hl()
     ---Calculate hue from sum of hashs
     local hue = (r + g + b) % 360 / 360
 
-    -- Background: High saturation (0.8) and lightness (0.5)
+    -- Background: High saturation (0.7) and lightness (0.5)
     local r1, g1, b1 = M.hsl_to_rgb(hue, 0.7, 0.5)
 
     -- Foreground: White or near-white
     local r2, g2, b2 = 255, 255, 255
 
-    return { bg = string.format("#%02X%02X%02X", r1, g1, b1), fg = string.format("#%02X%02X%02X", r2, g2, b2) }
+    -- Foreground for icon: High saturation (0.8) and lightness (0.4)
+    -- Make it less light and more saturated for better contrast
+    local r3, g3, b3 = M.hsl_to_rgb(hue, 0.8, 0.4)
+
+    local bg_based_bg = string.format("#%02X%02X%02X", r1, g1, b1)
+    local bg_basesd_fg = string.format("#%02X%02X%02X", r2, g2, b2)
+
+    local fg_based_fg = string.format("#%02X%02X%02X", r3, g3, b3)
+
+    return { bg = bg_based_bg, fg = bg_basesd_fg }, { fg = fg_based_fg }
 end
 
 --- Blend two colors together
