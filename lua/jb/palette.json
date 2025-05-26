@@ -4810,6 +4810,20 @@
       "ScrollbarGitDeleteHandle": {
         "fg": "DiffMerge|ChangedLines|Deleted|ErrorStripeMark.fg",
         "bg": "General|Editor|VerticalScrollbar|Thumb"
+      },
+      "ScrollbarIdentifierUnderCaretHandle": {
+        "fg": "General|Code|IdentifierUnderCaret|ErrorStripeMark",
+        "bg": "General|Editor|VerticalScrollbar|Thumb"
+      },
+      "ScrollbarIdentifierUnderCaret": {
+        "fg": "General|Code|IdentifierUnderCaret|ErrorStripeMark"
+      },
+      "ScrollbarTodoHandle": {
+        "fg": "General|Code|TODODefaults|ErrorStripeMark",
+        "bg": "General|Editor|VerticalScrollbar|Thumb"
+      },
+      "ScrollbarTodo": {
+        "fg": "General|Code|TODODefaults|ErrorStripeMark"
       }
     },
     "Plugin.lukas-reineke/indent-blankline.nvim": {
