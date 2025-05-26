@@ -151,6 +151,7 @@ function M.load(opts)
     -- Sets ProjectColor highlight group
     local project_color = utils.get_project_color_hl()
     vim.api.nvim_set_hl(0, "ProjectColor", M.disable_hl_args(project_color, opts))
+    vim.api.nvim_set_hl(0, "JBIconModuleProject", M.disable_hl_args({ fg = project_color.bg }, opts))
 
     local status_line_color = utils.get_hl_props(colors, "Custom|StatusBar.bg", profile)
 
