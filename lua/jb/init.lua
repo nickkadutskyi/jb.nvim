@@ -234,6 +234,8 @@ function M.load(opts)
         vim.api.nvim_set_hl(0, "NavicIcons" .. icon, { link = "JBIcon" .. icon })
         -- nvim-cmp icons
         vim.api.nvim_set_hl(0, "CmpItemKind" .. icon, { link = "JBIcon" .. icon })
+        -- trouble icons
+        vim.api.nvim_set_hl(0, "TroubleIcon" .. icon, { link = "JBIcon" .. icon })
     end
 end
 
