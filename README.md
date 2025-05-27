@@ -71,21 +71,21 @@
 
 | Plugin                                                                            | Source |
 |-----------------------------------------------------------------------------------|--------|
+| [avante.nvim](https://github.com/yetone/avante.nvim)                              | n/a    |
+| [blink.cmp](https://github.com/Saghen/blink.cmp)                                  | n/a    |
 | [copilot.vim](https://github.com/github/copilot.vim)                              | n/a    |
 | [fzf-lua](https://github.com/ibhagwan/fzf-lua)                                    | n/a    |
-| [nvim-telescope/telescope.nvim](https://github.com/nvim-telescope/telescope.nvim) | n/a    |
 | [gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim)                       | n/a    |
 | [indent-blankline.nvim](https://github.com/lukas-reineke/indent-blankline.nvim)   | n/a    |
-| [netrw](#)                                                                        | n/a    |
 | [neogit](https://github.com/NeogitOrg/neogit)                                     | n/a    |
+| [netrw.vim](https://github.com/vim-scripts/netrw.vim)                             | n/a    |
+| [nvim-cmp](https://github.com/hrsh7th/nvim-cmp)                                   | n/a    |
 | [nvim-notify](https://github.com/rcarriga/nvim-notify)                            | n/a    |
 | [nvim-scrollbar](https://github.com/petertriho/nvim-scrollbar)                    | n/a    |
-| [supermaven-nvim](https://github.com/supermaven-inc/supermaven-nvim)              | n/a    |
-| [nvim-cmp](https://github.com/hrsh7th/nvim-cmp)                                   | n/a    |
-| [blink.cmp](https://github.com/Saghen/blink.cmp)                                  | n/a    |
-| [avante.nvim](https://github.com/yetone/avante.nvim)                              | n/a    |
-| [netrw.vim](https://github.com/vim-scripts/netrw.vim)                             | n/a    |
 | [snacks.nvim](https://github.com/folke/snack.nvim)                                | n/a    |
+| [supermaven-nvim](https://github.com/supermaven-inc/supermaven-nvim)              | n/a    |
+| [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim)                | n/a    |
+| [trouble.nvim](https://github.com/folke/trouble.nvim)                             | n/a    |
 
 </details>
 

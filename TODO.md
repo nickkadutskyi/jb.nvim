@@ -49,7 +49,7 @@ Plugins
   - [ ] nvim-navic
   - [ ] Lazy.nvim
   - [ ] conform.nvim
-  - [ ] trouble.nvim
+  - [x] trouble.nvim
   - [x] cloak.nvim
   - [ ] which-key.nvim
   - [ ] Comment.nvim
