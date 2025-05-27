@@ -151,7 +151,6 @@ function M.load(opts)
     -- Sets ProjectColor highlight group
     local project_color, icon_color = utils.get_project_color_hl()
     vim.api.nvim_set_hl(0, "ProjectColor", M.disable_hl_args(project_color, opts))
-    vim.api.nvim_set_hl(0, "JBIconModuleProject", M.disable_hl_args(icon_color, opts))
 
     local status_line_color = utils.get_hl_props(colors, "Custom|StatusBar.bg", profile)
 
@@ -160,6 +159,10 @@ function M.load(opts)
     vim.api.nvim_set_hl(0, "StatusLineTinted", {
         bg = tinted_status_line_bg,
     })
+
+    icon_color.bg = tinted_status_line_bg
+    vim.api.nvim_set_hl(0, "JBIconModuleProject", M.disable_hl_args(icon_color, opts))
+
     local tinted_status_line_secondary_bg = utils.blend_colors(status_line_color.hl.bg, project_color.bg, 0.025)
     vim.api.nvim_set_hl(0, "StatusLineSecondaryTinted", {
         bg = tinted_status_line_secondary_bg,
