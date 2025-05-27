@@ -140,6 +140,16 @@
           }
         }
       },
+      "StructureView": {
+        "Fold": {
+          "light": {
+            "fg": "#9396A2"
+          },
+          "dark": {
+            "fg": "#A0A3A9"
+          }
+        }
+      },
       "ProjectView": {
         "IndentGuide": {
           "light": {
@@ -4521,7 +4531,44 @@
         "fg": "General|ErrorsAndWarnings|Warning|Default.sp"
       }
     },
-    "Plugin.folke/trouble.nvim": {},
+    "Plugin.folke/trouble.nvim": {
+      "TroubleTitle": {
+        "fg": "Appearance|ToolWindow|Title",
+        "bold": true
+      },
+      "TroubleTabSelected": {
+        "fg": "Custom|Dialog|Tabs|Selected",
+        "sp": "Custom|Dialog|Tabs|Selected",
+        "underline": true
+      },
+      "TroubleTabSelectedCount": {
+        "fg": "LanguageDefaults|Comments|LineComment",
+        "sp": "Custom|Dialog|Tabs|Selected",
+        "underline": true
+      },
+      "TroubleBasename": "TroubleFilename",
+      "TroubleCode": "Comment",
+      "TroubleCount": "Comment",
+      "TroubleDirectory": "Appearance|ToolWindow|Item",
+      "TroubleFilename": "Appearance|ToolWindow|Item",
+      "TroubleLspSymbolName": "Appearance|ToolWindow|Item",
+      "TroubleIndent": "Appearance|ProjectView|IndentGuide",
+      "TroubleIndentFoldClosed": "Appearance|StructureView|Fold",
+      "TroubleIndentFoldOpen": "Appearance|StructureView|Fold",
+      "TroubleIndentLast": "Appearance|ProjectView|IndentGuide",
+      "TroubleIndentMiddle": "Appearance|ProjectView|IndentGuide",
+      "TroubleIndentTop": "Appearance|ProjectView|IndentGuide",
+      "TroubleIndentWs": "Appearance|ProjectView|IndentGuide",
+      "TroubleNormal": {
+        "fg": "General|Text|DefaultText",
+        "bg": "Appearance|ToolWindow|Background.bg"
+      },
+      "TroubleNormalNC": "TroubleNormal",
+      "TroublePos": "Comment",
+      "TroublePreview": "",
+      "TroubleSource": "Comment",
+      "TroubleText": "General|Text|DefaultText"
+    },
     "Plugin.hrsh7th/nvim-cmp": {
       "CmpItemAbbr": "General|Text|DefaultTextFg",
       "CmpItemAbbrDeprecated": {
