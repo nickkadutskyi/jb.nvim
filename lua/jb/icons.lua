@@ -77,4 +77,134 @@ M.kind = {
     Object = "",
 }
 
+---@alias jb.iconName string Name of the icon
+
+---@class jb.ColorVairant
+---@field color string Hex color code
+---@field cterm_color string cterm color code
+
+---@class jb.Icon
+---@field icon string Nerd-font glyph
+---@field light nil|jb.ColorVairant Color variant of the icon
+---@field dark nil|jb.ColorVairant Color variant of the icon
+---@field color nil|string Hex color code
+---@field cterm_color nil|string cterm color code
+---@field name jb.iconName
+
+---@type {
+---  by_filename: table<string, jb.Icon>,
+---  by_extension: table<string, jb.Icon>,
+---  by_filetype: table<string, jb.Icon>
+---}
+M.files = {
+    by_filename = {
+        [".editorconfig"] = {
+            name = "EditorConfig",
+            icon = "",
+            dark = { color = "#C9CBD0", cterm_color = "188" },
+            light = { color = "#7B7E8A", cterm_color = "102" },
+        },
+        [".env"] = {
+            name = "Env",
+            icon = "",
+            light = { color = "#6C707D", cterm_color = "60" },
+            dark = { color = "#CED0D6", cterm_color = "188" },
+        },
+        [".envrc"] = {
+            name = "Envrc",
+            icon = "",
+            light = { color = "#6C707D", cterm_color = "60" },
+            dark = { color = "#CED0D6", cterm_color = "188" },
+        },
+        [".gitignore"] = {
+            name = "Gitignore",
+            icon = "",
+            light = { color = "#737783", cterm_color = "66" },
+            dark = { color = "#C6C7CD", cterm_color = "188" },
+        },
+    },
+    by_extension = {
+        ["css"] = {
+            name = "Css",
+            icon = "",
+            light = { color = "#4985F3", cterm_color = "33" },
+            dark = { color = "#578CF0", cterm_color = "69" },
+        },
+        ["css.map"] = {
+            name = "CssMap",
+            icon = "",
+            light = { color = "#7A58E8", cterm_color = "98" },
+            dark = { color = "#AF8EE6", cterm_color = "140" },
+        },
+        ["env"] = {
+            name = "Env",
+            icon = "",
+            light = { color = "#6C707D", cterm_color = "60" },
+            dark = { color = "#CED0D6", cterm_color = "188" },
+        },
+        ["js"] = {
+            name = "Js",
+            icon = "",
+            light = { color = "#F8B13E", cterm_color = "214" },
+            dark = { color = "#EEC56C", cterm_color = "221" },
+        },
+        ["php"] = {
+            -- icon = " ",
+            -- icon = " ",
+            icon = "󰌟",
+            light = { color = "#3F7CE9", cterm_color = "32" },
+            dark = { color = "#5689E9", cterm_color = "69" },
+            name = "Php",
+        },
+        ["png"] = {
+            icon = "",
+            name = "Png",
+            light = { color = "#3877E8", cterm_color = "32" },
+            dark = { color = "#578CF0", cterm_color = "69" },
+        },
+        ["jpg"] = {
+            icon = "",
+            name = "Jpg",
+            light = { color = "#3877E8", cterm_color = "32" },
+            dark = { color = "#578CF0", cterm_color = "69" },
+        },
+        ["jpeg"] = {
+            icon = "",
+            name = "Jpeg",
+            light = { color = "#3877E8", cterm_color = "32" },
+            dark = { color = "#578CF0", cterm_color = "69" },
+        },
+        ["sass"] = {
+            icon = "󰟬",
+            color = "#C46E98",
+            cterm_color = "175",
+            name = "Sass",
+        },
+        ["scss"] = {
+            icon = "󰟬",
+            color = "#C46E98",
+            cterm_color = "175",
+            name = "Sass",
+        },
+        ["yml"] = {
+            icon = "󰰳",
+            name = "Yml",
+            light = { color = "#D04A4F", cterm_color = "167" },
+            dark = { color = "#D1655F", cterm_color = "167" },
+        },
+        ["yaml"] = {
+            icon = "󰰳",
+            name = "Yaml",
+            light = { color = "#D04A4F", cterm_color = "167" },
+            dark = { color = "#D1655F", cterm_color = "167" },
+        },
+        ["log"] = {
+            icon = "",
+            color = "#81e043",
+            name = "Log",
+        },
+    },
+    by_filetype = {},
+}
+
 return M
