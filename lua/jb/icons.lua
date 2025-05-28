@@ -108,6 +108,10 @@ M.files = {
             name = "PlainText",
             icon = "",
         },
+        [".env.example"] = {
+            name = "PlainText",
+            icon = "",
+        },
         [".env.local"] = {
             name = "PlainText",
             icon = "",
@@ -117,6 +121,14 @@ M.files = {
             icon = "",
         },
         [".env.prod"] = {
+            name = "PlainText",
+            icon = "",
+        },
+        [".env.production"] = {
+            name = "PlainText",
+            icon = "",
+        },
+        [".env.va"] = {
             name = "PlainText",
             icon = "",
         },
@@ -131,6 +143,10 @@ M.files = {
             dark = { color = "#FFFFFF", cterm_color = "231" },
         },
         [".jsbeautifyrc"] = {
+            name = "PlainText",
+            icon = "",
+        },
+        [".gitattributes"] = {
             name = "PlainText",
             icon = "",
         },
@@ -159,6 +175,14 @@ M.files = {
             icon = "",
             light = { color = "#000000", cterm_color = "16" },
             dark = { color = "#FFFFFF", cterm_color = "231" },
+        },
+        ["artisan"] = {
+            name = "Php",
+            icon = "󰌟",
+        },
+        ["composer.phar"] = {
+            name = "Archive",
+            icon = "󰿺",
         },
         ["composer.lock"] = {
             name = "Json",
@@ -260,6 +284,10 @@ M.files = {
             name = "Json",
             icon = "",
         },
+        ["d.ts"] = {
+            name = "Ts",
+            icon = "",
+        },
         ["env"] = {
             name = "PlainText",
             icon = "",
@@ -346,6 +374,10 @@ M.files = {
             light = { color = "#3877E8", cterm_color = "32" },
             dark = { color = "#578CF0", cterm_color = "69" },
         },
+        ["rar"] = {
+            name = "Archive",
+            icon = "󰿺",
+        },
         ["sass"] = {
             name = "Sass",
             icon = "󰟬",
@@ -381,6 +413,12 @@ M.files = {
             name = "PlainText",
             icon = "",
         },
+        ["vue"] = {
+            name = "Vue",
+            icon = "",
+            dark = { color = "#5CB487", cterm_color = "72" },
+            light = { color = "#1A6B3F", cterm_color = "72" },
+        },
         ["xml"] = {
             name = "Xml",
             icon = "󰗀",
@@ -400,6 +438,12 @@ M.files = {
         ["yml"] = {
             name = "Yaml",
             icon = "󰰳",
+        },
+        ["zip"] = {
+            name = "Archive",
+            icon = "󰿺",
+            light = { color = "#437EE9", cterm_color = "32" },
+            dark = { color = "#5587E6", cterm_color = "69" },
         },
     },
     by_filetype = {},
