@@ -294,6 +294,12 @@ M.files = {
             light = { color = "#6C707D", cterm_color = "60" },
             dark = { color = "#CED0D6", cterm_color = "188" },
         },
+        ["html"] = {
+            name = "Html",
+            icon = "",
+            light = { color = "#4F955B", cterm_color = "71" },
+            dark = { color = "#619160", cterm_color = "65" },
+        },
         ["icn"] = {
             name = "Image",
             icon = "",
@@ -389,6 +395,12 @@ M.files = {
             name = "Sass",
             icon = "󰟬",
         },
+        ["scpt"] = {
+            name = "AppleScript",
+            icon = "",
+            color = "#666666",
+            cterm_color = "71",
+        },
         ["svg"] = {
             name = "Image",
             icon = "",
@@ -418,6 +430,10 @@ M.files = {
             icon = "",
             dark = { color = "#5CB487", cterm_color = "72" },
             light = { color = "#1A6B3F", cterm_color = "72" },
+        },
+        ["wgt"] = {
+            name = "Archive",
+            icon = "󰿺",
         },
         ["xml"] = {
             name = "Xml",
