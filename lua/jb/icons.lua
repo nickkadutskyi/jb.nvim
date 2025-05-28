@@ -160,6 +160,14 @@ M.files = {
             name = "Json",
             icon = "",
         },
+        ["config"] = {
+            name = "Configuration",
+            icon = "",
+        },
+        ["flake.lock"] = {
+            name = "Json",
+            icon = "",
+        },
         ["license"] = {
             name = "PlainText",
             icon = "",
@@ -167,6 +175,12 @@ M.files = {
         ["license.md"] = {
             name = "PlainText",
             icon = "",
+        },
+        ["makefile"] = {
+            name = "Makefile",
+            icon = "",
+            light = { color = "#3877E8", cterm_color = "32" },
+            dark = { color = "#578CF0", cterm_color = "69" },
         },
         ["package.json"] = {
             name = "PackageJson",
@@ -206,6 +220,12 @@ M.files = {
             dark = { color = "#C9CBD0", cterm_color = "188" },
             light = { color = "#7B7E8A", cterm_color = "102" },
         },
+        ["conf"] = {
+            name = "Configuration",
+            icon = "",
+            dark = { color = "#C9CBD0", cterm_color = "188" },
+            light = { color = "#7B7E8A", cterm_color = "102" },
+        },
         ["css"] = {
             name = "Css",
             icon = "",
@@ -221,6 +241,18 @@ M.files = {
             icon = "",
             light = { color = "#6C707D", cterm_color = "60" },
             dark = { color = "#CED0D6", cterm_color = "188" },
+        },
+        ["icn"] = {
+            name = "Image",
+            icon = "",
+        },
+        ["icns"] = {
+            name = "Image",
+            icon = "",
+        },
+        ["ico"] = {
+            name = "Image",
+            icon = "",
         },
         ["ini"] = {
             name = "Configuration",
@@ -248,8 +280,9 @@ M.files = {
         },
         ["log"] = {
             name = "Log",
-            icon = "",
-            color = "#81e043",
+            icon = "󱂅",
+            light = { color = "#8CC7DB", cterm_color = "110" },
+            dark = { color = "#5893B0", cterm_color = "73" },
         },
         ["md"] = {
             name = "Md",
@@ -260,6 +293,12 @@ M.files = {
         ["neon"] = {
             name = "PlainText",
             icon = "",
+        },
+        ["nix"] = {
+            icon = "",
+            light = { color = "#5A75BC", cterm_color = "67" },
+            dark = { color = "#FFFFFF", cterm_color = "231" },
+            name = "Nix",
         },
         ["php"] = {
             name = "Php",
@@ -284,11 +323,25 @@ M.files = {
             name = "Sass",
             icon = "󰟬",
         },
+        ["svg"] = {
+            name = "Image",
+            icon = "",
+        },
         ["toml"] = {
             name = "Toml",
             icon = "󰰤",
             light = { color = "#3877E8", cterm_color = "32" },
             dark = { color = "#578CF0", cterm_color = "69" },
+        },
+        ["ts"] = {
+            name = "Ts",
+            icon = "",
+            light = { color = "#4573E8", cterm_color = "33" },
+            dark = { color = "#6089EF", cterm_color = "69" },
+        },
+        ["ttf"] = {
+            name = "Env",
+            icon = "",
         },
         ["xml"] = {
             name = "Xml",
