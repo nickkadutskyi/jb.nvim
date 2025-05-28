@@ -146,6 +146,10 @@ M.files = {
             light = { color = "#D16154", cterm_color = "167" },
             dark = { color = "#B24436", cterm_color = "167" },
         },
+        [".luacheckrc"] = {
+            name = "PlainText",
+            icon = "",
+        },
         [".php-version"] = {
             name = "PlainText",
             icon = "",
@@ -283,6 +287,12 @@ M.files = {
             icon = "󱂅",
             light = { color = "#8CC7DB", cterm_color = "110" },
             dark = { color = "#5893B0", cterm_color = "73" },
+        },
+        ["lua"] = {
+            name = "Lua",
+            icon = "",
+            color = "#499ED4",
+            cterm_color = "74",
         },
         ["md"] = {
             name = "Md",
