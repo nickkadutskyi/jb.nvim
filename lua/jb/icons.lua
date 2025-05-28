@@ -91,30 +91,48 @@ M.kind = {
 ---@field cterm_color nil|string cterm color code
 ---@field name jb.iconName
 
----@type {
----  by_filename: table<string, jb.Icon>,
----  by_extension: table<string, jb.Icon>,
----  by_filetype: table<string, jb.Icon>
----}
+---@type { by_filename: table<string, jb.Icon>,
+---        by_extension: table<string, jb.Icon>,
+---        by_filetype: table<string, jb.Icon> }
 M.files = {
     by_filename = {
-        [".editorconfig"] = {
-            name = "EditorConfig",
+        [".ds_store"] = {
+            name = "Configuration",
             icon = "",
-            dark = { color = "#C9CBD0", cterm_color = "188" },
-            light = { color = "#7B7E8A", cterm_color = "102" },
+        },
+        [".editorconfig"] = {
+            name = "Configuration",
+            icon = "",
         },
         [".env"] = {
-            name = "Env",
+            name = "PlainText",
             icon = "",
-            light = { color = "#6C707D", cterm_color = "60" },
-            dark = { color = "#CED0D6", cterm_color = "188" },
+        },
+        [".env.local"] = {
+            name = "PlainText",
+            icon = "",
+        },
+        [".env.staging"] = {
+            name = "PlainText",
+            icon = "",
+        },
+        [".env.prod"] = {
+            name = "PlainText",
+            icon = "",
         },
         [".envrc"] = {
-            name = "Envrc",
+            name = "PlainText",
             icon = "",
-            light = { color = "#6C707D", cterm_color = "60" },
-            dark = { color = "#CED0D6", cterm_color = "188" },
+        },
+        [".eslintrc.cjs"] = {
+            name = "Eslint",
+            icon = "",
+            light = { color = "#4733BC", cterm_color = "61" },
+            dark = { color = "#FFFFFF", cterm_color = "231" },
+        },
+        [".jsbeautifyrc"] = {
+            name = "PlainText",
+            icon = "",
         },
         [".gitignore"] = {
             name = "Gitignore",
@@ -128,8 +146,66 @@ M.files = {
             light = { color = "#D16154", cterm_color = "167" },
             dark = { color = "#B24436", cterm_color = "167" },
         },
+        [".php-version"] = {
+            name = "PlainText",
+            icon = "",
+        },
+        [".stylelintrc.json"] = {
+            name = "Stylelint",
+            icon = "",
+            light = { color = "#000000", cterm_color = "16" },
+            dark = { color = "#FFFFFF", cterm_color = "231" },
+        },
+        ["composer.lock"] = {
+            name = "Json",
+            icon = "",
+        },
+        ["license"] = {
+            name = "PlainText",
+            icon = "",
+        },
+        ["license.md"] = {
+            name = "PlainText",
+            icon = "",
+        },
+        ["package.json"] = {
+            name = "PackageJson",
+            icon = "",
+            light = { color = "#7A58E8", cterm_color = "98" },
+            dark = { color = "#AF8EE6", cterm_color = "140" },
+        },
+        ["readme.md"] = {
+            name = "Readme",
+            icon = "",
+            light = { color = "#4875E8", cterm_color = "33" },
+            dark = { color = "#5F87EC", cterm_color = "69" },
+        },
+        ["symfony.lock"] = {
+            name = "Json",
+            icon = "",
+        },
+        ["tailwind.config.js"] = {
+            name = "Js",
+            icon = "",
+        },
+        ["tsconfig.json"] = {
+            name = "Json",
+            icon = "",
+        },
+        ["version"] = {
+            name = "Version",
+            icon = "",
+            light = { color = "#6C707D", cterm_color = "60" },
+            dark = { color = "#CED0D6", cterm_color = "188" },
+        },
     },
     by_extension = {
+        ["cfg"] = {
+            name = "Configuration",
+            icon = "",
+            dark = { color = "#C9CBD0", cterm_color = "188" },
+            light = { color = "#7B7E8A", cterm_color = "102" },
+        },
         ["css"] = {
             name = "Css",
             icon = "",
@@ -137,16 +213,18 @@ M.files = {
             dark = { color = "#578CF0", cterm_color = "69" },
         },
         ["css.map"] = {
-            name = "CssMap",
+            name = "Json",
             icon = "",
-            light = { color = "#7A58E8", cterm_color = "98" },
-            dark = { color = "#AF8EE6", cterm_color = "140" },
         },
         ["env"] = {
-            name = "Env",
+            name = "PlainText",
             icon = "",
             light = { color = "#6C707D", cterm_color = "60" },
             dark = { color = "#CED0D6", cterm_color = "188" },
+        },
+        ["ini"] = {
+            name = "Configuration",
+            icon = "",
         },
         ["js"] = {
             name = "Js",
@@ -154,28 +232,43 @@ M.files = {
             light = { color = "#F8B13E", cterm_color = "214" },
             dark = { color = "#EEC56C", cterm_color = "221" },
         },
+        ["jpeg"] = {
+            name = "Image",
+            icon = "",
+        },
+        ["jpg"] = {
+            name = "Image",
+            icon = "",
+        },
+        ["json"] = {
+            name = "Json",
+            icon = "",
+            light = { color = "#7A58E8", cterm_color = "98" },
+            dark = { color = "#AF8EE6", cterm_color = "140" },
+        },
+        ["log"] = {
+            name = "Log",
+            icon = "",
+            color = "#81e043",
+        },
+        ["md"] = {
+            name = "Md",
+            icon = "",
+            light = { color = "#4875E8", cterm_color = "33" },
+            dark = { color = "#5F87EC", cterm_color = "69" },
+        },
+        ["neon"] = {
+            name = "PlainText",
+            icon = "",
+        },
         ["php"] = {
             name = "Php",
-            -- icon = " ",
-            -- icon = " ",
             icon = "󰌟",
             light = { color = "#3F7CE9", cterm_color = "32" },
             dark = { color = "#5689E9", cterm_color = "69" },
         },
         ["png"] = {
-            name = "Png",
-            icon = "",
-            light = { color = "#3877E8", cterm_color = "32" },
-            dark = { color = "#578CF0", cterm_color = "69" },
-        },
-        ["jpg"] = {
-            name = "Jpg",
-            icon = "",
-            light = { color = "#3877E8", cterm_color = "32" },
-            dark = { color = "#578CF0", cterm_color = "69" },
-        },
-        ["jpeg"] = {
-            name = "Jpeg",
+            name = "Image",
             icon = "",
             light = { color = "#3877E8", cterm_color = "32" },
             dark = { color = "#578CF0", cterm_color = "69" },
@@ -188,17 +281,24 @@ M.files = {
             cterm_color = "167",
         },
         ["scss"] = {
-            name = "Scss",
+            name = "Sass",
             icon = "󰟬",
-            -- same in both light and dark themes
-            color = "#C46E98",
-            cterm_color = "167",
         },
-        ["yml"] = {
-            name = "Yml",
-            icon = "󰰳",
-            light = { color = "#D04A4F", cterm_color = "167" },
-            dark = { color = "#D1655F", cterm_color = "167" },
+        ["toml"] = {
+            name = "Toml",
+            icon = "󰰤",
+            light = { color = "#3877E8", cterm_color = "32" },
+            dark = { color = "#578CF0", cterm_color = "69" },
+        },
+        ["xml"] = {
+            name = "Xml",
+            icon = "󰗀",
+            light = { color = "#D77433", cterm_color = "172" },
+            dark = { color = "#BC805C", cterm_color = "137" },
+        },
+        ["xml.dist"] = {
+            name = "Xml",
+            icon = "󰗀",
         },
         ["yaml"] = {
             name = "Yaml",
@@ -206,10 +306,9 @@ M.files = {
             light = { color = "#D04A4F", cterm_color = "167" },
             dark = { color = "#D1655F", cterm_color = "167" },
         },
-        ["log"] = {
-            name = "Log",
-            icon = "",
-            color = "#81e043",
+        ["yml"] = {
+            name = "Yaml",
+            icon = "󰰳",
         },
     },
     by_filetype = {},
