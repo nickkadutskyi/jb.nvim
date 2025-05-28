@@ -192,6 +192,18 @@ M.files = {
             light = { color = "#7A58E8", cterm_color = "98" },
             dark = { color = "#AF8EE6", cterm_color = "140" },
         },
+        ["postcss.config.mjs"] = {
+            name = "Js",
+            icon = "",
+        },
+        ["postcss.config.cjs"] = {
+            name = "Js",
+            icon = "",
+        },
+        ["postcss.config.js"] = {
+            name = "Js",
+            icon = "",
+        },
         ["readme.md"] = {
             name = "Readme",
             icon = "",
@@ -203,6 +215,14 @@ M.files = {
             icon = "",
         },
         ["tailwind.config.js"] = {
+            name = "Js",
+            icon = "",
+        },
+        ["tailwind.config.cjs"] = {
+            name = "Js",
+            icon = "",
+        },
+        ["tailwind.config.mjs"] = {
             name = "Js",
             icon = "",
         },
@@ -316,6 +336,10 @@ M.files = {
             light = { color = "#3F7CE9", cterm_color = "32" },
             dark = { color = "#5689E9", cterm_color = "69" },
         },
+        ["plist"] = {
+            name = "Xml",
+            icon = "󰗀",
+        },
         ["png"] = {
             name = "Image",
             icon = "",
@@ -352,6 +376,10 @@ M.files = {
         ["ttf"] = {
             name = "Env",
             icon = "",
+        },
+        ["txt"] = {
+            name = "PlainText",
+            icon = "",
         },
         ["xml"] = {
             name = "Xml",
