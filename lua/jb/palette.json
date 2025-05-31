@@ -5198,7 +5198,7 @@
       "SnacksPickerSpinner": "",
       "SnacksPickerTime": "",
       "SnacksPickerTitle": "Appearance|ToolWindow|Title",
-      "SnacksPickerToggle": "",
+      "SnacksPickerToggle": "Appearance|Window|CheckboxSelected",
       "SnacksPickerToggleFollow": "",
       "SnacksPickerToggleHidden": "",
       "SnacksPickerToggleIgnored": "",
