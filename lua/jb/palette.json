@@ -5204,7 +5204,9 @@
       "SnacksPickerToggleIgnored": "",
       "SnacksPickerToggleModified": "",
       "SnacksPickerToggleRegex": "",
-      "SnacksPickerTotals": "VCS|FileStatusColors|IgnoredIgnorePlugin",
+      "SnacksPickerTotals": {
+        "fg": "Appearance|ToolWindow|Background.bg"
+      },
       "SnacksPickerTree": {
         "fg": "Appearance|ProjectView|IndentGuide.fg"
       },
