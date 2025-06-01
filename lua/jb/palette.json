@@ -3732,7 +3732,7 @@
       "CursorIM": "General|Editor|Caret",
       "CursorColumn": "General|Editor|CaretRow",
       "CursorLine": "General|Editor|CaretRow",
-      "Directory": null,
+      "Directory": "Appearance|ProjectView|DirectoryIcon",
       "DiffAdd": {
         "bg": "DiffMerge|ChangedLines|Inserted|Important.bg"
       },
