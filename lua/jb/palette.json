@@ -947,10 +947,10 @@
         "Tabs": "General|Text|Whitespaces",
         "Whitespaces": {
           "light": {
-            "fg": "#F0F0F0"
+            "fg": "#d6d6d6"
           },
           "dark": {
-            "fg": "#303136"
+            "fg": "#4d5055"
           }
         }
       }
