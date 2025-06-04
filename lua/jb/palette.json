@@ -2821,7 +2821,12 @@
       },
       "AttributeValue": "LanguageDefaults|String|StringText",
       "Comment": null,
-      "CustomTagName": null,
+      "CustomTagName": {
+        "light": "HTML|TagName",
+        "dark": {
+          "fg": "#2FBAA3"
+        }
+      },
       "EntityReference": {
         "light": "LanguageDefaults|Markup|Entity",
         "dark": {
@@ -4440,6 +4445,15 @@
       "@lsp.typemod.class.defaultLibrary.typescript": "JavaScript|Identifiers|GlobalVariable",
       "@lsp.typemod.property.static.typescript": "LanguageDefaults|Classes|StaticField",
       "@lsp.type.parameter.typescript": "JavaScript|Identifiers|Parameter"
+    },
+    "Treesitter.Vue": {
+      "@tag.vue": "HTML|TagName",
+      "@tag.delimiter.vue": "HTML|Tag",
+      "@tag.attribute.vue": "HTML|AttributeName",
+      "@string.vue": "HTML|AttributeValue",
+      "@lsp.type.class.vue": "HTML|CustomTagName",
+      "@operator.vue": "HTML|AttributeValue"
+
     },
     "Treesitter.XML": {
       "@character.xml": "XML|EntityReference",

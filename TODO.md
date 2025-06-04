@@ -31,6 +31,7 @@ Languages
   - [x] Go lang Treesitter
   - [x] Go lang Semantic
   - [x] Go Templates Treesitter
+  - [ ] Vue
 
 Plugins
 - [ ] Add support for:
