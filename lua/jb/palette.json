@@ -951,20 +951,21 @@
         "FoldedTextWithHighlighting": null,
         "ReadOnlyFragmentBackground": null,
         "SoftWrapSign": null,
-        "Tabs": {
-          "light": {
-            "fg": "#ADADAD"
-          },
-          "dark": {
-            "fg": "#6F737A"
-          }
-        },
+        "Tabs": "General|Text|WhitespacesOriginal",
         "Whitespaces": {
           "light": {
             "fg": "#d6d6d6"
           },
           "dark": {
             "fg": "#4d5055"
+          }
+        },
+        "WhitespacesOriginal": {
+          "light": {
+            "fg": "#ADADAD"
+          },
+          "dark": {
+            "fg": "#6F737A"
           }
         }
       }
