@@ -243,6 +243,8 @@ function M.load(opts)
         -- snacks icons
         vim.api.nvim_set_hl(0, "SnacksPickerIcon" .. icon, { link = "JBIcon" .. icon })
     end
+
+    vim.fn.matchadd("GeneralTextTabs", "\t", 100, -1)
 end
 
 return M

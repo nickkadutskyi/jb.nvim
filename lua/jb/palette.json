@@ -417,7 +417,14 @@
             }
           }
         },
-        "InjectedLanguageFragment": null,
+        "InjectedLanguageFragment": {
+          "light": {
+            "bg": "#EDFCED"
+          },
+          "dark": {
+            "bg": "#293C40"
+          }
+        },
         "LineNumber": {
           "light": {
             "fg": "#AEB3C2"
@@ -944,7 +951,14 @@
         "FoldedTextWithHighlighting": null,
         "ReadOnlyFragmentBackground": null,
         "SoftWrapSign": null,
-        "Tabs": "General|Text|Whitespaces",
+        "Tabs": {
+          "light": {
+            "fg": "#ADADAD"
+          },
+          "dark": {
+            "fg": "#6F737A"
+          }
+        },
         "Whitespaces": {
           "light": {
             "fg": "#d6d6d6"
@@ -3055,6 +3069,22 @@
         }
       }
     },
+    "Makefile": {
+      "Braces": null,
+      "Comment": null,
+      "DocumentationComment": null,
+      "Function": null,
+      "Function Param": null,
+      "Keyword": "LanguageDefaults|Keyword",
+      "LineSplit": null,
+      "Prerequisite": "LanguageDefaults|Classes|InstanceMethod",
+      "Separator": null,
+      "SpecialTarget": null,
+      "Tab": "LanguageDefaults|TemplateLanguage",
+      "Target": "LanguageDefaults|Classes|ClassName",
+      "VariableName": "LanguageDefaults|Identifiers|GlobalVariable",
+      "VariableValue": null
+    },
     "Markdown": {
       "Blockquote": {
         "Blockquote": "LanguageDefaults|String|StringText"
@@ -4014,6 +4044,7 @@
       "healthWarning": "General|ErrorsAndWarnings|Warning|Default"
     },
     "Custom": {
+      "GeneralTextTabs": "General|Text|Tabs",
       "StatusBarHasUnsavedBuffers": {
         "fg": "General|ErrorsAndWarnings|Error|ErrorStripeMark",
         "bg": "Custom|StatusBar.bg"
@@ -4373,6 +4404,14 @@
       "jsonNull": "JSON|Keyword",
       "jsonNumber": "JSON|Number"
     },
+    "Treesitter.Make": {
+      "@recipe_line.make": "General|Code|InjectedLanguageFragment",
+      "@string.special.symbol.make": "Makefile|VariableName",
+      "@string.special.path.make": "Makefile|VariableName",
+      "@function.builtin.make": "Makefile|Keyword",
+      "@function.make": "Makefile|Target",
+      "@prerequisites.make": "Makefile|Prerequisite"
+    },
     "Treesitter.RegExp": {
       "@operator.regex": "RegExp|Quantifier",
       "@number.regex": "RegExp|Quantifier",
@@ -4453,7 +4492,6 @@
       "@string.vue": "HTML|AttributeValue",
       "@lsp.type.class.vue": "HTML|CustomTagName",
       "@operator.vue": "HTML|AttributeValue"
-
     },
     "Treesitter.XML": {
       "@character.xml": "XML|EntityReference",
@@ -4890,7 +4928,8 @@
     },
     "Plugin.lukas-reineke/indent-blankline.nvim": {
       "IblIndent": "General|Editor|Guides|IndentGuide",
-      "IblScope": "General|Editor|Guides|IndentGuideSelected"
+      "IblScope": "General|Editor|Guides|IndentGuideSelected",
+      "IblWhitespace": {}
     },
     "Plugin.NeogitOrg/neogit": {
       "NeogitBranch": {
