@@ -3786,8 +3786,12 @@
       "TermCursorNC": "",
       "ErrorMsg": "ConsoleColors|LogConsole|Error",
       "WinSeparator": "General|Editor|Guides|HardWrapGuide",
-      "Folded": "General|Text|FoldedText",
-      "FoldColumn": "General|Text|FoldedText",
+      "Folded": {
+        "fg": "General|Text|FoldedText"
+      },
+      "FoldColumn": {
+        "fg": "General|Text|FoldedText"
+      },
       "SignColumn": {
         "fg": "General|Text|DefaultText"
       },
@@ -4633,6 +4637,10 @@
       "CmpItemKind": "Custom|Completion|Kind",
       "CmpItemKindCopilot": "Custom|Completion|Kind",
       "CmpItemMenu": "Custom|Completion|Kind"
+    },
+    "Plugin.kevinhwang91/nvim-ufo": {
+      "UfoFoldedBg": "General|Text|FoldedText",
+      "UfoFoldedEllipsis": "General|Text|FoldedText"
     },
     "Plugin.lewis6991/gitsigns.nvim": {
       "GitGutterAdd": "VCS|EditorGutter|AddedLines",
