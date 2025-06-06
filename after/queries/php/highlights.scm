@@ -69,3 +69,24 @@
       (name))
   ]
   (name) @constant.only)
+
+;;  statements that follow a text_interpolation
+((program
+    (text_interpolation)
+    (_)*                                  ; anything
+    [ (statement) (expression)
+      (primary_expression) (type)
+      (literal) (php_tag) ] @template_language))
+
+;;  statements that precede a text_interpolation
+((program
+    [ (statement) (expression)
+      (primary_expression) (type)
+      (literal) (php_tag) ] @template_language
+    (_)*
+    (text_interpolation)))
+
+(text_interpolation (php_tag) @template_language)
+
+[ "?>" ] @template_language
+
