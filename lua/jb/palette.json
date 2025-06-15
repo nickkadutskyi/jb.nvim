@@ -560,7 +560,11 @@
           }
         },
         "SelectionForeground": null,
-        "StickyLines": null,
+        "StickyLines": {
+          "Background": "General|Text|DefaultText",
+          "Border": "General|Editor|Guides|HardWrapGuide",
+          "Hovered": null
+        },
         "Tabs": {
           "ModifiedIconColor": null,
           "SelectedTab": {
@@ -5115,6 +5119,17 @@
       "NeogitCommandTime": {},
       "NeogitCommandCodeNormal": {},
       "NeogitCommandCodeError": {}
+    },
+    "Plugin.nvim-treesitter/nvim-treesitter-context": {
+      "TreesitterContext": "General|Editor|StickyLines|Background",
+      "TreesitterContextBottom": {
+        "underline": true,
+        "sp": "General|Editor|StickyLines|Border.fg"
+      },
+      "TreesitterContextLineNumberBottom": {
+        "underline": true,
+        "sp": "General|Editor|StickyLines|Border.fg"
+      }
     },
     "Plugin.SmiteshP/nvim-navic": {
       "NavicText": "Custom|StatusBar",
