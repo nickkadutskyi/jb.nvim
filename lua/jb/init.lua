@@ -4,6 +4,7 @@ local utils = require("jb.utils")
 local opts_per_hl = {
     Normal = { transparent = true },
     NormalNC = { transparent = true },
+    TreesitterContext = { transparent = true },
 }
 
 setmetatable(opts_per_hl, {

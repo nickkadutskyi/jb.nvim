@@ -5121,13 +5121,16 @@
       "NeogitCommandCodeError": {}
     },
     "Plugin.nvim-treesitter/nvim-treesitter-context": {
-      "TreesitterContext": "General|Editor|StickyLines|Background",
+      "TreesitterContext": {
+        "bg": "General|Editor|StickyLines|Background",
+        "nolink": true
+      },
       "TreesitterContextBottom": {
-        "underline": true,
+        "underdouble": true,
         "sp": "General|Editor|StickyLines|Border.fg"
       },
       "TreesitterContextLineNumberBottom": {
-        "underline": true,
+        "underdouble": true,
         "sp": "General|Editor|StickyLines|Border.fg"
       }
     },
