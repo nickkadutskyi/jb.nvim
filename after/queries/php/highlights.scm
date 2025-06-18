@@ -70,7 +70,7 @@
   ]
   (name) @constant.only)
 
-;;  statements that follow a text_interpolation
+; statements that follow a text_interpolation
 ((program
     (text_interpolation)
     (_)*                                  ; anything
@@ -78,7 +78,7 @@
       (primary_expression) (type)
       (literal) (php_tag) ] @template_language))
 
-;;  statements that precede a text_interpolation
+; statements that precede a text_interpolation
 ((program
     [ (statement) (expression)
       (primary_expression) (type)
@@ -90,3 +90,13 @@
 
 [ "?>" ] @template_language
 
+; attribute name
+((attribute
+    (qualified_name) @attribute.name)
+ (#set! @attribute.name "priority" 110))
+
+; attribute delimiter
+((attribute_group
+    "#[" @attribute.bracket
+    "]"  @attribute.bracket)
+ (#set! @attribute.bracket "priority" 110))
