@@ -7,12 +7,6 @@ local opts_per_hl = {
     TreesitterContext = { transparent = true },
 }
 
-setmetatable(opts_per_hl, {
-    __index = function(_, k)
-        return {}
-    end,
-})
-
 local M = {}
 
 M.setup = config.setup
@@ -72,7 +66,7 @@ function M.load(opts)
         for group, attrs in pairs(groups) do
             -- groups with `nil` or `""` values are skipped
             local hl = {}
-            local transparent = opts_per_hl[group].transparent and opts.transparent or false
+            local transparent = (opts_per_hl[group] and opts_per_hl[group].transparent) and opts.transparent or false
 
             if type(attrs) == "string" and string.find(attrs, "|") ~= nil then
                 -- Handling paths like `General|Text|...` pointing to a color
@@ -129,6 +123,16 @@ function M.load(opts)
                     hl.link = group_name
                 else
                     hl.bg = transparent and "NONE" or hl.bg
+                    if transparent then
+                        -- Deffer clearing background to allow plugins set their highlights
+                        -- first to override their backgrounds as well
+                        vim.defer_fn(function()
+                            if attrs ~= nil and attrs ~= "" then
+                                --- Ensure that if linking than only link is set
+                                vim.api.nvim_set_hl(0, group, M.disable_hl_args(hl, opts))
+                            end
+                        end, 1500)
+                    end
                     hl = hl
                 end
             end
