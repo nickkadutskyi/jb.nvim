@@ -21,7 +21,8 @@
 
 - Supports both light and dark themes
 - Terminal colors
-- Has lualine theme
+- Lualine theme included
+- Lualine component for a Navigation Bar similar to JetBrains IDEs but only for dir path part
 - Generates `ProjectColor` highlight group based on the path
 - Generates highlights for icons `JBIcon<Kind>`
 - Provides a table with icons visually similar to JB's ones
