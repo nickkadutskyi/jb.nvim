@@ -563,6 +563,14 @@
         "StickyLines": {
           "Background": "General|Text|DefaultText",
           "Border": "General|Editor|Guides|HardWrapGuide",
+          "BorderDarker": {
+            "dark": {
+              "fg": "#4d4f53"
+            },
+            "light": {
+              "fg": "#d4d4d8"
+            }
+          },
           "Hovered": null
         },
         "Tabs": {
@@ -5126,12 +5134,12 @@
         "nolink": true
       },
       "TreesitterContextBottom": {
-        "underdouble": true,
-        "sp": "General|Editor|StickyLines|Border.fg"
+        "underline": true,
+        "sp": "General|Editor|StickyLines|BorderDarker.fg"
       },
       "TreesitterContextLineNumberBottom": {
-        "underdouble": true,
-        "sp": "General|Editor|StickyLines|Border.fg"
+        "underline": true,
+        "sp": "General|Editor|StickyLines|BorderDarker.fg"
       }
     },
     "Plugin.SmiteshP/nvim-navic": {
