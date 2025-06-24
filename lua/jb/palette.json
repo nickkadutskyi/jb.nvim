@@ -5150,6 +5150,42 @@
       "CopilotSuggestion": "LanguageDefaults|InlineHints|TextWithoutBackground",
       "CopilotAnnotation": "LanguageDefaults|InlineHints|TextWithoutBackground"
     },
+    "Plugin.folke/snacks.nvim.notifier": {
+      "SnacksNotifierBorderDebug": {
+        "fg": "Appearance|Window|Border"
+      },
+      "SnacksNotifierBorderError": "SnacksNotifierBorderDebug",
+      "SnacksNotifierBorderInfo": "SnacksNotifierBorderDebug",
+      "SnacksNotifierBorderTrace": "SnacksNotifierBorderDebug",
+      "SnacksNotifierBorderWarn": "SnacksNotifierBorderDebug",
+      "SnacksNotifierDebug": null,
+      "SnacksNotifierError": null,
+      "SnacksNotifierFooterDebug": null,
+      "SnacksNotifierFooterError": null,
+      "SnacksNotifierFooterInfo": null,
+      "SnacksNotifierFooterTrace": null,
+      "SnacksNotifierFooterWarn": null,
+      "SnacksNotifierHistory": null,
+      "SnacksNotifierHistoryDateTime": null,
+      "SnacksNotifierHistoryTitle": null,
+      "SnacksNotifierIconDebug": "General|Text|DefaultText",
+      "SnacksNotifierIconError": "Appearance|Notifications|IconError",
+      "SnacksNotifierIconInfo": "Appearance|Notifications|IconInfo",
+      "SnacksNotifierIconTrace": "General|Text|DefaultText",
+      "SnacksNotifierIconWarn": "Appearance|Notifications|IconWarn",
+      "SnacksNotifierInfo": null,
+      "SnacksNotifierMinimal": null,
+      "SnacksNotifierTitleDebug": {
+        "fg": "General|Text|DefaultText",
+        "bold": true
+      },
+      "SnacksNotifierTitleError": "SnacksNotifierTitleDebug",
+      "SnacksNotifierTitleInfo": "SnacksNotifierTitleDebug",
+      "SnacksNotifierTitleTrace": "SnacksNotifierTitleDebug",
+      "SnacksNotifierTitleWarn": "SnacksNotifierTitleDebug",
+      "SnacksNotifierTrace": null,
+      "SnacksNotifierWarn": null
+    },
     "Plugin.folke/snacks.nvim.explorer": {
       "SnacksPicker": "General|Text|DefaultText",
       "SnacksPickerAuEvent": "",
