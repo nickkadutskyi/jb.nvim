@@ -5581,24 +5581,19 @@
         "bg": "Appearance|Window|BackgroundEditArea.bg"
       },
       "NotifyERRORBorder": {
-        "fg": "Appearance|Window|Border",
-        "bg": "Appearance|Window|BackgroundEditArea.bg"
+        "fg": "Appearance|Window|Border"
       },
       "NotifyWARNBorder": {
-        "fg": "Appearance|Window|Border",
-        "bg": "Appearance|Window|BackgroundEditArea.bg"
+        "fg": "Appearance|Window|Border"
       },
       "NotifyINFOBorder": {
-        "fg": "Appearance|Window|Border",
-        "bg": "Appearance|Window|BackgroundEditArea.bg"
+        "fg": "Appearance|Window|Border"
       },
       "NotifyDEBUGBorder": {
-        "fg": "Appearance|Window|Border",
-        "bg": "Appearance|Window|BackgroundEditArea.bg"
+        "fg": "Appearance|Window|Border"
       },
       "NotifyTRACEBorder": {
-        "fg": "Appearance|Window|Border",
-        "bg": "Appearance|Window|BackgroundEditArea.bg"
+        "fg": "Appearance|Window|Border"
       },
       "NotifyERRORIcon": "Appearance|Notifications|IconError",
       "NotifyWARNIcon": "Appearance|Notifications|IconWarn",
@@ -5626,24 +5621,19 @@
         "bold": true
       },
       "NotifyERRORBody": {
-        "fg": "General|Text|DefaultText",
-        "bg": "Appearance|Window|BackgroundEditArea.bg"
+        "fg": "General|Text|DefaultText"
       },
       "NotifyWARNBody": {
-        "fg": "General|Text|DefaultText",
-        "bg": "Appearance|Window|BackgroundEditArea.bg"
+        "fg": "General|Text|DefaultText"
       },
       "NotifyINFOBody": {
-        "fg": "General|Text|DefaultText",
-        "bg": "Appearance|Window|BackgroundEditArea.bg"
+        "fg": "General|Text|DefaultText"
       },
       "NotifyDEBUGBody": {
-        "fg": "General|Text|DefaultText",
-        "bg": "Appearance|Window|BackgroundEditArea.bg"
+        "fg": "General|Text|DefaultText"
       },
       "NotifyTRACEBody": {
-        "fg": "General|Text|DefaultText",
-        "bg": "Appearance|Window|BackgroundEditArea.bg"
+        "fg": "General|Text|DefaultText"
       },
       "NotifyLogTime": "General|ErrorsAndWarnings|UnusedCode|Default",
       "NotifyLogTitle": "General|Text|DefaultText"
