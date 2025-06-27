@@ -45,7 +45,7 @@ Plugins
   - [ ] snacks.nvim dashboard
   - [x] blink.nvim
   - [x] Telescope.nvim
-  - [ ] diffview.nvim
+  - [x] diffview.nvim
   - [x] avante.nvim new interface
   - [ ] nvim-navic
   - [ ] Lazy.nvim

@@ -5359,6 +5359,57 @@
       "BlinkCmpDocBorder": "BlinkCmpMenuBorder",
       "BlinkCmpSignatureHelpBorder": "BlinkCmpMenuBorder"
     },
+    "Plugin.sindrets/diffview.nvim": {
+      "DiffviewCursorLine": "",
+      "DiffviewDiffAdd": "",
+      "DiffviewDiffAddAsDelete": "DiffMerge|ChangedLines|Deleted|Important",
+      "DiffviewDiffChange": "",
+      "DiffviewDiffDelete": "",
+      "DiffviewDiffDeleteDim": {
+        "fg": "DiffMerge|ChangedLines|Deleted|Important.bg"
+      },
+      "DiffviewDiffText": "",
+      "DiffviewDim1": "",
+      "DiffviewEndOfBuffer": "",
+      "DiffviewFilePanelConflicts": "VCS|FileStatusColors|MergedWithConflicts",
+      "DiffviewFilePanelCounter": {
+        "bold": true,
+        "fg": "Appearance|VCS|Labels|Tag"
+      },
+      "DiffviewFilePanelDeletions": "VCS|FileStatusColors|Deleted",
+      "DiffviewFilePanelFileName": "Appearance|ToolWindow|Item",
+      "DiffviewFilePanelInsertions": "VCS|FileStatusColors|Added",
+      "DiffviewFilePanelPath": "Appearance|ToolWindow|Item",
+      "DiffviewFilePanelRootPath": "Appearance|ToolWindow|Item",
+      "DiffviewFilePanelSelected": "Appearance|ToolWindow|Item",
+      "DiffviewFilePanelTitle": {
+        "bold": true
+      },
+      "DiffviewFolderName": "Appearance|ToolWindow|Item",
+      "DiffviewFolderSign": "Appearance|ProjectView|DirectoryIcon",
+      "DiffviewHash": "",
+      "DiffviewNonText": "",
+      "DiffviewNormal": "",
+      "DiffviewPrimary": "",
+      "DiffviewReference": "",
+      "DiffviewReflogSelector": "",
+      "DiffviewSecondary": "",
+      "DiffviewSignColumn": "",
+      "DiffviewStatusAdded": "VCS|FileStatusColors|Added",
+      "DiffviewStatusBroken": "VCS|FileStatusColors|MergedWithConflicts",
+      "DiffviewStatusCopied": "VCS|FileStatusColors|Copied",
+      "DiffviewStatusDeleted": "VCS|FileStatusColors|Deleted",
+      "DiffviewStatusIgnored": "VCS|FileStatusColors|IgnoredIgnorePlugin",
+      "DiffviewStatusLine": "",
+      "DiffviewStatusLineNC": "",
+      "DiffviewStatusModified": "VCS|FileStatusColors|Modified",
+      "DiffviewStatusRenamed": "VCS|FileStatusColors|Renamed",
+      "DiffviewStatusTypeChange": "VCS|FileStatusColors|Modified",
+      "DiffviewStatusUnknown": "VCS|FileStatusColors|Unknown",
+      "DiffviewStatusUnmerged": "VCS|FileStatusColors|MergedWithConflicts",
+      "DiffviewStatusUntracked": "VCS|FileStatusColors|Unknown",
+      "DiffviewWinSeparator": "WinSeparator"
+    },
     "Plugin.supermaven-inc/supermaven-nvim": {
       "SupermavenSuggestion": {
         "fg": "LanguageDefaults|InlineHints|TextWithoutBackground"

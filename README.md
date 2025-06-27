@@ -75,6 +75,7 @@
 | [avante.nvim](https://github.com/yetone/avante.nvim)                              | n/a    |
 | [blink.cmp](https://github.com/Saghen/blink.cmp)                                  | n/a    |
 | [copilot.vim](https://github.com/github/copilot.vim)                              | n/a    |
+| [diffvie.nvim](https://github.com/sindrets/diffview.nvim)                         | n/a    |
 | [fzf-lua](https://github.com/ibhagwan/fzf-lua)                                    | n/a    |
 | [gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim)                       | n/a    |
 | [indent-blankline.nvim](https://github.com/lukas-reineke/indent-blankline.nvim)   | n/a    |
