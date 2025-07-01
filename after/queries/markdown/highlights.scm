@@ -8,3 +8,9 @@
 (atx_h4_marker) @markup.heading.marker
 (atx_h5_marker) @markup.heading.marker
 (atx_h6_marker) @markup.heading.marker
+
+(link_reference_definition
+  (link_label) @markup.link.label
+  (link_destination) @markup.link.destination
+  (link_title) @markup.link.title)
+

@@ -3115,10 +3115,32 @@
         "5thLevelHeader": "LanguageDefaults|Identifiers|Constant",
         "HeaderMarker": "LanguageDefaults|Keyword"
       },
-      "HorizontalRule": null,
+      "HorizontalRule": "LanguageDefaults|Keyword",
       "HTML": null,
       "Links": {
-        "LinkDestination": "LanguageDefaults|Classes|StaticMethod"
+        "AutoLink": {
+          "light": "General|Hyperlinks|Unfollowed",
+          "dark": {
+            "fg": "#56A8F5",
+            "sp": "#56A8F5",
+            "underline": true
+          }
+        },
+        "ExplicitLink": "LanguageDefaults|String|StringText",
+        "Image": "General|Code|InjectedLanguageFragment",
+        "LinkDefinition": {},
+        "LinkDestination": "LanguageDefaults|Classes|StaticMethod",
+        "LinkLabel": "LanguageDefaults|Keyword",
+        "LinkText": "Markdown|Links|AutoLink",
+        "LinkTitle": "LanguageDefaults|String|StringText",
+        "ReferenceLink": {
+          "light": {
+            "bold": true
+          },
+          "dark": {
+            "bold": true
+          }
+        }
       },
       "Lists": null,
       "Style": null,
@@ -4804,13 +4826,7 @@
     },
     "Treesitter.Markdown": {
       "@conceal.markdown_inline": "LanguageDefaults|Keyword",
-      "@markup.link": "General|Hyperlinks|Unfollowed",
-      "@markup.link.label": "LanguageDefaults|Keyword",
-      "@markup.link.url": {
-        "fg": "Markdown|Links|LinkDestination",
-        "italic": true,
-        "underline": true
-      },
+      "@markup.link.markdown": "General|Hyperlinks|Unfollowed",
       "@markup.raw.block.markdown": "Markdown|Code|CodeFence",
       "@markup.raw.markdown_inline": "Markdown|Code|CodeSpan",
       "@markup.quote.markdown": "Markdown|Blockquote|Blockquote",
@@ -4821,7 +4837,17 @@
       "@markup.heading.4.markdown": "Markdown|Header|4thLevelHeader",
       "@markup.heading.5.markdown": "Markdown|Header|5thLevelHeader",
       "@markup.heading.6.markdown": "Markdown|Header|5thLevelHeader",
-      "@markup.heading.marker": "Markdown|Header|HeaderMarker"
+      "@markup.heading.marker": "Markdown|Header|HeaderMarker",
+      "@markup.link.label": "Markdown|Links|LinkLabel",
+      "@markup.autolink.markdown_inline": "Markdown|Links|AutoLink",
+      "@markup.link.text.markdown_inline": "Markdown|Links|LinkText",
+      "@markup.link.markdown_inline": "Markdown|Links|LinkText",
+      "@markup.link.destination.markdown_inline": "Markdown|Links|LinkDestination",
+      "@markup.reference.link.markdown_inline": "Markdown|Links|ReferenceLink",
+      "@markup.link.title.markdown": "Markdown|Links|LinkTitle",
+      "@markup.link.destination.markdown": "Markdown|Links|LinkDestination",
+      "@markup.image.markdown_inline": "Markdown|Links|Image",
+      "@punctuation.special.markdown": "Markdown|HorizontalRule"
     },
     "Treesitter.Nix": {
       "@function.builtin.nix": "Nix|BuiltInConstantsAndFunctions|OtherBuiltIns",
