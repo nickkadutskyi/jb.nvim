@@ -3107,7 +3107,14 @@
         "CodeSpan": "LanguageDefaults|String|StringText"
       },
       "DefinitionList": null,
-      "Header": null,
+      "Header": {
+        "1stLevelHeader": "LanguageDefaults|Identifiers|Constant",
+        "2ndLevelHeader": "LanguageDefaults|Identifiers|Constant",
+        "3rdLevelHeader": "LanguageDefaults|Identifiers|Constant",
+        "4thLevelHeader": "LanguageDefaults|Identifiers|Constant",
+        "5thLevelHeader": "LanguageDefaults|Identifiers|Constant",
+        "HeaderMarker": "LanguageDefaults|Keyword"
+      },
       "HorizontalRule": null,
       "HTML": null,
       "Links": {
@@ -4383,13 +4390,13 @@
       "@tag.html": "HTML|TagName",
       "@tag.attribute.html": "HTML|AttributeName",
       "@string.html": "HTML|AttributeValue",
-      "@markup.heading.html": "General|Text|DefaultTextFg",
-      "@markup.heading.1.html": "General|Text|DefaultTextFg",
-      "@markup.heading.2.html": "General|Text|DefaultTextFg",
-      "@markup.heading.3.html": "General|Text|DefaultTextFg",
-      "@markup.heading.4.html": "General|Text|DefaultTextFg",
-      "@markup.heading.5.html": "General|Text|DefaultTextFg",
-      "@markup.heading.6.html": "General|Text|DefaultTextFg"
+      "@markup.heading": "General|Text|DefaultTextFg",
+      "@markup.heading.1": "General|Text|DefaultTextFg",
+      "@markup.heading.2": "General|Text|DefaultTextFg",
+      "@markup.heading.3": "General|Text|DefaultTextFg",
+      "@markup.heading.4": "General|Text|DefaultTextFg",
+      "@markup.heading.5": "General|Text|DefaultTextFg",
+      "@markup.heading.6": "General|Text|DefaultTextFg"
     },
     "Treesitter.Ini": {
       "@markup.heading.ini": "Ini|Section",
@@ -4806,7 +4813,15 @@
       },
       "@markup.raw.block.markdown": "Markdown|Code|CodeFence",
       "@markup.raw.markdown_inline": "Markdown|Code|CodeSpan",
-      "@markup.quote.markdown": "Markdown|Blockquote|Blockquote"
+      "@markup.quote.markdown": "Markdown|Blockquote|Blockquote",
+      "@markup.heading.markdown": "Markdown|Header|1stLevelHeader",
+      "@markup.heading.1.markdown": "Markdown|Header|1stLevelHeader",
+      "@markup.heading.2.markdown": "Markdown|Header|2ndLevelHeader",
+      "@markup.heading.3.markdown": "Markdown|Header|3rdLevelHeader",
+      "@markup.heading.4.markdown": "Markdown|Header|4thLevelHeader",
+      "@markup.heading.5.markdown": "Markdown|Header|5thLevelHeader",
+      "@markup.heading.6.markdown": "Markdown|Header|5thLevelHeader",
+      "@markup.heading.marker": "Markdown|Header|HeaderMarker"
     },
     "Treesitter.Nix": {
       "@function.builtin.nix": "Nix|BuiltInConstantsAndFunctions|OtherBuiltIns",

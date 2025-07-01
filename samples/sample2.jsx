@@ -14,6 +14,7 @@ export default function RootLayout() {
       >
         <someTextWithEntityRefs>&amp; &#x00B7;</someTextWithEntityRefs>
         <div className="w-1/5 mx-auto my-0" > {children} </div>
+        <h1>Vite + React</h1>
       </body>
     </html>
   );
