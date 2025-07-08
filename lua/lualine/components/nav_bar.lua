@@ -9,7 +9,7 @@ local utils = require("lualine.utils.utils")
 local highlight = require("lualine.highlight")
 
 local default_options = {
-    padding = { left = 1, right = 0 }, -- padding around the icon
+    padding = { left = 0, right = 0 }, -- padding around the icon
     -- icon_color_highlight = "JBIconModule",
     -- icon_color_current_highlight = "JBIconModuleProject",
 

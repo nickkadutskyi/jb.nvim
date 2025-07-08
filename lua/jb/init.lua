@@ -165,7 +165,6 @@ function M.load(opts)
         bg = tinted_status_line_bg,
     })
 
-    icon_color.bg = tinted_status_line_bg
     vim.api.nvim_set_hl(0, "JBIconModuleProject", M.disable_hl_args(icon_color, opts))
 
     local tinted_status_line_secondary_bg = utils.blend_colors(status_line_color.hl.bg, project_color.bg, 0.025)
