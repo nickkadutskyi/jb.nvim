@@ -16,7 +16,7 @@ local default_options = {
     ---@class NavBarOptions
     nav_bar_opts = {
         separator = " › ", -- separator between nav bar items
-        icon = { "󱓼 ", hl = "JBIconModuleProject" }, -- icon for the nav bar},
+        icon = { "󱓼 ", hl = "JBIconModule" }, -- icon for the nav bar},
         hl = "",
     },
 }
