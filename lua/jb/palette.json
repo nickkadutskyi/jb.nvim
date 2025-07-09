@@ -2891,7 +2891,15 @@
     "Java": {
       "Annotations": null,
       "BracesAndOperators": null,
-      "ClassFields": null,
+      "ClassFields": {
+        "ConstantStaticFinalField": "Java|ClassFields|StaticField",
+        "ConstantStaticFinalImported field": null,
+        "InstanceField": null,
+        "InstanceFinalField": null,
+        "RecordComponent": null,
+        "StaticField": "LanguageDefaults|Classes|StaticField",
+        "StaticImportedField": null
+      },
       "ClassesAndInterfaces": null,
       "Comments": null,
       "Keyword": null,
@@ -4427,7 +4435,8 @@
     "Treesitter.Java": {
       "@constructor.declaration.java": "Java|Methods|ConstructorDeclaration",
       "@function.method.call.java": "Java|Methods|MethodCall",
-      "@type.parameter.java": "Java|Parameters|TypeParameter"
+      "@type.parameter.java": "Java|Parameters|TypeParameter",
+      "@variable.member.java": "Java|ClassFields|ConstantStaticFinalField"
     },
     "Treesitter.JavaScript": {
       "@function.method.javascript": "JavaScript|Object|Method",
