@@ -2889,27 +2889,30 @@
       "Section": "LanguageDefaults|Keyword"
     },
     "Java": {
-      "Annotations": null,
+      "Annotations": {
+        "AnnotationAttributeName": null,
+        "AnnotationName": "LanguageDefaults|Metadata"
+      },
       "BracesAndOperators": null,
       "ClassFields": {
         "ConstantStaticFinalField": "Java|ClassFields|StaticField",
         "ConstantStaticFinalImported field": null,
-        "InstanceField": null,
-        "InstanceFinalField": null,
-        "RecordComponent": null,
+        "InstanceField": "LanguageDefaults|Classes|InstanceField",
+        "InstanceFinalField": "Java|ClassFields|InstanceField",
+        "RecordComponent": "Java|ClassFields|InstanceField",
         "StaticField": "LanguageDefaults|Classes|StaticField",
         "StaticImportedField": null
       },
       "ClassesAndInterfaces": null,
       "Comments": null,
-      "Keyword": null,
+      "Keyword": "LanguageDefaults|Keyword",
       "Methods": {
         "AbstractMethod": null,
         "ConstructorCall": null,
         "ConstructorDeclaration": "LanguageDefaults|Identifiers|FunctionDeclaration",
         "InheritedMethod": null,
         "MethodCall": "LanguageDefaults|Identifiers|FunctionCall",
-        "MethodDeclaration": null,
+        "MethodDeclaration": "LanguageDefaults|Identifiers|FunctionDeclaration",
         "StaticImportedMethodCall": null,
         "StaticMethod": null
       },
@@ -4436,7 +4439,18 @@
       "@constructor.declaration.java": "Java|Methods|ConstructorDeclaration",
       "@function.method.call.java": "Java|Methods|MethodCall",
       "@type.parameter.java": "Java|Parameters|TypeParameter",
-      "@variable.member.java": "Java|ClassFields|ConstantStaticFinalField"
+      "@variable.member.java": "Java|ClassFields|InstanceField",
+      "@keyword.java": "Java|Keyword"
+    },
+    "Semantic.Java": {
+      "@lsp.type.modifier.java": "Java|Keyword",
+      "@lsp.type.method.java": "Java|Methods|MethodCall",
+      "@lsp.typemod.method.declaration.java": "Java|Methods|MethodDeclaration",
+      "@lsp.typemod.property.static.java": "Java|ClassFields|StaticField",
+      "@lsp.typemod.property.readonly.java": "Java|ClassFields|InstanceFinalField",
+      "@lsp.type.typeParameter.java": "Java|Parameters|TypeParameter",
+      "@lsp.type.annotation.java": "Java|Annotations|AnnotationName",
+      "@lsp.type.recordComponent.java": "Java|ClassFields|RecordComponent"
     },
     "Treesitter.JavaScript": {
       "@function.method.javascript": "JavaScript|Object|Method",

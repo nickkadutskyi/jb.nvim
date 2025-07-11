@@ -1,6 +1,5 @@
 Languages
-- [ ] Style definition popup
-- [ ] Provide better Tree-sitter queries for CSS/SCSS/Sass
+- [x] Provide better Tree-sitter queries for CSS/SCSS/Sass
 - [x] Add Tree-sitter styles for:
   - [x] Nix
   - [x] Shell Script
@@ -37,7 +36,7 @@ Plugins
 - [ ] Add support for:
   - [x] snacks.nvim explorer
   - [ ] snacks.nvim picker
-  - [ ] snacks.nvim notifier
+  - [x] snacks.nvim notifier
   - [ ] snacks.nvim scope
   - [ ] snacks.nvim statuscolumn
   - [ ] snacks.nvim words
@@ -47,8 +46,8 @@ Plugins
   - [x] Telescope.nvim
   - [x] diffview.nvim
   - [x] avante.nvim new interface
-  - [ ] nvim-navic
-  - [ ] Lazy.nvim
+  - [x] nvim-navic
+  - [x] Lazy.nvim
   - [ ] conform.nvim
   - [x] trouble.nvim
   - [x] cloak.nvim
@@ -59,9 +58,8 @@ Plugins
   - [x] avante.nvim
 
 Performance
-- [ ] Measure performance on startup
-- [ ] Separate pallet into files for each plugin and make it possible to disable them
-- [ ] Move plugin config to lua tables instead of JSON
+- [x] Measure performance on startup
+- [x] Separate pallet into files for each plugin and make it possible to disable them
 
 Distribution
 - [ ] Package for nixos (https://www.reddit.com/r/neovim/comments/1i1kt9p/comment/m7cnyr1/)
@@ -69,10 +67,6 @@ Distribution
 Extras
 - [x] Add Ghostty themes
 - [x] Add Alacritty themes
-- [ ] Add Tmux themes
 - [x] Add fzf themes
 - [ ] Add starship themes
 - [ ] Add Windows Terminal themes
-- [ ] Test kitty theme
-- [ ] Provide kitty light mode theme
-- [ ] Create bath theme generator and add generated theme to the repo

@@ -229,10 +229,8 @@ M.files = {
             icon = "",
         },
         ["readme.md"] = {
-            name = "Readme",
+            name = "Md",
             icon = "",
-            light = { color = "#4875E8", cterm_color = "33" },
-            dark = { color = "#5F87EC", cterm_color = "69" },
         },
         ["symfony.lock"] = {
             name = "Json",
@@ -351,8 +349,8 @@ M.files = {
         ["md"] = {
             name = "Md",
             icon = "",
-            light = { color = "#4875E8", cterm_color = "33" },
-            dark = { color = "#5F87EC", cterm_color = "69" },
+            light = { color = "#3877E8", cterm_color = "68" },
+            dark = { color = "#578CF0", cterm_color = "69" },
         },
         ["neon"] = {
             name = "PlainText",

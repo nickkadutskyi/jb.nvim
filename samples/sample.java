@@ -52,6 +52,8 @@ interface AnInterface {
   int CONSTANT = 2;
   void method();
 }
+@interface AnnotationType {}
+record Point(int x, int y) {}
 abstract class SomeAbstractClass {
   protected int instanceField = staticField;
 }
