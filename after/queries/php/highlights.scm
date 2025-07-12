@@ -44,9 +44,9 @@
 
 ; Redefined @constant to avoid matching `_GET` part in `$_GET` as a constant
 ; and fixes `Type::A()` where `A` is captured as a constant
-((name) @constant.only
-  (#lua-match? @constant.only "^_?[A-Z][A-Z%d_]*$")
-  (#not-has-parent? @constant.only variable_name scoped_call_expression))
+; ((name) @constant.only
+;   (#lua-match? @constant.only "^_?[A-Z][A-Z%d_]*$")
+;   (#not-has-parent? @constant.only variable_name scoped_call_expression))
 
 (const_declaration
   (const_element
