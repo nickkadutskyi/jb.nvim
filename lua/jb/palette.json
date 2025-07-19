@@ -2949,7 +2949,12 @@
     "JavaScript": {
       "BadCharacter": null,
       "BracesAndOperators": null,
-      "Classes": null,
+      "Classes": {
+        "ClassName": "LanguageDefaults|Classes|ClassName",
+        "ExportedClass": "LanguageDefaults|Classes|ClassName",
+        "StaticMethod": "LanguageDefaults|Classes|StaticMethod",
+        "StaticProperty": "LanguageDefaults|Classes|StaticField"
+      },
       "Comments": {
         "BlockComment": null,
         "JSDoc": {
@@ -3663,10 +3668,18 @@
     "TypeScript": {
       "BadCharacter": null,
       "BracesAndOperators": null,
-      "Classes": null,
+      "Classes": {
+        "ClassName": "JavaScript|Classes|ClassName",
+        "ExportedClass": "TypeScript|Classes|ClassName",
+        "StaticMethod": "JavaScript|Classes|StaticMethod",
+        "StaticProperty": "JavaScript|Classes|StaticProperty"
+      },
       "Comments": null,
       "Decorator": null,
-      "Enum": null,
+      "Enum": {
+        "EnumName": "TypeScript|Classes|ClassName",
+        "Member": "TypeScript|Classes|StaticProperty"
+      },
       "Identifiers": {
         "ExportedFunction": "TypeScript|Identifiers|GlobalFunction",
         "ExportedVariable": "TypeScript|Identifiers|GlobalVariable",
@@ -4555,14 +4568,17 @@
       "@variable.parameter.typescript": "JavaScript|Identifiers|Parameter",
       "@variable.exported.typescript": "TypeScript|Identifiers|ExportedVariable",
       "@function.exported.typescript": "TypeScript|Identifiers|ExportedFunction",
-      "@lsp.type.method.typescript": null
+      "@constant.typescript": null
     },
     "Semantic.TypeScript": {
       "@lsp.type.variable.typescript": null,
       "@lsp.typemod.class.defaultLibrary.typescript": "JavaScript|Identifiers|GlobalVariable",
       "@lsp.typemod.property.static.typescript": "LanguageDefaults|Classes|StaticField",
       "@lsp.type.parameter.typescript": "JavaScript|Identifiers|Parameter",
-      "@lsp.typemod.function.readonly.typescript": "TypeScript|Identifiers|ExportedFunction"
+      "@lsp.typemod.function.readonly.typescript": "TypeScript|Identifiers|ExportedFunction",
+      "@lsp.type.method.typescript": null,
+      "@lsp.type.enum.typescript": "TypeScript|Enum|EnumName",
+      "@lsp.type.enumMember.typescript": "TypeScript|Enum|Member"
     },
     "Treesitter.Vue": {
       "@tag.vue": "HTML|TagName",
