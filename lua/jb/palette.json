@@ -3695,7 +3695,10 @@
       "Keyword": null,
       "ModuleName": null,
       "Number": null,
-      "Object": null,
+      "Object": {
+        "Method": "JavaScript|Object|Method",
+        "Property": "JavaScript|Object|Property"
+      },
       "RegularExpression": null,
       "SemanticHighlighting": null,
       "String": null,
@@ -4562,19 +4565,21 @@
       "@lsp.type.parameter.typescriptreact": "TypeScript|Identifiers|Parameter"
     },
     "Treesitter.TypeScript": {
-      "@function.method.typescript": "JavaScript|Object|Method",
-      "@function.method.call.typescript": "JavaScript|Object|Method",
-      "@variable.typescript": "JavaScript|Identifiers|LocalVariable",
-      "@variable.parameter.typescript": "JavaScript|Identifiers|Parameter",
+      "@function.method.typescript": "TypeScript|Object|Method",
+      "@function.method.call.typescript": "TypeScript|Object|Method",
+      "@variable.typescript": "TypeScript|Identifiers|LocalVariable",
+      "@variable.parameter.typescript": "TypeScript|Identifiers|Parameter",
       "@variable.exported.typescript": "TypeScript|Identifiers|ExportedVariable",
       "@function.exported.typescript": "TypeScript|Identifiers|ExportedFunction",
-      "@constant.typescript": null
+      "@constant.typescript": null,
+      "@variable.builtin.typescript": "TypeScript|Identifiers|GlobalVariable",
+      "@variable.member.typescript": "TypeScript|Object|Property"
     },
     "Semantic.TypeScript": {
       "@lsp.type.variable.typescript": null,
-      "@lsp.typemod.class.defaultLibrary.typescript": "JavaScript|Identifiers|GlobalVariable",
+      "@lsp.typemod.class.defaultLibrary.typescript": "TypeScript|Identifiers|GlobalVariable",
       "@lsp.typemod.property.static.typescript": "LanguageDefaults|Classes|StaticField",
-      "@lsp.type.parameter.typescript": "JavaScript|Identifiers|Parameter",
+      "@lsp.type.parameter.typescript": "TypeScript|Identifiers|Parameter",
       "@lsp.typemod.function.readonly.typescript": "TypeScript|Identifiers|ExportedFunction",
       "@lsp.type.method.typescript": null,
       "@lsp.type.enum.typescript": "TypeScript|Enum|EnumName",
@@ -4589,7 +4594,10 @@
       "@operator.vue": "HTML|AttributeValue"
     },
     "Semantic.Vue": {
-      "@lsp.type.variable.vue": "TypeScript|Identifiers|LocalVariable"
+      "@lsp.type.variable.vue": "TypeScript|Identifiers|LocalVariable",
+      "@lsp.type.parameter.vue": "JavaScript|Identifiers|Parameter",
+      "@lsp.typemod.variable.defaultLibrary.vue": "TypeScript|Identifiers|GlobalVariable",
+      "@lsp.type.method.vue": "TypeScript|Object|Method"
     },
     "Treesitter.XML": {
       "@character.xml": "XML|EntityReference",
