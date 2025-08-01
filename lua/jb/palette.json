@@ -2498,6 +2498,18 @@
       "Variables": null,
       "Zsh": null
     },
+    "BibTeX": {
+      "Assignment": null,
+      "Braces": null,
+      "Comments": "LaTeX|Comments|RegularComment",
+      "Concatenation": null,
+      "Identifier": "LanguageDefaults|Classes|InstanceField",
+      "Key": "LanguageDefaults|Identifiers|Parameter",
+      "Number": null,
+      "String": "LanguageDefaults|String|StringText",
+      "TypeToken": "LanguageDefaults|Keyword",
+      "Value": null
+    },
     "Blade": {
       "Background": null,
       "Comment": null,
@@ -3042,6 +3054,34 @@
       "SemanticHighlighting": null,
       "String": null,
       "ValidEscapeSequence": null
+    },
+    "LaTeX": {
+      "Braces": "LanguageDefaults|BracesAndOperators|Braces",
+      "Brackets": "LanguageDefaults|BracesAndOperators|Brackets",
+      "Commands": {
+        "Commands": "LanguageDefaults|Keyword",
+        "CommandsInDisplayMathMode": null,
+        "CommandsInInlineMathMode": null,
+        "EqualsSignInKeyValuePairs": "LanguageDefaults|Identifiers|Default",
+        "OptionalParametersStars": null,
+        "UserDefinedCommands": null
+      },
+      "Comments": {
+        "MagicComment": "LanguageDefaults|Comments|DocComment|Text",
+        "RegularComment": "LanguageDefaults|Comments|LineComment"
+      },
+      "FontStyle": null,
+      "Math": {
+        "DisplayMath": null,
+        "InlineMath": "LanguageDefaults|String|StringText",
+        "TextInMath": null
+      },
+      "References": {
+        "BibliographyItem": null,
+        "Citation": null,
+        "LabelDefinition": null,
+        "LabelReference": "LanguageDefaults|Identifiers|Default"
+      }
     },
     "Lua": {
       "ClassMembers": {
@@ -4362,6 +4402,14 @@
       "@string.special.path.bash": "BashSupportPro|StringLiterals|UnquotedWord",
       "@variable.parameter.bash": "BashSupportPro|StringLiterals|UnquotedWord"
     },
+    "Treesitter.BibTeX": {
+      "@comment.bibtex": "BibTeX|Comments",
+      "@keyword.bibtex": "BibTeX|TypeToken",
+      "@string.bibtex": "BibTeX|String",
+      "@constant.bibtex": "BibTeX|Identifier",
+      "@property.bibtex": "BibTeX|Key",
+      "@variable.parameter.bibtex": "BibTeX|Key"
+    },
     "Treesitter.Blade": {},
     "Treesitter.Cpp": {
       "@function.macro.c": "Cpp|MacroName",
@@ -4840,6 +4888,17 @@
       "GitSignsDeleteVirtLn": "DiffMerge|ChangedLines|Deleted|Important",
       "GitSignsDeleteVirtLnInLine": "DiffMerge|ChangedLines|Deleted|Important",
       "GitSignsVirtLnum": ""
+    },
+    "Treesitter.LaTeX": {
+      "@comment.latex": "LaTeX|Comments|RegularComment",
+      "@keyword.import.latex": "LaTeX|Commands|Commands",
+      "@function.latex": "LaTeX|Commands|Commands",
+      "@function.macro.latex": "LaTeX|Commands|Commands",
+      "@module.latex": "LaTeX|Commands|Commands",
+      "@punctuation.bracket.latex": "LaTeX|Brackets",
+      "@operator.latex": "LaTeX|Commands|EqualsSignInKeyValuePairs",
+      "@markup.link.latex": "LaTeX|References|LabelReference",
+      "@markup.math.latex": "LaTeX|Math|InlineMath"
     },
     "Syntax.Lua": {
       "luaTable": "LanguageDefaults|BracesAndOperators|Braces",

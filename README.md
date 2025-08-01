@@ -34,6 +34,7 @@
 |---------------|--------|--------------------------------|--------------|
 | .ignore Files | n/a    | ✅ (gitignore)                 | n/a          |
 | ApacheConfig  | ✅     | n/a                            | n/a          |
+| BibTeX        | ⚠️     | ✅ (bibtex)                    | n/a          |
 | Blade         | n/a    | ✅ (EmranMR/tree-sitter-blade) | n/a          |
 | C/C++         | ⚠️     | ✅ (c,cpp)                     | n/a          |
 | CSS           | ⚠️     | ✅ (css)                       | n/a          |
@@ -46,6 +47,7 @@
 | Java          | ⚠️     | ✅ (java, javadoc)             | ✅ (jdtls)   |
 | JavaScript    | ⚠️     | ✅ (javascript)                | ✅ (ts_ls)   |
 | JSON          | ✅     | ✅ (json)                      | n/a          |
+| LaTeX         | ⚠️     | ✅ (latex)                     | n/a          |
 | Lua           | ⚠️     | ✅ (lua,luadoc)                | ✅ (lua_ls)  |
 | Markdown      | ⚠️     | ✅ (markdown,markdown_inline)  | n/a          |
 | Nix           | ⚠️     | ✅ (nix)                       | ✅ (nil_lsp) |

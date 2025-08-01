@@ -260,6 +260,12 @@ M.files = {
         },
     },
     by_extension = {
+        ["bib"] = {
+            name = "Bibtex",
+            icon = "󰯮",
+            dark = { color = "#C1805B", cterm_color = "137" },
+            light = { color = "#DD7430", cterm_color = "166" },
+        },
         ["cfg"] = {
             name = "Configuration",
             icon = "",
@@ -402,6 +408,12 @@ M.files = {
         ["svg"] = {
             name = "Image",
             icon = "",
+        },
+        ["tex"] = {
+            name = "Tex",
+            icon = "󰰤",
+            light = { color = "#628D4B", cterm_color = "65" },
+            dark = { color = "#89B670", cterm_color = "107" },
         },
         ["toml"] = {
             name = "Toml",

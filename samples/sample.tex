@@ -1,0 +1,90 @@
+%! Compiler = pdfLaTeX
+%  An amazing example for LaTeX.
+\documentclass[12pt,a4paper]{article}
+
+% Package imports.
+\usepackage{amsmath}
+\usepackage{comment}
+\usepackage{listings}
+
+\lstset{language=Kotlin}
+
+\newcommand{\betterphi}{\varphi}
+\newcommand{\myphi}{\betterphi}
+
+% Start document.
+%! Suppress = NonBreakingSpace
+\begin{document}
+
+    % Make title.
+    \title{A Very Simple \LaTeXe{} Template}
+    \author{
+            Henk-Jan\\Department of YUROP\\University of Cheese\\
+            Windmill City, 2198 AL, \underline{Tulipa}
+    }
+    \date{\today}
+    \maketitle
+
+    % Start writing amazing stuff now.
+    \begin{abstract}
+        This is the paper's abstract \ldots.
+    \end{abstract}
+
+    \begin{comment}
+        Yes, even comment environments get highlighted.
+    \end{comment}
+
+    \section{Introduction}\label{sec:introduction}
+    This is time for all good men to come to the aid of
+    their party!
+    For the end see~\ref{sec:conclusions}.
+    
+    \begin{lstlisting}[label=test]
+       println("Hello world!")
+    \end{lstlisting}
+
+    \paragraph*{Mathematics}
+    Please take a look at the value of $x \times
+    \frac{5}{\sqrt{3}}$ in the following equation:
+    \[
+       x \times \frac{5}{\sqrt{3}} = y \cdot \max\left{ 4, \alpha, 6 \right} +
+           \sqrt[1234]{5678}.
+    \]
+
+    \section{More work}\label{sec:moreWork}
+    A much longer \LaTeXe{} example was written by Henk-Jan~\cite{Gil:02}. But
+    we can also just do some more epic plugin showoffy stuff like
+    \begin{align}
+       \text{Stuff here is also highlighted, and also }
+       \sum_{i=0}^n \left( i \right)
+    \begin{align}
+
+    \section{Results}\label{sec:results}
+    In this section we describe the results. So basically $x$ but maybe
+    also $\hat{x}^{2y}\text{if $x > 0$ }$.
+
+    Also, some text styles:
+    \textbf{Bold}
+    \textit{Italic}
+    \overline{Overline}
+    \textsl{Slanted}
+    \textsc{SMALL CAPITALS}
+    \sout{Strikethrough}
+    \texttt{Typewriter}
+    \underline{Underline}
+
+    \section{Conclusions}\label{sec:conclusions}
+    We worked hard, and achieved very little. Or did we?
+
+    % Another extremely descriptive comment.
+    \bibliographystyle{abbrv}
+    \bibliography{main}
+
+    \begin{thebibliography}{9}
+        \bibitem{latexcompanion}
+        Michel Goossens, Frank Mittelbach, and Alexander Samarin.
+        \textit{The \LaTeX\ Companion}.
+        Addison-Wesley, Reading, Massachusetts, 1993.
+    \end{thebibliography}
+
+\end{document}
