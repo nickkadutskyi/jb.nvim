@@ -2883,7 +2883,7 @@
         }
       },
       "HTMLCode": null,
-      "InjectedLanguageFragment": null,
+      "InjectedLanguageFragment": "XML|InjectedLanguageFragment",
       "Tag": {
         "light": "LanguageDefaults|Markup|Tag",
         "dark": {
@@ -3761,7 +3761,7 @@
           "fg": "#56A8F5"
         }
       },
-      "InjectedLanguageFragment": null,
+      "InjectedLanguageFragment": "General|Code|InjectedLanguageFragment",
       "MatchedTag": null,
       "NamespacePrefix": null,
       "Prologue": null,
@@ -4638,14 +4638,16 @@
       "@tag.delimiter.vue": "HTML|Tag",
       "@tag.attribute.vue": "HTML|AttributeName",
       "@string.vue": "HTML|AttributeValue",
-      "@lsp.type.class.vue": "HTML|CustomTagName",
-      "@operator.vue": "HTML|AttributeValue"
+      "@operator.vue": "HTML|AttributeValue",
+      "@injected_language_fragment.vue": "HTML|InjectedLanguageFragment"
     },
     "Semantic.Vue": {
       "@lsp.type.variable.vue": "TypeScript|Identifiers|LocalVariable",
       "@lsp.type.parameter.vue": "JavaScript|Identifiers|Parameter",
       "@lsp.typemod.variable.defaultLibrary.vue": "TypeScript|Identifiers|GlobalVariable",
-      "@lsp.type.method.vue": "TypeScript|Object|Method"
+      "@lsp.type.method.vue": "TypeScript|Object|Method",
+      "@lsp.type.class.vue": "HTML|CustomTagName",
+      "@lsp.type.component.vue": "HTML|CustomTagName"
     },
     "Treesitter.XML": {
       "@character.xml": "XML|EntityReference",
