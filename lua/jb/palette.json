@@ -4998,7 +4998,8 @@
       "@variable.member.phpdoc": "PHP|PHPDoc|Property",
       "@variable.php": "PHP|Identifiers|Variable",
       "@variable.phpdoc": "PHP|PHPDoc|Parameter",
-      "@template_language.php": "LanguageDefaults|TemplateLanguage"
+      "@template_language.php": "LanguageDefaults|TemplateLanguage",
+      "@injected_language_fragment.php": "HTML|InjectedLanguageFragment"
     },
     "Treesitter.Python": {
       "@attribute.builtin.python": "Python|Decorator",

@@ -100,3 +100,6 @@
     "#[" @attribute.bracket
     "]"  @attribute.bracket)
  (#set! @attribute.bracket "priority" 110))
+
+((string_content) @injected_language_fragment
+  (#match? @injected_language_fragment "^[/#~].*[/#~][imsxADSUXu]*$"))
