@@ -45,6 +45,9 @@ public class SomeClass<T extends Runnable> { // some comment
       }
     };
     int[] l = new ArrayList<String>().toArray(new int[CONSTANT]);
+    try {} catch (Exception e) {
+      System.out.println(e.getMessage());
+    }
   }
 }
 enum AnEnum { CONST1, CONST2 }

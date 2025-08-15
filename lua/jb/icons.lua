@@ -320,6 +320,12 @@ M.files = {
             name = "Configuration",
             icon = "",
         },
+        ["java"] = {
+            name = "Java",
+            icon = "󰛊",
+            light = { color = "#D77432", cterm_color = "172" },
+            dark = { color = "#BD805C", cterm_color = "137" },
+        },
         ["js"] = {
             name = "Js",
             icon = "",
