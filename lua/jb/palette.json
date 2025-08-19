@@ -5578,6 +5578,26 @@
         "fg": "LanguageDefaults|InlineHints|TextWithoutBackground"
       }
     },
+    "Plugin.dmtrKovalenko/fff.nvim": {
+      "FFFGitStaged": "VCS|FileStatusColors|Ignored",
+      "FFFGitModified": "VCS|FileStatusColors|Modified",
+      "FFFGitDeleted": "VCS|FileStatusColors|Deleted",
+      "FFFGitRenamed": "VCS|FileStatusColors|Renamed",
+      "FFFGitUntracked": "VCS|FileStatusColors|Unknown",
+      "FFFGitIgnored": "VCS|FileStatusColors|IgnoredIgnorePlugin",
+      "FFFGitSignStaged": "VCS|FileStatusColors|Ignored",
+      "FFFGitSignModified": "VCS|FileStatusColors|Modified",
+      "FFFGitSignDeleted": "VCS|FileStatusColors|Deleted",
+      "FFFGitSignRenamed": "VCS|FileStatusColors|Renamed",
+      "FFFGitSignUntracked": "VCS|FileStatusColors|Unknown",
+      "FFFGitSignIgnored": "VCS|FileStatusColors|IgnoredIgnorePlugin",
+      "FFFGitSignStagedSelected": "VCS|FileStatusColors|Ignored",
+      "FFFGitSignModifiedSelected": "VCS|FileStatusColors|Modified",
+      "FFFGitSignDeletedSelected": "VCS|FileStatusColors|Deleted",
+      "FFFGitSignRenamedSelected": "VCS|FileStatusColors|Renamed",
+      "FFFGitSignUntrackedSelected": "VCS|FileStatusColors|Unknown",
+      "FFFGitSignIgnoredSelected": "VCS|FileStatusColors|IgnoredIgnorePlugin"
+    },
     "Plugin.ibhagwan/fzf-lua": {
       "FzfLuaNormal": {
         "fg": "Appearance|Window|Title.fg",
