@@ -4985,21 +4985,34 @@
       "@lsp.mod.builtin.nix": null
     },
     "Treesitter.PHP": {
-      "@attribute.phpdoc": "LanguageDefaults|Comments|DocComment|Tag",
-      "@constant.builtin.php": "PHP|Identifiers|Constant",
+      "@constant.builtin.php": "PHP|Identifiers|Default",
       "@constant.only.php": "PHP|Identifiers|Constant",
       "@constant.php": "PHP|Identifiers|Constant",
-      "@keyword.phpdoc": null,
       "@tag.php": "PHP|PHPCode|Tags",
-      "@type.template.phpdoc": "PHP|PHPDoc|TemplateType",
       "@variable.parameter.named.php": "PHP|NamedArguments",
       "@variable.parameter.php": "PHP|FunctionsAndMethods|Parameter",
-      "@variable.parameter.phpdoc": "PHP|PHPDoc|Parameter",
-      "@variable.member.phpdoc": "PHP|PHPDoc|Property",
       "@variable.php": "PHP|Identifiers|Variable",
-      "@variable.phpdoc": "PHP|PHPDoc|Parameter",
       "@template_language.php": "LanguageDefaults|TemplateLanguage",
       "@injected_language_fragment.php": "HTML|InjectedLanguageFragment"
+    },
+    "Treesitter.PHP_only": {
+      "@constant.builtin.php_only": "PHP|Identifiers|Default",
+      "@constant.only.php_only": "PHP|Identifiers|Constant",
+      "@constant.php_only": "PHP|Identifiers|Constant",
+      "@tag.php_only": "PHP|PHPCode|Tags",
+      "@variable.parameter.named.php_only": "PHP|NamedArguments",
+      "@variable.parameter.php_only": "PHP|FunctionsAndMethods|Parameter",
+      "@variable.php_only": "PHP|Identifiers|Variable",
+      "@template_language.php_only": "LanguageDefaults|TemplateLanguage",
+      "@injected_language_fragment.php_only": "HTML|InjectedLanguageFragment"
+    },
+    "Treesitter.PHPDoc": {
+      "@attribute.phpdoc": "LanguageDefaults|Comments|DocComment|Tag",
+      "@keyword.phpdoc": null,
+      "@type.template.phpdoc": "PHP|PHPDoc|TemplateType",
+      "@variable.parameter.phpdoc": "PHP|PHPDoc|Parameter",
+      "@variable.member.phpdoc": "PHP|PHPDoc|Property",
+      "@variable.phpdoc": "PHP|PHPDoc|Parameter"
     },
     "Treesitter.Python": {
       "@attribute.builtin.python": "Python|Decorator",
