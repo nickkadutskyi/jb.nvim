@@ -3287,6 +3287,7 @@
         },
         "VariableVariable": null
       },
+      "Keywords": "LanguageDefaults|Keyword",
       "NamedArguments": {
         "light": {
           "fg": "#4A86E8"
@@ -4985,7 +4986,7 @@
       "@lsp.mod.builtin.nix": null
     },
     "Treesitter.PHP": {
-      "@constant.builtin.php": "PHP|Identifiers|Default",
+      "@constant.builtin.php": "PHP|Keywords",
       "@constant.only.php": "PHP|Identifiers|Constant",
       "@constant.php": "PHP|Identifiers|Constant",
       "@tag.php": "PHP|PHPCode|Tags",
