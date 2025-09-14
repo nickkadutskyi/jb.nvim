@@ -4545,7 +4545,8 @@
       "@variable.javascript": "JavaScript|Identifiers|LocalVariable",
       "@variable.parameter.javascript": "JavaScript|Identifiers|Parameter",
       "@keyword.jsdoc": "JavaScript|Comments|JSDoc|Tag",
-      "@type.jsdoc": "JavaScript|Comments|JSDoc|Type"
+      "@type.jsdoc": "JavaScript|Comments|JSDoc|Type",
+      "@variable.builtin.javascript": "JavaScript|Identifiers|GlobalVariable"
     },
     "Semantic.JavaScript": {
       "@lsp.type.variable.javascript": null,
