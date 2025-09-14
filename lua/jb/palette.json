@@ -2512,10 +2512,10 @@
     },
     "Blade": {
       "Background": null,
-      "Comment": null,
-      "Directive": null,
+      "Comment": "LanguageDefaults|Comments|LineComment",
+      "Directive": "LanguageDefaults|Keyword",
       "IllegalCharacter": null,
-      "TextBlockDelimiter": null
+      "TextBlockDelimiter": "LanguageDefaults|BracesAndOperators|Braces"
     },
     "Cpp": {
       "BadCharacter": null,
@@ -3233,6 +3233,15 @@
       "VariablesAndAttributes": null
     },
     "PHP": {
+      "Attributes": "LanguageDefaults|Metadata",
+      "BracesAndOperators": {
+        "Braces": "LanguageDefaults|BracesAndOperators|Braces",
+        "Brackets": "LanguageDefaults|BracesAndOperators|Brackets",
+        "Comma": "LanguageDefaults|BracesAndOperators|Comma",
+        "Operators": "LanguageDefaults|BracesAndOperators|OperationSign",
+        "Parentheses": "LanguageDefaults|BracesAndOperators|Parentheses",
+        "Semicolon": "LanguageDefaults|BracesAndOperators|Semicolon"
+      },
       "ClassesAndProperties": {
         "InstanceProperty": "LanguageDefaults|Classes|InstanceField",
         "Interface": null,
@@ -4411,7 +4420,11 @@
       "@property.bibtex": "BibTeX|Key",
       "@variable.parameter.bibtex": "BibTeX|Key"
     },
-    "Treesitter.Blade": {},
+    "Treesitter.Blade": {
+      "@tag.blade": "Blade|Directive",
+      "@tag.delimiter.blade": "Blade|TextBlockDelimiter",
+      "@comment.blade": "Blade|Comment"
+    },
     "Treesitter.Cpp": {
       "@function.macro.c": "Cpp|MacroName",
       "@function.macro.cpp": "Cpp|MacroName",
@@ -5005,7 +5018,8 @@
       "@variable.parameter.php_only": "PHP|FunctionsAndMethods|Parameter",
       "@variable.php_only": "PHP|Identifiers|Variable",
       "@template_language.php_only": "LanguageDefaults|TemplateLanguage",
-      "@injected_language_fragment.php_only": "HTML|InjectedLanguageFragment"
+      "@injected_language_fragment.php_only": "HTML|InjectedLanguageFragment",
+      "@keyword.conditional.php_only": "PHP|BracesAndOperators|Operators"
     },
     "Treesitter.PHPDoc": {
       "@attribute.phpdoc": "LanguageDefaults|Comments|DocComment|Tag",
