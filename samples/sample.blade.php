@@ -12,3 +12,8 @@
         I don't have any records!
     @endif
 @endsection
+
+<script>
+  const hello = {{ $app_name }};
+</script>
+
