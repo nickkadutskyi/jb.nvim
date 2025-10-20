@@ -424,7 +424,7 @@ function M:update_status()
     local result = table.concat(result_parts, config.separator)
 
     -- return is_in_cwd(path) and (get_project_name() .. self.options.nav_bar_opts.separator) or ""
-    return " " .. result .. (config.separator or "")
+    return result .. (config.separator or "")
 end
 
 -- Autocmds
