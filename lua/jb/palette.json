@@ -3875,6 +3875,18 @@
           }
         }
       }
+    },
+    "iAWriter": {
+      "Header": {
+        "light": {
+          "fg": "#1a1a1a",
+          "bold": true
+        },
+        "dark": {
+          "fg": "#cccccc",
+          "bold": true
+        }
+      }
     }
   },
   "highlights": {
@@ -5073,6 +5085,75 @@
       "@unsafe.rust": "Rust|UnsafeCode",
       "@variable.mutable_static.rust": "Rust|Variables|MutableStatic",
       "@label.rust": null
+    },
+    "Plugin.MeanderingProgrammer/render-markdown.nvim": {
+      "RenderMarkdownH1": "iAWriter|Header",
+      "RenderMarkdownH2": "iAWriter|Header",
+      "RenderMarkdownH3": "iAWriter|Header",
+      "RenderMarkdownH4": "iAWriter|Header",
+      "RenderMarkdownH5": "iAWriter|Header",
+      "RenderMarkdownH6": "iAWriter|Header",
+      "RenderMarkdownH1Bg": {
+        "fg": "iAWriter|Header",
+        "bg": "General|Text|DefaultTextBg",
+        "bold": true,
+        "italic": false
+      },
+      "RenderMarkdownH2Bg": {
+        "fg": "iAWriter|Header",
+        "bg": "General|Text|DefaultTextBg",
+        "bold": true
+      },
+      "RenderMarkdownH3Bg": {
+        "fg": "iAWriter|Header",
+        "bg": "General|Text|DefaultTextBg",
+        "bold": true
+      },
+      "RenderMarkdownH4Bg": {
+        "fg": "iAWriter|Header",
+        "bg": "General|Text|DefaultTextBg",
+        "bold": true
+      },
+      "RenderMarkdownH5Bg": {
+        "fg": "iAWriter|Header",
+        "bg": "General|Text|DefaultTextBg"
+      },
+      "RenderMarkdownH6Bg": {
+        "fg": "iAWriter|Header",
+        "bg": "General|Text|DefaultTextBg"
+      },
+      "RenderMarkdownCode": "",
+      "RenderMarkdownCodeInfo": "",
+      "RenderMarkdownCodeBorder": "",
+      "RenderMarkdownCodeFallback": "",
+      "RenderMarkdownCodeInline": "",
+      "RenderMarkdownQuote": "",
+      "RenderMarkdownQuote1": "",
+      "RenderMarkdownQuote2": "",
+      "RenderMarkdownQuote3": "",
+      "RenderMarkdownQuote4": "",
+      "RenderMarkdownQuote5": "",
+      "RenderMarkdownQuote6": "",
+      "RenderMarkdownInlineHighlight": "",
+      "RenderMarkdownBullet": "",
+      "RenderMarkdownDash": "",
+      "RenderMarkdownSign": "",
+      "RenderMarkdownMath": "",
+      "RenderMarkdownIndent": "",
+      "RenderMarkdownHtmlComment": "",
+      "RenderMarkdownLink": "",
+      "RenderMarkdownWikiLink": "",
+      "RenderMarkdownUnchecked": "",
+      "RenderMarkdownChecked": "",
+      "RenderMarkdownTodo": "",
+      "RenderMarkdownTableHead": "",
+      "RenderMarkdownTableRow": "",
+      "RenderMarkdownTableFill": "",
+      "RenderMarkdownSuccess": "",
+      "RenderMarkdownInfo": "",
+      "RenderMarkdownHint": "",
+      "RenderMarkdownWarn": "",
+      "RenderMarkdownError": ""
     },
     "Plugin.petertriho/nvim-scrollbar": {
       "ScrollbarHandle": "General|Editor|VerticalScrollbar|Thumb",
