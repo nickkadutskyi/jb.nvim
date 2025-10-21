@@ -5548,7 +5548,9 @@
         "strikethrough": true
       },
       "BlinkCmpLabelMatch": "Custom|Completion|Match",
+      "BlinkCmpDoc": "Pmenu",
       "BlinkCmpDocBorder": "BlinkCmpMenuBorder",
+      "BlinkCmpDocSeparator": "DialogFloatBorderBetween",
       "BlinkCmpSignatureHelpBorder": "BlinkCmpMenuBorder"
     },
     "Plugin.sindrets/diffview.nvim": {
