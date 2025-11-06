@@ -5769,7 +5769,9 @@
         "fg": "General|Text|DefaultText"
       },
       "FzfLuaTabTitle": "General|Text|DefaultText",
-      "FzfLuaTabMarker": "",
+      "FzfLuaTabMarker": {
+        "fg": "Appearance|Window|CheckboxSelected.bg"
+      },
       "FzfLuaDirIcon": "",
       "FzfLuaDirPart": "LanguageDefaults|Comments|LineComment",
       "FzfLuaFilePart": {
@@ -5807,7 +5809,9 @@
       "FzfLuaFzfPointer": {
         "fg": "Appearance|Window|BackgroundEditArea.bg"
       },
-      "FzfLuaFzfMarker": null,
+      "FzfLuaFzfMarker": {
+        "fg": "Appearance|Window|CheckboxSelected.bg"
+      },
       "FzfLuaFzfSpinner": "Appearance|Window|SubtleText",
       "FzfLuaFzfPrompt": "Appearance|Search|PromptIcon",
       "FzfLuaFzfQuery": "General|Text|DefaultText"
