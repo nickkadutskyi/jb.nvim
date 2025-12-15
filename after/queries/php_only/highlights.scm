@@ -18,7 +18,7 @@
 
 [
   (php_tag)
-  "?>"
+  (php_end_tag)
  ] @tag (#set! priority 101)
 
 ; Builtin functions

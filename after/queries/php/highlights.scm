@@ -10,7 +10,7 @@
 ] @punctuation.bracket
 [
   (php_tag)
-  "?>"
+  (php_end_tag)
 ] @tag
 
 ; Adds builtin functions to the function scope
@@ -88,7 +88,7 @@
 
 (text_interpolation (php_tag) @template_language)
 
-[ "?>" ] @template_language
+[ (php_end_tag) ] @template_language
 
 ; attribute name
 ((attribute
