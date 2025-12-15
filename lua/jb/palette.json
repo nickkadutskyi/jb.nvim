@@ -5708,7 +5708,25 @@
       "FFFGitSignDeletedSelected": "VCS|FileStatusColors|Deleted",
       "FFFGitSignRenamedSelected": "VCS|FileStatusColors|Renamed",
       "FFFGitSignUntrackedSelected": "VCS|FileStatusColors|Unknown",
-      "FFFGitSignIgnoredSelected": "VCS|FileStatusColors|IgnoredIgnorePlugin"
+      "FFFGitSignIgnoredSelected": "VCS|FileStatusColors|IgnoredIgnorePlugin",
+      "CustomFFFGitStaged": "VCS|FileStatusColors|Ignored",
+      "CustomFFFGitModified": "VCS|FileStatusColors|Modified",
+      "CustomFFFGitDeleted": "VCS|FileStatusColors|Deleted",
+      "CustomFFFGitRenamed": "VCS|FileStatusColors|Renamed",
+      "CustomFFFGitUntracked": "VCS|FileStatusColors|Unknown",
+      "CustomFFFGitIgnored": "VCS|FileStatusColors|IgnoredIgnorePlugin",
+      "CustomFFFGitSignStaged": "VCS|FileStatusColors|Ignored",
+      "CustomFFFGitSignModified": "VCS|FileStatusColors|Modified",
+      "CustomFFFGitSignDeleted": "VCS|FileStatusColors|Deleted",
+      "CustomFFFGitSignRenamed": "VCS|FileStatusColors|Renamed",
+      "CustomFFFGitSignUntracked": "VCS|FileStatusColors|Unknown",
+      "CustomFFFGitSignIgnored": "VCS|FileStatusColors|IgnoredIgnorePlugin",
+      "CustomFFFGitSignStagedSelected": "VCS|FileStatusColors|Ignored",
+      "CustomFFFGitSignModifiedSelected": "VCS|FileStatusColors|Modified",
+      "CustomFFFGitSignDeletedSelected": "VCS|FileStatusColors|Deleted",
+      "CustomFFFGitSignRenamedSelected": "VCS|FileStatusColors|Renamed",
+      "CustomFFFGitSignUntrackedSelected": "VCS|FileStatusColors|Unknown",
+      "CustomFFFGitSignIgnoredSelected": "VCS|FileStatusColors|IgnoredIgnorePlugin"
     },
     "Plugin.ibhagwan/fzf-lua": {
       "FzfLuaNormal": {
