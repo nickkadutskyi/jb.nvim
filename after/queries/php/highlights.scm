@@ -10,7 +10,8 @@
 ] @punctuation.bracket
 [
   (php_tag)
-  (php_end_tag)
+  ; TODO: find a way to add this only if nvim-treesitter is from `main` branch
+  ; (php_end_tag)
 ] @tag
 
 ; Adds builtin functions to the function scope
@@ -88,7 +89,10 @@
 
 (text_interpolation (php_tag) @template_language)
 
-[ (php_end_tag) ] @template_language
+; [
+  ; TODO: find a way to add this only if nvim-treesitter is from `main` branch
+  ; (php_end_tag)
+; ] @template_language
 
 ; attribute name
 ((attribute

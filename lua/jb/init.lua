@@ -61,6 +61,11 @@ function M.load(opts)
         -- Remove explorer highlights if snacks.nvim is not enabled
         highlights["Plugin.folke/snacks.nvim.explorer"] = nil
     end
+    -- Special rule to apply telescope.nvim configs if enabled
+    if not opts.telescope.enabled then
+        -- Remove telescope highlights if telescope.nvim is not enabled
+        highlights["Plugin.nvim-telescope/telescope.nvim"] = nil
+    end
 
     for _, groups in pairs(highlights) do
         for group, attrs in pairs(groups) do

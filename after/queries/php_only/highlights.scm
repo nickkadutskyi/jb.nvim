@@ -18,7 +18,8 @@
 
 [
   (php_tag)
-  (php_end_tag)
+  ; TODO: find a way to add this only if nvim-treesitter is from `main` branch
+  ; (php_end_tag)
  ] @tag (#set! priority 101)
 
 ; Builtin functions

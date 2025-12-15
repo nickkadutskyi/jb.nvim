@@ -176,6 +176,10 @@ M.defaults = {
             enabled = true,
         },
     },
+    telescope = {
+        -- Enable telescope.nvim styling
+        enabled = true,
+    },
     -- Enable this to remove background from Normal and NormalNC
     transparent = false,
 }
