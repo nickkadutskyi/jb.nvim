@@ -10,9 +10,16 @@
 ] @punctuation.bracket
 [
   (php_tag)
-  ; TODO: find a way to add this only if nvim-treesitter is from `main` branch
+  ; master branch doesn't have php_end_tag
   ; (php_end_tag)
 ] @tag
+
+; Temporary fix for PHP closing tag highlighting to support main and master branches
+; because master doesn't have php_end_tag
+(
+  (_) @end_tag
+  (#eq? @end_tag "?>")
+) @tag
 
 ; Adds builtin functions to the function scope
 (function_call_expression
@@ -89,10 +96,12 @@
 
 (text_interpolation (php_tag) @template_language)
 
-; [
-  ; TODO: find a way to add this only if nvim-treesitter is from `main` branch
+[
   ; (php_end_tag)
-; ] @template_language
+  ; Temporary fix for PHP closing tag highlighting to support main and master branches
+  ; because master doesn't have php_end_tag
+  (_) @end_tag (#eq? @end_tag "?>")
+] @template_language
 
 ; attribute name
 ((attribute
