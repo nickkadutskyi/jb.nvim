@@ -5691,6 +5691,13 @@
       }
     },
     "Plugin.dmtrKovalenko/fff.nvim": {
+      "FFFSelected": {
+        "fg": "Appearance|Window|CheckboxSelected.bg"
+      },
+      "FFFSelectedActive": {
+        "fg": "Appearance|Window|CheckboxSelected.bg",
+        "bg": "Appearance|Window|RowSelected.bg"
+      },
       "FFFGitStaged": "VCS|FileStatusColors|Ignored",
       "FFFGitModified": "VCS|FileStatusColors|Modified",
       "FFFGitDeleted": "VCS|FileStatusColors|Deleted",
@@ -5709,6 +5716,13 @@
       "FFFGitSignRenamedSelected": "VCS|FileStatusColors|Renamed",
       "FFFGitSignUntrackedSelected": "VCS|FileStatusColors|Unknown",
       "FFFGitSignIgnoredSelected": "VCS|FileStatusColors|IgnoredIgnorePlugin",
+      "CustomFFFSelected": {
+        "fg": "Appearance|Window|CheckboxSelected.bg"
+      },
+      "CustomFFFSelectedActive": {
+        "fg": "Appearance|Window|CheckboxSelected.bg",
+        "bg": "Appearance|Window|RowSelected.bg"
+      },
       "CustomFFFGitStaged": "VCS|FileStatusColors|Ignored",
       "CustomFFFGitModified": "VCS|FileStatusColors|Modified",
       "CustomFFFGitDeleted": "VCS|FileStatusColors|Deleted",
