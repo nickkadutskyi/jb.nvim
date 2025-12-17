@@ -5691,6 +5691,14 @@
       }
     },
     "Plugin.dmtrKovalenko/fff.nvim": {
+      "CustomFFFBlank": {
+        "fg": "Appearance|Window|BackgroundEditArea.bg",
+        "bg": "Appearance|Window|BackgroundEditArea.bg"
+      },
+      "CustomFFFBlankSelected": {
+        "fg": "Appearance|Window|RowSelected.bg",
+        "bg": "Appearance|Window|RowSelected.bg"
+      },
       "FFFSelected": {
         "fg": "Appearance|Window|CheckboxSelected.bg"
       },
@@ -5704,43 +5712,18 @@
       "FFFGitRenamed": "VCS|FileStatusColors|Renamed",
       "FFFGitUntracked": "VCS|FileStatusColors|Unknown",
       "FFFGitIgnored": "VCS|FileStatusColors|IgnoredIgnorePlugin",
-      "FFFGitSignStaged": "VCS|FileStatusColors|Ignored",
-      "FFFGitSignModified": "VCS|FileStatusColors|Modified",
-      "FFFGitSignDeleted": "VCS|FileStatusColors|Deleted",
-      "FFFGitSignRenamed": "VCS|FileStatusColors|Renamed",
-      "FFFGitSignUntracked": "VCS|FileStatusColors|Unknown",
-      "FFFGitSignIgnored": "VCS|FileStatusColors|IgnoredIgnorePlugin",
-      "FFFGitSignStagedSelected": "VCS|FileStatusColors|Ignored",
-      "FFFGitSignModifiedSelected": "VCS|FileStatusColors|Modified",
-      "FFFGitSignDeletedSelected": "VCS|FileStatusColors|Deleted",
-      "FFFGitSignRenamedSelected": "VCS|FileStatusColors|Renamed",
-      "FFFGitSignUntrackedSelected": "VCS|FileStatusColors|Unknown",
-      "FFFGitSignIgnoredSelected": "VCS|FileStatusColors|IgnoredIgnorePlugin",
-      "CustomFFFSelected": {
-        "fg": "Appearance|Window|CheckboxSelected.bg"
-      },
-      "CustomFFFSelectedActive": {
-        "fg": "Appearance|Window|CheckboxSelected.bg",
-        "bg": "Appearance|Window|RowSelected.bg"
-      },
-      "CustomFFFGitStaged": "VCS|FileStatusColors|Ignored",
-      "CustomFFFGitModified": "VCS|FileStatusColors|Modified",
-      "CustomFFFGitDeleted": "VCS|FileStatusColors|Deleted",
-      "CustomFFFGitRenamed": "VCS|FileStatusColors|Renamed",
-      "CustomFFFGitUntracked": "VCS|FileStatusColors|Unknown",
-      "CustomFFFGitIgnored": "VCS|FileStatusColors|IgnoredIgnorePlugin",
-      "CustomFFFGitSignStaged": "VCS|FileStatusColors|Ignored",
-      "CustomFFFGitSignModified": "VCS|FileStatusColors|Modified",
-      "CustomFFFGitSignDeleted": "VCS|FileStatusColors|Deleted",
-      "CustomFFFGitSignRenamed": "VCS|FileStatusColors|Renamed",
-      "CustomFFFGitSignUntracked": "VCS|FileStatusColors|Unknown",
-      "CustomFFFGitSignIgnored": "VCS|FileStatusColors|IgnoredIgnorePlugin",
-      "CustomFFFGitSignStagedSelected": "VCS|FileStatusColors|Ignored",
-      "CustomFFFGitSignModifiedSelected": "VCS|FileStatusColors|Modified",
-      "CustomFFFGitSignDeletedSelected": "VCS|FileStatusColors|Deleted",
-      "CustomFFFGitSignRenamedSelected": "VCS|FileStatusColors|Renamed",
-      "CustomFFFGitSignUntrackedSelected": "VCS|FileStatusColors|Unknown",
-      "CustomFFFGitSignIgnoredSelected": "VCS|FileStatusColors|IgnoredIgnorePlugin"
+      "FFFGitSignStaged": "CustomFFFBlank",
+      "FFFGitSignModified": "CustomFFFBlank",
+      "FFFGitSignDeleted": "CustomFFFBlank",
+      "FFFGitSignRenamed": "CustomFFFBlank",
+      "FFFGitSignUntracked": "CustomFFFBlank",
+      "FFFGitSignIgnored": "CustomFFFBlank",
+      "FFFGitSignStagedSelected": "CustomFFFBlankSelected",
+      "FFFGitSignModifiedSelected": "CustomFFFBlankSelected",
+      "FFFGitSignDeletedSelected": "CustomFFFBlankSelected",
+      "FFFGitSignRenamedSelected": "CustomFFFBlankSelected",
+      "FFFGitSignUntrackedSelected": "CustomFFFBlankSelected",
+      "FFFGitSignIgnoredSelected": "CustomFFFBlankSelected"
     },
     "Plugin.ibhagwan/fzf-lua": {
       "FzfLuaNormal": {
