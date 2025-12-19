@@ -22,3 +22,15 @@
   ]
   (#set! priority 102)
 )
+
+; WordPress Pattern File Header Keys
+; See: https://developer.wordpress.org/themes/patterns/registering-patterns/#registering-patterns-in-theme
+((text) @attribute
+  (#match? @attribute "^(Title|Slug|Categories|Description|Viewport Width|Inserter|Keywords|Block Types|Post Types|Template Types):")
+  (#offset-lua-match! @attribute "^.+:"))
+
+; WordPress Plugin Header Keys
+; See: https://developer.wordpress.org/plugins/plugin-basics/header-requirements/
+((text) @attribute
+  (#match? @attribute "^(Plugin Name|Plugin URI|Description|Version|Requires at least|Requires PHP|Author|Author URI|License|License URI|Text Domain|Domain Path|Network|Update URI|Requires Plugins):")
+  (#offset-lua-match! @attribute "^.+:"))
