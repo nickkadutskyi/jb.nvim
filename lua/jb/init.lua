@@ -1,6 +1,32 @@
 local config = require("jb.config")
 local utils = require("jb.utils")
 
+-- Register custom tree-sitter directive for pattern-based offset highlighting
+-- This allows highlighting a substring of a node based on a Lua pattern match
+vim.treesitter.query.add_directive("offset-lua-match!", function(match, _, bufnr, pred, metadata)
+    local capture_id = pred[2]
+    local pattern = pred[3]
+    local node = match[capture_id]
+    if not node then
+        return
+    end
+
+    local actual_node = node[1] or node
+    local node_text = vim.treesitter.get_node_text(actual_node, bufnr)
+    local start_row, start_col = actual_node:start()
+
+    local s, e = node_text:find(pattern)
+    if s then
+        metadata[capture_id] = metadata[capture_id] or {}
+        metadata[capture_id].range = {
+            start_row,
+            start_col + s - 1,
+            start_row,
+            start_col + e,
+        }
+    end
+end, { force = true, all = true })
+
 local opts_per_hl = {
     Normal = { transparent = true },
     NormalNC = { transparent = true },

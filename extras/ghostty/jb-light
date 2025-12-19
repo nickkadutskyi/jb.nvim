@@ -1,28 +1,30 @@
 foreground = 000000
 background = FFFFFF
 
-selection-background = A6D2FF
+selection-background = EDF3FF
 selection-foreground = 000000
 
 cursor-color = 000000
+cursor-style = block
 cursor-text = FFFFFF
 
 palette = 0=#000000
-palette = 1=#CE0505
-palette = 2=#067D17
-palette = 3=#B28C00
-palette = 4=#063FDB
-palette = 5=#B309B3
-palette = 6=#028E8E
-palette = 7=#929292
-palette = 8=#656565
-palette = 9=#FF1616
-palette = 10=#16B42C
-palette = 11=#ECC32C
-palette = 12=#2D61F0
-palette = 13=#E617E6
-palette = 14=#15C1C1
-palette = 15=#C9C9C9
+palette = 1=#C93645
+palette = 2=#357D1F
+palette = 3=#B2A400
+palette = 4=#225CD6
+palette = 5=#6E32E5
+palette = 6=#007A80
+palette = 7=#BEC0C5
+
+palette = 8=#6C707E
+palette = 9=#FF5462
+palette = 10=#3DCC3D
+palette = 11=#D4BB00
+palette = 12=#009DFF
+palette = 13=#D659FF
+palette = 14=#31C4B3
+palette = 15=#D2D4D9
 
 # Seems like this is not working via themes
 # macos-icon = custom-style
