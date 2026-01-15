@@ -27,7 +27,7 @@
 ; See: https://developer.wordpress.org/themes/patterns/registering-patterns/#registering-patterns-in-theme
 ((text) @attribute
   (#match? @attribute "^(Title|Slug|Categories|Description|Viewport Width|Inserter|Keywords|Block Types|Post Types|Template Types):")
-  (#offset-lua-match! @attribute "^.+:"))
+  (#offset-lua-match! @attribute "^[^:]+:"))
 
 ; WordPress Plugin Header Keys
 ; See: https://developer.wordpress.org/plugins/plugin-basics/header-requirements/
