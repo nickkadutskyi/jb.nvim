@@ -16,10 +16,10 @@
 
 ; Temporary fix for PHP closing tag highlighting to support main and master branches
 ; because master doesn't have php_end_tag
-(
-  (_) @end_tag
-  (#eq? @end_tag "?>")
-) @tag
+; (
+;   (_) @end_tag
+;   (#eq? @end_tag "?>")
+; ) @tag
 
 ; Adds builtin functions to the function scope
 (function_call_expression
@@ -96,12 +96,12 @@
 
 (text_interpolation (php_tag) @template_language)
 
-[
-  ; (php_end_tag)
-  ; Temporary fix for PHP closing tag highlighting to support main and master branches
-  ; because master doesn't have php_end_tag
-  (_) @end_tag (#eq? @end_tag "?>")
-] @template_language
+; [
+;   ; (php_end_tag)
+;   ; Temporary fix for PHP closing tag highlighting to support main and master branches
+;   ; because master doesn't have php_end_tag
+;   (_) @end_tag (#eq? @end_tag "?>")
+; ] @template_language
 
 ; attribute name
 ((attribute
