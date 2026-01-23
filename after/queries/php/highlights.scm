@@ -14,6 +14,8 @@
   ; (php_end_tag)
 ] @tag
 
+; NOTE: this creates "Index out of bounds" issue in long PHP files
+; so currently commented this out
 ; Temporary fix for PHP closing tag highlighting to support main and master branches
 ; because master doesn't have php_end_tag
 ; (
