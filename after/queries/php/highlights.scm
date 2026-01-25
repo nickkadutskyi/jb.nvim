@@ -22,6 +22,12 @@
 ;   (_) @end_tag
 ;   (#eq? @end_tag "?>")
 ; ) @tag
+; Working version without causing "Index out of bounds" issue
+(text_interpolation
+   ((_) @tag @template_language
+     (#lua-match? @tag "%?>")
+     (#offset! @tag 0 0 0 1)
+   ))
 
 ; Adds builtin functions to the function scope
 (function_call_expression
