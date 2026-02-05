@@ -73,6 +73,11 @@ end
 function M.load(opts)
     opts = require("jb.config").extend(opts)
 
+    -- Enforce float border style if set in config
+    if opts.enforce_float_style and #opts.enforce_float_style > 0 then
+        require("jb.borders").enforce_float_style(opts.enforce_float_style)
+    end
+
     local profile = vim.o.background -- 'dark' or 'light'
     local palette = utils.read_palette("/lua/jb/palette.json")
     local colors = palette.colors

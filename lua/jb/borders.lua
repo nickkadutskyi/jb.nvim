@@ -72,4 +72,34 @@ M.borders = {
     },
 }
 
+---@param conf EnforceFloatStyle[]
+M.enforce_float_style = function(conf)
+    if not conf then
+        return
+    end
+
+    if conf.style ~= nil then
+        conf = { conf }
+    end
+
+    local orig_open_win = vim.api.nvim_open_win
+
+    --- @param buffer integer Buffer to display, or 0 for current buffer
+    --- @param enter boolean Enter the window (make it the current window)
+    --- @param config vim.api.keyset.win_config Map defining the window configuration. Keys:
+    vim.api.nvim_open_win = function(bufnr, enter, config)
+        for _, rule in ipairs(conf) do
+            local condition = rule.condition
+            if not condition or condition(bufnr, enter, config) then
+                if rule.style then
+                    config = vim.tbl_deep_extend("force", config, rule.style)
+                end
+                break
+            end
+        end
+
+        return orig_open_win(bufnr, enter, config)
+    end
+end
+
 return M

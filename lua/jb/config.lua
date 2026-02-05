@@ -1,6 +1,12 @@
 local M = {}
 
+---@alias EnforceFloatStyle {
+---  style: vim.api.keyset.win_config,
+---  condition?: fun(bufnr: integer, enter: boolean, config: vim.api.keyset.win_config): boolean
+---}
+
 ---@class jb.Config
+---@field enforce_float_style? EnforceFloatStyle[] Configuration to enforce float border styles
 M.defaults = {
     -- Disable bold or italic for all highlights
     disable_hl_args = {
@@ -19,6 +25,7 @@ M.defaults = {
     },
     -- Enable this to remove background from Normal and NormalNC
     transparent = false,
+    enforce_float_style = nil,
 }
 
 ---@type jb.Config

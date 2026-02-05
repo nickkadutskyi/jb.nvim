@@ -3958,16 +3958,16 @@
         "nolink": true
       },
       "NormalFloat": {
-        "fg": "General|Text|DefaultText",
-        "bg": "Appearance|Notifications|Background"
+        "fg": "Appearance|Window|Title.fg",
+        "bg": "Appearance|Window|BackgroundEditArea.bg"
       },
       "FloatBorder": {
         "bg": "Appearance|Notifications|Background",
         "fg": "Appearance|Window|Border"
       },
       "FloatTitle": {
-        "fg": "Appearance|Window|Title",
-        "bg": "Appearance|Window|Border",
+        "fg": "Appearance|Window|SectionTitle.fg",
+        "bg": "Appearance|Search|Header.bg",
         "bold": true
       },
       "FloatFooter": "Appearance|Window|Title",
@@ -4741,7 +4741,10 @@
       "LazyNoCond": {
         "fg": "Appearance|Window|CheckboxDisabled.fg"
       },
-      "LazyNormal": "Custom|Settings|Plugins|EditableArea",
+      "LazyNormal": {
+        "fg": "Appearance|Window|Title.fg",
+        "bg": "Appearance|Window|BackgroundEditArea.bg"
+      },
       "LazyProgressDone": null,
       "LazyProgressTodo": null,
       "LazyProp": "Custom|Settings|Plugins|AdditionalInfo|PropertyName",
