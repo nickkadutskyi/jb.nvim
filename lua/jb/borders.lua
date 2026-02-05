@@ -88,17 +88,25 @@ M.enforce_float_style = function(conf)
     --- @param enter boolean Enter the window (make it the current window)
     --- @param config vim.api.keyset.win_config Map defining the window configuration. Keys:
     vim.api.nvim_open_win = function(bufnr, enter, config)
+        local run_after = {}
         for _, rule in ipairs(conf) do
             local condition = rule.condition
             if not condition or condition(bufnr, enter, config) then
                 if rule.style then
                     config = vim.tbl_deep_extend("force", config, rule.style)
                 end
+                if rule.after then
+                    table.insert(run_after, rule.after)
+                end
                 break
             end
         end
 
-        return orig_open_win(bufnr, enter, config)
+        local win_id = orig_open_win(bufnr, enter, config)
+        for _, after in ipairs(run_after) do
+            after(win_id, bufnr, enter, config)
+        end
+        return win_id
     end
 end
 

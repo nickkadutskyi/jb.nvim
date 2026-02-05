@@ -1,9 +1,10 @@
 local M = {}
 
 ---@alias EnforceFloatStyle {
----  style: vim.api.keyset.win_config,
----  condition?: fun(bufnr: integer, enter: boolean, config: vim.api.keyset.win_config): boolean
----}
+---   style: vim.api.keyset.win_config,
+---   condition: nil|fun(bufnr: integer, enter: boolean, config: vim.api.keyset.win_config): (boolean),
+---   after: nil|fun(win_id: integer, bufnr: integer, enter: boolean, config: vim.api.keyset.win_config): (nil)
+--- }
 
 ---@class jb.Config
 ---@field enforce_float_style? EnforceFloatStyle[] Configuration to enforce float border styles
