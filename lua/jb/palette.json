@@ -4611,7 +4611,8 @@
     },
     "Treesitter.Twig": {
       "@tag.delimiter.twig": "LanguageDefaults|BracesAndOperators|Brackets",
-      "@operator.twig": "LanguageDefaults|Keyword"
+      "@operator.twig": "LanguageDefaults|Keyword",
+      "@template_language.twig": "LanguageDefaults|TemplateLanguage"
     },
     "Treesitter.JSX": {
       "@character.special.javascript": "XML|EntityReference",
