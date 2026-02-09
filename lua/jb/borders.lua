@@ -80,6 +80,16 @@ M.borders = {
         { "▏", "ToolWindowFloatBorder" },
         { "▏", "ToolWindowFloatBorder" },
     },
+    notification = {
+        { "▁", "DialogNotificationFloatBorderOuter" }, -- Top Left corner
+        { "▁", "DialogNotificationFloatBorderOuter" }, -- Title border
+        { "▁", "DialogNotificationFloatBorderOuter" }, -- Top Right corner
+        { "▕", "DialogNotificationFloatBorder" },
+        { "▔", "DialogNotificationFloatBorderOuter" },
+        { "▔", "DialogNotificationFloatBorderOuter" }, -- Footer border
+        { "▔", "DialogNotificationFloatBorderOuter" },
+        { "▏", "DialogNotificationFloatBorder" },
+    },
 }
 
 ---@param conf EnforceFloatStyle[]

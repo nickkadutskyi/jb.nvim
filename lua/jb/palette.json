@@ -76,7 +76,7 @@
             "bg": "#FFFFFF"
           },
           "dark": {
-            "bg": "#393B40"
+            "bg": "#323438"
           }
         },
         "IconError": {
@@ -101,6 +101,16 @@
           },
           "dark": {
             "fg": "#5D85EB"
+          }
+        },
+        "Border": {
+          "light": {
+            "fg": "#D4D4D4",
+            "bg": "#FFFFFF"
+          },
+          "dark": {
+            "fg": "#323438",
+            "bg": "#323438"
           }
         }
       },
@@ -4227,6 +4237,11 @@
         "fg": "Appearance|Window|Border",
         "bg": "Appearance|Window|BackgroundEditArea.bg"
       },
+      "DialogNotificationFloatBorder": "Appearance|Notifications|Border",
+      "DialogNotificationFloatBorderOuter": {
+        "fg": "Appearance|Notifications|Border",
+        "bg": "General|Text|DefaultTextBg"
+      },
       "DialogFloatBorderEditorArea": {
         "fg": "Appearance|Window|Border",
         "bg": "General|Text|DefaultTextBg"
@@ -5955,22 +5970,22 @@
     },
     "Plugin.rcarriga/nvim-notify": {
       "NotifyBackground": {
-        "bg": "Appearance|Window|BackgroundEditArea.bg"
+        "bg": "Appearance|Notifications|Background"
       },
       "NotifyERRORBorder": {
-        "fg": "Appearance|Window|Border"
+        "fg": "Appearance|Notifications|Border"
       },
       "NotifyWARNBorder": {
-        "fg": "Appearance|Window|Border"
+        "fg": "Appearance|Notifications|Border"
       },
       "NotifyINFOBorder": {
-        "fg": "Appearance|Window|Border"
+        "fg": "Appearance|Notifications|Border"
       },
       "NotifyDEBUGBorder": {
-        "fg": "Appearance|Window|Border"
+        "fg": "Appearance|Notifications|Border"
       },
       "NotifyTRACEBorder": {
-        "fg": "Appearance|Window|Border"
+        "fg": "Appearance|Notifications|Border"
       },
       "NotifyERRORIcon": "Appearance|Notifications|IconError",
       "NotifyWARNIcon": "Appearance|Notifications|IconWarn",
@@ -5998,19 +6013,24 @@
         "bold": true
       },
       "NotifyERRORBody": {
-        "fg": "General|Text|DefaultText"
+        "fg": "General|Text|DefaultText",
+        "bg": "Appearance|Notifications|Background"
       },
       "NotifyWARNBody": {
-        "fg": "General|Text|DefaultText"
+        "fg": "General|Text|DefaultText",
+        "bg": "Appearance|Notifications|Background"
       },
       "NotifyINFOBody": {
-        "fg": "General|Text|DefaultText"
+        "fg": "General|Text|DefaultText",
+        "bg": "Appearance|Notifications|Background"
       },
       "NotifyDEBUGBody": {
-        "fg": "General|Text|DefaultText"
+        "fg": "General|Text|DefaultText",
+        "bg": "Appearance|Notifications|Background"
       },
       "NotifyTRACEBody": {
-        "fg": "General|Text|DefaultText"
+        "fg": "General|Text|DefaultText",
+        "bg": "Appearance|Notifications|Background"
       },
       "NotifyLogTime": "General|ErrorsAndWarnings|UnusedCode|Default",
       "NotifyLogTitle": "General|Text|DefaultText"
