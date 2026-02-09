@@ -94,6 +94,29 @@ M.borders = {
 
             { "▕", "DialogFloatBorderOuter" },
         },
+        default_box_split_top_no_footer = {
+            { "▕", "DialogFloatBorderOuter" }, -- Top Left corner
+            { " ", "DialogFloatBorderTop" }, -- Title border
+            { "▏", "DialogFloatBorderOuter" }, -- Top Right corner
+
+            { "▏", "DialogFloatBorderOuter" },
+
+            { "", "DialogFloatBorderOuter" },
+            { "", "DialogFloatBorderBetween" }, -- Footer border
+            { "", "DialogFloatBorderOuter" },
+
+            { "▕", "DialogFloatBorderOuter" },
+        },
+        default_box_split_middle = {
+            { "", "DialogFloatBorderOuter" }, -- Top Left corner
+            { "", "DialogFloatBorder" }, -- Title border
+            { "", "DialogFloatBorderOuter" }, -- Top Right corner
+            { "▏", "DialogFloatBorderOuter" },
+            { "", "DialogFloatBorderOuter" },
+            { "", "DialogFloatBorder" }, -- Footer border
+            { "", "DialogFloatBorderOuter" },
+            { "▕", "DialogFloatBorderOuter" },
+        },
         default_box_split_bottom = {
             { "▕", "DialogFloatBorder" },
             { " ", "DialogFloatBorder" }, -- Title border
