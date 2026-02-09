@@ -4215,6 +4215,14 @@
         "fg": "General|Text|DefaultText",
         "bg": "Appearance|ToolWindow|Background"
       },
+      "DialogFloatBorderInner": {
+        "fg": "Appearance|Window|Border",
+        "bg": "Appearance|Window|BackgroundEditArea.bg"
+      },
+      "DialogFloatBorderOuter": {
+        "fg": "Appearance|Window|Border",
+        "bg": "General|Text|DefaultTextBg"
+      },
       "DialogFloatBorder": {
         "fg": "Appearance|Window|Border",
         "bg": "Appearance|Window|BackgroundEditArea.bg"
