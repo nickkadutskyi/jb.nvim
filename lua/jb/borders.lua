@@ -59,14 +59,14 @@ M.borders = {
             { "▏", "DialogFloatBorderEditorArea" },
         },
         default_box = {
-            { "▁", "DialogFloatBorderOuter" }, -- Top Left corner
-            { "▁", "DialogFloatBorderOuter" }, -- Title border
-            { "▁", "DialogFloatBorderOuter" }, -- Top Right corner
-            { "▕", "DialogFloatBorder" },
-            { "▔", "DialogFloatBorderOuter" },
-            { "▔", "DialogFloatBorderOuter" }, -- Footer border
-            { "▔", "DialogFloatBorderOuter" },
-            { "▏", "DialogFloatBorder" },
+            { "▕", "DialogFloatBorderOuter" }, -- Top Left corner
+            { "▔", "DialogFloatBorder" }, -- Title border
+            { "▏", "DialogFloatBorderOuter" }, -- Top Right corner
+            { "▏", "DialogFloatBorderOuter" },
+            { "▏", "DialogFloatBorderOuter" },
+            { "▁", "DialogFloatBorder" }, -- Footer border
+            { "▕", "DialogFloatBorderOuter" },
+            { "▕", "DialogFloatBorderOuter" },
         },
     },
     -- Best for modal (float) that shows up in the context (e.g. completion)
@@ -81,14 +81,14 @@ M.borders = {
         { "▏", "ToolWindowFloatBorder" },
     },
     notification = {
-        { "▁", "DialogNotificationFloatBorderOuter" }, -- Top Left corner
-        { "▁", "DialogNotificationFloatBorderOuter" }, -- Title border
-        { "▁", "DialogNotificationFloatBorderOuter" }, -- Top Right corner
-        { "▕", "DialogNotificationFloatBorder" },
-        { "▔", "DialogNotificationFloatBorderOuter" },
-        { "▔", "DialogNotificationFloatBorderOuter" }, -- Footer border
-        { "▔", "DialogNotificationFloatBorderOuter" },
-        { "▏", "DialogNotificationFloatBorder" },
+        { "▕", "DialogNotificationFloatBorderOuter" }, -- Top Left corner
+        { "▔", "DialogNotificationFloatBorder" }, -- Title border
+        { "▏", "DialogNotificationFloatBorderOuter" }, -- Top Right corner
+        { "▏", "DialogNotificationFloatBorderOuter" },
+        { "▏", "DialogNotificationFloatBorderOuter" },
+        { "▁", "DialogNotificationFloatBorder" }, -- Footer border
+        { "▕", "DialogNotificationFloatBorderOuter" },
+        { "▕", "DialogNotificationFloatBorderOuter" },
     },
 }
 
