@@ -81,6 +81,32 @@ M.borders = {
 
             { "▕", "DialogFloatBorderOuter" },
         },
+        default_box_split_top = {
+            { "▕", "DialogFloatBorderOuter" }, -- Top Left corner
+            { " ", "DialogFloatBorderTop" }, -- Title border
+            { "▏", "DialogFloatBorderOuter" }, -- Top Right corner
+
+            { "▏", "DialogFloatBorderOuter" },
+
+            { "▏", "DialogFloatBorderOuter" },
+            { "▁", "DialogFloatBorderBetween" }, -- Footer border
+            { "▕", "DialogFloatBorderOuter" },
+
+            { "▕", "DialogFloatBorderOuter" },
+        },
+        default_box_split_bottom = {
+            { "▕", "DialogFloatBorder" },
+            { " ", "DialogFloatBorder" }, -- Title border
+            { "▏", "DialogFloatBorder" },
+
+            { "▏", "DialogFloatBorderOuter" },
+
+            { "▏", "DialogFloatBorderOuter" },
+            { "▁", "DialogFloatBorder" }, -- Footer border
+            { "▕", "DialogFloatBorderOuter" },
+
+            { "▕", "DialogFloatBorderOuter" },
+        },
     },
     -- Best for modal (float) that shows up in the context (e.g. completion)
     popup = {
