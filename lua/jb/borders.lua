@@ -118,14 +118,14 @@ M.borders = {
             { "▕", "DialogFloatBorderOuter" },
         },
         default_box_split_bottom = {
-            { "▕", "DialogFloatBorder" },
+            { "▕", "DialogFloatBorderOuter" },
             { " ", "DialogFloatBorder" }, -- Title border
-            { "▏", "DialogFloatBorder" },
-
             { "▏", "DialogFloatBorderOuter" },
 
             { "▏", "DialogFloatBorderOuter" },
-            { "▁", "DialogFloatBorder" }, -- Footer border
+
+            { "▏", "DialogFloatBorderOuter" },
+            { "▁", "DialogFloatBorderCorner" }, -- Footer border
             { "▕", "DialogFloatBorderOuter" },
 
             { "▕", "DialogFloatBorderOuter" },
