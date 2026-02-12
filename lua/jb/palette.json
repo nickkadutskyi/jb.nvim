@@ -969,6 +969,22 @@
             "bg": "#191A1C"
           }
         },
+        "DefaultTextBgShadowedLight": {
+          "light": {
+            "bg": "#FCFCFC"
+          },
+          "dark": {
+            "bg": "#18181A"
+          }
+        },
+        "DefaultTextBgShadowedDark": {
+          "light": {
+            "bg": "#F7F7F7"
+          },
+          "dark": {
+            "bg": "#161719"
+          }
+        },
         "DeletedText": null,
         "FoldedText": {
           "light": {
@@ -4232,6 +4248,14 @@
       "DialogFloatBorderOuter": {
         "fg": "Appearance|Window|Border",
         "bg": "General|Text|DefaultTextBg"
+      },
+      "DialogFloatBorderOuterShadowedDark": {
+        "fg": "Appearance|Window|Border",
+        "bg": "General|Text|DefaultTextBgShadowedDark"
+      },
+      "DialogFloatBorderOuterShadowedLight": {
+        "fg": "Appearance|Window|Border",
+        "bg": "General|Text|DefaultTextBgShadowedLight"
       },
       "DialogFloatBorder": {
         "fg": "Appearance|Window|Border",
