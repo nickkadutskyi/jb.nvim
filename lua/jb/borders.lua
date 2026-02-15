@@ -69,9 +69,9 @@ M.borders = {
             { "▕", "DialogFloatBorderOuter" },
         },
         default_box_shadowed = {
-            { "▕", "DialogFloatBorderOuterShadowedLight" }, -- Top Left corner
+            { "▕", "DialogFloatBorderOuter" }, -- Top Left corner
             { "▔", "DialogFloatBorder" }, -- Title border
-            { "▏", "DialogFloatBorderOuterShadowedDark" }, -- Top Right corner
+            { "▏", "DialogFloatBorderOuterShadowedLight" }, -- Top Right corner
 
             { "▏", "DialogFloatBorderOuterShadowedDark" },
 
@@ -95,9 +95,9 @@ M.borders = {
             { "▕", "DialogFloatBorderOuter" },
         },
         default_box_header_shadowed = {
-            { "▕", "DialogFloatBorderOuterShadowedLight" }, -- Top Left corner
+            { "▕", "DialogFloatBorderOuter" }, -- Top Left corner
             { " ", "DialogFloatBorderTop" }, -- Title border
-            { "▏", "DialogFloatBorderOuterShadowedDark" }, -- Top Right corner
+            { "▏", "DialogFloatBorderOuterShadowedLight" }, -- Top Right corner
 
             { "▏", "DialogFloatBorderOuterShadowedDark" },
 
@@ -121,9 +121,9 @@ M.borders = {
             { "▕", "DialogFloatBorderOuter" },
         },
         default_box_split_top_shadowed = {
-            { "▕", "DialogFloatBorderOuterShadowedLight" }, -- Top Left corner
+            { "▕", "DialogFloatBorderOuter" }, -- Top Left corner
             { " ", "DialogFloatBorderTop" }, -- Title border
-            { "▏", "DialogFloatBorderOuterShadowedDark" }, -- Top Right corner
+            { "▏", "DialogFloatBorderOuterShadowedLight" }, -- Top Right corner
 
             { "▏", "DialogFloatBorderOuterShadowedDark" }, -- Top Right corner
 
@@ -147,9 +147,9 @@ M.borders = {
             { "▕", "DialogFloatBorderOuter" },
         },
         default_box_split_top_no_footer_shadowed = {
-            { "▕", "DialogFloatBorderOuterShadowedLight" }, -- Top Left corner
+            { "▕", "DialogFloatBorderOuter" }, -- Top Left corner
             { " ", "DialogFloatBorderTop" }, -- Title border
-            { "▏", "DialogFloatBorderOuterShadowedDark" }, -- Top Right corner
+            { "▏", "DialogFloatBorderOuterShadowedLight" }, -- Top Right corner
 
             { "▏", "DialogFloatBorderOuterShadowedDark" }, -- Top Right corner
 
