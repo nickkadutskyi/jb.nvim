@@ -5774,7 +5774,13 @@
       "FFFGitSignDeletedSelected": "CustomFFFBlankSelected",
       "FFFGitSignRenamedSelected": "CustomFFFBlankSelected",
       "FFFGitSignUntrackedSelected": "CustomFFFBlankSelected",
-      "FFFGitSignIgnoredSelected": "CustomFFFBlankSelected"
+      "FFFGitSignIgnoredSelected": "CustomFFFBlankSelected",
+      "CustomFFFGrepMatch": "Appearance|Search|MatchedText",
+      "CustomFFFGrepLineNr": {
+        "fg": "General|Code|LineNumber"
+      },
+      "CustomFFFRegexActive": "Appearance|Window|CheckboxSelected",
+      "CustomFFFRegexInactive": "Appearance|Window|Checkbox"
     },
     "Plugin.ibhagwan/fzf-lua": {
       "FzfLuaNormal": {

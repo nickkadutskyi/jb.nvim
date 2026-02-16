@@ -182,6 +182,19 @@ M.borders = {
 
             { "▕", "DialogFloatBorderOuterShadowedLight" },
         },
+        default_box_split_middle_shadowed_no_footer = {
+            { "▕", "DialogFloatBorderOuterShadowedLight" }, -- Top Left corner
+            { "▔", "DialogFloatBorderBetween" }, -- Title border
+            { "▏", "DialogFloatBorderOuterShadowedDark" }, -- Top Right corner
+
+            { "▏", "DialogFloatBorderOuterShadowedDark" },
+
+            { "", "DialogFloatBorderOuterShadowedDark" },
+            { "", "DialogFloatBorderBetween" }, -- Footer border
+            { "", "DialogFloatBorderOuterShadowedLight" },
+
+            { "▕", "DialogFloatBorderOuterShadowedLight" },
+        },
         default_box_split_bottom = {
             { "▕", "DialogFloatBorderOuter" },
             { " ", "DialogFloatBorder" }, -- Title border
@@ -194,6 +207,19 @@ M.borders = {
             { "▕", "DialogFloatBorderOuter" },
 
             { "▕", "DialogFloatBorderOuter" },
+        },
+        default_box_split_bottom_shadowed_header = {
+            { "▕", "DialogFloatBorderOuterShadowedLight" }, -- Top Left corner
+            { " ", "DialogFloatBorderTop" }, -- Title border
+            { "▏", "DialogFloatBorderOuterShadowedDark" }, -- Top Right corner
+
+            { "▏", "DialogFloatBorderOuterShadowedDark" },
+
+            { " ", "DialogFloatBorderOuterShadowedDark" }, -- Bottom Right corner
+            { "▔", "DialogFloatBorderOuterShadowedDark" }, -- Footer border
+            { " ", "DialogFloatBorderOuterShadowedLight" }, -- Bottom Left corner
+
+            { "▕", "DialogFloatBorderOuterShadowedLight" },
         },
         default_box_split_bottom_shadowed = {
             { "▕", "DialogFloatBorderOuterShadowedLight" }, -- Top Left corner
