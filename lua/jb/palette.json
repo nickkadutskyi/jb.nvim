@@ -1257,11 +1257,11 @@
           "Default": {
             "light": {
               "fg": "#7A7A7A",
-              "bg": "#EDEDED"
+              "bg": "#F5F5F5"
             },
             "dark": {
-              "fg": "#858A94",
-              "bg": "#393B40"
+              "fg": "#868A93",
+              "bg": "#2A2C30"
             }
           },
           "Highlighted": {
