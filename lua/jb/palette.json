@@ -1243,7 +1243,38 @@
             "bg": "#393B40"
           }
         },
-        "Parameters": null,
+        "Parameters": {
+          "Current": {
+            "light": {
+              "fg": "#5B5B5B",
+              "bg": "#BCDAF7"
+            },
+            "dark": {
+              "fg": "#83ACFC",
+              "bg": "#35538F"
+            }
+          },
+          "Default": {
+            "light": {
+              "fg": "#7A7A7A",
+              "bg": "#EDEDED"
+            },
+            "dark": {
+              "fg": "#858A94",
+              "bg": "#393B40"
+            }
+          },
+          "Highlighted": {
+            "light": {
+              "fg": "#5B5B5B",
+              "bg": "#CCCCCC"
+            },
+            "dark": {
+              "fg": "#868A91",
+              "bg": "#393B40"
+            }
+          }
+        },
         "RefactoringOptions": null,
         "TextWithoutBackground": {
           "light": {
@@ -4200,7 +4231,7 @@
       "LspReferenceText": "CodeWithMe|UserOneSelection",
       "LspReferenceRead": "General|Code|IdentifierUnderCaret|Default",
       "LspReferenceWrite": "General|Code|IdentifierUnderCaretWrite|Default",
-      "LspInlayHint": "LanguageDefaults|InlineHints|Default",
+      "LspInlayHint": "LanguageDefaults|InlineHints|Parameters|Default",
       "LspCodeLens": "General|PopupsAndHints|CodeLens",
       "LspCodeLensSeparator": "",
       "LspSignatureActiveParameter": "Search",
