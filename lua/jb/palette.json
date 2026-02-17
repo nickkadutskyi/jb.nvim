@@ -514,13 +514,13 @@
             "bg": "#F5F8FE"
           },
           "dark": {
-            "bg": "#26282E"
+            "bg": "#1F2024"
           }
         },
         "Guides": {
           "HardWrapGuide": {
             "dark": {
-              "fg": "#393B40"
+              "fg": "#323438"
             },
             "light": {
               "fg": "#EBECF0"
@@ -531,7 +531,7 @@
               "fg": "#EBECF0"
             },
             "dark": {
-              "fg": "#313438"
+              "fg": "#323438"
             }
           },
           "IndentGuideSelected": {
@@ -539,7 +539,7 @@
               "fg": "#AEB3C2"
             },
             "dark": {
-              "fg": "#666870"
+              "fg": "#4E5157"
             }
           },
           "MatchedBraceGuide": null,

@@ -87,3 +87,8 @@
 ((string_content) @injected_language_fragment
   (#match? @injected_language_fragment "^[/#~].*[/#~][imsxADSUXu]*$")
   (#set! priority 101))
+
+; This is to elevate method over constructor for __constructor method
+(method_declaration
+  name: (name) @function.method
+  (#set! priority 101))
