@@ -1,5 +1,5 @@
 ///This is a documentation comment
-const <ns_decl>std</ns_decl> = @import("std");
+const std = @import("std");
 
 const AnEnum = enum {
     A,

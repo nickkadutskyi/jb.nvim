@@ -69,7 +69,7 @@ function M.resolve_path(colors, path, profile, inherit_level, prev_paths)
             i == #path_spl
             and (type(node[v]) == "string" or (type(node[v]) == "table" and type(node[v][profile]) == "string"))
             -- Allows only three levels of inheritance
-            and inherit_level <= 3
+            and inherit_level <= 4
         then
             -- If last node is a string or a table with a profile that is a string,
             -- try to resolve it as a path

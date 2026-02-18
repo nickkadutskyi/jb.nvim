@@ -3869,25 +3869,62 @@
       "Builtin": "LanguageDefaults|Classes|StaticMethod",
       "CharacterLiteral": null,
       "Comment": null,
-      "Enum": null,
+      "Enum": {
+        "Declaration": "Zig|Struct|Declaration"
+      },
       "ErrorTag": {
         "Declaration": "LanguageDefaults|Classes|StaticField",
         "Reference": "Zig|ErrorTag|Declaration"
       },
-      "Function": null,
+      "Function": {
+        "Declaration": "LanguageDefaults|Identifiers|FunctionDeclaration",
+        "Reference": {
+          "light": "LanguageDefaults|Identifiers|FunctionCall",
+          "dark": {
+            "fg": "#97F1FD"
+          }
+        }
+      },
       "Keyword": null,
       "Label": null,
       "Method": null,
-      "Namespace": null,
+      "Namespace": {
+        "Declaration": "Zig|Struct|Declaration",
+        "Reference": "Zig|Struct|Reference"
+      },
       "Number": null,
       "Operator": null,
       "Parameter": null,
       "Property": null,
       "String": null,
-      "Struct": null,
-      "Туре": null,
+      "Struct": {
+        "Declaration": "Zig|Type|Declaration",
+        "Reference": "Zig|Type|Reference"
+      },
+      "Type": {
+        "Declaration": {
+          "light": "LanguageDefaults|Classes|ClassName",
+          "dark": {
+            "fg": "#B5B6E3"
+          }
+        },
+        "Reference": {
+          "light": "LanguageDefaults|Classes|ClassReference",
+          "dark": {
+            "fg": "#B5B6E3"
+          }
+        }
+      },
       "TypeParameter": null,
-      "Variable": null
+      "Variable": {
+        "Declaration": "Zig|Variable|Reference",
+        "Reference": {
+          "light": "LanguageDefaults|Identifiers|LocalVariable",
+          "dark": {
+            "fg": "#FBB4B4"
+          }
+        }
+      }
     },
     "IdeaVim": {
       "Modes": {
@@ -4775,12 +4812,24 @@
     },
     "Treesitter.Zig": {
       "@function.builtin.zig": "Zig|Builtin",
-      "@keyword.import.zig": "Zig|Builtin"
+      "@keyword.import.zig": "Zig|Builtin",
+      "@type.builtin.zig": "Zig|Type|Reference",
+      "@variable.zig": "Zig|Variable|Reference",
+      "@variable.member.zig": "Zig|Namespace|Reference",
+      "@type.zig": "Zig|Type|Reference"
     },
     "Semantic.Zig": {
       "@lsp.type.errorTag.zig": "Zig|ErrorTag|Reference",
       "@lsp.type.string.zig": null,
-      "@lsp.typemod.errorTag.declaration.zig": "Zig|ErrorTag|Declaration"
+      "@lsp.typemod.errorTag.declaration.zig": "Zig|ErrorTag|Declaration",
+      "@lsp.typemod.comment.documentation.zig": "LanguageDefaults|Comments|DocComment|Text",
+      "@function.call.zig": "Zig|Function|Reference",
+      "@lsp.typemod.variable.static.zig": "Zig|Namespace|Declaration",
+      "@lsp.typemod.enum.declaration.zig": "Zig|Enum|Declaration",
+      "@lsp.type.type.zig": "Zig|Type|Reference",
+      "@lsp.typemod.variable-.declaration.zig": "Zig|Variable|Declaration",
+      "@lsp.type.variable-.zig": "Zig|Variable|Reference",
+      "@lsp.type.variable.zig": null
     },
     "Plugin.b0o/incline.nvim": {
       "InclineNormal": {
