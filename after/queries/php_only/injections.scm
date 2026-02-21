@@ -25,8 +25,15 @@
       (string_content) @injection.content)
     (encapsed_string
       (string_content) @injection.content)
+    (argument
+      (string
+        (string_content) @injection.content))
+    (argument
+      (encapsed_string
+        (string_content) @injection.content))
   ]
   (#gsub! @injection.language "//%s*([%w%p]+)%s*" "%1")
+  (#gsub! @injection.language "/%*%s*([%w%p]+)%s*%*/" "%1")
   (#set! injection.combined))
 
 ; // language=-style Comments like in PhpStorm
@@ -37,6 +44,13 @@
       (string_content) @injection.content)
     (encapsed_string
       (string_content) @injection.content)
+    (argument
+      (string
+        (string_content) @injection.content))
+    (argument
+      (encapsed_string
+        (string_content) @injection.content))
   ]
   (#gsub! @injection.language "//%s*language=%s*([%w%p]+)%s*" "%1")
+  (#gsub! @injection.language "/%*%s*language=%s*([%w%p]+)%s*%*/" "%1")
   (#set! injection.combined))
