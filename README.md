@@ -57,6 +57,7 @@
 | Ruby          | ⚠️     | ✅ (ruby)                      | ✅ (ruby_lsp)|
 | Rust          | ⚠️     | ✅ (rust)                      | n/a          |
 | Sass/SCSS     | ⚠️     | ✅ (scss)                      | n/a          |
+| Scala         | ⚠️     | ✅ (scala)                     | n/a          |
 | Shell Script  | ⚠️     | ✅ (bash)                      | n/a          |
 | TOML          | ⚠️     | ✅ (toml)                      | n/a          |
 | Twig          | n/a    | ✅ (twig)                      | n/a          |
