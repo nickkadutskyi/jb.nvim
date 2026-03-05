@@ -2,8 +2,8 @@ local M = {}
 
 ---@alias EnforceFloatStyle {
 ---   style: vim.api.keyset.win_config,
----   condition: nil|fun(bufnr: integer, enter: boolean, config: vim.api.keyset.win_config): (boolean),
----   after: nil|fun(win_id: integer, bufnr: integer, enter: boolean, config: vim.api.keyset.win_config): (nil)
+---   condition?: fun(bufnr: integer, config: vim.api.keyset.win_config, win_id?: integer): (boolean),
+---   after?: fun(win_id: integer, bufnr: integer, config: vim.api.keyset.win_config): (nil)
 --- }
 
 ---@class jb.Config

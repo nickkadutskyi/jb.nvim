@@ -269,30 +269,50 @@ M.enforce_float_style = function(conf)
     end
 
     local orig_open_win = vim.api.nvim_open_win
+    local orig_set_config = vim.api.nvim_win_set_config
 
-    --- @param buffer integer Buffer to display, or 0 for current buffer
-    --- @param enter boolean Enter the window (make it the current window)
-    --- @param config vim.api.keyset.win_config Map defining the window configuration. Keys:
-    vim.api.nvim_open_win = function(bufnr, enter, config)
-        local run_after = {}
+    local function get_config(bufnr, config)
         for _, rule in ipairs(conf) do
-            local condition = rule.condition
-            if not condition or condition(bufnr, enter, config) then
-                if rule.style then
-                    config = vim.tbl_deep_extend("force", config, rule.style)
+            if rule.condition then
+                vim.validate("condition", rule.condition, "function", "condition must be a function")
+                if rule.condition(bufnr, config) then
+                    return vim.tbl_deep_extend("force", config, rule.style or {}), rule.after
                 end
-                if rule.after then
-                    table.insert(run_after, rule.after)
-                end
-                break
             end
         end
+        return config, nil
+    end
 
-        local win_id = orig_open_win(bufnr, enter, config)
-        for _, after in ipairs(run_after) do
-            after(win_id, bufnr, enter, config)
+    ---@param bufnr integer Buffer to display, or 0 for current buffer
+    ---@param enter boolean Enter the window (make it the current window)
+    ---@param config vim.api.keyset.win_config Map defining the window configuration. Keys:
+    ---@diagnostic disable-next-line: duplicate-set-field
+    vim.api.nvim_open_win = function(bufnr, enter, config)
+        local updated_config, after_fn = get_config(bufnr, config)
+
+        local win_id = orig_open_win(bufnr, enter, updated_config)
+
+        if after_fn then
+            vim.validate("after", after_fn, "function", "after must be a function")
+            after_fn(win_id, bufnr, updated_config)
         end
+
         return win_id
+    end
+
+    ---@param win_id integer Buffer to display, or 0 for current buffer
+    ---@param config vim.api.keyset.win_config Map defining the window configuration. Keys:
+    ---@diagnostic disable-next-line: duplicate-set-field
+    vim.api.nvim_win_set_config = function(win_id, config)
+        local bufnr = vim.api.nvim_win_get_buf(win_id)
+        local updated_config, after_fn = get_config(bufnr, config)
+
+        orig_set_config(win_id, updated_config)
+
+        if after_fn then
+            vim.validate("after", after_fn, "function", "after must be a function")
+            after_fn(win_id, bufnr, updated_config)
+        end
     end
 end
 
