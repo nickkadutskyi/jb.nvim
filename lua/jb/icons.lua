@@ -3,6 +3,9 @@
 
 ---@class jb.icons
 local M = {}
+local I = {}
+
+I.cache = { variants = {} }
 
 ---@type table<vim.diagnostic.Severity, string>
 M.diagnostic = {
@@ -76,6 +79,45 @@ M.kind = {
     Array = "",
     Object = "",
 }
+
+I.cache.variants.dark = nil
+I.cache.variants.light = nil
+
+---@param icon jb.Icon
+---@param variant "light" | "dark"
+function I.get_variant_icon(icon, variant)
+    return {
+        icon = icon.icon,
+        color = icon[variant] and icon[variant].color or icon.color or nil,
+        cterm_color = icon[variant] and icon[variant].cterm_color or icon.cterm_color or nil,
+        name = icon.name,
+    }
+end
+
+---@param variant "light" | "dark"
+function M.by_variant(variant)
+    if I.cache.variants[variant] then
+        return I.cache.variants[variant]
+    end
+
+    local variants = { dark = {}, light = {} }
+    for _, icons in pairs(M.files) do
+        ---@type table<string, jb.Icon>
+        for identifier, icon in pairs(icons) do
+            variants["dark"][identifier] = I.get_variant_icon(icon, "dark")
+            variants["light"][identifier] = I.get_variant_icon(icon, "light")
+            if variant ~= "dark" and variant ~= "light" then
+                variants[variant][identifier] = variants["light"][identifier]
+            end
+        end
+    end
+    I.cache.variants.dark = variants.dark
+    I.cache.variants.light = variants.light
+    if variant ~= "dark" and variant ~= "light" then
+        I.cache.variants[variant] = variants[variant]
+    end
+    return variants[variant]
+end
 
 ---@alias jb.iconName string Name of the icon
 
