@@ -587,10 +587,16 @@
           "ModifiedIconColor": null,
           "SelectedTab": {
             "light": {
-              "fg": "#050505"
+              "fg": "#0D0D0D",
+              "bg": "#FFFFFF",
+              "underdouble": true,
+              "underline": false
             },
             "dark": {
-              "fg": "#dedfe3"
+              "fg": "#CDCFD5",
+              "bg": "#28324B",
+              "underdouble": false,
+              "underline": true
             }
           },
           "SelectedTabInactive": null,
@@ -612,10 +618,34 @@
           },
           "CustomTab": {
             "light": {
-              "fg": "#515151"
+              "fg": "#525252"
             },
             "dark": {
-              "fg": "#bbbdc0"
+              "fg": "#AFB1B6"
+            }
+          },
+          "TabLineCloseIcon": {
+            "light": {
+              "fg": "#A9ADBC"
+            },
+            "dark": {
+              "fg": "#707379"
+            }
+          },
+          "TabLineCloseIconSel": {
+            "light": {
+              "fg": "#A9ADBC"
+            },
+            "dark": {
+              "fg": "#707379"
+            }
+          },
+          "TabLineBorderSel": {
+            "light": {
+              "fg": "#FFFFFF"
+            },
+            "dark": {
+              "fg": "#4573e8"
             }
           }
         },
@@ -4188,8 +4218,29 @@
       "TabLineSel": {
         "fg": "General|Editor|Tabs|SelectedTab",
         "sp": "General|Editor|Tabs|Underline",
-        "underdouble": true,
-        "bold": true
+        "bg": "General|Editor|Tabs|SelectedTab",
+        "underdouble": "General|Editor|Tabs|SelectedTab",
+        "underline": "General|Editor|Tabs|SelectedTab"
+      },
+      "TabLineCloseIcon": {
+        "fg": "General|Editor|Tabs|TabLineCloseIcon",
+        "sp": "General|Editor|Guides|HardWrapGuide.fg",
+        "underline": true,
+        "bg": "General|Text|DefaultTextBg"
+      },
+      "TabLineCloseIconSel": {
+        "fg": "General|Editor|Tabs|TabLineCloseIconSel",
+        "sp": "General|Editor|Tabs|Underline",
+        "bg": "General|Editor|Tabs|SelectedTab",
+        "underdouble": "General|Editor|Tabs|SelectedTab",
+        "underline": "General|Editor|Tabs|SelectedTab"
+      },
+      "TabLineBorderSel": {
+        "fg": "General|Editor|Tabs|TabLineBorderSel",
+        "bg": "General|Editor|Tabs|SelectedTab",
+        "sp": "General|Editor|Tabs|Underline",
+        "underdouble": "General|Editor|Tabs|SelectedTab",
+        "underline": "General|Editor|Tabs|SelectedTab"
       },
       "Title": "LanguageDefaults|Identifiers|Constant",
       "Visual": "General|Editor|SelectionBackground",
