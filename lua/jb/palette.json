@@ -1166,6 +1166,7 @@
           "Shortcut": null,
           "Tag": {
             "light": {
+              "fg": "#080808",
               "sp": "#999999",
               "underline": true
             },
