@@ -596,7 +596,7 @@
               "fg": "#CDCFD5",
               "bg": "#28324B",
               "underdouble": false,
-              "underline": true
+              "underline": false
             }
           },
           "SelectedTabInactive": null,
@@ -605,7 +605,7 @@
               "sp": "#4573e8"
             },
             "dark": {
-              "sp": "#4573e8"
+              "sp": "NONE"
             }
           },
           "UnderlineInactive": {
