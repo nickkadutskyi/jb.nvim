@@ -181,6 +181,9 @@ M.defaults = {
         -- Enable telescope.nvim styling
         enabled = true,
     },
+    -- Type: jb.DisabledPlugin[]
+    -- Disable plugin highlight sets by plugin id, e.g. "nvim-telescope/telescope.nvim"
+    disabled_plugins = {},
     -- Enable this to remove background from Normal and NormalNC
     transparent = false,
 }

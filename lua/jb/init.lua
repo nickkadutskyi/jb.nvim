@@ -33,6 +33,52 @@ local opts_per_hl = {
     TreesitterContext = { transparent = true },
 }
 
+local plugin_prefix = "Plugin."
+
+---@param opts jb.Config
+---@return table<string, true>
+local function get_disabled_plugins(opts)
+    local disabled_plugins = {}
+
+    for _, plugin in ipairs(opts.disabled_plugins or {}) do
+        if type(plugin) == "string" and plugin ~= "" then
+            disabled_plugins[plugin] = true
+        end
+    end
+
+    -- Legacy option support
+    if not opts.snacks.explorer.enabled then
+        disabled_plugins["folke/snacks.nvim.explorer"] = true
+    end
+    if not opts.telescope.enabled then
+        disabled_plugins["nvim-telescope/telescope.nvim"] = true
+    end
+
+    return disabled_plugins
+end
+
+---@param section string
+---@param disabled_plugins table<string, true>
+---@return boolean
+local function is_plugin_disabled(section, disabled_plugins)
+    if type(section) ~= "string" or not section:find(plugin_prefix, 1, true) then
+        return false
+    end
+
+    local plugin_name = section:sub(#plugin_prefix + 1)
+    if disabled_plugins[plugin_name] then
+        return true
+    end
+
+    for plugin in pairs(disabled_plugins) do
+        if plugin_name:sub(1, #plugin + 1) == plugin .. "." then
+            return true
+        end
+    end
+
+    return false
+end
+
 local M = {}
 
 M.setup = config.setup
@@ -87,97 +133,90 @@ function M.load(opts)
     -- To ensure that linked groups are set after all groups are defined
     local set_hl_delayed = {}
 
-    -- Special rule to apply snacks.nvim configs if enabled
-    if not opts.snacks.explorer.enabled then
-        -- Remove explorer highlights if snacks.nvim is not enabled
-        highlights["Plugin.folke/snacks.nvim.explorer"] = nil
-    end
-    -- Special rule to apply telescope.nvim configs if enabled
-    if not opts.telescope.enabled then
-        -- Remove telescope highlights if telescope.nvim is not enabled
-        highlights["Plugin.nvim-telescope/telescope.nvim"] = nil
-    end
+    local disabled_plugins = get_disabled_plugins(opts)
 
-    for _, groups in pairs(highlights) do
-        for group, attrs in pairs(groups) do
-            -- groups with `nil` or `""` values are skipped
-            local hl = {}
-            local transparent = (opts_per_hl[group] and opts_per_hl[group].transparent) and opts.transparent or false
+    for section, groups in pairs(highlights) do
+        if not is_plugin_disabled(section, disabled_plugins) then
+            for group, attrs in pairs(groups) do
+                -- groups with `nil` or `""` values are skipped
+                local hl = {}
+                local transparent = (opts_per_hl[group] and opts_per_hl[group].transparent) and opts.transparent or false
 
-            if type(attrs) == "string" and string.find(attrs, "|") ~= nil then
-                -- Handling paths like `General|Text|...` pointing to a color
-                -- in the palette from JB's colors
+                if type(attrs) == "string" and string.find(attrs, "|") ~= nil then
+                    -- Handling paths like `General|Text|...` pointing to a color
+                    -- in the palette from JB's colors
 
-                local props = utils.get_hl_props(colors, attrs, profile)
-                if group == props.name then
-                    hl = props.hl
-                else
-                    if hl_groups[props.name] == nil then
-                        vim.api.nvim_set_hl(0, props.name, M.disable_hl_args(props.hl, opts))
-                        hl_groups[props.name] = true
-                    end
-                    hl.link = props.name
-                end
-            elseif type(attrs) == "string" and attrs ~= "" then
-                -- Handling links, non-path string is a link to another hl group
-                -- Will be created after all groups are set
-
-                hl.link = attrs
-                set_hl_delayed[group] = hl
-            elseif type(attrs) == "table" then
-                -- Handling attributes, tables are treated as hl group properties
-                -- If table is empty then it creates a cleared hl group
-
-                local last_hl_name = nil
-                local last_attr = nil
-                local nolink = false
-
-                -- Iterate over attributes and set hl properties
-                for attr, value in pairs(attrs) do
-                    if attr == "nolink" then
-                        nolink = value
+                    local props = utils.get_hl_props(colors, attrs, profile)
+                    if group == props.name then
+                        hl = props.hl
                     else
-                        last_attr = attr
-                        if type(value) == "string" and string.find(value, "|") ~= nil then
-                            last_hl_name = string.gsub(value, "|", "_")
-                            local props = utils.get_hl_props(colors, value, profile)
-                            hl[attr] = props.prop or props.hl[attr]
+                        if hl_groups[props.name] == nil then
+                            vim.api.nvim_set_hl(0, props.name, M.disable_hl_args(props.hl, opts))
+                            hl_groups[props.name] = true
+                        end
+                        hl.link = props.name
+                    end
+                elseif type(attrs) == "string" and attrs ~= "" then
+                    -- Handling links, non-path string is a link to another hl group
+                    -- Will be created after all groups are set
+
+                    hl.link = attrs
+                    set_hl_delayed[group] = hl
+                elseif type(attrs) == "table" then
+                    -- Handling attributes, tables are treated as hl group properties
+                    -- If table is empty then it creates a cleared hl group
+
+                    local last_hl_name = nil
+                    local last_attr = nil
+                    local nolink = false
+
+                    -- Iterate over attributes and set hl properties
+                    for attr, value in pairs(attrs) do
+                        if attr == "nolink" then
+                            nolink = value
                         else
-                            hl[attr] = value
+                            last_attr = attr
+                            if type(value) == "string" and string.find(value, "|") ~= nil then
+                                last_hl_name = string.gsub(value, "|", "_")
+                                local props = utils.get_hl_props(colors, value, profile)
+                                hl[attr] = props.prop or props.hl[attr]
+                            else
+                                hl[attr] = value
+                            end
                         end
                     end
-                end
 
-                -- Customize group name if only one attribute is set
-                local group_name = (utils.table_length(attrs) == 1 and last_hl_name ~= nil)
-                        and last_hl_name .. "-" .. last_attr
-                    or group .. "_Custom"
+                    -- Customize group name if only one attribute is set
+                    local group_name = (utils.table_length(attrs) == 1 and last_hl_name ~= nil)
+                            and last_hl_name .. "-" .. last_attr
+                        or group .. "_Custom"
 
-                -- Create a new Custom group and link it to the original group
-                if not nolink then
-                    vim.api.nvim_set_hl(0, group_name, M.disable_hl_args(hl, opts))
-                    hl.link = group_name
-                else
-                    hl.bg = transparent and "NONE" or hl.bg
-                    if transparent then
-                        -- Deffer clearing background to allow plugins set their highlights
-                        -- first to override their backgrounds as well
-                        vim.defer_fn(function()
-                            if attrs ~= nil and attrs ~= "" then
-                                --- Ensure that if linking than only link is set
-                                vim.api.nvim_set_hl(0, group, M.disable_hl_args(hl, opts))
-                            end
-                        end, 1500)
+                    -- Create a new Custom group and link it to the original group
+                    if not nolink then
+                        vim.api.nvim_set_hl(0, group_name, M.disable_hl_args(hl, opts))
+                        hl.link = group_name
+                    else
+                        hl.bg = transparent and "NONE" or hl.bg
+                        if transparent then
+                            -- Deffer clearing background to allow plugins set their highlights
+                            -- first to override their backgrounds as well
+                            vim.defer_fn(function()
+                                if attrs ~= nil and attrs ~= "" then
+                                    --- Ensure that if linking than only link is set
+                                    vim.api.nvim_set_hl(0, group, M.disable_hl_args(hl, opts))
+                                end
+                            end, 1500)
+                        end
+                        hl = hl
                     end
-                    hl = hl
                 end
-            end
 
-            -- Set hl group properties if value is not `nil` or `""`
-            if attrs ~= nil and attrs ~= "" then
-                --- Ensure that if linking than only link is set
-                local props = hl.link ~= nil and { link = hl.link } or hl
-                vim.api.nvim_set_hl(0, group, M.disable_hl_args(props, opts))
+                -- Set hl group properties if value is not `nil` or `""`
+                if attrs ~= nil and attrs ~= "" then
+                    --- Ensure that if linking than only link is set
+                    local props = hl.link ~= nil and { link = hl.link } or hl
+                    vim.api.nvim_set_hl(0, group, M.disable_hl_args(props, opts))
+                end
             end
         end
     end
