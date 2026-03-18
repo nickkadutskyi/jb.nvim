@@ -2,6 +2,29 @@ local M = {}
 
 ---@alias profile "light" | "dark"
 
+local resolve_path_cache = setmetatable({}, { __mode = "k" })
+local hl_props_cache = setmetatable({}, { __mode = "k" })
+
+---@param cache table<table, table<string, table<string, any>>>
+---@param colors table
+---@param profile profile
+---@return table<string, any>
+local function get_profile_cache(cache, colors, profile)
+    local colors_cache = cache[colors]
+    if colors_cache == nil then
+        colors_cache = {}
+        cache[colors] = colors_cache
+    end
+
+    local profile_cache = colors_cache[profile]
+    if profile_cache == nil then
+        profile_cache = {}
+        colors_cache[profile] = profile_cache
+    end
+
+    return profile_cache
+end
+
 ---@type fun(t: table): number
 function M.table_length(t)
     local count = 0
@@ -25,7 +48,8 @@ function M.read_palette(path)
     end
     local content = file:read("*a")
     file:close()
-    local ok, palette = pcall(vim.fn.json_decode, content)
+    local json_decode = (vim.json and vim.json.decode) or vim.fn.json_decode
+    local ok, palette = pcall(json_decode, content)
     if not ok then
         error("Failed to parse palette.json: " .. palette)
     end
@@ -41,15 +65,9 @@ end
 ---@param prev_paths ?table<string>
 ---
 ---@return vim.api.keyset.highlight
-function M.resolve_path(colors, path, profile, inherit_level, prev_paths)
-    profile = profile or "light"
+local function resolve_path_uncached(colors, path, profile, inherit_level, prev_paths)
     inherit_level = inherit_level or 0
     prev_paths = prev_paths or {}
-
-    assert(colors, "`colors` table is required.")
-    assert(type(colors) == "table", string.format("Invalid palette structure. Expected a table, got %s.", type(colors)))
-    assert(path, "`path` is required.")
-    assert(type(path) == "string", string.format("`path` must be a string, got %s.", type(path)))
 
     local path_spl = M.split(path, "|")
     local node = colors
@@ -74,7 +92,7 @@ function M.resolve_path(colors, path, profile, inherit_level, prev_paths)
             -- If last node is a string or a table with a profile that is a string,
             -- try to resolve it as a path
             table.insert(prev_paths, path)
-            return M.resolve_path(colors, (node[v][profile] or node[v]), profile, inherit_level + 1, prev_paths)
+            return resolve_path_uncached(colors, (node[v][profile] or node[v]), profile, inherit_level + 1, prev_paths)
         elseif node[v] == vim.NIL then
             -- NOTE: vim.NIL is null in JSON and it just clears hl group
             return {}
@@ -97,12 +115,42 @@ function M.resolve_path(colors, path, profile, inherit_level, prev_paths)
     error("Nothing to resolve from.")
 end
 
+---@return vim.api.keyset.highlight
+function M.resolve_path(colors, path, profile, inherit_level, prev_paths)
+    profile = profile or "light"
+
+    assert(colors, "`colors` table is required.")
+    assert(type(colors) == "table", string.format("Invalid palette structure. Expected a table, got %s.", type(colors)))
+    assert(path, "`path` is required.")
+    assert(type(path) == "string", string.format("`path` must be a string, got %s.", type(path)))
+
+    if inherit_level == nil and prev_paths == nil then
+        local profile_cache = get_profile_cache(resolve_path_cache, colors, profile)
+        if profile_cache[path] ~= nil then
+            return profile_cache[path]
+        end
+
+        local resolved = resolve_path_uncached(colors, path, profile, 0, {})
+        profile_cache[path] = resolved
+        return resolved
+    end
+
+    return resolve_path_uncached(colors, path, profile, inherit_level, prev_paths)
+end
+
 ---Function to get colors from palette table
 ---@param colors table
 ---@param path_prop string
 ---@param profile profile
 ---@return {name: string, hl: table, prop: string|nil|boolean}
 function M.get_hl_props(colors, path_prop, profile)
+    profile = profile or "light"
+
+    local profile_cache = get_profile_cache(hl_props_cache, colors, profile)
+    if profile_cache[path_prop] ~= nil then
+        return profile_cache[path_prop]
+    end
+
     local path_prop_spl = M.split(path_prop, ".")
     local prop = path_prop_spl[2]
     local hl = M.resolve_path(colors, path_prop_spl[1], profile)
@@ -113,7 +161,9 @@ function M.get_hl_props(colors, path_prop, profile)
     if type(hl) ~= "table" then
         error("Invalid highlight at: " .. path_prop .. ". Inspection: " .. vim.inspect(hl))
     end
-    return { name = hl_group_name, hl = hl, prop = hl[prop] }
+    local result = { name = hl_group_name, hl = hl, prop = hl[prop] }
+    profile_cache[path_prop] = result
+    return result
 end
 
 function M.split(str, sep)
