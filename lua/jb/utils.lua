@@ -4,6 +4,7 @@ local M = {}
 
 local resolve_path_cache = setmetatable({}, { __mode = "k" })
 local hl_props_cache = setmetatable({}, { __mode = "k" })
+local compiled_palette_cache = nil
 
 ---@param cache table<table, table<string, table<string, any>>>
 ---@param colors table
@@ -25,6 +26,85 @@ local function get_profile_cache(cache, colors, profile)
     return profile_cache
 end
 
+---@param colors table
+---@param path_prop string
+---@param profile profile
+---@return {name: string, hl: table, prop: string|nil|boolean}|nil
+local function get_compiled_hl_prop(colors, path_prop, profile)
+    local path_props = colors.__path_props
+    local resolved_hls = colors.__resolved_hls
+    if type(path_props) ~= "table" or type(resolved_hls) ~= "table" then
+        return nil
+    end
+
+    local path_meta = path_props[path_prop]
+    if type(path_meta) ~= "table" then
+        return nil
+    end
+
+    local profile_hls = resolved_hls[profile]
+    if type(profile_hls) ~= "table" then
+        return nil
+    end
+
+    local base_path = path_meta.base
+    local hl = profile_hls[base_path]
+    if type(hl) ~= "table" then
+        return nil
+    end
+
+    local prop = path_meta.prop
+    local prop_value = nil
+    if prop == false then
+        prop = nil
+    elseif type(prop) == "string" and hl[prop] == nil then
+        error("Invalid property: " .. prop .. " for " .. path_prop)
+    elseif prop ~= nil then
+        prop_value = hl[prop]
+    end
+
+    return {
+        name = path_meta.name,
+        hl = hl,
+        prop = prop_value,
+    }
+end
+
+---@return table|nil
+local function get_cached_compiled_palette()
+    if compiled_palette_cache ~= nil then
+        return compiled_palette_cache
+    end
+
+    local ok, compiled_palette = pcall(require, "jb.palette_compiled")
+    if not ok then
+        return nil
+    end
+
+    if
+        type(compiled_palette) ~= "table"
+        or type(compiled_palette.highlights) ~= "table"
+        or type(compiled_palette.resolved_hls) ~= "table"
+        or type(compiled_palette.path_props) ~= "table"
+        or type(compiled_palette.icons) ~= "table"
+    then
+        return nil
+    end
+
+    compiled_palette_cache = {
+        colors = {
+            Custom = {
+                Icons = compiled_palette.icons,
+            },
+            __resolved_hls = compiled_palette.resolved_hls,
+            __path_props = compiled_palette.path_props,
+        },
+        highlights = compiled_palette.highlights,
+    }
+
+    return compiled_palette_cache
+end
+
 ---@type fun(t: table): number
 function M.table_length(t)
     local count = 0
@@ -40,6 +120,14 @@ end
 function M.read_palette(path)
     local default_path = "/lua/jb/palette.json"
     path = path == "" and default_path or (path or default_path)
+
+    if path == default_path then
+        local compiled = get_cached_compiled_palette()
+        if compiled ~= nil then
+            return compiled
+        end
+    end
+
     local plugin_dir = vim.fn.expand("<sfile>:p:h:h")
     local palette_path = plugin_dir .. path
     local file = io.open(palette_path, "r")
@@ -125,6 +213,14 @@ function M.resolve_path(colors, path, profile, inherit_level, prev_paths)
     assert(type(path) == "string", string.format("`path` must be a string, got %s.", type(path)))
 
     if inherit_level == nil and prev_paths == nil then
+        local resolved_hls = colors.__resolved_hls
+        if type(resolved_hls) == "table" and type(resolved_hls[profile]) == "table" then
+            local resolved = resolved_hls[profile][path]
+            if resolved ~= nil then
+                return resolved
+            end
+        end
+
         local profile_cache = get_profile_cache(resolve_path_cache, colors, profile)
         if profile_cache[path] ~= nil then
             return profile_cache[path]
@@ -149,6 +245,12 @@ function M.get_hl_props(colors, path_prop, profile)
     local profile_cache = get_profile_cache(hl_props_cache, colors, profile)
     if profile_cache[path_prop] ~= nil then
         return profile_cache[path_prop]
+    end
+
+    local from_compiled = get_compiled_hl_prop(colors, path_prop, profile)
+    if from_compiled ~= nil then
+        profile_cache[path_prop] = from_compiled
+        return from_compiled
     end
 
     local path_prop_spl = M.split(path_prop, ".")

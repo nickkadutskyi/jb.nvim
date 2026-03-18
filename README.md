@@ -204,6 +204,17 @@ Extra color configs for [Kitty](https://sw.kovidgoyal.net/kitty/conf.html),
 [Ghostty](https://ghostty.org/) can be found in [extras](extras/).
 To use them, refer to their respective documentation.
 
+## Development
+
+When changing `lua/jb/palette.json`, regenerate the compiled palette used at runtime:
+
+```sh
+nvim --headless -u NONE --noplugin \
+  +'set runtimepath^=/absolute/path/to/jb.nvim' \
+  +'lua dofile("/absolute/path/to/jb.nvim/scripts/generate_palette_compiled.lua")' \
+  +qa
+```
+
 ## Contributing
 
 n/a
