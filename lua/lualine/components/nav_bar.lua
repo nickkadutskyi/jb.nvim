@@ -442,12 +442,20 @@ vim.api.nvim_create_autocmd({ "DirChanged" }, {
     end,
 })
 -- Buffer normality result invalidation
-vim.api.nvim_create_autocmd({ "BufModifiedSet", "FileType" }, {
+vim.api.nvim_create_autocmd({ "FileType" }, {
     group = vim.api.nvim_create_augroup("nav_bar-buffer-changed", { clear = true }),
     callback = function(event)
         local bufnr = event.buf or vim.api.nvim_get_current_buf()
         _cache.is_normal_buffer[bufnr] = nil
     end,
+})
+vim.api.nvim_create_autocmd("OptionSet", {
+    group = vim.api.nvim_create_augroup("nav_bar-buffer-changed", { clear = true }),
+    callback = function(event)
+        local bufnr = event.buf or vim.api.nvim_get_current_buf()
+        _cache.is_normal_buffer[bufnr] = nil
+    end,
+    pattern = "modified",
 })
 
 return M
