@@ -19,7 +19,7 @@
 
 ## Features
 
-- Supports both light and dark themes
+- Supports both light and dark themes, with a colorblind-friendly palette for light mode
 - Terminal colors
 - Lualine theme included
 - Lualine component for a Navigation Bar similar to JetBrains IDEs but only for dir path part
@@ -186,6 +186,9 @@ M.defaults = {
     disabled_plugins = {},
     -- Enable this to remove background from Normal and NormalNC
     transparent = false,
+    -- Enable colorblind-friendly palette (light mode only)
+    -- Replaces green/purple/teal tokens with blue and near-black alternatives
+    colorblind = false,
 }
 ```
 
