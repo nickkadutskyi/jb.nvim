@@ -12,7 +12,7 @@ end
 
 ---@param colors table
 ---@param path string
----@param profile "light"|"dark"
+---@param profile "light"|"dark"|"light_cb"
 ---@param inherit_level? number
 ---@param prev_paths? string[]
 ---@return table
@@ -21,21 +21,27 @@ local function resolve_path(colors, path, profile, inherit_level, prev_paths)
     inherit_level = inherit_level or 0
     prev_paths = prev_paths or {}
 
+    local base_profile = profile:match("^(.-)_cb$") or profile
+
     local path_spl = split(path, "|")
     local node = colors
 
     for i, v in pairs(path_spl) do
         if i < #path_spl and type(node[v]) == "table" then
             node = node[v]
-        elseif i == #path_spl and type(node[v]) == "table" and type(node[v][profile]) == "table" then
-            return node[v][profile]
+        elseif i == #path_spl and type(node[v]) == "table" and type(node[v][profile] or node[v][base_profile]) == "table" then
+            return node[v][profile] or node[v][base_profile]
         elseif
             i == #path_spl
-            and (type(node[v]) == "string" or (type(node[v]) == "table" and type(node[v][profile]) == "string"))
+            and (
+                type(node[v]) == "string"
+                or (type(node[v]) == "table" and type(node[v][profile] or node[v][base_profile]) == "string")
+            )
             and inherit_level <= 4
         then
             table.insert(prev_paths, path)
-            return resolve_path(colors, (node[v][profile] or node[v]), profile, inherit_level + 1, prev_paths)
+            local ref = type(node[v]) == "string" and node[v] or (node[v][profile] or node[v][base_profile])
+            return resolve_path(colors, ref, profile, inherit_level + 1, prev_paths)
         elseif node[v] == vim.NIL then
             return {}
         elseif node[v] == nil then
@@ -227,11 +233,13 @@ add_path_prop("Custom|TabSel")
 local resolved_hls = {
     light = {},
     dark = {},
+    light_cb = {},
 }
 
 for base_path in pairs(base_paths) do
     resolved_hls.light[base_path] = resolve_path(colors, base_path, "light")
     resolved_hls.dark[base_path] = resolve_path(colors, base_path, "dark")
+    resolved_hls.light_cb[base_path] = resolve_path(colors, base_path, "light_cb")
 end
 
 local compiled = {

@@ -55,6 +55,8 @@ M.defaults = {
     disabled_plugins = {},
     -- Enable this to remove background from Normal and NormalNC
     transparent = false,
+    -- Enable colorblind-friendly palette (light mode only)
+    colorblind = false,
     enforce_float_style = nil,
 }
 

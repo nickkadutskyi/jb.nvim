@@ -848,6 +848,11 @@
             "fg": "#B189F5",
             "underline": true,
             "sp": "#B189F5"
+          },
+          "light_cb": {
+            "fg": "#3777E6",
+            "underline": true,
+            "sp": "#3777E6"
           }
         },
         "Inactive": {
@@ -870,6 +875,11 @@
             "fg": "#548AF7",
             "underline": true,
             "sp": "#548AF7"
+          },
+          "light_cb": {
+            "fg": "#3777E6",
+            "underline": true,
+            "sp": "#3777E6"
           }
         },
         "Unfollowed": {
@@ -882,6 +892,11 @@
             "fg": "#548AF7",
             "underline": true,
             "sp": "#548AF7"
+          },
+          "light_cb": {
+            "fg": "#3777E6",
+            "underline": true,
+            "sp": "#3777E6"
           }
         }
       },
@@ -1024,6 +1039,10 @@
           "dark": {
             "fg": "#868991",
             "bg": "#393B40"
+          },
+          "light_cb": {
+            "fg": "#4D4D4D",
+            "bg": "#EBEBEB"
           }
         },
         "FoldedTextWithHighlighting": null,
@@ -1109,6 +1128,9 @@
           },
           "dark": {
             "fg": "#C77DBB"
+          },
+          "light_cb": {
+            "fg": "#004B9F"
           }
         },
         "InstanceMethod": {
@@ -1117,6 +1139,9 @@
           },
           "dark": {
             "fg": "#57AAF7"
+          },
+          "light_cb": {
+            "fg": "#121314"
           }
         },
         "InterfaceName": "LanguageDefaults|Identifiers|Default",
@@ -1128,6 +1153,10 @@
           "dark": {
             "fg": "#C77DBB",
             "italic": true
+          },
+          "light_cb": {
+            "fg": "#004B9F",
+            "italic": true
           }
         },
         "StaticMethod": {
@@ -1137,6 +1166,10 @@
           },
           "dark": {
             "fg": "#57AAF7",
+            "italic": true
+          },
+          "light_cb": {
+            "fg": "#121314",
             "italic": true
           }
         }
@@ -1214,6 +1247,10 @@
           "dark": {
             "fg": "#C77DBB",
             "italic": true
+          },
+          "light_cb": {
+            "fg": "#004B9F",
+            "italic": true
           }
         },
         "Default": {
@@ -1231,6 +1268,9 @@
           },
           "dark": {
             "fg": "#56A8F5"
+          },
+          "light_cb": {
+            "fg": "#121314"
           }
         },
         "GlobalVariable": "LanguageDefaults|Identifiers|Default",
@@ -1322,6 +1362,9 @@
         },
         "dark": {
           "fg": "#CF8E6D"
+        },
+        "light_cb": {
+          "fg": "#00428C"
         }
       },
       "Markup": {
@@ -1350,6 +1393,9 @@
         },
         "dark": {
           "fg": "#B3AE60"
+        },
+        "light_cb": {
+          "fg": "#6C7680"
         }
       },
       "Number": {
@@ -1358,6 +1404,9 @@
         },
         "dark": {
           "fg": "#2AACB8"
+        },
+        "light_cb": {
+          "fg": "#3777E6"
         }
       },
       "SemanticHighlighting": null,
@@ -1390,6 +1439,10 @@
           },
           "dark": {
             "fg": "#6AAB73"
+          },
+          "light_cb": {
+            "fg": "#6A84DB",
+            "bold": true
           }
         }
       },
@@ -2790,7 +2843,10 @@
             "light": {
               "fg": "#871094"
             },
-            "dark": "LanguageDefaults|Identifiers|Constant"
+            "dark": "LanguageDefaults|Identifiers|Constant",
+            "light_cb": {
+              "fg": "#004B9F"
+            }
           },
           "PackageLocalConstant": null
         },
@@ -2840,6 +2896,9 @@
             },
             "dark": {
               "fg": "#CC7832"
+            },
+            "light_cb": {
+              "fg": "#00428C"
             }
           },
           "LocalVariable": null,
@@ -2863,6 +2922,9 @@
             },
             "dark": {
               "fg": "#CC7832"
+            },
+            "light_cb": {
+              "fg": "#00428C"
             }
           },
           "ExportedFunctionCall": {
@@ -2882,6 +2944,9 @@
             },
             "dark": {
               "fg": "#CC7832"
+            },
+            "light_cb": {
+              "fg": "#00428C"
             }
           },
           "PackageExportedInterface": null,

@@ -1,6 +1,6 @@
 local M = {}
 
----@alias profile "light" | "dark"
+---@alias profile "light" | "dark" | "light_cb"
 
 local resolve_path_cache = setmetatable({}, { __mode = "k" })
 local hl_props_cache = setmetatable({}, { __mode = "k" })
@@ -160,6 +160,9 @@ local function resolve_path_uncached(colors, path, profile, inherit_level, prev_
     local path_spl = M.split(path, "|")
     local node = colors
 
+    -- For _cb profiles, derive the base profile used as fallback when a _cb variant is absent
+    local base_profile = profile:match("^(.-)_cb$") or profile
+
     for i, v in pairs(path_spl) do
         -- if node[v] == nil then
         --     error(string.format("Missing node '%s' in path '%s'.", v, path))
@@ -168,19 +171,23 @@ local function resolve_path_uncached(colors, path, profile, inherit_level, prev_
         if i < #path_spl and type(node[v]) == "table" then
             -- If not last node, go deeper
             node = node[v]
-        elseif i == #path_spl and type(node[v]) == "table" and type(node[v][profile]) == "table" then
-            -- If last node is a table, return the profile
-            return node[v][profile]
+        elseif i == #path_spl and type(node[v]) == "table" and type(node[v][profile] or node[v][base_profile]) == "table" then
+            -- If last node is a table, return the profile (fall back to base_profile for _cb)
+            return node[v][profile] or node[v][base_profile]
         elseif
             i == #path_spl
-            and (type(node[v]) == "string" or (type(node[v]) == "table" and type(node[v][profile]) == "string"))
+            and (
+                type(node[v]) == "string"
+                or (type(node[v]) == "table" and type(node[v][profile] or node[v][base_profile]) == "string")
+            )
             -- Allows only three levels of inheritance
             and inherit_level <= 4
         then
             -- If last node is a string or a table with a profile that is a string,
             -- try to resolve it as a path
             table.insert(prev_paths, path)
-            return resolve_path_uncached(colors, (node[v][profile] or node[v]), profile, inherit_level + 1, prev_paths)
+            local ref = type(node[v]) == "string" and node[v] or (node[v][profile] or node[v][base_profile])
+            return resolve_path_uncached(colors, ref, profile, inherit_level + 1, prev_paths)
         elseif node[v] == vim.NIL then
             -- NOTE: vim.NIL is null in JSON and it just clears hl group
             return {}

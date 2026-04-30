@@ -125,6 +125,10 @@ function M.load(opts)
     end
 
     local profile = vim.o.background -- 'dark' or 'light'
+    if opts.colorblind and profile == "light" then
+        profile = "light_cb"
+    end
+    local icon_profile = profile:match("^(.-)_cb$") or profile
     local palette = utils.read_palette("/lua/jb/palette.json")
     local colors = palette.colors
     local highlights = palette.highlights
@@ -310,7 +314,7 @@ function M.load(opts)
 
     -- Generates JB icons highlight groups
     for icon, attrs in pairs(colors.Custom.Icons) do
-        vim.api.nvim_set_hl(0, "JBIcon" .. icon, attrs[profile])
+        vim.api.nvim_set_hl(0, "JBIcon" .. icon, attrs[icon_profile])
         -- blink.cmp icons
         vim.api.nvim_set_hl(0, "BlinkCmpKind" .. icon, { link = "JBIcon" .. icon })
         -- nvim-navic icons
