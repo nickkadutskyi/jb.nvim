@@ -4342,7 +4342,7 @@
       "Label": "LanguageDefaults|Keyword",
       "Operator": "LanguageDefaults|BracesAndOperators|OperationSign",
       "Keyword": "LanguageDefaults|Keyword",
-      "Exception": "General|ErrorsAndWarnings|Error|Default",
+      "Exception": "LanguageDefaults|Keyword",
       "PreProc": "LanguageDefaults|Metadata",
       "Include": "LanguageDefaults|Keyword",
       "Define": "LanguageDefaults|Metadata",
