@@ -71,6 +71,16 @@
         }
       },
       "Notifications": {
+        "Normal": {
+          "light": {
+            "fg": "#000000",
+            "bg": "#FFFFFF"
+          },
+          "dark": {
+            "fg": "#D1D3D9",
+            "bg": "#323438"
+          }
+        },
         "Background": {
           "light": {
             "bg": "#FFFFFF"
@@ -6282,6 +6292,24 @@
       "TelescopeResultsDiffAdd": null,
       "TelescopeResultsDiffDelete": null,
       "TelescopeResultsDiffUntracked": null
+    },
+    "Plugin.nickkadutskyi/notifications.nvim": {
+      "NotificationFloatBackground": "Appearance|Notifications|Background",
+      "NotificationFloatNormal": "Appearance|Notifications|Normal",
+      "NotificationFloatBorder": "Appearance|Notifications|Border",
+      "NotificationFloatBorderOuter": {
+        "fg": "Appearance|Notifications|Border",
+        "bg": "General|Text|DefaultTextBg"
+      },
+      "NotificationTitle": {
+        "fg": "Appearance|Notifications|Normal.fg",
+        "bold": true
+      },
+      "NotificationSubtitle": {},
+      "NotificationIconError": "Appearance|Notifications|IconError",
+      "NotificationIconWarn": "Appearance|Notifications|IconWarn",
+      "NotificationIconInfo": "Appearance|Notifications|IconInfo",
+      "NotificationIconHint": "Appearance|Notifications|IconWarn"
     },
     "Plugin.rcarriga/nvim-notify": {
       "NotifyBackground": {
