@@ -6296,6 +6296,7 @@
     "Plugin.nickkadutskyi/notifications.nvim": {
       "NotificationFloatBackground": "Appearance|Notifications|Background",
       "NotificationFloatNormal": "Appearance|Notifications|Normal",
+      "NotificationFloatCollapseInfoNormal": "General|Text|DefaultText",
       "NotificationFloatBorder": "Appearance|Notifications|Border",
       "NotificationFloatBorderOuter": {
         "fg": "Appearance|Notifications|Border",
