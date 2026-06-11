@@ -81,6 +81,16 @@
             "bg": "#323438"
           }
         },
+        "NormalCollapseInfo": {
+          "light": {
+            "fg": "#606268",
+            "bg": "#F7F8F9"
+          },
+          "dark": {
+            "fg": "#9FA2A7",
+            "bg": "#191A1C"
+          }
+        },
         "Background": {
           "light": {
             "bg": "#FFFFFF"
@@ -6296,7 +6306,7 @@
     "Plugin.nickkadutskyi/notifications.nvim": {
       "NotificationFloatBackground": "Appearance|Notifications|Background",
       "NotificationFloatNormal": "Appearance|Notifications|Normal",
-      "NotificationFloatCollapseInfoNormal": "General|Text|DefaultText",
+      "NotificationFloatCollapseInfoNormal": "Appearance|Notifications|NormalCollapseInfo",
       "NotificationFloatBorder": "Appearance|Notifications|Border",
       "NotificationFloatBorderOuter": {
         "fg": "Appearance|Notifications|Border",
