@@ -4232,7 +4232,7 @@
       "CursorLineSign": "CursorLineNr",
       "MatchParen": "General|Code|MatchedBrace",
       "ModeMsg": "General|Text|DefaultText",
-      "MsgArea": "Custom|DialogWindow",
+      "MsgArea": "General|Text|DefaultText",
       "MsgSeparator": "",
       "MoreMsg": "Custom|DialogWindow",
       "NonText": "",
