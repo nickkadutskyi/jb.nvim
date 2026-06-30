@@ -4759,8 +4759,10 @@
       "@variable.parameter.bibtex": "BibTeX|Key"
     },
     "Treesitter.Blade": {
-      "@tag.blade": "Blade|Directive",
-      "@tag.delimiter.blade": "Blade|TextBlockDelimiter",
+      "@directive.blade": "Blade|Directive",
+      "@tag.blade": "HTML|TagName",
+      "@tag.delimiter.blade": "HTML|Tag",
+      "@tag.attribute.blade": "HTML|AttributeName",
       "@comment.blade": "Blade|Comment"
     },
     "Treesitter.Cpp": {

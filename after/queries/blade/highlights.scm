@@ -9,3 +9,8 @@
 ;   (#match? @tag "^\\)$")        ; node text is exactly ")"
 ;   (#set! priority 110))
 
+[
+  (directive)
+  (directive_start)
+  (directive_end)
+] @directive
