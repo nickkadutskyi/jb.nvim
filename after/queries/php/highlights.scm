@@ -90,41 +90,41 @@
 ; We only match statement groups that are directly adjacent to text boundaries.
 
 ; PHP run after initial HTML text that ends before the next interpolation.
-(program
-    (text)
-    .
-    (php_tag) @template_language
-    .
-    (statement)+ @template_language
-    .
-    (text_interpolation))
+; (program
+;     (text)
+;     .
+;     (php_tag) @template_language
+;     .
+;     (statement)+ @template_language
+;     .
+;     (text_interpolation))
 
 ; PHP run at file start before the first interpolation: <?php ... ?>
-(program
-    .
-    (php_tag) @template_language
-    .
-    (statement)+ @template_language
-    .
-    (text_interpolation))
+; (program
+;     .
+;     (php_tag) @template_language
+;     .
+;     (statement)+ @template_language
+;     .
+;     (text_interpolation))
 
 ; PHP run after an interpolation boundary and before the next interpolation.
-(program
-    (text_interpolation)
-    .
-    (statement)+ @template_language
-    .
-    (text_interpolation))
+; (program
+;     (text_interpolation)
+;     .
+;     (statement)+ @template_language
+;     .
+;     (text_interpolation))
 
 ; Final PHP run after an interpolation boundary that continues to EOF.
-(
-    (text_interpolation)
-    .
-    (statement)+ @template_language
-    .)
+; (
+;     (text_interpolation)
+;     .
+;     (statement)+ @template_language
+;     .)
 
 ; Highlight the reopening <?php tag inside an interpolation boundary.
-(text_interpolation (php_tag) @template_language)
+; (text_interpolation (php_tag) @template_language)
 
 ; [
 ;   ; (php_end_tag)
