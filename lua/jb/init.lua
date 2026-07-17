@@ -31,6 +31,16 @@ local opts_per_hl = {
     Normal = { transparent = true },
     NormalNC = { transparent = true },
     TreesitterContext = { transparent = true },
+    DialogFloatBorderCorner = { transparent = true },
+    DialogFloatBorderTop = { transparent = true },
+    DialogFloatBorder = { transparent = true },
+    DialogFloatBorderBetween = { transparent = true },
+    DialogFloatBorderEditorArea = { transparent = true },
+    DialogFloatBorderOuter = { transparent = true },
+    DialogFloatBorderOuterShadowedLight = { transparent = true },
+    DialogFloatBorderOuterShadowedDark = { transparent = true },
+    DialogNotificationFloatBorderOuter = { transparent = true },
+    DialogNotificationFloatBorder = { transparent = true },
 }
 
 local plugin_prefix = "Plugin."
@@ -144,7 +154,8 @@ function M.load(opts)
             for group, attrs in pairs(groups) do
                 -- groups with `nil` or `""` values are skipped
                 local hl = {}
-                local transparent = (opts_per_hl[group] and opts_per_hl[group].transparent) and opts.transparent or false
+                local transparent = (opts_per_hl[group] and opts_per_hl[group].transparent) and opts.transparent
+                    or false
 
                 if type(attrs) == "string" and string.find(attrs, "|") ~= nil then
                     -- Handling paths like `General|Text|...` pointing to a color
