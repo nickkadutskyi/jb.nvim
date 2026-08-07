@@ -1,21 +1,21 @@
 ;; extends
 
 ; BREAKING CHANGE / BREAKING-CHANGE footer (Conventional Commits)
-((body_line) @punctuation.special.jjdescription
-  (#lua-match? @punctuation.special.jjdescription "^BREAKING CHANGE:")
-  (#offset-lua-match! @punctuation.special.jjdescription "^BREAKING CHANGE:"))
+((body_line) @punctuation.special
+  (#lua-match? @punctuation.special "^BREAKING CHANGE:")
+  (#offset-lua-match! @punctuation.special "^BREAKING CHANGE:"))
 
-((body_line) @punctuation.special.jjdescription
-  (#lua-match? @punctuation.special.jjdescription "^BREAKING CHANGE #")
-  (#offset-lua-match! @punctuation.special.jjdescription "^BREAKING CHANGE #"))
+((body_line) @punctuation.special
+  (#lua-match? @punctuation.special "^BREAKING CHANGE #")
+  (#offset-lua-match! @punctuation.special "^BREAKING CHANGE #"))
 
-((body_line) @punctuation.special.jjdescription
-  (#lua-match? @punctuation.special.jjdescription "^BREAKING%-CHANGE:")
-  (#offset-lua-match! @punctuation.special.jjdescription "^BREAKING%-CHANGE:"))
+((body_line) @punctuation.special
+  (#lua-match? @punctuation.special "^BREAKING%-CHANGE:")
+  (#offset-lua-match! @punctuation.special "^BREAKING%-CHANGE:"))
 
-((body_line) @punctuation.special.jjdescription
-  (#lua-match? @punctuation.special.jjdescription "^BREAKING%-CHANGE #")
-  (#offset-lua-match! @punctuation.special.jjdescription "^BREAKING%-CHANGE #"))
+((body_line) @punctuation.special
+  (#lua-match? @punctuation.special "^BREAKING%-CHANGE #")
+  (#offset-lua-match! @punctuation.special "^BREAKING%-CHANGE #"))
 
 ; Other footers: token + ": " or " #" (git trailer style)
 ((body_line) @attribute

@@ -2696,7 +2696,7 @@
       "TextBlockDelimiter": "LanguageDefaults|BracesAndOperators|Braces"
     },
     "ConventionalCommit": {
-      "Body": "General|Text|DefaultText",
+      "Body": "General|Text|DefaultTextFg",
       "BreakingChange": {
         "light": {
           "fg": "#CD0000",
@@ -2715,7 +2715,7 @@
           "fg": "#4D82E1"
         }
       },
-      "FooterValue": "General|Text|DefaultText",
+      "FooterValue": "General|Text|DefaultTextFg",
       "Scope": {
         "light": {
           "fg": "#4078D2"
@@ -2724,7 +2724,7 @@
           "fg": "#B3AD27"
         }
       },
-      "Subject": "General|Text|DefaultText",
+      "Subject": "General|Text|DefaultTextFg",
       "Type": {
         "light": {
           "fg": "#000080",

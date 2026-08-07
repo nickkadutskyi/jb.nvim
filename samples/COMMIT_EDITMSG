@@ -6,6 +6,10 @@ has been rewritten to improve the overall quality
 BREAKING-CHANGE: compatibility with releases up to 2.0
   has been dropped
 Closes: #16
+Closes # #16
+BREAKING-CHANGE # compatibility with releases up to 2.0
+Test-Test: arstarst
+Test-Test # arstarst
 
 # Please enter the commit message for your changes. Lines starting
 # with '#' will be ignored, and an empty message aborts the commit.
