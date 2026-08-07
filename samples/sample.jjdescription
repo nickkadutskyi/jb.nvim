@@ -6,6 +6,8 @@ has been rewritten to improve the overall quality
 BREAKING-CHANGE: compatibility with releases up to 2.0
   has been dropped
 Closes: #16
+Closes # #16
+BREAKING-CHANGE # compatibility with releases up to 2.0
 
 JJ: Change ID: pnwlxozz
 JJ: This commit contains the following changes:
