@@ -1,0 +1,20 @@
+refactor(video)!: improve output quality
+
+The entire code of the stream processor
+has been rewritten to improve the overall quality
+
+BREAKING-CHANGE: compatibility with releases up to 2.0
+  has been dropped
+Closes: #16
+
+JJ: Change ID: pnwlxozz
+JJ: This commit contains the following changes:
+JJ:     A after/queries/jjdescription/highlights.scm
+JJ:     M lua/jb/palette.json
+JJ:     M lua/jb/palette_compiled.lua
+JJ:     A samples/sample.jjdescription
+JJ:     C {copy_orig => copy_new}
+JJ:     R {rename_orig => rename_new}
+JJ:
+JJ: Lines starting with "JJ:" (like this one) will be removed.
+

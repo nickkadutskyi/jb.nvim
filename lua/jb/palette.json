@@ -2695,6 +2695,47 @@
       "IllegalCharacter": null,
       "TextBlockDelimiter": "LanguageDefaults|BracesAndOperators|Braces"
     },
+    "ConventionalCommit": {
+      "Body": "General|Text|DefaultText",
+      "BreakingChange": {
+        "light": {
+          "fg": "#CD0000",
+          "bold": true
+        },
+        "dark": {
+          "fg": "#CB4845",
+          "bold": true
+        }
+      },
+      "FooterType": {
+        "light": {
+          "fg": "#808000"
+        },
+        "dark": {
+          "fg": "#4D82E1"
+        }
+      },
+      "FooterValue": "General|Text|DefaultText",
+      "Scope": {
+        "light": {
+          "fg": "#4078D2"
+        },
+        "dark": {
+          "fg": "#B3AD27"
+        }
+      },
+      "Subject": "General|Text|DefaultText",
+      "Type": {
+        "light": {
+          "fg": "#000080",
+          "bold": true
+        },
+        "dark": {
+          "fg": "#CC7832",
+          "bold": true
+        }
+      }
+    },
     "Cpp": {
       "BadCharacter": null,
       "BracesAndOperators": null,
@@ -4865,6 +4906,14 @@
     "Treesitter.EditorConfig": {
       "@character.special.editorconfig": "EditorConfig|SpecialSymbol"
     },
+    "Treesitter.gitcommit": {
+      "@markup.heading.gitcommit": "ConventionalCommit|Subject",
+      "@keyword.gitcommit": "ConventionalCommit|Type",
+      "@variable.parameter.gitcommit": "ConventionalCommit|Scope",
+      "@punctuation.special.gitcommit": "ConventionalCommit|BreakingChange",
+      "@label.gitcommit": "ConventionalCommit|FooterType",
+      "@comment.error.gitcommit": "ConventionalCommit|BreakingChange"
+    },
     "Treesitter.Go": {
       "@comment.documentation.go": "LanguageDefaults|Comments|BlockComment",
       "@constant.go": "Go|Declarations|Constants|PackageExportedConstant",
@@ -4949,6 +4998,13 @@
       "@lsp.type.parameter.javascript": "JavaScript|Identifiers|Parameter",
       "@lsp.typemod.class.defaultLibrary.javascript": "JavaScript|Identifiers|GlobalVariable",
       "@lsp.typemod.property.static.javascript": "LanguageDefaults|Classes|StaticField"
+    },
+    "Treesitter.jjdescription": {
+      "@markup.heading.jjdescription": "ConventionalCommit|Subject",
+      "@keyword.jjdescription": "ConventionalCommit|Type",
+      "@variable.parameter.jjdescription": "ConventionalCommit|Scope",
+      "@punctuation.special.jjdescription": "ConventionalCommit|BreakingChange",
+      "@attribute.jjdescription": "ConventionalCommit|FooterType"
     },
     "Syntax.JSON": {
       "jsonKeyword": "JSON|PropertyKey",
