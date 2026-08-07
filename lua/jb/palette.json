@@ -295,10 +295,10 @@
         },
         "RowSelected": {
           "light": {
-            "bg": "#D7E1FC"
+            "bg": "#D3DFFB"
           },
           "dark": {
-            "bg": "#32426B"
+            "bg": "#30426E"
           }
         },
         "SectionTitle": {
@@ -511,7 +511,24 @@
         }
       },
       "Editor": {
-        "Bookmarks": null,
+        "Bookmarks": {
+          "Default": {
+            "light": {
+              "fg": "#F3B241"
+            },
+            "dark": {
+              "fg": "#EBC76D"
+            }
+          },
+          "ErrorStripeMark": {
+            "light": {
+              "fg": "#000000"
+            },
+            "dark": {
+              "fg": "#F7E9C6"
+            }
+          }
+        },
         "Breadcrumbs": {
           "Border": null,
           "Current": null,
@@ -4280,7 +4297,7 @@
       "PmenuSbar": "",
       "PmenuThumb": "General|Editor|VerticalScrollbar|Thumb",
       "Question": "Custom|DialogWindowDefaultOption",
-      "QuickFixLine": "General|ErrorsAndWarnings|Warning|Default",
+      "QuickFixLine": "Appearance|Window|RowSelected",
       "Search": "General|SearchResults|TextSearchResult|Default",
       "SnippetTabstop": "",
       "SpecialKey": "General|ErrorsAndWarnings|UnusedCode|Default",
@@ -4490,6 +4507,38 @@
       "healthError": "Error",
       "healthSuccess": "DiagnosticOk",
       "healthWarning": "General|ErrorsAndWarnings|Warning|Default"
+    },
+    "Builtin.qf": {
+      "qfFileName": "General|ErrorsAndWarnings|UnusedCode|Default",
+      "qfFileBase": {
+        "fg": "General|Text|DefaultText",
+        "underline": true
+      },
+      "qfSeparator1": {
+        "fg": "General|Editor|Bookmarks|Default",
+        "bold": true
+      },
+      "qfLineNr": "General|ErrorsAndWarnings|UnusedCode|Default",
+      "qfSeparator2": {
+        "fg": "General|Editor|Bookmarks|Default",
+        "bold": true
+      },
+      "qfText": {
+        "fg": "General|Text|DefaultText"
+      },
+      "qfError": {
+        "fg": "General|ErrorsAndWarnings|Error|Icon"
+      },
+      "qfWarning": {
+        "fg": "General|ErrorsAndWarnings|Warning|Icon"
+      },
+      "qfNote": {
+        "fg": "General|ErrorsAndWarnings|WeakWarning|Icon"
+      },
+      "qfInfo": {
+        "fg": "Appearance|Notifications|IconInfo"
+      },
+      "qfType": null
     },
     "Custom": {
       "GeneralTextTabs": "General|Text|Tabs",
