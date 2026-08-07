@@ -1,6 +1,6 @@
 local M = {}
 
----@alias profile "light" | "dark" | "light_cb"
+---@alias profile "light" | "dark" | "light_cb"|"dark_cb"
 
 local resolve_path_cache = setmetatable({}, { __mode = "k" })
 local hl_props_cache = setmetatable({}, { __mode = "k" })

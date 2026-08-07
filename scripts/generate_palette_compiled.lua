@@ -12,7 +12,7 @@ end
 
 ---@param colors table
 ---@param path string
----@param profile "light"|"dark"|"light_cb"
+---@param profile "light"|"dark"|"light_cb"|"dark_cb"
 ---@param inherit_level? number
 ---@param prev_paths? string[]
 ---@return table
@@ -234,12 +234,14 @@ local resolved_hls = {
     light = {},
     dark = {},
     light_cb = {},
+    dark_cb = {},
 }
 
 for base_path in pairs(base_paths) do
     resolved_hls.light[base_path] = resolve_path(colors, base_path, "light")
     resolved_hls.dark[base_path] = resolve_path(colors, base_path, "dark")
     resolved_hls.light_cb[base_path] = resolve_path(colors, base_path, "light_cb")
+    resolved_hls.dark_cb[base_path] = resolve_path(colors, base_path, "dark_cb")
 end
 
 local compiled = {

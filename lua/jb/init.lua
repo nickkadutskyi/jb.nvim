@@ -135,10 +135,13 @@ function M.load(opts)
     end
 
     local profile = vim.o.background -- 'dark' or 'light'
-    if opts.colorblind and profile == "light" then
-        profile = "light_cb"
+    local icon_profile = profile
+
+    -- Resolve colorblind profiles based on background
+    if opts.colorblind then
+        profile = profile .. "_cb"
     end
-    local icon_profile = profile:match("^(.-)_cb$") or profile
+
     local palette = utils.read_palette("/lua/jb/palette.json")
     local colors = palette.colors
     local highlights = palette.highlights

@@ -64,6 +64,7 @@
 | TypeScript    | ⚠️     | ✅ (typescript)                | ✅ (ts_ls)   |
 | TSX/JSX       | ⚠️     | ✅ (tsx)                       | ✅ (ts_ls)   |
 | XML           | ⚠️     | ✅ (xml)                       | n/a          |
+| Quickfix      | ✅     | n/a                            | n/a          |
 | YAML          | ⚠️     | ✅ (yaml)                      | n/a          |
 | Zig           | ⚠️     | ✅ (zig)                       | ✅ (zls)     |
 
