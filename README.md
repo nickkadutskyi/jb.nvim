@@ -39,6 +39,7 @@
 | C/C++         | ⚠️     | ✅ (c,cpp)                     | n/a          |
 | CSS           | ⚠️     | ✅ (css)                       | n/a          |
 | EditorConfig  | n/a    | ✅ (editorconfig)              | n/a          |
+| gitcommit     | ⚠️     | ✅ (gitcommit)                 | n/a          |
 | Go            | ⚠️     | ✅ (go)                        | ✅ (gopls)   |
 | Go Template   | ⚠️     | ✅ (gotmpl)                    | n/a          |
 | GraphQL       | ⚠️     | ✅ (graphql)                   | n/a          |
@@ -46,6 +47,7 @@
 | Ini           | ⚠️     | ✅ (ini)                       | n/a          |
 | Java          | ⚠️     | ✅ (java, javadoc)             | ✅ (jdtls)   |
 | JavaScript    | ⚠️     | ✅ (javascript)                | ✅ (ts_ls)   |
+| jjdescription | ⚠️     | ✅ (jjdescription)             | n/a          |
 | JSON          | ✅     | ✅ (json)                      | n/a          |
 | LaTeX         | ⚠️     | ✅ (latex)                     | n/a          |
 | Lua           | ⚠️     | ✅ (lua,luadoc)                | ✅ (lua_ls)  |
