@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.nickkadutskyi.jb.palette.ProductDetectorTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-08-14T08:07:10.633Z" hostname="Nicks-MacBook-Air-0" time="0.002">
+  <properties/>
+  <testcase name="unknownCodeWithoutNameDefaultsToIntelliJ()" classname="com.nickkadutskyi.jb.palette.ProductDetectorTest" time="0.0"/>
+  <testcase name="fallsBackToProductName()" classname="com.nickkadutskyi.jb.palette.ProductDetectorTest" time="0.0"/>
+  <testcase name="canonicalCheck()" classname="com.nickkadutskyi.jb.palette.ProductDetectorTest" time="0.0"/>
+  <testcase name="mapsIntelliJCodes()" classname="com.nickkadutskyi.jb.palette.ProductDetectorTest" time="0.0"/>
+  <testcase name="mapsOtherIdes()" classname="com.nickkadutskyi.jb.palette.ProductDetectorTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -3503,7 +3503,7 @@
         "HeredocID": "LanguageDefaults|Identifiers|Label"
       },
       "Identifiers": {
-        "ThisVariable": null,
+        "ThisVariable": "PHP|Identifiers|Variable",
         "AliasReference": null,
         "Constant": {
           "light": "LanguageDefaults|Identifiers|Constant",
@@ -5482,26 +5482,32 @@
     },
     "Treesitter.PHP": {
       "@constant.builtin.php": "PHP|Keywords",
-      "@constant.only.php": "PHP|Identifiers|Constant",
-      "@constant.php": "PHP|Identifiers|Constant",
-      "@tag.php": "PHP|PHPCode|Tags",
-      "@variable.parameter.named.php": "PHP|NamedArguments",
-      "@variable.parameter.php": "PHP|FunctionsAndMethods|Parameter",
-      "@variable.php": "PHP|Identifiers|Variable",
-      "@template_language.php": "LanguageDefaults|TemplateLanguage",
-      "@injected_language_fragment.php": "HTML|InjectedLanguageFragment"
-    },
-    "Treesitter.PHP_only": {
       "@constant.builtin.php_only": "PHP|Identifiers|Default",
+      "@constant.only.php": "PHP|Identifiers|Constant",
       "@constant.only.php_only": "PHP|Identifiers|Constant",
+      "@constant.php": "PHP|Identifiers|Constant",
       "@constant.php_only": "PHP|Identifiers|Constant",
+      "@tag.php": "PHP|PHPCode|Tags",
       "@tag.php_only": "PHP|PHPCode|Tags",
+      "@variable.builtin.php": "PHP|Identifiers|ThisVariable",
+      "@variable.builtin.php_only": "PHP|Identifiers|ThisVariable",
+      "@variable.parameter.named.php": "PHP|NamedArguments",
       "@variable.parameter.named.php_only": "PHP|NamedArguments",
+      "@variable.parameter.php": "PHP|FunctionsAndMethods|Parameter",
       "@variable.parameter.php_only": "PHP|FunctionsAndMethods|Parameter",
+      "@variable.php": "PHP|Identifiers|Variable",
       "@variable.php_only": "PHP|Identifiers|Variable",
+      "@template_language.php": "LanguageDefaults|TemplateLanguage",
       "@template_language.php_only": "LanguageDefaults|TemplateLanguage",
+      "@injected_language_fragment.php": "HTML|InjectedLanguageFragment",
       "@injected_language_fragment.php_only": "HTML|InjectedLanguageFragment",
       "@keyword.conditional.php_only": "PHP|BracesAndOperators|Operators"
+    },
+    "Semantic.PHP": {
+      "@lsp.typemod.variable.defaultLibrary.php": "PHP|Identifiers|ThisVariable",
+      "@lsp.type.parameter.php": "PHP|FunctionsAndMethods|Parameter",
+      "@lsp.type.keyword.php": "LanguageDefaults|Comments|DocComment|Tag",
+      "@lsp.type.comment.php": "LanguageDefaults|Comments|DocComment|Tag"
     },
     "Treesitter.PHPDoc": {
       "@attribute.phpdoc": "LanguageDefaults|Comments|DocComment|Tag",

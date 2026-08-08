@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.nickkadutskyi.jb.palette.ColorGroupComparatorTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2026-08-14T08:07:10.487Z" hostname="Nicks-MacBook-Air-0" time="0.011">
+  <properties/>
+  <testcase name="valueMismatchIsDifferent()" classname="com.nickkadutskyi.jb.palette.ColorGroupComparatorTest" time="0.008"/>
+  <testcase name="extraIntelliJKeysAreIgnored()" classname="com.nickkadutskyi.jb.palette.ColorGroupComparatorTest" time="0.0"/>
+  <testcase name="emptyExportMatches()" classname="com.nickkadutskyi.jb.palette.ColorGroupComparatorTest" time="0.0"/>
+  <testcase name="referenceMismatchIsDifferent()" classname="com.nickkadutskyi.jb.palette.ColorGroupComparatorTest" time="0.0"/>
+  <testcase name="matchingProfileLeavesAreEqual()" classname="com.nickkadutskyi.jb.palette.ColorGroupComparatorTest" time="0.0"/>
+  <testcase name="missingIntelliJTreeIsDifferent()" classname="com.nickkadutskyi.jb.palette.ColorGroupComparatorTest" time="0.0"/>
+  <testcase name="extraExportedKeysAreDifferent()" classname="com.nickkadutskyi.jb.palette.ColorGroupComparatorTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -34,3 +34,7 @@
 ((text) @attribute
   (#match? @attribute "^(Plugin Name|Plugin URI|Description|Version|Requires at least|Requires PHP|Author|Author URI|License|License URI|Text Domain|Domain Path|Network|Update URI|Requires Plugins):")
   (#offset-lua-match! @attribute "^[^:]+:"))
+
+(description
+  (text) @comment.documentation
+  (#set! priority 125))

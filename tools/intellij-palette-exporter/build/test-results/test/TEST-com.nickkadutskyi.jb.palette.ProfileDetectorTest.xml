@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.nickkadutskyi.jb.palette.ProfileDetectorTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2026-08-14T08:07:10.637Z" hostname="Nicks-MacBook-Air-0" time="0.002">
+  <properties/>
+  <testcase name="islandsDarkBackgroundIsDark()" classname="com.nickkadutskyi.jb.palette.ProfileDetectorTest" time="0.0"/>
+  <testcase name="darkWithColorBlindness()" classname="com.nickkadutskyi.jb.palette.ProfileDetectorTest" time="0.001"/>
+  <testcase name="islandsLightBackgroundIsLight()" classname="com.nickkadutskyi.jb.palette.ProfileDetectorTest" time="0.0"/>
+  <testcase name="nearBlackIsDark()" classname="com.nickkadutskyi.jb.palette.ProfileDetectorTest" time="0.0"/>
+  <testcase name="lightWithColorBlindness()" classname="com.nickkadutskyi.jb.palette.ProfileDetectorTest" time="0.0"/>
+  <testcase name="darkWithoutColorBlindness()" classname="com.nickkadutskyi.jb.palette.ProfileDetectorTest" time="0.0"/>
+  <testcase name="lightWithoutColorBlindness()" classname="com.nickkadutskyi.jb.palette.ProfileDetectorTest" time="0.0"/>
+  <testcase name="whiteIsLight()" classname="com.nickkadutskyi.jb.palette.ProfileDetectorTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

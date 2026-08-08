@@ -1,14 +1,5 @@
 ;; extends
 [
-  "("
-  ")"
-  "["
-  "]"
-  "{"
-  "}"
-  "#["
-] @punctuation.bracket
-[
   (php_tag)
   ; master branch doesn't have php_end_tag
   ; (php_end_tag)

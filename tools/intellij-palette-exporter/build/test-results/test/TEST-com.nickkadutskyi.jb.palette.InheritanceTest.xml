@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.nickkadutskyi.jb.palette.InheritanceTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2026-08-14T08:07:10.507Z" hostname="Nicks-MacBook-Air-0" time="0.113">
+  <properties/>
+  <testcase name="unresolvedResolvedStyleBecomesEmpty()" classname="com.nickkadutskyi.jb.palette.InheritanceTest" time="0.001"/>
+  <testcase name="referenceSerializesToPalettePath()" classname="com.nickkadutskyi.jb.palette.InheritanceTest" time="0.11"/>
+  <testcase name="absentUsesFallbackPathWhenKnown()" classname="com.nickkadutskyi.jb.palette.InheritanceTest" time="0.0"/>
+  <testcase name="absentWithoutFallbackUsesResolvedParentSchemeColors()" classname="com.nickkadutskyi.jb.palette.InheritanceTest" time="0.0"/>
+  <testcase name="inheritedUsesFallbackPathWhenKnown()" classname="com.nickkadutskyi.jb.palette.InheritanceTest" time="0.0"/>
+  <testcase name="inheritedWithoutKnownFallbackUsesResolvedStyle()" classname="com.nickkadutskyi.jb.palette.InheritanceTest" time="0.001"/>
+  <testcase name="definedStyleIgnoresFallback()" classname="com.nickkadutskyi.jb.palette.InheritanceTest" time="0.0"/>
+  <testcase name="definedEmptyBecomesEmptyObject()" classname="com.nickkadutskyi.jb.palette.InheritanceTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
