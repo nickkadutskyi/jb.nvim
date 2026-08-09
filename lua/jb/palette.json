@@ -4555,7 +4555,9 @@
         "fg": "General|Text|DefaultText",
         "underline": true
       },
-      "qfSeparator1":"General|ErrorsAndWarnings|UnusedCode|Default",
+      "qfSeparator1": {
+        "fg": "General|Text|DefaultText.bg"
+      },
       "qfLineNr": "General|ErrorsAndWarnings|UnusedCode|Default",
       "qfSeparator2": {
         "fg": "General|Editor|Bookmarks|Default",
