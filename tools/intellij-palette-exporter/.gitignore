@@ -1,0 +1,7 @@
+.gradle/
+build/
+bin/
+out/
+.intellijPlatform/
+*.iml
+intellij-palette.json

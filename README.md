@@ -212,6 +212,10 @@ To use them, refer to their respective documentation.
 
 ## Development
 
+IntelliJ color snapshots come from the private plugin in
+[tools/intellij-palette-exporter](tools/intellij-palette-exporter). That generated
+file is separate from `lua/jb/palette.json`.
+
 When changing `lua/jb/palette.json`, regenerate the compiled palette used at runtime:
 
 ```sh
