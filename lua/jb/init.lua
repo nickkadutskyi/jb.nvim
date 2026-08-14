@@ -142,9 +142,9 @@ function M.load(opts)
         profile = profile .. "_cb"
     end
 
-    local palette = utils.read_palette("/lua/jb/palette.json")
-    local colors = palette.colors
-    local highlights = palette.highlights
+    local colors = utils.read_colors("/lua/jb/intellij-palette.json")
+    local highlights = utils.read_highlights("/lua/jb/highlights.json")
+    local custom_colors = colors.Neovim.Custom
 
     local hl_groups = {}
     -- To ensure that linked groups are set after all groups are defined
@@ -316,10 +316,12 @@ function M.load(opts)
     }
     for _, hl in ipairs(vcs_hls) do
         local hl_props = vim.api.nvim_get_hl(0, { name = hl .. "_Custom" })
-        vim.api.nvim_set_hl(0, hl .. "_Tinted", {
-            fg = "#" .. string.format("%06x", (hl_props.fg or "")),
-            bg = tinted_status_line_secondary_bg,
-        })
+        if type(hl_props.fg) == "number" then
+            vim.api.nvim_set_hl(0, hl .. "_Tinted", {
+                fg = "#" .. string.format("%06x", hl_props.fg),
+                bg = tinted_status_line_secondary_bg,
+            })
+        end
     end
     vim.api.nvim_set_hl(0, "Custom_TabSel_Tinted", {
         fg = utils.get_hl_props(colors, "Custom|TabSel", profile).hl.fg,
@@ -327,7 +329,7 @@ function M.load(opts)
     })
 
     -- Generates JB icons highlight groups
-    for icon, attrs in pairs(colors.Custom.Icons) do
+    for icon, attrs in pairs(custom_colors.Icons) do
         vim.api.nvim_set_hl(0, "JBIcon" .. icon, attrs[icon_profile])
         -- blink.cmp icons
         vim.api.nvim_set_hl(0, "BlinkCmpKind" .. icon, { link = "JBIcon" .. icon })

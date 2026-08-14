@@ -93,8 +93,10 @@ local function get_cached_compiled_palette()
 
     compiled_palette_cache = {
         colors = {
-            Custom = {
-                Icons = compiled_palette.icons,
+            Neovim = {
+                Custom = {
+                    Icons = compiled_palette.icons,
+                },
             },
             __resolved_hls = compiled_palette.resolved_hls,
             __path_props = compiled_palette.path_props,
@@ -103,6 +105,51 @@ local function get_cached_compiled_palette()
     }
 
     return compiled_palette_cache
+end
+
+---@param path string
+---@return table
+local function read_json(path)
+    local plugin_dir = vim.fn.expand("<sfile>:p:h:h")
+    local json_path = plugin_dir .. path
+    local file = io.open(json_path, "r")
+    if not file then
+        error("Could not open JSON file at " .. json_path)
+    end
+    local content = file:read("*a")
+    file:close()
+    local json_decode = (vim.json and vim.json.decode) or vim.fn.json_decode
+    local ok, value = pcall(json_decode, content)
+    if not ok then
+        error("Failed to parse " .. json_path .. ": " .. value)
+    end
+    return value
+end
+
+---@param path? string
+---@return table
+function M.read_colors(path)
+    path = path or "/lua/jb/intellij-palette.json"
+    if path == "/lua/jb/intellij-palette.json" then
+        local compiled = get_cached_compiled_palette()
+        if compiled ~= nil then
+            return compiled.colors
+        end
+    end
+    return read_json(path)
+end
+
+---@param path? string
+---@return table
+function M.read_highlights(path)
+    path = path or "/lua/jb/highlights.json"
+    if path == "/lua/jb/highlights.json" then
+        local compiled = get_cached_compiled_palette()
+        if compiled ~= nil then
+            return compiled.highlights
+        end
+    end
+    return read_json(path)
 end
 
 ---@type fun(t: table): number
@@ -114,36 +161,6 @@ function M.table_length(t)
     return count
 end
 
--- Function to read the JSON palette
----@param path? string
----@return table
-function M.read_palette(path)
-    local default_path = "/lua/jb/palette.json"
-    path = path == "" and default_path or (path or default_path)
-
-    if path == default_path then
-        local compiled = get_cached_compiled_palette()
-        if compiled ~= nil then
-            return compiled
-        end
-    end
-
-    local plugin_dir = vim.fn.expand("<sfile>:p:h:h")
-    local palette_path = plugin_dir .. path
-    local file = io.open(palette_path, "r")
-    if not file then
-        error("Could not open palette.json at " .. palette_path)
-    end
-    local content = file:read("*a")
-    file:close()
-    local json_decode = (vim.json and vim.json.decode) or vim.fn.json_decode
-    local ok, palette = pcall(json_decode, content)
-    if not ok then
-        error("Failed to parse palette.json: " .. palette)
-    end
-    return palette
-end
-
 --- Function to resolve a path in the palette
 ---
 ---@param colors table
@@ -151,19 +168,39 @@ end
 ---@param profile profile
 ---@param inherit_level ?number
 ---@param prev_paths ?table<string>
+---@param scope? string
 ---
 ---@return vim.api.keyset.highlight
-local function resolve_path_uncached(colors, path, profile, inherit_level, prev_paths)
+local function resolve_path_uncached(colors, path, profile, inherit_level, prev_paths, scope)
     inherit_level = inherit_level or 0
     prev_paths = prev_paths or {}
 
     local path_spl = M.split(path, "|")
-    local node = colors
+    if scope == nil then
+        if type(colors.IntelliJ) == "table" and colors.IntelliJ[path_spl[1]] ~= nil then
+            scope = "IntelliJ"
+        else
+            local scopes = {}
+            for candidate, scoped_colors in pairs(colors) do
+                if candidate ~= "IntelliJ" and type(scoped_colors) == "table" and scoped_colors[path_spl[1]] ~= nil then
+                    scopes[#scopes + 1] = candidate
+                end
+            end
+            table.sort(scopes)
+            scope = scopes[1]
+        end
+    end
+
+    if scope == nil then
+        error(string.format("Missing root node '%s' in path '%s'.", path_spl[1], path))
+    end
+
+    local node = colors[scope]
 
     -- For _cb profiles, derive the base profile used as fallback when a _cb variant is absent
     local base_profile = profile:match("^(.-)_cb$") or profile
 
-    for i, v in pairs(path_spl) do
+    for i, v in ipairs(path_spl) do
         -- if node[v] == nil then
         --     error(string.format("Missing node '%s' in path '%s'.", v, path))
         -- end
@@ -187,13 +224,13 @@ local function resolve_path_uncached(colors, path, profile, inherit_level, prev_
             -- try to resolve it as a path
             table.insert(prev_paths, path)
             local ref = type(node[v]) == "string" and node[v] or (node[v][profile] or node[v][base_profile])
-            return resolve_path_uncached(colors, ref, profile, inherit_level + 1, prev_paths)
+            return resolve_path_uncached(colors, ref, profile, inherit_level + 1, prev_paths, scope)
         elseif node[v] == vim.NIL then
             -- NOTE: vim.NIL is null in JSON and it just clears hl group
             return {}
         elseif node[v] == nil then
             local p = (vim.tbl_count(prev_paths) > 0 and table.concat(prev_paths, " > ") .. " > " or "") .. path
-            error(string.format("Missing node '%s' in path '%s'.", v, p))
+            error(string.format("Missing node '%s' in path '%s' within scope '%s'.", v, p, scope))
         else
             error(
                 string.format(

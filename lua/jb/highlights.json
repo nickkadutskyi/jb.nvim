@@ -1,0 +1,2397 @@
+{
+  "Builtin.Common": {
+    "ColorColumn": {
+      "bg": "General|Editor|Guides|VisualGuides.fg"
+    },
+    "Conceal": "General|Code|LineNumber",
+    "CurSearch": {
+      "bg": "General|Editor|SelectionBackground.bg",
+      "fg": "General|Text|DefaultText",
+      "sp": "General|Text|DefaultText.fg",
+      "underline": true
+    },
+    "Cursor": "General|Editor|Caret",
+    "lCursor": "General|Editor|Caret",
+    "CursorIM": "General|Editor|Caret",
+    "CursorColumn": "General|Editor|CaretRow",
+    "CursorLine": "General|Editor|CaretRow",
+    "Directory": "Appearance|ProjectView|DirectoryIcon",
+    "DiffAdd": {
+      "bg": "DiffMerge|ChangedLines|Inserted.bg"
+    },
+    "DiffChange": {
+      "bg": "DiffMerge|ChangedLines|Changed.bg"
+    },
+    "DiffDelete": {
+      "bg": "DiffMerge|ChangedLines|Deleted.bg"
+    },
+    "DiffText": {
+      "bg": "DiffMerge|ChangedLines|Changed.bg"
+    },
+    "EndOfBuffer": "",
+    "TermCursor": "",
+    "TermCursorNC": "",
+    "ErrorMsg": "ConsoleColors|LogConsole|Error",
+    "WinSeparator": "General|Editor|Guides|HardWrapGuide",
+    "Folded": {
+      "fg": "General|Text|FoldedText"
+    },
+    "FoldColumn": {
+      "fg": "General|Text|FoldedText"
+    },
+    "SignColumn": {
+      "fg": "General|Text|DefaultText"
+    },
+    "IncSearch": {
+      "bg": "DiffMerge|ChangedLines|Changed.bg"
+    },
+    "Substitute": "",
+    "LineNr": "General|Code|LineNumber",
+    "LineNrAbove": "",
+    "LineNrBelow": "",
+    "CursorLineNr": {
+      "fg": "General|Code|LineNumberOnCaretRow",
+      "bg": "General|Editor|CaretRow"
+    },
+    "CursorLineFold": "CursorLineNr",
+    "CursorLineSign": "CursorLineNr",
+    "MatchParen": "General|Code|MatchedBrace",
+    "ModeMsg": "General|Text|DefaultText",
+    "MsgArea": "General|Text|DefaultText",
+    "MsgSeparator": "",
+    "MoreMsg": "Custom|DialogWindow",
+    "NonText": "",
+    "Normal": {
+      "fg": "General|Text|DefaultText",
+      "bg": "General|Text|DefaultText",
+      "nolink": true
+    },
+    "NormalFloat": {
+      "fg": "Appearance|Window|Title.fg",
+      "bg": "Appearance|Window|BackgroundEditArea.bg"
+    },
+    "FloatBorder": {
+      "bg": "Appearance|Notifications|Background",
+      "fg": "Appearance|Window|Border"
+    },
+    "FloatTitle": {
+      "fg": "Appearance|Window|SectionTitle.fg",
+      "bg": "Appearance|Search|Header.bg",
+      "bold": true
+    },
+    "FloatFooter": "Appearance|Window|Title",
+    "NormalNC": {
+      "fg": "General|Text|DefaultText",
+      "bg": "General|Text|DefaultText",
+      "nolink": true
+    },
+    "Pmenu": "General|PopupsAndHints|Completion",
+    "PmenuSel": "Custom|Completion|Selected",
+    "PmenuKind": "Custom|Completion|Kind",
+    "PmenuKindSel": {
+      "fg": "Custom|Completion|Kind",
+      "bg": "Custom|Completion|Selected"
+    },
+    "PmenuMatch": "Custom|Completion|Match",
+    "PmenuMatchSel": {
+      "fg": "Custom|Completion|Match",
+      "bg": "Custom|Completion|Selected"
+    },
+    "PmenuExtra": "Custom|Completion|Kind",
+    "PmenuExtraSel": {
+      "fg": "Custom|Completion|Kind",
+      "bg": "Custom|Completion|Selected"
+    },
+    "PmenuSbar": "",
+    "PmenuThumb": "General|Editor|VerticalScrollbar|Thumb",
+    "Question": "Custom|DialogWindowDefaultOption",
+    "QuickFixLine": "Appearance|Window|RowSelected",
+    "Search": "General|SearchResults|TextSearchResult",
+    "SnippetTabstop": "",
+    "SpecialKey": "General|ErrorsAndWarnings|UnusedCode",
+    "SpellBad": "General|ErrorsAndWarnings|Typo",
+    "SpellCap": "General|ErrorsAndWarnings|Warning",
+    "SpellLocal": "General|ErrorsAndWarnings|TextStyleSuggestion",
+    "SpellRare": "General|ErrorsAndWarnings|TextStyleSuggestion",
+    "StatusLine": "Custom|StatusBar",
+    "StatusLineNC": "StatusLine",
+    "TabLine": {
+      "fg": "General|Text|DefaultText.fg",
+      "sp": "General|Editor|Guides|HardWrapGuide.fg",
+      "underline": true,
+      "bg": "General|Text|DefaultText.bg"
+    },
+    "TabLineFill": {
+      "bg": "General|Text|DefaultText.bg",
+      "sp": "General|Editor|Guides|HardWrapGuide.fg",
+      "underline": true
+    },
+    "TabLineSel": {
+      "fg": "Custom|TabSel",
+      "bg": "Custom|TabSel"
+    },
+    "TabLineCloseIcon": {
+      "fg": "General|Editor|Guides|HardWrapGuide",
+      "sp": "General|Editor|Guides|HardWrapGuide.fg",
+      "underline": true,
+      "bg": "General|Text|DefaultText.bg"
+    },
+    "TabLineCloseIconSel": {
+      "fg": "General|Editor|Guides|HardWrapGuide",
+      "bg": "Custom|TabSel"
+    },
+    "TabLineBorderSel": {
+      "fg": "Custom|TabSel",
+      "bg": "Custom|TabSel"
+    },
+    "Title": "LanguageDefaults|Identifiers|Constant",
+    "Visual": "General|Editor|SelectionBackground",
+    "VisualNOS": {
+      "bg": "General|Editor|SelectionBackground.bg",
+      "underline": true
+    },
+    "WarningMsg": "ConsoleColors|LogConsole|Warning",
+    "Whitespace": "General|Text|Whitespaces",
+    "WhiteSpace": "General|Text|Whitespaces",
+    "WildMenu": "Pmenu",
+    "WinBar": "StatusLine",
+    "WinBarNC": "StatusLine"
+  },
+  "Treesitter.Python": {
+    "@variable.parameter.decorator.python": "Python|KeywordArgument",
+    "@attribute.builtin.python": "Python|Decorator",
+    "@variable.parameter.keyword_argument.python": "Python|KeywordArgument",
+    "@constructor.python": "Python|SpecialNames|Definition",
+    "@function.call.python": "Python|Functions|FunctionCall",
+    "@function.builtin.python": "Python|Functions|FunctionCall",
+    "@function.method.call.python": "Python|Functions|FunctionCall",
+    "@function.macro.python": "Python|String|FString|TypeConversion",
+    "@punctuation.special.python": "Python|String|FString|ExpressionBraces",
+    "@string.bytes.python": "Python|String|BinaryBytes",
+    "@string.documentation.python": "Python|Docstring|Text",
+    "@type.builtin.python": "Python|BuiltInName",
+    "@variable.builtin.python": "Python|Parameters|SelfParameter"
+  },
+  "Treesitter.jjdescription": {
+    "@punctuation.special.jjdescription": "ConventionalCommit|BreakingChange",
+    "@attribute.jjdescription": "ConventionalCommit|FooterType",
+    "@markup.heading.jjdescription": "ConventionalCommit|Subject",
+    "@keyword.jjdescription": "ConventionalCommit|Type",
+    "@variable.parameter.jjdescription": "ConventionalCommit|Scope"
+  },
+  "Treesitter.Markdown": {
+    "@markup.link.title.markdown": "Markdown|Links|LinkTitle",
+    "@markup.link.destination.markdown": "Markdown|Links|LinkDestination",
+    "@markup.image.markdown_inline": "Markdown|Links|Image",
+    "@conceal.markdown_inline": "LanguageDefaults|Keyword",
+    "@markup.link.markdown": "General|Hyperlinks|Unfollowed",
+    "@markup.raw.block.markdown": "Markdown|Code|CodeFence",
+    "@markup.raw.markdown_inline": "Markdown|Code|CodeSpan",
+    "@markup.quote.markdown": "Markdown|Blockquote|Blockquote",
+    "@markup.heading.markdown": "Markdown|Header|_1stLevelHeader",
+    "@markup.heading.1.markdown": "Markdown|Header|_1stLevelHeader",
+    "@markup.heading.2.markdown": "Markdown|Header|_2ndLevelHeader",
+    "@markup.heading.3.markdown": "Markdown|Header|_3rdLevelHeader",
+    "@markup.heading.4.markdown": "Markdown|Header|_4thLevelHeader",
+    "@markup.heading.5.markdown": "Markdown|Header|_5thLevelHeader",
+    "@markup.heading.6.markdown": "Markdown|Header|_6thLevelHeader",
+    "@markup.heading.marker": "Markdown|Header|HeaderMarker",
+    "@markup.link.label": "Markdown|Links|LinkLabel",
+    "@markup.autolink.markdown_inline": "Markdown|Links|AutoLink",
+    "@markup.link.text.markdown_inline": "Markdown|Links|LinkText",
+    "@markup.link.markdown_inline": "Markdown|Links|LinkText",
+    "@markup.link.destination.markdown_inline": "Markdown|Links|LinkDestination",
+    "@punctuation.special.markdown": "Markdown|HorizontalRule",
+    "@markup.reference.link.markdown_inline": "Markdown|Links|ReferenceLink"
+  },
+  "Treesitter.Go": {
+    "@lsp.type.type.go": "Go|References|TypeReferences|PackageExportedStruct",
+    "@lsp.typemod.function.definition.go": "Go|Declarations|Functions|PackageLocalFunction",
+    "@lsp.typemod.method.definition.go": "Go|Declarations|Functions|PackageLocalFunction",
+    "@lsp.typemod.variable.readonly.go": "Go|Declarations|Constants|PackageExportedConstant",
+    "@module.go": "Go|Declarations|Package",
+    "@type.builtin.go": "Go|References|TypeReferences|BuiltinTypeReference",
+    "@type.go": "Go|References|TypeReferences|PackageExportedStruct",
+    "@comment.documentation.go": "LanguageDefaults|Comments|BlockComment",
+    "@constant.go": "Go|Declarations|Constants|PackageExportedConstant",
+    "@function.builtin.go": "Go|References|FunctionCalls|BuiltinFunctionCall",
+    "@function.call.go": "Go|References|FunctionCalls|ExportedFunctionCall",
+    "@function.method.call.go": "Go|References|FunctionCalls|ExportedFunctionCall",
+    "@lsp.mod.signature.go": "Go|References|FunctionCalls|ExportedFunctionCall",
+    "@function.method.go": "Go|Declarations|Functions|ExportedFunction",
+    "@lsp.mod.defaultLibrary.go": "Go|References|TypeReferences|BuiltinTypeReference",
+    "@lsp.typemod.variable.defaultLibrary.go": "Go|Declarations|Variables|BuiltinVariable",
+    "@lsp.mod.definition.go": "Go|Declarations|Types|TypeSpecification",
+    "@lsp.mod.interface.go": "Go|Declarations|Types|PackageExportedInterface",
+    "@variable.member.go": "Go|Declarations|Variables|StructExportedMember",
+    "@lsp.mod.readonly.go": "Go|Declarations|Constants|PackageExportedConstant",
+    "@lsp.type.namespace.go": "Go|Declarations|Package"
+  },
+  "Syntax.JSON": {
+    "jsonNumber": "JSON|Number",
+    "jsonBoolean": "JSON|Keyword",
+    "jsonKeyword": "JSON|PropertyKey",
+    "jsonNull": "JSON|Keyword"
+  },
+  "Plugin.yetone/avante.nvim": {
+    "AvanteThirdTitle": "ToolWindowFloatTitle",
+    "AvanteReversedThirdTitle": {
+      "fg": "Custom|StatusBar.bg"
+    },
+    "AvanteConflictCurrent": {
+      "bg": "Custom|Legacy|DiffMerge|ChangedLines|Changed|Ignored.bg"
+    },
+    "AvanteConflictIncoming": {
+      "bg": "Custom|Legacy|DiffMerge|ChangedLines|Inserted|Ignored.bg"
+    },
+    "AvanteConflictCurrentLabel": {
+      "fg": "DiffMerge|ChangedLines|Changed|ErrorStripeMark.fg",
+      "bold": true
+    },
+    "AvanteConflictIncomingLabel": {
+      "fg": "DiffMerge|ChangedLines|Inserted|ErrorStripeMark.fg",
+      "bold": true
+    },
+    "AvantePopupHint": "LanguageDefaults|InlineHints|Default",
+    "AvanteInlineHint": "LanguageDefaults|InlineHints|TextWithoutBackground",
+    "AvantePromptInput": {
+      "fg": "General|Text|DefaultText",
+      "bg": "Appearance|Window|BackgroundEditArea.bg"
+    },
+    "AvantePromptInputBorder": {
+      "fg": "Appearance|Window|Border",
+      "bg": "Appearance|Window|BackgroundEditArea.bg"
+    },
+    "AvanteTitle": "ToolWindowFloatTitle",
+    "AvanteReversedTitle": {
+      "fg": "Custom|StatusBar.bg"
+    },
+    "AvanteSubtitle": "ToolWindowFloatTitle",
+    "AvanteReversedSubtitle": {
+      "fg": "Custom|StatusBar.bg"
+    }
+  },
+  "Semantic.Common": {
+    "@lsp.typemod.keyword.documentation": "LanguageDefaults|Comments|DocComment|Tag",
+    "@lsp.type.documentation": "LanguageDefaults|Comments|DocComment|Text"
+  },
+  "Builtin.qf": {
+    "qfFileName": "General|ErrorsAndWarnings|UnusedCode",
+    "qfFileBase": {
+      "fg": "General|Text|DefaultText",
+      "underline": true
+    },
+    "qfSeparator1": {
+      "fg": "General|Text|DefaultText.bg"
+    },
+    "qfLineNr": "General|ErrorsAndWarnings|UnusedCode",
+    "qfSeparator2": {
+      "fg": "Custom|Legacy|General|Editor|Bookmarks|Default",
+      "bold": true
+    },
+    "qfText": {
+      "fg": "General|Text|DefaultText"
+    },
+    "qfError": {
+      "fg": "Custom|Legacy|General|ErrorsAndWarnings|Error|Icon"
+    },
+    "qfWarning": {
+      "fg": "Custom|Legacy|General|ErrorsAndWarnings|Warning|Icon"
+    },
+    "qfNote": {
+      "fg": "Custom|Legacy|General|ErrorsAndWarnings|WeakWarning|Icon"
+    },
+    "qfInfo": {
+      "fg": "Appearance|Notifications|IconInfo"
+    },
+    "qfType": null
+  },
+  "Treesitter.IgnoreFiles": {
+    "@punctuation.delimiter.gitignore": "IgnoreFiles|Slash",
+    "@header.gitignore": "IgnoreFiles|Header",
+    "@character.special.gitignore": "IgnoreFiles|Value",
+    "@punctuation.special.gitignore": "IgnoreFiles|Negation",
+    "@section.gitignore": "IgnoreFiles|Section",
+    "@comment.gitignore": "IgnoreFiles|Comment",
+    "@string.special.path.gitignore": "IgnoreFiles|Value"
+  },
+  "Treesitter.Ruby": {
+    "@number.ruby": "Ruby|Number",
+    "@string.special.symbol.ruby": "Ruby|Hashes|HashKey",
+    "@type.ruby": "Ruby|Constants|Constant",
+    "@constant.ruby": "Ruby|Constants|ConstantDeclaration",
+    "@variable.parameter.ruby": "Ruby|Identifiers|Parameter",
+    "@function.ruby": "Ruby|Methods|MethodName",
+    "@variable.ruby": "Ruby|Variables|LocalVariable",
+    "@function.builtin.ruby": "Ruby|Methods|RubySpecialCall",
+    "@function.call.ruby": "Ruby|Identifiers|Identifier",
+    "@keyword.import.ruby": "Ruby|Methods|RubySpecialCall",
+    "@label.ruby": "Ruby|StringsAndSymbols|Heredoc|Marker"
+  },
+  "Treesitter.Vue": {
+    "@tag.attribute.vue": "HTML|AttributeName",
+    "@string.vue": "HTML|AttributeValue",
+    "@operator.vue": "HTML|AttributeValue",
+    "@injected_language_fragment.vue": "HTML|InjectedLanguageFragment",
+    "@tag.vue": "HTML|TagName",
+    "@tag.delimiter.vue": "HTML|Tag"
+  },
+  "Plugin.supermaven-inc/supermaven-nvim": {
+    "SupermavenSuggestion": {
+      "fg": "LanguageDefaults|InlineHints|TextWithoutBackground"
+    }
+  },
+  "Plugin.vim-scripts/netrw.vim": {
+    "netrwDir": {
+      "fg": "General|Text|DefaultText",
+      "bold": true
+    },
+    "netrwSymLink": "Appearance|ProjectView|SymLink",
+    "netrwComment": "LanguageDefaults|Comments|LineComment",
+    "netrwLink": "General|Hyperlinks|Reference",
+    "netrwSpecial": "ConsoleColors|ANSIColors|Yellow",
+    "netrwPlain": "Appearance|ToolWindow|Item",
+    "netrwExe": {
+      "fg": "ConsoleColors|ANSIColors|Green",
+      "bold": true
+    },
+    "netrwClassify": "Appearance|Window|SubtleText",
+    "netrwHelpCmd": "General|PopupsAndHints|CodeLens",
+    "netrwQuickHelp": "LanguageDefaults|Comments|DocComment|Text",
+    "netrwHide": "Appearance|Window|SubtleText",
+    "netrwBookmark": "General|Code|TODODefaults",
+    "netrwTreeBar": "Appearance|ProjectView|IndentGuide",
+    "netrwList": "Appearance|Window|SubtleText",
+    "netrwVersion": "Appearance|Window|SubtleText",
+    "NetrwCursorLine": "Appearance|Window|RowSelected"
+  },
+  "Semantic.Vue": {
+    "@lsp.typemod.variable.defaultLibrary.vue": "TypeScript|Identifiers|GlobalVariable",
+    "@lsp.type.method.vue": "TypeScript|Object|Method",
+    "@lsp.type.class.vue": "HTML|CustomTagName",
+    "@lsp.type.component.vue": "HTML|CustomTagName",
+    "@lsp.type.variable.vue": "TypeScript|Identifiers|LocalVariable",
+    "@lsp.type.parameter.vue": "JavaScript|Identifiers|Parameter"
+  },
+  "Syntax.ApacheConfig": {
+    "apacheAnything": "ApacheConfig|Argument",
+    "apacheDeclaration": "ApacheConfig|DirectiveName",
+    "apacheOption": "ApacheConfig|Argument",
+    "apacheSection": "ApacheConfig|DirectiveName",
+    "apacheString": "ApacheConfig|Argument"
+  },
+  "Treesitter.XML": {
+    "@character.xml": "XML|EntityReference",
+    "@constant.builtin.xml": "XML|EntityReference",
+    "@markup.raw.xml": "XML|TagData",
+    "@string.special.xml": "XML|AttributeValue",
+    "@string.xml": "XML|AttributeValue",
+    "@tag.attribute.xml": "XML|AttributeName",
+    "@tag.delimiter.xml": "XML|Tag",
+    "@tag.xml": "XML|TagName",
+    "@type.definition.xml": "XML|AttributeName"
+  },
+  "Syntax.SassSCSS": {
+    "sassVariable": "SassSCSS|Variable"
+  },
+  "Treesitter.Bash": {
+    "@function.builtin.bash": "BashSupportPro|Commands|Builtin",
+    "@function.call.bash": "BashSupportPro|Commands|GenericCommand",
+    "@operator.bash": "BashSupportPro|PipelineOperators",
+    "@punctuation.delimiter.bash": "LanguageDefaults|Keyword",
+    "@punctuation.special.bash": "BashSupportPro|PipelineOperators",
+    "@string.special.path.bash": "BashSupportPro|StringLiterals|UnquotedWord",
+    "@constant.bash": null,
+    "@keyword.directive.bash": "BashSupportPro|Comments|ShebangComment",
+    "@label.bash": "BashSupportPro|HereDocument|HereDocumentStart",
+    "@function.bash": "BashSupportPro|FunctionDeclaration",
+    "@variable.parameter.bash": "BashSupportPro|StringLiterals|UnquotedWord"
+  },
+  "Plugin.nvim-telescope/telescope.nvim": {
+    "TelescopePreviewLine": null,
+    "TelescopePreviewMatch": null,
+    "TelescopePreviewPipe": null,
+    "TelescopePreviewCharDev": null,
+    "TelescopePreviewDirectory": null,
+    "TelescopePreviewBlock": null,
+    "TelescopePreviewLink": null,
+    "TelescopePreviewSocket": null,
+    "TelescopePreviewRead": null,
+    "TelescopePreviewWrite": null,
+    "TelescopePreviewExecute": null,
+    "TelescopePreviewHyphen": null,
+    "TelescopePreviewSticky": null,
+    "TelescopePreviewSize": null,
+    "TelescopePreviewUser": null,
+    "TelescopePreviewGroup": null,
+    "TelescopePreviewDate": null,
+    "TelescopePreviewMessage": null,
+    "TelescopePreviewMessageFillchar": null,
+    "TelescopeResultsClass": null,
+    "TelescopeResultsConstant": null,
+    "TelescopeResultsField": null,
+    "TelescopeResultsFunction": null,
+    "TelescopeResultsMethod": null,
+    "TelescopeResultsOperator": null,
+    "TelescopeResultsStruct": null,
+    "TelescopeResultsVariable": null,
+    "TelescopeResultsLineNr": null,
+    "TelescopeResultsIdentifier": null,
+    "TelescopeResultsNumber": null,
+    "TelescopeResultsComment": null,
+    "TelescopeResultsSpecialComment": null,
+    "TelescopeResultsDiffChange": null,
+    "TelescopeResultsDiffAdd": null,
+    "TelescopeResultsDiffDelete": null,
+    "TelescopeResultsDiffUntracked": null,
+    "TelescopeSelection": {
+      "fg": "General|Text|DefaultText",
+      "bg": "Appearance|Window|RowSelected.bg"
+    },
+    "TelescopeSelectionCaret": {
+      "fg": "Appearance|Window|RowSelected.bg",
+      "bg": "Appearance|Window|RowSelected.bg"
+    },
+    "TelescopeMultiSelection": "",
+    "TelescopeMultiIcon": "",
+    "TelescopeNormal": {
+      "fg": "General|Text|DefaultText",
+      "bg": "Appearance|Window|BackgroundEditArea.bg"
+    },
+    "TelescopePreviewNormal": {
+      "fg": "Appearance|Window|Title.fg",
+      "bg": "General|Text|DefaultText.bg"
+    },
+    "TelescopePromptNormal": {
+      "fg": "General|Text|DefaultText",
+      "bg": "Appearance|Window|BackgroundEditArea.bg"
+    },
+    "TelescopeResultsNormal": {
+      "fg": "General|Text|DefaultText",
+      "bg": "Appearance|Window|BackgroundEditArea.bg"
+    },
+    "TelescopeBorder": {
+      "fg": "Appearance|Window|Border",
+      "bg": "Appearance|Window|BackgroundEditArea.bg"
+    },
+    "TelescopePromptBorder": {
+      "fg": "Appearance|Window|Border",
+      "bg": "Appearance|Window|BackgroundEditArea.bg"
+    },
+    "TelescopeResultsBorder": {
+      "fg": "Appearance|Window|Border",
+      "bg": "Appearance|Window|BackgroundEditArea.bg"
+    },
+    "TelescopePreviewBorder": {
+      "fg": "Appearance|Window|Border",
+      "bg": "Appearance|Window|BackgroundEditArea.bg"
+    },
+    "TelescopeTitle": {
+      "fg": "Appearance|Window|SectionTitle.fg",
+      "bold": true,
+      "bg": "Appearance|Window|Border.bg"
+    },
+    "TelescopePromptTitle": {
+      "fg": "Appearance|Window|SectionTitle.fg",
+      "bold": true,
+      "bg": "Appearance|Window|Border.bg"
+    },
+    "TelescopeResultsTitle": {
+      "fg": "Appearance|Window|SectionTitle.fg",
+      "bold": true,
+      "bg": "Appearance|Window|Border.bg"
+    },
+    "TelescopePreviewTitle": {
+      "fg": "Appearance|Window|SectionTitle.fg",
+      "bold": true,
+      "bg": "Appearance|Window|Border.bg"
+    },
+    "TelescopePromptCounter": {
+      "fg": "Appearance|Window|SubtleText.fg"
+    },
+    "TelescopeMatching": {
+      "fg": "Appearance|Search|MatchedText.fg",
+      "bg": "Appearance|Search|MatchedText.bg"
+    },
+    "TelescopePromptPrefix": {
+      "fg": "Appearance|Search|PromptIcon"
+    }
+  },
+  "Treesitter.SassSCSS": {
+    "@keyword.directive.scss": "SassSCSS|Extend",
+    "@property.scss": "SassSCSS|PropertyName",
+    "@tag.scss": "SassSCSS|TagName",
+    "@tag.attribute.scss": "SassSCSS|AttributeName",
+    "@type.scss": "SassSCSS|ClassName",
+    "@attribute.scss": "SassSCSS|PseudoSelector",
+    "@variable.parameter.scss": "SassSCSS|Variable",
+    "@comment.scss": "SassSCSS|Comment",
+    "@variable.scss": "SassSCSS|Variable",
+    "@function.scss": "SassSCSS|Function"
+  },
+  "Builtin.Languages": {
+    "Removed": {
+      "bg": "Custom|Legacy|DiffMerge|ChangedLines|Deleted|Ignored.bg"
+    },
+    "Operator": "LanguageDefaults|BracesAndOperators|OperationSign",
+    "Added": {
+      "bg": "Custom|Legacy|DiffMerge|ChangedLines|Inserted|Ignored.bg"
+    },
+    "Boolean": "LanguageDefaults|Keyword",
+    "Number": "LanguageDefaults|Number",
+    "Comment": "LanguageDefaults|Comments|LineComment",
+    "String": "LanguageDefaults|String|StringText",
+    "Type": "LanguageDefaults|Keyword",
+    "Function": "LanguageDefaults|Identifiers|FunctionDeclaration",
+    "Constant": "LanguageDefaults|Identifiers|Constant",
+    "Debug": "LanguageDefaults|Keyword",
+    "Typedef": "LanguageDefaults|Keyword",
+    "Label": "LanguageDefaults|Keyword",
+    "Macro": "LanguageDefaults|Metadata",
+    "Exception": "LanguageDefaults|Keyword",
+    "Include": "LanguageDefaults|Keyword",
+    "Keyword": "LanguageDefaults|Keyword",
+    "PreCondit": "LanguageDefaults|Metadata",
+    "Character": "LanguageDefaults|String|StringText",
+    "Float": "LanguageDefaults|Number",
+    "Statement": "LanguageDefaults|Keyword",
+    "Conditional": "LanguageDefaults|Keyword",
+    "Repeat": "LanguageDefaults|Keyword",
+    "Tag": "LanguageDefaults|Keyword",
+    "PreProc": "LanguageDefaults|Metadata",
+    "StorageClass": "LanguageDefaults|Keyword",
+    "Structure": "LanguageDefaults|Keyword",
+    "Special": "LanguageDefaults|String|EscapeSequence|Valid",
+    "SpecialChar": "LanguageDefaults|String|EscapeSequence|Valid",
+    "Delimiter": "General|Text|DefaultText",
+    "SpecialComment": "LanguageDefaults|Keyword",
+    "Underlined": "General|Hyperlinks|Inactive",
+    "Define": "LanguageDefaults|Metadata",
+    "Ignore": [],
+    "Identifier": "LanguageDefaults|Identifiers|LocalVariable",
+    "Todo": "General|Code|TODODefaults",
+    "Changed": {
+      "bg": "Custom|Legacy|DiffMerge|ChangedLines|Changed|Ignored.bg"
+    },
+    "Error": "General|ErrorsAndWarnings|Error"
+  },
+  "Treesitter.Gotmpl": {
+    "@function.builtin.gotmpl": "GoTemplate|Keyword",
+    "@variable.member.gotmpl": "GoTemplate|Identifier"
+  },
+  "Treesitter.Common": {
+    "@keyword.directive": "LanguageDefaults|Metadata",
+    "@label": "LanguageDefaults|Identifiers|Label",
+    "@module": "LanguageDefaults|Identifiers|Default",
+    "@property": "LanguageDefaults|Classes|InstanceField",
+    "@property.static": "LanguageDefaults|Classes|StaticField",
+    "@punctuation": "Custom|Legacy|LanguageDefaults|BracesAndOperators|Default",
+    "@punctuation.special": "Custom|Legacy|LanguageDefaults|BracesAndOperators|Default",
+    "@type": "LanguageDefaults|Classes|ClassName",
+    "@type.builtin": "LanguageDefaults|Keyword",
+    "@variable": "LanguageDefaults|Identifiers|LocalVariable",
+    "@variable.builtin": "LanguageDefaults|Keyword",
+    "@variable.member": "LanguageDefaults|Classes|InstanceField",
+    "@variable.member.static": "LanguageDefaults|Classes|StaticField",
+    "@attribute": "LanguageDefaults|Metadata",
+    "@comment": "LanguageDefaults|Comments|LineComment",
+    "@comment.documentation": "LanguageDefaults|Comments|DocComment|Text",
+    "@constant": "LanguageDefaults|Identifiers|Constant",
+    "@constant.macro": "LanguageDefaults|Metadata",
+    "@variable.parameter": "LanguageDefaults|Identifiers|Parameter",
+    "@constructor.php": "LanguageDefaults|Identifiers|Default",
+    "@function.macro": "LanguageDefaults|Metadata",
+    "@keyword.conditional.ternary": "LanguageDefaults|BracesAndOperators|OperationSign",
+    "@keyword": "LanguageDefaults|Keyword"
+  },
+  "Treesitter.Rust": {
+    "@constant.builtin.rust": "Rust|Types|EnumVariant",
+    "@function.macro.rust": "Rust|Functions|Macro",
+    "@variable.mutable_static.rust": "Rust|Variables|MutableStatic",
+    "@unsafe.rust": "Rust|UnsafeCode",
+    "@label.rust": null,
+    "@type.parameter_lifetime.rust": "Rust|Parameters|Lifetime",
+    "@type.parameter.rust": "Rust|Parameters|TypeParameter"
+  },
+  "Plugin.folke/trouble.nvim": {
+    "TroubleIndentFoldOpen": "Appearance|StructureView|Fold",
+    "TroubleIndentLast": "Appearance|ProjectView|IndentGuide",
+    "TroubleIndentMiddle": "Appearance|ProjectView|IndentGuide",
+    "TroubleIndentTop": "Appearance|ProjectView|IndentGuide",
+    "TroubleIndentWs": "Appearance|ProjectView|IndentGuide",
+    "TroubleNormal": {
+      "fg": "General|Text|DefaultText",
+      "bg": "Appearance|ToolWindow|Background.bg"
+    },
+    "TroubleNormalNC": "TroubleNormal",
+    "TroublePos": "Comment",
+    "TroublePreview": "",
+    "TroubleSource": "Comment",
+    "TroubleText": "General|Text|DefaultText",
+    "TroubleTitle": {
+      "fg": "Appearance|ToolWindow|Title",
+      "bold": true
+    },
+    "TroubleTabSelected": {
+      "sp": "Custom|Legacy|Custom|Dialog|Tabs|Selected",
+      "fg": "Custom|Legacy|Custom|Dialog|Tabs|Selected",
+      "underline": true
+    },
+    "TroubleTabSelectedCount": {
+      "sp": "Custom|Legacy|Custom|Dialog|Tabs|Selected",
+      "fg": "LanguageDefaults|Comments|LineComment",
+      "underline": true
+    },
+    "TroubleBasename": "TroubleFilename",
+    "TroubleFilename": "Appearance|ToolWindow|Item",
+    "TroubleCode": "Comment",
+    "TroubleCount": "Comment",
+    "TroubleDirectory": "Appearance|ToolWindow|Item",
+    "TroubleLspSymbolName": "Appearance|ToolWindow|Item",
+    "TroubleIndent": "Appearance|ProjectView|IndentGuide",
+    "TroubleIndentFoldClosed": "Appearance|StructureView|Fold"
+  },
+  "Plugin.ibhagwan/fzf-lua": {
+    "FzfLuaPreviewTitle": {
+      "fg": "Appearance|Window|SectionTitle.fg",
+      "bg": "Appearance|Window|BackgroundEditArea.bg"
+    },
+    "FzfLuaCursor": "",
+    "FzfLuaCursorLine": "",
+    "FzfLuaCursorLineNr": "",
+    "FzfLuaSearch": "General|SearchResults|SearchResult",
+    "FzfLuaScrollBorderEmpty": "",
+    "FzfLuaScrollBorderFull": "",
+    "FzfLuaScrollFloatEmpty": "",
+    "FzfLuaScrollFloatFull": "",
+    "FzfLuaHelpNormal": "",
+    "FzfLuaBufNr": "General|Text|DefaultText",
+    "FzfLuaHeaderBind": {
+      "fg": "Appearance|Window|SubtleText.fg",
+      "bold": true
+    },
+    "FzfLuaBufFlagAlt": {
+      "fg": "General|Text|DefaultText"
+    },
+    "FzfLuaTabTitle": "General|Text|DefaultText",
+    "FzfLuaTabMarker": {
+      "fg": "Appearance|Window|CheckboxSelected.bg"
+    },
+    "FzfLuaDirIcon": "",
+    "FzfLuaDirPart": "LanguageDefaults|Comments|LineComment",
+    "FzfLuaFilePart": {
+      "fg": "General|Text|DefaultText"
+    },
+    "FzfLuaLiveSym": {
+      "fg": "General|Text|DefaultText",
+      "bold": false
+    },
+    "FzfLuaFzfNormal": {
+      "fg": "General|Text|DefaultText",
+      "bg": "Appearance|Window|BackgroundEditArea.bg"
+    },
+    "FzfLuaFzfCursorLine": {
+      "fg": "General|Text|DefaultText",
+      "bg": "Appearance|Window|RowSelected.bg"
+    },
+    "FzfLuaFzfMatch": {
+      "fg": "Appearance|Search|MatchedTextContrast.bg"
+    },
+    "FzfLuaFzfBorder": {
+      "fg": "Appearance|Window|BorderSubtle.fg"
+    },
+    "FzfLuaFzfScrollbar": {
+      "fg": "General|Editor|VerticalScrollbar|Thumb.bg"
+    },
+    "FzfLuaFzfSeparator": "Appearance|Window|BorderSubtle",
+    "FzfLuaFzfGutter": "Appearance|Window|BackgroundEditArea",
+    "FzfLuaFzfHeader": {
+      "fg": "Appearance|Window|SubtleText.fg"
+    },
+    "FzfLuaFzfInfo": {
+      "fg": "Appearance|Window|SubtleText.fg"
+    },
+    "FzfLuaFzfPointer": {
+      "fg": "Appearance|Window|BackgroundEditArea.bg"
+    },
+    "FzfLuaFzfMarker": {
+      "fg": "Appearance|Window|CheckboxSelected.bg"
+    },
+    "FzfLuaFzfSpinner": "Appearance|Window|SubtleText",
+    "FzfLuaFzfPrompt": "Appearance|Search|PromptIcon",
+    "FzfLuaFzfQuery": "General|Text|DefaultText",
+    "FzfLuaHelpBorder": "",
+    "FzfLuaBufFlagCur": {
+      "fg": "Custom|Legacy|General|Editor|Tabs|Underline.sp"
+    },
+    "FzfLuaBufName": "General|Text|DefaultText",
+    "FzfLuaLivePrompt": "General|Text|DefaultText",
+    "FzfLuaPathLineNr": "General|Code|LineNumber",
+    "FzfLuaPathColNr": "General|Code|LineNumber",
+    "FzfLuaHeaderText": {
+      "fg": "Appearance|Window|SubtleText.fg"
+    },
+    "FzfLuaNormal": {
+      "fg": "Appearance|Window|Title.fg",
+      "bg": "Appearance|Window|BackgroundEditArea.bg"
+    },
+    "FzfLuaBorder": {
+      "fg": "Appearance|Window|Border",
+      "bg": "Appearance|Window|BackgroundEditArea.bg"
+    },
+    "FzfLuaTitle": {
+      "fg": "Appearance|Window|SectionTitle.fg",
+      "bold": true,
+      "bg": "Appearance|Search|Header.bg"
+    },
+    "FzfLuaTitleFlags": "Appearance|Window|CheckboxSelected",
+    "FzfLuaBackdrop": {
+      "bg": "Appearance|Window|BackgroundEditArea.bg"
+    },
+    "FzfLuaPreviewNormal": {
+      "fg": "Appearance|Window|Title.fg",
+      "bg": "General|Text|DefaultText.bg"
+    },
+    "FzfLuaPreviewBorder": {
+      "fg": "Appearance|Window|Border",
+      "bg": "Appearance|Window|BackgroundEditArea.bg"
+    }
+  },
+  "Treesitter.Zig": {
+    "@variable.member.zig": "Zig|Namespace|Reference",
+    "@type.zig": "Zig|Type|Reference",
+    "@function.builtin.zig": "Zig|Builtin",
+    "@keyword.import.zig": "Zig|Builtin",
+    "@type.builtin.zig": "Zig|Type|Reference",
+    "@variable.zig": "Zig|Variable|Reference"
+  },
+  "Treesitter.BibTeX": {
+    "@string.bibtex": "BibTeX|String",
+    "@constant.bibtex": "BibTeX|Identifier",
+    "@comment.bibtex": "BibTeX|Comments",
+    "@property.bibtex": "BibTeX|Key",
+    "@variable.parameter.bibtex": "BibTeX|Key",
+    "@keyword.bibtex": "BibTeX|TypeToken"
+  },
+  "Treesitter.HTML": {
+    "@string.html": "HTML|AttributeValue",
+    "@markup.heading": "General|Text|DefaultText.fg",
+    "@markup.heading.1": "General|Text|DefaultText.fg",
+    "@markup.heading.2": "General|Text|DefaultText.fg",
+    "@markup.heading.3": "General|Text|DefaultText.fg",
+    "@markup.heading.4": "General|Text|DefaultText.fg",
+    "@markup.heading.5": "General|Text|DefaultText.fg",
+    "@markup.heading.6": "General|Text|DefaultText.fg",
+    "@tag.delimiter.html": "HTML|Tag",
+    "@character.special.html": "HTML|EntityReference",
+    "@tag.html": "HTML|TagName",
+    "@tag.attribute.html": "HTML|AttributeName"
+  },
+  "Treesitter.Scala": {
+    "@comment.documentation.scala": "Scala|ScalaDocComment",
+    "@given.name.scala": "Scala|Given",
+    "@directive.prefix.scala": "Scala|ScalaDirectivePrefix",
+    "@enum.single_case.scala": "Scala|EnumSingletonCase",
+    "@directive.command.scala": "Scala|ScalaDirectiveCommand",
+    "@directive.key": "Scala|ScalaDirectiveKey",
+    "@directive.value": "Scala|ScalaDirectiveValue",
+    "@string.escape.scala": "Scala|ValidEscapeInString",
+    "@type.parameter.scala": "Scala|TypeParameter",
+    "@xml.tag.scala": "Scala|ScalaXMLTag",
+    "@keyword.import.scala": "Scala|Keyword",
+    "@template.val": "Scala|TemplateVal"
+  },
+  "Plugin.petertriho/nvim-scrollbar": {
+    "ScrollbarCursorHandle": "ScrollbarHandle",
+    "ScrollbarCursor": [],
+    "ScrollbarSearchHandle": {
+      "fg": "General|SearchResults|TextSearchResult|ErrorStripeMark",
+      "bg": "General|Editor|VerticalScrollbar|Thumb"
+    },
+    "ScrollbarSearch": "General|SearchResults|TextSearchResult|ErrorStripeMark",
+    "ScrollbarErrorHandle": {
+      "fg": "General|ErrorsAndWarnings|Error|ErrorStripeMark",
+      "bg": "General|Editor|VerticalScrollbar|Thumb"
+    },
+    "ScrollbarError": {
+      "fg": "General|ErrorsAndWarnings|Error|ErrorStripeMark"
+    },
+    "ScrollbarWarnHandle": {
+      "fg": "General|ErrorsAndWarnings|Warning|ErrorStripeMark",
+      "bg": "General|Editor|VerticalScrollbar|Thumb"
+    },
+    "ScrollbarWarn": {
+      "fg": "General|ErrorsAndWarnings|Warning|ErrorStripeMark"
+    },
+    "ScrollbarInfoHandle": "ScrollbarHandle",
+    "ScrollbarInfo": {
+      "fg": "ConsoleColors|LogConsole|Verbose"
+    },
+    "ScrollbarHintHandle": {
+      "fg": "General|ErrorsAndWarnings|WeakWarning.sp",
+      "bg": "General|Editor|VerticalScrollbar|Thumb"
+    },
+    "ScrollbarHint": {
+      "fg": "General|ErrorsAndWarnings|WeakWarning.sp"
+    },
+    "ScrollbarMiscHandle": "ScrollbarHandle",
+    "ScrollbarMisc": [],
+    "ScrollbarGitAdd": "DiffMerge|ChangedLines|Inserted|ErrorStripeMark",
+    "ScrollbarGitAddHandle": {
+      "fg": "DiffMerge|ChangedLines|Inserted|ErrorStripeMark.fg",
+      "bg": "General|Editor|VerticalScrollbar|Thumb"
+    },
+    "ScrollbarGitChange": "DiffMerge|ChangedLines|Changed|ErrorStripeMark",
+    "ScrollbarGitChangeHandle": {
+      "fg": "DiffMerge|ChangedLines|Changed|ErrorStripeMark.fg",
+      "bg": "General|Editor|VerticalScrollbar|Thumb"
+    },
+    "ScrollbarGitDelete": "DiffMerge|ChangedLines|Deleted|ErrorStripeMark",
+    "ScrollbarGitDeleteHandle": {
+      "fg": "DiffMerge|ChangedLines|Deleted|ErrorStripeMark.fg",
+      "bg": "General|Editor|VerticalScrollbar|Thumb"
+    },
+    "ScrollbarIdentifierUnderCaretHandle": {
+      "fg": "General|Code|IdentifierUnderCaret|ErrorStripeMark",
+      "bg": "General|Editor|VerticalScrollbar|Thumb"
+    },
+    "ScrollbarTodo": {
+      "fg": "General|Code|TODODefaults|ErrorStripeMark"
+    },
+    "ScrollbarIdentifierUnderCaret": {
+      "fg": "General|Code|IdentifierUnderCaret|ErrorStripeMark"
+    },
+    "ScrollbarTodoHandle": {
+      "fg": "General|Code|TODODefaults|ErrorStripeMark",
+      "bg": "General|Editor|VerticalScrollbar|Thumb"
+    },
+    "ScrollbarHandle": "General|Editor|VerticalScrollbar|Thumb"
+  },
+  "Plugin.nvim-treesitter/nvim-treesitter-context": {
+    "TreesitterContextLineNumberBottom": {
+      "underline": true,
+      "sp": "Custom|Legacy|General|Editor|StickyLines|BorderDarker.fg"
+    },
+    "TreesitterContext": {
+      "nolink": true,
+      "bg": "Custom|Legacy|General|Editor|StickyLines|Background"
+    },
+    "TreesitterContextBottom": {
+      "underline": true,
+      "sp": "Custom|Legacy|General|Editor|StickyLines|BorderDarker.fg"
+    }
+  },
+  "Builtin.Diagnostic": {
+    "LspReferenceText": "Custom|Legacy|CodeWithMe|UserOneSelection",
+    "LspReferenceRead": "General|Code|IdentifierUnderCaret",
+    "DiagnosticError": {
+      "fg": "General|ErrorsAndWarnings|Error.sp"
+    },
+    "LspReferenceWrite": "General|Code|IdentifierUnderCaretWrite",
+    "DiagnosticWarn": {
+      "fg": "Custom|Legacy|General|ErrorsAndWarnings|Warning|Default.sp"
+    },
+    "LspInlayHint": "LanguageDefaults|InlineHints|Parameters|Default",
+    "DiagnosticInfo": {
+      "fg": "General|ErrorsAndWarnings|WeakWarning.sp"
+    },
+    "LspCodeLens": "General|PopupsAndHints|CodeLens",
+    "DiagnosticHint": {
+      "fg": "General|ErrorsAndWarnings|UnusedCode"
+    },
+    "DiagnosticOk": {
+      "fg": "ConsoleColors|Console|UserInput"
+    },
+    "LspSignatureActiveParameter": "Search",
+    "DiagnosticVirtualTextError": "",
+    "DiagnosticVirtualTextWarn": "",
+    "DiagnosticVirtualTextInfo": "",
+    "DiagnosticVirtualTextHint": "",
+    "DiagnosticVirtualTextOk": "",
+    "DiagnosticUnderlineError": "General|ErrorsAndWarnings|Error",
+    "DiagnosticUnderlineWarn": "General|ErrorsAndWarnings|Warning",
+    "DiagnosticUnderlineInfo": "General|ErrorsAndWarnings|WeakWarning",
+    "DiagnosticUnderlineHint": {
+      "sp": "General|ErrorsAndWarnings|UnusedCode.fg",
+      "underdotted": true
+    },
+    "DiagnosticUnderlineOk": {
+      "sp": "Custom|Legacy|Custom|Settings|Plugins|AdditionalInfo|VerifiedOrg.fg",
+      "underline": true
+    },
+    "DiagnosticFloatingError": {
+      "fg": "General|Text|DefaultText"
+    },
+    "DiagnosticFloatingWarn": {
+      "fg": "General|Text|DefaultText"
+    },
+    "DiagnosticFloatingInfo": {
+      "fg": "General|Text|DefaultText"
+    },
+    "DiagnosticFloatingHint": {
+      "fg": "General|Text|DefaultText"
+    },
+    "DiagnosticFloatingOk": {
+      "fg": "General|Text|DefaultText"
+    },
+    "DiagnosticSignError": {
+      "fg": "Custom|Legacy|General|ErrorsAndWarnings|Error|Icon"
+    },
+    "DiagnosticSignWarn": {
+      "fg": "Custom|Legacy|General|ErrorsAndWarnings|Warning|Icon"
+    },
+    "healthSuccess": "DiagnosticOk",
+    "DiagnosticSignInfo": {
+      "fg": "Custom|Legacy|General|ErrorsAndWarnings|WeakWarning|Icon"
+    },
+    "healthWarning": "General|ErrorsAndWarnings|Warning",
+    "DiagnosticSignHint": {
+      "fg": "Appearance|Notifications|IconInfo"
+    },
+    "healthError": "Error",
+    "DiagnosticSignOk": {
+      "fg": "Custom|Legacy|Custom|Settings|Plugins|AdditionalInfo|VerifiedOrg"
+    },
+    "LspInfoBorder": {
+      "fg": "Appearance|Window|Border",
+      "bg": "Appearance|Window|BackgroundEditArea.bg"
+    },
+    "DiagnosticDeprecated": "General|ErrorsAndWarnings|DeprecatedSymbol",
+    "LspCodeLensSeparator": "",
+    "DiagnosticUnnecessary": "General|ErrorsAndWarnings|UnusedCode",
+    "LspDiagnosticsDefaultError": "DiagnosticError",
+    "LspDiagnosticsDefaultWarning": "DiagnosticWarn",
+    "LspDiagnosticsDefaultInformation": "DiagnosticInfo",
+    "LspDiagnosticsDefaultHint": "DiagnosticHint",
+    "LspDiagnosticsVirtualTextError": "DiagnosticVirtualTextError",
+    "LspDiagnosticsVirtualTextWarning": "DiagnosticVirtualTextWarn",
+    "LspDiagnosticsVirtualTextInformation": "DiagnosticVirtualTextInfo",
+    "LspDiagnosticsVirtualTextHint": "DiagnosticVirtualTextHint",
+    "LspDiagnosticsUnderlineError": "DiagnosticUnderlineError",
+    "LspDiagnosticsUnderlineWarning": "DiagnosticUnderlineWarn",
+    "LspDiagnosticsUnderlineInformation": "DiagnosticUnderlineInfo",
+    "LspDiagnosticsUnderlineHint": "DiagnosticUnderlineHint",
+    "LspDiagnosticsFloatingError": "DiagnosticFloatingError",
+    "LspDiagnosticsFloatingWarning": "DiagnosticFloatingWarn",
+    "LspDiagnosticsFloatingInformation": "DiagnosticFloatingInfo",
+    "LspDiagnosticsFloatingHint": "DiagnosticFloatingHint",
+    "LspDiagnosticsSignError": "DiagnosticSignError",
+    "LspDiagnosticsSignWarning": "DiagnosticSignWarn",
+    "LspDiagnosticsSignInformation": "DiagnosticSignInfo",
+    "LspDiagnosticsSignHint": "DiagnosticSignHint"
+  },
+  "Semantic.Zig": {
+    "@lsp.typemod.variable-.declaration.zig": "Zig|Variable|Declaration",
+    "@lsp.type.variable-.zig": "Zig|Variable|Reference",
+    "@lsp.type.variable.zig": null,
+    "@lsp.type.errorTag.zig": "Zig|ErrorTag|Reference",
+    "@lsp.type.string.zig": null,
+    "@lsp.typemod.errorTag.declaration.zig": "Zig|ErrorTag|Declaration",
+    "@lsp.typemod.comment.documentation.zig": "LanguageDefaults|Comments|DocComment|Text",
+    "@function.call.zig": "Zig|Function|Reference",
+    "@lsp.typemod.variable.static.zig": "Zig|Namespace|Declaration",
+    "@lsp.typemod.enum.declaration.zig": "Zig|Enum|Declaration",
+    "@lsp.type.type.zig": "Zig|Type|Reference"
+  },
+  "Treesitter.LaTeX": {
+    "@markup.link.latex": "LaTeX|References|LabelReference",
+    "@markup.math.latex": "LaTeX|Math|InlineMath",
+    "@comment.latex": "LaTeX|Comments|RegularComment",
+    "@keyword.import.latex": "LaTeX|Commands|Commands",
+    "@function.latex": "LaTeX|Commands|Commands",
+    "@function.macro.latex": "LaTeX|Commands|Commands",
+    "@module.latex": "LaTeX|Commands|Commands",
+    "@punctuation.bracket.latex": "LaTeX|Brackets",
+    "@operator.latex": "LaTeX|Commands|EqualsSignInKeyValuePairs"
+  },
+  "Treesitter.Blade": {
+    "@directive.blade": "Blade|Directive",
+    "@tag.blade": "HTML|TagName",
+    "@tag.delimiter.blade": "HTML|Tag",
+    "@tag.attribute.blade": "HTML|AttributeName",
+    "@comment.blade": "Blade|Comment"
+  },
+  "Treesitter.Nix": {
+    "@function.builtin.nix": "Nix|BuiltInConstantsAndFunctions|OtherBuiltIns",
+    "@keyword.import.nix": "Nix|BuiltInConstantsAndFunctions|ImportFunction",
+    "@punctuation.special.nix": "LanguageDefaults|BracesAndOperators|Braces",
+    "@string.special.path.nix": "LanguageDefaults|String|StringText",
+    "@variable.member.nix": "LanguageDefaults|Identifiers|Default"
+  },
+  "Plugin.github/copilot.vim": {
+    "CopilotSuggestion": "LanguageDefaults|InlineHints|TextWithoutBackground",
+    "CopilotAnnotation": "LanguageDefaults|InlineHints|TextWithoutBackground"
+  },
+  "Plugin.hrsh7th/nvim-cmp": {
+    "CmpItemAbbrMatchFuzzy": "Custom|Completion|Match",
+    "CmpItemKind": "Custom|Completion|Kind",
+    "CmpItemKindCopilot": "Custom|Completion|Kind",
+    "CmpItemMenu": "Custom|Completion|Kind",
+    "CmpItemAbbr": "General|Text|DefaultText.fg",
+    "CmpItemAbbrDeprecated": {
+      "fg": "General|Text|DefaultText.fg",
+      "strikethrough": true
+    },
+    "CmpItemAbbrMatch": "Custom|Completion|Match"
+  },
+  "Plugin.folke/snacks.nvim.notifier": {
+    "SnacksNotifierIconInfo": "Appearance|Notifications|IconInfo",
+    "SnacksNotifierIconTrace": "General|Text|DefaultText.fg",
+    "SnacksNotifierIconWarn": "Appearance|Notifications|IconWarn",
+    "SnacksNotifierInfo": null,
+    "SnacksNotifierMinimal": null,
+    "SnacksNotifierTitleDebug": {
+      "fg": "General|Text|DefaultText",
+      "bold": true
+    },
+    "SnacksNotifierTitleError": "SnacksNotifierTitleDebug",
+    "SnacksNotifierTitleInfo": "SnacksNotifierTitleDebug",
+    "SnacksNotifierTitleTrace": "SnacksNotifierTitleDebug",
+    "SnacksNotifierTitleWarn": "SnacksNotifierTitleDebug",
+    "SnacksNotifierTrace": null,
+    "SnacksNotifierWarn": null,
+    "SnacksNotifierBorderDebug": {
+      "fg": "Appearance|Window|Border"
+    },
+    "SnacksNotifierBorderError": "SnacksNotifierBorderDebug",
+    "SnacksNotifierBorderInfo": "SnacksNotifierBorderDebug",
+    "SnacksNotifierBorderTrace": "SnacksNotifierBorderDebug",
+    "SnacksNotifierBorderWarn": "SnacksNotifierBorderDebug",
+    "SnacksNotifierDebug": null,
+    "SnacksNotifierError": null,
+    "SnacksNotifierFooterDebug": null,
+    "SnacksNotifierFooterError": null,
+    "SnacksNotifierFooterInfo": null,
+    "SnacksNotifierFooterTrace": null,
+    "SnacksNotifierFooterWarn": null,
+    "SnacksNotifierHistory": null,
+    "SnacksNotifierHistoryDateTime": null,
+    "SnacksNotifierHistoryTitle": null,
+    "SnacksNotifierIconDebug": "General|Text|DefaultText.fg",
+    "SnacksNotifierIconError": "Appearance|Notifications|IconError"
+  },
+  "Semantic.Nix": {
+    "@lsp.type.function.nix": null,
+    "@lsp.type.property.nix": "LanguageDefaults|Identifiers|Default",
+    "@lsp.type.string.nix": null,
+    "@lsp.mod.escape.nix": "LanguageDefaults|String|EscapeSequence|Valid",
+    "@lsp.mod.builtin.nix": null
+  },
+  "Plugin.dmtrKovalenko/fff.nvim": {
+    "FFFSelectedActive": {
+      "fg": "Appearance|Window|CheckboxSelected.bg",
+      "bg": "Appearance|Window|RowSelected.bg"
+    },
+    "FFFGitStaged": "Custom|Legacy|VCS|FileStatusColors|Ignored",
+    "FFFGitModified": "Custom|Legacy|VCS|FileStatusColors|Modified",
+    "FFFGitDeleted": "Custom|Legacy|VCS|FileStatusColors|Deleted",
+    "FFFGitRenamed": "Custom|Legacy|VCS|FileStatusColors|Renamed",
+    "FFFGitUntracked": "Custom|Legacy|VCS|FileStatusColors|Unknown",
+    "FFFGitIgnored": "Custom|Legacy|VCS|FileStatusColors|IgnoredIgnorePlugin",
+    "FFFGitSignStaged": "CustomFFFBlank",
+    "FFFGitSignModified": "CustomFFFBlank",
+    "FFFGitSignDeleted": "CustomFFFBlank",
+    "FFFGitSignRenamed": "CustomFFFBlank",
+    "FFFGitSignUntracked": "CustomFFFBlank",
+    "FFFGitSignIgnored": "CustomFFFBlank",
+    "FFFGitSignStagedSelected": "CustomFFFBlankSelected",
+    "FFFGitSignModifiedSelected": "CustomFFFBlankSelected",
+    "FFFGitSignDeletedSelected": "CustomFFFBlankSelected",
+    "FFFGitSignRenamedSelected": "CustomFFFBlankSelected",
+    "FFFGitSignUntrackedSelected": "CustomFFFBlankSelected",
+    "FFFGitSignIgnoredSelected": "CustomFFFBlankSelected",
+    "CustomFFFGrepMatch": "Appearance|Search|MatchedText",
+    "CustomFFFGrepLineNr": {
+      "fg": "General|Code|LineNumber"
+    },
+    "CustomFFFRegexActive": "Appearance|Window|CheckboxSelected",
+    "CustomFFFRegexInactive": "Appearance|Window|Checkbox",
+    "CustomFFFBlank": {
+      "fg": "Appearance|Window|BackgroundEditArea.bg",
+      "bg": "Appearance|Window|BackgroundEditArea.bg"
+    },
+    "CustomFFFBlankSelected": {
+      "fg": "Appearance|Window|RowSelected.bg",
+      "bg": "Appearance|Window|RowSelected.bg"
+    },
+    "FFFSelected": {
+      "fg": "Appearance|Window|CheckboxSelected.bg"
+    }
+  },
+  "Plugin.SmiteshP/nvim-navic": {
+    "NavicSeparator": "Custom|StatusBar",
+    "NavicText": "Custom|StatusBar"
+  },
+  "Plugin.kevinhwang91/nvim-ufo": {
+    "UfoFoldedEllipsis": "General|Text|FoldedText",
+    "UfoFoldedBg": "General|Text|FoldedText"
+  },
+  "Syntax.Lua": {
+    "luaFunctionBlock": "Custom|Legacy|Lua|Variables|LocalFunction",
+    "luaFunction": "Custom|Legacy|Lua|Keywords",
+    "luaFunc": "Custom|Legacy|Lua|StdApi",
+    "luaCondStart": "Custom|Legacy|Lua|Variables|Parameter",
+    "luaTable": "LanguageDefaults|BracesAndOperators|Braces",
+    "luaCondEnd": "Custom|Legacy|Lua|Variables|Parameter",
+    "luaConstant": {
+      "fg": "Custom|Legacy|Lua|NilTrueFalse"
+    }
+  },
+  "Treesitter.PHP": {
+    "@tag.php_only": "PHP|PHPCode|Tags",
+    "@variable.builtin.php": "PHP|Identifiers|ThisVariable",
+    "@variable.builtin.php_only": "PHP|Identifiers|ThisVariable",
+    "@variable.parameter.named.php": "PHP|NamedArguments",
+    "@variable.parameter.named.php_only": "PHP|NamedArguments",
+    "@variable.parameter.php": "PHP|FunctionsAndMethods|Parameter",
+    "@variable.parameter.php_only": "PHP|FunctionsAndMethods|Parameter",
+    "@variable.php": "PHP|Identifiers|Variable",
+    "@variable.php_only": "PHP|Identifiers|Variable",
+    "@template_language.php": "LanguageDefaults|TemplateLanguage",
+    "@template_language.php_only": "LanguageDefaults|TemplateLanguage",
+    "@injected_language_fragment.php": "HTML|InjectedLanguageFragment",
+    "@injected_language_fragment.php_only": "HTML|InjectedLanguageFragment",
+    "@keyword.conditional.php_only": "PHP|BracesAndOperators|Operators",
+    "@constant.builtin.php": "PHP|Keywords",
+    "@constant.builtin.php_only": "PHP|Identifiers|Default",
+    "@constant.only.php": "PHP|Identifiers|Constant",
+    "@constant.only.php_only": "PHP|Identifiers|Constant",
+    "@constant.php": "PHP|Identifiers|Constant",
+    "@constant.php_only": "PHP|Identifiers|Constant",
+    "@tag.php": "PHP|PHPCode|Tags"
+  },
+  "Plugin.lewis6991/gitsigns.nvim": {
+    "GitSignsStagedDelete": {
+      "fg": "VCS|EditorGutter|DeletedIgnoredLinesBorder.bg"
+    },
+    "GitSignsChangeLnInline": "Custom|Legacy|DiffMerge|ChangedLines|Changed|Ignored",
+    "GitSignsChangedelete": {
+      "fg": "VCS|EditorGutter|ModifiedLines.bg"
+    },
+    "GitSignsStagedChangedelete": {
+      "fg": "VCS|EditorGutter|ModifiedIgnoredLinesBorder.bg"
+    },
+    "GitSignsTopdelete": {
+      "fg": "VCS|EditorGutter|DeletedLines.bg"
+    },
+    "GitSignsStagedTopdelete": {
+      "fg": "VCS|EditorGutter|DeletedIgnoredLinesBorder.bg"
+    },
+    "GitSignsUntracked": {
+      "fg": "VCS|EditorGutter|AddedLines.bg"
+    },
+    "GitSignsAddNr": {
+      "fg": "VCS|EditorGutter|AddedLines.bg"
+    },
+    "GitSignsStagedAddNr": {
+      "fg": "VCS|EditorGutter|AddedIgnoredLinesBorder.bg"
+    },
+    "GitSignsVirtLnum": "",
+    "DiffRemovedGutter": {
+      "fg": "VCS|EditorGutter|DeletedLines.bg"
+    },
+    "SignifySignDelete": {
+      "fg": "VCS|EditorGutter|DeletedLines.bg"
+    },
+    "GitSignsAddLnInline": "DiffMerge|ChangedLines|Inserted",
+    "GitSignsDeleteVirtLnInLine": "DiffMerge|ChangedLines|Deleted",
+    "GitSignsDeleteLnInline": "DiffMerge|ChangedLines|Deleted",
+    "SignifySignAdd": {
+      "fg": "VCS|EditorGutter|AddedLines.bg"
+    },
+    "GitSignsChange": {
+      "fg": "VCS|EditorGutter|ModifiedLines.bg"
+    },
+    "DiffAddedGutter": {
+      "fg": "VCS|EditorGutter|AddedLines.bg"
+    },
+    "GitSignsAdd": {
+      "fg": "VCS|EditorGutter|AddedLines.bg"
+    },
+    "GitSignsStagedAdd": {
+      "fg": "VCS|EditorGutter|AddedIgnoredLinesBorder.bg"
+    },
+    "GitSignsDeleteVirtLn": "DiffMerge|ChangedLines|Deleted",
+    "GitGutterChange": {
+      "fg": "VCS|EditorGutter|ModifiedLines.bg"
+    },
+    "SignifySignChange": {
+      "fg": "VCS|EditorGutter|ModifiedLines.bg"
+    },
+    "GitGutterAdd": {
+      "fg": "VCS|EditorGutter|AddedLines.bg"
+    },
+    "GitSignsChangeNr": {
+      "fg": "VCS|EditorGutter|ModifiedLines.bg"
+    },
+    "GitSignsStagedChangeNr": {
+      "fg": "VCS|EditorGutter|ModifiedIgnoredLinesBorder.bg"
+    },
+    "GitSignsDeleteNr": {
+      "fg": "VCS|EditorGutter|DeletedLines.bg"
+    },
+    "GitSignsStagedDeleteNr": {
+      "fg": "VCS|EditorGutter|DeletedIgnoredLinesBorder.bg"
+    },
+    "GitSignsChangedeleteNr": {
+      "fg": "VCS|EditorGutter|ModifiedLines.bg"
+    },
+    "GitSignsStagedChangedeleteNr": {
+      "fg": "VCS|EditorGutter|ModifiedIgnoredLinesBorder.bg"
+    },
+    "GitSignsTopdeleteNr": {
+      "fg": "VCS|EditorGutter|DeletedLines.bg"
+    },
+    "GitSignsStagedTopdeleteNr": {
+      "fg": "VCS|EditorGutter|DeletedIgnoredLinesBorder.bg"
+    },
+    "GitSignsUntrackedNr": {
+      "fg": "VCS|EditorGutter|AddedLines.bg"
+    },
+    "GitSignsAddLn": "",
+    "GitSignsStagedAddLn": "",
+    "GitSignsChangeLn": "",
+    "GitSignsStagedChangeLn": "",
+    "GitSignsChangedeleteLn": "",
+    "GitSingsStagedChangedeleteLn": "",
+    "GitSignsTopdeleteLn": "",
+    "GitSignsStagedTopdeleteLn": "",
+    "GitSignsUntrackedLn": "",
+    "GitSignsAddCul": {
+      "fg": "VCS|EditorGutter|AddedLines.bg",
+      "bg": "General|Editor|CaretRow"
+    },
+    "GitSignsStagedAddCul": {
+      "fg": "VCS|EditorGutter|AddedIgnoredLinesBorder.bg",
+      "bg": "General|Editor|CaretRow"
+    },
+    "GitSignsChangeCul": {
+      "fg": "VCS|EditorGutter|ModifiedLines.bg",
+      "bg": "General|Editor|CaretRow"
+    },
+    "GitSignsStagedChangeCul": {
+      "fg": "VCS|EditorGutter|ModifiedIgnoredLinesBorder.bg",
+      "bg": "General|Editor|CaretRow"
+    },
+    "GitSignsDeleteCul": {
+      "fg": "VCS|EditorGutter|DeletedLines.bg",
+      "bg": "General|Editor|CaretRow"
+    },
+    "GitSignsStagedDeleteCul": {
+      "fg": "VCS|EditorGutter|DeletedIgnoredLinesBorder.bg",
+      "bg": "General|Editor|CaretRow"
+    },
+    "GitSignsChangedeleteCul": {
+      "fg": "VCS|EditorGutter|ModifiedLines.bg",
+      "bg": "General|Editor|CaretRow"
+    },
+    "GitSingsStagedChangedeleteCul": {
+      "fg": "VCS|EditorGutter|ModifiedIgnoredLinesBorder.bg",
+      "bg": "General|Editor|CaretRow"
+    },
+    "GitSignsTopdeleteCul": {
+      "fg": "VCS|EditorGutter|DeletedLines.bg",
+      "bg": "General|Editor|CaretRow"
+    },
+    "GitSignsStagedTopdeleteCul": {
+      "fg": "VCS|EditorGutter|DeletedIgnoredLinesBorder.bg",
+      "bg": "General|Editor|CaretRow"
+    },
+    "GitSignsUntrackedCul": {
+      "fg": "VCS|EditorGutter|AddedLines.bg",
+      "bg": "General|Editor|CaretRow"
+    },
+    "GitSignsAddPreview": "DiffMerge|ChangedLines|Inserted",
+    "DiffModifiedGutter": {
+      "fg": "VCS|EditorGutter|ModifiedLines.bg"
+    },
+    "GitSignsDeletePreview": "DiffMerge|ChangedLines|Deleted",
+    "GitSignsStagedChange": {
+      "fg": "VCS|EditorGutter|ModifiedIgnoredLinesBorder.bg"
+    },
+    "GitSignsCurrentLineBlame": "GitToolBoxColors|EditorInlineBlame",
+    "GitGutterDelete": {
+      "fg": "VCS|EditorGutter|DeletedLines.bg"
+    },
+    "GitSignsAddInline": "DiffMerge|ChangedLines|Inserted",
+    "GitSignsDeleteInline": "DiffMerge|ChangedLines|Deleted",
+    "GitSignsChangeInline": "Custom|Legacy|DiffMerge|ChangedLines|Changed|Ignored",
+    "GitSignsDelete": {
+      "fg": "VCS|EditorGutter|DeletedLines.bg"
+    }
+  },
+  "Treesitter.Ini": {
+    "@markup.heading.ini": "Ini|Section",
+    "@property.ini": "Ini|PropertyKey"
+  },
+  "Treesitter.Lua": {
+    "@_method.lua": "Custom|Legacy|Lua|StdApi",
+    "@boolean.lua": "Custom|Legacy|Lua|NilTrueFalse",
+    "@constant.builtin.lua": "Custom|Legacy|Lua|NilTrueFalse",
+    "@constructor.lua": "Custom|Legacy|LanguageDefaults|BracesAndOperators|Default",
+    "@function.builtin.lua": "Custom|Legacy|Lua|StdApi",
+    "@function.call.lua": "Custom|Legacy|Lua|Variables|LocalFunction",
+    "@function.lua": "Custom|Legacy|Lua|Variables|LocalFunction",
+    "@keyword.luadoc": "Custom|Legacy|Lua|Comments|EmmyDoc|Tag",
+    "@keyword.return.luadoc": "Custom|Legacy|Lua|Comments|EmmyDoc|Tag",
+    "@module.builtin.lua": "Custom|Legacy|Lua|StdApi",
+    "@property.lua": "LanguageDefaults|Identifiers|Default",
+    "@punctuation.special.luadoc": "Custom|Legacy|LanguageDefaults|BracesAndOperators|Default",
+    "@variable.builtin.lua": "@module.builtin.lua",
+    "@variable.member.lua": "Custom|Legacy|Lua|ClassMembers|Field",
+    "@variable.member.luadoc": "Custom|Legacy|Lua|Comments|EmmyDoc|TagValue",
+    "@variable.parameter.lua": "Custom|Legacy|Lua|Variables|Parameter",
+    "@variable.parameter.luadoc": "LanguageDefaults|Comments|DocComment|TagValue"
+  },
+  "Treesitter.TOML": {
+    "@property.toml": "TOML|Keys",
+    "@boolean.toml": "TOML|Boolean",
+    "@string.special.toml": "TOML|Date"
+  },
+  "Plugin.folke/lazy.nvim": {
+    "LazyInfo": {
+      "fg": "ConsoleColors|LogConsole|Verbose"
+    },
+    "LazyItalic": {
+      "italic": true
+    },
+    "LazyLocal": {
+      "fg": "Appearance|Window|SwitchEnabled.bg"
+    },
+    "LazyNoCond": {
+      "fg": "Appearance|Window|CheckboxDisabled.fg"
+    },
+    "LazyNormal": {
+      "fg": "Appearance|Window|Title.fg",
+      "bg": "Appearance|Window|BackgroundEditArea.bg"
+    },
+    "LazyProgressDone": null,
+    "LazyProgressTodo": null,
+    "LazyBold": {
+      "bold": true
+    },
+    "LazyButton": "Custom|Legacy|Custom|Dialog|Tabs|Default",
+    "LazyReasonInit": "LanguageDefaults|Identifiers|FunctionDeclaration",
+    "LazyButtonActive": "Custom|Legacy|Custom|Dialog|Tabs|Selected",
+    "LazyReasonEvent": "Custom|Icons|Event",
+    "LazyComment": "LanguageDefaults|Comments|LineComment",
+    "LazyCommit": "Custom|Legacy|Custom|Settings|Plugins|AdditionalInfo|Link",
+    "LazyReasonImport": "LanguageDefaults|Keyword",
+    "LazyCommitIssue": "LanguageDefaults|Keyword",
+    "LazyCommitScope": "Custom|Icons|EnumMember",
+    "LazyCommitType": "Custom|Icons|Enum",
+    "LazyReasonRuntime": "LanguageDefaults|Keyword",
+    "LazyReasonSource": "CC|Preprocessor|Directive",
+    "LazyReasonStart": "Custom|Icons|Constructor",
+    "LazyError": {
+      "fg": "General|ErrorsAndWarnings|Error.sp"
+    },
+    "LazyH1": "Custom|Legacy|Custom|Dialog|Subtitle",
+    "LazyH2": "Custom|Legacy|Custom|Dialog|SectionTitle",
+    "LazyUrl": "Custom|Legacy|Custom|Settings|Plugins|AdditionalInfo|Link",
+    "LazyValue": "Custom|Legacy|Custom|Settings|Plugins|AdditionalInfo|PropertyValue",
+    "LazyWarning": {
+      "fg": "Custom|Legacy|General|ErrorsAndWarnings|Warning|Default.sp"
+    },
+    "LazyDimmed": {
+      "fg": "Appearance|Window|SubtleText.fg"
+    },
+    "LazyDir": "Custom|Legacy|Custom|Settings|Plugins|AdditionalInfo|Link",
+    "LazyReasonRequire": "Custom|Legacy|Lua|StdApi",
+    "LazyReasonPlugin": "Custom|Icons|Module",
+    "LazyReasonKeys": "LanguageDefaults|Keyword",
+    "LazyReasonFt": "UserDefinedFileTypes|Keyword2",
+    "LazyReasonCmd": "BashSupportPro|Commands|GenericCommand",
+    "LazyProp": "Custom|Legacy|Custom|Settings|Plugins|AdditionalInfo|PropertyName",
+    "LazyTaskOutput": null,
+    "LazySpecial": {
+      "fg": "Appearance|Window|CheckboxSelected.bg"
+    }
+  },
+  "Syntax.CSS": {
+    "cssBorderAttr": "CSS|PropertyValue",
+    "cssBoxAttr": "CSS|PropertyValue",
+    "cssFontDescriptorAttr": "CSS|UnicodeRange",
+    "cssFunction": "CSS|Identifier",
+    "cssMediaAttr": "CSS|PropertyValue",
+    "cssPositioningAttr": "CSS|PropertyValue",
+    "cssUIAttr": "CSS|PropertyValue",
+    "cssUrl": "CSS|URL",
+    "cssAttrRegion": "CSS|PropertyValue",
+    "cssColor": "CSS|HexColor"
+  },
+  "Treesitter.Java": {
+    "@function.method.call.java": "Java|Methods|MethodCall",
+    "@type.parameter.java": "Java|Parameters|TypeParameter",
+    "@variable.member.java": "Java|ClassFields|InstanceField",
+    "@keyword.java": "Java|Keyword",
+    "@constructor.declaration.java": "Java|Methods|ConstructorDeclaration"
+  },
+  "Semantic.TypeScriptReact": {
+    "@lsp.type.function.typescriptreact": null,
+    "@lsp.type.parameter.typescriptreact": "TypeScript|Identifiers|Parameter",
+    "@lsp.type.variable.typescriptreact": null
+  },
+  "Semantic.TypeScript": {
+    "@lsp.type.method.typescript": null,
+    "@lsp.type.enum.typescript": "TypeScript|Enum|EnumName",
+    "@lsp.type.enumMember.typescript": "TypeScript|Enum|Member",
+    "@lsp.type.variable.typescript": null,
+    "@lsp.typemod.class.defaultLibrary.typescript": "TypeScript|Identifiers|GlobalVariable",
+    "@lsp.typemod.property.static.typescript": "LanguageDefaults|Classes|StaticField",
+    "@lsp.type.parameter.typescript": "TypeScript|Identifiers|Parameter",
+    "@lsp.typemod.function.readonly.typescript": "TypeScript|Identifiers|ExportedFunction"
+  },
+  "Treesitter.JSX": {
+    "@tag.delimiter.javascript": "XML|Tag",
+    "@character.special.javascript": "XML|EntityReference",
+    "@tag.builtin.javascript": "XML|TagName",
+    "@string.special.javascript": "XML|AttributeValue",
+    "@string.tsx": "XML|AttributeValue",
+    "@tag.attribute.javascript": "XML|AttributeName"
+  },
+  "Plugin.lukas-reineke/indent-blankline.nvim": {
+    "IblScope": {
+      "fg": "General|Editor|Guides|IndentGuideSelected.bg"
+    },
+    "IblIndent": {
+      "fg": "General|Editor|Guides|IndentGuide.bg"
+    },
+    "IblWhitespace": []
+  },
+  "Plugin.Saghen/blink.cmp": {
+    "BlinkCmpMenu": "Pmenu",
+    "BlinkCmpMenuBorder": {
+      "fg": "Appearance|Window|Border.fg",
+      "bg": "Appearance|Window|BackgroundEditArea.bg"
+    },
+    "BlinkCmpMenuSelection": "PmenuSel",
+    "BlinkCmpLabel": "General|Text|DefaultText.fg",
+    "BlinkCmpLabelDeprecated": {
+      "fg": "General|Text|DefaultText.fg",
+      "strikethrough": true
+    },
+    "BlinkCmpLabelMatch": "Custom|Completion|Match",
+    "BlinkCmpDoc": "Pmenu",
+    "BlinkCmpDocBorder": "BlinkCmpMenuBorder",
+    "BlinkCmpDocSeparator": "DialogFloatBorderBetween",
+    "BlinkCmpSignatureHelpBorder": "BlinkCmpMenuBorder"
+  },
+  "Treesitter.Comment": {
+    "@comment.todo": "General|Code|TODODefaults",
+    "@comment.note": {
+      "fg": "General|Text|DefaultText",
+      "italic": true
+    },
+    "@comment.warning": {
+      "fg": "General|ErrorsAndWarnings|Warning|ErrorStripeMark",
+      "italic": true
+    },
+    "@comment.error": {
+      "fg": "General|ErrorsAndWarnings|Error|ErrorStripeMark",
+      "italic": true
+    }
+  },
+  "Plugin.nickkadutskyi/notifications.nvim": {
+    "NotificationIconWarn": "Appearance|Notifications|IconWarn",
+    "NotificationIconInfo": "Appearance|Notifications|IconInfo",
+    "NotificationIconHint": "Appearance|Notifications|IconWarn",
+    "NotificationFloatBackground": "Appearance|Notifications|Background",
+    "NotificationFloatNormal": "Appearance|Notifications|Normal",
+    "NotificationFloatCollapseInfoNormal": "Appearance|Notifications|NormalCollapseInfo",
+    "NotificationFloatBorder": "Appearance|Notifications|Border",
+    "NotificationFloatBorderOuter": {
+      "fg": "Appearance|Notifications|Border",
+      "bg": "General|Text|DefaultText.bg"
+    },
+    "NotificationTitle": {
+      "fg": "Appearance|Notifications|Normal.fg",
+      "bold": true
+    },
+    "NotificationSubtitle": [],
+    "NotificationIconError": "Appearance|Notifications|IconError"
+  },
+  "Treesitter.Doxygen": {
+    "@keyword.doxygen": "LanguageDefaults|Comments|DocComment|Tag",
+    "@variable.parameter.doxygen": "CC|Comments|Doxygen|CommandValue"
+  },
+  "Semantic.Java": {
+    "@lsp.type.method.java": "Java|Methods|MethodCall",
+    "@lsp.typemod.method.declaration.java": "Java|Methods|MethodDeclaration",
+    "@lsp.type.modifier.java": "Java|Keyword",
+    "@lsp.typemod.property.static.java": "Java|ClassFields|StaticField",
+    "@lsp.typemod.property.readonly.java": "Java|ClassFields|InstanceFinalField",
+    "@lsp.type.recordComponent.java": "Java|ClassFields|RecordComponent",
+    "@lsp.type.typeParameter.java": "Java|Parameters|TypeParameter",
+    "@lsp.type.annotation.java": "Java|Annotations|AnnotationName"
+  },
+  "Plugin.NeogitOrg/neogit": {
+    "NeogitChangeUntrackedunstaged": "Custom|Legacy|VCS|FileStatusColors|Unknown",
+    "NeogitChangeUntrackedstaged": "Custom|Legacy|VCS|FileStatusColors|Unknown",
+    "NeogitHunkHeader": {
+      "fg": "VCS|VCSAnnotations|Foreground",
+      "bg": "VCS|VCSAnnotations|BackgroundColor3"
+    },
+    "NeogitHunkHeaderHighlight": {
+      "bold": true,
+      "fg": "VCS|VCSAnnotations|Foreground",
+      "bg": "VCS|VCSAnnotations|BackgroundColor2"
+    },
+    "NeogitHunkHeaderCursor": {
+      "bold": true,
+      "fg": "VCS|VCSAnnotations|Foreground",
+      "bg": "VCS|VCSAnnotations|BackgroundColor2"
+    },
+    "NeogitDiffContext": "General|Text|DefaultText.bg",
+    "NeogitDiffContextHighlight": "General|Text|DefaultText.bg",
+    "NeogitDiffContextCursor": "CursorLine",
+    "NeogitDiffAdd": {
+      "bg": "DiffMerge|ChangedLines|Inserted.bg"
+    },
+    "NeogitDiffAddHighlight": {
+      "bg": "DiffMerge|ChangedLines|Inserted.bg"
+    },
+    "NeogitDiffAddCursor": {
+      "bg": "Custom|Legacy|DiffMerge|ChangedLines|Inserted|Ignored.bg"
+    },
+    "NeogitDiffDelete": {
+      "bg": "DiffMerge|ChangedLines|Deleted.bg"
+    },
+    "NeogitDiffDeleteHighlight": {
+      "bg": "DiffMerge|ChangedLines|Deleted.bg"
+    },
+    "NeogitDiffDeleteCursor": {
+      "bg": "Custom|Legacy|DiffMerge|ChangedLines|Deleted|Ignored.bg"
+    },
+    "NeogitDiffHeader": {
+      "fg": "VCS|VCSAnnotations|Foreground",
+      "bg": "VCS|VCSAnnotations|BackgroundColor1"
+    },
+    "NeogitDiffHeaderHighlight": {
+      "bold": true,
+      "fg": "VCS|VCSAnnotations|Foreground",
+      "bg": "VCS|VCSAnnotations|BackgroundColor1"
+    },
+    "NeogitDiffHeaderCursor": {
+      "bold": true,
+      "fg": "VCS|VCSAnnotations|Foreground",
+      "bg": "Custom|Legacy|Custom|TabFocused.bg"
+    },
+    "NeogitFilePath": {
+      "underline": true
+    },
+    "NeogitCommitViewHeader": {
+      "bold": true
+    },
+    "NeogitCommitViewDescription": {
+      "bold": true
+    },
+    "NeogitGraphAuthor": {
+      "bold": true
+    },
+    "NeogitSignatureGood": "Appearance|VCS|Labels|SignatureIconVerified",
+    "NeogitSignatureBad": null,
+    "NeogitSignatureMissing": "Appearance|VCS|Labels|SignatureIconUnverified",
+    "NeogitSignatureNone": null,
+    "NeogitSignatureGoodUnknown": null,
+    "NeogitSignatureGoodExpired": null,
+    "NeogitSignatureGoodExpiredKey": null,
+    "NeogitSignatureGoodRevokedKey": null,
+    "NeogitNormal": {
+      "fg": "General|Text|DefaultText",
+      "bg": "Appearance|Window|Background"
+    },
+    "CustomNeogitLogsNormal": {
+      "fg": "General|Text|DefaultText",
+      "bg": "Appearance|VCS|Logs|Background"
+    },
+    "NeogitWinSeparator": {
+      "fg": "Appearance|Window|Border",
+      "bg": "Appearance|Window|Border"
+    },
+    "NeogitCursorLine": "Appearance|Window|RowSelected",
+    "NeogitCursorLineNr": "Appearance|Window|RowSelected",
+    "NeogitCursorLineEditor": [],
+    "NeogitCursorLineNrEditor": [],
+    "NeogitPopupSectionTitle": "Appearance|Window|SectionTitle",
+    "NeogitPopupBranchName": "Appearance|VCS|Labels|Local",
+    "NeogitPopupBold": {
+      "fg": "Yellow"
+    },
+    "NeogitPopupSwitchKey": {
+      "sp": "Appearance|Window|Checkbox",
+      "fg": "Appearance|Window|Checkbox.fg",
+      "underline": true
+    },
+    "NeogitPopupSwitchEnabled": {
+      "fg": "Appearance|Window|CheckboxSelected.bg",
+      "bold": true
+    },
+    "NeogitPopupSwitchDisabled": {
+      "fg": "Appearance|Window|CheckboxDisabled.fg"
+    },
+    "NeogitPopupOptionKey": {
+      "sp": "Appearance|Window|Checkbox",
+      "fg": "Appearance|Window|CheckboxSelected.bg",
+      "underline": true
+    },
+    "NeogitPopupOptionEnabled": {
+      "fg": "Appearance|Window|CheckboxSelected.bg",
+      "bold": true
+    },
+    "NeogitPopupOptionDisabled": {
+      "fg": "Appearance|Window|CheckboxDisabled.fg"
+    },
+    "NeogitPopupConfigKey": {
+      "sp": "Appearance|Window|SwitchKnob.sp",
+      "fg": "Appearance|Window|SwitchEnabled.bg",
+      "underline": true
+    },
+    "NeogitPopupConfigEnabled": {
+      "fg": "Appearance|Window|SwitchEnabled.bg",
+      "bold": true
+    },
+    "NeogitPopupConfigDisabled": {
+      "fg": "Appearance|Window|SwitchDisabled.fg"
+    },
+    "NeogitPopupActionKey": {
+      "sp": "Appearance|Window|Checkbox",
+      "underline": true
+    },
+    "NeogitPopupActionDisabled": {
+      "fg": "Appearance|Window|CheckboxDisabled.fg"
+    },
+    "NeogitCommandText": [],
+    "NeogitCommandTime": [],
+    "NeogitCommandCodeNormal": [],
+    "NeogitCommandCodeError": [],
+    "NeogitBranch": {
+      "bold": true,
+      "fg": "Appearance|VCS|Labels|Local"
+    },
+    "NeogitBranchHead": {
+      "fg": "Appearance|VCS|Labels|HEAD",
+      "bold": true
+    },
+    "NeogitRemote": {
+      "fg": "Appearance|VCS|Labels|Remote",
+      "bold": true
+    },
+    "NeogitObjectId": "Comment",
+    "NeogitStash": null,
+    "NeogitFold": null,
+    "NeogitRebaseDone": null,
+    "NeogitTagName": {
+      "bold": true,
+      "fg": "Appearance|VCS|Labels|Tag"
+    },
+    "NeogitTagDistance": [],
+    "NeogitStatusHEAD": [],
+    "NeogitSectionHeader": {
+      "bold": true
+    },
+    "NeogitChangeModified": "Custom|Legacy|VCS|FileStatusColors|Modified",
+    "NeogitChangeAdded": "Custom|Legacy|VCS|FileStatusColors|Added",
+    "NeogitChangeDeleted": "Custom|Legacy|VCS|FileStatusColors|Deleted",
+    "NeogitChangeRenamed": "Custom|Legacy|VCS|FileStatusColors|Renamed",
+    "NeogitChangeUpdated": "Custom|Legacy|VCS|FileStatusColors|MergedWithConflicts",
+    "NeogitChangeCopied": "Custom|Legacy|VCS|FileStatusColors|Copied",
+    "NeogitChangeNewFile": "Custom|Legacy|VCS|FileStatusColors|Added",
+    "NeogitChangeUnmerged": "Custom|Legacy|VCS|FileStatusColors|MergedWithConflicts",
+    "NeogitChangeUntrackeduntracked": "Custom|Legacy|VCS|FileStatusColors|Unknown"
+  },
+  "Treesitter.Cpp": {
+    "@function.macro.c": "CC|MacroName",
+    "@function.macro.cpp": "CC|MacroName",
+    "@keyword.import.c": "CC|Preprocessor|Directive",
+    "@keyword.import.cpp": "CC|Preprocessor|Directive",
+    "@module.cpp": "CC|Namespace",
+    "@property.c": "CC|StructField",
+    "@property.cpp": "CC|StructField",
+    "@type.c": "CC|ClassStructEnumUnion",
+    "@type.cpp": "CC|ClassStructEnumUnion",
+    "@type.definition.cpp": "CC|Typedef",
+    "@variable.member.cpp": "CC|StructField"
+  },
+  "Treesitter.GraphQL": {
+    "@operation.definition.graphql": "GraphQL|OperationDefinition",
+    "@field.alias.graphql": "GraphQL|FieldAlias",
+    "@fragment.name.graphql": "GraphQL|FragmentDefinition",
+    "@object.field.graphql": "GraphQL|ObjectField",
+    "@punctuation.special.graphql": "GraphQL|Keyword"
+  },
+  "Treesitter.RegExp": {
+    "@number.regex": "RegExp|Quantifier",
+    "@constant.regex": "RegExp|PlainCharacter",
+    "@string.escape.regex": "RegExp|CharacterClass",
+    "@punctuation.delimiter.regex": "RegExp|OperatorCharacter",
+    "@variable.builtin.regex": "RegExp|Dot",
+    "@operator.regex": "RegExp|Quantifier",
+    "@string.regexp": "RegExp|PlainCharacter"
+  },
+  "Treesitter.TSX": {
+    "@tag.builtin.tsx": "XML|TagName",
+    "@tag.tsx": "JavaScript|JSXClientComponent",
+    "@variable.tsx": "TypeScript|Identifiers|LocalVariable",
+    "@variable.exported.tsx": "TypeScript|Identifiers|ExportedVariable",
+    "@string.tsx": "XML|AttributeValue",
+    "@variable.parameter.tsx": "TypeScript|Identifiers|Parameter",
+    "@function.exported.tsx": "TypeScript|Identifiers|ExportedFunction",
+    "@character.special.tsx": "XML|EntityReference",
+    "@string.special.tsx": "XML|AttributeValue",
+    "@tag.attribute.tsx": "XML|AttributeName",
+    "@tag.delimiter.tsx": "XML|Tag"
+  },
+  "Treesitter.JavaScript": {
+    "@variable.javascript": "JavaScript|Identifiers|LocalVariable",
+    "@variable.parameter.javascript": "JavaScript|Identifiers|Parameter",
+    "@keyword.jsdoc": "JavaScript|Comments|JSDoc|Tag",
+    "@type.jsdoc": "JavaScript|Comments|JSDoc|Type",
+    "@function.method.javascript": "JavaScript|Object|Method",
+    "@function.method.call.javascript": "JavaScript|Object|Method",
+    "@variable.builtin.javascript": "JavaScript|Identifiers|GlobalVariable",
+    "@tag.javascript": "JavaScript|JSXClientComponent"
+  },
+  "Plugin.folke/snacks.nvim.explorer": {
+    "SnacksPickerSearch": "",
+    "SnacksPickerSelected": "",
+    "SnacksPickerSpecial": "",
+    "SnacksPickerSpinner": {
+      "fg": "Appearance|ToolWindow|Background.bg"
+    },
+    "SnacksPickerTime": "",
+    "SnacksPickerTitle": "Appearance|ToolWindow|Title",
+    "SnacksPickerToggle": "Appearance|Window|CheckboxSelected",
+    "SnacksPickerToggleFollow": "",
+    "SnacksPickerToggleHidden": "",
+    "SnacksPickerToggleIgnored": "",
+    "SnacksPickerToggleModified": "",
+    "SnacksPickerToggleRegex": "",
+    "SnacksPickerTotals": {
+      "fg": "Appearance|ToolWindow|Background.bg"
+    },
+    "SnacksPickerTree": {
+      "fg": "Appearance|ProjectView|IndentGuide.fg"
+    },
+    "SnacksPicker": "General|Text|DefaultText",
+    "SnacksPickerAuEvent": "",
+    "SnacksPickerAuGroup": "",
+    "SnacksPickerAuPattern": "",
+    "SnacksPickerBorder": {
+      "fg": "General|Text|DefaultText.bg"
+    },
+    "SnacksPickerBox": "",
+    "SnacksPickerBoxBorder": "",
+    "SnacksPickerBoxCursorLine": "",
+    "SnacksPickerBoxFooter": "",
+    "SnacksPickerBoxTitle": "",
+    "SnacksPickerBufFlags": "",
+    "SnacksPickerBufNr": "",
+    "SnacksPickerCmd": "",
+    "SnacksPickerCmdBuiltin": "",
+    "SnacksPickerCode": "",
+    "SnacksPickerCol": "",
+    "SnacksPickerComment": "",
+    "SnacksPickerCursorLine": "NetrwCursorLine",
+    "SnacksPickerDelim": "",
+    "SnacksPickerDesc": "",
+    "SnacksPickerDiagnosticCode": "",
+    "SnacksPickerDiagnosticSource": "",
+    "SnacksPickerInputFooter": "",
+    "SnacksPickerUndoCurrent": "",
+    "SnacksPickerUndoRemoved": "",
+    "SnacksPickerUndoSaved": "",
+    "SnacksPickerUnselected": "",
+    "SnacksPickerDimmed": "",
+    "SnacksPickerDir": "Appearance|ToolWindow|Item",
+    "SnacksPickerDirectory": "Appearance|ToolWindow|Item",
+    "SnacksPickerFile": "Appearance|ToolWindow|Item",
+    "SnacksPickerFooter": "",
+    "SnacksPickerGitBranch": "",
+    "SnacksPickerGitBranchCurrent": "",
+    "SnacksPickerGitBreaking": "",
+    "SnacksPickerGitCommit": "",
+    "SnacksPickerGitDate": "",
+    "SnacksPickerGitDetached": "",
+    "SnacksPickerGitIssue": "",
+    "SnacksPickerGitScope": "",
+    "SnacksPickerGitStatus": "",
+    "SnacksPickerGitStatusAdded": "Custom|Legacy|VCS|FileStatusColors|Added",
+    "SnacksPickerGitStatusCopied": "Custom|Legacy|VCS|FileStatusColors|Copied",
+    "SnacksPickerGitStatusDeleted": "Custom|Legacy|VCS|FileStatusColors|Deleted",
+    "SnacksPickerGitStatusIgnored": "Custom|Legacy|VCS|FileStatusColors|IgnoredIgnorePlugin",
+    "SnacksPickerGitStatusModified": "Custom|Legacy|VCS|FileStatusColors|Modified",
+    "SnacksPickerGitStatusRenamed": "Custom|Legacy|VCS|FileStatusColors|Renamed",
+    "SnacksPickerGitStatusStaged": "Custom|Legacy|VCS|FileStatusColors|Ignored",
+    "SnacksPickerGitStatusUnmerged": "Custom|Legacy|VCS|FileStatusColors|MergedWithConflicts",
+    "SnacksPickerGitStatusUntracked": "Custom|Legacy|VCS|FileStatusColors|Unknown",
+    "SnacksPickerGitType": "",
+    "SnacksPickerIcon": "",
+    "SnacksPickerIconBoolean": "",
+    "SnacksPickerIconCategory": "",
+    "SnacksPickerIconClass": "",
+    "SnacksPickerIconConstant": "",
+    "SnacksPickerIconConstructor": "",
+    "SnacksPickerIconEnum": "",
+    "SnacksPickerIconEnumMember": "",
+    "SnacksPickerIconEvent": "",
+    "SnacksPickerIconField": "",
+    "SnacksPickerIconFile": "",
+    "SnacksPickerIconFunction": "",
+    "SnacksPickerIconInterface": "",
+    "SnacksPickerIconKey": "",
+    "SnacksPickerIconModule": "",
+    "SnacksPickerIconName": "",
+    "SnacksPickerIconNamespace": "",
+    "SnacksPickerIconNull": "",
+    "SnacksPickerIconNumber": "",
+    "SnacksPickerIconObject": "",
+    "SnacksPickerIconOperator": "",
+    "SnacksPickerIconPackage": "",
+    "SnacksPickerIconProperty": "",
+    "SnacksPickerIconSource": "",
+    "SnacksPickerIconString": "",
+    "SnacksPickerIconStruct": "",
+    "SnacksPickerIconTypeParameter": "",
+    "SnacksPickerIconVariable": "",
+    "SnacksPickerIdx": "",
+    "SnacksPickerInput": {
+      "bg": "Appearance|ToolWindow|Background"
+    },
+    "SnacksPickerInputBorder": {
+      "sp": "Appearance|ToolWindow|Background.bg",
+      "fg": "Appearance|ToolWindow|Background.bg",
+      "bg": "Appearance|ToolWindow|Background.bg"
+    },
+    "SnacksPickerInputCursorLine": "",
+    "SnacksPickerUndoAdded": "",
+    "SnacksPickerInputSearch": "",
+    "SnacksPickerInputTitle": {
+      "fg": "Appearance|ToolWindow|Title",
+      "bold": true,
+      "bg": "Appearance|ToolWindow|Background"
+    },
+    "SnacksPickerKeymapLhs": "",
+    "SnacksPickerKeymapMode": "",
+    "SnacksPickerKeymapNowait": "",
+    "SnacksPickerKeymaphs": "",
+    "SnacksPickerLabel": "",
+    "SnacksPickerLink": "",
+    "SnacksPickerLinkBroken": "",
+    "SnacksPickerList": {
+      "fg": "Appearance|ProjectView|DirectoryIcon",
+      "bg": "Appearance|ToolWindow|Background"
+    },
+    "SnacksPickerListBorder": "",
+    "SnacksPickerListCursorLine": "NetrwCursorLine",
+    "SnacksPickerListFooter": "",
+    "SnacksPickerListTitle": "Appearance|ToolWindow|Title",
+    "SnacksPickerLspAttached": "",
+    "SnacksPickerLspAttachedBuf": "",
+    "SnacksPickerLspDisabled": "",
+    "SnacksPickerLspEnabled": "",
+    "SnacksPickerLspUnavailable": "",
+    "SnacksPickerManPage": "",
+    "SnacksPickerManSection": "",
+    "SnacksPickerMatch": "",
+    "SnacksPickerPathHidden": "Appearance|ToolWindow|Item",
+    "SnacksPickerPathIgnored": "Custom|Legacy|VCS|FileStatusColors|IgnoredIgnorePlugin",
+    "SnacksPickerPickWin": "",
+    "SnacksPickerPickWinCurrent": "",
+    "SnacksPickerPreview": "",
+    "SnacksPickerPreviewBorder": "",
+    "SnacksPickerPreviewCursorLine": "",
+    "SnacksPickerPreviewFooter": "",
+    "SnacksPickerPreviewTitle": "Appearance|ToolWindow|Title",
+    "SnacksPickerPrompt": {
+      "fg": "Appearance|ToolWindow|Background.bg"
+    },
+    "SnacksPickerRegister": "",
+    "SnacksPickerRow": ""
+  },
+  "Plugin.sindrets/diffview.nvim": {
+    "DiffviewFilePanelTitle": {
+      "bold": true
+    },
+    "DiffviewFolderName": "Appearance|ToolWindow|Item",
+    "DiffviewFolderSign": "Appearance|ProjectView|DirectoryIcon",
+    "DiffviewHash": "",
+    "DiffviewNonText": "",
+    "DiffviewNormal": "",
+    "DiffviewPrimary": "",
+    "DiffviewReference": "",
+    "DiffviewReflogSelector": "",
+    "DiffviewSecondary": "",
+    "DiffviewSignColumn": "",
+    "DiffviewStatusAdded": "Custom|Legacy|VCS|FileStatusColors|Added",
+    "DiffviewStatusBroken": "Custom|Legacy|VCS|FileStatusColors|MergedWithConflicts",
+    "DiffviewStatusCopied": "Custom|Legacy|VCS|FileStatusColors|Copied",
+    "DiffviewStatusDeleted": "Custom|Legacy|VCS|FileStatusColors|Deleted",
+    "DiffviewStatusIgnored": "Custom|Legacy|VCS|FileStatusColors|IgnoredIgnorePlugin",
+    "DiffviewStatusLine": "",
+    "DiffviewStatusLineNC": "",
+    "DiffviewStatusModified": "Custom|Legacy|VCS|FileStatusColors|Modified",
+    "DiffviewStatusRenamed": "Custom|Legacy|VCS|FileStatusColors|Renamed",
+    "DiffviewStatusTypeChange": "Custom|Legacy|VCS|FileStatusColors|Modified",
+    "DiffviewStatusUnknown": "Custom|Legacy|VCS|FileStatusColors|Unknown",
+    "DiffviewStatusUnmerged": "Custom|Legacy|VCS|FileStatusColors|MergedWithConflicts",
+    "DiffviewStatusUntracked": "Custom|Legacy|VCS|FileStatusColors|Unknown",
+    "DiffviewWinSeparator": "WinSeparator",
+    "DiffviewCursorLine": "",
+    "DiffviewDiffAdd": "",
+    "DiffviewDiffAddAsDelete": "DiffMerge|ChangedLines|Deleted",
+    "DiffviewDiffChange": "",
+    "DiffviewDiffDelete": "",
+    "DiffviewDiffDeleteDim": {
+      "fg": "DiffMerge|ChangedLines|Deleted.bg"
+    },
+    "DiffviewDiffText": "",
+    "DiffviewDim1": "",
+    "DiffviewEndOfBuffer": "",
+    "DiffviewFilePanelConflicts": "Custom|Legacy|VCS|FileStatusColors|MergedWithConflicts",
+    "DiffviewFilePanelCounter": {
+      "bold": true,
+      "fg": "Appearance|VCS|Labels|Tag"
+    },
+    "DiffviewFilePanelDeletions": "Custom|Legacy|VCS|FileStatusColors|Deleted",
+    "DiffviewFilePanelFileName": "Appearance|ToolWindow|Item",
+    "DiffviewFilePanelInsertions": "Custom|Legacy|VCS|FileStatusColors|Added",
+    "DiffviewFilePanelPath": "Appearance|ToolWindow|Item",
+    "DiffviewFilePanelRootPath": "Appearance|ToolWindow|Item",
+    "DiffviewFilePanelSelected": "Appearance|ToolWindow|Item"
+  },
+  "Builtin.GUI": {
+    "Menu": "",
+    "Scrollbar": "General|Editor|VerticalScrollbar|Thumb",
+    "Tooltip": "General|Text|DefaultText"
+  },
+  "Treesitter.Twig": {
+    "@tag.delimiter.twig": "LanguageDefaults|BracesAndOperators|Brackets",
+    "@operator.twig": "LanguageDefaults|Keyword",
+    "@template_language.twig": "LanguageDefaults|TemplateLanguage"
+  },
+  "Treesitter.CSS": {
+    "@function.css": "CSS|Function",
+    "@keyword.directive.css": "CSS|AtKeyword",
+    "@property.css": "CSS|PropertyName",
+    "@tag.css": "CSS|TagName",
+    "@tag.attribute.css": "CSS|AttributeName",
+    "@type.css": "CSS|ClassName",
+    "@variable.css": "CSS|Identifier",
+    "@attribute.css": "CSS|PseudoSelector",
+    "@character.special.css": "CSS|Identifier",
+    "@constant.css": "CSS|IdSelector"
+  },
+  "Semantic.PHP": {
+    "@lsp.type.parameter.php": "PHP|FunctionsAndMethods|Parameter",
+    "@lsp.type.keyword.php": "LanguageDefaults|Comments|DocComment|Tag",
+    "@lsp.type.comment.php": "LanguageDefaults|Comments|DocComment|Tag",
+    "@lsp.typemod.variable.defaultLibrary.php": "PHP|Identifiers|ThisVariable"
+  },
+  "Plugin.rcarriga/nvim-notify": {
+    "NotifyWARNTitle": {
+      "fg": "General|Text|DefaultText",
+      "bold": true
+    },
+    "NotifyINFOTitle": {
+      "fg": "General|Text|DefaultText",
+      "bold": true
+    },
+    "NotifyDEBUGTitle": {
+      "fg": "General|Text|DefaultText",
+      "bold": true
+    },
+    "NotifyTRACETitle": {
+      "fg": "General|Text|DefaultText",
+      "bold": true
+    },
+    "NotifyERRORBody": {
+      "fg": "General|Text|DefaultText",
+      "bg": "Appearance|Notifications|Background"
+    },
+    "NotifyWARNBody": {
+      "fg": "General|Text|DefaultText",
+      "bg": "Appearance|Notifications|Background"
+    },
+    "NotifyINFOBody": {
+      "fg": "General|Text|DefaultText",
+      "bg": "Appearance|Notifications|Background"
+    },
+    "NotifyDEBUGBody": {
+      "fg": "General|Text|DefaultText",
+      "bg": "Appearance|Notifications|Background"
+    },
+    "NotifyTRACEBody": {
+      "fg": "General|Text|DefaultText",
+      "bg": "Appearance|Notifications|Background"
+    },
+    "NotifyLogTime": "General|ErrorsAndWarnings|UnusedCode",
+    "NotifyLogTitle": "General|Text|DefaultText",
+    "NotifyBackground": {
+      "bg": "Appearance|Notifications|Background"
+    },
+    "NotifyERRORBorder": {
+      "fg": "Appearance|Notifications|Border"
+    },
+    "NotifyWARNBorder": {
+      "fg": "Appearance|Notifications|Border"
+    },
+    "NotifyINFOBorder": {
+      "fg": "Appearance|Notifications|Border"
+    },
+    "NotifyDEBUGBorder": {
+      "fg": "Appearance|Notifications|Border"
+    },
+    "NotifyTRACEBorder": {
+      "fg": "Appearance|Notifications|Border"
+    },
+    "NotifyERRORIcon": "Appearance|Notifications|IconError",
+    "NotifyWARNIcon": "Appearance|Notifications|IconWarn",
+    "NotifyINFOIcon": "Appearance|Notifications|IconInfo",
+    "NotifyDEBUGIcon": "General|Text|DefaultText",
+    "NotifyTRACEIcon": "General|Text|DefaultText",
+    "NotifyERRORTitle": {
+      "fg": "General|Text|DefaultText",
+      "bold": true
+    }
+  },
+  "Plugin.b0o/incline.nvim": {
+    "InclineNormal": {
+      "fg": "Custom|Legacy|General|ErrorsAndWarnings|IconsText"
+    },
+    "InclineNormalNC": "InclineNormal"
+  },
+  "Treesitter.Make": {
+    "@function.make": "Makefile|Target",
+    "@prerequisites.make": "Makefile|Prerequisite",
+    "@string.special.symbol.make": "Makefile|VariableName",
+    "@recipe_line.make": "General|Code|InjectedLanguageFragment",
+    "@string.special.path.make": "Makefile|VariableName",
+    "@function.builtin.make": "Makefile|Keyword"
+  },
+  "Semantic.Lua": {
+    "@lsp.type.parameter.lua": "Custom|Legacy|Lua|Variables|Parameter",
+    "@lsp.type.variable.lua": null,
+    "@lsp.typemod.function.global.lua": "Custom|Legacy|Lua|Variables|GlobalFunction",
+    "@lsp.mod.defaultLibrary.lua": "Custom|Legacy|Lua|StdApi",
+    "@lsp.mod.global.lua": "Custom|Legacy|Lua|Variables|GlobalVariable",
+    "@lsp.type.property.lua": "Custom|Legacy|Lua|ClassMembers|Field",
+    "@lsp.typemod.parameter.declaration.lua": "Custom|Legacy|Lua|Variables|Parameter",
+    "@lsp.typemod.function.declaration.lua": "Custom|Legacy|Lua|Variables|LocalFunction",
+    "@lsp.type.comment.lua": null,
+    "@lsp.type.function.lua": "Custom|Legacy|Lua|Variables|LocalFunction",
+    "@lsp.type.method.lua": "Custom|Legacy|Lua|ClassMembers|StaticMethod"
+  },
+  "Treesitter.PHPDoc": {
+    "@attribute.phpdoc": "LanguageDefaults|Comments|DocComment|Tag",
+    "@keyword.phpdoc": null,
+    "@type.template.phpdoc": "PHP|PHPDoc|TemplateType",
+    "@variable.parameter.phpdoc": "PHP|PHPDoc|Parameter",
+    "@variable.member.phpdoc": "PHP|PHPDoc|Property",
+    "@variable.phpdoc": "PHP|PHPDoc|Parameter"
+  },
+  "Plugin.MeanderingProgrammer/render-markdown.nvim": {
+    "RenderMarkdownH2": "Custom|Legacy|iAWriter|Header",
+    "RenderMarkdownH3": "Custom|Legacy|iAWriter|Header",
+    "RenderMarkdownH4": "Custom|Legacy|iAWriter|Header",
+    "RenderMarkdownH5": "Custom|Legacy|iAWriter|Header",
+    "RenderMarkdownH6": "Custom|Legacy|iAWriter|Header",
+    "RenderMarkdownH1Bg": {
+      "fg": "Custom|Legacy|iAWriter|Header",
+      "italic": false,
+      "bold": true,
+      "bg": "General|Text|DefaultText.bg"
+    },
+    "RenderMarkdownH2Bg": {
+      "fg": "Custom|Legacy|iAWriter|Header",
+      "bold": true,
+      "bg": "General|Text|DefaultText.bg"
+    },
+    "RenderMarkdownH3Bg": {
+      "fg": "Custom|Legacy|iAWriter|Header",
+      "bold": true,
+      "bg": "General|Text|DefaultText.bg"
+    },
+    "RenderMarkdownH4Bg": {
+      "fg": "Custom|Legacy|iAWriter|Header",
+      "bold": true,
+      "bg": "General|Text|DefaultText.bg"
+    },
+    "RenderMarkdownH5Bg": {
+      "fg": "Custom|Legacy|iAWriter|Header",
+      "bg": "General|Text|DefaultText.bg"
+    },
+    "RenderMarkdownH6Bg": {
+      "fg": "Custom|Legacy|iAWriter|Header",
+      "bg": "General|Text|DefaultText.bg"
+    },
+    "RenderMarkdownCode": "",
+    "RenderMarkdownCodeInfo": "",
+    "RenderMarkdownCodeBorder": "",
+    "RenderMarkdownCodeFallback": "",
+    "RenderMarkdownCodeInline": "",
+    "RenderMarkdownQuote": "",
+    "RenderMarkdownQuote1": "",
+    "RenderMarkdownQuote2": "",
+    "RenderMarkdownQuote3": "",
+    "RenderMarkdownQuote4": "",
+    "RenderMarkdownQuote5": "",
+    "RenderMarkdownQuote6": "",
+    "RenderMarkdownInlineHighlight": "",
+    "RenderMarkdownBullet": "",
+    "RenderMarkdownDash": "",
+    "RenderMarkdownSign": "",
+    "RenderMarkdownMath": "",
+    "RenderMarkdownIndent": "",
+    "RenderMarkdownHtmlComment": "",
+    "RenderMarkdownLink": "",
+    "RenderMarkdownWikiLink": "",
+    "RenderMarkdownUnchecked": "",
+    "RenderMarkdownChecked": "",
+    "RenderMarkdownTodo": "",
+    "RenderMarkdownTableHead": "",
+    "RenderMarkdownTableRow": "",
+    "RenderMarkdownTableFill": "",
+    "RenderMarkdownSuccess": "",
+    "RenderMarkdownInfo": "",
+    "RenderMarkdownHint": "",
+    "RenderMarkdownWarn": "",
+    "RenderMarkdownError": "",
+    "RenderMarkdownH1": "Custom|Legacy|iAWriter|Header"
+  },
+  "Custom": {
+    "VCS_Copied_StatusLine": {
+      "fg": "Custom|Legacy|VCS|FileStatusColors|Copied.fg",
+      "bg": "Custom|TabSel.bg"
+    },
+    "VCS_Deleted_StatusLine": {
+      "fg": "Custom|Legacy|VCS|FileStatusColors|Deleted.fg",
+      "bg": "Custom|TabSel.bg"
+    },
+    "VCS_DeletedFromFileSystem_StatusLine": {
+      "fg": "Custom|Legacy|VCS|FileStatusColors|DeletedFromFileSystem.fg",
+      "bg": "Custom|TabSel.bg"
+    },
+    "VCS_HaveChangedDescendants_StatusLine": {
+      "fg": "Custom|Legacy|VCS|FileStatusColors|HaveChangedDescendants.fg",
+      "bg": "Custom|TabSel.bg"
+    },
+    "VCS_HaveImmediateChangedChildren_StatusLine": {
+      "fg": "Custom|Legacy|VCS|FileStatusColors|HaveImmediateChangedChildren.fg",
+      "bg": "Custom|TabSel.bg"
+    },
+    "VCS_Ignored_StatusLine": {
+      "fg": "Custom|Legacy|VCS|FileStatusColors|Ignored.fg",
+      "bg": "Custom|TabSel.bg"
+    },
+    "VCS_IgnoredIgnorePlugin_StatusLine": {
+      "fg": "Custom|Legacy|VCS|FileStatusColors|IgnoredIgnorePlugin.fg",
+      "bg": "Custom|TabSel.bg"
+    },
+    "VCS_Merged_StatusLine": {
+      "fg": "Custom|Legacy|VCS|FileStatusColors|Merged.fg",
+      "bg": "Custom|TabSel.bg"
+    },
+    "VCS_MergedWithConflicts_StatusLine": {
+      "fg": "Custom|Legacy|VCS|FileStatusColors|MergedWithConflicts.fg",
+      "bg": "Custom|TabSel.bg"
+    },
+    "VCS_Modified_StatusLine": {
+      "fg": "Custom|Legacy|VCS|FileStatusColors|Modified.fg",
+      "bg": "Custom|TabSel.bg"
+    },
+    "VCS_Renamed_StatusLine": {
+      "fg": "Custom|Legacy|VCS|FileStatusColors|Renamed.fg",
+      "bg": "Custom|TabSel.bg"
+    },
+    "VCS_Unknown_StatusLine": {
+      "fg": "Custom|Legacy|VCS|FileStatusColors|Unknown.fg",
+      "bg": "Custom|TabSel.bg"
+    },
+    "Appearance_FileColors_NonProjectFile": "Appearance|FileColors|NonProjectFile",
+    "Appearance_FileColors_Tests": "Appearance|FileColors|Tests",
+    "GeneralTextTabs": "General|Text|Tabs",
+    "VCS_VCSAnnotations_BackgroundColor1": "VCS|VCSAnnotations|BackgroundColor1",
+    "StatusBarHasUnsavedBuffers": {
+      "fg": "General|ErrorsAndWarnings|Error|ErrorStripeMark",
+      "bg": "Custom|StatusBar.bg"
+    },
+    "VCS_VCSAnnotations_BackgroundColor2": "VCS|VCSAnnotations|BackgroundColor2",
+    "GitToolBoxColorsIconsClean": "Custom|Legacy|GitToolBoxColors|Icons|Clean",
+    "GitToolBoxColorsIconsDirty": "Custom|Legacy|GitToolBoxColors|Icons|Dirty",
+    "VCSIconsUnpulled": "Custom|Legacy|VCS|Icons|Unpulled",
+    "VCSIconsUnmerged": "Custom|Legacy|VCS|Icons|Unmerged",
+    "WindowBackgroundShowExcluded": "Appearance|Window|BackgroundShowExcluded",
+    "CustomStatusLine": "Custom|StatusBar",
+    "ToolWindowFloatTitle": {
+      "fg": "Appearance|ToolWindow|Title",
+      "bold": true,
+      "bg": "Appearance|Window|Background"
+    },
+    "ToolWindowFloatFooter": {
+      "fg": "Appearance|ToolWindow|Title",
+      "bg": "Appearance|ToolWindow|Background"
+    },
+    "ToolWindowFloatBorderTop": {
+      "bg": "Appearance|Window|Background"
+    },
+    "ToolWindowFloatBorder": "Appearance|ToolWindow|Border",
+    "ToolWindowFloatNormal": {
+      "fg": "General|Text|DefaultText",
+      "bg": "Appearance|ToolWindow|Background"
+    },
+    "DialogFloatBorderInner": {
+      "fg": "Appearance|Window|Border",
+      "bg": "Appearance|Window|BackgroundEditArea.bg"
+    },
+    "DialogFloatBorderOuter": {
+      "nolink": true,
+      "fg": "Appearance|Window|Border",
+      "bg": "General|Text|DefaultText.bg"
+    },
+    "DialogFloatBorderOuterShadowedDark": {
+      "nolink": true,
+      "fg": "Appearance|Window|Border",
+      "bg": "Custom|Legacy|General|Text|DefaultTextBgShadowedDark"
+    },
+    "DialogFloatBorderOuterShadowedLight": {
+      "nolink": true,
+      "fg": "Appearance|Window|Border",
+      "bg": "Custom|Legacy|General|Text|DefaultTextBgShadowedLight"
+    },
+    "DialogFloatBorder": {
+      "nolink": true,
+      "fg": "Appearance|Window|Border",
+      "bg": "Appearance|Window|BackgroundEditArea.bg"
+    },
+    "DialogNotificationFloatBorder": "Appearance|Notifications|Border",
+    "DialogNotificationFloatBorderOuter": {
+      "nolink": true,
+      "fg": "Appearance|Notifications|Border",
+      "bg": "General|Text|DefaultText.bg"
+    },
+    "DialogFloatBorderEditorArea": {
+      "nolink": true,
+      "fg": "Appearance|Window|Border",
+      "bg": "General|Text|DefaultText.bg"
+    },
+    "DialogFloatBorderTop": {
+      "bg": "Appearance|Search|Header"
+    },
+    "DialogFloatBorderCorner": {
+      "nolink": true,
+      "fg": "Appearance|Window|Border",
+      "bg": "Appearance|Search|Header"
+    },
+    "DialogFloatBorderBetween": {
+      "fg": "Appearance|Window|BorderSubtle.fg",
+      "bg": "Appearance|Window|BackgroundEditArea.bg"
+    },
+    "DialogFloatBorderCornerBetween": {
+      "fg": "Appearance|Window|Border",
+      "bg": "Appearance|Search|Header"
+    },
+    "DialogFloatTitle": [],
+    "DialogFloatFooter": [],
+    "PopupFloatBorder": [],
+    "PopupFloatBorderTop": [],
+    "PopupFloatTitle": [],
+    "PopupFloatFooter": [],
+    "PopupCodeViewFloat": {
+      "fg": "General|Text|DefaultText",
+      "bg": "Appearance|Notifications|Background"
+    },
+    "PopupCodeViewFloatBorder": {
+      "fg": "Appearance|Window|Border",
+      "bg": "Appearance|Notifications|Background"
+    },
+    "PopupCodeViewFloatBorderTop": {
+      "fg": "Appearance|Window|Border",
+      "bg": "Appearance|Notifications|Background"
+    },
+    "PopupCodeViewFloatBorderBottom": {
+      "fg": "Appearance|Window|Border",
+      "bg": "Appearance|Notifications|Background"
+    },
+    "PopupCodeViewFloatBorderBottomCorner": {
+      "fg": "Appearance|Window|Border",
+      "bg": "Appearance|Notifications|Background"
+    },
+    "PopupCodeViewFloatTitle": [],
+    "PopupCodeViewFloatFooter": [],
+    "General_Editor_Guides_VisualGuides": "General|Editor|Guides|VisualGuides",
+    "General_Editor_Guides_HardWrapGuide": "General|Editor|Guides|HardWrapGuide",
+    "General_Text_DefaultText": "General|Text|DefaultText",
+    "General_Editor_NotificationBackground": "General|Editor|NotificationBackground",
+    "IdeaVim_Modes_Normal": "IdeaVim|Modes|Normal",
+    "IdeaVim_Modes_Insert": "IdeaVim|Modes|Insert",
+    "IdeaVim_Modes_Visual": "IdeaVim|Modes|Visual",
+    "IdeaVim_Modes_Replace": "IdeaVim|Modes|Replace",
+    "Custom_TabSel": "Custom|TabSel",
+    "VCS_Added": "Custom|Legacy|VCS|FileStatusColors|Added",
+    "VCS_Copied": "Custom|Legacy|VCS|FileStatusColors|Copied",
+    "VCS_Deleted": "Custom|Legacy|VCS|FileStatusColors|Deleted",
+    "VCS_DeletedFromFileSystem": "Custom|Legacy|VCS|FileStatusColors|DeletedFromFileSystem",
+    "VCS_HaveChangedDescendants": "Custom|Legacy|VCS|FileStatusColors|HaveChangedDescendants",
+    "VCS_HaveImmediateChangedChildren": "Custom|Legacy|VCS|FileStatusColors|HaveImmediateChangedChildren",
+    "VCS_Ignored": "Custom|Legacy|VCS|FileStatusColors|Ignored",
+    "VCS_IgnoredIgnorePlugin": "Custom|Legacy|VCS|FileStatusColors|IgnoredIgnorePlugin",
+    "VCS_Merged": "Custom|Legacy|VCS|FileStatusColors|Merged",
+    "VCS_MergedWithConflicts": "Custom|Legacy|VCS|FileStatusColors|MergedWithConflicts",
+    "VCS_Modified": "Custom|Legacy|VCS|FileStatusColors|Modified",
+    "VCS_VCSAnnotations_BackgroundColor4": "VCS|VCSAnnotations|BackgroundColor4",
+    "VCS_Renamed": "Custom|Legacy|VCS|FileStatusColors|Renamed",
+    "Window_Normal": {
+      "fg": "General|Text|DefaultText",
+      "bg": "Appearance|Window|Background"
+    },
+    "VCS_Unknown": "Custom|Legacy|VCS|FileStatusColors|Unknown",
+    "VCS_VCSAnnotations_BackgroundColor3": "VCS|VCSAnnotations|BackgroundColor3",
+    "VCS_Added_StatusLine": {
+      "fg": "Custom|Legacy|VCS|FileStatusColors|Added.fg",
+      "bg": "Custom|TabSel.bg"
+    }
+  },
+  "Treesitter.EditorConfig": {
+    "@character.special.editorconfig": "EditorConfig|SpecialSymbol"
+  },
+  "Treesitter.YAML": {
+    "@property.yaml": "YAML|Key",
+    "@boolean.yaml": "YAML|Text",
+    "@comment.yaml": "YAML|Comment",
+    "@label.yaml": "YAML|AnchorAlias",
+    "@number.yaml": "YAML|Text"
+  },
+  "Semantic.Ruby": {
+    "@lsp.type.class.ruby": null,
+    "@lsp.type.method.ruby": null,
+    "@lsp.typemod.class.declaration.ruby": "Ruby|Constants|ConstantDeclaration",
+    "@lsp.type.parameter.ruby": "Ruby|Identifiers|Parameter",
+    "@lsp.type.variable.ruby": "Ruby|Variables|LocalVariable"
+  },
+  "Treesitter.gitcommit": {
+    "@keyword.gitcommit": "ConventionalCommit|Type",
+    "@variable.parameter.gitcommit": "ConventionalCommit|Scope",
+    "@punctuation.special.gitcommit": "ConventionalCommit|BreakingChange",
+    "@label.gitcommit": "ConventionalCommit|FooterType",
+    "@markup.heading.gitcommit": "ConventionalCommit|Subject",
+    "@comment.error.gitcommit": "ConventionalCommit|BreakingChange"
+  },
+  "Treesitter.TypeScript": {
+    "@function.method.call.typescript": "TypeScript|Object|Method",
+    "@variable.typescript": "TypeScript|Identifiers|LocalVariable",
+    "@variable.parameter.typescript": "TypeScript|Identifiers|Parameter",
+    "@variable.exported.typescript": "TypeScript|Identifiers|ExportedVariable",
+    "@function.exported.typescript": "TypeScript|Identifiers|ExportedFunction",
+    "@constant.typescript": null,
+    "@variable.builtin.typescript": "TypeScript|Identifiers|GlobalVariable",
+    "@variable.member.typescript": "TypeScript|Object|Property",
+    "@function.method.typescript": "TypeScript|Object|Method"
+  },
+  "Semantic.JavaScript": {
+    "@lsp.type.variable.javascript": null,
+    "@lsp.type.parameter.javascript": "JavaScript|Identifiers|Parameter",
+    "@lsp.typemod.class.defaultLibrary.javascript": "JavaScript|Identifiers|GlobalVariable",
+    "@lsp.typemod.property.static.javascript": "LanguageDefaults|Classes|StaticField"
+  }
+}

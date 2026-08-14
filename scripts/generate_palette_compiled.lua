@@ -15,8 +15,9 @@ end
 ---@param profile "light"|"dark"|"light_cb"|"dark_cb"
 ---@param inherit_level? number
 ---@param prev_paths? string[]
+---@param scope? string
 ---@return table
-local function resolve_path(colors, path, profile, inherit_level, prev_paths)
+local function resolve_path(colors, path, profile, inherit_level, prev_paths, scope)
     profile = profile or "light"
     inherit_level = inherit_level or 0
     prev_paths = prev_paths or {}
@@ -24,9 +25,28 @@ local function resolve_path(colors, path, profile, inherit_level, prev_paths)
     local base_profile = profile:match("^(.-)_cb$") or profile
 
     local path_spl = split(path, "|")
-    local node = colors
+    if scope == nil then
+        if type(colors.IntelliJ) == "table" and colors.IntelliJ[path_spl[1]] ~= nil then
+            scope = "IntelliJ"
+        else
+            local scopes = {}
+            for candidate, scoped_colors in pairs(colors) do
+                if candidate ~= "IntelliJ" and type(scoped_colors) == "table" and scoped_colors[path_spl[1]] ~= nil then
+                    scopes[#scopes + 1] = candidate
+                end
+            end
+            table.sort(scopes)
+            scope = scopes[1]
+        end
+    end
 
-    for i, v in pairs(path_spl) do
+    if scope == nil then
+        error(string.format("Missing root node '%s' in path '%s'.", path_spl[1], path))
+    end
+
+    local node = colors[scope]
+
+    for i, v in ipairs(path_spl) do
         if i < #path_spl and type(node[v]) == "table" then
             node = node[v]
         elseif i == #path_spl and type(node[v]) == "table" and type(node[v][profile] or node[v][base_profile]) == "table" then
@@ -41,12 +61,12 @@ local function resolve_path(colors, path, profile, inherit_level, prev_paths)
         then
             table.insert(prev_paths, path)
             local ref = type(node[v]) == "string" and node[v] or (node[v][profile] or node[v][base_profile])
-            return resolve_path(colors, ref, profile, inherit_level + 1, prev_paths)
+            return resolve_path(colors, ref, profile, inherit_level + 1, prev_paths, scope)
         elseif node[v] == vim.NIL then
             return {}
         elseif node[v] == nil then
             local p = (vim.tbl_count(prev_paths) > 0 and table.concat(prev_paths, " > ") .. " > " or "") .. path
-            error(string.format("Missing node '%s' in path '%s'.", v, p))
+            error(string.format("Missing node '%s' in path '%s' within scope '%s'.", v, p, scope))
         else
             error(
                 string.format(
@@ -169,19 +189,22 @@ local this_file = debug.getinfo(1, "S").source:sub(2)
 local script_dir = vim.fn.fnamemodify(this_file, ":p:h")
 local repo_root = vim.fn.fnamemodify(script_dir, ":h")
 
-local palette_json_path = repo_root .. "/lua/jb/palette.json"
+local colors_json_path = repo_root .. "/lua/jb/intellij-palette.json"
+local highlights_json_path = repo_root .. "/lua/jb/highlights.json"
 local palette_compiled_path = repo_root .. "/lua/jb/palette_compiled.lua"
 
-local file = assert(io.open(palette_json_path, "r"), "Failed to open palette.json")
-local content = file:read("*a")
-file:close()
-
 local json_decode = (vim.json and vim.json.decode) or vim.fn.json_decode
-local palette = assert(json_decode(content), "Failed to decode palette.json")
-local colors = palette.colors
-local highlights = palette.highlights
-local icons = colors.Custom and colors.Custom.Icons
-assert(type(icons) == "table", "palette.colors.Custom.Icons is required")
+local function read_json(path)
+    local file = assert(io.open(path, "r"), "Failed to open " .. path)
+    local content = file:read("*a")
+    file:close()
+    return assert(json_decode(content), "Failed to decode " .. path)
+end
+
+local colors = read_json(colors_json_path)
+local highlights = read_json(highlights_json_path)
+local icons = colors.Neovim and colors.Neovim.Custom and colors.Neovim.Custom.Icons
+assert(type(icons) == "table", "intellij-palette.json Neovim.Custom.Icons is required")
 
 local path_props = {}
 local base_paths = {}
@@ -245,7 +268,7 @@ for base_path in pairs(base_paths) do
 end
 
 local compiled = {
-    version = 2,
+    version = 3,
     highlights = highlights,
     icons = icons,
     resolved_hls = resolved_hls,

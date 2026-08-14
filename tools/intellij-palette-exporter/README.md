@@ -1,6 +1,6 @@
 # JB Palette Exporter
 
-Private IntelliJ-platform plugin that snapshots the active editor color scheme into a standalone JSON file. The output is separate from `lua/jb/palette.json`, which also contains hand-maintained Custom colors and Neovim highlights.
+Private IntelliJ-platform plugin that snapshots the active editor color scheme into `lua/jb/intellij-palette.json`. Hand-maintained Neovim colors remain in that file's `Neovim` scope, while highlight mappings live in `lua/jb/highlights.json`.
 
 The plugin discovers colors from every language plugin loaded in the IDE. It has no compile-time dependencies on those plugins. Install the same plugin in IntelliJ, CLion, Rider, and other JetBrains IDEs.
 
@@ -91,9 +91,12 @@ Each export is a non-destructive leaf-level overlay:
 
 Example: exporting `PHP|Keywords` from IntelliJ updates `IntelliJ|PHP|Keywords|light` and leaves `IntelliJ|PHP|DQLBuilder` unchanged.
 
-## Updating `lua/jb/palette.json`
+## Updating the Neovim palette
 
-Unwrap `IntelliJ` into the current top-level `colors` object in `lua/jb/palette.json`. Keep other product trees namespaced (`Rider`, `CLion`, …). Keep hand-maintained trees such as `Custom`, `Appearance`, and the `highlights` object. After editing `palette.json`, regenerate the compiled palette:
+Export directly to `lua/jb/intellij-palette.json`. Keep the hand-maintained
+`Neovim` scope when updating the generated IDE scopes. Highlight mappings live
+in `lua/jb/highlights.json`. After either file changes, regenerate the compiled
+palette:
 
 ```sh
 nvim --headless -u NONE --noplugin \

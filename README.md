@@ -214,9 +214,10 @@ To use them, refer to their respective documentation.
 
 IntelliJ color snapshots come from the private plugin in
 [tools/intellij-palette-exporter](tools/intellij-palette-exporter). That generated
-file is separate from `lua/jb/palette.json`.
+file is stored in `lua/jb/intellij-palette.json`; Neovim highlight mappings are
+stored separately in `lua/jb/highlights.json`.
 
-When changing `lua/jb/palette.json`, regenerate the compiled palette used at runtime:
+When changing either palette file, regenerate the compiled palette used at runtime:
 
 ```sh
 nvim --headless -u NONE --noplugin \
