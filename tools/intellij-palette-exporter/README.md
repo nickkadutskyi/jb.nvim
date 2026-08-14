@@ -94,7 +94,7 @@ Example: exporting `PHP|Keywords` from IntelliJ updates `IntelliJ|PHP|Keywords|l
 ## Updating the Neovim palette
 
 Export directly to `lua/jb/intellij-palette.json`. Keep the hand-maintained
-`Neovim` scope when updating the generated IDE scopes. Highlight mappings live
+`Other` scope when updating the generated IDE scopes. Highlight mappings live
 in `lua/jb/highlights.json`. After either file changes, regenerate the compiled
 palette:
 

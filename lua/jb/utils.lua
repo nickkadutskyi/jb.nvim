@@ -93,7 +93,7 @@ local function get_cached_compiled_palette()
 
     compiled_palette_cache = {
         colors = {
-            Neovim = {
+            Other = {
                 Custom = {
                     Icons = compiled_palette.icons,
                 },

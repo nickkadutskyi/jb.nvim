@@ -144,7 +144,7 @@ function M.load(opts)
 
     local colors = utils.read_colors("/lua/jb/intellij-palette.json")
     local highlights = utils.read_highlights("/lua/jb/highlights.json")
-    local custom_colors = colors.Neovim.Custom
+    local custom_colors = colors.Other.Custom
 
     local hl_groups = {}
     -- To ensure that linked groups are set after all groups are defined

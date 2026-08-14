@@ -203,8 +203,8 @@ end
 
 local colors = read_json(colors_json_path)
 local highlights = read_json(highlights_json_path)
-local icons = colors.Neovim and colors.Neovim.Custom and colors.Neovim.Custom.Icons
-assert(type(icons) == "table", "intellij-palette.json Neovim.Custom.Icons is required")
+local icons = colors.Other and colors.Other.Custom and colors.Other.Custom.Icons
+assert(type(icons) == "table", "intellij-palette.json Other.Custom.Icons is required")
 
 local path_props = {}
 local base_paths = {}
