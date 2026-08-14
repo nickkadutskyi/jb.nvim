@@ -15953,6 +15953,196 @@
   },
   "Neovim": {
     "Appearance": {
+      "FileColors": {
+        "NonProjectFile": {
+          "light": {
+            "bg": "#FDF5DE"
+          },
+          "dark": {
+            "bg": "#3B3225"
+          }
+        },
+        "Tests": {
+          "light": {
+            "bg": "#E7F6E8"
+          },
+          "dark": {
+            "bg": "#2B3829"
+          }
+        }
+      },
+      "Notifications": {
+        "Background": {
+          "light": {
+            "bg": "#FFFFFF"
+          },
+          "dark": {
+            "bg": "#323438"
+          }
+        },
+        "Border": {
+          "light": {
+            "fg": "#D4D4D4",
+            "bg": "#FFFFFF"
+          },
+          "dark": {
+            "fg": "#323438",
+            "bg": "#323438"
+          }
+        },
+        "IconError": {
+          "light": {
+            "fg": "#D46068"
+          },
+          "dark": {
+            "fg": "#D46068"
+          }
+        },
+        "IconInfo": {
+          "light": {
+            "fg": "#517DEB"
+          },
+          "dark": {
+            "fg": "#5D85EB"
+          }
+        },
+        "IconWarn": {
+          "light": {
+            "fg": "#F4B340"
+          },
+          "dark": {
+            "fg": "#EBC66D"
+          }
+        },
+        "Normal": {
+          "light": {
+            "fg": "#000000",
+            "bg": "#FFFFFF"
+          },
+          "dark": {
+            "fg": "#D1D3D9",
+            "bg": "#323438"
+          }
+        },
+        "NormalCollapseInfo": {
+          "light": {
+            "fg": "#606268",
+            "bg": "#F7F8F9"
+          },
+          "dark": {
+            "fg": "#9FA2A7",
+            "bg": "#191A1C"
+          }
+        }
+      },
+      "ProjectView": {
+        "DirectoryIcon": {
+          "light": {
+            "fg": "#6D707D"
+          },
+          "dark": {
+            "fg": "#CED0D5"
+          }
+        },
+        "IndentGuide": {
+          "light": {
+            "fg": "#EBECEF"
+          },
+          "dark": {
+            "fg": "#3D3F43"
+          }
+        },
+        "SymLink": {
+          "light": {
+            "fg": "#1D1D1D"
+          },
+          "dark": {
+            "fg": "#DFE1E5"
+          }
+        }
+      },
+      "Search": {
+        "Header": {
+          "light": {
+            "bg": "#F7F8FA"
+          },
+          "dark": {
+            "bg": "#393B40"
+          }
+        },
+        "MatchedText": {
+          "light": {
+            "fg": "#323232",
+            "bg": "#FCE6B7"
+          },
+          "dark": {
+            "fg": "#000000",
+            "bg": "#B7975C"
+          }
+        },
+        "MatchedTextContrast": {
+          "light": {
+            "bg": "#fcb500"
+          },
+          "dark": {
+            "bg": "#ffae00"
+          }
+        },
+        "PromptIcon": {
+          "light": {
+            "fg": "#747783"
+          },
+          "dark": {
+            "fg": "#CED0D5"
+          }
+        }
+      },
+      "StructureView": {
+        "Fold": {
+          "light": {
+            "fg": "#9396A2"
+          },
+          "dark": {
+            "fg": "#A0A3A9"
+          }
+        }
+      },
+      "ToolWindow": {
+        "Background": {
+          "light": {
+            "bg": "#F7F8FA"
+          },
+          "dark": {
+            "bg": "#2B2D30"
+          }
+        },
+        "Border": {
+          "light": {
+            "fg": "#EBECF0",
+            "bg": "#F7F8FA"
+          },
+          "dark": {
+            "fg": "#1E1F22",
+            "bg": "#2B2D30"
+          }
+        },
+        "Item": {
+          "light": {
+            "fg": "#000000"
+          },
+          "dark": {
+            "fg": "#DFE1E5"
+          }
+        },
+        "Title": {
+          "light": {
+            "fg": "#1D1D1D"
+          },
+          "dark": {
+            "fg": "#DFE1E5"
+          }
+        }
+      },
       "VCS": {
         "Labels": {
           "HEAD": {
@@ -15979,12 +16169,12 @@
               "fg": "#A685DB"
             }
           },
-          "Tag": {
+          "SignatureIconUnverified": {
             "light": {
-              "fg": "#6F727F"
+              "fg": "#E2A539"
             },
             "dark": {
-              "fg": "#80848A"
+              "fg": "#E5AA4C"
             }
           },
           "SignatureIconVerified": {
@@ -15995,12 +16185,12 @@
               "fg": "#5F9A5C"
             }
           },
-          "SignatureIconUnverified": {
+          "Tag": {
             "light": {
-              "fg": "#E2A539"
+              "fg": "#6F727F"
             },
             "dark": {
-              "fg": "#E5AA4C"
+              "fg": "#80848A"
             }
           }
         },
@@ -16015,182 +16205,18 @@
           }
         }
       },
-      "Notifications": {
-        "Normal": {
-          "light": {
-            "fg": "#000000",
-            "bg": "#FFFFFF"
-          },
-          "dark": {
-            "fg": "#D1D3D9",
-            "bg": "#323438"
-          }
-        },
-        "NormalCollapseInfo": {
-          "light": {
-            "fg": "#606268",
-            "bg": "#F7F8F9"
-          },
-          "dark": {
-            "fg": "#9FA2A7",
-            "bg": "#191A1C"
-          }
-        },
-        "Background": {
-          "light": {
-            "bg": "#FFFFFF"
-          },
-          "dark": {
-            "bg": "#323438"
-          }
-        },
-        "IconError": {
-          "light": {
-            "fg": "#D46068"
-          },
-          "dark": {
-            "fg": "#D46068"
-          }
-        },
-        "IconWarn": {
-          "light": {
-            "fg": "#F4B340"
-          },
-          "dark": {
-            "fg": "#EBC66D"
-          }
-        },
-        "IconInfo": {
-          "light": {
-            "fg": "#517DEB"
-          },
-          "dark": {
-            "fg": "#5D85EB"
-          }
-        },
-        "Border": {
-          "light": {
-            "fg": "#D4D4D4",
-            "bg": "#FFFFFF"
-          },
-          "dark": {
-            "fg": "#323438",
-            "bg": "#323438"
-          }
-        }
-      },
-      "Search": {
-        "PromptIcon": {
-          "light": {
-            "fg": "#747783"
-          },
-          "dark": {
-            "fg": "#CED0D5"
-          }
-        },
-        "MatchedText": {
-          "light": {
-            "fg": "#323232",
-            "bg": "#FCE6B7"
-          },
-          "dark": {
-            "fg": "#000000",
-            "bg": "#B7975C"
-          }
-        },
-        "MatchedTextContrast": {
-          "light": {
-            "bg": "#fcb500"
-          },
-          "dark": {
-            "bg": "#ffae00"
-          }
-        },
-        "Header": {
-          "light": {
-            "bg": "#F7F8FA"
-          },
-          "dark": {
-            "bg": "#393B40"
-          }
-        }
-      },
-      "StructureView": {
-        "Fold": {
-          "light": {
-            "fg": "#9396A2"
-          },
-          "dark": {
-            "fg": "#A0A3A9"
-          }
-        }
-      },
-      "ProjectView": {
-        "IndentGuide": {
-          "light": {
-            "fg": "#EBECEF"
-          },
-          "dark": {
-            "fg": "#3D3F43"
-          }
-        },
-        "SymLink": {
-          "light": {
-            "fg": "#1D1D1D"
-          },
-          "dark": {
-            "fg": "#DFE1E5"
-          }
-        },
-        "DirectoryIcon": {
-          "light": {
-            "fg": "#6D707D"
-          },
-          "dark": {
-            "fg": "#CED0D5"
-          }
-        }
-      },
-      "ToolWindow": {
-        "Title": {
-          "light": {
-            "fg": "#1D1D1D"
-          },
-          "dark": {
-            "fg": "#DFE1E5"
-          }
-        },
-        "Border": {
-          "light": {
-            "fg": "#EBECF0",
-            "bg": "#F7F8FA"
-          },
-          "dark": {
-            "fg": "#1E1F22",
-            "bg": "#2B2D30"
-          }
-        },
-        "Background": {
-          "light": {
-            "bg": "#F7F8FA"
-          },
-          "dark": {
-            "bg": "#2B2D30"
-          }
-        },
-        "Item": {
-          "light": {
-            "fg": "#000000"
-          },
-          "dark": {
-            "fg": "#DFE1E5"
-          }
-        }
-      },
       "Window": {
         "Background": {
           "light": {
             "bg": "#F7F8FA"
+          },
+          "dark": {
+            "bg": "#2B2D30"
+          }
+        },
+        "BackgroundEditArea": {
+          "light": {
+            "bg": "#FFFFFF"
           },
           "dark": {
             "bg": "#2B2D30"
@@ -16202,22 +16228,6 @@
           },
           "dark": {
             "bg": "#3C3225"
-          }
-        },
-        "Title": {
-          "light": {
-            "fg": "#565757"
-          },
-          "dark": {
-            "fg": "#9FA0A2"
-          }
-        },
-        "BackgroundEditArea": {
-          "light": {
-            "bg": "#FFFFFF"
-          },
-          "dark": {
-            "bg": "#2B2D30"
           }
         },
         "Border": {
@@ -16238,6 +16248,46 @@
             "fg": "#393B40"
           }
         },
+        "Checkbox": {
+          "light": {
+            "fg": "#000000",
+            "bg": "#FFFFFF",
+            "sp": "#A9ADBC",
+            "underline": true
+          },
+          "dark": {
+            "fg": "#D8DADE",
+            "bg": "#2B2D30",
+            "sp": "#5B5D62",
+            "underline": true
+          }
+        },
+        "CheckboxDisabled": {
+          "light": {
+            "fg": "#B3B6C3",
+            "bg": "#F7F8FA",
+            "sp": "#DFE1E5",
+            "underline": true
+          },
+          "dark": {
+            "fg": "#57595F",
+            "bg": "#393B40",
+            "sp": "#5B5D62",
+            "underline": true
+          }
+        },
+        "CheckboxSelected": {
+          "light": {
+            "fg": "#FFFFFF",
+            "bg": "#4573E8",
+            "bold": true
+          },
+          "dark": {
+            "fg": "#FFFFFF",
+            "bg": "#4573E8",
+            "bold": true
+          }
+        },
         "RowSelected": {
           "light": {
             "bg": "#D3DFFB"
@@ -16256,44 +16306,32 @@
             "bold": true
           }
         },
-        "Checkbox": {
+        "SubtleText": {
           "light": {
-            "fg": "#000000",
-            "bg": "#FFFFFF",
-            "sp": "#A9ADBC",
-            "underline": true
+            "fg": "#828593"
           },
           "dark": {
-            "fg": "#D8DADE",
-            "bg": "#2B2D30",
-            "sp": "#5B5D62",
-            "underline": true
+            "fg": "#707379"
           }
         },
-        "CheckboxSelected": {
+        "SwitchDisabled": {
           "light": {
-            "fg": "#FFFFFF",
-            "bg": "#4573E8",
-            "bold": true
+            "fg": "#8E8E8E",
+            "bg": "#F2F2F2"
           },
           "dark": {
-            "fg": "#FFFFFF",
-            "bg": "#4573E8",
-            "bold": true
+            "fg": "#575A5F",
+            "bg": "#2B2D30"
           }
         },
-        "CheckboxDisabled": {
+        "SwitchEnabled": {
           "light": {
-            "fg": "#B3B6C3",
-            "bg": "#F7F8FA",
-            "sp": "#DFE1E5",
-            "underline": true
+            "fg": "#FEFFFE",
+            "bg": "#5C9051"
           },
           "dark": {
-            "fg": "#57595F",
-            "bg": "#393B40",
-            "sp": "#5B5D62",
-            "underline": true
+            "fg": "#DFE1E5",
+            "bg": "#53684F"
           }
         },
         "SwitchKnob": {
@@ -16306,63 +16344,41 @@
             "sp": "#4F5156"
           }
         },
-        "SwitchDisabled": {
+        "Title": {
           "light": {
-            "bg": "#F2F2F2",
-            "fg": "#8E8E8E"
+            "fg": "#565757"
           },
           "dark": {
-            "bg": "#2B2D30",
-            "fg": "#575A5F"
+            "fg": "#9FA0A2"
           }
-        },
-        "SwitchEnabled": {
-          "light": {
-            "bg": "#5C9051",
-            "fg": "#FEFFFE"
-          },
-          "dark": {
-            "bg": "#53684F",
-            "fg": "#DFE1E5"
-          }
-        },
-        "SubtleText": {
+        }
+      }
+    },
+    "Custom": {
+      "Completion": {
+        "Kind": {
           "light": {
             "fg": "#828593"
           },
           "dark": {
             "fg": "#707379"
           }
-        }
-      },
-      "FileColors": {
-        "NonProjectFile": {
+        },
+        "Match": {
           "light": {
-            "bg": "#FDF5DE"
+            "fg": "#4573E8"
           },
           "dark": {
-            "bg": "#3B3225"
+            "fg": "#6089EF"
           }
         },
-        "Tests": {
+        "Selected": {
           "light": {
-            "bg": "#E7F6E8"
+            "bg": "#D7E1FC"
           },
           "dark": {
-            "bg": "#2B3829"
+            "bg": "#32426B"
           }
-        }
-      }
-    },
-    "Custom": {
-      "StatusBar": {
-        "light": {
-          "fg": "#7F828D",
-          "bg": "#F7F8FA"
-        },
-        "dark": {
-          "fg": "#9A9CA4",
-          "bg": "#2B2D30"
         }
       },
       "DialogWindow": {
@@ -16377,46 +16393,132 @@
       },
       "DialogWindowDefaultOption": {
         "light": {
+          "fg": "#FFFFFF",
           "bg": "#3b78e9",
           "sp": "#F7F8FA",
-          "fg": "#FFFFFF",
           "underline": true
         },
         "dark": {
+          "fg": "#FFFFFF",
           "bg": "#3b78e9",
           "sp": "#2B2D30",
-          "fg": "#FFFFFF",
           "underline": true
         }
       },
-      "Completion": {
-        "Selected": {
-          "light": {
-            "bg": "#D7E1FC"
-          },
-          "dark": {
-            "bg": "#32426B"
-          }
-        },
-        "Match": {
-          "light": {
-            "fg": "#4573E8"
-          },
-          "dark": {
-            "fg": "#6089EF"
-          }
-        },
-        "Kind": {
-          "light": {
-            "fg": "#828593"
-          },
-          "dark": {
-            "fg": "#707379"
-          }
-        }
-      },
       "Icons": {
-        "Text": {
+        "Array": {
+          "light": {
+            "fg": "#6C707D"
+          },
+          "dark": {
+            "fg": "#CED0D6"
+          }
+        },
+        "Boolean": {
+          "light": {
+            "fg": "#6C707D"
+          },
+          "dark": {
+            "fg": "#CED0D6"
+          }
+        },
+        "Class": {
+          "light": {
+            "fg": "#3877E8"
+          },
+          "dark": {
+            "fg": "#578CF0"
+          }
+        },
+        "Color": {
+          "light": {
+            "fg": "#6C707D"
+          },
+          "dark": {
+            "fg": "#CED0D6"
+          }
+        },
+        "Constant": {
+          "light": {
+            "fg": "#DD7430"
+          },
+          "dark": {
+            "fg": "#C1805B"
+          }
+        },
+        "Constructor": {
+          "light": {
+            "fg": "#D04B50"
+          },
+          "dark": {
+            "fg": "#D1655F"
+          }
+        },
+        "Enum": {
+          "light": {
+            "fg": "#7A58E8"
+          },
+          "dark": {
+            "fg": "#9E78DF"
+          }
+        },
+        "EnumMember": {
+          "light": {
+            "fg": "#DD7430"
+          },
+          "dark": {
+            "fg": "#C1805B"
+          }
+        },
+        "Event": {
+          "light": {
+            "fg": "#DD7430"
+          },
+          "dark": {
+            "fg": "#C1805B"
+          }
+        },
+        "Field": {
+          "light": {
+            "fg": "#DD7430"
+          },
+          "dark": {
+            "fg": "#C1805B"
+          }
+        },
+        "File": {
+          "light": {
+            "fg": "#6C707D"
+          },
+          "dark": {
+            "fg": "#CED0D6"
+          }
+        },
+        "Folder": {
+          "light": {
+            "fg": "#6C707D"
+          },
+          "dark": {
+            "fg": "#CED0D6"
+          }
+        },
+        "Function": {
+          "light": {
+            "fg": "#D04A4F"
+          },
+          "dark": {
+            "fg": "#D1655F"
+          }
+        },
+        "Interface": {
+          "light": {
+            "fg": "#3C8745"
+          },
+          "dark": {
+            "fg": "#629361"
+          }
+        },
+        "Keyword": {
           "light": {
             "fg": "#6C707D"
           },
@@ -16432,36 +16534,60 @@
             "fg": "#D1655F"
           }
         },
-        "Function": {
+        "Module": {
           "light": {
-            "fg": "#D04A4F"
+            "fg": "#3877E8"
           },
           "dark": {
-            "fg": "#D1655F"
+            "fg": "#578CF0"
           }
         },
-        "Constructor": {
+        "Namespace": {
           "light": {
-            "fg": "#D04B50"
+            "fg": "#4573E8"
           },
           "dark": {
-            "fg": "#D1655F"
+            "fg": "#6089EF"
           }
         },
-        "Field": {
+        "Null": {
           "light": {
-            "fg": "#DD7430"
+            "fg": "#6C707D"
           },
           "dark": {
-            "fg": "#C1805B"
+            "fg": "#CED0D6"
           }
         },
-        "Variable": {
+        "Number": {
           "light": {
-            "fg": "#DE7633"
+            "fg": "#6C707D"
           },
           "dark": {
-            "fg": "#C1805B"
+            "fg": "#CED0D6"
+          }
+        },
+        "Object": {
+          "light": {
+            "fg": "#6C707D"
+          },
+          "dark": {
+            "fg": "#CED0D6"
+          }
+        },
+        "Operator": {
+          "light": {
+            "fg": "#6C707D"
+          },
+          "dark": {
+            "fg": "#CED0D6"
+          }
+        },
+        "Package": {
+          "light": {
+            "fg": "#6D707D"
+          },
+          "dark": {
+            "fg": "#CED0D5"
           }
         },
         "Property": {
@@ -16472,20 +16598,28 @@
             "fg": "#AF8EE6"
           }
         },
-        "Class": {
+        "Reference": {
           "light": {
-            "fg": "#3877E8"
+            "fg": "#DD7430"
           },
           "dark": {
-            "fg": "#578CF0"
+            "fg": "#C1805B"
           }
         },
-        "Interface": {
+        "Snippet": {
           "light": {
-            "fg": "#3C8745"
+            "fg": "#6C707D"
           },
           "dark": {
-            "fg": "#629361"
+            "fg": "#CED0D6"
+          }
+        },
+        "String": {
+          "light": {
+            "fg": "#6C707D"
+          },
+          "dark": {
+            "fg": "#CED0D6"
           }
         },
         "Struct": {
@@ -16496,7 +16630,15 @@
             "fg": "#AF8EE6"
           }
         },
-        "Module": {
+        "Text": {
+          "light": {
+            "fg": "#6C707D"
+          },
+          "dark": {
+            "fg": "#CED0D6"
+          }
+        },
+        "TypeParameter": {
           "light": {
             "fg": "#3877E8"
           },
@@ -16520,412 +16662,200 @@
             "fg": "#9E78DF"
           }
         },
-        "Enum": {
+        "Variable": {
           "light": {
-            "fg": "#7A58E8"
-          },
-          "dark": {
-            "fg": "#9E78DF"
-          }
-        },
-        "EnumMember": {
-          "light": {
-            "fg": "#DD7430"
+            "fg": "#DE7633"
           },
           "dark": {
             "fg": "#C1805B"
           }
-        },
-        "Keyword": {
-          "light": {
-            "fg": "#6C707D"
-          },
-          "dark": {
-            "fg": "#CED0D6"
-          }
-        },
-        "Constant": {
-          "light": {
-            "fg": "#DD7430"
-          },
-          "dark": {
-            "fg": "#C1805B"
-          }
-        },
-        "Snippet": {
-          "light": {
-            "fg": "#6C707D"
-          },
-          "dark": {
-            "fg": "#CED0D6"
-          }
-        },
-        "Color": {
-          "light": {
-            "fg": "#6C707D"
-          },
-          "dark": {
-            "fg": "#CED0D6"
-          }
-        },
-        "File": {
-          "light": {
-            "fg": "#6C707D"
-          },
-          "dark": {
-            "fg": "#CED0D6"
-          }
-        },
-        "Reference": {
-          "light": {
-            "fg": "#DD7430"
-          },
-          "dark": {
-            "fg": "#C1805B"
-          }
-        },
-        "Folder": {
-          "light": {
-            "fg": "#6C707D"
-          },
-          "dark": {
-            "fg": "#CED0D6"
-          }
-        },
-        "Event": {
-          "light": {
-            "fg": "#DD7430"
-          },
-          "dark": {
-            "fg": "#C1805B"
-          }
-        },
-        "Operator": {
-          "light": {
-            "fg": "#6C707D"
-          },
-          "dark": {
-            "fg": "#CED0D6"
-          }
-        },
-        "TypeParameter": {
-          "light": {
-            "fg": "#3877E8"
-          },
-          "dark": {
-            "fg": "#578CF0"
-          }
-        },
-        "Namespace": {
-          "light": {
-            "fg": "#4573E8"
-          },
-          "dark": {
-            "fg": "#6089EF"
-          }
-        },
-        "Package": {
-          "light": {
-            "fg": "#6D707D"
-          },
-          "dark": {
-            "fg": "#CED0D5"
-          }
-        },
-        "String": {
-          "light": {
-            "fg": "#6C707D"
-          },
-          "dark": {
-            "fg": "#CED0D6"
-          }
-        },
-        "Number": {
-          "light": {
-            "fg": "#6C707D"
-          },
-          "dark": {
-            "fg": "#CED0D6"
-          }
-        },
-        "Boolean": {
-          "light": {
-            "fg": "#6C707D"
-          },
-          "dark": {
-            "fg": "#CED0D6"
-          }
-        },
-        "Array": {
-          "light": {
-            "fg": "#6C707D"
-          },
-          "dark": {
-            "fg": "#CED0D6"
-          }
-        },
-        "Object": {
-          "light": {
-            "fg": "#6C707D"
-          },
-          "dark": {
-            "fg": "#CED0D6"
-          }
-        },
-        "Null": {
-          "light": {
-            "fg": "#6C707D"
-          },
-          "dark": {
-            "fg": "#CED0D6"
-          }
-        }
-      },
-      "TabSel": {
-        "light": {
-          "fg": "#000000",
-          "bg": "#f7f8fa"
-        },
-        "dark": {
-          "fg": "#ced0d5",
-          "bg": "#2b2d30"
         }
       },
       "Legacy": {
-        "VCS": {
-          "FileStatusColors": {
-            "Merged": {
+        "CodeWithMe": {
+          "UserOneSelection": {
+            "light": {
+              "bg": "#E3F7E7"
+            },
+            "dark": {
+              "bg": "#375239"
+            },
+            "light_cb": {
+              "bg": "#E3F7E7"
+            },
+            "dark_cb": {
+              "bg": "#375239"
+            }
+          }
+        },
+        "Custom": {
+          "Dialog": {
+            "SectionTitle": {
               "light": {
-                "fg": "#7503DC"
+                "fg": "#000000"
               },
               "dark": {
-                "fg": "#CF84CF"
+                "fg": "#DFE1E5"
               },
               "light_cb": {
-                "fg": "#7503DC"
+                "fg": "#000000"
               },
               "dark_cb": {
-                "fg": "#CF84CF"
+                "fg": "#DFE1E5"
               }
             },
-            "Added": {
+            "Subtitle": {
               "light": {
-                "fg": "#0A7700"
+                "fg": "#000000",
+                "bg": "#F7F8FA",
+                "bold": true
               },
               "dark": {
-                "fg": "#73BD79"
+                "fg": "#DFE1E5",
+                "bg": "#2B2D30",
+                "bold": true
               },
               "light_cb": {
-                "fg": "#0A7700"
+                "fg": "#000000",
+                "bg": "#F7F8FA",
+                "bold": true
               },
               "dark_cb": {
-                "fg": "#73BD79"
+                "fg": "#DFE1E5",
+                "bg": "#2B2D30",
+                "bold": true
               }
             },
-            "MergedWithConflicts": {
-              "light": {
-                "fg": "#FF0000"
+            "Tabs": {
+              "Default": {
+                "light": {
+                  "fg": "#101010",
+                  "bg": "#F7F8FA"
+                },
+                "dark": {
+                  "fg": "#DBDDE0",
+                  "bg": "#2B2D30"
+                },
+                "light_cb": {
+                  "fg": "#101010",
+                  "bg": "#F7F8FA"
+                },
+                "dark_cb": {
+                  "fg": "#DBDDE0",
+                  "bg": "#2B2D30"
+                }
               },
-              "dark": {
-                "fg": "#DE6A66"
-              },
-              "light_cb": {
-                "fg": "#FF0000"
-              },
-              "dark_cb": {
-                "fg": "#DE6A66"
-              }
-            },
-            "Copied": {
-              "light": {
-                "fg": "#0A7700"
-              },
-              "dark": {
-                "fg": "#0A7700"
-              },
-              "light_cb": {
-                "fg": "#0A7700"
-              },
-              "dark_cb": {
-                "fg": "#0A7700"
-              }
-            },
-            "Deleted": {
-              "light": {
-                "fg": "#616161"
-              },
-              "dark": {
-                "fg": "#6F737A"
-              },
-              "light_cb": {
-                "fg": "#616161"
-              },
-              "dark_cb": {
-                "fg": "#6F737A"
-              }
-            },
-            "DeletedFromFileSystem": {
-              "light": {
-                "fg": "#773895"
-              },
-              "dark": {
-                "fg": "#6F737A"
-              },
-              "light_cb": {
-                "fg": "#773895"
-              },
-              "dark_cb": {
-                "fg": "#6F737A"
-              }
-            },
-            "Renamed": {
-              "light": {
-                "fg": "#007C7C"
-              },
-              "dark": {
-                "fg": "#3A8484"
-              },
-              "light_cb": {
-                "fg": "#007C7C"
-              },
-              "dark_cb": {
-                "fg": "#3A8484"
-              }
-            },
-            "HaveChangedDescendants": {
-              "light": {
-                "fg": "#8AA4C8"
-              },
-              "dark": {
-                "fg": "#70AEFF"
-              },
-              "light_cb": {
-                "fg": "#8AA4C8"
-              },
-              "dark_cb": {
-                "fg": "#70AEFF"
-              }
-            },
-            "Ignored": {
-              "light": {
-                "fg": "#727238"
-              },
-              "dark": {
-                "fg": "#D69A6B"
-              },
-              "light_cb": {
-                "fg": "#727238"
-              },
-              "dark_cb": {
-                "fg": "#D69A6B"
-              }
-            },
-            "Unknown": {
-              "light": {
-                "fg": "#993300"
-              },
-              "dark": {
-                "fg": "#E88F89"
-              },
-              "light_cb": {
-                "fg": "#993300"
-              },
-              "dark_cb": {
-                "fg": "#E88F89"
-              }
-            },
-            "HaveImmediateChangedChildren": {
-              "light": {
-                "fg": "#3264B4"
-              },
-              "dark": {
-                "fg": "#70AEFF"
-              },
-              "light_cb": {
-                "fg": "#3264B4"
-              },
-              "dark_cb": {
-                "fg": "#70AEFF"
-              }
-            },
-            "Modified": {
-              "light": {
-                "fg": "#0032A0"
-              },
-              "dark": {
-                "fg": "#70AEFF"
-              },
-              "light_cb": {
-                "fg": "#0032A0"
-              },
-              "dark_cb": {
-                "fg": "#70AEFF"
-              }
-            },
-            "IgnoredIgnorePlugin": {
-              "light": {
-                "fg": "#808080"
-              },
-              "dark": {
-                "fg": "#808080"
-              },
-              "light_cb": {
-                "fg": "#808080"
-              },
-              "dark_cb": {
-                "fg": "#808080"
+              "Selected": {
+                "light": {
+                  "fg": "#101010",
+                  "bg": "#F7F8FA",
+                  "sp": "#3877E9",
+                  "underline": true
+                },
+                "dark": {
+                  "fg": "#DBDDE0",
+                  "bg": "#2B2D30",
+                  "sp": "#3877E9",
+                  "underline": true
+                },
+                "light_cb": {
+                  "fg": "#101010",
+                  "bg": "#F7F8FA",
+                  "sp": "#3877E9",
+                  "underline": true
+                },
+                "dark_cb": {
+                  "fg": "#DBDDE0",
+                  "bg": "#2B2D30",
+                  "sp": "#3877E9",
+                  "underline": true
+                }
               }
             }
           },
-          "Icons": {
-            "Unmerged": {
-              "light": {
-                "fg": "#4C9357"
-              },
-              "dark": {
-                "fg": "#629362"
-              },
-              "light_cb": {
-                "fg": "#4C9357"
-              },
-              "dark_cb": {
-                "fg": "#629362"
+          "Settings": {
+            "Plugins": {
+              "AdditionalInfo": {
+                "Link": {
+                  "light": {
+                    "fg": "#3361B7"
+                  },
+                  "dark": {
+                    "fg": "#6E9DF4"
+                  },
+                  "light_cb": {
+                    "fg": "#3361B7"
+                  },
+                  "dark_cb": {
+                    "fg": "#6E9DF4"
+                  }
+                },
+                "PropertyName": {
+                  "light": {
+                    "fg": "#898C99"
+                  },
+                  "dark": {
+                    "fg": "#66696F"
+                  },
+                  "light_cb": {
+                    "fg": "#898C99"
+                  },
+                  "dark_cb": {
+                    "fg": "#66696F"
+                  }
+                },
+                "PropertyValue": {
+                  "light": {
+                    "fg": "#898C99"
+                  },
+                  "dark": {
+                    "fg": "#66696F"
+                  },
+                  "light_cb": {
+                    "fg": "#898C99"
+                  },
+                  "dark_cb": {
+                    "fg": "#66696F"
+                  }
+                },
+                "VerifiedOrg": {
+                  "light": {
+                    "fg": "#62A06D"
+                  },
+                  "dark": {
+                    "fg": "#5F8F5E"
+                  },
+                  "light_cb": {
+                    "fg": "#62A06D"
+                  },
+                  "dark_cb": {
+                    "fg": "#5F8F5E"
+                  }
+                }
               }
+            }
+          },
+          "TabFocused": {
+            "light": {
+              "fg": "#5c5e6b",
+              "bg": "#dfe1e5"
             },
-            "Unpulled": {
-              "light": {
-                "fg": "#3778E9"
-              },
-              "dark": {
-                "fg": "#578DF0"
-              },
-              "light_cb": {
-                "fg": "#3778E9"
-              },
-              "dark_cb": {
-                "fg": "#578DF0"
-              }
+            "dark": {
+              "fg": "#b5b8be",
+              "bg": "#1a1a1b"
+            },
+            "light_cb": {
+              "fg": "#5c5e6b",
+              "bg": "#dfe1e5"
+            },
+            "dark_cb": {
+              "fg": "#b5b8be",
+              "bg": "#1a1a1b"
             }
           }
         },
         "DiffMerge": {
           "ChangedLines": {
-            "Inserted": {
-              "Ignored": {
-                "light": {
-                  "bg": "#E5F5E5"
-                },
-                "dark": {
-                  "bg": "#222E2A"
-                },
-                "light_cb": {
-                  "bg": "#E5F5E5"
-                },
-                "dark_cb": {
-                  "bg": "#222E2A"
-                }
-              }
-            },
             "Changed": {
               "Ignored": {
                 "light": {
@@ -16957,145 +16887,43 @@
                   "bg": "#2F3032"
                 }
               }
-            }
-          }
-        },
-        "iAWriter": {
-          "Header": {
-            "light": {
-              "fg": "#1a1a1a",
-              "bold": true
             },
-            "dark": {
-              "fg": "#cccccc",
-              "bold": true
-            },
-            "light_cb": {
-              "fg": "#1a1a1a",
-              "bold": true
-            },
-            "dark_cb": {
-              "fg": "#cccccc",
-              "bold": true
-            }
-          }
-        },
-        "GitToolBoxColors": {
-          "Icons": {
-            "Clean": {
-              "light": {
-                "fg": "#6F6F70"
-              },
-              "dark": {
-                "fg": "#DCDCDC"
-              },
-              "light_cb": {
-                "fg": "#6F6F70"
-              },
-              "dark_cb": {
-                "fg": "#DCDCDC"
-              }
-            },
-            "Dirty": {
-              "light": {
-                "fg": "#4A7CCF"
-              },
-              "dark": {
-                "fg": "#3B7CFF"
-              },
-              "light_cb": {
-                "fg": "#4A7CCF"
-              },
-              "dark_cb": {
-                "fg": "#3B7CFF"
+            "Inserted": {
+              "Ignored": {
+                "light": {
+                  "bg": "#E5F5E5"
+                },
+                "dark": {
+                  "bg": "#222E2A"
+                },
+                "light_cb": {
+                  "bg": "#E5F5E5"
+                },
+                "dark_cb": {
+                  "bg": "#222E2A"
+                }
               }
             }
           }
         },
         "General": {
-          "ErrorsAndWarnings": {
-            "Warning": {
-              "Icon": {
-                "light": {
-                  "fg": "#EAC168"
-                },
-                "dark": {
-                  "fg": "#BC9F57"
-                },
-                "light_cb": {
-                  "fg": "#EAC168"
-                },
-                "dark_cb": {
-                  "fg": "#BC9F57"
-                }
-              },
+          "Editor": {
+            "Bookmarks": {
               "Default": {
                 "light": {
-                  "sp": "#F2C55C",
-                  "bg": "#FCF4D4"
+                  "fg": "#F3B241"
                 },
                 "dark": {
-                  "sp": "#F2C55C",
-                  "undercurl": true
+                  "fg": "#EBC76D"
                 },
                 "light_cb": {
-                  "sp": "#F2C55C",
-                  "bg": "#FCF4D4"
+                  "fg": "#F3B241"
                 },
                 "dark_cb": {
-                  "sp": "#F2C55C",
-                  "undercurl": true
+                  "fg": "#EBC76D"
                 }
               }
             },
-            "IconsText": {
-              "light": {
-                "fg": "#6E6E6E"
-              },
-              "dark": {
-                "fg": "#BBBBBB"
-              },
-              "light_cb": {
-                "fg": "#6E6E6E"
-              },
-              "dark_cb": {
-                "fg": "#BBBBBB"
-              }
-            },
-            "WeakWarning": {
-              "Icon": {
-                "light": {
-                  "fg": "#D7CFB1"
-                },
-                "dark": {
-                  "fg": "#827148"
-                },
-                "light_cb": {
-                  "fg": "#D7CFB1"
-                },
-                "dark_cb": {
-                  "fg": "#827148"
-                }
-              }
-            },
-            "Error": {
-              "Icon": {
-                "light": {
-                  "fg": "#C1625A"
-                },
-                "dark": {
-                  "fg": "#C1625A"
-                },
-                "light_cb": {
-                  "fg": "#C1625A"
-                },
-                "dark_cb": {
-                  "fg": "#C1625A"
-                }
-              }
-            }
-          },
-          "Editor": {
             "StickyLines": {
               "Background": {
                 "light": {
@@ -17145,20 +16973,86 @@
                   "sp": "NONE"
                 }
               }
-            },
-            "Bookmarks": {
-              "Default": {
+            }
+          },
+          "ErrorsAndWarnings": {
+            "Error": {
+              "Icon": {
                 "light": {
-                  "fg": "#F3B241"
+                  "fg": "#C1625A"
                 },
                 "dark": {
-                  "fg": "#EBC76D"
+                  "fg": "#C1625A"
                 },
                 "light_cb": {
-                  "fg": "#F3B241"
+                  "fg": "#C1625A"
                 },
                 "dark_cb": {
-                  "fg": "#EBC76D"
+                  "fg": "#C1625A"
+                }
+              }
+            },
+            "IconsText": {
+              "light": {
+                "fg": "#6E6E6E"
+              },
+              "dark": {
+                "fg": "#BBBBBB"
+              },
+              "light_cb": {
+                "fg": "#6E6E6E"
+              },
+              "dark_cb": {
+                "fg": "#BBBBBB"
+              }
+            },
+            "Warning": {
+              "Default": {
+                "light": {
+                  "bg": "#FCF4D4",
+                  "sp": "#F2C55C"
+                },
+                "dark": {
+                  "sp": "#F2C55C",
+                  "undercurl": true
+                },
+                "light_cb": {
+                  "bg": "#FCF4D4",
+                  "sp": "#F2C55C"
+                },
+                "dark_cb": {
+                  "sp": "#F2C55C",
+                  "undercurl": true
+                }
+              },
+              "Icon": {
+                "light": {
+                  "fg": "#EAC168"
+                },
+                "dark": {
+                  "fg": "#BC9F57"
+                },
+                "light_cb": {
+                  "fg": "#EAC168"
+                },
+                "dark_cb": {
+                  "fg": "#BC9F57"
+                }
+              }
+            },
+            "WeakWarning": {
+              "Icon": {
+                "light": {
+                  "fg": "#D7CFB1"
+                },
+                "dark": {
+                  "fg": "#827148"
+                },
+                "light_cb": {
+                  "fg": "#D7CFB1"
+                },
+                "dark_cb": {
+                  "fg": "#827148"
                 }
               }
             }
@@ -17194,102 +17088,72 @@
             }
           }
         },
+        "GitToolBoxColors": {
+          "Icons": {
+            "Clean": {
+              "light": {
+                "fg": "#6F6F70"
+              },
+              "dark": {
+                "fg": "#DCDCDC"
+              },
+              "light_cb": {
+                "fg": "#6F6F70"
+              },
+              "dark_cb": {
+                "fg": "#DCDCDC"
+              }
+            },
+            "Dirty": {
+              "light": {
+                "fg": "#4A7CCF"
+              },
+              "dark": {
+                "fg": "#3B7CFF"
+              },
+              "light_cb": {
+                "fg": "#4A7CCF"
+              },
+              "dark_cb": {
+                "fg": "#3B7CFF"
+              }
+            }
+          }
+        },
+        "LanguageDefaults": {
+          "BracesAndOperators": {
+            "Default": {
+              "light": {
+                "fg": "#080808"
+              },
+              "dark": {
+                "fg": "#BCBEC4"
+              },
+              "light_cb": {
+                "fg": "#080808"
+              },
+              "dark_cb": {
+                "fg": "#BCBEC4"
+              }
+            }
+          }
+        },
         "Lua": {
-          "NilTrueFalse": {
-            "light": {
-              "fg": "#D700FF"
-            },
-            "dark": {
-              "fg": "#00E5E5"
-            },
-            "light_cb": {
-              "fg": "#D700FF"
-            },
-            "dark_cb": {
-              "fg": "#00E5E5"
-            }
-          },
-          "Keywords": {
-            "light": {
-              "fg": "#0033B3"
-            },
-            "dark": {
-              "fg": "#CF8E6D"
-            },
-            "light_cb": {
-              "fg": "#00428C"
-            },
-            "dark_cb": {
-              "fg": "#CF8E6D"
-            }
-          },
-          "Variables": {
-            "GlobalVariable": {
-              "light": {
-                "fg": "#871094",
-                "italic": true
-              },
-              "dark": {
-                "fg": "#C77DBB",
-                "italic": true
-              },
-              "light_cb": {
-                "fg": "#004B9F",
-                "italic": true
-              },
-              "dark_cb": {
-                "fg": "#C77DBB",
-                "italic": true
-              }
-            },
-            "Parameter": {
-              "light": {
-                "fg": "#008080"
-              },
-              "dark": {
-                "fg": "#0DA19E"
-              },
-              "light_cb": {
-                "fg": "#008080"
-              },
-              "dark_cb": {
-                "fg": "#0DA19E"
-              }
-            },
-            "LocalFunction": {
-              "light": {
-                "fg": "#000000"
-              },
-              "dark": {
-                "fg": "#BCBEC4"
-              },
-              "light_cb": {
-                "fg": "#000000"
-              },
-              "dark_cb": {
-                "fg": "#BCBEC4"
-              }
-            },
-            "GlobalFunction": {
-              "light": {
-                "fg": "#871094",
-                "italic": true
-              },
-              "dark": {
-                "fg": "#C77DBB",
-                "italic": true
-              },
-              "light_cb": {
-                "fg": "#004B9F",
-                "italic": true
-              },
-              "dark_cb": {
-                "fg": "#C77DBB",
-                "italic": true
-              }
-            }
-          },
           "ClassMembers": {
+            "Field": {
+              "light": {
+                "fg": "#080808"
+              },
+              "dark": {
+                "fg": "#BCBEC4"
+              },
+              "light_cb": {
+                "fg": "#080808"
+              },
+              "dark_cb": {
+                "fg": "#BCBEC4"
+              }
+            },
             "StaticMethod": {
               "light": {
                 "fg": "#00627A",
@@ -17307,37 +17171,23 @@
                 "fg": "#57AAF7",
                 "italic": true
               }
-            },
-            "Field": {
-              "light": {
-                "fg": "#080808"
-              },
-              "dark": {
-                "fg": "#BCBEC4"
-              },
-              "light_cb": {
-                "fg": "#080808"
-              },
-              "dark_cb": {
-                "fg": "#BCBEC4"
-              }
             }
           },
           "Comments": {
             "EmmyDoc": {
               "Tag": {
                 "light": {
-                  "underline": true,
+                  "fg": "#000000",
                   "sp": "#999999",
-                  "fg": "#000000"
+                  "underline": true
                 },
                 "dark": {
                   "fg": "#67A37C"
                 },
                 "light_cb": {
-                  "underline": true,
+                  "fg": "#000000",
                   "sp": "#999999",
-                  "fg": "#000000"
+                  "underline": true
                 },
                 "dark_cb": {
                   "fg": "#67A37C"
@@ -17361,6 +17211,34 @@
               }
             }
           },
+          "Keywords": {
+            "light": {
+              "fg": "#0033B3"
+            },
+            "dark": {
+              "fg": "#CF8E6D"
+            },
+            "light_cb": {
+              "fg": "#00428C"
+            },
+            "dark_cb": {
+              "fg": "#CF8E6D"
+            }
+          },
+          "NilTrueFalse": {
+            "light": {
+              "fg": "#D700FF"
+            },
+            "dark": {
+              "fg": "#00E5E5"
+            },
+            "light_cb": {
+              "fg": "#D700FF"
+            },
+            "dark_cb": {
+              "fg": "#00E5E5"
+            }
+          },
           "StdApi": {
             "light": {
               "fg": "#CC542E"
@@ -17374,250 +17252,372 @@
             "dark_cb": {
               "fg": "#CC542E"
             }
-          }
-        },
-        "Custom": {
-          "Dialog": {
-            "SectionTitle": {
+          },
+          "Variables": {
+            "GlobalFunction": {
               "light": {
-                "fg": "#000000"
+                "fg": "#871094",
+                "italic": true
               },
               "dark": {
-                "fg": "#DFE1E5"
+                "fg": "#C77DBB",
+                "italic": true
               },
               "light_cb": {
-                "fg": "#000000"
+                "fg": "#004B9F",
+                "italic": true
               },
               "dark_cb": {
-                "fg": "#DFE1E5"
+                "fg": "#C77DBB",
+                "italic": true
               }
             },
-            "Tabs": {
-              "Default": {
-                "light": {
-                  "fg": "#101010",
-                  "bg": "#F7F8FA"
-                },
-                "dark": {
-                  "fg": "#DBDDE0",
-                  "bg": "#2B2D30"
-                },
-                "light_cb": {
-                  "fg": "#101010",
-                  "bg": "#F7F8FA"
-                },
-                "dark_cb": {
-                  "fg": "#DBDDE0",
-                  "bg": "#2B2D30"
-                }
-              },
-              "Selected": {
-                "light": {
-                  "underline": true,
-                  "fg": "#101010",
-                  "sp": "#3877E9",
-                  "bg": "#F7F8FA"
-                },
-                "dark": {
-                  "underline": true,
-                  "fg": "#DBDDE0",
-                  "sp": "#3877E9",
-                  "bg": "#2B2D30"
-                },
-                "light_cb": {
-                  "underline": true,
-                  "fg": "#101010",
-                  "sp": "#3877E9",
-                  "bg": "#F7F8FA"
-                },
-                "dark_cb": {
-                  "underline": true,
-                  "fg": "#DBDDE0",
-                  "sp": "#3877E9",
-                  "bg": "#2B2D30"
-                }
-              }
-            },
-            "Subtitle": {
+            "GlobalVariable": {
               "light": {
-                "bold": true,
-                "fg": "#000000",
-                "bg": "#F7F8FA"
+                "fg": "#871094",
+                "italic": true
               },
               "dark": {
-                "bold": true,
-                "fg": "#DFE1E5",
-                "bg": "#2B2D30"
+                "fg": "#C77DBB",
+                "italic": true
               },
               "light_cb": {
-                "bold": true,
-                "fg": "#000000",
-                "bg": "#F7F8FA"
+                "fg": "#004B9F",
+                "italic": true
               },
               "dark_cb": {
-                "bold": true,
-                "fg": "#DFE1E5",
-                "bg": "#2B2D30"
+                "fg": "#C77DBB",
+                "italic": true
               }
-            }
-          },
-          "Settings": {
-            "Plugins": {
-              "AdditionalInfo": {
-                "PropertyName": {
-                  "light": {
-                    "fg": "#898C99"
-                  },
-                  "dark": {
-                    "fg": "#66696F"
-                  },
-                  "light_cb": {
-                    "fg": "#898C99"
-                  },
-                  "dark_cb": {
-                    "fg": "#66696F"
-                  }
-                },
-                "VerifiedOrg": {
-                  "light": {
-                    "fg": "#62A06D"
-                  },
-                  "dark": {
-                    "fg": "#5F8F5E"
-                  },
-                  "light_cb": {
-                    "fg": "#62A06D"
-                  },
-                  "dark_cb": {
-                    "fg": "#5F8F5E"
-                  }
-                },
-                "PropertyValue": {
-                  "light": {
-                    "fg": "#898C99"
-                  },
-                  "dark": {
-                    "fg": "#66696F"
-                  },
-                  "light_cb": {
-                    "fg": "#898C99"
-                  },
-                  "dark_cb": {
-                    "fg": "#66696F"
-                  }
-                },
-                "Link": {
-                  "light": {
-                    "fg": "#3361B7"
-                  },
-                  "dark": {
-                    "fg": "#6E9DF4"
-                  },
-                  "light_cb": {
-                    "fg": "#3361B7"
-                  },
-                  "dark_cb": {
-                    "fg": "#6E9DF4"
-                  }
-                }
-              }
-            }
-          },
-          "TabFocused": {
-            "light": {
-              "fg": "#5c5e6b",
-              "bg": "#dfe1e5"
             },
-            "dark": {
-              "fg": "#b5b8be",
-              "bg": "#1a1a1b"
-            },
-            "light_cb": {
-              "fg": "#5c5e6b",
-              "bg": "#dfe1e5"
-            },
-            "dark_cb": {
-              "fg": "#b5b8be",
-              "bg": "#1a1a1b"
-            }
-          }
-        },
-        "CodeWithMe": {
-          "UserOneSelection": {
-            "light": {
-              "bg": "#E3F7E7"
-            },
-            "dark": {
-              "bg": "#375239"
-            },
-            "light_cb": {
-              "bg": "#E3F7E7"
-            },
-            "dark_cb": {
-              "bg": "#375239"
-            }
-          }
-        },
-        "LanguageDefaults": {
-          "BracesAndOperators": {
-            "Default": {
+            "LocalFunction": {
               "light": {
-                "fg": "#080808"
+                "fg": "#000000"
               },
               "dark": {
                 "fg": "#BCBEC4"
               },
               "light_cb": {
-                "fg": "#080808"
+                "fg": "#000000"
               },
               "dark_cb": {
                 "fg": "#BCBEC4"
               }
+            },
+            "Parameter": {
+              "light": {
+                "fg": "#008080"
+              },
+              "dark": {
+                "fg": "#0DA19E"
+              },
+              "light_cb": {
+                "fg": "#008080"
+              },
+              "dark_cb": {
+                "fg": "#0DA19E"
+              }
             }
           }
+        },
+        "VCS": {
+          "FileStatusColors": {
+            "Added": {
+              "light": {
+                "fg": "#0A7700"
+              },
+              "dark": {
+                "fg": "#73BD79"
+              },
+              "light_cb": {
+                "fg": "#0A7700"
+              },
+              "dark_cb": {
+                "fg": "#73BD79"
+              }
+            },
+            "Copied": {
+              "light": {
+                "fg": "#0A7700"
+              },
+              "dark": {
+                "fg": "#0A7700"
+              },
+              "light_cb": {
+                "fg": "#0A7700"
+              },
+              "dark_cb": {
+                "fg": "#0A7700"
+              }
+            },
+            "Deleted": {
+              "light": {
+                "fg": "#616161"
+              },
+              "dark": {
+                "fg": "#6F737A"
+              },
+              "light_cb": {
+                "fg": "#616161"
+              },
+              "dark_cb": {
+                "fg": "#6F737A"
+              }
+            },
+            "DeletedFromFileSystem": {
+              "light": {
+                "fg": "#773895"
+              },
+              "dark": {
+                "fg": "#6F737A"
+              },
+              "light_cb": {
+                "fg": "#773895"
+              },
+              "dark_cb": {
+                "fg": "#6F737A"
+              }
+            },
+            "HaveChangedDescendants": {
+              "light": {
+                "fg": "#8AA4C8"
+              },
+              "dark": {
+                "fg": "#70AEFF"
+              },
+              "light_cb": {
+                "fg": "#8AA4C8"
+              },
+              "dark_cb": {
+                "fg": "#70AEFF"
+              }
+            },
+            "HaveImmediateChangedChildren": {
+              "light": {
+                "fg": "#3264B4"
+              },
+              "dark": {
+                "fg": "#70AEFF"
+              },
+              "light_cb": {
+                "fg": "#3264B4"
+              },
+              "dark_cb": {
+                "fg": "#70AEFF"
+              }
+            },
+            "Ignored": {
+              "light": {
+                "fg": "#727238"
+              },
+              "dark": {
+                "fg": "#D69A6B"
+              },
+              "light_cb": {
+                "fg": "#727238"
+              },
+              "dark_cb": {
+                "fg": "#D69A6B"
+              }
+            },
+            "IgnoredIgnorePlugin": {
+              "light": {
+                "fg": "#808080"
+              },
+              "dark": {
+                "fg": "#808080"
+              },
+              "light_cb": {
+                "fg": "#808080"
+              },
+              "dark_cb": {
+                "fg": "#808080"
+              }
+            },
+            "Merged": {
+              "light": {
+                "fg": "#7503DC"
+              },
+              "dark": {
+                "fg": "#CF84CF"
+              },
+              "light_cb": {
+                "fg": "#7503DC"
+              },
+              "dark_cb": {
+                "fg": "#CF84CF"
+              }
+            },
+            "MergedWithConflicts": {
+              "light": {
+                "fg": "#FF0000"
+              },
+              "dark": {
+                "fg": "#DE6A66"
+              },
+              "light_cb": {
+                "fg": "#FF0000"
+              },
+              "dark_cb": {
+                "fg": "#DE6A66"
+              }
+            },
+            "Modified": {
+              "light": {
+                "fg": "#0032A0"
+              },
+              "dark": {
+                "fg": "#70AEFF"
+              },
+              "light_cb": {
+                "fg": "#0032A0"
+              },
+              "dark_cb": {
+                "fg": "#70AEFF"
+              }
+            },
+            "Renamed": {
+              "light": {
+                "fg": "#007C7C"
+              },
+              "dark": {
+                "fg": "#3A8484"
+              },
+              "light_cb": {
+                "fg": "#007C7C"
+              },
+              "dark_cb": {
+                "fg": "#3A8484"
+              }
+            },
+            "Unknown": {
+              "light": {
+                "fg": "#993300"
+              },
+              "dark": {
+                "fg": "#E88F89"
+              },
+              "light_cb": {
+                "fg": "#993300"
+              },
+              "dark_cb": {
+                "fg": "#E88F89"
+              }
+            }
+          },
+          "Icons": {
+            "Unmerged": {
+              "light": {
+                "fg": "#4C9357"
+              },
+              "dark": {
+                "fg": "#629362"
+              },
+              "light_cb": {
+                "fg": "#4C9357"
+              },
+              "dark_cb": {
+                "fg": "#629362"
+              }
+            },
+            "Unpulled": {
+              "light": {
+                "fg": "#3778E9"
+              },
+              "dark": {
+                "fg": "#578DF0"
+              },
+              "light_cb": {
+                "fg": "#3778E9"
+              },
+              "dark_cb": {
+                "fg": "#578DF0"
+              }
+            }
+          }
+        },
+        "iAWriter": {
+          "Header": {
+            "light": {
+              "fg": "#1a1a1a",
+              "bold": true
+            },
+            "dark": {
+              "fg": "#cccccc",
+              "bold": true
+            },
+            "light_cb": {
+              "fg": "#1a1a1a",
+              "bold": true
+            },
+            "dark_cb": {
+              "fg": "#cccccc",
+              "bold": true
+            }
+          }
+        }
+      },
+      "StatusBar": {
+        "light": {
+          "fg": "#7F828D",
+          "bg": "#F7F8FA"
+        },
+        "dark": {
+          "fg": "#9A9CA4",
+          "bg": "#2B2D30"
+        }
+      },
+      "TabSel": {
+        "light": {
+          "fg": "#000000",
+          "bg": "#f7f8fa"
+        },
+        "dark": {
+          "fg": "#ced0d5",
+          "bg": "#2b2d30"
         }
       }
     },
     "IdeaVim": {
       "Modes": {
-        "Normal": {
-          "light": {
-            "bg": "#94a863",
-            "fg": "#FFFFFF"
-          },
-          "dark": {
-            "bg": "#94a863",
-            "fg": "#000000"
-          }
-        },
         "Insert": {
           "light": {
-            "bg": "#ecc180",
-            "fg": "#FFFFFF"
+            "fg": "#FFFFFF",
+            "bg": "#ecc180"
           },
           "dark": {
-            "bg": "#ecc180",
-            "fg": "#000000"
+            "fg": "#000000",
+            "bg": "#ecc180"
           }
         },
-        "Visual": {
+        "Normal": {
           "light": {
-            "bg": "#769eb3",
-            "fg": "#FFFFFF"
+            "fg": "#FFFFFF",
+            "bg": "#94a863"
           },
           "dark": {
-            "bg": "#769eb3",
-            "fg": "#000000"
+            "fg": "#000000",
+            "bg": "#94a863"
           }
         },
         "Replace": {
           "light": {
-            "bg": "#a44a45",
-            "fg": "#FFFFFF"
+            "fg": "#FFFFFF",
+            "bg": "#a44a45"
           },
           "dark": {
-            "bg": "#a44a45",
-            "fg": "#000000"
+            "fg": "#000000",
+            "bg": "#a44a45"
+          }
+        },
+        "Visual": {
+          "light": {
+            "fg": "#FFFFFF",
+            "bg": "#769eb3"
+          },
+          "dark": {
+            "fg": "#000000",
+            "bg": "#769eb3"
           }
         }
       }
