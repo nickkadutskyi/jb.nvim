@@ -1,6 +1,13 @@
 package com.nickkadutskyi.jb.palette
 
 object PaletteMerger {
+    private val LEGACY_GROUP_RENAMES = mapOf(
+        "CC" to "C_Cpp",
+        "C" to "Csharp",
+        "F" to "Fsharp",
+        "ASPNET" to "ASP_NET",
+        "SassSCSS" to "Sass_SCSS",
+    )
     fun merge(
         existing: JsonValue,
         exported: JsonValue,
@@ -41,9 +48,17 @@ object PaletteMerger {
     fun normalizeExisting(root: JsonValue): JsonValue {
         if (root !is JsonValue.Obj) return PaletteJson.emptyDocument()
         val working = unwrapColors(root)
-        if (working[PRODUCT_INTELLIJ] is JsonValue.Obj) return working
+        val scoped = if (working[PRODUCT_INTELLIJ] is JsonValue.Obj) {
+            working
+        } else {
+            wrapUnscoped(working)
+        }
+        return renameLegacyGroups(scoped)
+    }
+
+    private fun wrapUnscoped(working: JsonValue.Obj): JsonValue.Obj {
         val unscoped = working.entries.filter { (key, value) ->
-            key !in KNOWN_PRODUCT_KEYS && value is JsonValue.Obj
+            key !in RESERVED_ROOT_KEYS && value is JsonValue.Obj
         }
         if (unscoped.isEmpty()) return working
         val intellij = JsonValue.Obj()
@@ -53,11 +68,62 @@ object PaletteMerger {
         val rebuilt = JsonValue.Obj()
         rebuilt[PRODUCT_INTELLIJ] = intellij
         for ((key, value) in working.entries) {
-            if (key in KNOWN_PRODUCT_KEYS || value !is JsonValue.Obj) {
+            if (key in RESERVED_ROOT_KEYS || value !is JsonValue.Obj) {
                 rebuilt[key] = value.copyDeep()
             }
         }
         return rebuilt
+    }
+
+    private fun renameLegacyGroups(root: JsonValue.Obj): JsonValue.Obj {
+        for ((key, value) in root.entries.toList()) {
+            if (value !is JsonValue.Obj) continue
+            if (key in KNOWN_PRODUCT_KEYS) {
+                renameGroupKeys(value)
+            }
+        }
+        rewriteLegacyReferences(root)
+        return root
+    }
+
+    private fun renameGroupKeys(scope: JsonValue.Obj) {
+        for ((old, new) in LEGACY_GROUP_RENAMES) {
+            val value = scope[old] ?: continue
+            if (scope[new] == null) {
+                scope[new] = value
+                scope.entries.remove(old)
+            }
+        }
+    }
+
+    private fun rewriteLegacyReferences(value: JsonValue) {
+        when (value) {
+            is JsonValue.Str -> Unit
+            is JsonValue.Arr -> value.items.forEachIndexed { index, item ->
+                if (item is JsonValue.Str) {
+                    rewriteLegacyPath(item.value)?.let { value.items[index] = JsonValue.Str(it) }
+                } else {
+                    rewriteLegacyReferences(item)
+                }
+            }
+            is JsonValue.Obj -> {
+                for ((key, child) in value.entries.toList()) {
+                    if (child is JsonValue.Str) {
+                        rewriteLegacyPath(child.value)?.let { value[key] = JsonValue.Str(it) }
+                    } else {
+                        rewriteLegacyReferences(child)
+                    }
+                }
+            }
+            else -> Unit
+        }
+    }
+
+    private fun rewriteLegacyPath(path: String): String? {
+        if ('|' !in path) return null
+        val group = path.substringBefore('|')
+        val renamed = LEGACY_GROUP_RENAMES[group] ?: return null
+        return renamed + path.substring(group.length)
     }
 
     private fun unwrapColors(root: JsonValue.Obj): JsonValue.Obj {

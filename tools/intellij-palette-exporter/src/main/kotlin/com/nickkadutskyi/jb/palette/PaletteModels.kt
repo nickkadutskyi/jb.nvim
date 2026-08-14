@@ -63,6 +63,7 @@ enum class MergeMode {
 }
 
 const val PRODUCT_INTELLIJ = "IntelliJ"
+const val SCOPE_OTHER = "Other"
 const val LANGUAGE_DEFAULTS = "LanguageDefaults"
 const val GENERAL = "General"
 
@@ -85,9 +86,12 @@ val KNOWN_PRODUCT_KEYS = setOf(
     "Fleet",
 )
 
+val RESERVED_ROOT_KEYS = KNOWN_PRODUCT_KEYS + SCOPE_OTHER
+
 data class ExportDecision(
     val destination: List<String>,
     val mode: MergeMode,
     val includedGroups: Set<String>? = null,
+    val uniqueTopLevelCount: Int = 0,
     val message: String,
 )

@@ -11,6 +11,21 @@ class ExportRouterTest {
         assertEquals(listOf(PRODUCT_INTELLIJ), decision.destination)
         assertEquals(MergeMode.OVERWRITE, decision.mode)
         assertNull(decision.includedGroups)
+        assertEquals(0, decision.uniqueTopLevelCount)
+    }
+
+    @Test
+    fun matchingLanguageDefaultsReportsUniqueTopLevelGroups() {
+        val existing = scoped(baseline("#111111", "#FFFFFF"))
+        val exported = baseline("#111111", "#FFFFFF", "CSharp", "FSharp")
+        val decision = ExportRouter.decide("Rider", existing, exported, PROFILE_LIGHT)
+        assertEquals(listOf(PRODUCT_INTELLIJ), decision.destination)
+        assertEquals(MergeMode.ADD_ONLY, decision.mode)
+        assertEquals(2, decision.uniqueTopLevelCount)
+        assertEquals(
+            "$LANGUAGE_DEFAULTS match $PRODUCT_INTELLIJ; merged 2 unique Rider light top-level groups into $PRODUCT_INTELLIJ",
+            decision.message,
+        )
     }
 
     @Test
@@ -28,6 +43,11 @@ class ExportRouterTest {
         assertEquals(listOf(PRODUCT_INTELLIJ), decision.destination)
         assertEquals(MergeMode.ADD_ONLY, decision.mode)
         assertNull(decision.includedGroups)
+        assertEquals(0, decision.uniqueTopLevelCount)
+        assertEquals(
+            "$LANGUAGE_DEFAULTS match $PRODUCT_INTELLIJ; merged 0 unique Rider light top-level groups into $PRODUCT_INTELLIJ",
+            decision.message,
+        )
     }
 
     @Test
@@ -38,6 +58,7 @@ class ExportRouterTest {
         assertEquals(listOf("Rider"), decision.destination)
         assertEquals(MergeMode.OVERWRITE, decision.mode)
         assertEquals(setOf("CSharp", LANGUAGE_DEFAULTS), decision.includedGroups)
+        assertEquals(1, decision.uniqueTopLevelCount)
     }
 
     @Test
@@ -48,6 +69,7 @@ class ExportRouterTest {
         assertEquals(listOf(PRODUCT_INTELLIJ), decision.destination)
         assertEquals(MergeMode.ADD_ONLY, decision.mode)
         assertNull(decision.includedGroups)
+        assertEquals(1, decision.uniqueTopLevelCount)
     }
 
     @Test
@@ -56,6 +78,7 @@ class ExportRouterTest {
         val exported = baseline("#ABCDEF", "#FFFFFF", "AngularTemplate", "BashSupportPro", "CSharp")
         val decision = ExportRouter.decide("Rider", existing, exported, PROFILE_LIGHT)
         assertEquals(setOf("CSharp", LANGUAGE_DEFAULTS), decision.includedGroups)
+        assertEquals(1, decision.uniqueTopLevelCount)
     }
 
     @Test
@@ -67,6 +90,7 @@ class ExportRouterTest {
 
         val decision = ExportRouter.decide("Rider", existing, exported, PROFILE_LIGHT)
         assertEquals(setOf("CSharp", "SharedLanguage", LANGUAGE_DEFAULTS), decision.includedGroups)
+        assertEquals(1, decision.uniqueTopLevelCount)
     }
 
     @Test
@@ -78,6 +102,7 @@ class ExportRouterTest {
 
         val decision = ExportRouter.decide("Rider", existing, exported, PROFILE_LIGHT)
         assertEquals(setOf("CSharp", "SharedLanguage", "SharedBase", LANGUAGE_DEFAULTS), decision.includedGroups)
+        assertEquals(1, decision.uniqueTopLevelCount)
     }
 
     private fun baseline(ld: String, general: String, vararg groups: String): JsonValue {

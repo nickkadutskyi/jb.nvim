@@ -17,6 +17,7 @@ data class ExportResult(
     val mode: MergeMode,
     val path: Path,
     val exportedCount: Int,
+    val uniqueTopLevelCount: Int,
     val message: String,
 )
 
@@ -85,6 +86,7 @@ object PaletteExporter {
             mode = decision.mode,
             path = path,
             exportedCount = entries.size,
+            uniqueTopLevelCount = decision.uniqueTopLevelCount,
             message = "${decision.message} (${entries.size} descriptors)",
         )
     }

@@ -29,6 +29,65 @@ class ProductScopedMergeTest {
     }
 
     @Test
+    fun keepsOtherScopeAtRootWhenWrapping() {
+        val existing = PaletteJson.parse(
+            """
+            {
+              "Other": { "Custom": { "light": { "fg": "#ABCDEF" } } }
+            }
+            """.trimIndent(),
+        )
+        val normalized = PaletteMerger.normalizeExisting(existing) as JsonValue.Obj
+        assertNull(normalized[PRODUCT_INTELLIJ])
+        assertEquals("#ABCDEF", styleFg(normalized, SCOPE_OTHER, "Custom", PROFILE_LIGHT))
+    }
+
+    @Test
+    fun wrapsColorGroupsButLeavesOtherAtRoot() {
+        val existing = PaletteJson.parse(
+            """
+            {
+              "LanguageDefaults": { "Keyword": { "light": { "fg": "#111111" } } },
+              "Other": { "Custom": { "light": { "fg": "#ABCDEF" } } }
+            }
+            """.trimIndent(),
+        )
+        val normalized = PaletteMerger.normalizeExisting(existing) as JsonValue.Obj
+        assertEquals("#111111", styleFg(normalized, PRODUCT_INTELLIJ, LANGUAGE_DEFAULTS, "Keyword", PROFILE_LIGHT))
+        assertEquals("#ABCDEF", styleFg(normalized, SCOPE_OTHER, "Custom", PROFILE_LIGHT))
+        assertNull((normalized[PRODUCT_INTELLIJ] as JsonValue.Obj)[SCOPE_OTHER])
+    }
+
+    @Test
+    fun renamesLegacyPunctuationStrippedGroups() {
+        val existing = PaletteJson.parse(
+            """
+            {
+              "IntelliJ": {
+                "CC": { "MacroName": { "light": { "fg": "#111111" } } },
+                "C": { "Keyword": { "light": "C|Methods|MethodDeclaration" } },
+                "F": { "Keyword": { "light": "F|Members|Method" } },
+                "ASPNET": { "Razor": { "light": "ASPNET|Razor|CodeBlock" } },
+                "SassSCSS": { "Variable": { "light": "SassSCSS|Variable" } }
+              }
+            }
+            """.trimIndent(),
+        )
+        val normalized = PaletteMerger.normalizeExisting(existing) as JsonValue.Obj
+        val intellij = normalized[PRODUCT_INTELLIJ] as JsonValue.Obj
+        assertNull(intellij["CC"])
+        assertNull(intellij["C"])
+        assertNull(intellij["F"])
+        assertNull(intellij["ASPNET"])
+        assertNull(intellij["SassSCSS"])
+        assertEquals("#111111", styleFg(normalized, PRODUCT_INTELLIJ, "C_Cpp", "MacroName", PROFILE_LIGHT))
+        assertEquals("Csharp|Methods|MethodDeclaration", ref(normalized, PRODUCT_INTELLIJ, "Csharp", "Keyword", PROFILE_LIGHT))
+        assertEquals("Fsharp|Members|Method", ref(normalized, PRODUCT_INTELLIJ, "Fsharp", "Keyword", PROFILE_LIGHT))
+        assertEquals("ASP_NET|Razor|CodeBlock", ref(normalized, PRODUCT_INTELLIJ, "ASP_NET", "Razor", PROFILE_LIGHT))
+        assertEquals("Sass_SCSS|Variable", ref(normalized, PRODUCT_INTELLIJ, "Sass_SCSS", "Variable", PROFILE_LIGHT))
+    }
+
+    @Test
     fun addOnlyDoesNotOverwriteIntelliJLeaves() {
         val existing = PaletteMerger.merge(
             PaletteJson.emptyDocument(),

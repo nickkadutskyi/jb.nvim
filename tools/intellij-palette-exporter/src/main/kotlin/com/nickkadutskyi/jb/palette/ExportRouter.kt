@@ -26,20 +26,29 @@ object ExportRouter {
             profile,
         )
         if (languageDefaultsMatch) {
+            val unique = uniqueTopLevelGroups(exportedRoot, intellij.entries.keys)
             return ExportDecision(
                 destination = listOf(PRODUCT_INTELLIJ),
                 mode = MergeMode.ADD_ONLY,
-                message = "$LANGUAGE_DEFAULTS match $PRODUCT_INTELLIJ; added missing $product $profile colors into $PRODUCT_INTELLIJ",
+                uniqueTopLevelCount = unique.size,
+                message = "$LANGUAGE_DEFAULTS match $PRODUCT_INTELLIJ; merged ${unique.size} unique $product $profile top-level groups into $PRODUCT_INTELLIJ",
             )
         }
 
+        val unique = uniqueTopLevelGroups(exportedRoot, intellij.entries.keys)
         val included = dependencyClosure(exportedRoot, intellij.entries.keys)
         return ExportDecision(
             destination = listOf(product),
             mode = MergeMode.OVERWRITE,
             includedGroups = included,
-            message = "$LANGUAGE_DEFAULTS differ from $PRODUCT_INTELLIJ; exported ${included.size} unique/dependency groups for $profile under $product",
+            uniqueTopLevelCount = unique.size,
+            message = "$LANGUAGE_DEFAULTS differ from $PRODUCT_INTELLIJ; exported ${unique.size} unique top-level groups (${included.size} with dependencies) for $profile under $product",
         )
+    }
+
+    private fun uniqueTopLevelGroups(exported: JsonValue.Obj?, existingGroups: Set<String>): Set<String> {
+        if (exported == null) return emptySet()
+        return exported.entries.keys.filter { it !in existingGroups }.toSet()
     }
 
     fun languageDefaultsOf(document: JsonValue, product: String? = null): JsonValue? {

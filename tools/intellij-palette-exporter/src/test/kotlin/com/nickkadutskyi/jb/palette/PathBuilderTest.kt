@@ -26,7 +26,15 @@ class PathBuilderTest {
     @Test
     fun preservesExistingCapitals() {
         assertEquals("TODODefaults", JsonNames.toJsonSafeName("TODO defaults"))
-        assertEquals("SassSCSS", JsonNames.toJsonSafeName("Sass/SCSS"))
+        assertEquals("Sass_SCSS", JsonNames.toJsonSafeName("Sass/SCSS"))
+    }
+
+    @Test
+    fun replacesLanguagePunctuationWithWords() {
+        assertEquals("C_Cpp", JsonNames.toJsonSafeName("C/C++"))
+        assertEquals("Csharp", JsonNames.toJsonSafeName("C#"))
+        assertEquals("Fsharp", JsonNames.toJsonSafeName("F#"))
+        assertEquals("ASP_NET", JsonNames.toJsonSafeName("ASP.NET"))
     }
 
     @Test

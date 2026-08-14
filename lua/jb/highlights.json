@@ -307,13 +307,13 @@
     "qfType": null
   },
   "Treesitter.IgnoreFiles": {
-    "@punctuation.delimiter.gitignore": "IgnoreFiles|Slash",
-    "@header.gitignore": "IgnoreFiles|Header",
-    "@character.special.gitignore": "IgnoreFiles|Value",
-    "@punctuation.special.gitignore": "IgnoreFiles|Negation",
-    "@section.gitignore": "IgnoreFiles|Section",
-    "@comment.gitignore": "IgnoreFiles|Comment",
-    "@string.special.path.gitignore": "IgnoreFiles|Value"
+    "@punctuation.delimiter.gitignore": "_IgnoreFiles|Slash",
+    "@header.gitignore": "_IgnoreFiles|Header",
+    "@character.special.gitignore": "_IgnoreFiles|Value",
+    "@punctuation.special.gitignore": "_IgnoreFiles|Negation",
+    "@section.gitignore": "_IgnoreFiles|Section",
+    "@comment.gitignore": "_IgnoreFiles|Comment",
+    "@string.special.path.gitignore": "_IgnoreFiles|Value"
   },
   "Treesitter.Ruby": {
     "@number.ruby": "Ruby|Number",
@@ -392,7 +392,7 @@
     "@type.definition.xml": "XML|AttributeName"
   },
   "Syntax.SassSCSS": {
-    "sassVariable": "SassSCSS|Variable"
+    "sassVariable": "Sass_SCSS|Variable"
   },
   "Treesitter.Bash": {
     "@function.builtin.bash": "BashSupportPro|Commands|Builtin",
@@ -518,16 +518,16 @@
     }
   },
   "Treesitter.SassSCSS": {
-    "@keyword.directive.scss": "SassSCSS|Extend",
-    "@property.scss": "SassSCSS|PropertyName",
-    "@tag.scss": "SassSCSS|TagName",
-    "@tag.attribute.scss": "SassSCSS|AttributeName",
-    "@type.scss": "SassSCSS|ClassName",
-    "@attribute.scss": "SassSCSS|PseudoSelector",
-    "@variable.parameter.scss": "SassSCSS|Variable",
-    "@comment.scss": "SassSCSS|Comment",
-    "@variable.scss": "SassSCSS|Variable",
-    "@function.scss": "SassSCSS|Function"
+    "@keyword.directive.scss": "Sass_SCSS|Extend",
+    "@property.scss": "Sass_SCSS|PropertyName",
+    "@tag.scss": "Sass_SCSS|TagName",
+    "@tag.attribute.scss": "Sass_SCSS|AttributeName",
+    "@type.scss": "Sass_SCSS|ClassName",
+    "@attribute.scss": "Sass_SCSS|PseudoSelector",
+    "@variable.parameter.scss": "Sass_SCSS|Variable",
+    "@comment.scss": "Sass_SCSS|Comment",
+    "@variable.scss": "Sass_SCSS|Variable",
+    "@function.scss": "Sass_SCSS|Function"
   },
   "Builtin.Languages": {
     "Removed": {
@@ -1381,7 +1381,7 @@
     "LazyCommitScope": "Custom|Icons|EnumMember",
     "LazyCommitType": "Custom|Icons|Enum",
     "LazyReasonRuntime": "LanguageDefaults|Keyword",
-    "LazyReasonSource": "CC|Preprocessor|Directive",
+    "LazyReasonSource": "C_Cpp|Preprocessor|Directive",
     "LazyReasonStart": "Custom|Icons|Constructor",
     "LazyError": {
       "fg": "General|ErrorsAndWarnings|Error.sp"
@@ -1513,7 +1513,7 @@
   },
   "Treesitter.Doxygen": {
     "@keyword.doxygen": "LanguageDefaults|Comments|DocComment|Tag",
-    "@variable.parameter.doxygen": "CC|Comments|Doxygen|CommandValue"
+    "@variable.parameter.doxygen": "C_Cpp|Comments|Doxygen|CommandValue"
   },
   "Semantic.Java": {
     "@lsp.type.method.java": "Java|Methods|MethodCall",
@@ -1530,17 +1530,17 @@
     "NeogitChangeUntrackedstaged": "Custom|Legacy|VCS|FileStatusColors|Unknown",
     "NeogitHunkHeader": {
       "fg": "VCS|VCSAnnotations|Foreground",
-      "bg": "VCS|VCSAnnotations|BackgroundColor3"
+      "bg": "VCS|VCSAnnotations|BackgroundColorSharp3"
     },
     "NeogitHunkHeaderHighlight": {
       "bold": true,
       "fg": "VCS|VCSAnnotations|Foreground",
-      "bg": "VCS|VCSAnnotations|BackgroundColor2"
+      "bg": "VCS|VCSAnnotations|BackgroundColorSharp2"
     },
     "NeogitHunkHeaderCursor": {
       "bold": true,
       "fg": "VCS|VCSAnnotations|Foreground",
-      "bg": "VCS|VCSAnnotations|BackgroundColor2"
+      "bg": "VCS|VCSAnnotations|BackgroundColorSharp2"
     },
     "NeogitDiffContext": "General|Text|DefaultText.bg",
     "NeogitDiffContextHighlight": "General|Text|DefaultText.bg",
@@ -1565,12 +1565,12 @@
     },
     "NeogitDiffHeader": {
       "fg": "VCS|VCSAnnotations|Foreground",
-      "bg": "VCS|VCSAnnotations|BackgroundColor1"
+      "bg": "VCS|VCSAnnotations|BackgroundColorSharp1"
     },
     "NeogitDiffHeaderHighlight": {
       "bold": true,
       "fg": "VCS|VCSAnnotations|Foreground",
-      "bg": "VCS|VCSAnnotations|BackgroundColor1"
+      "bg": "VCS|VCSAnnotations|BackgroundColorSharp1"
     },
     "NeogitDiffHeaderCursor": {
       "bold": true,
@@ -1701,17 +1701,17 @@
     "NeogitChangeUntrackeduntracked": "Custom|Legacy|VCS|FileStatusColors|Unknown"
   },
   "Treesitter.Cpp": {
-    "@function.macro.c": "CC|MacroName",
-    "@function.macro.cpp": "CC|MacroName",
-    "@keyword.import.c": "CC|Preprocessor|Directive",
-    "@keyword.import.cpp": "CC|Preprocessor|Directive",
-    "@module.cpp": "CC|Namespace",
-    "@property.c": "CC|StructField",
-    "@property.cpp": "CC|StructField",
-    "@type.c": "CC|ClassStructEnumUnion",
-    "@type.cpp": "CC|ClassStructEnumUnion",
-    "@type.definition.cpp": "CC|Typedef",
-    "@variable.member.cpp": "CC|StructField"
+    "@function.macro.c": "C_Cpp|MacroName",
+    "@function.macro.cpp": "C_Cpp|MacroName",
+    "@keyword.import.c": "C_Cpp|Preprocessor|Directive",
+    "@keyword.import.cpp": "C_Cpp|Preprocessor|Directive",
+    "@module.cpp": "C_Cpp|Namespace",
+    "@property.c": "C_Cpp|StructField",
+    "@property.cpp": "C_Cpp|StructField",
+    "@type.c": "C_Cpp|Class_Struct_Enum_Union",
+    "@type.cpp": "C_Cpp|Class_Struct_Enum_Union",
+    "@type.definition.cpp": "C_Cpp|Typedef",
+    "@variable.member.cpp": "C_Cpp|StructField"
   },
   "Treesitter.GraphQL": {
     "@operation.definition.graphql": "GraphQL|OperationDefinition",
@@ -2211,12 +2211,12 @@
     "Appearance_FileColors_NonProjectFile": "Appearance|FileColors|NonProjectFile",
     "Appearance_FileColors_Tests": "Appearance|FileColors|Tests",
     "GeneralTextTabs": "General|Text|Tabs",
-    "VCS_VCSAnnotations_BackgroundColor1": "VCS|VCSAnnotations|BackgroundColor1",
+    "VCS_VCSAnnotations_BackgroundColor1": "VCS|VCSAnnotations|BackgroundColorSharp1",
     "StatusBarHasUnsavedBuffers": {
       "fg": "General|ErrorsAndWarnings|Error|ErrorStripeMark",
       "bg": "Custom|StatusBar.bg"
     },
-    "VCS_VCSAnnotations_BackgroundColor2": "VCS|VCSAnnotations|BackgroundColor2",
+    "VCS_VCSAnnotations_BackgroundColor2": "VCS|VCSAnnotations|BackgroundColorSharp2",
     "GitToolBoxColorsIconsClean": "Custom|Legacy|GitToolBoxColors|Icons|Clean",
     "GitToolBoxColorsIconsDirty": "Custom|Legacy|GitToolBoxColors|Icons|Dirty",
     "VCSIconsUnpulled": "Custom|Legacy|VCS|Icons|Unpulled",
@@ -2339,14 +2339,14 @@
     "VCS_Merged": "Custom|Legacy|VCS|FileStatusColors|Merged",
     "VCS_MergedWithConflicts": "Custom|Legacy|VCS|FileStatusColors|MergedWithConflicts",
     "VCS_Modified": "Custom|Legacy|VCS|FileStatusColors|Modified",
-    "VCS_VCSAnnotations_BackgroundColor4": "VCS|VCSAnnotations|BackgroundColor4",
+    "VCS_VCSAnnotations_BackgroundColor4": "VCS|VCSAnnotations|BackgroundColorSharp4",
     "VCS_Renamed": "Custom|Legacy|VCS|FileStatusColors|Renamed",
     "Window_Normal": {
       "fg": "General|Text|DefaultText",
       "bg": "Appearance|Window|Background"
     },
     "VCS_Unknown": "Custom|Legacy|VCS|FileStatusColors|Unknown",
-    "VCS_VCSAnnotations_BackgroundColor3": "VCS|VCSAnnotations|BackgroundColor3",
+    "VCS_VCSAnnotations_BackgroundColor3": "VCS|VCSAnnotations|BackgroundColorSharp3",
     "VCS_Added_StatusLine": {
       "fg": "Custom|Legacy|VCS|FileStatusColors|Added.fg",
       "bg": "Custom|TabSel.bg"
@@ -2359,7 +2359,7 @@
     "@property.yaml": "YAML|Key",
     "@boolean.yaml": "YAML|Text",
     "@comment.yaml": "YAML|Comment",
-    "@label.yaml": "YAML|AnchorAlias",
+    "@label.yaml": "YAML|Anchor_Alias",
     "@number.yaml": "YAML|Text"
   },
   "Semantic.Ruby": {
