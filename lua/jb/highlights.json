@@ -1428,7 +1428,7 @@
     "IblScope": {
       "fg": "General|Editor|Guides|IndentGuideSelected.bg"
     },
-    "IblWhitespace": null
+    "IblWhitespace": "General|Text|Whitespaces"
   },
   "Plugin.nickkadutskyi/notifications.nvim": {
     "NotificationFloatBackground": "Appearance|Notifications|Background",
