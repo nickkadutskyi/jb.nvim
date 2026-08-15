@@ -1,5 +1,199 @@
 {
   "IntelliJ": {
+    "AndroidLogcat": {
+      "AssertIndicator": {
+        "light": {
+          "fg": "#FFFFFF",
+          "bg": "#7F0000"
+        },
+        "dark": {
+          "fg": "#FFFFFF",
+          "bg": "#8B3C3C"
+        },
+        "light_cb": {
+          "fg": "#FFFFFF",
+          "bg": "#7F0000"
+        },
+        "dark_cb": {
+          "fg": "#FFFFFF",
+          "bg": "#8B3C3C"
+        }
+      },
+      "AssertMessage": {
+        "light": {
+          "fg": "#CD0000"
+        },
+        "dark": {
+          "fg": "#FF6B68"
+        },
+        "light_cb": {
+          "fg": "#CD0000"
+        },
+        "dark_cb": {
+          "fg": "#FF6B68"
+        }
+      },
+      "DebugIndicator": {
+        "light": {
+          "fg": "#000000",
+          "bg": "#CFE7FF"
+        },
+        "dark": {
+          "fg": "#BBBBBB",
+          "bg": "#305D78"
+        },
+        "light_cb": {
+          "fg": "#000000",
+          "bg": "#CFE7FF"
+        },
+        "dark_cb": {
+          "fg": "#BBBBBB",
+          "bg": "#305D78"
+        }
+      },
+      "DebugMessage": {
+        "light": {
+          "fg": "#389FD6"
+        },
+        "dark": {
+          "fg": "#299999"
+        },
+        "light_cb": {
+          "fg": "#389FD6"
+        },
+        "dark_cb": {
+          "fg": "#299999"
+        }
+      },
+      "ErrorIndicator": {
+        "light": {
+          "fg": "#FFFFFF",
+          "bg": "#CF5B56"
+        },
+        "dark": {
+          "fg": "#000000",
+          "bg": "#CF5B56"
+        },
+        "light_cb": {
+          "fg": "#FFFFFF",
+          "bg": "#CF5B56"
+        },
+        "dark_cb": {
+          "fg": "#000000",
+          "bg": "#CF5B56"
+        }
+      },
+      "ErrorMessage": {
+        "light": {
+          "fg": "#CD0000"
+        },
+        "dark": {
+          "fg": "#FF6B68"
+        },
+        "light_cb": {
+          "fg": "#CD0000"
+        },
+        "dark_cb": {
+          "fg": "#FF6B68"
+        }
+      },
+      "InfoIndicator": {
+        "light": {
+          "fg": "#414D41",
+          "bg": "#E9F5E6"
+        },
+        "dark": {
+          "fg": "#E9F5E6",
+          "bg": "#6A8759"
+        },
+        "light_cb": {
+          "fg": "#414D41",
+          "bg": "#E9F5E6"
+        },
+        "dark_cb": {
+          "fg": "#E9F5E6",
+          "bg": "#6A8759"
+        }
+      },
+      "InfoMessage": {
+        "light": {
+          "fg": "#59A869"
+        },
+        "dark": {
+          "fg": "#ABC023"
+        },
+        "light_cb": {
+          "fg": "#59A869"
+        },
+        "dark_cb": {
+          "fg": "#ABC023"
+        }
+      },
+      "VerboseIndicator": {
+        "light": {
+          "fg": "#000000",
+          "bg": "#D6D6D6"
+        },
+        "dark": {
+          "fg": "#000000",
+          "bg": "#D6D6D6"
+        },
+        "light_cb": {
+          "fg": "#000000",
+          "bg": "#D6D6D6"
+        },
+        "dark_cb": {
+          "fg": "#000000",
+          "bg": "#D6D6D6"
+        }
+      },
+      "VerboseMessage": {
+        "light": {
+          "fg": "#000000"
+        },
+        "dark": {
+          "fg": "#BBBBBB"
+        },
+        "light_cb": {
+          "fg": "#000000"
+        },
+        "dark_cb": {
+          "fg": "#BBBBBB"
+        }
+      },
+      "WarnIndicator": {
+        "light": {
+          "fg": "#000000",
+          "bg": "#F5EAC1"
+        },
+        "dark": {
+          "fg": "#000000",
+          "bg": "#BBB529"
+        },
+        "light_cb": {
+          "fg": "#000000",
+          "bg": "#F5EAC1"
+        },
+        "dark_cb": {
+          "fg": "#000000",
+          "bg": "#BBB529"
+        }
+      },
+      "WarnMessage": {
+        "light": {
+          "fg": "#645607"
+        },
+        "dark": {
+          "fg": "#BBB529"
+        },
+        "light_cb": {
+          "fg": "#645607"
+        },
+        "dark_cb": {
+          "fg": "#BBB529"
+        }
+      }
+    },
     "AngularTemplate": {
       "BlockBraces": {
         "light": "LanguageDefaults|BracesAndOperators|Braces",
@@ -1188,6 +1382,402 @@
         }
       }
     },
+    "C_Cpp_ObjectiveC": {
+      "BadCharacter": {
+        "light": "LanguageDefaults|BadCharacter",
+        "dark": "LanguageDefaults|BadCharacter",
+        "light_cb": "LanguageDefaults|BadCharacter",
+        "dark_cb": "LanguageDefaults|BadCharacter"
+      },
+      "BracesAndOperators": {
+        "Braces": {
+          "light": "LanguageDefaults|BracesAndOperators|Braces",
+          "dark": "LanguageDefaults|BracesAndOperators|Braces",
+          "light_cb": "LanguageDefaults|BracesAndOperators|Braces",
+          "dark_cb": "LanguageDefaults|BracesAndOperators|Braces"
+        },
+        "Brackets": {
+          "light": "LanguageDefaults|BracesAndOperators|Brackets",
+          "dark": "LanguageDefaults|BracesAndOperators|Brackets",
+          "light_cb": "LanguageDefaults|BracesAndOperators|Brackets",
+          "dark_cb": "LanguageDefaults|BracesAndOperators|Brackets"
+        },
+        "Comma": {
+          "light": "LanguageDefaults|BracesAndOperators|Comma",
+          "dark": "LanguageDefaults|BracesAndOperators|Comma",
+          "light_cb": "LanguageDefaults|BracesAndOperators|Comma",
+          "dark_cb": "LanguageDefaults|BracesAndOperators|Comma"
+        },
+        "Dot": {
+          "light": "LanguageDefaults|BracesAndOperators|Dot",
+          "dark": "LanguageDefaults|BracesAndOperators|Dot",
+          "light_cb": "LanguageDefaults|BracesAndOperators|Dot",
+          "dark_cb": "LanguageDefaults|BracesAndOperators|Dot"
+        },
+        "OperatorSign": {
+          "light": "LanguageDefaults|BracesAndOperators|OperationSign",
+          "dark": "LanguageDefaults|BracesAndOperators|OperationSign",
+          "light_cb": "LanguageDefaults|BracesAndOperators|OperationSign",
+          "dark_cb": "LanguageDefaults|BracesAndOperators|OperationSign"
+        },
+        "OverloadedOperator": {
+          "light": {
+            "fg": "#008080"
+          },
+          "dark": {
+            "fg": "#5F8C8A"
+          },
+          "light_cb": {
+            "fg": "#008080"
+          },
+          "dark_cb": {
+            "fg": "#5F8C8A"
+          }
+        },
+        "Parentheses": {
+          "light": "LanguageDefaults|BracesAndOperators|Parentheses",
+          "dark": "LanguageDefaults|BracesAndOperators|Parentheses",
+          "light_cb": "LanguageDefaults|BracesAndOperators|Parentheses",
+          "dark_cb": "LanguageDefaults|BracesAndOperators|Parentheses"
+        },
+        "Semicolon": {
+          "light": "LanguageDefaults|BracesAndOperators|Semicolon",
+          "dark": "LanguageDefaults|BracesAndOperators|Semicolon",
+          "light_cb": "LanguageDefaults|BracesAndOperators|Semicolon",
+          "dark_cb": "LanguageDefaults|BracesAndOperators|Semicolon"
+        }
+      },
+      "Class": {
+        "light": {
+          "fg": "#587580"
+        },
+        "dark": {
+          "fg": "#769AA5"
+        },
+        "light_cb": {
+          "fg": "#587580"
+        },
+        "dark_cb": {
+          "fg": "#769AA5"
+        }
+      },
+      "Comments": {
+        "BlockComment": {
+          "light": "LanguageDefaults|Comments|BlockComment",
+          "dark": "LanguageDefaults|Comments|BlockComment",
+          "light_cb": "LanguageDefaults|Comments|BlockComment",
+          "dark_cb": "LanguageDefaults|Comments|BlockComment"
+        },
+        "LineComment": {
+          "light": "LanguageDefaults|Comments|LineComment",
+          "dark": "LanguageDefaults|Comments|LineComment",
+          "light_cb": "LanguageDefaults|Comments|LineComment",
+          "dark_cb": "LanguageDefaults|Comments|LineComment"
+        }
+      },
+      "ConditionallyNonCompiledCode": {
+        "light": {
+          "sp": "#616161"
+        },
+        "dark": {
+          "sp": "#616161"
+        },
+        "light_cb": {
+          "sp": "#616161"
+        },
+        "dark_cb": {
+          "sp": "#616161"
+        }
+      },
+      "EnumConstant": {
+        "light": {
+          "fg": "#871094",
+          "italic": true
+        },
+        "dark": {
+          "fg": "#C77DBB",
+          "italic": true
+        },
+        "light_cb": {
+          "fg": "#004B9F",
+          "italic": true
+        },
+        "dark_cb": {
+          "fg": "#828EBA",
+          "bold": true
+        }
+      },
+      "Functions": {
+        "Call": {
+          "light": "LanguageDefaults|Identifiers|FunctionCall",
+          "dark": "LanguageDefaults|Identifiers|FunctionCall",
+          "light_cb": "LanguageDefaults|Identifiers|FunctionCall",
+          "dark_cb": "LanguageDefaults|Identifiers|FunctionCall"
+        },
+        "Declaration": {
+          "light": "LanguageDefaults|Identifiers|FunctionDeclaration",
+          "dark": "LanguageDefaults|Identifiers|FunctionDeclaration",
+          "light_cb": "LanguageDefaults|Identifiers|FunctionDeclaration",
+          "dark_cb": "LanguageDefaults|Identifiers|FunctionDeclaration"
+        }
+      },
+      "GenericParameter": {
+        "light": "C_Cpp_ObjectiveC|Typedef",
+        "dark": "C_Cpp_ObjectiveC|Typedef",
+        "light_cb": "C_Cpp_ObjectiveC|Typedef",
+        "dark_cb": "C_Cpp_ObjectiveC|Typedef"
+      },
+      "InstanceVariable": {
+        "light": "LanguageDefaults|Classes|InstanceField",
+        "dark": "LanguageDefaults|Classes|InstanceField",
+        "light_cb": "LanguageDefaults|Classes|InstanceField",
+        "dark_cb": "LanguageDefaults|Classes|InstanceField"
+      },
+      "Keyword": {
+        "light": "LanguageDefaults|Keyword",
+        "dark": "LanguageDefaults|Keyword",
+        "light_cb": "LanguageDefaults|Keyword",
+        "dark_cb": "LanguageDefaults|Keyword"
+      },
+      "Keywords": {
+        "SelfSuperThis": {
+          "light": "C_Cpp_ObjectiveC|Keyword",
+          "dark": "C_Cpp_ObjectiveC|Keyword",
+          "light_cb": "C_Cpp_ObjectiveC|Keyword",
+          "dark_cb": "C_Cpp_ObjectiveC|Keyword"
+        }
+      },
+      "Label": {
+        "light": "General|Text|DefaultText",
+        "dark": "General|Text|DefaultText",
+        "light_cb": "General|Text|DefaultText",
+        "dark_cb": "General|Text|DefaultText"
+      },
+      "MacroName": {
+        "light": {
+          "fg": "#1F542E",
+          "bold": true
+        },
+        "dark": {
+          "fg": "#908B25"
+        },
+        "light_cb": {
+          "fg": "#1F542E",
+          "bold": true
+        },
+        "dark_cb": {
+          "fg": "#908B25"
+        }
+      },
+      "MethodCall": {
+        "light": {
+          "fg": "#291857"
+        },
+        "dark": {
+          "fg": "#C4B3A3"
+        },
+        "light_cb": {
+          "fg": "#291857"
+        },
+        "dark_cb": {
+          "fg": "#C4B3A3"
+        }
+      },
+      "MethodDeclaration": {
+        "light": {
+          "fg": "#291857"
+        },
+        "dark": {
+          "fg": "#C4B3A3"
+        },
+        "light_cb": {
+          "fg": "#291857"
+        },
+        "dark_cb": {
+          "fg": "#C4B3A3"
+        }
+      },
+      "Namespace": {
+        "light": "C_Cpp_ObjectiveC|Struct_Enum_Union",
+        "dark": "C_Cpp_ObjectiveC|Struct_Enum_Union",
+        "light_cb": "C_Cpp_ObjectiveC|Struct_Enum_Union",
+        "dark_cb": "C_Cpp_ObjectiveC|Struct_Enum_Union"
+      },
+      "Number": {
+        "light": "LanguageDefaults|Number",
+        "dark": "LanguageDefaults|Number",
+        "light_cb": "LanguageDefaults|Number",
+        "dark_cb": "LanguageDefaults|Number"
+      },
+      "Parameters": {
+        "MacroParameter": {
+          "light": {
+            "bold": true
+          },
+          "dark": {},
+          "light_cb": {
+            "bold": true
+          },
+          "dark_cb": {}
+        },
+        "Parameter": {
+          "light": "LanguageDefaults|Identifiers|Parameter",
+          "dark": "LanguageDefaults|Identifiers|Parameter",
+          "light_cb": "LanguageDefaults|Identifiers|Parameter",
+          "dark_cb": "LanguageDefaults|Identifiers|Parameter"
+        }
+      },
+      "Preprocessor": {
+        "Directive": {
+          "light": "LanguageDefaults|Metadata",
+          "dark": "LanguageDefaults|Metadata",
+          "light_cb": "LanguageDefaults|Metadata",
+          "dark_cb": "LanguageDefaults|Metadata"
+        },
+        "HeaderPath": {
+          "light": "LanguageDefaults|String|StringText",
+          "dark": "LanguageDefaults|String|StringText",
+          "light_cb": "LanguageDefaults|String|StringText",
+          "dark_cb": "LanguageDefaults|String|StringText"
+        }
+      },
+      "Property": {
+        "light": "C_Cpp_ObjectiveC|MethodCall",
+        "dark": "C_Cpp_ObjectiveC|MethodCall",
+        "light_cb": "C_Cpp_ObjectiveC|MethodCall",
+        "dark_cb": "C_Cpp_ObjectiveC|MethodCall"
+      },
+      "PropertyAttribute": {
+        "light": "General|Text|DefaultText",
+        "dark": "General|Text|DefaultText",
+        "light_cb": "General|Text|DefaultText",
+        "dark_cb": "General|Text|DefaultText"
+      },
+      "Protocol": {
+        "light": {
+          "fg": "#50861A"
+        },
+        "dark": {
+          "fg": "#82A094"
+        },
+        "light_cb": {
+          "fg": "#50861A"
+        },
+        "dark_cb": {
+          "fg": "#82A094"
+        }
+      },
+      "String": {
+        "EscapeSequence": {
+          "Invalid": {
+            "light": "LanguageDefaults|String|EscapeSequence|Invalid",
+            "dark": "LanguageDefaults|String|EscapeSequence|Invalid",
+            "light_cb": "LanguageDefaults|String|EscapeSequence|Invalid",
+            "dark_cb": "LanguageDefaults|String|EscapeSequence|Invalid"
+          },
+          "Valid": {
+            "light": "LanguageDefaults|String|EscapeSequence|Valid",
+            "dark": "LanguageDefaults|String|EscapeSequence|Valid",
+            "light_cb": "LanguageDefaults|String|EscapeSequence|Valid",
+            "dark_cb": "LanguageDefaults|String|EscapeSequence|Valid"
+          }
+        },
+        "FormatSpecifierInStringArgument": {
+          "light": "LanguageDefaults|String|EscapeSequence|Valid",
+          "dark": "LanguageDefaults|String|EscapeSequence|Valid",
+          "light_cb": "LanguageDefaults|String|EscapeSequence|Valid",
+          "dark_cb": "LanguageDefaults|String|EscapeSequence|Valid"
+        },
+        "StringText": {
+          "light": "LanguageDefaults|String|StringText",
+          "dark": "LanguageDefaults|String|StringText",
+          "light_cb": "LanguageDefaults|String|StringText",
+          "dark_cb": "LanguageDefaults|String|StringText"
+        }
+      },
+      "StructField": {
+        "light": {
+          "fg": "#660E7A"
+        },
+        "dark": {
+          "fg": "#9373A5"
+        },
+        "light_cb": {
+          "fg": "#660E7A"
+        },
+        "dark_cb": {
+          "fg": "#9373A5"
+        }
+      },
+      "Struct_Enum_Union": {
+        "light": {
+          "fg": "#008080"
+        },
+        "dark": {
+          "fg": "#B5B6E3"
+        },
+        "light_cb": {
+          "fg": "#008080"
+        },
+        "dark_cb": {
+          "fg": "#B5B6E3"
+        }
+      },
+      "Templates": {
+        "DependentCode": {
+          "light": "LanguageDefaults|Identifiers|Default",
+          "dark": "LanguageDefaults|Identifiers|Default",
+          "light_cb": "LanguageDefaults|Identifiers|Default",
+          "dark_cb": "LanguageDefaults|Identifiers|Default"
+        },
+        "Type": {
+          "light": "C_Cpp_ObjectiveC|Typedef",
+          "dark": "C_Cpp_ObjectiveC|Typedef",
+          "light_cb": "C_Cpp_ObjectiveC|Typedef",
+          "dark_cb": "C_Cpp_ObjectiveC|Typedef"
+        },
+        "Value": {
+          "light": "C_Cpp_ObjectiveC|EnumConstant",
+          "dark": "C_Cpp_ObjectiveC|EnumConstant",
+          "light_cb": "C_Cpp_ObjectiveC|EnumConstant",
+          "dark_cb": "C_Cpp_ObjectiveC|EnumConstant"
+        }
+      },
+      "Typedef": {
+        "light": {
+          "fg": "#371F80"
+        },
+        "dark": {
+          "fg": "#B9BCD1"
+        },
+        "light_cb": {
+          "fg": "#371F80"
+        },
+        "dark_cb": {
+          "fg": "#B9BCD1"
+        }
+      },
+      "Variables": {
+        "Extern": {
+          "light": "C_Cpp_ObjectiveC|Variables|Global",
+          "dark": "C_Cpp_ObjectiveC|Variables|Global",
+          "light_cb": "C_Cpp_ObjectiveC|Variables|Global",
+          "dark_cb": "C_Cpp_ObjectiveC|Variables|Global"
+        },
+        "Global": {
+          "light": "LanguageDefaults|Identifiers|GlobalVariable",
+          "dark": "LanguageDefaults|Identifiers|GlobalVariable",
+          "light_cb": "LanguageDefaults|Identifiers|GlobalVariable",
+          "dark_cb": "LanguageDefaults|Identifiers|GlobalVariable"
+        },
+        "Local": {
+          "light": "LanguageDefaults|Identifiers|LocalVariable",
+          "dark": "LanguageDefaults|Identifiers|LocalVariable",
+          "light_cb": "LanguageDefaults|Identifiers|LocalVariable",
+          "dark_cb": "LanguageDefaults|Identifiers|LocalVariable"
+        }
+      }
+    },
     "CodeReview": {
       "EditorGutter": {
         "LinesChangedInCodeReview": {
@@ -1203,6 +1793,22 @@
           "dark_cb": {
             "bg": "#8A4175"
           }
+        }
+      }
+    },
+    "Compose": {
+      "CallsToComposeFunctions": {
+        "light": {
+          "fg": "#009900"
+        },
+        "dark": {
+          "fg": "#6BB38A"
+        },
+        "light_cb": {
+          "fg": "#009900"
+        },
+        "dark_cb": {
+          "fg": "#6BB38A"
         }
       }
     },
@@ -1710,30 +2316,30 @@
         },
         "BlockHoveredBackgroundGradientEnd": {
           "light": {
-            "bg": "#000000"
+            "bg": "#FCFCFC"
           },
           "dark": {
-            "bg": "#FFFFFF"
+            "bg": "#1C1D1F"
           },
           "light_cb": {
-            "bg": "#000000"
+            "bg": "#FCFCFC"
           },
           "dark_cb": {
-            "bg": "#FFFFFF"
+            "bg": "#1C1D1F"
           }
         },
         "BlockHoveredBackgroundGradientStart": {
           "light": {
-            "bg": "#000000"
+            "bg": "#F5F5F5"
           },
           "dark": {
-            "bg": "#FFFFFF"
+            "bg": "#222325"
           },
           "light_cb": {
-            "bg": "#000000"
+            "bg": "#F5F5F5"
           },
           "dark_cb": {
-            "bg": "#FFFFFF"
+            "bg": "#222325"
           }
         },
         "Blue": {
@@ -3070,16 +3676,16 @@
       "SelectionBox": {
         "SelectionBoxBackground": {
           "light": {
-            "bg": "#000000"
+            "bg": "#EBEBEB"
           },
           "dark": {
-            "bg": "#FFFFFF"
+            "bg": "#303032"
           },
           "light_cb": {
-            "bg": "#000000"
+            "bg": "#EBEBEB"
           },
           "dark_cb": {
-            "bg": "#FFFFFF"
+            "bg": "#303032"
           }
         },
         "SelectionBoxBorder": {
@@ -4246,30 +4852,30 @@
         "VerticalScrollbar": {
           "Thumb": {
             "light": {
-              "bg": "#000000"
+              "bg": "#CCCCCC"
             },
             "dark": {
-              "bg": "#FFFFFF"
+              "bg": "#3B3C3E"
             },
             "light_cb": {
-              "bg": "#000000"
+              "bg": "#CCCCCC"
             },
             "dark_cb": {
-              "bg": "#FFFFFF"
+              "bg": "#3B3C3E"
             }
           },
           "ThumbWhileScrolling": {
             "light": {
-              "bg": "#000000"
+              "bg": "#7F7F7F"
             },
             "dark": {
-              "bg": "#FFFFFF"
+              "bg": "#5E5F61"
             },
             "light_cb": {
-              "bg": "#000000"
+              "bg": "#7F7F7F"
             },
             "dark_cb": {
-              "bg": "#FFFFFF"
+              "bg": "#5E5F61"
             }
           }
         }
@@ -6145,6 +6751,58 @@
         "dark_cb": "LanguageDefaults|Identifiers|LocalVariable"
       }
     },
+    "GradleDeclarativeConfiguration": {
+      "BlockComments": {
+        "light": "LanguageDefaults|Comments|BlockComment",
+        "dark": "LanguageDefaults|Comments|BlockComment",
+        "light_cb": "LanguageDefaults|Comments|BlockComment",
+        "dark_cb": "LanguageDefaults|Comments|BlockComment"
+      },
+      "Boolean": {
+        "light": "LanguageDefaults|Keyword",
+        "dark": "LanguageDefaults|Keyword",
+        "light_cb": "LanguageDefaults|Keyword",
+        "dark_cb": "LanguageDefaults|Keyword"
+      },
+      "Comments": {
+        "light": "LanguageDefaults|Comments|LineComment",
+        "dark": "LanguageDefaults|Comments|LineComment",
+        "light_cb": "LanguageDefaults|Comments|LineComment",
+        "dark_cb": "LanguageDefaults|Comments|LineComment"
+      },
+      "InvalidEscapeString": {
+        "light": "LanguageDefaults|String|EscapeSequence|Invalid",
+        "dark": "LanguageDefaults|String|EscapeSequence|Invalid",
+        "light_cb": "LanguageDefaults|String|EscapeSequence|Invalid",
+        "dark_cb": "LanguageDefaults|String|EscapeSequence|Invalid"
+      },
+      "Null": {
+        "light": "LanguageDefaults|Keyword",
+        "dark": "LanguageDefaults|Keyword",
+        "light_cb": "LanguageDefaults|Keyword",
+        "dark_cb": "LanguageDefaults|Keyword"
+      },
+      "Number": {
+        "light": "LanguageDefaults|Number",
+        "dark": "LanguageDefaults|Number",
+        "light_cb": "LanguageDefaults|Number",
+        "dark_cb": "LanguageDefaults|Number"
+      },
+      "String": {
+        "StringText": {
+          "light": "LanguageDefaults|String|StringText",
+          "dark": "LanguageDefaults|String|StringText",
+          "light_cb": "LanguageDefaults|String|StringText",
+          "dark_cb": "LanguageDefaults|String|StringText"
+        }
+      },
+      "ValidEscapeString": {
+        "light": "LanguageDefaults|String|EscapeSequence|Valid",
+        "dark": "LanguageDefaults|String|EscapeSequence|Valid",
+        "light_cb": "LanguageDefaults|String|EscapeSequence|Valid",
+        "dark_cb": "LanguageDefaults|String|EscapeSequence|Valid"
+      }
+    },
     "GraphQL": {
       "Argument": {
         "light": "LanguageDefaults|Identifiers|Parameter",
@@ -6261,6 +6919,336 @@
         "dark": "GraphQL|Parameter",
         "light_cb": "GraphQL|Parameter",
         "dark_cb": "GraphQL|Parameter"
+      }
+    },
+    "Groovy": {
+      "Annotations": {
+        "AnnotationAttributeName": {
+          "light": "Java|Annotations|AnnotationAttributeName",
+          "dark": "Java|Annotations|AnnotationAttributeName",
+          "light_cb": "Java|Annotations|AnnotationAttributeName",
+          "dark_cb": "Java|Annotations|AnnotationAttributeName"
+        },
+        "AnnotationName": {
+          "light": "Java|Annotations|AnnotationName",
+          "dark": "Java|Annotations|AnnotationName",
+          "light_cb": "Java|Annotations|AnnotationName",
+          "dark_cb": "Java|Annotations|AnnotationName"
+        }
+      },
+      "BadCharacter": {
+        "light": "LanguageDefaults|BadCharacter",
+        "dark": "LanguageDefaults|BadCharacter",
+        "light_cb": "LanguageDefaults|BadCharacter",
+        "dark_cb": "LanguageDefaults|BadCharacter"
+      },
+      "BracesAndOperators": {
+        "Braces": {
+          "light": "Java|BracesAndOperators|Braces",
+          "dark": "Java|BracesAndOperators|Braces",
+          "light_cb": "Java|BracesAndOperators|Braces",
+          "dark_cb": "Java|BracesAndOperators|Braces"
+        },
+        "Brackets": {
+          "light": "Java|BracesAndOperators|Brackets",
+          "dark": "Java|BracesAndOperators|Brackets",
+          "light_cb": "Java|BracesAndOperators|Brackets",
+          "dark_cb": "Java|BracesAndOperators|Brackets"
+        },
+        "ClosureExpressionBracesAndArrow": {
+          "light": {
+            "bold": true
+          },
+          "dark": {
+            "bold": true
+          },
+          "light_cb": {
+            "bold": true
+          },
+          "dark_cb": {
+            "bold": true
+          }
+        },
+        "LambdaExpressionBracesAndArrow": {
+          "light": "Groovy|BracesAndOperators|Braces",
+          "dark": "Groovy|BracesAndOperators|Braces",
+          "light_cb": "Groovy|BracesAndOperators|Braces",
+          "dark_cb": "Groovy|BracesAndOperators|Braces"
+        },
+        "OperatorSign": {
+          "light": "Java|BracesAndOperators|OperatorSign",
+          "dark": "Java|BracesAndOperators|OperatorSign",
+          "light_cb": "Java|BracesAndOperators|OperatorSign",
+          "dark_cb": "Java|BracesAndOperators|OperatorSign"
+        },
+        "Parentheses": {
+          "light": "Java|BracesAndOperators|Parentheses",
+          "dark": "Java|BracesAndOperators|Parentheses",
+          "light_cb": "Java|BracesAndOperators|Parentheses",
+          "dark_cb": "Java|BracesAndOperators|Parentheses"
+        }
+      },
+      "ClassesAndInterfaces": {
+        "AbstractClass": {
+          "light": "Groovy|ClassesAndInterfaces|Class",
+          "dark": "Groovy|ClassesAndInterfaces|Class",
+          "light_cb": "Groovy|ClassesAndInterfaces|Class",
+          "dark_cb": "Groovy|ClassesAndInterfaces|Class"
+        },
+        "AnonymousClass": {
+          "light": "Groovy|ClassesAndInterfaces|Class",
+          "dark": "Groovy|ClassesAndInterfaces|Class",
+          "light_cb": "Groovy|ClassesAndInterfaces|Class",
+          "dark_cb": "Groovy|ClassesAndInterfaces|Class"
+        },
+        "Class": {
+          "light": "Java|ClassesAndInterfaces|Class",
+          "dark": {},
+          "light_cb": "Java|ClassesAndInterfaces|Class",
+          "dark_cb": {}
+        },
+        "Enum": {
+          "light": "Groovy|ClassesAndInterfaces|Class",
+          "dark": "Groovy|ClassesAndInterfaces|Class",
+          "light_cb": "Groovy|ClassesAndInterfaces|Class",
+          "dark_cb": "Groovy|ClassesAndInterfaces|Class"
+        },
+        "Interface": {
+          "light": "Java|ClassesAndInterfaces|Interface",
+          "dark": "Java|ClassesAndInterfaces|Interface",
+          "light_cb": "Java|ClassesAndInterfaces|Interface",
+          "dark_cb": "Java|ClassesAndInterfaces|Interface"
+        },
+        "Trait": {
+          "light": "Groovy|ClassesAndInterfaces|Interface",
+          "dark": "Groovy|ClassesAndInterfaces|Interface",
+          "light_cb": "Groovy|ClassesAndInterfaces|Interface",
+          "dark_cb": "Groovy|ClassesAndInterfaces|Interface"
+        },
+        "TypeParameter": {
+          "light": "Java|Parameters|TypeParameter",
+          "dark": "Java|Parameters|TypeParameter",
+          "light_cb": "Java|Parameters|TypeParameter",
+          "dark_cb": "Java|Parameters|TypeParameter"
+        }
+      },
+      "Comments": {
+        "BlockComment": {
+          "light": "Java|Comments|BlockComment",
+          "dark": "Java|Comments|BlockComment",
+          "light_cb": "Java|Comments|BlockComment",
+          "dark_cb": "Java|Comments|BlockComment"
+        },
+        "Groovydoc": {
+          "Tag": {
+            "light": "Java|Comments|JavaDoc|Tag",
+            "dark": "Java|Comments|JavaDoc|Tag",
+            "light_cb": "Java|Comments|JavaDoc|Tag",
+            "dark_cb": "Java|Comments|JavaDoc|Tag"
+          },
+          "Text": {
+            "light": "Java|Comments|JavaDoc|Text",
+            "dark": "Java|Comments|JavaDoc|Text",
+            "light_cb": "Java|Comments|JavaDoc|Text",
+            "dark_cb": "Java|Comments|JavaDoc|Text"
+          }
+        },
+        "LineComment": {
+          "light": "LanguageDefaults|Comments|LineComment",
+          "dark": "LanguageDefaults|Comments|LineComment",
+          "light_cb": "LanguageDefaults|Comments|LineComment",
+          "dark_cb": "LanguageDefaults|Comments|LineComment"
+        }
+      },
+      "Fields": {
+        "InstanceField": {
+          "light": "Java|ClassFields|InstanceField",
+          "dark": "Java|ClassFields|InstanceField",
+          "light_cb": "Java|ClassFields|InstanceField",
+          "dark_cb": "Java|ClassFields|InstanceField"
+        },
+        "StaticField": {
+          "light": "Java|ClassFields|ConstantStaticFinalField",
+          "dark": "Java|ClassFields|ConstantStaticFinalField",
+          "light_cb": "Java|ClassFields|ConstantStaticFinalField",
+          "dark_cb": "Java|ClassFields|ConstantStaticFinalField"
+        }
+      },
+      "Keyword": {
+        "light": "Java|Keyword",
+        "dark": "Java|Keyword",
+        "light_cb": "Java|Keyword",
+        "dark_cb": "Java|Keyword"
+      },
+      "Label": {
+        "light": "LanguageDefaults|Identifiers|Label",
+        "dark": "LanguageDefaults|Identifiers|Label",
+        "light_cb": "LanguageDefaults|Identifiers|Label",
+        "dark_cb": "LanguageDefaults|Identifiers|Label"
+      },
+      "List_MapToObjectConversion": {
+        "light": {
+          "fg": "#0000FF"
+        },
+        "dark": {
+          "fg": "#E8BF6A",
+          "bold": true
+        },
+        "light_cb": {
+          "fg": "#0000FF"
+        },
+        "dark_cb": {
+          "fg": "#E8BF6A",
+          "bold": true
+        }
+      },
+      "MapKey_NamedArgument": {
+        "light": "Java|String|StringText",
+        "dark": "Java|String|StringText",
+        "light_cb": "Java|String|StringText",
+        "dark_cb": "Java|String|StringText"
+      },
+      "Methods": {
+        "ConstructorCall": {
+          "light": "Java|Methods|ConstructorCall",
+          "dark": "Java|Methods|ConstructorCall",
+          "light_cb": "Java|Methods|ConstructorCall",
+          "dark_cb": "Java|Methods|ConstructorCall"
+        },
+        "ConstructorDeclaration": {
+          "light": "Java|Methods|ConstructorDeclaration",
+          "dark": "Java|Methods|ConstructorDeclaration",
+          "light_cb": "Java|Methods|ConstructorDeclaration",
+          "dark_cb": "Java|Methods|ConstructorDeclaration"
+        },
+        "InstanceMethodCall": {
+          "light": "Java|Methods|MethodCall",
+          "dark": "Java|Methods|MethodCall",
+          "light_cb": "Java|Methods|MethodCall",
+          "dark_cb": "Java|Methods|MethodCall"
+        },
+        "MethodDeclaration": {
+          "light": "Java|Methods|MethodDeclaration",
+          "dark": {},
+          "light_cb": "Java|Methods|MethodDeclaration",
+          "dark_cb": {}
+        },
+        "StaticMethodCall": {
+          "light": "Java|Methods|StaticMethod",
+          "dark": {
+            "fg": "#C77DBA",
+            "italic": true
+          },
+          "light_cb": "Java|Methods|StaticMethod",
+          "dark_cb": {
+            "fg": "#828EBA",
+            "bold": true
+          }
+        }
+      },
+      "Number": {
+        "light": "Java|Number",
+        "dark": "Java|Number",
+        "light_cb": "Java|Number",
+        "dark_cb": "Java|Number"
+      },
+      "References": {
+        "InstancePropertyReference": {
+          "light": {},
+          "dark": "Java|ClassFields|InstanceField",
+          "light_cb": {},
+          "dark_cb": "Java|ClassFields|InstanceField"
+        },
+        "StaticPropertyReference": {
+          "light": {
+            "italic": true
+          },
+          "dark": {
+            "fg": "#C77DBA",
+            "italic": true
+          },
+          "light_cb": {
+            "italic": true
+          },
+          "dark_cb": {
+            "fg": "#C77DBA",
+            "italic": true
+          }
+        },
+        "UnresolvedReference": {
+          "light": {
+            "fg": "#000000",
+            "sp": "#808080",
+            "underdotted": true
+          },
+          "dark": {
+            "fg": "#757A85",
+            "sp": "#6A707A",
+            "underdotted": true
+          },
+          "light_cb": {
+            "fg": "#000000",
+            "sp": "#808080",
+            "underdotted": true
+          },
+          "dark_cb": {
+            "fg": "#757A85",
+            "sp": "#6A707A",
+            "underdotted": true
+          }
+        }
+      },
+      "Strings": {
+        "GString": {
+          "light": "Java|String|StringText",
+          "dark": "Java|String|StringText",
+          "light_cb": "Java|String|StringText",
+          "dark_cb": "Java|String|StringText"
+        },
+        "InvalidStringEscape": {
+          "light": "Java|String|EscapeSequence|Invalid",
+          "dark": "Java|String|EscapeSequence|Invalid",
+          "light_cb": "Java|String|EscapeSequence|Invalid",
+          "dark_cb": "Java|String|EscapeSequence|Invalid"
+        },
+        "String": {
+          "light": "Java|String|StringText",
+          "dark": "Java|String|StringText",
+          "light_cb": "Java|String|StringText",
+          "dark_cb": "Java|String|StringText"
+        },
+        "ValidStringEscape": {
+          "light": "Java|String|EscapeSequence|Valid",
+          "dark": "Java|String|EscapeSequence|Valid",
+          "light_cb": "Java|String|EscapeSequence|Valid",
+          "dark_cb": "Java|String|EscapeSequence|Valid"
+        }
+      },
+      "VariablesAndParameters": {
+        "LocalVariable": {
+          "light": "Java|Variables|LocalVariable",
+          "dark": "Java|Variables|LocalVariable",
+          "light_cb": "Java|Variables|LocalVariable",
+          "dark_cb": "Java|Variables|LocalVariable"
+        },
+        "Parameter": {
+          "light": "Java|Parameters|Parameter",
+          "dark": "Java|Parameters|Parameter",
+          "light_cb": "Java|Parameters|Parameter",
+          "dark_cb": "Java|Parameters|Parameter"
+        },
+        "ReassignedLocalVariable": {
+          "light": "General|Identifiers|ReassignedLocalVariable",
+          "dark": "General|Identifiers|ReassignedLocalVariable",
+          "light_cb": "General|Identifiers|ReassignedLocalVariable",
+          "dark_cb": "General|Identifiers|ReassignedLocalVariable"
+        },
+        "ReassignedParameter": {
+          "light": "Java|Parameters|ReassignedParameter",
+          "dark": "Java|Parameters|ReassignedParameter",
+          "light_cb": "Java|Parameters|ReassignedParameter",
+          "dark_cb": "Java|Parameters|ReassignedParameter"
+        }
       }
     },
     "HTML": {
@@ -7750,16 +8738,16 @@
         },
         "Selected": {
           "light": {
-            "bg": "#4083C9"
+            "bg": "#83AFDC"
           },
           "dark": {
-            "bg": "#4083C9"
+            "bg": "#325E8C"
           },
           "light_cb": {
-            "bg": "#4083C9"
+            "bg": "#83AFDC"
           },
           "dark_cb": {
-            "bg": "#4083C9"
+            "bg": "#325E8C"
           }
         }
       },
@@ -8374,6 +9362,100 @@
           "light_cb": "LanguageDefaults|String|StringText",
           "dark_cb": "LanguageDefaults|String|StringText"
         }
+      }
+    },
+    "KotlinToolchainYAML": {
+      "Boolean": {
+        "light": "LanguageDefaults|Keyword",
+        "dark": "LanguageDefaults|Keyword",
+        "light_cb": "LanguageDefaults|Keyword",
+        "dark_cb": "LanguageDefaults|Keyword"
+      },
+      "Dependencies": {
+        "Default": {
+          "light": "LanguageDefaults|Identifiers|Default",
+          "dark": "LanguageDefaults|Identifiers|Default",
+          "light_cb": "LanguageDefaults|Identifiers|Default",
+          "dark_cb": "LanguageDefaults|Identifiers|Default"
+        },
+        "LibraryCatalogEntry": {
+          "light": "KotlinToolchainYAML|Dependencies|Default",
+          "dark": "KotlinToolchainYAML|Dependencies|Default",
+          "light_cb": "KotlinToolchainYAML|Dependencies|Default",
+          "dark_cb": "KotlinToolchainYAML|Dependencies|Default"
+        },
+        "MavenDependency": {
+          "light": "KotlinToolchainYAML|Dependencies|Default",
+          "dark": "KotlinToolchainYAML|Dependencies|Default",
+          "light_cb": "KotlinToolchainYAML|Dependencies|Default",
+          "dark_cb": "KotlinToolchainYAML|Dependencies|Default"
+        },
+        "ModuleDependency": {
+          "light": "KotlinToolchainYAML|Dependencies|Default",
+          "dark": "KotlinToolchainYAML|Dependencies|Default",
+          "light_cb": "KotlinToolchainYAML|Dependencies|Default",
+          "dark_cb": "KotlinToolchainYAML|Dependencies|Default"
+        }
+      },
+      "Enum": {
+        "light": "LanguageDefaults|Identifiers|Constant",
+        "dark": "LanguageDefaults|Identifiers|Constant",
+        "light_cb": "LanguageDefaults|Identifiers|Constant",
+        "dark_cb": "LanguageDefaults|Identifiers|Constant"
+      },
+      "MainClass": {
+        "light": "LanguageDefaults|Classes|ClassName",
+        "dark": "LanguageDefaults|Classes|ClassName",
+        "light_cb": "LanguageDefaults|Classes|ClassName",
+        "dark_cb": "LanguageDefaults|Classes|ClassName"
+      },
+      "MapKeyUserDefined": {
+        "light": "LanguageDefaults|String|StringText",
+        "dark": "LanguageDefaults|String|StringText",
+        "light_cb": "LanguageDefaults|String|StringText",
+        "dark_cb": "LanguageDefaults|String|StringText"
+      },
+      "NullValue": {
+        "light": "LanguageDefaults|Keyword",
+        "dark": "LanguageDefaults|Keyword",
+        "light_cb": "LanguageDefaults|Keyword",
+        "dark_cb": "LanguageDefaults|Keyword"
+      },
+      "Number": {
+        "light": "LanguageDefaults|Number",
+        "dark": "LanguageDefaults|Number",
+        "light_cb": "LanguageDefaults|Number",
+        "dark_cb": "LanguageDefaults|Number"
+      },
+      "PluginSettingsClass": {
+        "light": "LanguageDefaults|Classes|InterfaceName",
+        "dark": "LanguageDefaults|Classes|InterfaceName",
+        "light_cb": "LanguageDefaults|Classes|InterfaceName",
+        "dark_cb": "LanguageDefaults|Classes|InterfaceName"
+      },
+      "PluginTaskParameter": {
+        "light": "LanguageDefaults|Identifiers|Parameter",
+        "dark": "LanguageDefaults|Identifiers|Parameter",
+        "light_cb": "LanguageDefaults|Identifiers|Parameter",
+        "dark_cb": "LanguageDefaults|Identifiers|Parameter"
+      },
+      "Reference": {
+        "light": "LanguageDefaults|Classes|InstanceField",
+        "dark": "LanguageDefaults|Classes|InstanceField",
+        "light_cb": "LanguageDefaults|Classes|InstanceField",
+        "dark_cb": "LanguageDefaults|Classes|InstanceField"
+      },
+      "TaskName": {
+        "light": "KotlinToolchainYAML|MapKeyUserDefined",
+        "dark": "KotlinToolchainYAML|MapKeyUserDefined",
+        "light_cb": "KotlinToolchainYAML|MapKeyUserDefined",
+        "dark_cb": "KotlinToolchainYAML|MapKeyUserDefined"
+      },
+      "TaskType": {
+        "light": "LanguageDefaults|Identifiers|FunctionDeclaration",
+        "dark": "LanguageDefaults|Identifiers|FunctionDeclaration",
+        "light_cb": "LanguageDefaults|Identifiers|FunctionDeclaration",
+        "dark_cb": "LanguageDefaults|Identifiers|FunctionDeclaration"
       }
     },
     "Kubernetes": {
@@ -9087,55 +10169,55 @@
           "Default": {
             "light": {
               "fg": "#494B57",
-              "sp": "#000000"
+              "sp": "#CCCCCC"
             },
             "dark": {
               "fg": "#9DA0A8",
-              "sp": "#FFFFFF"
+              "sp": "#474849"
             },
             "light_cb": {
               "fg": "#494B57",
-              "sp": "#000000"
+              "sp": "#CCCCCC"
             },
             "dark_cb": {
               "fg": "#9DA0A8",
-              "sp": "#FFFFFF"
+              "sp": "#474849"
             }
           },
           "Focused": {
             "light": {
               "fg": "#494B57",
-              "sp": "#000000"
+              "sp": "#B8B8B8"
             },
             "dark": {
               "fg": "#9DA0A8",
-              "sp": "#FFFFFF"
+              "sp": "#636465"
             },
             "light_cb": {
               "fg": "#494B57",
-              "sp": "#000000"
+              "sp": "#B8B8B8"
             },
             "dark_cb": {
               "fg": "#9DA0A8",
-              "sp": "#FFFFFF"
+              "sp": "#636465"
             }
           },
           "Hovered": {
             "light": {
               "fg": "#494B57",
-              "sp": "#000000"
+              "sp": "#B8B8B8"
             },
             "dark": {
               "fg": "#9DA0A8",
-              "sp": "#FFFFFF"
+              "sp": "#636465"
             },
             "light_cb": {
               "fg": "#494B57",
-              "sp": "#000000"
+              "sp": "#B8B8B8"
             },
             "dark_cb": {
               "fg": "#9DA0A8",
-              "sp": "#FFFFFF"
+              "sp": "#636465"
             }
           }
         },
@@ -9198,13 +10280,13 @@
         "RefactoringOptions": {
           "Default": {
             "light": {
-              "bg": "#D8D8D8"
+              "bg": "#EAEAEA"
             },
             "dark": {
               "bg": "#393B40"
             },
             "light_cb": {
-              "bg": "#D8D8D8"
+              "bg": "#EAEAEA"
             },
             "dark_cb": {
               "bg": "#393B40"
@@ -9212,13 +10294,13 @@
           },
           "Focused": {
             "light": {
-              "bg": "#B3B3B3"
+              "bg": "#D5D5D5"
             },
             "dark": {
               "bg": "#393B40"
             },
             "light_cb": {
-              "bg": "#B3B3B3"
+              "bg": "#D5D5D5"
             },
             "dark_cb": {
               "bg": "#393B40"
@@ -9226,13 +10308,13 @@
           },
           "Hovered": {
             "light": {
-              "bg": "#B3B3B3"
+              "bg": "#D5D5D5"
             },
             "dark": {
               "bg": "#393B40"
             },
             "light_cb": {
-              "bg": "#B3B3B3"
+              "bg": "#D5D5D5"
             },
             "dark_cb": {
               "bg": "#393B40"
@@ -9927,6 +11009,78 @@
           "dark": "LanguageDefaults|Identifiers|Default",
           "light_cb": "LanguageDefaults|Identifiers|Default",
           "dark_cb": "LanguageDefaults|Identifiers|Default"
+        }
+      }
+    },
+    "LogcatFilter": {
+      "Key": {
+        "light": {
+          "bg": "#E9F5E6"
+        },
+        "dark": {
+          "fg": "#FDFDFD",
+          "bg": "#4D694C"
+        },
+        "light_cb": {
+          "bg": "#E9F5E6"
+        },
+        "dark_cb": {
+          "fg": "#FDFDFD",
+          "bg": "#4D694C"
+        }
+      },
+      "RegexValue": {
+        "light": {
+          "bg": "#E9F5E6"
+        },
+        "dark": {
+          "fg": "#FDFDFD",
+          "bg": "#4D694C"
+        },
+        "light_cb": {
+          "bg": "#E9F5E6"
+        },
+        "dark_cb": {
+          "fg": "#FDFDFD",
+          "bg": "#4D694C"
+        }
+      },
+      "StringValue": {
+        "light": {
+          "bg": "#E9F5E6"
+        },
+        "dark": {
+          "fg": "#FDFDFD",
+          "bg": "#4D694C"
+        },
+        "light_cb": {
+          "bg": "#E9F5E6"
+        },
+        "dark_cb": {
+          "fg": "#FDFDFD",
+          "bg": "#4D694C"
+        }
+      },
+      "Text": {
+        "light": "General|Text|DefaultText",
+        "dark": "General|Text|DefaultText",
+        "light_cb": "General|Text|DefaultText",
+        "dark_cb": "General|Text|DefaultText"
+      },
+      "Value": {
+        "light": {
+          "bg": "#E9F5E6"
+        },
+        "dark": {
+          "fg": "#FDFDFD",
+          "bg": "#4D694C"
+        },
+        "light_cb": {
+          "bg": "#E9F5E6"
+        },
+        "dark_cb": {
+          "fg": "#FDFDFD",
+          "bg": "#4D694C"
         }
       }
     },
@@ -15498,6 +16652,348 @@
         "dark_cb": "LanguageDefaults|String|StringText"
       }
     },
+    "Swift": {
+      "Attributes": {
+        "AttributeArgument": {
+          "light": "Swift|Attributes|AttributeName",
+          "dark": "Swift|Attributes|AttributeName",
+          "light_cb": "Swift|Attributes|AttributeName",
+          "dark_cb": "Swift|Attributes|AttributeName"
+        },
+        "AttributeName": {
+          "light": "Swift|KeywordsAndDirectives|Keyword",
+          "dark": "Swift|KeywordsAndDirectives|Keyword",
+          "light_cb": "Swift|KeywordsAndDirectives|Keyword",
+          "dark_cb": "Swift|KeywordsAndDirectives|Keyword"
+        }
+      },
+      "BracesAndOperators": {
+        "Braces": {
+          "light": "C_Cpp_ObjectiveC|BracesAndOperators|Braces",
+          "dark": "C_Cpp_ObjectiveC|BracesAndOperators|Braces",
+          "light_cb": "C_Cpp_ObjectiveC|BracesAndOperators|Braces",
+          "dark_cb": "C_Cpp_ObjectiveC|BracesAndOperators|Braces"
+        },
+        "Brackets": {
+          "light": "C_Cpp_ObjectiveC|BracesAndOperators|Brackets",
+          "dark": "C_Cpp_ObjectiveC|BracesAndOperators|Brackets",
+          "light_cb": "C_Cpp_ObjectiveC|BracesAndOperators|Brackets",
+          "dark_cb": "C_Cpp_ObjectiveC|BracesAndOperators|Brackets"
+        },
+        "Colon": {
+          "light": "C_Cpp_ObjectiveC|BracesAndOperators|Semicolon",
+          "dark": "C_Cpp_ObjectiveC|BracesAndOperators|Semicolon",
+          "light_cb": "C_Cpp_ObjectiveC|BracesAndOperators|Semicolon",
+          "dark_cb": "C_Cpp_ObjectiveC|BracesAndOperators|Semicolon"
+        },
+        "Comma": {
+          "light": "C_Cpp_ObjectiveC|BracesAndOperators|Comma",
+          "dark": "C_Cpp_ObjectiveC|BracesAndOperators|Comma",
+          "light_cb": "C_Cpp_ObjectiveC|BracesAndOperators|Comma",
+          "dark_cb": "C_Cpp_ObjectiveC|BracesAndOperators|Comma"
+        },
+        "Dot": {
+          "light": "C_Cpp_ObjectiveC|BracesAndOperators|Dot",
+          "dark": "C_Cpp_ObjectiveC|BracesAndOperators|Dot",
+          "light_cb": "C_Cpp_ObjectiveC|BracesAndOperators|Dot",
+          "dark_cb": "C_Cpp_ObjectiveC|BracesAndOperators|Dot"
+        },
+        "OperatorSign": {
+          "light": "LanguageDefaults|BracesAndOperators|OperationSign",
+          "dark": "LanguageDefaults|BracesAndOperators|OperationSign",
+          "light_cb": "LanguageDefaults|BracesAndOperators|OperationSign",
+          "dark_cb": "LanguageDefaults|BracesAndOperators|OperationSign"
+        },
+        "Parentheses": {
+          "light": "C_Cpp_ObjectiveC|BracesAndOperators|Parentheses",
+          "dark": "C_Cpp_ObjectiveC|BracesAndOperators|Parentheses",
+          "light_cb": "C_Cpp_ObjectiveC|BracesAndOperators|Parentheses",
+          "dark_cb": "C_Cpp_ObjectiveC|BracesAndOperators|Parentheses"
+        },
+        "Semicolon": {
+          "light": "C_Cpp_ObjectiveC|BracesAndOperators|Semicolon",
+          "dark": "C_Cpp_ObjectiveC|BracesAndOperators|Semicolon",
+          "light_cb": "C_Cpp_ObjectiveC|BracesAndOperators|Semicolon",
+          "dark_cb": "C_Cpp_ObjectiveC|BracesAndOperators|Semicolon"
+        }
+      },
+      "Comments": {
+        "BlockComment": {
+          "light": "C_Cpp_ObjectiveC|Comments|BlockComment",
+          "dark": "C_Cpp_ObjectiveC|Comments|BlockComment",
+          "light_cb": "C_Cpp_ObjectiveC|Comments|BlockComment",
+          "dark_cb": "C_Cpp_ObjectiveC|Comments|BlockComment"
+        },
+        "DocComment": {
+          "Tag": {
+            "light": "LanguageDefaults|Comments|DocComment|Tag",
+            "dark": "LanguageDefaults|Comments|DocComment|Tag",
+            "light_cb": "LanguageDefaults|Comments|DocComment|Tag",
+            "dark_cb": "LanguageDefaults|Comments|DocComment|Tag"
+          },
+          "TagValue": {
+            "light": "LanguageDefaults|Comments|DocComment|TagValue",
+            "dark": "LanguageDefaults|Comments|DocComment|TagValue",
+            "light_cb": "LanguageDefaults|Comments|DocComment|TagValue",
+            "dark_cb": "LanguageDefaults|Comments|DocComment|TagValue"
+          },
+          "Text": {
+            "light": "LanguageDefaults|Comments|DocComment|Text",
+            "dark": "LanguageDefaults|Comments|DocComment|Text",
+            "light_cb": "LanguageDefaults|Comments|DocComment|Text",
+            "dark_cb": "LanguageDefaults|Comments|DocComment|Text"
+          }
+        },
+        "LineComment": {
+          "light": "C_Cpp_ObjectiveC|Comments|LineComment",
+          "dark": "C_Cpp_ObjectiveC|Comments|LineComment",
+          "light_cb": "C_Cpp_ObjectiveC|Comments|LineComment",
+          "dark_cb": "C_Cpp_ObjectiveC|Comments|LineComment"
+        },
+        "ShebangComment": {
+          "light": "C_Cpp_ObjectiveC|Comments|LineComment",
+          "dark": "C_Cpp_ObjectiveC|Comments|LineComment",
+          "light_cb": "C_Cpp_ObjectiveC|Comments|LineComment",
+          "dark_cb": "C_Cpp_ObjectiveC|Comments|LineComment"
+        }
+      },
+      "Functions": {
+        "FunctionAndMethodCall": {
+          "light": "C_Cpp_ObjectiveC|MethodCall",
+          "dark": "C_Cpp_ObjectiveC|MethodCall",
+          "light_cb": "C_Cpp_ObjectiveC|MethodCall",
+          "dark_cb": "C_Cpp_ObjectiveC|MethodCall"
+        },
+        "FunctionAndMethodDeclaration": {
+          "light": "C_Cpp_ObjectiveC|MethodDeclaration",
+          "dark": "C_Cpp_ObjectiveC|MethodDeclaration",
+          "light_cb": "C_Cpp_ObjectiveC|MethodDeclaration",
+          "dark_cb": "C_Cpp_ObjectiveC|MethodDeclaration"
+        },
+        "NestedFunctionCall": {
+          "light": "Swift|Functions|FunctionAndMethodCall",
+          "dark": "Swift|Functions|FunctionAndMethodCall",
+          "light_cb": "Swift|Functions|FunctionAndMethodCall",
+          "dark_cb": "Swift|Functions|FunctionAndMethodCall"
+        },
+        "NestedFunctionDeclaration": {
+          "light": "Swift|Functions|FunctionAndMethodDeclaration",
+          "dark": "Swift|Functions|FunctionAndMethodDeclaration",
+          "light_cb": "Swift|Functions|FunctionAndMethodDeclaration",
+          "dark_cb": "Swift|Functions|FunctionAndMethodDeclaration"
+        }
+      },
+      "Identifiers": {
+        "AnonymousClosureParameter": {
+          "light": "Swift|Identifiers|InlineClosureParameter",
+          "dark": "Swift|Identifiers|InlineClosureParameter",
+          "light_cb": "Swift|Identifiers|InlineClosureParameter",
+          "dark_cb": "Swift|Identifiers|InlineClosureParameter"
+        },
+        "ArgumentLabel": {
+          "light": "Swift|Functions|FunctionAndMethodCall",
+          "dark": "Swift|Functions|FunctionAndMethodCall",
+          "light_cb": "Swift|Functions|FunctionAndMethodCall",
+          "dark_cb": "Swift|Functions|FunctionAndMethodCall"
+        },
+        "EnumCaseValue": {
+          "light": "C_Cpp_ObjectiveC|EnumConstant",
+          "dark": "C_Cpp_ObjectiveC|EnumConstant",
+          "light_cb": "C_Cpp_ObjectiveC|EnumConstant",
+          "dark_cb": "C_Cpp_ObjectiveC|EnumConstant"
+        },
+        "ExternalParameterName": {
+          "light": "Swift|Functions|FunctionAndMethodDeclaration",
+          "dark": "Swift|Functions|FunctionAndMethodDeclaration",
+          "light_cb": "Swift|Functions|FunctionAndMethodDeclaration",
+          "dark_cb": "Swift|Functions|FunctionAndMethodDeclaration"
+        },
+        "GlobalVariable": {
+          "light": "C_Cpp_ObjectiveC|Variables|Global",
+          "dark": "C_Cpp_ObjectiveC|Variables|Global",
+          "light_cb": "C_Cpp_ObjectiveC|Variables|Global",
+          "dark_cb": "C_Cpp_ObjectiveC|Variables|Global"
+        },
+        "InlineClosureParameter": {
+          "light": "Swift|Identifiers|Parameter",
+          "dark": "Swift|Identifiers|Parameter",
+          "light_cb": "Swift|Identifiers|Parameter",
+          "dark_cb": "Swift|Identifiers|Parameter"
+        },
+        "LocalVariable": {
+          "light": "C_Cpp_ObjectiveC|Variables|Local",
+          "dark": "C_Cpp_ObjectiveC|Variables|Local",
+          "light_cb": "C_Cpp_ObjectiveC|Variables|Local",
+          "dark_cb": "C_Cpp_ObjectiveC|Variables|Local"
+        },
+        "Parameter": {
+          "light": "C_Cpp_ObjectiveC|Parameters|Parameter",
+          "dark": "C_Cpp_ObjectiveC|Parameters|Parameter",
+          "light_cb": "C_Cpp_ObjectiveC|Parameters|Parameter",
+          "dark_cb": "C_Cpp_ObjectiveC|Parameters|Parameter"
+        },
+        "Property": {
+          "light": "C_Cpp_ObjectiveC|Property",
+          "dark": "C_Cpp_ObjectiveC|Property",
+          "light_cb": "C_Cpp_ObjectiveC|Property",
+          "dark_cb": "C_Cpp_ObjectiveC|Property"
+        },
+        "TupleLabel": {
+          "light": "Swift|Identifiers|ArgumentLabel",
+          "dark": "Swift|Identifiers|ArgumentLabel",
+          "light_cb": "Swift|Identifiers|ArgumentLabel",
+          "dark_cb": "Swift|Identifiers|ArgumentLabel"
+        },
+        "TupleTypeLabel": {
+          "light": "Swift|Identifiers|Property",
+          "dark": "Swift|Identifiers|Property",
+          "light_cb": "Swift|Identifiers|Property",
+          "dark_cb": "Swift|Identifiers|Property"
+        },
+        "Wildcard": {
+          "light": "LanguageDefaults|Identifiers|Default",
+          "dark": "LanguageDefaults|Identifiers|Default",
+          "light_cb": "LanguageDefaults|Identifiers|Default",
+          "dark_cb": "LanguageDefaults|Identifiers|Default"
+        }
+      },
+      "InlineHints": {
+        "ErrorHint": {
+          "light": "LanguageDefaults|InlineHints|Parameters|Default",
+          "dark": "LanguageDefaults|InlineHints|Parameters|Default",
+          "light_cb": "LanguageDefaults|InlineHints|Parameters|Default",
+          "dark_cb": "LanguageDefaults|InlineHints|Parameters|Default"
+        },
+        "TypeHint": {
+          "light": "LanguageDefaults|InlineHints|Parameters|Default",
+          "dark": "LanguageDefaults|InlineHints|Parameters|Default",
+          "light_cb": "LanguageDefaults|InlineHints|Parameters|Default",
+          "dark_cb": "LanguageDefaults|InlineHints|Parameters|Default"
+        }
+      },
+      "KeywordsAndDirectives": {
+        "ConditionallyNotCompiledCode": {
+          "light": "C_Cpp_ObjectiveC|ConditionallyNonCompiledCode",
+          "dark": "C_Cpp_ObjectiveC|ConditionallyNonCompiledCode",
+          "light_cb": "C_Cpp_ObjectiveC|ConditionallyNonCompiledCode",
+          "dark_cb": "C_Cpp_ObjectiveC|ConditionallyNonCompiledCode"
+        },
+        "Directive": {
+          "light": "C_Cpp_ObjectiveC|Preprocessor|Directive",
+          "dark": "C_Cpp_ObjectiveC|Preprocessor|Directive",
+          "light_cb": "C_Cpp_ObjectiveC|Preprocessor|Directive",
+          "dark_cb": "C_Cpp_ObjectiveC|Preprocessor|Directive"
+        },
+        "DirectiveCondition": {
+          "light": "Swift|KeywordsAndDirectives|Directive",
+          "dark": "Swift|KeywordsAndDirectives|Directive",
+          "light_cb": "Swift|KeywordsAndDirectives|Directive",
+          "dark_cb": "Swift|KeywordsAndDirectives|Directive"
+        },
+        "DirectiveFlag": {
+          "light": "Swift|KeywordsAndDirectives|Directive",
+          "dark": "Swift|KeywordsAndDirectives|Directive",
+          "light_cb": "Swift|KeywordsAndDirectives|Directive",
+          "dark_cb": "Swift|KeywordsAndDirectives|Directive"
+        },
+        "Keyword": {
+          "light": "C_Cpp_ObjectiveC|Keyword",
+          "dark": "C_Cpp_ObjectiveC|Keyword",
+          "light_cb": "C_Cpp_ObjectiveC|Keyword",
+          "dark_cb": "C_Cpp_ObjectiveC|Keyword"
+        },
+        "SelfAndSuper": {
+          "light": "C_Cpp_ObjectiveC|Keywords|SelfSuperThis",
+          "dark": "C_Cpp_ObjectiveC|Keywords|SelfSuperThis",
+          "light_cb": "C_Cpp_ObjectiveC|Keywords|SelfSuperThis",
+          "dark_cb": "C_Cpp_ObjectiveC|Keywords|SelfSuperThis"
+        }
+      },
+      "Number": {
+        "light": "C_Cpp_ObjectiveC|Number",
+        "dark": "C_Cpp_ObjectiveC|Number",
+        "light_cb": "C_Cpp_ObjectiveC|Number",
+        "dark_cb": "C_Cpp_ObjectiveC|Number"
+      },
+      "RegularExpression": {
+        "light": "Swift|String|StringText",
+        "dark": "Swift|String|StringText",
+        "light_cb": "Swift|String|StringText",
+        "dark_cb": "Swift|String|StringText"
+      },
+      "String": {
+        "EscapeSequence": {
+          "Invalid": {
+            "light": "C_Cpp_ObjectiveC|String|EscapeSequence|Invalid",
+            "dark": "C_Cpp_ObjectiveC|String|EscapeSequence|Invalid",
+            "light_cb": "C_Cpp_ObjectiveC|String|EscapeSequence|Invalid",
+            "dark_cb": "C_Cpp_ObjectiveC|String|EscapeSequence|Invalid"
+          },
+          "Valid": {
+            "light": "C_Cpp_ObjectiveC|String|EscapeSequence|Valid",
+            "dark": "C_Cpp_ObjectiveC|String|EscapeSequence|Valid",
+            "light_cb": "C_Cpp_ObjectiveC|String|EscapeSequence|Valid",
+            "dark_cb": "C_Cpp_ObjectiveC|String|EscapeSequence|Valid"
+          }
+        },
+        "StringText": {
+          "light": "C_Cpp_ObjectiveC|String|StringText",
+          "dark": "C_Cpp_ObjectiveC|String|StringText",
+          "light_cb": "C_Cpp_ObjectiveC|String|StringText",
+          "dark_cb": "C_Cpp_ObjectiveC|String|StringText"
+        }
+      },
+      "Types": {
+        "Actor": {
+          "light": "Swift|Types|Class",
+          "dark": "Swift|Types|Class",
+          "light_cb": "Swift|Types|Class",
+          "dark_cb": "Swift|Types|Class"
+        },
+        "AssociatedType": {
+          "light": "Swift|Types|GenericParameter",
+          "dark": "Swift|Types|GenericParameter",
+          "light_cb": "Swift|Types|GenericParameter",
+          "dark_cb": "Swift|Types|GenericParameter"
+        },
+        "Class": {
+          "light": "C_Cpp_ObjectiveC|Class",
+          "dark": "C_Cpp_ObjectiveC|Class",
+          "light_cb": "C_Cpp_ObjectiveC|Class",
+          "dark_cb": "C_Cpp_ObjectiveC|Class"
+        },
+        "GenericParameter": {
+          "light": "Swift|Types|Class",
+          "dark": "Swift|Types|Class",
+          "light_cb": "Swift|Types|Class",
+          "dark_cb": "Swift|Types|Class"
+        },
+        "ModuleName": {
+          "light": "LanguageDefaults|Identifiers|Default",
+          "dark": "LanguageDefaults|Identifiers|Default",
+          "light_cb": "LanguageDefaults|Identifiers|Default",
+          "dark_cb": "LanguageDefaults|Identifiers|Default"
+        },
+        "Protocol": {
+          "light": "C_Cpp_ObjectiveC|Protocol",
+          "dark": "C_Cpp_ObjectiveC|Protocol",
+          "light_cb": "C_Cpp_ObjectiveC|Protocol",
+          "dark_cb": "C_Cpp_ObjectiveC|Protocol"
+        },
+        "StructAndEnum": {
+          "light": "C_Cpp_ObjectiveC|Struct_Enum_Union",
+          "dark": "C_Cpp_ObjectiveC|Struct_Enum_Union",
+          "light_cb": "C_Cpp_ObjectiveC|Struct_Enum_Union",
+          "dark_cb": "C_Cpp_ObjectiveC|Struct_Enum_Union"
+        },
+        "TypeAlias": {
+          "light": "C_Cpp_ObjectiveC|Typedef",
+          "dark": "C_Cpp_ObjectiveC|Typedef",
+          "light_cb": "C_Cpp_ObjectiveC|Typedef",
+          "dark_cb": "C_Cpp_ObjectiveC|Typedef"
+        }
+      }
+    },
     "TOML": {
       "Boolean": {
         "light": "LanguageDefaults|Identifiers|PredefinedSymbol",
@@ -19367,30 +20863,30 @@
         },
         "BlockHoveredBackgroundGradientEnd": {
           "light": {
-            "bg": "#000000"
+            "bg": "#FCFCFC"
           },
           "dark": {
-            "bg": "#FFFFFF"
+            "bg": "#1C1D1F"
           },
           "light_cb": {
-            "bg": "#000000"
+            "bg": "#FCFCFC"
           },
           "dark_cb": {
-            "bg": "#FFFFFF"
+            "bg": "#1C1D1F"
           }
         },
         "BlockHoveredBackgroundGradientStart": {
           "light": {
-            "bg": "#000000"
+            "bg": "#F5F5F5"
           },
           "dark": {
-            "bg": "#FFFFFF"
+            "bg": "#222325"
           },
           "light_cb": {
-            "bg": "#000000"
+            "bg": "#F5F5F5"
           },
           "dark_cb": {
-            "bg": "#FFFFFF"
+            "bg": "#222325"
           }
         },
         "Blue": {
@@ -20914,16 +22410,16 @@
       },
       "Comments": {
         "light": {
-          "fg": "#000000"
+          "fg": "#6B6B6B"
         },
         "dark": {
-          "fg": "#CDCFD2"
+          "fg": "#737577"
         },
         "light_cb": {
-          "fg": "#000000"
+          "fg": "#6B6B6B"
         },
         "dark_cb": {
-          "fg": "#CDCFD2"
+          "fg": "#737577"
         }
       },
       "CriticalComments": {
@@ -20942,16 +22438,16 @@
       },
       "DocComments": {
         "light": {
-          "fg": "#000000"
+          "fg": "#6B6B6B"
         },
         "dark": {
-          "fg": "#99B3CC"
+          "fg": "#7F94A9"
         },
         "light_cb": {
-          "fg": "#000000"
+          "fg": "#6B6B6B"
         },
         "dark_cb": {
-          "fg": "#99B3CC"
+          "fg": "#7F94A9"
         }
       },
       "EngineTypeVector3Node3D": {
@@ -21794,30 +23290,30 @@
         "VerticalScrollbar": {
           "Thumb": {
             "light": {
-              "bg": "#888899"
+              "bg": "#E1E1E5"
             },
             "dark": {
-              "bg": "#888899"
+              "bg": "#35363B"
             },
             "light_cb": {
-              "bg": "#888899"
+              "bg": "#E1E1E5"
             },
             "dark_cb": {
-              "bg": "#888899"
+              "bg": "#35363B"
             }
           },
           "ThumbWhileScrolling": {
             "light": {
-              "bg": "#888899"
+              "bg": "#E1E1E5"
             },
             "dark": {
-              "bg": "#888899"
+              "bg": "#35363B"
             },
             "light_cb": {
-              "bg": "#888899"
+              "bg": "#E1E1E5"
             },
             "dark_cb": {
-              "bg": "#888899"
+              "bg": "#35363B"
             }
           }
         }
@@ -23723,7 +25219,7 @@
             },
             "dark": {
               "fg": "#9DA0A8",
-              "sp": "#FFFFFF"
+              "sp": "#474849"
             },
             "light_cb": {
               "fg": "#9DA0A8",
@@ -23731,7 +25227,7 @@
             },
             "dark_cb": {
               "fg": "#9DA0A8",
-              "sp": "#FFFFFF"
+              "sp": "#474849"
             }
           },
           "Focused": {
@@ -23741,7 +25237,7 @@
             },
             "dark": {
               "fg": "#9DA0A8",
-              "sp": "#FFFFFF"
+              "sp": "#636465"
             },
             "light_cb": {
               "fg": "#9DA0A8",
@@ -23749,7 +25245,7 @@
             },
             "dark_cb": {
               "fg": "#9DA0A8",
-              "sp": "#FFFFFF"
+              "sp": "#636465"
             }
           },
           "Hovered": {
@@ -23759,7 +25255,7 @@
             },
             "dark": {
               "fg": "#9DA0A8",
-              "sp": "#FFFFFF"
+              "sp": "#636465"
             },
             "light_cb": {
               "fg": "#9DA0A8",
@@ -23767,7 +25263,7 @@
             },
             "dark_cb": {
               "fg": "#9DA0A8",
-              "sp": "#FFFFFF"
+              "sp": "#636465"
             }
           }
         },
@@ -23830,44 +25326,44 @@
         "RefactoringOptions": {
           "Default": {
             "light": {
-              "bg": "#D8D8D8"
+              "bg": "#EAEAEA"
             },
             "dark": {
-              "bg": "#595959"
+              "bg": "#3C3D3D"
             },
             "light_cb": {
-              "bg": "#D8D8D8"
+              "bg": "#EAEAEA"
             },
             "dark_cb": {
-              "bg": "#595959"
+              "bg": "#3C3D3D"
             }
           },
           "Focused": {
             "light": {
-              "bg": "#B3B3B3"
+              "bg": "#D5D5D5"
             },
             "dark": {
-              "bg": "#737373"
+              "bg": "#4A4B4C"
             },
             "light_cb": {
-              "bg": "#B3B3B3"
+              "bg": "#D5D5D5"
             },
             "dark_cb": {
-              "bg": "#737373"
+              "bg": "#4A4B4C"
             }
           },
           "Hovered": {
             "light": {
-              "bg": "#B3B3B3"
+              "bg": "#D5D5D5"
             },
             "dark": {
-              "bg": "#737373"
+              "bg": "#4A4B4C"
             },
             "light_cb": {
-              "bg": "#B3B3B3"
+              "bg": "#D5D5D5"
             },
             "dark_cb": {
-              "bg": "#737373"
+              "bg": "#4A4B4C"
             }
           }
         },

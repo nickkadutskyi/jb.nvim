@@ -1,5 +1,6 @@
 package com.nickkadutskyi.jb.palette
 
+import java.awt.Color
 import kotlin.test.Test
 import kotlin.test.assertEquals
 import kotlin.test.assertNull
@@ -9,6 +10,22 @@ class AttributeConverterTest {
     @Test
     fun hexIsUppercaseWithHash() {
         assertEquals("#0A1B2C", AttributeConverter.hexColor(10, 27, 44))
+    }
+
+    @Test
+    fun flattensTransparentColorAgainstBackground() {
+        assertEquals(
+            "#CCCCCC",
+            AttributeConverter.flattenedHexColor(Color(0, 0, 0, 51), Color.WHITE),
+        )
+    }
+
+    @Test
+    fun preservesOpaqueColor() {
+        assertEquals(
+            "#0A1B2C",
+            AttributeConverter.flattenedHexColor(Color(10, 27, 44), Color.WHITE),
+        )
     }
 
     @Test

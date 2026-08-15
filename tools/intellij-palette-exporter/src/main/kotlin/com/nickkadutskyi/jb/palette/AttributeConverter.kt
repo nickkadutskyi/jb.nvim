@@ -1,8 +1,24 @@
 package com.nickkadutskyi.jb.palette
 
+import java.awt.Color
+import kotlin.math.roundToInt
+
 object AttributeConverter {
     fun hexColor(red: Int, green: Int, blue: Int): String =
         "#%02X%02X%02X".format(red, green, blue)
+
+    fun flattenedHexColor(color: Color, background: Color): String {
+        if (color.alpha == 255) return hexColor(color.red, color.green, color.blue)
+        val opacity = color.alpha / 255.0
+        fun blend(foreground: Int, behind: Int): Int =
+            (foreground * opacity + behind * (1.0 - opacity)).roundToInt()
+
+        return hexColor(
+            blend(color.red, background.red),
+            blend(color.green, background.green),
+            blend(color.blue, background.blue),
+        )
+    }
 
     fun effectFromName(name: String?): PaletteEffect? = when (name) {
         "LINE_UNDERSCORE" -> PaletteEffect.UNDERLINE

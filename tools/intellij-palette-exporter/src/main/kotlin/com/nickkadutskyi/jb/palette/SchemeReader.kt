@@ -6,7 +6,6 @@ import com.intellij.openapi.editor.colors.TextAttributesKey
 import com.intellij.openapi.editor.colors.impl.AbstractColorsScheme
 import com.intellij.openapi.editor.markup.TextAttributes
 import com.intellij.openapi.options.colors.ColorDescriptor
-import com.intellij.ui.ColorUtil
 import java.awt.Color
 import java.awt.Font
 
@@ -15,6 +14,8 @@ internal class SchemeReader(
     private val attributePaths: Map<TextAttributesKey, String>,
     private val colorPaths: Map<ColorKey, String>,
 ) {
+    private val defaultTextBackground = resolveDefaultTextBackground()
+
     fun readAttribute(key: TextAttributesKey): Pair<ProfileValue, String?>? {
         return try {
             val direct = directAttributes(key)
@@ -105,5 +106,12 @@ internal class SchemeReader(
         )
     }
 
-    private fun toHex(color: Color): String = "#" + ColorUtil.toHex(color).uppercase()
+    private fun resolveDefaultTextBackground(): Color {
+        val defaultTextPath = JsonNames.toPalettePath(listOf(GENERAL, "Text", "DefaultText"))
+        val key = attributePaths.entries.firstOrNull { it.value == defaultTextPath }?.key
+        return key?.let { scheme.getAttributes(it, true)?.backgroundColor } ?: scheme.defaultBackground
+    }
+
+    private fun toHex(color: Color): String =
+        AttributeConverter.flattenedHexColor(color, defaultTextBackground)
 }
