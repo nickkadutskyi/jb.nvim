@@ -1,19 +1,24 @@
 ;; extends
 
-; Elevates priorities for everything to override JS highlights when in blade files in script tag
+;; TODO: tree-sitter-blade uses this for its php parts but it
+;;       might fail if Blade embeds php code into <script> tag
+;;       becasue php code will be interpreted as javascript
+;;       Opened issue to fix this: https://github.com/EmranMR/tree-sitter-blade/issues/136
 
 ([
   (php_tag)
-  ; TODO: find a way to add this only if nvim-treesitter is from `main` branch
-  ; (php_end_tag)
-] @tag
-  (#set! priority 101))
+  (php_end_tag)
+] @tag)
 
-; Builtin functions
+; Language constructs, not regular builtin functions
 (function_call_expression
   function: (name) @function.builtin
-  (#match? @function.builtin "^(isset|empty|unset|array|list|echo|print|die|exit|eval|include|include_once|require|require_once)$")
-  (#set! priority 101))
+  (#match? @function.builtin "^(isset|empty|unset|array|list|echo|print|die|exit|eval|include|include_once|require|require_once)$"))
+
+; Doc comments
+; ((comment) @comment.documentation
+;   (#match? @comment.documentation "^/\\*\\*")
+;   (#set! priority 101))
 
 ; Named arguments
 ((argument
@@ -34,10 +39,6 @@
     (variable_name) @property.static)
   (#set! priority 101))
 
-; Doc comments
-((comment) @comment.documentation
-  (#match? @comment.documentation "^/\\*\\*")
-  (#set! priority 101))
 
 ; Constants
 (const_declaration

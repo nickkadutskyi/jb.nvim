@@ -18926,6 +18926,24 @@
       }
     },
     "Custom": {
+      "General": {
+        "Text": {
+          "Whitespaces": {
+            "light": {
+              "fg": "#CACBCE"
+            },
+            "dark": {
+              "fg": "#404246"
+            },
+            "light_cb": {
+              "fg": "#CACBCE"
+            },
+            "dark_cb": {
+              "fg": "#404246"
+            }
+          }
+        }
+      },
       "Completion": {
         "Kind": {
           "light": {

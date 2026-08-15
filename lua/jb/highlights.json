@@ -151,8 +151,8 @@
       "underline": true
     },
     "WarningMsg": "ConsoleColors|LogConsole|Warning",
-    "Whitespace": "General|Text|Whitespaces",
-    "WhiteSpace": "General|Text|Whitespaces",
+    "Whitespace": "Custom|General|Text|Whitespaces",
+    "WhiteSpace": "Custom|General|Text|Whitespaces",
     "WildMenu": "Pmenu",
     "WinBar": "StatusLine",
     "WinBarNC": "StatusLine"
@@ -1138,6 +1138,7 @@
     }
   },
   "Treesitter.PHP": {
+    "@comment.documentation.php": "PHP|PHPDoc|Text",
     "@tag.php_only": "PHP|PHPCode|Tags",
     "@variable.builtin.php": "PHP|Identifiers|ThisVariable",
     "@variable.builtin.php_only": "PHP|Identifiers|ThisVariable",
@@ -1159,6 +1160,12 @@
     "@constant.php": "PHP|Identifiers|Constant",
     "@constant.php_only": "PHP|Identifiers|Constant",
     "@tag.php": "PHP|PHPCode|Tags"
+  },
+  "Semantic.PHP": {
+    "@lsp.type.parameter.php": "PHP|FunctionsAndMethods|Parameter",
+    "@lsp.type.keyword.php": "LanguageDefaults|Comments|DocComment|Tag",
+    "@lsp.type.comment.php": "LanguageDefaults|Comments|DocComment|Tag",
+    "@lsp.typemod.variable.defaultLibrary.php": "PHP|Identifiers|ThisVariable"
   },
   "Plugin.lewis6991/gitsigns.nvim": {
     "GitSignsStagedDelete": {
@@ -1457,7 +1464,7 @@
     "IblIndent": {
       "fg": "General|Editor|Guides|IndentGuide.bg"
     },
-    "IblWhitespace": []
+    "IblWhitespace": null
   },
   "Plugin.Saghen/blink.cmp": {
     "BlinkCmpMenu": "Pmenu",
@@ -1982,12 +1989,6 @@
     "@character.special.css": "CSS|Identifier",
     "@constant.css": "CSS|IdSelector"
   },
-  "Semantic.PHP": {
-    "@lsp.type.parameter.php": "PHP|FunctionsAndMethods|Parameter",
-    "@lsp.type.keyword.php": "LanguageDefaults|Comments|DocComment|Tag",
-    "@lsp.type.comment.php": "LanguageDefaults|Comments|DocComment|Tag",
-    "@lsp.typemod.variable.defaultLibrary.php": "PHP|Identifiers|ThisVariable"
-  },
   "Plugin.rcarriga/nvim-notify": {
     "NotifyWARNTitle": {
       "fg": "General|Text|DefaultText",
@@ -2083,6 +2084,7 @@
     "@lsp.type.method.lua": "Custom|Legacy|Lua|ClassMembers|StaticMethod"
   },
   "Treesitter.PHPDoc": {
+    "@comment.documentation.phpdoc": "PHP|PHPDoc|Text",
     "@attribute.phpdoc": "LanguageDefaults|Comments|DocComment|Tag",
     "@keyword.phpdoc": null,
     "@type.template.phpdoc": "PHP|PHPDoc|TemplateType",

@@ -1,9 +1,4 @@
 ;; extends
-[
-  (php_tag)
-  ; master branch doesn't have php_end_tag
-  ; (php_end_tag)
-] @tag
 
 ; NOTE: this creates "Index out of bounds" issue in long PHP files
 ; so currently commented this out
@@ -19,11 +14,6 @@
      (#lua-match? @tag "%?>")
      (#offset! @tag 0 0 0 1)
    ))
-
-; Adds builtin functions to the function scope
-(function_call_expression
-  function: (name) @function.builtin
-  (#match? @function.builtin "^(isset|empty|unset|array|list|echo|print|die|exit|eval|include|include_once|require|require_once)$"))
 
 ; Sets `$this` as a @variable to prioritize over @variable.builtin
 ((variable_name) @variable
@@ -44,10 +34,6 @@
   (static_modifier)
   (property_element
     (variable_name) @property.static))
-
-; Capture doc comments (/** ... */)
-((comment) @comment.documentation
-  (#match? @comment.documentation "^/\\*\\*"))
 
 ; Redefined @constant to avoid matching `_GET` part in `$_GET` as a constant
 ; and fixes `Type::A()` where `A` is captured as a constant
