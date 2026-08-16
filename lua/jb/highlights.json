@@ -178,41 +178,44 @@
       "fg": "General|Text|DefaultText"
     },
     "DiagnosticHint": {
-      "fg": "General|ErrorsAndWarnings|UnusedCode"
+      "fg": "General|ErrorsAndWarnings|WeakWarning.sp"
     },
     "DiagnosticInfo": {
-      "fg": "General|ErrorsAndWarnings|WeakWarning.sp"
+      "fg": "General|ErrorsAndWarnings|UnusedCode"
     },
     "DiagnosticOk": {
       "fg": "ConsoleColors|Console|UserInput"
     },
     "DiagnosticSignError": {
-      "fg": "Custom|Legacy|General|ErrorsAndWarnings|Error|Icon"
+      "fg": "Custom|General|ErrorsAndWarnings|Error|Icon"
     },
     "DiagnosticSignHint": {
-      "fg": "Appearance|Notifications|IconInfo"
+      "fg": "Custom|General|ErrorsAndWarnings|WeakWarning|Icon"
     },
     "DiagnosticSignInfo": {
-      "fg": "Custom|Legacy|General|ErrorsAndWarnings|WeakWarning|Icon"
+      "fg": "Appearance|Notifications|IconInfo"
     },
     "DiagnosticSignOk": {
       "fg": "Custom|Legacy|Custom|Settings|Plugins|AdditionalInfo|VerifiedOrg"
     },
     "DiagnosticSignWarn": {
-      "fg": "Custom|Legacy|General|ErrorsAndWarnings|Warning|Icon"
+      "fg": "Custom|General|ErrorsAndWarnings|Warning|Icon"
     },
     "DiagnosticUnderlineError": "General|ErrorsAndWarnings|Error",
-    "DiagnosticUnderlineHint": {
+    "DiagnosticUnderlineHint": "General|ErrorsAndWarnings|WeakWarning",
+    "DiagnosticUnderlineInfo": {
       "sp": "General|ErrorsAndWarnings|UnusedCode.fg",
       "underdotted": true
     },
-    "DiagnosticUnderlineInfo": "General|ErrorsAndWarnings|WeakWarning",
     "DiagnosticUnderlineOk": {
       "sp": "Custom|Legacy|Custom|Settings|Plugins|AdditionalInfo|VerifiedOrg.fg",
       "underline": true
     },
     "DiagnosticUnderlineWarn": "General|ErrorsAndWarnings|Warning",
-    "DiagnosticUnnecessary": "General|ErrorsAndWarnings|UnusedCode",
+    "DiagnosticUnnecessary": {
+      "fg": "General|ErrorsAndWarnings|UnusedCode",
+      "nocombine": true
+    },
     "DiagnosticVirtualTextError": "",
     "DiagnosticVirtualTextHint": "",
     "DiagnosticVirtualTextInfo": "",
@@ -309,7 +312,7 @@
   },
   "Builtin.qf": {
     "qfError": {
-      "fg": "Custom|Legacy|General|ErrorsAndWarnings|Error|Icon"
+      "fg": "Custom|General|ErrorsAndWarnings|Error|Icon"
     },
     "qfFileBase": {
       "fg": "General|Text|DefaultText",
@@ -321,7 +324,7 @@
     },
     "qfLineNr": "General|ErrorsAndWarnings|UnusedCode",
     "qfNote": {
-      "fg": "Custom|Legacy|General|ErrorsAndWarnings|WeakWarning|Icon"
+      "fg": "Custom|General|ErrorsAndWarnings|WeakWarning|Icon"
     },
     "qfSeparator1": {
       "fg": "General|Text|DefaultText.bg"
@@ -335,7 +338,7 @@
     },
     "qfType": null,
     "qfWarning": {
-      "fg": "Custom|Legacy|General|ErrorsAndWarnings|Warning|Icon"
+      "fg": "Custom|General|ErrorsAndWarnings|Warning|Icon"
     }
   },
   "Custom": {
@@ -799,7 +802,7 @@
   },
   "Plugin.b0o/incline.nvim": {
     "InclineNormal": {
-      "fg": "Custom|Legacy|General|ErrorsAndWarnings|IconsText"
+      "fg": "Custom|General|ErrorsAndWarnings|IconsText"
     },
     "InclineNormalNC": "InclineNormal"
   },
@@ -1428,7 +1431,7 @@
     "IblScope": {
       "fg": "General|Editor|Guides|IndentGuideSelected.bg"
     },
-    "IblWhitespace": "General|Text|Whitespaces"
+    "IblWhitespace": "Custom|General|Text|Whitespaces"
   },
   "Plugin.nickkadutskyi/notifications.nvim": {
     "NotificationFloatBackground": "Appearance|Notifications|Background",
@@ -1849,19 +1852,26 @@
     "@lsp.type.struct": "LanguageServer|StructType",
     "@lsp.type.type": "LanguageServer|Type",
     "@lsp.type.typeParameter": "LanguageServer|TypeParameter",
-    "@lsp.type.variables": "LanguageServer|Variables|Variable",
+    "@lsp.type.variable": "LanguageServer|Variables|Variable",
     "@lsp.typemod.class.declaration": "LanguageServer|Classes|ClassDeclaration",
     "@lsp.typemod.function.declaration": "LanguageServer|Functions|FunctionDeclaration",
     "@lsp.typemod.function.defaultLibrary": "LanguageServer|Functions|DefaultLibrary",
-    "@lsp.typemod.keyword.documentation": "LanguageDefaults|Comments|DocComment|Tag",
+    "@lsp.typemod.keyword.documentation": "LanguageServer|Keyword",
     "@lsp.typemod.method.declaration": "LanguageServer|Methods|MethodDeclaration",
     "@lsp.typemod.method.static": "LanguageServer|Methods|StaticMethod",
     "@lsp.typemod.namespace.declaration": "LanguageServer|Namespaces|NamespaceDeclaration",
     "@lsp.typemod.property.readonly": "LanguageServer|Properties|ReadonlyProperty",
     "@lsp.typemod.property.static": "LanguageServer|Properties|StaticProperty",
     "@lsp.typemod.property.static.readonly": "LanguageServer|Properties|StaticReadonlyProperty",
-    "@lsp.typemod.variable.readonly": "LanguageServer|Variables|ReadonlyVariable",
-    "@lsp.typemod.variable.static": "LanguageServer|Variables|StaticVariable",
+    "@custom.typemod.variable.declaration": "LanguageServer|Variables|Variable",
+    "@lsp.typemod.variable.readonly": {
+      "fg": "LanguageServer|Variables|ReadonlyVariable",
+      "nocombine": true
+    },
+    "@lsp.typemod.variable.static": {
+      "fg": "LanguageServer|Variables|StaticVariable",
+      "nocombine": true
+    },
     "@lsp.typemod.variable.static.readonly": "LanguageServer|Variables|StaticReadonlyVariable"
   },
   "Semantic.Java": {
@@ -1879,19 +1889,6 @@
     "@lsp.type.variable.javascript": null,
     "@lsp.typemod.class.defaultLibrary.javascript": "JavaScript|Identifiers|GlobalVariable",
     "@lsp.typemod.property.static.javascript": "LanguageDefaults|Classes|StaticField"
-  },
-  "Semantic.Lua": {
-    "@lsp.mod.defaultLibrary.lua": "Custom|Legacy|Lua|StdApi",
-    "@lsp.mod.global.lua": "Custom|Legacy|Lua|Variables|GlobalVariable",
-    "@lsp.type.comment.lua": null,
-    "@lsp.type.function.lua": "Custom|Legacy|Lua|Variables|LocalFunction",
-    "@lsp.type.method.lua": "Custom|Legacy|Lua|ClassMembers|StaticMethod",
-    "@lsp.type.parameter.lua": "Custom|Legacy|Lua|Variables|Parameter",
-    "@lsp.type.property.lua": "Custom|Legacy|Lua|ClassMembers|Field",
-    "@lsp.type.variable.lua": null,
-    "@lsp.typemod.function.declaration.lua": "Custom|Legacy|Lua|Variables|LocalFunction",
-    "@lsp.typemod.function.global.lua": "Custom|Legacy|Lua|Variables|GlobalFunction",
-    "@lsp.typemod.parameter.declaration.lua": "Custom|Legacy|Lua|Variables|Parameter"
   },
   "Semantic.Nix": {
     "@lsp.mod.builtin.nix": null,
@@ -2060,6 +2057,7 @@
     "@property.static": "LanguageDefaults|Classes|StaticField",
     "@punctuation": "Custom|Legacy|LanguageDefaults|BracesAndOperators|Default",
     "@punctuation.special": "Custom|Legacy|LanguageDefaults|BracesAndOperators|Default",
+    "@string.special.url": "General|Hyperlinks|Inactive",
     "@type": "LanguageDefaults|Classes|ClassName",
     "@type.builtin": "LanguageDefaults|Keyword",
     "@variable": "LanguageDefaults|Identifiers|LocalVariable",
@@ -2186,6 +2184,8 @@
     "@punctuation.bracket.latex": "LaTeX|Brackets"
   },
   "Treesitter.Lua": {
+    "@keyword.lua": "LuaLSP|Keyword",
+    "@constant.lua": null,
     "@_method.lua": "Custom|Legacy|Lua|StdApi",
     "@boolean.lua": "Custom|Legacy|Lua|NilTrueFalse",
     "@constant.builtin.lua": "Custom|Legacy|Lua|NilTrueFalse",
@@ -2193,15 +2193,16 @@
     "@function.builtin.lua": "Custom|Legacy|Lua|StdApi",
     "@function.call.lua": "Custom|Legacy|Lua|Variables|LocalFunction",
     "@function.lua": "Custom|Legacy|Lua|Variables|LocalFunction",
-    "@keyword.luadoc": "Custom|Legacy|Lua|Comments|EmmyDoc|Tag",
-    "@keyword.return.luadoc": "Custom|Legacy|Lua|Comments|EmmyDoc|Tag",
     "@module.builtin.lua": "Custom|Legacy|Lua|StdApi",
     "@property.lua": "LanguageDefaults|Identifiers|Default",
-    "@punctuation.special.luadoc": "Custom|Legacy|LanguageDefaults|BracesAndOperators|Default",
     "@variable.builtin.lua": "@module.builtin.lua",
     "@variable.member.lua": "Custom|Legacy|Lua|ClassMembers|Field",
+    "@variable.parameter.lua": "Custom|Legacy|Lua|Variables|Parameter"
+  },
+  "Treesitter.Luadoc": {
+    "@keyword.return.luadoc": "Custom|Legacy|Lua|Comments|EmmyDoc|Tag",
+    "@punctuation.special.luadoc": "Custom|Legacy|LanguageDefaults|BracesAndOperators|Default",
     "@variable.member.luadoc": "Custom|Legacy|Lua|Comments|EmmyDoc|TagValue",
-    "@variable.parameter.lua": "Custom|Legacy|Lua|Variables|Parameter",
     "@variable.parameter.luadoc": "LanguageDefaults|Comments|DocComment|TagValue"
   },
   "Treesitter.Make": {

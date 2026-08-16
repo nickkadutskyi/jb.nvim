@@ -11,16 +11,16 @@ I.cache = { variants = {} }
 M.diagnostic = {
     ERROR = "󰀨",
     WARN = "",
-    INFO = "", -- Weak Warning
-    HINT = "󰋼", -- Consideration
+    INFO = "󰋼", -- Consideration
+    HINT = "", -- Weak Warning
     [1] = "󰀨",
     [2] = "",
-    [3] = "",
-    [4] = "󰋼",
+    [3] = "󰋼", -- Consideration
+    [4] = "", -- Weak Warning
     E = "󰀨",
     W = "",
-    I = "",
-    N = "󰋼",
+    I = "󰋼", -- Consideration
+    N = "", -- Weak Warning
 }
 
 -- Even though colors help to distinguish between different types of icons,

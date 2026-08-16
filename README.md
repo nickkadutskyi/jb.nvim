@@ -30,45 +30,45 @@
 <details>
 <summary>Supported Languages</summary>
 
-| Language      | Syntax | Treesitter                     | Semantic     |
-|---------------|--------|--------------------------------|--------------|
-| .ignore Files | n/a    | ✅ (gitignore)                 | n/a          |
-| ApacheConfig  | ✅     | n/a                            | n/a          |
-| BibTeX        | ⚠️     | ✅ (bibtex)                    | n/a          |
-| Blade         | n/a    | ✅ (EmranMR/tree-sitter-blade) | n/a          |
-| C/C++         | ⚠️     | ✅ (c,cpp)                     | n/a          |
-| CSS           | ⚠️     | ✅ (css)                       | n/a          |
-| EditorConfig  | n/a    | ✅ (editorconfig)              | n/a          |
-| gitcommit     | ⚠️     | ✅ (gitcommit)                 | n/a          |
-| Go            | ⚠️     | ✅ (go)                        | ✅ (gopls)   |
-| Go Template   | ⚠️     | ✅ (gotmpl)                    | n/a          |
-| GraphQL       | ⚠️     | ✅ (graphql)                   | n/a          |
-| HTML          | ⚠️     | ✅ (html)                      | n/a          |
-| Ini           | ⚠️     | ✅ (ini)                       | n/a          |
-| Java          | ⚠️     | ✅ (java, javadoc)             | ✅ (jdtls)   |
-| JavaScript    | ⚠️     | ✅ (javascript)                | ✅ (ts_ls)   |
-| jjdescription | ⚠️     | ✅ (jjdescription)             | n/a          |
-| JSON          | ✅     | ✅ (json)                      | n/a          |
-| LaTeX         | ⚠️     | ✅ (latex)                     | n/a          |
-| Lua           | ⚠️     | ✅ (lua,luadoc)                | ✅ (lua_ls)  |
-| Markdown      | ⚠️     | ✅ (markdown,markdown_inline)  | n/a          |
-| Nix           | ⚠️     | ✅ (nix)                       | ✅ (nil_lsp) |
-| PHP           | ⚠️     | ✅ (php,phpdoc)                | n/a          |
-| Python        | ⚠️     | ✅ (python)                    | n/a          |
-| RegExp        | ⚠️     | ✅ (regex)                     | n/a          |
-| Ruby          | ⚠️     | ✅ (ruby)                      | ✅ (ruby_lsp)|
-| Rust          | ⚠️     | ✅ (rust)                      | n/a          |
-| Sass/SCSS     | ⚠️     | ✅ (scss)                      | n/a          |
-| Scala         | ⚠️     | ✅ (scala)                     | n/a          |
-| Shell Script  | ⚠️     | ✅ (bash)                      | n/a          |
-| TOML          | ⚠️     | ✅ (toml)                      | n/a          |
-| Twig          | n/a    | ✅ (twig)                      | n/a          |
-| TypeScript    | ⚠️     | ✅ (typescript)                | ✅ (ts_ls)   |
-| TSX/JSX       | ⚠️     | ✅ (tsx)                       | ✅ (ts_ls)   |
-| XML           | ⚠️     | ✅ (xml)                       | n/a          |
-| Quickfix      | ✅     | n/a                            | n/a          |
-| YAML          | ⚠️     | ✅ (yaml)                      | n/a          |
-| Zig           | ⚠️     | ✅ (zig)                       | ✅ (zls)     |
+| Language      | Syntax | Treesitter                     | Semantic        |
+|---------------|--------|--------------------------------|-----------------|
+| .ignore Files | n/a    | ✅ (gitignore)                 | n/a             |
+| ApacheConfig  | ✅     | n/a                            | n/a             |
+| BibTeX        | ⚠️     | ✅ (bibtex)                    | n/a             |
+| Blade         | n/a    | ✅ (EmranMR/tree-sitter-blade) | n/a             |
+| C/C++         | ⚠️     | ✅ (c,cpp)                     | n/a             |
+| CSS           | ⚠️     | ✅ (css)                       | n/a             |
+| EditorConfig  | n/a    | ✅ (editorconfig)              | n/a             |
+| gitcommit     | ⚠️     | ✅ (gitcommit)                 | n/a             |
+| Go            | ⚠️     | ✅ (go)                        | ✅ (gopls)      |
+| Go Template   | ⚠️     | ✅ (gotmpl)                    | n/a             |
+| GraphQL       | ⚠️     | ✅ (graphql)                   | n/a             |
+| HTML          | ⚠️     | ✅ (html)                      | n/a             |
+| Ini           | ⚠️     | ✅ (ini)                       | n/a             |
+| Java          | ⚠️     | ✅ (java, javadoc)             | ✅ (jdtls)      |
+| JavaScript    | ⚠️     | ✅ (javascript)                | ✅ (ts_ls)      |
+| jjdescription | ⚠️     | ✅ (jjdescription)             | n/a             |
+| JSON          | ✅     | ✅ (json)                      | n/a             |
+| LaTeX         | ⚠️     | ✅ (latex)                     | n/a             |
+| Lua           | ⚠️     | ✅ (lua,luadoc)                | ✅ (emmylua_ls) |
+| Markdown      | ⚠️     | ✅ (markdown,markdown_inline)  | n/a             |
+| Nix           | ⚠️     | ✅ (nix)                       | ✅ (nil_lsp)    |
+| PHP           | ⚠️     | ✅ (php,phpdoc)                | n/a             |
+| Python        | ⚠️     | ✅ (python)                    | n/a             |
+| RegExp        | ⚠️     | ✅ (regex)                     | n/a             |
+| Ruby          | ⚠️     | ✅ (ruby)                      | ✅ (ruby_lsp)   |
+| Rust          | ⚠️     | ✅ (rust)                      | n/a             |
+| Sass/SCSS     | ⚠️     | ✅ (scss)                      | n/a             |
+| Scala         | ⚠️     | ✅ (scala)                     | n/a             |
+| Shell Script  | ⚠️     | ✅ (bash)                      | n/a             |
+| TOML          | ⚠️     | ✅ (toml)                      | n/a             |
+| Twig          | n/a    | ✅ (twig)                      | n/a             |
+| TypeScript    | ⚠️     | ✅ (typescript)                | ✅ (ts_ls)      |
+| TSX/JSX       | ⚠️     | ✅ (tsx)                       | ✅ (ts_ls)      |
+| XML           | ⚠️     | ✅ (xml)                       | n/a             |
+| Quickfix      | ✅     | n/a                            | n/a             |
+| YAML          | ⚠️     | ✅ (yaml)                      | n/a             |
+| Zig           | ⚠️     | ✅ (zig)                       | ✅ (zls)        |
 
 </details>
 

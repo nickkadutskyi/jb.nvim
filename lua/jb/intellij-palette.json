@@ -18942,6 +18942,88 @@
               "fg": "#404246"
             }
           }
+        },
+        "ErrorsAndWarnings": {
+          "Error": {
+            "Icon": {
+              "light": {
+                "fg": "#C1625A"
+              },
+              "dark": {
+                "fg": "#C1625A"
+              },
+              "light_cb": {
+                "fg": "#C1625A"
+              },
+              "dark_cb": {
+                "fg": "#C1625A"
+              }
+            }
+          },
+          "IconsText": {
+            "light": {
+              "fg": "#6E6E6E"
+            },
+            "dark": {
+              "fg": "#BBBBBB"
+            },
+            "light_cb": {
+              "fg": "#6E6E6E"
+            },
+            "dark_cb": {
+              "fg": "#BBBBBB"
+            }
+          },
+          "Warning": {
+            "Default": {
+              "light": {
+                "bg": "#FCF4D4",
+                "sp": "#F2C55C"
+              },
+              "dark": {
+                "sp": "#F2C55C",
+                "undercurl": true
+              },
+              "light_cb": {
+                "bg": "#FCF4D4",
+                "sp": "#F2C55C"
+              },
+              "dark_cb": {
+                "sp": "#F2C55C",
+                "undercurl": true
+              }
+            },
+            "Icon": {
+              "light": {
+                "fg": "#EAC168"
+              },
+              "dark": {
+                "fg": "#BC9F57"
+              },
+              "light_cb": {
+                "fg": "#EAC168"
+              },
+              "dark_cb": {
+                "fg": "#BC9F57"
+              }
+            }
+          },
+          "WeakWarning": {
+            "Icon": {
+              "light": {
+                "fg": "#D7CFB1"
+              },
+              "dark": {
+                "fg": "#827148"
+              },
+              "light_cb": {
+                "fg": "#D7CFB1"
+              },
+              "dark_cb": {
+                "fg": "#827148"
+              }
+            }
+          }
         }
       },
       "Completion": {
