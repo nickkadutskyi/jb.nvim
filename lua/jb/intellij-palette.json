@@ -19026,6 +19026,48 @@
           }
         }
       },
+      "LanguageDefaults": {
+        "InlineHints": {
+          "Default": {
+            "light": {
+              "fg": "#7A7A7A",
+              "bg": "#F5F5F5"
+            },
+            "dark": {
+              "fg": "#868A91",
+              "bg": "#2A2C30"
+            },
+            "light_cb": {
+              "fg": "#7A7A7A",
+              "bg": "#F5F5F5"
+            },
+            "dark_cb": {
+              "fg": "#868A91",
+              "bg": "#2A2C30"
+            }
+          },
+          "Parameters": {
+            "Default": {
+              "light": {
+                "fg": "#7A7A7A",
+                "bg": "#F5F5F5"
+              },
+              "dark": {
+                "fg": "#858A94",
+                "bg": "#2A2C30"
+              },
+              "light_cb": {
+                "fg": "#7A7A7A",
+                "bg": "#F5F5F5"
+              },
+              "dark_cb": {
+                "fg": "#858A94",
+                "bg": "#2A2C30"
+              }
+            }
+          }
+        }
+      },
       "Completion": {
         "Kind": {
           "light": {

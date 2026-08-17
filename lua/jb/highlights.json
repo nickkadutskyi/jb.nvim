@@ -250,7 +250,10 @@
       "bg": "Appearance|Window|BackgroundEditArea.bg",
       "fg": "Appearance|Window|Border"
     },
-    "LspInlayHint": "LanguageDefaults|InlineHints|Parameters|Default",
+    "LspInlayHint": "Custom|LanguageDefaults|InlineHints|Parameters|Default",
+    "LspInlayHintReverse": {
+      "fg": "Custom|LanguageDefaults|InlineHints|Parameters|Default.bg"
+    },
     "LspReferenceRead": "General|Code|IdentifierUnderCaret",
     "LspReferenceText": "General|Code|IdentifierUnderCaret",
     "LspReferenceWrite": "General|Code|IdentifierUnderCaretWrite",
