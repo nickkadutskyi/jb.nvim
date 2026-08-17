@@ -2048,6 +2048,7 @@
     "@constant.macro": "LanguageDefaults|Metadata",
     "@constructor.php": "LanguageDefaults|Identifiers|Default",
     "@function.macro": "LanguageDefaults|Metadata",
+    "@function.method.call": "LanguageDefaults|Classes|InstanceMethod",
     "@keyword": "LanguageDefaults|Keyword",
     "@keyword.conditional.ternary": "LanguageDefaults|BracesAndOperators|OperationSign",
     "@keyword.directive": "LanguageDefaults|Metadata",
@@ -2186,24 +2187,13 @@
   "Treesitter.Lua": {
     "@keyword.lua": "LuaLSP|Keyword",
     "@constant.lua": null,
-    "@_method.lua": "Custom|Legacy|Lua|StdApi",
-    "@boolean.lua": "Custom|Legacy|Lua|NilTrueFalse",
-    "@constant.builtin.lua": "Custom|Legacy|Lua|NilTrueFalse",
-    "@constructor.lua": "Custom|Legacy|LanguageDefaults|BracesAndOperators|Default",
-    "@function.builtin.lua": "Custom|Legacy|Lua|StdApi",
-    "@function.call.lua": "Custom|Legacy|Lua|Variables|LocalFunction",
-    "@function.lua": "Custom|Legacy|Lua|Variables|LocalFunction",
-    "@module.builtin.lua": "Custom|Legacy|Lua|StdApi",
-    "@property.lua": "LanguageDefaults|Identifiers|Default",
-    "@variable.builtin.lua": "@module.builtin.lua",
-    "@variable.member.lua": "Custom|Legacy|Lua|ClassMembers|Field",
-    "@variable.parameter.lua": "Custom|Legacy|Lua|Variables|Parameter"
+    "@function.builtin.lua": "LanguageServer|Functions|DefaultLibrary",
+    "@function.call.lua": "LanguageServer|Methods|MethodCall",
+    "@comment.documentation.lua": "LuaLSP|DocumentationComment",
+    "@constructor.lua": "Custom|Legacy|LanguageDefaults|BracesAndOperators|Default"
   },
   "Treesitter.Luadoc": {
-    "@keyword.return.luadoc": "Custom|Legacy|Lua|Comments|EmmyDoc|Tag",
-    "@punctuation.special.luadoc": "Custom|Legacy|LanguageDefaults|BracesAndOperators|Default",
-    "@variable.member.luadoc": "Custom|Legacy|Lua|Comments|EmmyDoc|TagValue",
-    "@variable.parameter.luadoc": "LanguageDefaults|Comments|DocComment|TagValue"
+    "@type.builtin.luadoc": "LanguageServer|Type"
   },
   "Treesitter.Make": {
     "@function.builtin.make": "Makefile|Keyword",
