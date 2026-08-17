@@ -19343,22 +19343,6 @@
         }
       },
       "Legacy": {
-        "CodeWithMe": {
-          "UserOneSelection": {
-            "light": {
-              "bg": "#E3F7E7"
-            },
-            "dark": {
-              "bg": "#375239"
-            },
-            "light_cb": {
-              "bg": "#E3F7E7"
-            },
-            "dark_cb": {
-              "bg": "#375239"
-            }
-          }
-        },
         "Custom": {
           "Dialog": {
             "SectionTitle": {

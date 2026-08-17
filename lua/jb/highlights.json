@@ -224,7 +224,7 @@
     "DiagnosticWarn": {
       "fg": "Custom|Legacy|General|ErrorsAndWarnings|Warning|Default.sp"
     },
-    "LspCodeLens": "General|PopupsAndHints|CodeLens",
+    "LspCodeLens": "LanguageDefaults|InlineHints|TextWithoutBackground",
     "LspCodeLensSeparator": "",
     "LspDiagnosticsDefaultError": "DiagnosticError",
     "LspDiagnosticsDefaultHint": "DiagnosticHint",
@@ -252,7 +252,7 @@
     },
     "LspInlayHint": "LanguageDefaults|InlineHints|Parameters|Default",
     "LspReferenceRead": "General|Code|IdentifierUnderCaret",
-    "LspReferenceText": "Custom|Legacy|CodeWithMe|UserOneSelection",
+    "LspReferenceText": "General|Code|IdentifierUnderCaret",
     "LspReferenceWrite": "General|Code|IdentifierUnderCaretWrite",
     "LspSignatureActiveParameter": "Search",
     "healthError": "Error",
