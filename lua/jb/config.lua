@@ -33,8 +33,13 @@ local M = {}
 ---| "yetone/avante.nvim"
 
 ---@class jb.Config
+---@field disable_hl_args? { bold?: boolean, italic?: boolean } Highlight attributes to disable
+---@field snacks? { explorer?: { enabled?: boolean } } Snacks styling configuration
+---@field telescope? { enabled?: boolean } Telescope styling configuration
 ---@field enforce_float_style? EnforceFloatStyle[] Configuration to enforce float border styles
 ---@field disabled_plugins? jb.DisabledPlugin[] Plugin highlight sets to disable (without `Plugin.` prefix)
+---@field transparent? boolean Remove the background from Normal and NormalNC
+---@field colorblind? boolean Enable the colorblind-friendly palette in light mode
 M.defaults = {
     -- Disable bold or italic for all highlights
     disable_hl_args = {
