@@ -2240,6 +2240,7 @@
   },
   "Treesitter.PHP": {
     "@comment.documentation.php": "PHP|PHPDoc|Text",
+    "@comment.documentation.php_only": "PHP|PHPDoc|Text",
     "@constant.builtin.php": "PHP|Keywords",
     "@constant.builtin.php_only": "PHP|Identifiers|Default",
     "@constant.only.php": "PHP|Identifiers|Constant",
@@ -2255,12 +2256,18 @@
     "@template_language.php_only": "LanguageDefaults|TemplateLanguage",
     "@variable.builtin.php": "PHP|Identifiers|ThisVariable",
     "@variable.builtin.php_only": "PHP|Identifiers|ThisVariable",
-    "@variable.parameter.named.php": "PHP|NamedArguments",
-    "@variable.parameter.named.php_only": "PHP|NamedArguments",
+    "@variable.parameter.name.php": "PHP|NamedArguments",
+    "@variable.parameter.name.php_only": "PHP|NamedArguments",
     "@variable.parameter.php": "PHP|FunctionsAndMethods|Parameter",
     "@variable.parameter.php_only": "PHP|FunctionsAndMethods|Parameter",
-    "@variable.php": "PHP|Identifiers|Variable",
-    "@variable.php_only": "PHP|Identifiers|Variable"
+    "@variable.php": {
+      "fg": "PHP|Identifiers|Variable",
+      "nocombine": true
+    },
+    "@variable.php_only": {
+      "fg": "PHP|Identifiers|Variable",
+      "nocombine": true
+    }
   },
   "Treesitter.PHPDoc": {
     "@attribute.phpdoc": "LanguageDefaults|Comments|DocComment|Tag",
