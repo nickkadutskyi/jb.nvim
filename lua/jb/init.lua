@@ -27,6 +27,80 @@ vim.treesitter.query.add_directive("offset-lua-match!", function(match, _, bufnr
     end
 end, { force = true, all = true })
 
+local php_tree_cache = {}
+
+local function node_contains_type(node, node_type, cache)
+    local id = node:id()
+    if cache[id] ~= nil then
+        return cache[id]
+    end
+
+    if node:type() == node_type then
+        cache[id] = true
+        return true
+    end
+
+    for child in node:iter_children() do
+        if node_contains_type(child, node_type, cache) then
+            cache[id] = true
+            return true
+        end
+    end
+
+    cache[id] = false
+    return false
+end
+
+-- PHP has no syntax node for a PHP region. Capture maximal PHP-only branches,
+-- but only when the parse tree also contains actual HTML text.
+vim.treesitter.query.add_predicate("php-template-language?", function(match, _, bufnr, pred)
+    local node = match[pred[2]]
+    node = node and (node[1] or node)
+    if not node then
+        return false
+    end
+
+    local root = node
+    while root:parent() do
+        root = root:parent()
+    end
+
+    local changedtick = vim.api.nvim_buf_get_changedtick(bufnr)
+    local cache = php_tree_cache[bufnr]
+    if not cache or cache.changedtick ~= changedtick or cache.root_id ~= root:id() then
+        local contains_text = {}
+        local mixed = false
+        local function find_html(current)
+            if current:type() == "text" then
+                mixed = vim.treesitter.get_node_text(current, bufnr):find("<", 1, true) ~= nil
+                return mixed
+            end
+            for child in current:iter_children() do
+                if find_html(child) then
+                    return true
+                end
+            end
+            return false
+        end
+
+        find_html(root)
+        cache = {
+            changedtick = changedtick,
+            root_id = root:id(),
+            mixed = mixed,
+            contains_text = contains_text,
+        }
+        php_tree_cache[bufnr] = cache
+    end
+
+    if not cache.mixed or node_contains_type(node, "text", cache.contains_text) then
+        return false
+    end
+
+    local parent = node:parent()
+    return parent ~= nil and node_contains_type(parent, "text", cache.contains_text)
+end, { force = true })
+
 local opts_per_hl = {
     Normal = { transparent = true },
     NormalNC = { transparent = true },

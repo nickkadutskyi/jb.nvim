@@ -1,3 +1,5 @@
 ;; extends
 
-; TODO: add @template_language queries
+((_
+  _ @template_language)
+  (#php-template-language? @template_language))
