@@ -6,6 +6,12 @@ local resolve_path_cache = setmetatable({}, { __mode = "k" })
 local hl_props_cache = setmetatable({}, { __mode = "k" })
 local compiled_palette_cache = nil
 
+---@param sequence string
+function M.write_terminal_sequence(sequence)
+    io.stdout:write(sequence)
+    io.stdout:flush()
+end
+
 ---@param cache table<table, table<string, table<string, any>>>
 ---@param colors table
 ---@param profile profile

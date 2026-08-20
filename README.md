@@ -192,6 +192,10 @@ M.defaults = {
     -- Enable colorblind-friendly palette (light mode only)
     -- Replaces green/purple/teal tokens with blue and near-black alternatives
     colorblind = false,
+    integrations = {
+        -- Match Ghostty's background to the statusbar while Neovim is open
+        ghostty = false,
+    },
 }
 ```
 
@@ -209,6 +213,18 @@ Extra color configs for [Kitty](https://sw.kovidgoyal.net/kitty/conf.html),
 [Alacritty](https://github.com/alacritty/alacritty),
 [Ghostty](https://ghostty.org/) can be found in [extras](extras/).
 To use them, refer to their respective documentation.
+
+Set `integrations.ghostty = true` before loading the colorscheme to temporarily
+match Ghostty's background to the JB statusbar. Ghostty's configured background
+is restored when Neovim exits.
+
+> [!NOTE]
+> This integration sets a fixed Ghostty background using OSC 11. While the
+> override is active, Ghostty cannot notify Neovim of background changes when
+> the system switches between light and dark appearances. To keep
+> `vim.o.background` synchronized with the system theme, use
+> [f-person/auto-dark-mode.nvim](https://github.com/f-person/auto-dark-mode.nvim)
+> together with this integration.
 
 ## Development
 

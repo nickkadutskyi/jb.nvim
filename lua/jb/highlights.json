@@ -464,67 +464,67 @@
     "VCSIconsUnpulled": "Custom|Legacy|VCS|Icons|Unpulled",
     "VCS_Added": "Custom|Legacy|VCS|FileStatusColors|Added",
     "VCS_Added_StatusLine": {
-      "bg": "Custom|TabSel.bg",
+      "bg": "Custom|StatusBar.bg",
       "fg": "Custom|Legacy|VCS|FileStatusColors|Added.fg"
     },
     "VCS_Copied": "Custom|Legacy|VCS|FileStatusColors|Copied",
     "VCS_Copied_StatusLine": {
-      "bg": "Custom|TabSel.bg",
+      "bg": "Custom|StatusBar.bg",
       "fg": "Custom|Legacy|VCS|FileStatusColors|Copied.fg"
     },
     "VCS_Deleted": "Custom|Legacy|VCS|FileStatusColors|Deleted",
     "VCS_DeletedFromFileSystem": "Custom|Legacy|VCS|FileStatusColors|DeletedFromFileSystem",
     "VCS_DeletedFromFileSystem_StatusLine": {
-      "bg": "Custom|TabSel.bg",
+      "bg": "Custom|StatusBar.bg",
       "fg": "Custom|Legacy|VCS|FileStatusColors|DeletedFromFileSystem.fg"
     },
     "VCS_Deleted_StatusLine": {
-      "bg": "Custom|TabSel.bg",
+      "bg": "Custom|StatusBar.bg",
       "fg": "Custom|Legacy|VCS|FileStatusColors|Deleted.fg"
     },
     "VCS_HaveChangedDescendants": "Custom|Legacy|VCS|FileStatusColors|HaveChangedDescendants",
     "VCS_HaveChangedDescendants_StatusLine": {
-      "bg": "Custom|TabSel.bg",
+      "bg": "Custom|StatusBar.bg",
       "fg": "Custom|Legacy|VCS|FileStatusColors|HaveChangedDescendants.fg"
     },
     "VCS_HaveImmediateChangedChildren": "Custom|Legacy|VCS|FileStatusColors|HaveImmediateChangedChildren",
     "VCS_HaveImmediateChangedChildren_StatusLine": {
-      "bg": "Custom|TabSel.bg",
+      "bg": "Custom|StatusBar.bg",
       "fg": "Custom|Legacy|VCS|FileStatusColors|HaveImmediateChangedChildren.fg"
     },
     "VCS_Ignored": "Custom|Legacy|VCS|FileStatusColors|Ignored",
     "VCS_IgnoredIgnorePlugin": "Custom|Legacy|VCS|FileStatusColors|IgnoredIgnorePlugin",
     "VCS_IgnoredIgnorePlugin_StatusLine": {
-      "bg": "Custom|TabSel.bg",
+      "bg": "Custom|StatusBar.bg",
       "fg": "Custom|Legacy|VCS|FileStatusColors|IgnoredIgnorePlugin.fg"
     },
     "VCS_Ignored_StatusLine": {
-      "bg": "Custom|TabSel.bg",
+      "bg": "Custom|StatusBar.bg",
       "fg": "Custom|Legacy|VCS|FileStatusColors|Ignored.fg"
     },
     "VCS_Merged": "Custom|Legacy|VCS|FileStatusColors|Merged",
     "VCS_MergedWithConflicts": "Custom|Legacy|VCS|FileStatusColors|MergedWithConflicts",
     "VCS_MergedWithConflicts_StatusLine": {
-      "bg": "Custom|TabSel.bg",
+      "bg": "Custom|StatusBar.bg",
       "fg": "Custom|Legacy|VCS|FileStatusColors|MergedWithConflicts.fg"
     },
     "VCS_Merged_StatusLine": {
-      "bg": "Custom|TabSel.bg",
+      "bg": "Custom|StatusBar.bg",
       "fg": "Custom|Legacy|VCS|FileStatusColors|Merged.fg"
     },
     "VCS_Modified": "Custom|Legacy|VCS|FileStatusColors|Modified",
     "VCS_Modified_StatusLine": {
-      "bg": "Custom|TabSel.bg",
+      "bg": "Custom|StatusBar.bg",
       "fg": "Custom|Legacy|VCS|FileStatusColors|Modified.fg"
     },
     "VCS_Renamed": "Custom|Legacy|VCS|FileStatusColors|Renamed",
     "VCS_Renamed_StatusLine": {
-      "bg": "Custom|TabSel.bg",
+      "bg": "Custom|StatusBar.bg",
       "fg": "Custom|Legacy|VCS|FileStatusColors|Renamed.fg"
     },
     "VCS_Unknown": "Custom|Legacy|VCS|FileStatusColors|Unknown",
     "VCS_Unknown_StatusLine": {
-      "bg": "Custom|TabSel.bg",
+      "bg": "Custom|StatusBar.bg",
       "fg": "Custom|Legacy|VCS|FileStatusColors|Unknown.fg"
     },
     "VCS_VCSAnnotations_BackgroundColor1": "VCS|VCSAnnotations|BackgroundColorSharp1",

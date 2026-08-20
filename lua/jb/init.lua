@@ -167,6 +167,42 @@ local M = {}
 
 M.setup = config.setup
 
+local ghostty_active = false
+
+---@param enabled boolean
+---@param background string
+local function setup_ghostty_integration(enabled, background)
+    local group = vim.api.nvim_create_augroup("JBGhostty", { clear = true })
+
+    if not enabled then
+        if ghostty_active and vim.v.vim_did_enter == 1 then
+            utils.write_terminal_sequence("\027]111\027\\")
+        end
+        ghostty_active = false
+        return
+    end
+
+    local set_background = function()
+        utils.write_terminal_sequence("\027]11;" .. background .. "\027\\")
+    end
+
+    vim.api.nvim_create_autocmd("VimEnter", {
+        group = group,
+        callback = set_background,
+    })
+    vim.api.nvim_create_autocmd("VimLeave", {
+        group = group,
+        callback = function()
+            utils.write_terminal_sequence("\027]111\027\\")
+        end,
+    })
+
+    ghostty_active = true
+    if vim.v.vim_did_enter == 1 then
+        set_background()
+    end
+end
+
 --- Dump a table to a JSON
 ---@type fun(o: table): string
 function M.dump(o)
@@ -325,6 +361,7 @@ function M.load(opts)
     vim.api.nvim_set_hl(0, "ProjectColor", M.disable_hl_args(project_color, opts))
 
     local status_line_color = utils.get_hl_props(colors, "Custom|StatusBar.bg", profile)
+    setup_ghostty_integration(opts.integrations.ghostty, status_line_color.hl.bg)
 
     -- Tinted variants based on project color
     local tinted_status_line_bg = utils.blend_colors(status_line_color.hl.bg, project_color.bg, 0.025)

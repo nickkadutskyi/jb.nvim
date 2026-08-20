@@ -40,6 +40,7 @@ local M = {}
 ---@field disabled_plugins? jb.DisabledPlugin[] Plugin highlight sets to disable (without `Plugin.` prefix)
 ---@field transparent? boolean Remove the background from Normal and NormalNC
 ---@field colorblind? boolean Enable the colorblind-friendly palette in light mode
+---@field integrations? { ghostty?: boolean } Terminal integration configuration
 M.defaults = {
     -- Disable bold or italic for all highlights
     disable_hl_args = {
@@ -62,6 +63,10 @@ M.defaults = {
     transparent = false,
     -- Enable colorblind-friendly palette (light mode only)
     colorblind = false,
+    integrations = {
+        -- Match Ghostty's background to the statusbar while Neovim is open
+        ghostty = false,
+    },
     enforce_float_style = nil,
 }
 
