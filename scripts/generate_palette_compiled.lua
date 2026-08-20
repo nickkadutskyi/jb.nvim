@@ -287,4 +287,4 @@ local out_file = assert(io.open(palette_compiled_path, "w"), "Failed to open out
 out_file:write(table.concat(output))
 out_file:close()
 
-print("Generated " .. palette_compiled_path)
+print("\nGenerated " .. palette_compiled_path)

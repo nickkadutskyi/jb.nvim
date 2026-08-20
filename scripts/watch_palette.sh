@@ -19,7 +19,7 @@ generate() {
 }
 
 previous_signature="$(signature)"
-printf 'Watching %s and %s\n' "$highlights" "$intellij_palette"
+printf '\nWatching %s and %s' "$highlights" "$intellij_palette"
 
 while sleep 1; do
     current_signature="$(signature)"
@@ -28,8 +28,8 @@ while sleep 1; do
     fi
 
     previous_signature="$current_signature"
-    printf 'Palette input changed; regenerating palette_compiled.lua...\n'
+    printf '\nPalette input changed; regenerating palette_compiled.lua...'
     if ! generate; then
-        printf 'Generation failed; continuing to watch.\n' >&2
+        printf '\nGeneration failed; continuing to watch.' >&2
     fi
 done
