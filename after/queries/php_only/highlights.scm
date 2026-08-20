@@ -69,3 +69,13 @@
 
 ; TODO: in nvim-treesitter the whole `attribute_list` is highlighted
 ;       as @attribute which competes with all other highlights inside the attributes
+
+; Directives
+; TODO: in upstream it uses @variable.parameter which is wrong
+;       it should be a @keyword.directive, so make a PR
+(declare_directive
+  [
+    "strict_types"
+    "ticks"
+    "encoding"
+  ] @keyword.directive)
