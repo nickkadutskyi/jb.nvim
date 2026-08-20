@@ -12888,6 +12888,536 @@
         "light_cb": "LanguageDefaults|BadCharacter"
       }
     },
+    "Perl5": {
+      "Angles": {
+        "dark": "LanguageDefaults|BracesAndOperators|Brackets",
+        "dark_cb": "LanguageDefaults|BracesAndOperators|Brackets",
+        "light": "LanguageDefaults|BracesAndOperators|Brackets",
+        "light_cb": "LanguageDefaults|BracesAndOperators|Brackets"
+      },
+      "Annotation": {
+        "dark": "LanguageDefaults|Metadata",
+        "dark_cb": "LanguageDefaults|Metadata",
+        "light": "LanguageDefaults|Metadata",
+        "light_cb": "LanguageDefaults|Metadata"
+      },
+      "Attribute": {
+        "dark": "LanguageDefaults|Metadata",
+        "dark_cb": "LanguageDefaults|Metadata",
+        "light": "LanguageDefaults|Metadata",
+        "light_cb": "LanguageDefaults|Metadata"
+      },
+      "BlockName": {
+        "dark": "LanguageDefaults|Identifiers|PredefinedSymbol",
+        "dark_cb": "LanguageDefaults|Identifiers|PredefinedSymbol",
+        "light": "LanguageDefaults|Identifiers|PredefinedSymbol",
+        "light_cb": "LanguageDefaults|Identifiers|PredefinedSymbol"
+      },
+      "Braces": {
+        "dark": "LanguageDefaults|BracesAndOperators|Braces",
+        "dark_cb": "LanguageDefaults|BracesAndOperators|Braces",
+        "light": "LanguageDefaults|BracesAndOperators|Braces",
+        "light_cb": "LanguageDefaults|BracesAndOperators|Braces"
+      },
+      "Brackets": {
+        "dark": "LanguageDefaults|BracesAndOperators|Brackets",
+        "dark_cb": "LanguageDefaults|BracesAndOperators|Brackets",
+        "light": "LanguageDefaults|BracesAndOperators|Brackets",
+        "light_cb": "LanguageDefaults|BracesAndOperators|Brackets"
+      },
+      "Comma": {
+        "dark": "LanguageDefaults|BracesAndOperators|Comma",
+        "dark_cb": "LanguageDefaults|BracesAndOperators|Comma",
+        "light": "LanguageDefaults|BracesAndOperators|Comma",
+        "light_cb": "LanguageDefaults|BracesAndOperators|Comma"
+      },
+      "Dereference": {
+        "dark": "LanguageDefaults|BracesAndOperators|OperationSign",
+        "dark_cb": "LanguageDefaults|BracesAndOperators|OperationSign",
+        "light": "LanguageDefaults|BracesAndOperators|OperationSign",
+        "light_cb": "LanguageDefaults|BracesAndOperators|OperationSign"
+      },
+      "EmbeddingMarker": {
+        "dark": {
+          "bg": "#232525",
+          "fg": "#CC7832"
+        },
+        "dark_cb": {
+          "bg": "#232525",
+          "fg": "#CC7832"
+        },
+        "light": {
+          "fg": "#FF0000"
+        },
+        "light_cb": {
+          "fg": "#FF0000"
+        }
+      },
+      "Keyword": {
+        "dark": "LanguageDefaults|Keyword",
+        "dark_cb": "LanguageDefaults|Keyword",
+        "light": "LanguageDefaults|Keyword",
+        "light_cb": "LanguageDefaults|Keyword"
+      },
+      "Label": {
+        "dark": {
+          "fg": "#A9B7C6",
+          "sp": "#A9B7C6",
+          "underline": true
+        },
+        "dark_cb": {
+          "fg": "#A9B7C6",
+          "sp": "#A9B7C6",
+          "underline": true
+        },
+        "light": {
+          "fg": "#000000",
+          "sp": "#000000",
+          "underline": true
+        },
+        "light_cb": {
+          "fg": "#000000",
+          "sp": "#000000",
+          "underline": true
+        }
+      },
+      "LineComment": {
+        "dark": "LanguageDefaults|Comments|LineComment",
+        "dark_cb": "LanguageDefaults|Comments|LineComment",
+        "light": "LanguageDefaults|Comments|LineComment",
+        "light_cb": "LanguageDefaults|Comments|LineComment"
+      },
+      "Number": {
+        "dark": "LanguageDefaults|Number",
+        "dark_cb": "LanguageDefaults|Number",
+        "light": {
+          "fg": "#000060"
+        },
+        "light_cb": {
+          "fg": "#000060"
+        }
+      },
+      "NumberBinary": {
+        "dark": "Perl5|Number",
+        "dark_cb": "Perl5|Number",
+        "light": "Perl5|Number",
+        "light_cb": "Perl5|Number"
+      },
+      "NumberHexadecimal": {
+        "dark": "Perl5|Number",
+        "dark_cb": "Perl5|Number",
+        "light": "Perl5|Number",
+        "light_cb": "Perl5|Number"
+      },
+      "NumberOctal": {
+        "dark": "Perl5|Number",
+        "dark_cb": "Perl5|Number",
+        "light": "Perl5|Number",
+        "light_cb": "Perl5|Number"
+      },
+      "Operator": {
+        "dark": "LanguageDefaults|BracesAndOperators|OperationSign",
+        "dark_cb": "LanguageDefaults|BracesAndOperators|OperationSign",
+        "light": "LanguageDefaults|BracesAndOperators|OperationSign",
+        "light_cb": "LanguageDefaults|BracesAndOperators|OperationSign"
+      },
+      "Package": {
+        "dark": "LanguageDefaults|Classes|ClassName",
+        "dark_cb": "LanguageDefaults|Classes|ClassName",
+        "light": {
+          "fg": "#800080"
+        },
+        "light_cb": {
+          "fg": "#800080"
+        }
+      },
+      "PackageCore": {
+        "dark": {
+          "bold": true,
+          "fg": "#A9B7C6"
+        },
+        "dark_cb": {
+          "bold": true,
+          "fg": "#A9B7C6"
+        },
+        "light": {
+          "bold": true,
+          "fg": "#800080"
+        },
+        "light_cb": {
+          "bold": true,
+          "fg": "#800080"
+        }
+      },
+      "PackageDefinition": {
+        "dark": "Perl5|Package",
+        "dark_cb": "Perl5|Package",
+        "light": "Perl5|Package",
+        "light_cb": "Perl5|Package"
+      },
+      "PackagePragma": {
+        "dark": {
+          "bold": true,
+          "fg": "#A9B7C6",
+          "italic": true
+        },
+        "dark_cb": {
+          "bold": true,
+          "fg": "#A9B7C6",
+          "italic": true
+        },
+        "light": {
+          "bold": true,
+          "fg": "#800080",
+          "italic": true
+        },
+        "light_cb": {
+          "bold": true,
+          "fg": "#800080",
+          "italic": true
+        }
+      },
+      "Parentheses": {
+        "dark": "LanguageDefaults|BracesAndOperators|Parentheses",
+        "dark_cb": "LanguageDefaults|BracesAndOperators|Parentheses",
+        "light": "LanguageDefaults|BracesAndOperators|Parentheses",
+        "light_cb": "LanguageDefaults|BracesAndOperators|Parentheses"
+      },
+      "RegexElement": {
+        "dark": "LanguageDefaults|String|StringText",
+        "dark_cb": "LanguageDefaults|String|StringText",
+        "light": {
+          "bg": "#F8F8F8"
+        },
+        "light_cb": {
+          "bg": "#F8F8F8"
+        }
+      },
+      "RegexQuote": {
+        "dark": "LanguageDefaults|BracesAndOperators|Brackets",
+        "dark_cb": "LanguageDefaults|BracesAndOperators|Brackets",
+        "light": "LanguageDefaults|BracesAndOperators|Brackets",
+        "light_cb": "LanguageDefaults|BracesAndOperators|Brackets"
+      },
+      "Semicolon": {
+        "dark": "LanguageDefaults|BracesAndOperators|Semicolon",
+        "dark_cb": "LanguageDefaults|BracesAndOperators|Semicolon",
+        "light": "LanguageDefaults|BracesAndOperators|Semicolon",
+        "light_cb": "LanguageDefaults|BracesAndOperators|Semicolon"
+      },
+      "SpecialToken": {
+        "dark": "LanguageDefaults|Identifiers|PredefinedSymbol",
+        "dark_cb": "LanguageDefaults|Identifiers|PredefinedSymbol",
+        "light": "LanguageDefaults|Identifiers|PredefinedSymbol",
+        "light_cb": "LanguageDefaults|Identifiers|PredefinedSymbol"
+      },
+      "StringBackticked": {
+        "dark": "LanguageDefaults|String|StringText",
+        "dark_cb": "LanguageDefaults|String|StringText",
+        "light": {
+          "bg": "#F0F0F0",
+          "fg": "#008000"
+        },
+        "light_cb": {
+          "bg": "#F0F0F0",
+          "fg": "#008000"
+        }
+      },
+      "StringCharacterName": {
+        "dark": "LanguageDefaults|Identifiers|Constant",
+        "dark_cb": "LanguageDefaults|Identifiers|Constant",
+        "light": "LanguageDefaults|Identifiers|Constant",
+        "light_cb": "LanguageDefaults|Identifiers|Constant"
+      },
+      "StringControlChars": {
+        "dark": "LanguageDefaults|String|EscapeSequence|Valid",
+        "dark_cb": "LanguageDefaults|String|EscapeSequence|Valid",
+        "light": "LanguageDefaults|String|EscapeSequence|Valid",
+        "light_cb": "LanguageDefaults|String|EscapeSequence|Valid"
+      },
+      "StringDoubleQuoted": {
+        "dark": "LanguageDefaults|String|StringText",
+        "dark_cb": "LanguageDefaults|String|StringText",
+        "light": {
+          "fg": "#008000"
+        },
+        "light_cb": {
+          "fg": "#008000"
+        }
+      },
+      "StringSingleQuoted": {
+        "dark": "LanguageDefaults|String|StringText",
+        "dark_cb": "LanguageDefaults|String|StringText",
+        "light": {
+          "fg": "#008080"
+        },
+        "light_cb": {
+          "fg": "#008080"
+        }
+      },
+      "Sub": {
+        "dark": {
+          "fg": "#FFC66D"
+        },
+        "dark_cb": {
+          "fg": "#FFC66D"
+        },
+        "light": {
+          "fg": "#0000FF"
+        },
+        "light_cb": {
+          "fg": "#0000FF"
+        }
+      },
+      "SubAutoloaded": {
+        "dark": "General|LiveTemplates|TemplateVariable",
+        "dark_cb": "General|LiveTemplates|TemplateVariable",
+        "light": "General|LiveTemplates|TemplateVariable",
+        "light_cb": "General|LiveTemplates|TemplateVariable"
+      },
+      "SubBuiltIn": {
+        "dark": {
+          "bold": true,
+          "fg": "#FFC66D"
+        },
+        "dark_cb": {
+          "bold": true,
+          "fg": "#FFC66D"
+        },
+        "light": {
+          "bold": true,
+          "fg": "#0000FF"
+        },
+        "light_cb": {
+          "bold": true,
+          "fg": "#0000FF"
+        }
+      },
+      "SubConstant": {
+        "dark": "LanguageDefaults|Identifiers|Constant",
+        "dark_cb": "LanguageDefaults|Identifiers|Constant",
+        "light": "LanguageDefaults|Identifiers|Constant",
+        "light_cb": "LanguageDefaults|Identifiers|Constant"
+      },
+      "SubDeclaration": {
+        "dark": "Perl5|SubDefinition",
+        "dark_cb": "Perl5|SubDefinition",
+        "light": "Perl5|SubDefinition",
+        "light_cb": "Perl5|SubDefinition"
+      },
+      "SubDefinition": {
+        "dark": "LanguageDefaults|Identifiers|FunctionDeclaration",
+        "dark_cb": "LanguageDefaults|Identifiers|FunctionDeclaration",
+        "light": {
+          "fg": "#0000FF"
+        },
+        "light_cb": {
+          "fg": "#0000FF"
+        }
+      },
+      "SubPrototype": {
+        "dark": "LanguageDefaults|Identifiers|Parameter",
+        "dark_cb": "LanguageDefaults|Identifiers|Parameter",
+        "light": "LanguageDefaults|Identifiers|Parameter",
+        "light_cb": "LanguageDefaults|Identifiers|Parameter"
+      },
+      "SubXS": {
+        "dark": {
+          "fg": "#FFC66D",
+          "italic": true
+        },
+        "dark_cb": {
+          "fg": "#FFC66D",
+          "italic": true
+        },
+        "light": {
+          "fg": "#0000FF",
+          "italic": true
+        },
+        "light_cb": {
+          "fg": "#0000FF",
+          "italic": true
+        }
+      },
+      "Typeglob": {
+        "dark": "LanguageDefaults|Identifiers|Default",
+        "dark_cb": "LanguageDefaults|Identifiers|Default",
+        "light": {
+          "fg": "#FF0000"
+        },
+        "light_cb": {
+          "fg": "#FF0000"
+        }
+      },
+      "TypeglobBuiltIn": {
+        "dark": {
+          "bold": true,
+          "fg": "#A9B7C6"
+        },
+        "dark_cb": {
+          "bold": true,
+          "fg": "#A9B7C6"
+        },
+        "light": {
+          "bold": true,
+          "fg": "#FF0000"
+        },
+        "light_cb": {
+          "bold": true,
+          "fg": "#FF0000"
+        }
+      },
+      "TypeglobFileHandle": {
+        "dark": "Perl5|Typeglob",
+        "dark_cb": "Perl5|Typeglob",
+        "light": "Perl5|Typeglob",
+        "light_cb": "Perl5|Typeglob"
+      },
+      "TypeglobFileHandleBuiltIn": {
+        "dark": "Perl5|TypeglobBuiltIn",
+        "dark_cb": "Perl5|TypeglobBuiltIn",
+        "light": "Perl5|TypeglobBuiltIn",
+        "light_cb": "Perl5|TypeglobBuiltIn"
+      },
+      "VariableArray": {
+        "dark": {
+          "fg": "#9876AA"
+        },
+        "dark_cb": {
+          "fg": "#9876AA"
+        },
+        "light": {
+          "fg": "#CF34CF"
+        },
+        "light_cb": {
+          "fg": "#CF34CF"
+        }
+      },
+      "VariableArrayBuiltIn": {
+        "dark": {
+          "bold": true,
+          "fg": "#9876AA"
+        },
+        "dark_cb": {
+          "bold": true,
+          "fg": "#9876AA"
+        },
+        "light": {
+          "bold": true,
+          "fg": "#CF34CF"
+        },
+        "light_cb": {
+          "bold": true,
+          "fg": "#CF34CF"
+        }
+      },
+      "VariableHash": {
+        "dark": {
+          "fg": "#9876AA"
+        },
+        "dark_cb": {
+          "fg": "#9876AA"
+        },
+        "light": {
+          "fg": "#8080C0"
+        },
+        "light_cb": {
+          "fg": "#8080C0"
+        }
+      },
+      "VariableHashBuiltIn": {
+        "dark": {
+          "bold": true,
+          "fg": "#9876AA"
+        },
+        "dark_cb": {
+          "bold": true,
+          "fg": "#9876AA"
+        },
+        "light": {
+          "bold": true,
+          "fg": "#8080C0"
+        },
+        "light_cb": {
+          "bold": true,
+          "fg": "#8080C0"
+        }
+      },
+      "VariableScalar": {
+        "dark": {
+          "fg": "#9876AA"
+        },
+        "dark_cb": {
+          "fg": "#9876AA"
+        },
+        "light": {
+          "fg": "#FF8000"
+        },
+        "light_cb": {
+          "fg": "#FF8000"
+        }
+      },
+      "VariableScalarBuiltIn": {
+        "dark": {
+          "bold": true,
+          "fg": "#9876AA"
+        },
+        "dark_cb": {
+          "bold": true,
+          "fg": "#9876AA"
+        },
+        "light": {
+          "bold": true,
+          "fg": "#FF8000"
+        },
+        "light_cb": {
+          "bold": true,
+          "fg": "#FF8000"
+        }
+      },
+      "Version": {
+        "dark": "Perl5|Number",
+        "dark_cb": "Perl5|Number",
+        "light": {
+          "fg": "#FF0000"
+        },
+        "light_cb": {
+          "fg": "#FF0000"
+        }
+      }
+    },
+    "Perl5POD": {
+      "Commands": {
+        "dark": "LanguageDefaults|Comments|DocComment|Tag",
+        "dark_cb": "LanguageDefaults|Comments|DocComment|Tag",
+        "light": "LanguageDefaults|Comments|DocComment|Tag",
+        "light_cb": "LanguageDefaults|Comments|DocComment|Tag"
+      },
+      "FormattingCode": {
+        "dark": "LanguageDefaults|Comments|DocComment|TagValue",
+        "dark_cb": "LanguageDefaults|Comments|DocComment|TagValue",
+        "light": "LanguageDefaults|Comments|DocComment|TagValue",
+        "light_cb": "LanguageDefaults|Comments|DocComment|TagValue"
+      },
+      "FormattingCodeMarkup": {
+        "dark": "LanguageDefaults|Comments|DocComment|TagValue",
+        "dark_cb": "LanguageDefaults|Comments|DocComment|TagValue",
+        "light": "LanguageDefaults|Comments|DocComment|TagValue",
+        "light_cb": "LanguageDefaults|Comments|DocComment|TagValue"
+      },
+      "OrdinaryParagraph": {
+        "dark": "LanguageDefaults|Comments|DocComment|Text",
+        "dark_cb": "LanguageDefaults|Comments|DocComment|Text",
+        "light": "LanguageDefaults|Comments|DocComment|Text",
+        "light_cb": "LanguageDefaults|Comments|DocComment|Text"
+      },
+      "VerbatimParagraph": {
+        "dark": "General|Text|DefaultText",
+        "dark_cb": "General|Text|DefaultText",
+        "light": "General|Text|DefaultText",
+        "light_cb": "General|Text|DefaultText"
+      }
+    },
     "Plan9_X86": {
       "Flags": {
         "dark": "LanguageDefaults|Identifiers|GlobalVariable",
