@@ -1831,6 +1831,7 @@
     "AvanteTitle": "ToolWindowFloatTitle"
   },
   "Semantic": {
+    "@custom.typemod.variable.declaration": "LanguageServer|Variables|Variable",
     "@lsp.type.class": "LanguageServer|Classes|ClassReference",
     "@lsp.type.comment": "LanguageServer|Comment",
     "@lsp.type.decorator": "LanguageServer|Decorator",
@@ -1866,7 +1867,6 @@
     "@lsp.typemod.property.readonly": "LanguageServer|Properties|ReadonlyProperty",
     "@lsp.typemod.property.static": "LanguageServer|Properties|StaticProperty",
     "@lsp.typemod.property.static.readonly": "LanguageServer|Properties|StaticReadonlyProperty",
-    "@custom.typemod.variable.declaration": "LanguageServer|Variables|Variable",
     "@lsp.typemod.variable.readonly": {
       "fg": "LanguageServer|Variables|ReadonlyVariable",
       "nocombine": true
@@ -2188,12 +2188,12 @@
     "@punctuation.bracket.latex": "LaTeX|Brackets"
   },
   "Treesitter.Lua": {
-    "@keyword.lua": "LuaLSP|Keyword",
+    "@comment.documentation.lua": "LuaLSP|DocumentationComment",
     "@constant.lua": null,
+    "@constructor.lua": "Custom|Legacy|LanguageDefaults|BracesAndOperators|Default",
     "@function.builtin.lua": "LanguageServer|Functions|DefaultLibrary",
     "@function.call.lua": "LanguageServer|Methods|MethodCall",
-    "@comment.documentation.lua": "LuaLSP|DocumentationComment",
-    "@constructor.lua": "Custom|Legacy|LanguageDefaults|BracesAndOperators|Default"
+    "@keyword.lua": "LuaLSP|Keyword"
   },
   "Treesitter.Luadoc": {
     "@type.builtin.luadoc": "LanguageServer|Type"
