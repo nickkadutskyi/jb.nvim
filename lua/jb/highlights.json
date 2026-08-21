@@ -2056,7 +2056,10 @@
     "@keyword.conditional.ternary": "LanguageDefaults|BracesAndOperators|OperationSign",
     "@keyword.directive": "LanguageDefaults|Metadata",
     "@label": "LanguageDefaults|Identifiers|Label",
-    "@module": "LanguageDefaults|Identifiers|Default",
+    "@module": {
+      "fg": "LanguageDefaults|Identifiers|Default",
+      "nocombine": true
+    },
     "@property": "LanguageDefaults|Classes|InstanceField",
     "@property.static": "LanguageDefaults|Classes|StaticField",
     "@punctuation": "Custom|Legacy|LanguageDefaults|BracesAndOperators|Default",
