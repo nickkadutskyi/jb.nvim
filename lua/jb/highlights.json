@@ -1919,7 +1919,7 @@
     "@lsp.type.method.typescript": null,
     "@lsp.type.parameter.typescript": "TypeScript|Identifiers|Parameter",
     "@lsp.type.variable.typescript": null,
-    "@lsp.typemod.class.defaultLibrary.typescript": "TypeScript|Identifiers|GlobalVariable",
+    "@lsp.typemod.class.defaultLibrary.typescript": "TypeScript|Classes|ClassName",
     "@lsp.typemod.function.readonly.typescript": "TypeScript|Identifiers|ExportedFunction",
     "@lsp.typemod.property.static.typescript": "LanguageDefaults|Classes|StaticField"
   },
@@ -2378,6 +2378,7 @@
   },
   "Treesitter.TypeScript": {
     "@constant.typescript": null,
+    "@constructor.typescript": "TypeScript|Classes|ClassName",
     "@function.exported.typescript": "TypeScript|Identifiers|ExportedFunction",
     "@function.method.call.typescript": "TypeScript|Object|Method",
     "@function.method.typescript": "TypeScript|Object|Method",
