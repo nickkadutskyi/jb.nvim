@@ -20784,16 +20784,6 @@
           }
         }
       },
-      "StatusBar": {
-        "dark": {
-          "bg": "#26282C",
-          "fg": "#95979C"
-        },
-        "light": {
-          "bg": "#E9EAEE",
-          "fg": "#606268"
-        }
-      },
       "TabSel": {
         "dark": {
           "bg": "#2b2d30",
@@ -20845,6 +20835,58 @@
           "light": {
             "bg": "#769eb3",
             "fg": "#FFFFFF"
+          }
+        }
+      }
+    },
+    "UI": {
+      "StatusBar": {
+        "dark": {
+          "bg": "#26282C",
+          "fg": "#95979C"
+        },
+        "light": {
+          "bg": "#E9EAEE",
+          "fg": "#606268"
+        }
+      },
+      "Tabs": {
+        "NormalTabLine": {
+          "dark": {
+            "bg": "#191A1C",
+            "fg": "#AFB1B6"
+          },
+          "light": {
+            "bg": "#FFFFFF",
+            "fg": "#515151"
+          }
+        },
+        "NormalTabLineSelected": {
+          "dark": {
+            "bg": "#243656",
+            "fg": "#D1D3D9"
+          },
+          "light": {
+            "bg": "#E4EBFC",
+            "fg": "#151618"
+          }
+        },
+        "BorderSelected": {
+          "dark": {
+            "fg": "#304E85"
+          },
+          "light": {
+            "fg": "#B6CFFC"
+          }
+        },
+        "CloseIcon": {
+          "dark": {
+            "bg": "#191A1C",
+            "fg": "#6F7379"
+          },
+          "light": {
+            "bg": "#FFFFFF",
+            "fg": "#A8ADBC"
           }
         }
       }

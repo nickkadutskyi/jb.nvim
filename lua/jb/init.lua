@@ -360,7 +360,7 @@ function M.load(opts)
     local project_color, icon_color = utils.get_project_color_hl()
     vim.api.nvim_set_hl(0, "ProjectColor", M.disable_hl_args(project_color, opts))
 
-    local status_line_color = utils.get_hl_props(colors, "Custom|StatusBar.bg", profile)
+    local status_line_color = utils.get_hl_props(colors, "UI|StatusBar.bg", profile)
     setup_ghostty_integration(opts.integrations.ghostty, status_line_color.hl.bg)
 
     -- Tinted variants based on project color

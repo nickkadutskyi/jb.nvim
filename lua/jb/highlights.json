@@ -108,38 +108,24 @@
     "SpellCap": "General|ErrorsAndWarnings|Warning",
     "SpellLocal": "General|ErrorsAndWarnings|TextStyleSuggestion",
     "SpellRare": "General|ErrorsAndWarnings|TextStyleSuggestion",
-    "StatusLine": "Custom|StatusBar",
+    "StatusLine": "UI|StatusBar",
     "StatusLineNC": "StatusLine",
     "Substitute": "",
-    "TabLine": {
-      "bg": "General|Text|DefaultText.bg",
-      "fg": "General|Text|DefaultText.fg",
-      "sp": "General|Editor|Guides|HardWrapGuide.fg",
-      "underline": true
-    },
+    "TabLine": "UI|Tabs|NormalTabLine",
     "TabLineBorderSel": {
-      "bg": "Custom|TabSel",
-      "fg": "Custom|TabSel"
+      "bg": "UI|Tabs|NormalTabLineSelected",
+      "fg": "UI|Tabs|BorderSelected"
     },
-    "TabLineCloseIcon": {
-      "bg": "General|Text|DefaultText.bg",
-      "fg": "General|Editor|Guides|HardWrapGuide",
-      "sp": "General|Editor|Guides|HardWrapGuide.fg",
-      "underline": true
-    },
+    "TabLineCloseIcon": "UI|Tabs|CloseIcon",
     "TabLineCloseIconSel": {
-      "bg": "Custom|TabSel",
-      "fg": "General|Editor|Guides|HardWrapGuide"
+      "fg": "UI|Tabs|CloseIcon",
+      "bg": "UI|Tabs|NormalTabLineSelected"
     },
     "TabLineFill": {
-      "bg": "General|Text|DefaultText.bg",
-      "sp": "General|Editor|Guides|HardWrapGuide.fg",
-      "underline": true
+      "bg": "UI|Tabs|NormalTabLine",
+      "fg": "General|Editor|Guides|HardWrapGuide.fg"
     },
-    "TabLineSel": {
-      "bg": "Custom|TabSel",
-      "fg": "Custom|TabSel"
-    },
+    "TabLineSel": "UI|Tabs|NormalTabLineSelected",
     "TermCursor": "",
     "TermCursorNC": "",
     "Title": "LanguageDefaults|Identifiers|Constant",
@@ -347,7 +333,7 @@
   "Custom": {
     "Appearance_FileColors_NonProjectFile": "Appearance|FileColors|NonProjectFile",
     "Appearance_FileColors_Tests": "Appearance|FileColors|Tests",
-    "CustomStatusLine": "Custom|StatusBar",
+    "CustomStatusLine": "UI|StatusBar",
     "Custom_TabSel": "Custom|TabSel",
     "DialogFloatBorder": {
       "bg": "Appearance|Window|BackgroundEditArea.bg",
@@ -440,7 +426,7 @@
     "PopupFloatFooter": [],
     "PopupFloatTitle": [],
     "StatusBarHasUnsavedBuffers": {
-      "bg": "Custom|StatusBar.bg",
+      "bg": "UI|StatusBar.bg",
       "fg": "General|ErrorsAndWarnings|Error|ErrorStripeMark"
     },
     "ToolWindowFloatBorder": "Appearance|ToolWindow|Border",
@@ -464,67 +450,67 @@
     "VCSIconsUnpulled": "Custom|Legacy|VCS|Icons|Unpulled",
     "VCS_Added": "Custom|Legacy|VCS|FileStatusColors|Added",
     "VCS_Added_StatusLine": {
-      "bg": "Custom|StatusBar.bg",
+      "bg": "UI|StatusBar.bg",
       "fg": "Custom|Legacy|VCS|FileStatusColors|Added.fg"
     },
     "VCS_Copied": "Custom|Legacy|VCS|FileStatusColors|Copied",
     "VCS_Copied_StatusLine": {
-      "bg": "Custom|StatusBar.bg",
+      "bg": "UI|StatusBar.bg",
       "fg": "Custom|Legacy|VCS|FileStatusColors|Copied.fg"
     },
     "VCS_Deleted": "Custom|Legacy|VCS|FileStatusColors|Deleted",
     "VCS_DeletedFromFileSystem": "Custom|Legacy|VCS|FileStatusColors|DeletedFromFileSystem",
     "VCS_DeletedFromFileSystem_StatusLine": {
-      "bg": "Custom|StatusBar.bg",
+      "bg": "UI|StatusBar.bg",
       "fg": "Custom|Legacy|VCS|FileStatusColors|DeletedFromFileSystem.fg"
     },
     "VCS_Deleted_StatusLine": {
-      "bg": "Custom|StatusBar.bg",
+      "bg": "UI|StatusBar.bg",
       "fg": "Custom|Legacy|VCS|FileStatusColors|Deleted.fg"
     },
     "VCS_HaveChangedDescendants": "Custom|Legacy|VCS|FileStatusColors|HaveChangedDescendants",
     "VCS_HaveChangedDescendants_StatusLine": {
-      "bg": "Custom|StatusBar.bg",
+      "bg": "UI|StatusBar.bg",
       "fg": "Custom|Legacy|VCS|FileStatusColors|HaveChangedDescendants.fg"
     },
     "VCS_HaveImmediateChangedChildren": "Custom|Legacy|VCS|FileStatusColors|HaveImmediateChangedChildren",
     "VCS_HaveImmediateChangedChildren_StatusLine": {
-      "bg": "Custom|StatusBar.bg",
+      "bg": "UI|StatusBar.bg",
       "fg": "Custom|Legacy|VCS|FileStatusColors|HaveImmediateChangedChildren.fg"
     },
     "VCS_Ignored": "Custom|Legacy|VCS|FileStatusColors|Ignored",
     "VCS_IgnoredIgnorePlugin": "Custom|Legacy|VCS|FileStatusColors|IgnoredIgnorePlugin",
     "VCS_IgnoredIgnorePlugin_StatusLine": {
-      "bg": "Custom|StatusBar.bg",
+      "bg": "UI|StatusBar.bg",
       "fg": "Custom|Legacy|VCS|FileStatusColors|IgnoredIgnorePlugin.fg"
     },
     "VCS_Ignored_StatusLine": {
-      "bg": "Custom|StatusBar.bg",
+      "bg": "UI|StatusBar.bg",
       "fg": "Custom|Legacy|VCS|FileStatusColors|Ignored.fg"
     },
     "VCS_Merged": "Custom|Legacy|VCS|FileStatusColors|Merged",
     "VCS_MergedWithConflicts": "Custom|Legacy|VCS|FileStatusColors|MergedWithConflicts",
     "VCS_MergedWithConflicts_StatusLine": {
-      "bg": "Custom|StatusBar.bg",
+      "bg": "UI|StatusBar.bg",
       "fg": "Custom|Legacy|VCS|FileStatusColors|MergedWithConflicts.fg"
     },
     "VCS_Merged_StatusLine": {
-      "bg": "Custom|StatusBar.bg",
+      "bg": "UI|StatusBar.bg",
       "fg": "Custom|Legacy|VCS|FileStatusColors|Merged.fg"
     },
     "VCS_Modified": "Custom|Legacy|VCS|FileStatusColors|Modified",
     "VCS_Modified_StatusLine": {
-      "bg": "Custom|StatusBar.bg",
+      "bg": "UI|StatusBar.bg",
       "fg": "Custom|Legacy|VCS|FileStatusColors|Modified.fg"
     },
     "VCS_Renamed": "Custom|Legacy|VCS|FileStatusColors|Renamed",
     "VCS_Renamed_StatusLine": {
-      "bg": "Custom|StatusBar.bg",
+      "bg": "UI|StatusBar.bg",
       "fg": "Custom|Legacy|VCS|FileStatusColors|Renamed.fg"
     },
     "VCS_Unknown": "Custom|Legacy|VCS|FileStatusColors|Unknown",
     "VCS_Unknown_StatusLine": {
-      "bg": "Custom|StatusBar.bg",
+      "bg": "UI|StatusBar.bg",
       "fg": "Custom|Legacy|VCS|FileStatusColors|Unknown.fg"
     },
     "VCS_VCSAnnotations_BackgroundColor1": "VCS|VCSAnnotations|BackgroundColorSharp1",
@@ -800,8 +786,8 @@
     "BlinkCmpSignatureHelpBorder": "BlinkCmpMenuBorder"
   },
   "Plugin.SmiteshP/nvim-navic": {
-    "NavicSeparator": "Custom|StatusBar",
-    "NavicText": "Custom|StatusBar"
+    "NavicSeparator": "UI|StatusBar",
+    "NavicText": "UI|StatusBar"
   },
   "Plugin.b0o/incline.nvim": {
     "InclineNormal": {
@@ -1818,13 +1804,13 @@
       "fg": "Appearance|Window|Border"
     },
     "AvanteReversedSubtitle": {
-      "fg": "Custom|StatusBar.bg"
+      "fg": "UI|StatusBar.bg"
     },
     "AvanteReversedThirdTitle": {
-      "fg": "Custom|StatusBar.bg"
+      "fg": "UI|StatusBar.bg"
     },
     "AvanteReversedTitle": {
-      "fg": "Custom|StatusBar.bg"
+      "fg": "UI|StatusBar.bg"
     },
     "AvanteSubtitle": "ToolWindowFloatTitle",
     "AvanteThirdTitle": "ToolWindowFloatTitle",

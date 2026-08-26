@@ -246,7 +246,7 @@ for _, groups in pairs(highlights) do
 end
 
 -- Additional runtime lookups outside the main highlight loop.
-add_path_prop("Custom|StatusBar.bg")
+add_path_prop("UI|StatusBar.bg")
 add_path_prop("IdeaVim|Modes|Normal")
 add_path_prop("IdeaVim|Modes|Insert")
 add_path_prop("IdeaVim|Modes|Visual")
