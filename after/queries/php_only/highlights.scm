@@ -79,3 +79,17 @@
     "ticks"
     "encoding"
   ] @keyword.directive)
+
+; Overriding @constant coming from nvim-treesitter
+; TODO: fix it upstream
+(class_constant_access_expression
+  .
+  [
+    (name) @type
+    (qualified_name
+      (name) @type)
+    (relative_name
+      (name) @type)
+  ]
+  (name) @keyword
+  (#eq? @keyword "class"))

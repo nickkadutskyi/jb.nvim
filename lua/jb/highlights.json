@@ -2256,6 +2256,22 @@
     "@variable.php_only": {
       "fg": "PHP|Identifiers|Variable",
       "nocombine": true
+    },
+    "@type.php": {
+      "fg": "PHP|Identifiers|Default",
+      "nocombine": true
+    },
+    "@type.php_only": {
+      "fg": "PHP|Identifiers|Default",
+      "nocombine": true
+    },
+    "@keyword.php": {
+      "fg": "PHP|Keywords",
+      "nocombine": true
+    },
+    "@keyword.php_only": {
+      "fg": "PHP|Keywords",
+      "nocombine": true
     }
   },
   "Treesitter.PHPDoc": {

@@ -9675,8 +9675,12 @@
           "dark_cb": {
             "fg": "#BCBEC4"
           },
-          "light": {},
-          "light_cb": {}
+          "light": {
+            "fg": "#080808"
+          },
+          "light_cb": {
+            "fg": "#080808"
+          }
         },
         "Brackets": {
           "dark": {
@@ -9685,8 +9689,12 @@
           "dark_cb": {
             "fg": "#BCBEC4"
           },
-          "light": {},
-          "light_cb": {}
+          "light": {
+            "fg": "#080808"
+          },
+          "light_cb": {
+            "fg": "#080808"
+          }
         },
         "Comma": {
           "dark": {
@@ -9695,8 +9703,12 @@
           "dark_cb": {
             "fg": "#BCBEC4"
           },
-          "light": {},
-          "light_cb": {}
+          "light": {
+            "fg": "#080808"
+          },
+          "light_cb": {
+            "fg": "#080808"
+          }
         },
         "Dot": {
           "dark": {
@@ -9705,8 +9717,12 @@
           "dark_cb": {
             "fg": "#BCBEC4"
           },
-          "light": {},
-          "light_cb": {}
+          "light": {
+            "fg": "#080808"
+          },
+          "light_cb": {
+            "fg": "#080808"
+          }
         },
         "OperationSign": {
           "dark": {
@@ -9715,8 +9731,12 @@
           "dark_cb": {
             "fg": "#BCBEC4"
           },
-          "light": {},
-          "light_cb": {}
+          "light": {
+            "fg": "#080808"
+          },
+          "light_cb": {
+            "fg": "#080808"
+          }
         },
         "Parentheses": {
           "dark": {
@@ -9725,8 +9745,12 @@
           "dark_cb": {
             "fg": "#BCBEC4"
           },
-          "light": {},
-          "light_cb": {}
+          "light": {
+            "fg": "#080808"
+          },
+          "light_cb": {
+            "fg": "#080808"
+          }
         },
         "Semicolon": {
           "dark": {
@@ -9735,8 +9759,12 @@
           "dark_cb": {
             "fg": "#BCBEC4"
           },
-          "light": {},
-          "light_cb": {}
+          "light": {
+            "fg": "#080808"
+          },
+          "light_cb": {
+            "fg": "#080808"
+          }
         }
       },
       "Classes": {
