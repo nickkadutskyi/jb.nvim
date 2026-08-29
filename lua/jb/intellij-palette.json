@@ -256,9 +256,7 @@
         "dark_cb": {
           "fg": "#68AAA2"
         },
-        "light": {
-          "fg": "#007EBD"
-        },
+        "light": "TypeScript|Object|Method",
         "light_cb": {
           "fg": "#007EBD"
         }
@@ -8259,9 +8257,7 @@
           "dark_cb": {
             "italic": true
           },
-          "light": {
-            "italic": true
-          },
+          "light": "LanguageDefaults|Classes|StaticMethod",
           "light_cb": {
             "italic": true
           }
@@ -9675,12 +9671,8 @@
           "dark_cb": {
             "fg": "#BCBEC4"
           },
-          "light": {
-            "fg": "#080808"
-          },
-          "light_cb": {
-            "fg": "#080808"
-          }
+          "light": {},
+          "light_cb": {}
         },
         "Brackets": {
           "dark": {
@@ -9689,12 +9681,8 @@
           "dark_cb": {
             "fg": "#BCBEC4"
           },
-          "light": {
-            "fg": "#080808"
-          },
-          "light_cb": {
-            "fg": "#080808"
-          }
+          "light": {},
+          "light_cb": {}
         },
         "Comma": {
           "dark": {
@@ -9703,12 +9691,8 @@
           "dark_cb": {
             "fg": "#BCBEC4"
           },
-          "light": {
-            "fg": "#080808"
-          },
-          "light_cb": {
-            "fg": "#080808"
-          }
+          "light": {},
+          "light_cb": {}
         },
         "Dot": {
           "dark": {
@@ -9717,12 +9701,8 @@
           "dark_cb": {
             "fg": "#BCBEC4"
           },
-          "light": {
-            "fg": "#080808"
-          },
-          "light_cb": {
-            "fg": "#080808"
-          }
+          "light": {},
+          "light_cb": {}
         },
         "OperationSign": {
           "dark": {
@@ -9731,12 +9711,8 @@
           "dark_cb": {
             "fg": "#BCBEC4"
           },
-          "light": {
-            "fg": "#080808"
-          },
-          "light_cb": {
-            "fg": "#080808"
-          }
+          "light": {},
+          "light_cb": {}
         },
         "Parentheses": {
           "dark": {
@@ -9745,12 +9721,8 @@
           "dark_cb": {
             "fg": "#BCBEC4"
           },
-          "light": {
-            "fg": "#080808"
-          },
-          "light_cb": {
-            "fg": "#080808"
-          }
+          "light": {},
+          "light_cb": {}
         },
         "Semicolon": {
           "dark": {
@@ -9759,12 +9731,8 @@
           "dark_cb": {
             "fg": "#BCBEC4"
           },
-          "light": {
-            "fg": "#080808"
-          },
-          "light_cb": {
-            "fg": "#080808"
-          }
+          "light": {},
+          "light_cb": {}
         }
       },
       "Classes": {
@@ -10728,9 +10696,7 @@
       "TypeParameter": {
         "dark": "LanguageDefaults|Identifiers|Parameter",
         "dark_cb": "LanguageDefaults|Identifiers|Parameter",
-        "light": {
-          "fg": "#007E8A"
-        },
+        "light": "LanguageDefaults|Identifiers|Parameter",
         "light_cb": {
           "fg": "#007E8A"
         }
@@ -12101,10 +12067,10 @@
       },
       "ComparisonViewBackground": {
         "dark": {
-          "bg": "#213029"
+          "bg": "#29392F"
         },
         "dark_cb": {
-          "bg": "#213029"
+          "bg": "#29392F"
         },
         "light": {
           "bg": "#DDF2DC"
@@ -12115,10 +12081,10 @@
       },
       "GutterIndicatorBackground": {
         "dark": {
-          "bg": "#2E2736"
+          "bg": "#362E3D"
         },
         "dark_cb": {
-          "bg": "#2E2736"
+          "bg": "#362E3D"
         },
         "light": {
           "bg": "#F5F0FF"
@@ -12143,10 +12109,10 @@
       },
       "SuggestedDeletionBackground": {
         "dark": {
-          "bg": "#412B2C"
+          "bg": "#4F3838"
         },
         "dark_cb": {
-          "bg": "#412B2C"
+          "bg": "#4F3838"
         },
         "light": {
           "bg": "#FFE5E5"
@@ -12157,10 +12123,10 @@
       },
       "SuggestedRefactoringHighlightBackground": {
         "dark": {
-          "bg": "#322842"
+          "bg": "#352B46"
         },
         "dark_cb": {
-          "bg": "#322842"
+          "bg": "#352B46"
         },
         "light": {
           "bg": "#F0E9FD"
@@ -12171,10 +12137,10 @@
       },
       "SuggestionAreaBackground": {
         "dark": {
-          "bg": "#231F26"
+          "bg": "#2F2C34"
         },
         "dark_cb": {
-          "bg": "#231F26"
+          "bg": "#2F2C34"
         },
         "light": {
           "bg": "#FAF8FF"
@@ -14639,63 +14605,89 @@
         "dark": {
           "bold": true
         },
-        "dark_cb": {},
+        "dark_cb": {
+          "bold": true
+        },
         "light": {
           "bold": true
         },
-        "light_cb": {}
+        "light_cb": {
+          "bold": true
+        }
       },
       "Email": {
         "dark": {
           "bold": true
         },
-        "dark_cb": {},
+        "dark_cb": {
+          "bold": true
+        },
         "light": {
           "bold": true
         },
-        "light_cb": {}
+        "light_cb": {
+          "bold": true
+        }
       },
       "Heading": {
         "dark": {
           "bold": true
         },
-        "dark_cb": {},
+        "dark_cb": {
+          "bold": true
+        },
         "light": {
           "bold": true
         },
-        "light_cb": {}
+        "light_cb": {
+          "bold": true
+        }
       },
       "Identifier": {
         "dark": {
           "bold": true,
           "italic": true
         },
-        "dark_cb": {},
+        "dark_cb": {
+          "bold": true,
+          "italic": true
+        },
         "light": {
           "bold": true,
           "italic": true
         },
-        "light_cb": {}
+        "light_cb": {
+          "bold": true,
+          "italic": true
+        }
       },
       "Tag": {
         "dark": {
           "bold": true
         },
-        "dark_cb": {},
+        "dark_cb": {
+          "bold": true
+        },
         "light": {
           "bold": true
         },
-        "light_cb": {}
+        "light_cb": {
+          "bold": true
+        }
       },
       "Url": {
         "dark": {
           "bold": true
         },
-        "dark_cb": {},
+        "dark_cb": {
+          "bold": true
+        },
         "light": {
           "bold": true
         },
-        "light_cb": {}
+        "light_cb": {
+          "bold": true
+        }
       }
     },
     "RMarkdown": {
@@ -15424,10 +15416,10 @@
       "Functions": {
         "AssociatedFunctionCall": {
           "dark": {
-            "fg": "#56A8F5"
+            "fg": "#FFC66D"
           },
           "dark_cb": {
-            "fg": "#56A8F5"
+            "fg": "#F2C55C"
           },
           "light": {
             "fg": "#00627A"
@@ -15448,10 +15440,10 @@
         },
         "AssociatedTraitFunctionCall": {
           "dark": {
-            "fg": "#56A8F5"
+            "fg": "#FFC66D"
           },
           "dark_cb": {
-            "fg": "#56A8F5"
+            "fg": "#F2C55C"
           },
           "light": {
             "fg": "#00627A"
@@ -15478,10 +15470,10 @@
         },
         "FunctionCall": {
           "dark": {
-            "fg": "#56A8F5"
+            "fg": "#FFC66D"
           },
           "dark_cb": {
-            "fg": "#56A8F5"
+            "fg": "#F2C55C"
           },
           "light": {
             "fg": "#00627A"
@@ -15564,10 +15556,10 @@
         },
         "MethodCall": {
           "dark": {
-            "fg": "#56A8F5"
+            "fg": "#FFC66D"
           },
           "dark_cb": {
-            "fg": "#56A8F5"
+            "fg": "#F2C55C"
           },
           "light": {
             "fg": "#00627A"
@@ -15594,11 +15586,11 @@
         },
         "TraitMethodCall": {
           "dark": {
-            "fg": "#56A8F5",
+            "fg": "#FFC66D",
             "italic": true
           },
           "dark_cb": {
-            "fg": "#56A8F5",
+            "fg": "#F2C55C",
             "italic": true
           },
           "light": {
@@ -15612,11 +15604,11 @@
         },
         "TraitMethodDeclaration": {
           "dark": {
-            "fg": "#56A8F5",
+            "fg": "#FFC66D",
             "italic": true
           },
           "dark_cb": {
-            "fg": "#56A8F5",
+            "fg": "#F2C55C",
             "italic": true
           },
           "light": {
