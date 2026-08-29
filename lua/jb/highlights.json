@@ -118,8 +118,8 @@
     },
     "TabLineCloseIcon": "UI|Tabs|CloseIcon",
     "TabLineCloseIconSel": {
-      "fg": "UI|Tabs|CloseIcon",
-      "bg": "UI|Tabs|NormalTabLineSelected"
+      "bg": "UI|Tabs|NormalTabLineSelected",
+      "fg": "UI|Tabs|CloseIcon"
     },
     "TabLineFill": {
       "bg": "UI|Tabs|NormalTabLine",
@@ -2239,10 +2239,26 @@
     "@injected_language_fragment.php": "HTML|InjectedLanguageFragment",
     "@injected_language_fragment.php_only": "HTML|InjectedLanguageFragment",
     "@keyword.conditional.php_only": "PHP|BracesAndOperators|Operators",
+    "@keyword.php": {
+      "fg": "PHP|Keywords",
+      "nocombine": true
+    },
+    "@keyword.php_only": {
+      "fg": "PHP|Keywords",
+      "nocombine": true
+    },
     "@tag.php": "PHP|PHPCode|Tags",
     "@tag.php_only": "PHP|PHPCode|Tags",
     "@template_language.php": "LanguageDefaults|TemplateLanguage",
     "@template_language.php_only": "LanguageDefaults|TemplateLanguage",
+    "@type.php": {
+      "fg": "PHP|Identifiers|Default",
+      "nocombine": true
+    },
+    "@type.php_only": {
+      "fg": "PHP|Identifiers|Default",
+      "nocombine": true
+    },
     "@variable.builtin.php": "PHP|Identifiers|ThisVariable",
     "@variable.builtin.php_only": "PHP|Identifiers|ThisVariable",
     "@variable.parameter.name.php": "PHP|NamedArguments",
@@ -2255,22 +2271,6 @@
     },
     "@variable.php_only": {
       "fg": "PHP|Identifiers|Variable",
-      "nocombine": true
-    },
-    "@type.php": {
-      "fg": "PHP|Identifiers|Default",
-      "nocombine": true
-    },
-    "@type.php_only": {
-      "fg": "PHP|Identifiers|Default",
-      "nocombine": true
-    },
-    "@keyword.php": {
-      "fg": "PHP|Keywords",
-      "nocombine": true
-    },
-    "@keyword.php_only": {
-      "fg": "PHP|Keywords",
       "nocombine": true
     }
   },

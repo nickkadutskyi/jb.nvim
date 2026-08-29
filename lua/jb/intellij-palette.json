@@ -20879,6 +20879,24 @@
         }
       },
       "Tabs": {
+        "BorderSelected": {
+          "dark": {
+            "fg": "#304E85"
+          },
+          "light": {
+            "fg": "#B6CFFC"
+          }
+        },
+        "CloseIcon": {
+          "dark": {
+            "bg": "#191A1C",
+            "fg": "#6F7379"
+          },
+          "light": {
+            "bg": "#FFFFFF",
+            "fg": "#A8ADBC"
+          }
+        },
         "NormalTabLine": {
           "dark": {
             "bg": "#191A1C",
@@ -20897,24 +20915,6 @@
           "light": {
             "bg": "#E4EBFC",
             "fg": "#151618"
-          }
-        },
-        "BorderSelected": {
-          "dark": {
-            "fg": "#304E85"
-          },
-          "light": {
-            "fg": "#B6CFFC"
-          }
-        },
-        "CloseIcon": {
-          "dark": {
-            "bg": "#191A1C",
-            "fg": "#6F7379"
-          },
-          "light": {
-            "bg": "#FFFFFF",
-            "fg": "#A8ADBC"
           }
         }
       }
