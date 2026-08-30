@@ -1907,7 +1907,10 @@
     "@lsp.type.variable.typescript": null,
     "@lsp.typemod.class.defaultLibrary.typescript": "TypeScript|Classes|ClassName",
     "@lsp.typemod.function.readonly.typescript": "TypeScript|Identifiers|ExportedFunction",
-    "@lsp.typemod.property.static.typescript": "LanguageDefaults|Classes|StaticField"
+    "@lsp.typemod.property.static.typescript": "LanguageDefaults|Classes|StaticField",
+    "@lsp.typemod.variable.local.typescript": "TypeScript|Identifiers|LocalVariable",
+    "@lsp.typemod.method.declaration.typescript":  "TypeScript|Object|Method",
+    "@lsp.typemod.variable.readonly.typescript": "TypeScript|Identifiers|LocalVariable"
   },
   "Semantic.TypeScriptReact": {
     "@lsp.type.function.typescriptreact": null,
@@ -2046,6 +2049,7 @@
       "fg": "LanguageDefaults|Identifiers|Default",
       "nocombine": true
     },
+    "@module.builtin": "LanguageDefaults|Identifiers|GlobalVariable",
     "@property": "LanguageDefaults|Classes|InstanceField",
     "@property.static": "LanguageDefaults|Classes|StaticField",
     "@punctuation": "Custom|Legacy|LanguageDefaults|BracesAndOperators|Default",
@@ -2388,7 +2392,7 @@
     "@variable.exported.typescript": "TypeScript|Identifiers|ExportedVariable",
     "@variable.member.typescript": "TypeScript|Object|Property",
     "@variable.parameter.typescript": "TypeScript|Identifiers|Parameter",
-    "@variable.typescript": "TypeScript|Identifiers|LocalVariable"
+    "@module.builtin.typescript": "TypeScript|Identifiers|GlobalVariable"
   },
   "Treesitter.Vue": {
     "@injected_language_fragment.vue": "HTML|InjectedLanguageFragment",
