@@ -216,7 +216,20 @@ local function resolve_path_uncached(colors, path, profile, inherit_level, prev_
             node = node[v]
         elseif i == #path_spl and type(node[v]) == "table" and type(node[v][profile] or node[v][base_profile]) == "table" then
             -- If last node is a table, return the profile (fall back to base_profile for _cb)
-            return node[v][profile] or node[v][base_profile]
+            local resolved = node[v][profile] or node[v][base_profile]
+            if next(resolved) == nil then
+                local default_text = resolve_path_uncached(
+                    colors,
+                    "General|Text|DefaultText",
+                    profile,
+                    inherit_level + 1,
+                    prev_paths,
+                    "IntelliJ"
+                )
+                assert(type(default_text.fg) == "string", "IntelliJ General|Text|DefaultText.fg is required")
+                return { fg = default_text.fg }
+            end
+            return resolved
         elseif
             i == #path_spl
             and (
