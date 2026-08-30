@@ -9,10 +9,10 @@
   </tr>
   <tr>
     <td>
-        <img width="512" alt="dark-js" src="https://github.com/user-attachments/assets/dcff0247-868e-4aa4-bac1-22729099fb46" />
+        <img width="2368" height="1832" alt="CleanShot 2026-08-26 at 14 07 42@2x" src="https://github.com/user-attachments/assets/b1a1dfe1-93e1-4916-9e01-95caec645bbe" />
     </td>
     <td>
-        <img width="512" alt="light-js" src="https://github.com/user-attachments/assets/89863d62-5c69-45f3-b21e-9e8c17cc3281" />
+        <img width="2368" height="1832" alt="CleanShot 2026-08-26 at 14 07 03@2x" src="https://github.com/user-attachments/assets/cfa8901f-cb1b-4112-a328-028d4c241705" />
     </td>
   </tr>
 </table>
