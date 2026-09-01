@@ -256,10 +256,10 @@
         "dark_cb": {
           "fg": "#68AAA2"
         },
-        "light": "TypeScript|Object|Method",
-        "light_cb": {
+        "light": {
           "fg": "#007EBD"
-        }
+        },
+        "light_cb": "TypeScript|Object|Method"
       },
       "StructuralDirectiveDirective": {
         "dark": "LanguageDefaults|Classes|StaticField",
@@ -8257,10 +8257,10 @@
           "dark_cb": {
             "italic": true
           },
-          "light": "LanguageDefaults|Classes|StaticMethod",
-          "light_cb": {
+          "light": {
             "italic": true
-          }
+          },
+          "light_cb": "LanguageDefaults|Classes|StaticMethod"
         }
       },
       "Number": {
@@ -10696,10 +10696,10 @@
       "TypeParameter": {
         "dark": "LanguageDefaults|Identifiers|Parameter",
         "dark_cb": "LanguageDefaults|Identifiers|Parameter",
-        "light": "LanguageDefaults|Identifiers|Parameter",
-        "light_cb": {
+        "light": {
           "fg": "#007E8A"
-        }
+        },
+        "light_cb": "LanguageDefaults|Identifiers|Parameter"
       },
       "Variables": {
         "ReadonlyVariable": {
@@ -12067,7 +12067,7 @@
       },
       "ComparisonViewBackground": {
         "dark": {
-          "bg": "#29392F"
+          "bg": "#213029"
         },
         "dark_cb": {
           "bg": "#29392F"
@@ -12081,7 +12081,7 @@
       },
       "GutterIndicatorBackground": {
         "dark": {
-          "bg": "#362E3D"
+          "bg": "#2E2736"
         },
         "dark_cb": {
           "bg": "#362E3D"
@@ -12109,7 +12109,7 @@
       },
       "SuggestedDeletionBackground": {
         "dark": {
-          "bg": "#4F3838"
+          "bg": "#412B2C"
         },
         "dark_cb": {
           "bg": "#4F3838"
@@ -12123,7 +12123,7 @@
       },
       "SuggestedRefactoringHighlightBackground": {
         "dark": {
-          "bg": "#352B46"
+          "bg": "#322842"
         },
         "dark_cb": {
           "bg": "#352B46"
@@ -12137,7 +12137,7 @@
       },
       "SuggestionAreaBackground": {
         "dark": {
-          "bg": "#2F2C34"
+          "bg": "#231F26"
         },
         "dark_cb": {
           "bg": "#2F2C34"
@@ -12451,6 +12451,262 @@
             "bold": true,
             "fg": "#3777E6"
           }
+        }
+      }
+    },
+    "ObjectiveC_CNoctule": {
+      "BadCharacter": {
+        "dark": "LanguageDefaults|BadCharacter",
+        "dark_cb": "LanguageDefaults|BadCharacter",
+        "light": "LanguageDefaults|BadCharacter",
+        "light_cb": "LanguageDefaults|BadCharacter"
+      },
+      "BracesAndOperators": {
+        "Braces": {
+          "dark": "LanguageDefaults|BracesAndOperators|Braces",
+          "dark_cb": "LanguageDefaults|BracesAndOperators|Braces",
+          "light": "LanguageDefaults|BracesAndOperators|Braces",
+          "light_cb": "LanguageDefaults|BracesAndOperators|Braces"
+        },
+        "Brackets": {
+          "dark": "LanguageDefaults|BracesAndOperators|Braces",
+          "dark_cb": "LanguageDefaults|BracesAndOperators|Braces",
+          "light": "LanguageDefaults|BracesAndOperators|Braces",
+          "light_cb": "LanguageDefaults|BracesAndOperators|Braces"
+        },
+        "Comma": {
+          "dark": "LanguageDefaults|BracesAndOperators|Comma",
+          "dark_cb": "LanguageDefaults|BracesAndOperators|Comma",
+          "light": "LanguageDefaults|BracesAndOperators|Comma",
+          "light_cb": "LanguageDefaults|BracesAndOperators|Comma"
+        },
+        "Dot": {
+          "dark": "LanguageDefaults|BracesAndOperators|Dot",
+          "dark_cb": "LanguageDefaults|BracesAndOperators|Dot",
+          "light": "LanguageDefaults|BracesAndOperators|Dot",
+          "light_cb": "LanguageDefaults|BracesAndOperators|Dot"
+        },
+        "OperatorSign": {
+          "dark": "LanguageDefaults|BracesAndOperators|OperationSign",
+          "dark_cb": "LanguageDefaults|BracesAndOperators|OperationSign",
+          "light": "LanguageDefaults|BracesAndOperators|OperationSign",
+          "light_cb": "LanguageDefaults|BracesAndOperators|OperationSign"
+        },
+        "Parentheses": {
+          "dark": "LanguageDefaults|BracesAndOperators|Parentheses",
+          "dark_cb": "LanguageDefaults|BracesAndOperators|Parentheses",
+          "light": "LanguageDefaults|BracesAndOperators|Parentheses",
+          "light_cb": "LanguageDefaults|BracesAndOperators|Parentheses"
+        },
+        "Semicolon": {
+          "dark": "LanguageDefaults|BracesAndOperators|Semicolon",
+          "dark_cb": "LanguageDefaults|BracesAndOperators|Semicolon",
+          "light": "LanguageDefaults|BracesAndOperators|Semicolon",
+          "light_cb": "LanguageDefaults|BracesAndOperators|Semicolon"
+        }
+      },
+      "Comments": {
+        "BlockComment": {
+          "dark": "LanguageDefaults|Comments|BlockComment",
+          "dark_cb": "LanguageDefaults|Comments|BlockComment",
+          "light": "LanguageDefaults|Comments|BlockComment",
+          "light_cb": "LanguageDefaults|Comments|BlockComment"
+        },
+        "DocumentationComment": {
+          "dark": "LanguageDefaults|Comments|DocComment|Text",
+          "dark_cb": "LanguageDefaults|Comments|DocComment|Text",
+          "light": "LanguageDefaults|Comments|DocComment|Text",
+          "light_cb": "LanguageDefaults|Comments|DocComment|Text"
+        },
+        "LineComment": {
+          "dark": "LanguageDefaults|Comments|LineComment",
+          "dark_cb": "LanguageDefaults|Comments|LineComment",
+          "light": "LanguageDefaults|Comments|LineComment",
+          "light_cb": "LanguageDefaults|Comments|LineComment"
+        }
+      },
+      "FunctionsAndMethods": {
+        "FunctionDeclaration": {
+          "dark": "LanguageDefaults|Identifiers|FunctionDeclaration",
+          "dark_cb": "LanguageDefaults|Identifiers|FunctionDeclaration",
+          "light": "LanguageDefaults|Identifiers|FunctionDeclaration",
+          "light_cb": "LanguageDefaults|Identifiers|FunctionDeclaration"
+        },
+        "FunctionName": {
+          "dark": "LanguageDefaults|Identifiers|FunctionCall",
+          "dark_cb": "LanguageDefaults|Identifiers|FunctionCall",
+          "light": "LanguageDefaults|Identifiers|FunctionCall",
+          "light_cb": "LanguageDefaults|Identifiers|FunctionCall"
+        },
+        "LibraryFunction": {
+          "dark": "ObjectiveC_CNoctule|FunctionsAndMethods|StaticFunction",
+          "dark_cb": "ObjectiveC_CNoctule|FunctionsAndMethods|StaticFunction",
+          "light": "ObjectiveC_CNoctule|FunctionsAndMethods|StaticFunction",
+          "light_cb": "ObjectiveC_CNoctule|FunctionsAndMethods|StaticFunction"
+        },
+        "LibraryMethod": {
+          "dark": "ObjectiveC_CNoctule|FunctionsAndMethods|LibraryFunction",
+          "dark_cb": "ObjectiveC_CNoctule|FunctionsAndMethods|LibraryFunction",
+          "light": "ObjectiveC_CNoctule|FunctionsAndMethods|LibraryFunction",
+          "light_cb": "ObjectiveC_CNoctule|FunctionsAndMethods|LibraryFunction"
+        },
+        "MethodDeclaration": {
+          "dark": "ObjectiveC_CNoctule|FunctionsAndMethods|FunctionDeclaration",
+          "dark_cb": "ObjectiveC_CNoctule|FunctionsAndMethods|FunctionDeclaration",
+          "light": "ObjectiveC_CNoctule|FunctionsAndMethods|FunctionDeclaration",
+          "light_cb": "ObjectiveC_CNoctule|FunctionsAndMethods|FunctionDeclaration"
+        },
+        "MethodName": {
+          "dark": "ObjectiveC_CNoctule|FunctionsAndMethods|FunctionName",
+          "dark_cb": "ObjectiveC_CNoctule|FunctionsAndMethods|FunctionName",
+          "light": "ObjectiveC_CNoctule|FunctionsAndMethods|FunctionName",
+          "light_cb": "ObjectiveC_CNoctule|FunctionsAndMethods|FunctionName"
+        },
+        "Parameter": {
+          "dark": "LanguageDefaults|Identifiers|Parameter",
+          "dark_cb": "LanguageDefaults|Identifiers|Parameter",
+          "light": "LanguageDefaults|Identifiers|Parameter",
+          "light_cb": "LanguageDefaults|Identifiers|Parameter"
+        },
+        "StaticFunction": {
+          "dark": "ObjectiveC_CNoctule|FunctionsAndMethods|FunctionName",
+          "dark_cb": "ObjectiveC_CNoctule|FunctionsAndMethods|FunctionName",
+          "light": "ObjectiveC_CNoctule|FunctionsAndMethods|FunctionName",
+          "light_cb": "ObjectiveC_CNoctule|FunctionsAndMethods|FunctionName"
+        },
+        "StaticMethod": {
+          "dark": "ObjectiveC_CNoctule|FunctionsAndMethods|StaticFunction",
+          "dark_cb": "ObjectiveC_CNoctule|FunctionsAndMethods|StaticFunction",
+          "light": "ObjectiveC_CNoctule|FunctionsAndMethods|StaticFunction",
+          "light_cb": "ObjectiveC_CNoctule|FunctionsAndMethods|StaticFunction"
+        }
+      },
+      "Keywords": {
+        "Keyword": {
+          "dark": "LanguageDefaults|Keyword",
+          "dark_cb": "LanguageDefaults|Keyword",
+          "light": "LanguageDefaults|Keyword",
+          "light_cb": "LanguageDefaults|Keyword"
+        },
+        "SelfAndSuper": {
+          "dark": "ObjectiveC_CNoctule|Keywords|Keyword",
+          "dark_cb": "ObjectiveC_CNoctule|Keywords|Keyword",
+          "light": "ObjectiveC_CNoctule|Keywords|Keyword",
+          "light_cb": "ObjectiveC_CNoctule|Keywords|Keyword"
+        }
+      },
+      "Label": {
+        "dark": "General|Text|DefaultText",
+        "dark_cb": "General|Text|DefaultText",
+        "light": "General|Text|DefaultText",
+        "light_cb": "General|Text|DefaultText"
+      },
+      "MacroName": {
+        "dark": "LanguageDefaults|TemplateLanguage",
+        "dark_cb": "LanguageDefaults|TemplateLanguage",
+        "light": "LanguageDefaults|TemplateLanguage",
+        "light_cb": "LanguageDefaults|TemplateLanguage"
+      },
+      "Number": {
+        "dark": "LanguageDefaults|Number",
+        "dark_cb": "LanguageDefaults|Number",
+        "light": "LanguageDefaults|Number",
+        "light_cb": "LanguageDefaults|Number"
+      },
+      "Preprocessor": {
+        "Directive": {
+          "dark": "LanguageDefaults|Metadata",
+          "dark_cb": "LanguageDefaults|Metadata",
+          "light": "LanguageDefaults|Metadata",
+          "light_cb": "LanguageDefaults|Metadata"
+        },
+        "HeaderPath": {
+          "dark": "LanguageDefaults|String|StringText",
+          "dark_cb": "LanguageDefaults|String|StringText",
+          "light": "LanguageDefaults|String|StringText",
+          "light_cb": "LanguageDefaults|String|StringText"
+        }
+      },
+      "Property": {
+        "dark": "ObjectiveC_CNoctule|FunctionsAndMethods|MethodName",
+        "dark_cb": "ObjectiveC_CNoctule|FunctionsAndMethods|MethodName",
+        "light": "ObjectiveC_CNoctule|FunctionsAndMethods|MethodName",
+        "light_cb": "ObjectiveC_CNoctule|FunctionsAndMethods|MethodName"
+      },
+      "PropertyAttribute": {
+        "dark": "General|Text|DefaultText",
+        "dark_cb": "General|Text|DefaultText",
+        "light": "General|Text|DefaultText",
+        "light_cb": "General|Text|DefaultText"
+      },
+      "TypeDeclarations": {
+        "Class": {
+          "dark": "ObjectiveC_CNoctule|Types|Class",
+          "dark_cb": "ObjectiveC_CNoctule|Types|Class",
+          "light": "ObjectiveC_CNoctule|Types|Class",
+          "light_cb": "ObjectiveC_CNoctule|Types|Class"
+        },
+        "Enum": {
+          "dark": "ObjectiveC_CNoctule|Types|Enum",
+          "dark_cb": "ObjectiveC_CNoctule|Types|Enum",
+          "light": "ObjectiveC_CNoctule|Types|Enum",
+          "light_cb": "ObjectiveC_CNoctule|Types|Enum"
+        },
+        "Protocol": {
+          "dark": "ObjectiveC_CNoctule|Types|Protocol",
+          "dark_cb": "ObjectiveC_CNoctule|Types|Protocol",
+          "light": "ObjectiveC_CNoctule|Types|Protocol",
+          "light_cb": "ObjectiveC_CNoctule|Types|Protocol"
+        }
+      },
+      "Types": {
+        "Class": {
+          "dark": "LanguageDefaults|Classes|ClassName",
+          "dark_cb": "LanguageDefaults|Classes|ClassName",
+          "light": {
+            "fg": "#587580"
+          },
+          "light_cb": {
+            "fg": "#587580"
+          }
+        },
+        "Enum": {
+          "dark": "ObjectiveC_CNoctule|Types|Class",
+          "dark_cb": "ObjectiveC_CNoctule|Types|Class",
+          "light": "ObjectiveC_CNoctule|Types|Class",
+          "light_cb": "ObjectiveC_CNoctule|Types|Class"
+        },
+        "GenericParameter": {
+          "dark": "LanguageDefaults|TemplateLanguage",
+          "dark_cb": "LanguageDefaults|TemplateLanguage",
+          "light": "LanguageDefaults|TemplateLanguage",
+          "light_cb": "LanguageDefaults|TemplateLanguage"
+        },
+        "Protocol": {
+          "dark": "ObjectiveC_CNoctule|Types|Class",
+          "dark_cb": "ObjectiveC_CNoctule|Types|Class",
+          "light": "ObjectiveC_CNoctule|Types|Class",
+          "light_cb": "ObjectiveC_CNoctule|Types|Class"
+        }
+      },
+      "Variables": {
+        "Declaration": {
+          "dark": "ObjectiveC_CNoctule|Variables|Variable",
+          "dark_cb": "ObjectiveC_CNoctule|Variables|Variable",
+          "light": "ObjectiveC_CNoctule|Variables|Variable",
+          "light_cb": "ObjectiveC_CNoctule|Variables|Variable"
+        },
+        "LocalVariable": {
+          "dark": "LanguageDefaults|Identifiers|LocalVariable",
+          "dark_cb": "LanguageDefaults|Identifiers|LocalVariable",
+          "light": "LanguageDefaults|Identifiers|LocalVariable",
+          "light_cb": "LanguageDefaults|Identifiers|LocalVariable"
+        },
+        "Variable": {
+          "dark": "LanguageDefaults|Identifiers|GlobalVariable",
+          "dark_cb": "LanguageDefaults|Identifiers|GlobalVariable",
+          "light": "LanguageDefaults|Identifiers|GlobalVariable",
+          "light_cb": "LanguageDefaults|Identifiers|GlobalVariable"
         }
       }
     },
@@ -13508,6 +13764,80 @@
         "dark_cb": "LanguageDefaults|String|StringText",
         "light": "LanguageDefaults|String|StringText",
         "light_cb": "LanguageDefaults|String|StringText"
+      }
+    },
+    "Plist": {
+      "AttributeName": {
+        "dark": "LanguageDefaults|Metadata",
+        "dark_cb": "LanguageDefaults|Metadata",
+        "light": "LanguageDefaults|Metadata",
+        "light_cb": "LanguageDefaults|Metadata"
+      },
+      "AttributeValue": {
+        "dark": "LanguageDefaults|String|StringText",
+        "dark_cb": "LanguageDefaults|String|StringText",
+        "light": "LanguageDefaults|String|StringText",
+        "light_cb": "LanguageDefaults|String|StringText"
+      },
+      "BadCharacter": {
+        "dark": "LanguageDefaults|String|EscapeSequence|Invalid",
+        "dark_cb": "LanguageDefaults|String|EscapeSequence|Invalid",
+        "light": "LanguageDefaults|String|EscapeSequence|Invalid",
+        "light_cb": "LanguageDefaults|String|EscapeSequence|Invalid"
+      },
+      "Boolean": {
+        "dark": "LanguageDefaults|Identifiers|Constant",
+        "dark_cb": "LanguageDefaults|Identifiers|Constant",
+        "light": "LanguageDefaults|Identifiers|Constant",
+        "light_cb": "LanguageDefaults|Identifiers|Constant"
+      },
+      "Comment": {
+        "dark": "LanguageDefaults|Comments|LineComment",
+        "dark_cb": "LanguageDefaults|Comments|LineComment",
+        "light": "LanguageDefaults|Comments|LineComment",
+        "light_cb": "LanguageDefaults|Comments|LineComment"
+      },
+      "DOCTYPE": {
+        "dark": "LanguageDefaults|Metadata",
+        "dark_cb": "LanguageDefaults|Metadata",
+        "light": "LanguageDefaults|Metadata",
+        "light_cb": "LanguageDefaults|Metadata"
+      },
+      "Key": {
+        "dark": "LanguageDefaults|Classes|InstanceField",
+        "dark_cb": "LanguageDefaults|Classes|InstanceField",
+        "light": "LanguageDefaults|Classes|InstanceField",
+        "light_cb": "LanguageDefaults|Classes|InstanceField"
+      },
+      "NumberValue": {
+        "dark": "LanguageDefaults|Number",
+        "dark_cb": "LanguageDefaults|Number",
+        "light": "LanguageDefaults|Number",
+        "light_cb": "LanguageDefaults|Number"
+      },
+      "StringValue": {
+        "dark": "LanguageDefaults|String|StringText",
+        "dark_cb": "LanguageDefaults|String|StringText",
+        "light": "LanguageDefaults|String|StringText",
+        "light_cb": "LanguageDefaults|String|StringText"
+      },
+      "Tag": {
+        "dark": "LanguageDefaults|Keyword",
+        "dark_cb": "LanguageDefaults|Keyword",
+        "light": "LanguageDefaults|Keyword",
+        "light_cb": "LanguageDefaults|Keyword"
+      },
+      "TextContent": {
+        "dark": "LanguageDefaults|String|StringText",
+        "dark_cb": "LanguageDefaults|String|StringText",
+        "light": "LanguageDefaults|String|StringText",
+        "light_cb": "LanguageDefaults|String|StringText"
+      },
+      "XMLProlog": {
+        "dark": "LanguageDefaults|Metadata",
+        "dark_cb": "LanguageDefaults|Metadata",
+        "light": "LanguageDefaults|Metadata",
+        "light_cb": "LanguageDefaults|Metadata"
       }
     },
     "PostCSS": {
@@ -14605,89 +14935,63 @@
         "dark": {
           "bold": true
         },
-        "dark_cb": {
-          "bold": true
-        },
+        "dark_cb": {},
         "light": {
           "bold": true
         },
-        "light_cb": {
-          "bold": true
-        }
+        "light_cb": {}
       },
       "Email": {
         "dark": {
           "bold": true
         },
-        "dark_cb": {
-          "bold": true
-        },
+        "dark_cb": {},
         "light": {
           "bold": true
         },
-        "light_cb": {
-          "bold": true
-        }
+        "light_cb": {}
       },
       "Heading": {
         "dark": {
           "bold": true
         },
-        "dark_cb": {
-          "bold": true
-        },
+        "dark_cb": {},
         "light": {
           "bold": true
         },
-        "light_cb": {
-          "bold": true
-        }
+        "light_cb": {}
       },
       "Identifier": {
         "dark": {
           "bold": true,
           "italic": true
         },
-        "dark_cb": {
-          "bold": true,
-          "italic": true
-        },
+        "dark_cb": {},
         "light": {
           "bold": true,
           "italic": true
         },
-        "light_cb": {
-          "bold": true,
-          "italic": true
-        }
+        "light_cb": {}
       },
       "Tag": {
         "dark": {
           "bold": true
         },
-        "dark_cb": {
-          "bold": true
-        },
+        "dark_cb": {},
         "light": {
           "bold": true
         },
-        "light_cb": {
-          "bold": true
-        }
+        "light_cb": {}
       },
       "Url": {
         "dark": {
           "bold": true
         },
-        "dark_cb": {
-          "bold": true
-        },
+        "dark_cb": {},
         "light": {
           "bold": true
         },
-        "light_cb": {
-          "bold": true
-        }
+        "light_cb": {}
       }
     },
     "RMarkdown": {
@@ -15416,7 +15720,7 @@
       "Functions": {
         "AssociatedFunctionCall": {
           "dark": {
-            "fg": "#FFC66D"
+            "fg": "#56A8F5"
           },
           "dark_cb": {
             "fg": "#F2C55C"
@@ -15440,7 +15744,7 @@
         },
         "AssociatedTraitFunctionCall": {
           "dark": {
-            "fg": "#FFC66D"
+            "fg": "#56A8F5"
           },
           "dark_cb": {
             "fg": "#F2C55C"
@@ -15470,7 +15774,7 @@
         },
         "FunctionCall": {
           "dark": {
-            "fg": "#FFC66D"
+            "fg": "#56A8F5"
           },
           "dark_cb": {
             "fg": "#F2C55C"
@@ -15556,7 +15860,7 @@
         },
         "MethodCall": {
           "dark": {
-            "fg": "#FFC66D"
+            "fg": "#56A8F5"
           },
           "dark_cb": {
             "fg": "#F2C55C"
@@ -15586,7 +15890,7 @@
         },
         "TraitMethodCall": {
           "dark": {
-            "fg": "#FFC66D",
+            "fg": "#56A8F5",
             "italic": true
           },
           "dark_cb": {
@@ -15604,7 +15908,7 @@
         },
         "TraitMethodDeclaration": {
           "dark": {
-            "fg": "#FFC66D",
+            "fg": "#56A8F5",
             "italic": true
           },
           "dark_cb": {
@@ -17204,6 +17508,12 @@
     },
     "Swift": {
       "Attributes": {
+        "Attribute": {
+          "dark": "LanguageDefaults|Metadata",
+          "dark_cb": "LanguageDefaults|Metadata",
+          "light": "LanguageDefaults|Metadata",
+          "light_cb": "LanguageDefaults|Metadata"
+        },
         "AttributeArgument": {
           "dark": "Swift|Attributes|AttributeName",
           "dark_cb": "Swift|Attributes|AttributeName",
@@ -17215,20 +17525,44 @@
           "dark_cb": "Swift|KeywordsAndDirectives|Keyword",
           "light": "Swift|KeywordsAndDirectives|Keyword",
           "light_cb": "Swift|KeywordsAndDirectives|Keyword"
+        },
+        "CompilerDirectiveSharp": {
+          "dark": "LanguageDefaults|Keyword",
+          "dark_cb": "LanguageDefaults|Keyword",
+          "light": "LanguageDefaults|Keyword",
+          "light_cb": "LanguageDefaults|Keyword"
+        }
+      },
+      "BadCharacter": {
+        "dark": {
+          "sp": "#FF0000",
+          "undercurl": true
+        },
+        "dark_cb": {
+          "sp": "#FF0000",
+          "undercurl": true
+        },
+        "light": {
+          "sp": "#FF0000",
+          "undercurl": true
+        },
+        "light_cb": {
+          "sp": "#FF0000",
+          "undercurl": true
         }
       },
       "BracesAndOperators": {
         "Braces": {
-          "dark": "C_Cpp_ObjectiveC|BracesAndOperators|Braces",
-          "dark_cb": "C_Cpp_ObjectiveC|BracesAndOperators|Braces",
-          "light": "C_Cpp_ObjectiveC|BracesAndOperators|Braces",
-          "light_cb": "C_Cpp_ObjectiveC|BracesAndOperators|Braces"
+          "dark": "LanguageDefaults|BracesAndOperators|Braces",
+          "dark_cb": "LanguageDefaults|BracesAndOperators|Braces",
+          "light": "LanguageDefaults|BracesAndOperators|Braces",
+          "light_cb": "LanguageDefaults|BracesAndOperators|Braces"
         },
         "Brackets": {
-          "dark": "C_Cpp_ObjectiveC|BracesAndOperators|Brackets",
-          "dark_cb": "C_Cpp_ObjectiveC|BracesAndOperators|Brackets",
-          "light": "C_Cpp_ObjectiveC|BracesAndOperators|Brackets",
-          "light_cb": "C_Cpp_ObjectiveC|BracesAndOperators|Brackets"
+          "dark": "LanguageDefaults|BracesAndOperators|Brackets",
+          "dark_cb": "LanguageDefaults|BracesAndOperators|Brackets",
+          "light": "LanguageDefaults|BracesAndOperators|Brackets",
+          "light_cb": "LanguageDefaults|BracesAndOperators|Brackets"
         },
         "Colon": {
           "dark": "C_Cpp_ObjectiveC|BracesAndOperators|Semicolon",
@@ -17237,16 +17571,16 @@
           "light_cb": "C_Cpp_ObjectiveC|BracesAndOperators|Semicolon"
         },
         "Comma": {
-          "dark": "C_Cpp_ObjectiveC|BracesAndOperators|Comma",
-          "dark_cb": "C_Cpp_ObjectiveC|BracesAndOperators|Comma",
-          "light": "C_Cpp_ObjectiveC|BracesAndOperators|Comma",
-          "light_cb": "C_Cpp_ObjectiveC|BracesAndOperators|Comma"
+          "dark": "LanguageDefaults|BracesAndOperators|Comma",
+          "dark_cb": "LanguageDefaults|BracesAndOperators|Comma",
+          "light": "LanguageDefaults|BracesAndOperators|Comma",
+          "light_cb": "LanguageDefaults|BracesAndOperators|Comma"
         },
         "Dot": {
-          "dark": "C_Cpp_ObjectiveC|BracesAndOperators|Dot",
-          "dark_cb": "C_Cpp_ObjectiveC|BracesAndOperators|Dot",
-          "light": "C_Cpp_ObjectiveC|BracesAndOperators|Dot",
-          "light_cb": "C_Cpp_ObjectiveC|BracesAndOperators|Dot"
+          "dark": "LanguageDefaults|BracesAndOperators|Dot",
+          "dark_cb": "LanguageDefaults|BracesAndOperators|Dot",
+          "light": "LanguageDefaults|BracesAndOperators|Dot",
+          "light_cb": "LanguageDefaults|BracesAndOperators|Dot"
         },
         "OperatorSign": {
           "dark": "LanguageDefaults|BracesAndOperators|OperationSign",
@@ -17255,24 +17589,24 @@
           "light_cb": "LanguageDefaults|BracesAndOperators|OperationSign"
         },
         "Parentheses": {
-          "dark": "C_Cpp_ObjectiveC|BracesAndOperators|Parentheses",
-          "dark_cb": "C_Cpp_ObjectiveC|BracesAndOperators|Parentheses",
-          "light": "C_Cpp_ObjectiveC|BracesAndOperators|Parentheses",
-          "light_cb": "C_Cpp_ObjectiveC|BracesAndOperators|Parentheses"
+          "dark": "LanguageDefaults|BracesAndOperators|Parentheses",
+          "dark_cb": "LanguageDefaults|BracesAndOperators|Parentheses",
+          "light": "LanguageDefaults|BracesAndOperators|Parentheses",
+          "light_cb": "LanguageDefaults|BracesAndOperators|Parentheses"
         },
         "Semicolon": {
-          "dark": "C_Cpp_ObjectiveC|BracesAndOperators|Semicolon",
-          "dark_cb": "C_Cpp_ObjectiveC|BracesAndOperators|Semicolon",
-          "light": "C_Cpp_ObjectiveC|BracesAndOperators|Semicolon",
-          "light_cb": "C_Cpp_ObjectiveC|BracesAndOperators|Semicolon"
+          "dark": "LanguageDefaults|BracesAndOperators|Semicolon",
+          "dark_cb": "LanguageDefaults|BracesAndOperators|Semicolon",
+          "light": "LanguageDefaults|BracesAndOperators|Semicolon",
+          "light_cb": "LanguageDefaults|BracesAndOperators|Semicolon"
         }
       },
       "Comments": {
         "BlockComment": {
-          "dark": "C_Cpp_ObjectiveC|Comments|BlockComment",
-          "dark_cb": "C_Cpp_ObjectiveC|Comments|BlockComment",
-          "light": "C_Cpp_ObjectiveC|Comments|BlockComment",
-          "light_cb": "C_Cpp_ObjectiveC|Comments|BlockComment"
+          "dark": "LanguageDefaults|Comments|BlockComment",
+          "dark_cb": "LanguageDefaults|Comments|BlockComment",
+          "light": "LanguageDefaults|Comments|BlockComment",
+          "light_cb": "LanguageDefaults|Comments|BlockComment"
         },
         "DocComment": {
           "Tag": {
@@ -17294,11 +17628,17 @@
             "light_cb": "LanguageDefaults|Comments|DocComment|Text"
           }
         },
+        "DocumentationComment": {
+          "dark": "LanguageDefaults|Comments|DocComment|Text",
+          "dark_cb": "LanguageDefaults|Comments|DocComment|Text",
+          "light": "LanguageDefaults|Comments|DocComment|Text",
+          "light_cb": "LanguageDefaults|Comments|DocComment|Text"
+        },
         "LineComment": {
-          "dark": "C_Cpp_ObjectiveC|Comments|LineComment",
-          "dark_cb": "C_Cpp_ObjectiveC|Comments|LineComment",
-          "light": "C_Cpp_ObjectiveC|Comments|LineComment",
-          "light_cb": "C_Cpp_ObjectiveC|Comments|LineComment"
+          "dark": "LanguageDefaults|Comments|LineComment",
+          "dark_cb": "LanguageDefaults|Comments|LineComment",
+          "light": "LanguageDefaults|Comments|LineComment",
+          "light_cb": "LanguageDefaults|Comments|LineComment"
         },
         "ShebangComment": {
           "dark": "C_Cpp_ObjectiveC|Comments|LineComment",
@@ -17319,6 +17659,18 @@
           "dark_cb": "C_Cpp_ObjectiveC|MethodDeclaration",
           "light": "C_Cpp_ObjectiveC|MethodDeclaration",
           "light_cb": "C_Cpp_ObjectiveC|MethodDeclaration"
+        },
+        "FunctionCall": {
+          "dark": "LanguageDefaults|Identifiers|FunctionCall",
+          "dark_cb": "LanguageDefaults|Identifiers|FunctionCall",
+          "light": "LanguageDefaults|Identifiers|FunctionCall",
+          "light_cb": "LanguageDefaults|Identifiers|FunctionCall"
+        },
+        "FunctionDeclaration": {
+          "dark": "LanguageDefaults|Identifiers|FunctionDeclaration",
+          "dark_cb": "LanguageDefaults|Identifiers|FunctionDeclaration",
+          "light": "LanguageDefaults|Identifiers|FunctionDeclaration",
+          "light_cb": "LanguageDefaults|Identifiers|FunctionDeclaration"
         },
         "NestedFunctionCall": {
           "dark": "Swift|Functions|FunctionAndMethodCall",
@@ -17407,6 +17759,14 @@
           "light_cb": "LanguageDefaults|Identifiers|Default"
         }
       },
+      "Import": {
+        "ModuleName": {
+          "dark": "LanguageDefaults|Classes|ClassReference",
+          "dark_cb": "LanguageDefaults|Classes|ClassReference",
+          "light": "LanguageDefaults|Classes|ClassReference",
+          "light_cb": "LanguageDefaults|Classes|ClassReference"
+        }
+      },
       "InlineHints": {
         "ErrorHint": {
           "dark": "LanguageDefaults|InlineHints|Parameters|Default",
@@ -17419,6 +17779,38 @@
           "dark_cb": "LanguageDefaults|InlineHints|Parameters|Default",
           "light": "LanguageDefaults|InlineHints|Parameters|Default",
           "light_cb": "LanguageDefaults|InlineHints|Parameters|Default"
+        }
+      },
+      "Keywords": {
+        "Arrow": {
+          "dark": "LanguageDefaults|Keyword",
+          "dark_cb": "LanguageDefaults|Keyword",
+          "light": "LanguageDefaults|Keyword",
+          "light_cb": "LanguageDefaults|Keyword"
+        },
+        "DeclarationKeyword": {
+          "dark": "LanguageDefaults|Keyword",
+          "dark_cb": "LanguageDefaults|Keyword",
+          "light": "LanguageDefaults|Keyword",
+          "light_cb": "LanguageDefaults|Keyword"
+        },
+        "Keyword": {
+          "dark": "LanguageDefaults|Keyword",
+          "dark_cb": "LanguageDefaults|Keyword",
+          "light": "LanguageDefaults|Keyword",
+          "light_cb": "LanguageDefaults|Keyword"
+        },
+        "ModifierKeyword": {
+          "dark": "LanguageDefaults|Keyword",
+          "dark_cb": "LanguageDefaults|Keyword",
+          "light": "LanguageDefaults|Keyword",
+          "light_cb": "LanguageDefaults|Keyword"
+        },
+        "Operator": {
+          "dark": "LanguageDefaults|BracesAndOperators|OperationSign",
+          "dark_cb": "LanguageDefaults|BracesAndOperators|OperationSign",
+          "light": "LanguageDefaults|BracesAndOperators|OperationSign",
+          "light_cb": "LanguageDefaults|BracesAndOperators|OperationSign"
         }
       },
       "KeywordsAndDirectives": {
@@ -17457,6 +17849,26 @@
           "dark_cb": "C_Cpp_ObjectiveC|Keywords|SelfSuperThis",
           "light": "C_Cpp_ObjectiveC|Keywords|SelfSuperThis",
           "light_cb": "C_Cpp_ObjectiveC|Keywords|SelfSuperThis"
+        }
+      },
+      "Literals": {
+        "ConstantTrueFalseNil": {
+          "dark": "LanguageDefaults|Identifiers|Constant",
+          "dark_cb": "LanguageDefaults|Identifiers|Constant",
+          "light": "LanguageDefaults|Identifiers|Constant",
+          "light_cb": "LanguageDefaults|Identifiers|Constant"
+        },
+        "Number": {
+          "dark": "LanguageDefaults|Number",
+          "dark_cb": "LanguageDefaults|Number",
+          "light": "LanguageDefaults|Number",
+          "light_cb": "LanguageDefaults|Number"
+        },
+        "String": {
+          "dark": "LanguageDefaults|String|StringText",
+          "dark_cb": "LanguageDefaults|String|StringText",
+          "light": "LanguageDefaults|String|StringText",
+          "light_cb": "LanguageDefaults|String|StringText"
         }
       },
       "Number": {
@@ -17512,6 +17924,12 @@
           "light": "C_Cpp_ObjectiveC|Class",
           "light_cb": "C_Cpp_ObjectiveC|Class"
         },
+        "EnumCase": {
+          "dark": "LanguageDefaults|Identifiers|Constant",
+          "dark_cb": "LanguageDefaults|Identifiers|Constant",
+          "light": "LanguageDefaults|Identifiers|Constant",
+          "light_cb": "LanguageDefaults|Identifiers|Constant"
+        },
         "GenericParameter": {
           "dark": "Swift|Types|Class",
           "dark_cb": "Swift|Types|Class",
@@ -17541,6 +17959,382 @@
           "dark_cb": "C_Cpp_ObjectiveC|Typedef",
           "light": "C_Cpp_ObjectiveC|Typedef",
           "light_cb": "C_Cpp_ObjectiveC|Typedef"
+        },
+        "TypeName": {
+          "dark": "LanguageDefaults|Classes|ClassName",
+          "dark_cb": "LanguageDefaults|Classes|ClassName",
+          "light": "LanguageDefaults|Classes|ClassName",
+          "light_cb": "LanguageDefaults|Classes|ClassName"
+        }
+      },
+      "Variables": {
+        "Identifier": {
+          "dark": "LanguageDefaults|Identifiers|Default",
+          "dark_cb": "LanguageDefaults|Identifiers|Default",
+          "light": "LanguageDefaults|Identifiers|Default",
+          "light_cb": "LanguageDefaults|Identifiers|Default"
+        },
+        "Parameter": {
+          "dark": "LanguageDefaults|Identifiers|Parameter",
+          "dark_cb": "LanguageDefaults|Identifiers|Parameter",
+          "light": "LanguageDefaults|Identifiers|Parameter",
+          "light_cb": "LanguageDefaults|Identifiers|Parameter"
+        },
+        "Property": {
+          "dark": "LanguageDefaults|Classes|InstanceField",
+          "dark_cb": "LanguageDefaults|Classes|InstanceField",
+          "light": "LanguageDefaults|Classes|InstanceField",
+          "light_cb": "LanguageDefaults|Classes|InstanceField"
+        },
+        "SwiftUIBodyProperty": {
+          "dark": "LanguageDefaults|Classes|InstanceMethod",
+          "dark_cb": "LanguageDefaults|Classes|InstanceMethod",
+          "light": "LanguageDefaults|Classes|InstanceMethod",
+          "light_cb": "LanguageDefaults|Classes|InstanceMethod"
+        },
+        "SwiftUIStatePropertyStateBinding___": {
+          "dark": "LanguageDefaults|Classes|InstanceField",
+          "dark_cb": "LanguageDefaults|Classes|InstanceField",
+          "light": "LanguageDefaults|Classes|InstanceField",
+          "light_cb": "LanguageDefaults|Classes|InstanceField"
+        }
+      }
+    },
+    "SwiftNoctule": {
+      "Attributes": {
+        "AttributeName": {
+          "dark": "LanguageDefaults|Keyword",
+          "dark_cb": "LanguageDefaults|Keyword",
+          "light": "LanguageDefaults|Keyword",
+          "light_cb": "LanguageDefaults|Keyword"
+        }
+      },
+      "BracesAndOperators": {
+        "Braces": {
+          "dark": "LanguageDefaults|BracesAndOperators|Braces",
+          "dark_cb": "LanguageDefaults|BracesAndOperators|Braces",
+          "light": "LanguageDefaults|BracesAndOperators|Braces",
+          "light_cb": "LanguageDefaults|BracesAndOperators|Braces"
+        },
+        "Brackets": {
+          "dark": "LanguageDefaults|BracesAndOperators|Braces",
+          "dark_cb": "LanguageDefaults|BracesAndOperators|Braces",
+          "light": "LanguageDefaults|BracesAndOperators|Braces",
+          "light_cb": "LanguageDefaults|BracesAndOperators|Braces"
+        },
+        "Colon": {
+          "dark": "LanguageDefaults|BracesAndOperators|Semicolon",
+          "dark_cb": "LanguageDefaults|BracesAndOperators|Semicolon",
+          "light": "LanguageDefaults|BracesAndOperators|Semicolon",
+          "light_cb": "LanguageDefaults|BracesAndOperators|Semicolon"
+        },
+        "Comma": {
+          "dark": "LanguageDefaults|BracesAndOperators|Comma",
+          "dark_cb": "LanguageDefaults|BracesAndOperators|Comma",
+          "light": "LanguageDefaults|BracesAndOperators|Comma",
+          "light_cb": "LanguageDefaults|BracesAndOperators|Comma"
+        },
+        "Dot": {
+          "dark": "LanguageDefaults|BracesAndOperators|Dot",
+          "dark_cb": "LanguageDefaults|BracesAndOperators|Dot",
+          "light": "LanguageDefaults|BracesAndOperators|Dot",
+          "light_cb": "LanguageDefaults|BracesAndOperators|Dot"
+        },
+        "Operator": {
+          "dark": "LanguageDefaults|BracesAndOperators|OperationSign",
+          "dark_cb": "LanguageDefaults|BracesAndOperators|OperationSign",
+          "light": "LanguageDefaults|BracesAndOperators|OperationSign",
+          "light_cb": "LanguageDefaults|BracesAndOperators|OperationSign"
+        },
+        "Parentheses": {
+          "dark": "LanguageDefaults|BracesAndOperators|Parentheses",
+          "dark_cb": "LanguageDefaults|BracesAndOperators|Parentheses",
+          "light": "LanguageDefaults|BracesAndOperators|Parentheses",
+          "light_cb": "LanguageDefaults|BracesAndOperators|Parentheses"
+        },
+        "Semicolon": {
+          "dark": "LanguageDefaults|BracesAndOperators|Semicolon",
+          "dark_cb": "LanguageDefaults|BracesAndOperators|Semicolon",
+          "light": "LanguageDefaults|BracesAndOperators|Semicolon",
+          "light_cb": "LanguageDefaults|BracesAndOperators|Semicolon"
+        }
+      },
+      "Comments": {
+        "BlockComment": {
+          "dark": "LanguageDefaults|Comments|BlockComment",
+          "dark_cb": "LanguageDefaults|Comments|BlockComment",
+          "light": "LanguageDefaults|Comments|BlockComment",
+          "light_cb": "LanguageDefaults|Comments|BlockComment"
+        },
+        "DocumentationComment": {
+          "dark": "LanguageDefaults|Comments|DocComment|Text",
+          "dark_cb": "LanguageDefaults|Comments|DocComment|Text",
+          "light": "LanguageDefaults|Comments|DocComment|Text",
+          "light_cb": "LanguageDefaults|Comments|DocComment|Text"
+        },
+        "LineComment": {
+          "dark": "LanguageDefaults|Comments|LineComment",
+          "dark_cb": "LanguageDefaults|Comments|LineComment",
+          "light": "LanguageDefaults|Comments|LineComment",
+          "light_cb": "LanguageDefaults|Comments|LineComment"
+        },
+        "ShebangComment": {
+          "dark": "SwiftNoctule|Comments|LineComment",
+          "dark_cb": "SwiftNoctule|Comments|LineComment",
+          "light": "SwiftNoctule|Comments|LineComment",
+          "light_cb": "SwiftNoctule|Comments|LineComment"
+        }
+      },
+      "Functions": {
+        "ArgumentLabel": {
+          "dark": "SwiftNoctule|Functions|FunctionDeclaration",
+          "dark_cb": "SwiftNoctule|Functions|FunctionDeclaration",
+          "light": "SwiftNoctule|Functions|FunctionDeclaration",
+          "light_cb": "SwiftNoctule|Functions|FunctionDeclaration"
+        },
+        "FunctionDeclaration": {
+          "dark": "LanguageDefaults|Identifiers|FunctionDeclaration",
+          "dark_cb": "LanguageDefaults|Identifiers|FunctionDeclaration",
+          "light": "LanguageDefaults|Identifiers|FunctionDeclaration",
+          "light_cb": "LanguageDefaults|Identifiers|FunctionDeclaration"
+        },
+        "FunctionName": {
+          "dark": "LanguageDefaults|Identifiers|FunctionCall",
+          "dark_cb": "LanguageDefaults|Identifiers|FunctionCall",
+          "light": "LanguageDefaults|Identifiers|FunctionCall",
+          "light_cb": "LanguageDefaults|Identifiers|FunctionCall"
+        },
+        "LibraryFunctionName": {
+          "dark": "SwiftNoctule|Functions|StaticFunctionName",
+          "dark_cb": "SwiftNoctule|Functions|StaticFunctionName",
+          "light": "SwiftNoctule|Functions|StaticFunctionName",
+          "light_cb": "SwiftNoctule|Functions|StaticFunctionName"
+        },
+        "LibraryMethodName": {
+          "dark": "SwiftNoctule|Functions|LibraryFunctionName",
+          "dark_cb": "SwiftNoctule|Functions|LibraryFunctionName",
+          "light": "SwiftNoctule|Functions|LibraryFunctionName",
+          "light_cb": "SwiftNoctule|Functions|LibraryFunctionName"
+        },
+        "MethodDeclaration": {
+          "dark": "LanguageDefaults|Identifiers|FunctionDeclaration",
+          "dark_cb": "LanguageDefaults|Identifiers|FunctionDeclaration",
+          "light": "LanguageDefaults|Identifiers|FunctionDeclaration",
+          "light_cb": "LanguageDefaults|Identifiers|FunctionDeclaration"
+        },
+        "MethodName": {
+          "dark": "SwiftNoctule|Functions|FunctionName",
+          "dark_cb": "SwiftNoctule|Functions|FunctionName",
+          "light": "SwiftNoctule|Functions|FunctionName",
+          "light_cb": "SwiftNoctule|Functions|FunctionName"
+        },
+        "ParameterName": {
+          "dark": "LanguageDefaults|Identifiers|Parameter",
+          "dark_cb": "LanguageDefaults|Identifiers|Parameter",
+          "light": "LanguageDefaults|Identifiers|Parameter",
+          "light_cb": "LanguageDefaults|Identifiers|Parameter"
+        },
+        "StaticFunctionName": {
+          "dark": "SwiftNoctule|Functions|FunctionName",
+          "dark_cb": "SwiftNoctule|Functions|FunctionName",
+          "light": "SwiftNoctule|Functions|FunctionName",
+          "light_cb": "SwiftNoctule|Functions|FunctionName"
+        },
+        "StaticMethodName": {
+          "dark": "SwiftNoctule|Functions|StaticFunctionName",
+          "dark_cb": "SwiftNoctule|Functions|StaticFunctionName",
+          "light": "SwiftNoctule|Functions|StaticFunctionName",
+          "light_cb": "SwiftNoctule|Functions|StaticFunctionName"
+        }
+      },
+      "Identifiers": {
+        "EnumMember": {
+          "dark": "LanguageDefaults|Identifiers|Constant",
+          "dark_cb": "LanguageDefaults|Identifiers|Constant",
+          "light": "LanguageDefaults|Identifiers|Constant",
+          "light_cb": "LanguageDefaults|Identifiers|Constant"
+        },
+        "Property": {
+          "dark": "LanguageDefaults|Classes|InstanceField",
+          "dark_cb": "LanguageDefaults|Classes|InstanceField",
+          "light": "LanguageDefaults|Classes|InstanceField",
+          "light_cb": "LanguageDefaults|Classes|InstanceField"
+        },
+        "Variable": {
+          "dark": "LanguageDefaults|Identifiers|GlobalVariable",
+          "dark_cb": "LanguageDefaults|Identifiers|GlobalVariable",
+          "light": "LanguageDefaults|Identifiers|GlobalVariable",
+          "light_cb": "LanguageDefaults|Identifiers|GlobalVariable"
+        }
+      },
+      "KeywordsAndDirectives": {
+        "Directive": {
+          "dark": "LanguageDefaults|Metadata",
+          "dark_cb": "LanguageDefaults|Metadata",
+          "light": "LanguageDefaults|Metadata",
+          "light_cb": "LanguageDefaults|Metadata"
+        },
+        "DirectiveCondition": {
+          "dark": "SwiftNoctule|KeywordsAndDirectives|Directive",
+          "dark_cb": "SwiftNoctule|KeywordsAndDirectives|Directive",
+          "light": "SwiftNoctule|KeywordsAndDirectives|Directive",
+          "light_cb": "SwiftNoctule|KeywordsAndDirectives|Directive"
+        },
+        "DirectiveFlag": {
+          "dark": "SwiftNoctule|KeywordsAndDirectives|Directive",
+          "dark_cb": "SwiftNoctule|KeywordsAndDirectives|Directive",
+          "light": "SwiftNoctule|KeywordsAndDirectives|Directive",
+          "light_cb": "SwiftNoctule|KeywordsAndDirectives|Directive"
+        },
+        "Keyword": {
+          "dark": "LanguageDefaults|Keyword",
+          "dark_cb": "LanguageDefaults|Keyword",
+          "light": "LanguageDefaults|Keyword",
+          "light_cb": "LanguageDefaults|Keyword"
+        },
+        "SelfAndSuper": {
+          "dark": "SwiftNoctule|KeywordsAndDirectives|Keyword",
+          "dark_cb": "SwiftNoctule|KeywordsAndDirectives|Keyword",
+          "light": "SwiftNoctule|KeywordsAndDirectives|Keyword",
+          "light_cb": "SwiftNoctule|KeywordsAndDirectives|Keyword"
+        }
+      },
+      "Misc": {
+        "Macro": {
+          "dark": "LanguageDefaults|TemplateLanguage",
+          "dark_cb": "LanguageDefaults|TemplateLanguage",
+          "light": "LanguageDefaults|TemplateLanguage",
+          "light_cb": "LanguageDefaults|TemplateLanguage"
+        },
+        "Type": {
+          "dark": "LanguageDefaults|Identifiers|Default",
+          "dark_cb": "LanguageDefaults|Identifiers|Default",
+          "light": "LanguageDefaults|Identifiers|Default",
+          "light_cb": "LanguageDefaults|Identifiers|Default"
+        }
+      },
+      "Number": {
+        "dark": "LanguageDefaults|Number",
+        "dark_cb": "LanguageDefaults|Number",
+        "light": "LanguageDefaults|Number",
+        "light_cb": "LanguageDefaults|Number"
+      },
+      "RegularExpression": {
+        "dark": "LanguageDefaults|String|StringText",
+        "dark_cb": "LanguageDefaults|String|StringText",
+        "light": "LanguageDefaults|String|StringText",
+        "light_cb": "LanguageDefaults|String|StringText"
+      },
+      "String": {
+        "EscapeSequence": {
+          "Invalid": {
+            "dark": "LanguageDefaults|String|EscapeSequence|Invalid",
+            "dark_cb": "LanguageDefaults|String|EscapeSequence|Invalid",
+            "light": "LanguageDefaults|String|EscapeSequence|Invalid",
+            "light_cb": "LanguageDefaults|String|EscapeSequence|Invalid"
+          },
+          "Valid": {
+            "dark": "LanguageDefaults|String|EscapeSequence|Valid",
+            "dark_cb": "LanguageDefaults|String|EscapeSequence|Valid",
+            "light": "LanguageDefaults|String|EscapeSequence|Valid",
+            "light_cb": "LanguageDefaults|String|EscapeSequence|Valid"
+          }
+        },
+        "String": {
+          "dark": "LanguageDefaults|String|StringText",
+          "dark_cb": "LanguageDefaults|String|StringText",
+          "light": "LanguageDefaults|String|StringText",
+          "light_cb": "LanguageDefaults|String|StringText"
+        }
+      },
+      "TypeDeclarations": {
+        "Actor": {
+          "dark": "SwiftNoctule|Types|Class",
+          "dark_cb": "SwiftNoctule|Types|Class",
+          "light": "SwiftNoctule|Types|Class",
+          "light_cb": "SwiftNoctule|Types|Class"
+        },
+        "AssociatedType": {
+          "dark": "SwiftNoctule|Types|Class",
+          "dark_cb": "SwiftNoctule|Types|Class",
+          "light": "SwiftNoctule|Types|Class",
+          "light_cb": "SwiftNoctule|Types|Class"
+        },
+        "Class": {
+          "dark": "SwiftNoctule|Types|Class",
+          "dark_cb": "SwiftNoctule|Types|Class",
+          "light": "SwiftNoctule|Types|Class",
+          "light_cb": "SwiftNoctule|Types|Class"
+        },
+        "Enum": {
+          "dark": "SwiftNoctule|Types|Enum",
+          "dark_cb": "SwiftNoctule|Types|Enum",
+          "light": "SwiftNoctule|Types|Enum",
+          "light_cb": "SwiftNoctule|Types|Enum"
+        },
+        "Protocol": {
+          "dark": "SwiftNoctule|Types|Protocol",
+          "dark_cb": "SwiftNoctule|Types|Protocol",
+          "light": "SwiftNoctule|Types|Protocol",
+          "light_cb": "SwiftNoctule|Types|Protocol"
+        },
+        "Struct": {
+          "dark": "SwiftNoctule|Types|Struct",
+          "dark_cb": "SwiftNoctule|Types|Struct",
+          "light": "SwiftNoctule|Types|Struct",
+          "light_cb": "SwiftNoctule|Types|Struct"
+        }
+      },
+      "Types": {
+        "Class": {
+          "dark": {
+            "fg": "#769AA5"
+          },
+          "dark_cb": {
+            "fg": "#769AA5"
+          },
+          "light": {
+            "fg": "#587580"
+          },
+          "light_cb": {
+            "fg": "#587580"
+          }
+        },
+        "Enum": {
+          "dark": "SwiftNoctule|Types|Class",
+          "dark_cb": "SwiftNoctule|Types|Class",
+          "light": "SwiftNoctule|Types|Class",
+          "light_cb": "SwiftNoctule|Types|Class"
+        },
+        "GenericParameter": {
+          "dark": "LanguageDefaults|Classes|ClassName",
+          "dark_cb": "LanguageDefaults|Classes|ClassName",
+          "light": "LanguageDefaults|Classes|ClassName",
+          "light_cb": "LanguageDefaults|Classes|ClassName"
+        },
+        "Module": {
+          "dark": "LanguageDefaults|Identifiers|Default",
+          "dark_cb": "LanguageDefaults|Identifiers|Default",
+          "light": "LanguageDefaults|Identifiers|Default",
+          "light_cb": "LanguageDefaults|Identifiers|Default"
+        },
+        "Protocol": {
+          "dark": "SwiftNoctule|Types|Class",
+          "dark_cb": "SwiftNoctule|Types|Class",
+          "light": "SwiftNoctule|Types|Class",
+          "light_cb": "SwiftNoctule|Types|Class"
+        },
+        "Struct": {
+          "dark": "SwiftNoctule|Types|Class",
+          "dark_cb": "SwiftNoctule|Types|Class",
+          "light": "SwiftNoctule|Types|Class",
+          "light_cb": "SwiftNoctule|Types|Class"
+        },
+        "Typealias": {
+          "dark": "SwiftNoctule|Types|Class",
+          "dark_cb": "SwiftNoctule|Types|Class",
+          "light": "SwiftNoctule|Types|Class",
+          "light_cb": "SwiftNoctule|Types|Class"
         }
       }
     },
