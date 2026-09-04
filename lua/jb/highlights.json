@@ -10,7 +10,11 @@
       "sp": "General|Text|DefaultText.fg",
       "underline": true
     },
-    "Cursor": "General|Editor|Caret",
+    "Cursor": {
+      "fg": "General|Text|DefaultText.fg",
+      "sp": "General|Text|DefaultText.fg",
+      "bg": "General|Editor|Caret.fg"
+    },
     "CursorColumn": "General|Editor|CaretRow",
     "CursorIM": "General|Editor|Caret",
     "CursorLine": "General|Editor|CaretRow",
@@ -1909,7 +1913,7 @@
     "@lsp.typemod.function.readonly.typescript": "TypeScript|Identifiers|ExportedFunction",
     "@lsp.typemod.property.static.typescript": "LanguageDefaults|Classes|StaticField",
     "@lsp.typemod.variable.local.typescript": "TypeScript|Identifiers|LocalVariable",
-    "@lsp.typemod.method.declaration.typescript":  "TypeScript|Object|Method",
+    "@lsp.typemod.method.declaration.typescript": "TypeScript|Object|Method",
     "@lsp.typemod.variable.readonly.typescript": "TypeScript|Identifiers|LocalVariable"
   },
   "Semantic.TypeScriptReact": {
