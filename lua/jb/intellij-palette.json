@@ -20403,6 +20403,26 @@
             }
           }
         },
+        "Editor": {
+          "Caret": {
+            "dark": {
+              "bg": "#CED0D6",
+              "fg": "#1E1F22"
+            },
+            "dark_cb": {
+              "bg": "#CED0D6",
+              "fg": "#1E1F22"
+            },
+            "light": {
+              "bg": "#000000",
+              "fg": "#ffffff"
+            },
+            "light_cb": {
+              "bg": "#000000",
+              "fg": "#ffffff"
+            }
+          }
+        },
         "Text": {
           "Whitespaces": {
             "dark": {

@@ -10,11 +10,7 @@
       "sp": "General|Text|DefaultText.fg",
       "underline": true
     },
-    "Cursor": {
-      "fg": "General|Text|DefaultText.fg",
-      "sp": "General|Text|DefaultText.fg",
-      "bg": "General|Editor|Caret.fg"
-    },
+    "Cursor": "Custom|General|Editor|Caret",
     "CursorColumn": "General|Editor|CaretRow",
     "CursorIM": "General|Editor|Caret",
     "CursorLine": "General|Editor|CaretRow",
