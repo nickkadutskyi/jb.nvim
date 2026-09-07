@@ -1907,9 +1907,9 @@
     "@lsp.type.variable.typescript": null,
     "@lsp.typemod.class.defaultLibrary.typescript": "TypeScript|Classes|ClassName",
     "@lsp.typemod.function.readonly.typescript": "TypeScript|Identifiers|ExportedFunction",
+    "@lsp.typemod.method.declaration.typescript": "TypeScript|Object|Method",
     "@lsp.typemod.property.static.typescript": "LanguageDefaults|Classes|StaticField",
     "@lsp.typemod.variable.local.typescript": "TypeScript|Identifiers|LocalVariable",
-    "@lsp.typemod.method.declaration.typescript": "TypeScript|Object|Method",
     "@lsp.typemod.variable.readonly.typescript": "TypeScript|Identifiers|LocalVariable"
   },
   "Semantic.TypeScriptReact": {
@@ -2281,6 +2281,7 @@
   "Treesitter.PHPDoc": {
     "@attribute.phpdoc": "LanguageDefaults|Comments|DocComment|Tag",
     "@comment.documentation.phpdoc": "PHP|PHPDoc|Text",
+    "@function.method": "PHP|PHPDoc|MethodDeclaration",
     "@keyword.phpdoc": null,
     "@type.template.phpdoc": "PHP|PHPDoc|TemplateType",
     "@variable.member.phpdoc": "PHP|PHPDoc|Property",
@@ -2388,11 +2389,11 @@
     "@function.exported.typescript": "TypeScript|Identifiers|ExportedFunction",
     "@function.method.call.typescript": "TypeScript|Object|Method",
     "@function.method.typescript": "TypeScript|Object|Method",
+    "@module.builtin.typescript": "TypeScript|Identifiers|GlobalVariable",
     "@variable.builtin.typescript": "TypeScript|Identifiers|GlobalVariable",
     "@variable.exported.typescript": "TypeScript|Identifiers|ExportedVariable",
     "@variable.member.typescript": "TypeScript|Object|Property",
-    "@variable.parameter.typescript": "TypeScript|Identifiers|Parameter",
-    "@module.builtin.typescript": "TypeScript|Identifiers|GlobalVariable"
+    "@variable.parameter.typescript": "TypeScript|Identifiers|Parameter"
   },
   "Treesitter.Vue": {
     "@injected_language_fragment.vue": "HTML|InjectedLanguageFragment",

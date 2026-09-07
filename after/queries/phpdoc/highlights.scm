@@ -38,3 +38,10 @@
 ; (description
 ;   (text) @comment.documentation
 ;   (#set! priority 125))
+
+; Highlights methods in doc
+(tag
+  (tag_name) @_tag_name
+  (name) @function.method
+  (parameters)
+  (#eq? @_tag_name "@method"))
