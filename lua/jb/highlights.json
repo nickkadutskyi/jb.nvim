@@ -2282,7 +2282,7 @@
     "@attribute.phpdoc": "LanguageDefaults|Comments|DocComment|Tag",
     "@comment.documentation.phpdoc": "PHP|PHPDoc|Text",
     "@function.method": "PHP|PHPDoc|MethodDeclaration",
-    "@keyword.phpdoc": null,
+    "@keyword.phpdoc": "PHP|Keywords",
     "@type.template.phpdoc": "PHP|PHPDoc|TemplateType",
     "@variable.member.phpdoc": "PHP|PHPDoc|Property",
     "@variable.parameter.phpdoc": "PHP|PHPDoc|Parameter",

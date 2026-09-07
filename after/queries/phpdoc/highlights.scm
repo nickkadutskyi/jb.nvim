@@ -45,3 +45,39 @@
   (name) @function.method
   (parameters)
   (#eq? @_tag_name "@method"))
+
+; TODO: fix upstream because they have queries that make `|` and `$` a @keyword
+;       while it should be @operator and @variable respectively
+(array_type
+  value: (named_type
+    (name) @keyword)
+  (#eq? @keyword "static"))
+
+(union_type
+  "|" @operator)
+
+(tag
+  (tag_name) @_tag
+  (#eq? @_tag "@param")
+  (variable_name
+   "$" @variable.parameter
+  ) @variable.parameter)
+
+(tag
+  (tag_name) @_tag
+  (#eq? @_tag "@property")
+  (variable_name
+   "$" @variable.member
+  ) @variable.member)
+
+(tag
+  (tag_name) @_tag
+  (#eq? @_tag "@var")
+  (variable_name
+   "$" @variable.member
+  ) @variable)
+
+(parameter
+  (variable_name
+   "$" @variable.parameter
+  ) @variable.parameter)
