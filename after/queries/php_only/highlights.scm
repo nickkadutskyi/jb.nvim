@@ -93,3 +93,17 @@
   ]
   (name) @keyword
   (#eq? @keyword "class"))
+
+; `self` should be a keyword
+(binary_expression
+  operator: "instanceof"
+  right: [
+    (name) @keyword
+  ]
+  (#eq? @keyword "self"))
+
+(object_creation_expression
+  [
+    (name) @keyword
+  ]
+  (#eq? @keyword "self"))
