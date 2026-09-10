@@ -81,3 +81,27 @@
   (variable_name
    "$" @variable.parameter
   ) @variable.parameter)
+
+; Capture each non-description child separately: capturing the whole tag would
+; make the nested description both @nospell and @spell.
+(tag
+  [
+    (tag_name)
+    (array_type)
+    (author_name)
+    (disjunctive_normal_form_type)
+    (email_address)
+    (fqsen)
+    (generic_type)
+    (intersection_type)
+    (name)
+    (named_type)
+    (optional_type)
+    (parameters)
+    (primitive_type)
+    (static)
+    (union_type)
+    (uri)
+    (variable_name)
+    (version)
+  ] @nospell)
