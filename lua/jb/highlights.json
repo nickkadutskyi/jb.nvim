@@ -1920,6 +1920,7 @@
   "Semantic.Vue": {
     "@lsp.type.class.vue": "HTML|CustomTagName",
     "@lsp.type.component.vue": "HTML|CustomTagName",
+    "@lsp.type.function.vue": "LanguageServer|Functions|FunctionCall",
     "@lsp.type.method.vue": "TypeScript|Object|Method",
     "@lsp.type.parameter.vue": "JavaScript|Identifiers|Parameter",
     "@lsp.type.variable.vue": "TypeScript|Identifiers|LocalVariable",

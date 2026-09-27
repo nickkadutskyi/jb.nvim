@@ -27,6 +27,10 @@ vim.treesitter.query.add_directive("offset-lua-match!", function(match, _, bufnr
     end
 end, { force = true, all = true })
 
+vim.treesitter.query.add_predicate("vue-file?", function(_, _, bufnr)
+  return vim.bo[bufnr].filetype == "vue"
+end, { force = true })
+
 local php_tree_cache = {}
 
 local function node_contains_type(node, node_type, cache)
