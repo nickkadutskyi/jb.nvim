@@ -2034,6 +2034,9 @@
   },
   "Treesitter.Common": {
     "@attribute": "LanguageDefaults|Metadata",
+    "@vue.root_tag.vue": {
+      "fg": "#5DB7A4"
+    },
     "@comment": "LanguageDefaults|Comments|LineComment",
     "@comment.documentation": "LanguageDefaults|Comments|DocComment|Text",
     "@constant": "LanguageDefaults|Identifiers|Constant",

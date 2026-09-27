@@ -7,23 +7,23 @@
 ((document
   (script_element
     (start_tag
-      (tag_name) @string)
+      (tag_name) @vue.root_tag)
     (end_tag
-      (tag_name) @string)))
-  (#set! @string priority 130))
+      (tag_name) @vue.root_tag)))
+  (#set! @vue.root_tag priority 130))
 
 ((document
   (template_element
     (start_tag
-      (tag_name) @string)
+      (tag_name) @vue.root_tag)
     (end_tag
-      (tag_name) @string)))
-  (#set! @string priority 130))
+      (tag_name) @vue.root_tag)))
+  (#set! @vue.root_tag priority 130))
 
 ((document
   (style_element
     (start_tag
-      (tag_name) @string)
+      (tag_name) @vue.root_tag)
     (end_tag
-      (tag_name) @string)))
-  (#set! @string priority 130))
+      (tag_name) @vue.root_tag)))
+  (#set! @vue.root_tag priority 130))
