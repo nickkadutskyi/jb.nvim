@@ -69,7 +69,7 @@
       "nolink": true
     },
     "NormalFloat": {
-      "bg": "Appearance|Window|BackgroundEditArea.bg",
+      "bg": "General|Text|DefaultText.bg",
       "fg": "Appearance|Window|Title.fg"
     },
     "NormalNC": {
