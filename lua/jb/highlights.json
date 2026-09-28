@@ -36,7 +36,7 @@
     "EndOfBuffer": "",
     "ErrorMsg": "ConsoleColors|LogConsole|Error",
     "FloatBorder": {
-      "bg": "Appearance|Notifications|Background",
+      "bg": "General|Text|DefaultText.bg",
       "fg": "Appearance|Window|Border"
     },
     "FloatFooter": "Appearance|Window|Title",
@@ -149,18 +149,23 @@
       "fg": "General|ErrorsAndWarnings|Error.sp"
     },
     "DiagnosticFloatingError": {
+      "bg": "Appearance|Window|BackgroundEditArea.bg",
       "fg": "General|Text|DefaultText"
     },
     "DiagnosticFloatingHint": {
+      "bg": "Appearance|Window|BackgroundEditArea.bg",
       "fg": "General|Text|DefaultText"
     },
     "DiagnosticFloatingInfo": {
+      "bg": "Appearance|Window|BackgroundEditArea.bg",
       "fg": "General|Text|DefaultText"
     },
     "DiagnosticFloatingOk": {
+      "bg": "Appearance|Window|BackgroundEditArea.bg",
       "fg": "General|Text|DefaultText"
     },
     "DiagnosticFloatingWarn": {
+      "bg": "Appearance|Window|BackgroundEditArea.bg",
       "fg": "General|Text|DefaultText"
     },
     "DiagnosticHint": {
