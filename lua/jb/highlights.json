@@ -2129,7 +2129,8 @@
     "@string.html": "HTML|AttributeValue",
     "@tag.attribute.html": "HTML|AttributeName",
     "@tag.delimiter.html": "HTML|Tag",
-    "@tag.html": "HTML|TagName"
+    "@tag.html": "HTML|TagName",
+    "@tag.custom": "HTML|CustomTagName"
   },
   "Treesitter.IgnoreFiles": {
     "@character.special.gitignore": "_IgnoreFiles|Value",
