@@ -82,6 +82,7 @@
 | [blink.cmp](https://github.com/Saghen/blink.cmp)                                  | n/a    |
 | [copilot.vim](https://github.com/github/copilot.vim)                              | n/a    |
 | [diffvie.nvim](https://github.com/sindrets/diffview.nvim)                         | n/a    |
+| [fff.nvim](https://github.com/dmtrKovalenko/fff.nvim)                             | n/a    |
 | [fzf-lua](https://github.com/ibhagwan/fzf-lua)                                    | n/a    |
 | [gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim)                       | n/a    |
 | [indent-blankline.nvim](https://github.com/lukas-reineke/indent-blankline.nvim)   | n/a    |
@@ -115,6 +116,21 @@ return {
 }
 ```
 ### Plugin Notes
+
+#### dmtrKovalenko/fff.nvim
+
+Enable picker border styling and highlight mappings with:
+
+```lua
+require("jb").setup({ integrations = { fff = true } })
+vim.cmd("colorscheme jb")
+```
+
+The borders are designed for fff's `layout.prompt_position = "top"` and
+`layout.preview_position = "bottom"`, with `layout.flex = false`.
+Set `integrations.fff = false` (the default) and reload the colorscheme to disable
+the integration for subsequent picker opens. Custom `enforce_float_style` rules
+take precedence over the integration's borders.
 
 #### hrsh7th/nvim-cmp
 
@@ -193,6 +209,8 @@ M.defaults = {
     -- Replaces green/purple/teal tokens with blue and near-black alternatives
     colorblind = false,
     integrations = {
+        -- Apply fff.nvim picker borders and highlight mappings
+        fff = false,
         -- Match Ghostty's background to the statusbar while Neovim is open
         ghostty = false,
     },

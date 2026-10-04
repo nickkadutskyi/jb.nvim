@@ -239,10 +239,9 @@ end
 function M.load(opts)
     opts = require("jb.config").extend(opts)
 
-    -- Enforce float border style if set in config
-    if opts.enforce_float_style and #opts.enforce_float_style > 0 then
-        require("jb.borders").enforce_float_style(opts.enforce_float_style)
-    end
+    local float_styles = vim.list_extend({}, opts.enforce_float_style or {})
+    vim.list_extend(float_styles, require("jb.integrations.fff").setup(opts.integrations.fff))
+    require("jb.borders").enforce_float_style(float_styles)
 
     local profile = vim.o.background -- 'dark' or 'light'
     local icon_profile = profile

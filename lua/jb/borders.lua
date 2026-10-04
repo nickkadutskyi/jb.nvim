@@ -258,21 +258,26 @@ M.borders = {
     },
 }
 
----@param conf EnforceFloatStyle[]
-M.enforce_float_style = function(conf)
-    if not conf then
-        return
-    end
+local float_style_rules = {}
+local float_style_installed = false
 
-    if conf.style ~= nil then
+---@param conf? EnforceFloatStyle[]
+M.enforce_float_style = function(conf)
+    if conf and conf.style ~= nil then
         conf = { conf }
     end
+
+    float_style_rules = conf or {}
+    if float_style_installed or #float_style_rules == 0 then
+        return
+    end
+    float_style_installed = true
 
     local orig_open_win = vim.api.nvim_open_win
     local orig_set_config = vim.api.nvim_win_set_config
 
     local function get_config(bufnr, config)
-        for _, rule in ipairs(conf) do
+        for _, rule in ipairs(float_style_rules) do
             if rule.condition then
                 vim.validate("condition", rule.condition, "function", "condition must be a function")
                 if rule.condition(bufnr, config) then
