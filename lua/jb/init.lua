@@ -28,6 +28,7 @@ vim.treesitter.query.add_directive("offset-lua-match!", function(match, _, bufnr
 end, { force = true, all = true })
 
 local php_tree_cache = {}
+local php_string_tree_cache
 
 local function node_contains_type(node, node_type, cache)
     local id = node:id()
@@ -53,7 +54,7 @@ end
 
 -- PHP has no syntax node for a PHP region. Capture maximal PHP-only branches,
 -- but only when the parse tree also contains actual HTML text.
-vim.treesitter.query.add_predicate("php-template-language?", function(match, _, bufnr, pred)
+vim.treesitter.query.add_predicate("php-template-language?", function(match, _, source, pred)
     local node = match[pred[2]]
     node = node and (node[1] or node)
     if not node then
@@ -65,14 +66,21 @@ vim.treesitter.query.add_predicate("php-template-language?", function(match, _, 
         root = root:parent()
     end
 
-    local changedtick = vim.api.nvim_buf_get_changedtick(bufnr)
-    local cache = php_tree_cache[bufnr]
-    if not cache or cache.changedtick ~= changedtick or cache.root_id ~= root:id() then
+    -- String parsers (e.g. completion previews) have no buffer changedtick.
+    local is_buffer = type(source) == "number"
+    local changedtick = is_buffer and vim.api.nvim_buf_get_changedtick(source) or nil
+    local cache
+    if is_buffer then
+        cache = php_tree_cache[source]
+    else
+        cache = php_string_tree_cache
+    end
+    if not cache or cache.source ~= source or cache.changedtick ~= changedtick or cache.root_id ~= root:id() then
         local contains_text = {}
         local mixed = false
         local function find_html(current)
             if current:type() == "text" then
-                mixed = vim.treesitter.get_node_text(current, bufnr):find("<", 1, true) ~= nil
+                mixed = vim.treesitter.get_node_text(current, source):find("<", 1, true) ~= nil
                 return mixed
             end
             for child in current:iter_children() do
@@ -85,12 +93,18 @@ vim.treesitter.query.add_predicate("php-template-language?", function(match, _, 
 
         find_html(root)
         cache = {
+            source = source,
             changedtick = changedtick,
             root_id = root:id(),
             mixed = mixed,
             contains_text = contains_text,
         }
-        php_tree_cache[bufnr] = cache
+        if is_buffer then
+            php_tree_cache[source] = cache
+        else
+            -- Keep only the latest preview rather than retaining every source string.
+            php_string_tree_cache = cache
+        end
     end
 
     if not cache.mixed or node_contains_type(node, "text", cache.contains_text) then
