@@ -20321,6 +20321,26 @@
         }
       },
       "General": {
+        "Editor": {
+          "Caret": {
+            "dark": {
+              "bg": "#CED0D6",
+              "fg": "#1E1F22"
+            },
+            "dark_cb": {
+              "bg": "#CED0D6",
+              "fg": "#1E1F22"
+            },
+            "light": {
+              "bg": "#000000",
+              "fg": "#ffffff"
+            },
+            "light_cb": {
+              "bg": "#000000",
+              "fg": "#ffffff"
+            }
+          }
+        },
         "ErrorsAndWarnings": {
           "Error": {
             "Icon": {
@@ -20400,26 +20420,6 @@
               "light_cb": {
                 "fg": "#D7CFB1"
               }
-            }
-          }
-        },
-        "Editor": {
-          "Caret": {
-            "dark": {
-              "bg": "#CED0D6",
-              "fg": "#1E1F22"
-            },
-            "dark_cb": {
-              "bg": "#CED0D6",
-              "fg": "#1E1F22"
-            },
-            "light": {
-              "bg": "#000000",
-              "fg": "#ffffff"
-            },
-            "light_cb": {
-              "bg": "#000000",
-              "fg": "#ffffff"
             }
           }
         },
@@ -20679,6 +20679,14 @@
           },
           "light": {
             "fg": "#3877E8"
+          }
+        },
+        "TypoGrammar": {
+          "dark": {
+            "fg": "#669462"
+          },
+          "light": {
+            "fg": "#6AA570"
           }
         },
         "Unit": {
