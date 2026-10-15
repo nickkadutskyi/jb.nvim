@@ -20559,12 +20559,12 @@
           "light": {
             "fg": "#6AA570",
             "sp": "#CA4950",
-            "underline": true
+            "undercurl": true
           },
           "light_cb": {
             "fg": "#6AA570",
             "sp": "#CA4950",
-            "underline": true
+            "undercurl": true
           }
         },
         "Interface": {
