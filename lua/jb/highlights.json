@@ -335,6 +335,7 @@
     "Appearance_FileColors_Tests": "Appearance|FileColors|Tests",
     "CustomStatusLine": "UI|StatusBar",
     "Custom_Icons_GrammarError": "Custom|Icons|GrammarError",
+    "Custom_Icons_OK": "Custom|Icons|OK",
     "Custom_Icons_Typo": "Custom|Icons|Typo",
     "Custom_TabSel": "Custom|TabSel",
     "DialogFloatBorder": {
