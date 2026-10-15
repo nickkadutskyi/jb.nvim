@@ -105,7 +105,7 @@
     "SnippetTabstop": "",
     "SpecialKey": "General|ErrorsAndWarnings|UnusedCode",
     "SpellBad": "General|ErrorsAndWarnings|Typo",
-    "SpellCap": "General|ErrorsAndWarnings|Warning",
+    "SpellCap": "General|ErrorsAndWarnings|GrammarError",
     "SpellLocal": "General|ErrorsAndWarnings|TextStyleSuggestion",
     "SpellRare": "General|ErrorsAndWarnings|TextStyleSuggestion",
     "StatusLine": "UI|StatusBar",
