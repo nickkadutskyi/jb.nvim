@@ -334,16 +334,8 @@
     "Appearance_FileColors_NonProjectFile": "Appearance|FileColors|NonProjectFile",
     "Appearance_FileColors_Tests": "Appearance|FileColors|Tests",
     "CustomStatusLine": "UI|StatusBar",
-    "Custom_Icons_Grammar": {
-      "fg": "Custom|Icons|TypoGrammar",
-      "sp": "General|ErrorsAndWarnings|GrammarError",
-      "undercurl": true
-    },
-    "Custom_Icons_Typo": {
-      "fg": "Custom|Icons|TypoGrammar",
-      "sp": "General|ErrorsAndWarnings|Typo",
-      "undercurl": true
-    },
+    "Custom_Icons_GrammarError": "Custom|Icons|GrammarError",
+    "Custom_Icons_Typo": "Custom|Icons|Typo",
     "Custom_TabSel": "Custom|TabSel",
     "DialogFloatBorder": {
       "bg": "Appearance|Window|BackgroundEditArea.bg",

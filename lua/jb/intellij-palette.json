@@ -20545,6 +20545,28 @@
             "fg": "#D04A4F"
           }
         },
+        "GrammarError": {
+          "dark": {
+            "fg": "#669462",
+            "sp": "#CC6460",
+            "undercurl": true
+          },
+          "dark_cb": {
+            "fg": "#669462",
+            "sp": "#CC6460",
+            "undercurl": true
+          },
+          "light": {
+            "fg": "#6AA570",
+            "sp": "#CA4950",
+            "underline": true
+          },
+          "light_cb": {
+            "fg": "#6AA570",
+            "sp": "#CA4950",
+            "underline": true
+          }
+        },
         "Interface": {
           "dark": {
             "fg": "#629361"
@@ -20681,12 +20703,26 @@
             "fg": "#3877E8"
           }
         },
-        "TypoGrammar": {
+        "Typo": {
           "dark": {
-            "fg": "#669462"
+            "fg": "#669462",
+            "sp": "#669462",
+            "undercurl": true
+          },
+          "dark_cb": {
+            "fg": "#669462",
+            "sp": "#669462",
+            "undercurl": true
           },
           "light": {
-            "fg": "#6AA570"
+            "fg": "#6AA570",
+            "sp": "#6AA570",
+            "undercurl": true
+          },
+          "light_cb": {
+            "fg": "#6AA570",
+            "sp": "#6AA570",
+            "undercurl": true
           }
         },
         "Unit": {
