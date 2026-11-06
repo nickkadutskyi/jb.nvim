@@ -27,30 +27,10 @@ vim.treesitter.query.add_directive("offset-lua-match!", function(match, _, bufnr
     end
 end, { force = true, all = true })
 
-local php_tree_cache = {}
-local php_string_tree_cache
-
-local function node_contains_type(node, node_type, cache)
-    local id = node:id()
-    if cache[id] ~= nil then
-        return cache[id]
-    end
-
-    if node:type() == node_type then
-        cache[id] = true
-        return true
-    end
-
-    for child in node:iter_children() do
-        if node_contains_type(child, node_type, cache) then
-            cache[id] = true
-            return true
-        end
-    end
-
-    cache[id] = false
-    return false
-end
+-- Nodes retain their owning tree. Weak keys release cached classifications when
+-- a tree is replaced after an edit, including trees used by string previews.
+local php_tree_cache = setmetatable({}, { __mode = "k" })
+local php_text_query
 
 -- PHP has no syntax node for a PHP region. Capture maximal PHP-only branches,
 -- but only when the parse tree also contains actual HTML text.
@@ -61,58 +41,42 @@ vim.treesitter.query.add_predicate("php-template-language?", function(match, _, 
         return false
     end
 
-    local root = node
-    while root:parent() do
-        root = root:parent()
-    end
-
-    -- String parsers (e.g. completion previews) have no buffer changedtick.
-    local is_buffer = type(source) == "number"
-    local changedtick = is_buffer and vim.api.nvim_buf_get_changedtick(source) or nil
-    local cache
-    if is_buffer then
-        cache = php_tree_cache[source]
-    else
-        cache = php_string_tree_cache
-    end
-    if not cache or cache.source ~= source or cache.changedtick ~= changedtick or cache.root_id ~= root:id() then
-        local contains_text = {}
+    -- Do not walk node:parent() here: this predicate runs for every candidate
+    -- capture on every redraw, even in pure PHP files where it always rejects.
+    local tree = node:tree()
+    local cache = php_tree_cache[tree]
+    if cache == nil then
+        php_text_query = php_text_query or vim.treesitter.query.parse("php", "(text) @text")
+        local contains_text, ancestors = {}, {}
         local mixed = false
-        local function find_html(current)
-            if current:type() == "text" then
-                mixed = vim.treesitter.get_node_text(current, source):find("<", 1, true) ~= nil
-                return mixed
+        for _, text in php_text_query:iter_captures(tree:root(), source) do
+            mixed = mixed or vim.treesitter.get_node_text(text, source):find("<", 1, true) ~= nil
+            local ancestor = text
+            while ancestor and not contains_text[ancestor:id()] do
+                contains_text[ancestor:id()] = true
+                ancestors[#ancestors + 1] = ancestor
+                ancestor = ancestor:parent()
             end
-            for child in current:iter_children() do
-                if find_html(child) then
-                    return true
+        end
+
+        cache = false
+        if mixed then
+            cache = {}
+            -- Only siblings of HTML-containing branches need the background.
+            -- Precompute those node IDs once, rather than rechecking ancestry
+            -- for every capture. Do not retain nodes (which retain the tree).
+            for _, ancestor in ipairs(ancestors) do
+                for child in ancestor:iter_children() do
+                    if not contains_text[child:id()] then
+                        cache[child:id()] = true
+                    end
                 end
             end
-            return false
         end
-
-        find_html(root)
-        cache = {
-            source = source,
-            changedtick = changedtick,
-            root_id = root:id(),
-            mixed = mixed,
-            contains_text = contains_text,
-        }
-        if is_buffer then
-            php_tree_cache[source] = cache
-        else
-            -- Keep only the latest preview rather than retaining every source string.
-            php_string_tree_cache = cache
-        end
+        php_tree_cache[tree] = cache
     end
 
-    if not cache.mixed or node_contains_type(node, "text", cache.contains_text) then
-        return false
-    end
-
-    local parent = node:parent()
-    return parent ~= nil and node_contains_type(parent, "text", cache.contains_text)
+    return cache and cache[node:id()] or false
 end, { force = true })
 
 local opts_per_hl = {
