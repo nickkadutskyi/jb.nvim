@@ -1569,8 +1569,11 @@
     }
   },
   "Plugin.petertriho/nvim-scrollbar": {
+    "ScrollbarBase": [],
     "ScrollbarCursor": [],
     "ScrollbarCursorHandle": "ScrollbarHandle",
+    "ScrollbarCursorThumb": "ScrollbarCursorHandle",
+    "ScrollbarCursorThumbPressed": "ScrollbarCursorThumb",
     "ScrollbarError": {
       "fg": "General|ErrorsAndWarnings|Error|ErrorStripeMark"
     },
@@ -1578,21 +1581,32 @@
       "bg": "General|Editor|VerticalScrollbar|Thumb",
       "fg": "General|ErrorsAndWarnings|Error|ErrorStripeMark"
     },
+    "ScrollbarErrorThumb": "ScrollbarErrorHandle",
+    "ScrollbarErrorThumbPressed": "ScrollbarErrorThumb",
+    "ScrollbarFloatBorder": "FloatBorder",
+    "ScrollbarFloatFooter": "FloatFooter",
+    "ScrollbarFloatTitle": "FloatTitle",
     "ScrollbarGitAdd": "DiffMerge|ChangedLines|Inserted|ErrorStripeMark",
     "ScrollbarGitAddHandle": {
       "bg": "General|Editor|VerticalScrollbar|Thumb",
       "fg": "DiffMerge|ChangedLines|Inserted|ErrorStripeMark.fg"
     },
+    "ScrollbarGitAddThumb": "ScrollbarGitAddHandle",
+    "ScrollbarGitAddThumbPressed": "ScrollbarGitAddThumb",
     "ScrollbarGitChange": "DiffMerge|ChangedLines|Changed|ErrorStripeMark",
     "ScrollbarGitChangeHandle": {
       "bg": "General|Editor|VerticalScrollbar|Thumb",
       "fg": "DiffMerge|ChangedLines|Changed|ErrorStripeMark.fg"
     },
+    "ScrollbarGitChangeThumb": "ScrollbarGitChangeHandle",
+    "ScrollbarGitChangeThumbPressed": "ScrollbarGitChangeThumb",
     "ScrollbarGitDelete": "DiffMerge|ChangedLines|Deleted|ErrorStripeMark",
     "ScrollbarGitDeleteHandle": {
       "bg": "General|Editor|VerticalScrollbar|Thumb",
       "fg": "DiffMerge|ChangedLines|Deleted|ErrorStripeMark.fg"
     },
+    "ScrollbarGitDeleteThumb": "ScrollbarGitDeleteHandle",
+    "ScrollbarGitDeleteThumbPressed": "ScrollbarGitDeleteThumb",
     "ScrollbarHandle": "General|Editor|VerticalScrollbar|Thumb",
     "ScrollbarHint": {
       "fg": "General|ErrorsAndWarnings|WeakWarning.sp"
@@ -1601,6 +1615,8 @@
       "bg": "General|Editor|VerticalScrollbar|Thumb",
       "fg": "General|ErrorsAndWarnings|WeakWarning.sp"
     },
+    "ScrollbarHintThumb": "ScrollbarHintHandle",
+    "ScrollbarHintThumbPressed": "ScrollbarHintThumb",
     "ScrollbarIdentifierUnderCaret": {
       "fg": "General|Code|IdentifierUnderCaret|ErrorStripeMark"
     },
@@ -1608,17 +1624,79 @@
       "bg": "General|Editor|VerticalScrollbar|Thumb",
       "fg": "General|Code|IdentifierUnderCaret|ErrorStripeMark"
     },
+    "ScrollbarIdentifierUnderCaretThumb": "ScrollbarIdentifierUnderCaretHandle",
+    "ScrollbarIdentifierUnderCaretThumbPressed": "ScrollbarIdentifierUnderCaretThumb",
     "ScrollbarInfo": {
       "fg": "ConsoleColors|LogConsole|Verbose"
     },
     "ScrollbarInfoHandle": "ScrollbarHandle",
+    "ScrollbarInfoThumb": {
+      "bg": "General|Editor|VerticalScrollbar|Thumb",
+      "fg": "ConsoleColors|LogConsole|Verbose"
+    },
+    "ScrollbarInfoThumbPressed": "ScrollbarInfoThumb",
+    "ScrollbarMark": "ScrollbarIdentifierUnderCaret",
+    "ScrollbarMarkThumb": "ScrollbarIdentifierUnderCaretThumb",
+    "ScrollbarMarkThumbPressed": "ScrollbarMarkThumb",
+    "ScrollbarMiniDiffAdd": "ScrollbarGitAdd",
+    "ScrollbarMiniDiffAddThumb": "ScrollbarGitAddThumb",
+    "ScrollbarMiniDiffAddThumbPressed": "ScrollbarGitAddThumbPressed",
+    "ScrollbarMiniDiffChange": "ScrollbarGitChange",
+    "ScrollbarMiniDiffChangeThumb": "ScrollbarGitChangeThumb",
+    "ScrollbarMiniDiffChangeThumbPressed": "ScrollbarGitChangeThumbPressed",
+    "ScrollbarMiniDiffDelete": "ScrollbarGitDelete",
+    "ScrollbarMiniDiffDeleteThumb": "ScrollbarGitDeleteThumb",
+    "ScrollbarMiniDiffDeleteThumbPressed": "ScrollbarGitDeleteThumbPressed",
+    "ScrollbarMinimapBase": "Normal",
+    "ScrollbarMinimapContent": "Comment",
+    "ScrollbarMinimapCursor": "Cursor",
+    "ScrollbarMinimapError": "ScrollbarError",
+    "ScrollbarMinimapFloatBorder": "FloatBorder",
+    "ScrollbarMinimapFloatFooter": "FloatFooter",
+    "ScrollbarMinimapFloatTitle": "FloatTitle",
+    "ScrollbarMinimapGitAdd": "ScrollbarGitAdd",
+    "ScrollbarMinimapGitChange": "ScrollbarGitChange",
+    "ScrollbarMinimapGitDelete": "ScrollbarGitDelete",
+    "ScrollbarMinimapHint": "ScrollbarHint",
+    "ScrollbarMinimapIdentifierUnderCaret": "ScrollbarIdentifierUnderCaret",
+    "ScrollbarMinimapInfo": "ScrollbarInfo",
+    "ScrollbarMinimapMark": "ScrollbarMark",
+    "ScrollbarMinimapMiniDiffAdd": "ScrollbarGitAdd",
+    "ScrollbarMinimapMiniDiffChange": "ScrollbarGitChange",
+    "ScrollbarMinimapMiniDiffDelete": "ScrollbarGitDelete",
+    "ScrollbarMinimapMisc": "ScrollbarMisc",
+    "ScrollbarMinimapSearch": "ScrollbarSearch",
+    "ScrollbarMinimapSignifyAdd": "ScrollbarGitAdd",
+    "ScrollbarMinimapSignifyChange": "ScrollbarGitChange",
+    "ScrollbarMinimapSignifyDelete": "ScrollbarGitDelete",
+    "ScrollbarMinimapTodo": "ScrollbarTodo",
+    "ScrollbarMinimapVGitAdd": "ScrollbarGitAdd",
+    "ScrollbarMinimapVGitChange": "ScrollbarGitChange",
+    "ScrollbarMinimapVGitDelete": "ScrollbarGitDelete",
+    "ScrollbarMinimapViewport": "Visual",
+    "ScrollbarMinimapWarn": "ScrollbarWarn",
     "ScrollbarMisc": [],
     "ScrollbarMiscHandle": "ScrollbarHandle",
+    "ScrollbarMiscThumb": "ScrollbarMiscHandle",
+    "ScrollbarMiscThumbPressed": "ScrollbarMiscThumb",
     "ScrollbarSearch": "General|SearchResults|TextSearchResult|ErrorStripeMark",
     "ScrollbarSearchHandle": {
       "bg": "General|Editor|VerticalScrollbar|Thumb",
       "fg": "General|SearchResults|TextSearchResult|ErrorStripeMark"
     },
+    "ScrollbarSearchThumb": "ScrollbarSearchHandle",
+    "ScrollbarSearchThumbPressed": "ScrollbarSearchThumb",
+    "ScrollbarSignifyAdd": "ScrollbarGitAdd",
+    "ScrollbarSignifyAddThumb": "ScrollbarGitAddThumb",
+    "ScrollbarSignifyAddThumbPressed": "ScrollbarGitAddThumbPressed",
+    "ScrollbarSignifyChange": "ScrollbarGitChange",
+    "ScrollbarSignifyChangeThumb": "ScrollbarGitChangeThumb",
+    "ScrollbarSignifyChangeThumbPressed": "ScrollbarGitChangeThumbPressed",
+    "ScrollbarSignifyDelete": "ScrollbarGitDelete",
+    "ScrollbarSignifyDeleteThumb": "ScrollbarGitDeleteThumb",
+    "ScrollbarSignifyDeleteThumbPressed": "ScrollbarGitDeleteThumbPressed",
+    "ScrollbarThumb": "ScrollbarHandle",
+    "ScrollbarThumbPressed": "ScrollbarThumb",
     "ScrollbarTodo": {
       "fg": "General|Code|TODODefaults|ErrorStripeMark"
     },
@@ -1626,13 +1704,27 @@
       "bg": "General|Editor|VerticalScrollbar|Thumb",
       "fg": "General|Code|TODODefaults|ErrorStripeMark"
     },
+    "ScrollbarTodoThumb": "ScrollbarTodoHandle",
+    "ScrollbarTodoThumbPressed": "ScrollbarTodoThumb",
+    "ScrollbarTrack": "PmenuSbar",
+    "ScrollbarVGitAdd": "ScrollbarGitAdd",
+    "ScrollbarVGitAddThumb": "ScrollbarGitAddThumb",
+    "ScrollbarVGitAddThumbPressed": "ScrollbarGitAddThumbPressed",
+    "ScrollbarVGitChange": "ScrollbarGitChange",
+    "ScrollbarVGitChangeThumb": "ScrollbarGitChangeThumb",
+    "ScrollbarVGitChangeThumbPressed": "ScrollbarGitChangeThumbPressed",
+    "ScrollbarVGitDelete": "ScrollbarGitDelete",
+    "ScrollbarVGitDeleteThumb": "ScrollbarGitDeleteThumb",
+    "ScrollbarVGitDeleteThumbPressed": "ScrollbarGitDeleteThumbPressed",
     "ScrollbarWarn": {
       "fg": "General|ErrorsAndWarnings|Warning|ErrorStripeMark"
     },
     "ScrollbarWarnHandle": {
       "bg": "General|Editor|VerticalScrollbar|Thumb",
       "fg": "General|ErrorsAndWarnings|Warning|ErrorStripeMark"
-    }
+    },
+    "ScrollbarWarnThumb": "ScrollbarWarnHandle",
+    "ScrollbarWarnThumbPressed": "ScrollbarWarnThumb"
   },
   "Plugin.rcarriga/nvim-notify": {
     "NotifyBackground": {
