@@ -41,6 +41,7 @@ local M = {}
 ---@field transparent? boolean Remove the background from Normal and NormalNC
 ---@field colorblind? boolean Enable the colorblind-friendly palette in light mode
 ---@field integrations? { ghostty?: boolean, fff?: boolean } Integration configuration
+---@field terminal_colors? boolean Enable nvim terminal buffer colors
 M.defaults = {
     -- Disable bold or italic for all highlights
     disable_hl_args = {
@@ -70,6 +71,7 @@ M.defaults = {
         ghostty = false,
     },
     enforce_float_style = nil,
+    terminal_colors = false,
 }
 
 ---@type jb.Config

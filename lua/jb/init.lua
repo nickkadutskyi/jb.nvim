@@ -224,6 +224,11 @@ function M.load(opts)
     local profile = vim.o.background -- 'dark' or 'light'
     local icon_profile = profile
 
+    -- apply terminal colors config
+    if opts.terminal_colors then
+        require("jb.terminal").apply(profile)
+    end
+
     -- Resolve colorblind profiles based on background
     if opts.colorblind then
         profile = profile .. "_cb"
