@@ -24,7 +24,7 @@
       "bg": "DiffMerge|ChangedLines|Inserted.bg"
     },
     "DiffChange": {
-      "bg": "DiffMerge|ChangedLines|Changed.bg"
+      "bg": "DiffMerge|ChangedLines|Changed|Ignored.bg"
     },
     "DiffDelete": {
       "bg": "DiffMerge|ChangedLines|Deleted.bg"
@@ -255,11 +255,11 @@
   },
   "Builtin.Languages": {
     "Added": {
-      "bg": "Custom|Legacy|DiffMerge|ChangedLines|Inserted|Ignored.bg"
+      "bg": "DiffMerge|ChangedLines|Inserted|Ignored.bg"
     },
     "Boolean": "LanguageDefaults|Keyword",
     "Changed": {
-      "bg": "Custom|Legacy|DiffMerge|ChangedLines|Changed|Ignored.bg"
+      "bg": "DiffMerge|ChangedLines|Changed|Ignored.bg"
     },
     "Character": "LanguageDefaults|String|StringText",
     "Comment": "LanguageDefaults|Comments|LineComment",
@@ -283,7 +283,7 @@
     "PreCondit": "LanguageDefaults|Metadata",
     "PreProc": "LanguageDefaults|Metadata",
     "Removed": {
-      "bg": "Custom|Legacy|DiffMerge|ChangedLines|Deleted|Ignored.bg"
+      "bg": "DiffMerge|ChangedLines|Deleted|Ignored.bg"
     },
     "Repeat": "LanguageDefaults|Keyword",
     "Special": "LanguageDefaults|String|EscapeSequence|Valid",
@@ -637,7 +637,7 @@
       "bg": "DiffMerge|ChangedLines|Inserted.bg"
     },
     "NeogitDiffAddCursor": {
-      "bg": "Custom|Legacy|DiffMerge|ChangedLines|Inserted|Ignored.bg"
+      "bg": "DiffMerge|ChangedLines|Inserted|Ignored.bg"
     },
     "NeogitDiffAddHighlight": {
       "bg": "DiffMerge|ChangedLines|Inserted.bg"
@@ -649,7 +649,7 @@
       "bg": "DiffMerge|ChangedLines|Deleted.bg"
     },
     "NeogitDiffDeleteCursor": {
-      "bg": "Custom|Legacy|DiffMerge|ChangedLines|Deleted|Ignored.bg"
+      "bg": "DiffMerge|ChangedLines|Deleted|Ignored.bg"
     },
     "NeogitDiffDeleteHighlight": {
       "bg": "DiffMerge|ChangedLines|Deleted.bg"
@@ -1296,9 +1296,9 @@
       "bg": "General|Editor|CaretRow",
       "fg": "VCS|EditorGutter|ModifiedLines.bg"
     },
-    "GitSignsChangeInline": "Custom|Legacy|DiffMerge|ChangedLines|Changed|Ignored",
+    "GitSignsChangeInline": "DiffMerge|ChangedLines|Changed|Ignored",
     "GitSignsChangeLn": "",
-    "GitSignsChangeLnInline": "Custom|Legacy|DiffMerge|ChangedLines|Changed|Ignored",
+    "GitSignsChangeLnInline": "DiffMerge|ChangedLines|Changed|Ignored",
     "GitSignsChangeNr": {
       "fg": "VCS|EditorGutter|ModifiedLines.bg"
     },
@@ -1875,14 +1875,14 @@
   },
   "Plugin.yetone/avante.nvim": {
     "AvanteConflictCurrent": {
-      "bg": "Custom|Legacy|DiffMerge|ChangedLines|Changed|Ignored.bg"
+      "bg": "DiffMerge|ChangedLines|Changed|Ignored.bg"
     },
     "AvanteConflictCurrentLabel": {
       "bold": true,
       "fg": "DiffMerge|ChangedLines|Changed|ErrorStripeMark.fg"
     },
     "AvanteConflictIncoming": {
-      "bg": "Custom|Legacy|DiffMerge|ChangedLines|Inserted|Ignored.bg"
+      "bg": "DiffMerge|ChangedLines|Inserted|Ignored.bg"
     },
     "AvanteConflictIncomingLabel": {
       "bold": true,

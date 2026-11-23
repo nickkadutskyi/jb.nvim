@@ -215,6 +215,7 @@ local function read_json(path)
 end
 
 local colors = read_json(colors_json_path)
+require("jb.utils").add_diff_ignored_colors(colors)
 local highlights = read_json(highlights_json_path)
 local icons = colors.Other and colors.Other.Custom and colors.Other.Custom.Icons
 assert(type(icons) == "table", "intellij-palette.json Other.Custom.Icons is required")

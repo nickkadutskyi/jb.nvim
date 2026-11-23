@@ -20973,58 +20973,6 @@
             }
           }
         },
-        "DiffMerge": {
-          "ChangedLines": {
-            "Changed": {
-              "Ignored": {
-                "dark": {
-                  "bg": "#283541"
-                },
-                "dark_cb": {
-                  "bg": "#283541"
-                },
-                "light": {
-                  "bg": "#E7EFFA"
-                },
-                "light_cb": {
-                  "bg": "#E7EFFA"
-                }
-              }
-            },
-            "Deleted": {
-              "Ignored": {
-                "dark": {
-                  "bg": "#2F3032"
-                },
-                "dark_cb": {
-                  "bg": "#2F3032"
-                },
-                "light": {
-                  "bg": "#EFEFEF"
-                },
-                "light_cb": {
-                  "bg": "#EFEFEF"
-                }
-              }
-            },
-            "Inserted": {
-              "Ignored": {
-                "dark": {
-                  "bg": "#222E2A"
-                },
-                "dark_cb": {
-                  "bg": "#222E2A"
-                },
-                "light": {
-                  "bg": "#E5F5E5"
-                },
-                "light_cb": {
-                  "bg": "#E5F5E5"
-                }
-              }
-            }
-          }
-        },
         "General": {
           "Editor": {
             "Bookmarks": {

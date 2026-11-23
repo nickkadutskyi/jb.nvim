@@ -141,6 +141,9 @@ function M.read_colors(path)
         if compiled ~= nil then
             return compiled.colors
         end
+        local colors = read_json(path)
+        M.add_diff_ignored_colors(colors)
+        return colors
     end
     return read_json(path)
 end
@@ -406,6 +409,38 @@ function M.blend_colors(color1, color2, factor)
 
     -- Convert back to hex
     return string.format("#%02X%02X%02X", r, g, b)
+end
+
+--- Adds DiffMerge|ChangedLines|<type>|Ignored to the IntelliJ colors: the lighter
+--- color the IntelliJ diff viewer uses for the whole line of a change with inner
+--- fragments, while the fragments themselves use the key's background ("Important").
+--- Like TextDiffTypeFactory.getIgnoredColor, it is the key's foreground ("Ignored")
+--- when set, and otherwise its background mixed 60% toward the editor background,
+--- rounded per channel as MixedColorProducer does.
+---@param colors table
+function M.add_diff_ignored_colors(colors)
+    local intellij = colors.IntelliJ
+    local editor = intellij.General.Text.DefaultText
+    for _, diff_type in ipairs({ "Changed", "Conflict", "Deleted", "Inserted" }) do
+        local key = intellij.DiffMerge.ChangedLines[diff_type]
+        local ignored = {}
+        for _, profile in ipairs({ "light", "dark", "light_cb", "dark_cb" }) do
+            local base_profile = profile:match("^(.-)_cb$") or profile
+            local attrs = key[profile] or key[base_profile]
+            local color = attrs.fg
+            if color == nil then
+                local bg = (editor[profile] or editor[base_profile]).bg
+                color = "#"
+                for i = 2, 6, 2 do
+                    local from = tonumber(attrs.bg:sub(i, i + 1), 16)
+                    local to = tonumber(bg:sub(i, i + 1), 16)
+                    color = color .. string.format("%02X", from + math.floor(0.6 * (to - from) + 0.5))
+                end
+            end
+            ignored[profile] = { bg = color }
+        end
+        key.Ignored = ignored
+    end
 end
 
 ---@param str string
