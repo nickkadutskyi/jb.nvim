@@ -51,9 +51,7 @@
     "Folded": {
       "fg": "General|Text|FoldedText"
     },
-    "IncSearch": {
-      "bg": "DiffMerge|ChangedLines|Changed.bg"
-    },
+    "IncSearch": "CurSearch",
     "LineNr": "General|Code|LineNumber",
     "LineNrAbove": "",
     "LineNrBelow": "",
