@@ -40,14 +40,15 @@ function M.setup(enabled)
 
     local borders = require("jb.borders").borders.dialog
     local rules = {}
-    local function add_rule(buffer, border)
+    ---@param when_state? fun(state: table): boolean extra check on fff's picker state
+    local function add_rule(buffer, border, when_state)
         rules[#rules + 1] = {
             style = { border = border },
             condition = function(bufnr)
                 -- Do not load fff until the user actually opens a picker.
                 local picker = package.loaded["fff.picker_ui.picker_ui_state"]
                 local state = picker and picker.state
-                if not state or bufnr ~= state[buffer] then
+                if not state or bufnr ~= state[buffer] or (when_state and not when_state(state)) then
                     return false
                 end
 
@@ -64,6 +65,10 @@ function M.setup(enabled)
     end
 
     add_rule("input_buf", borders.default_box_split_top_no_footer_shadowed)
+    -- Without a preview below it, the list is the last window and closes the box.
+    add_rule("list_buf", borders.default_box_split_bottom_shadowed_between, function(state)
+        return not state.preview_visible
+    end)
     add_rule("list_buf", borders.default_box_split_middle_shadowed_no_footer)
     add_rule("preview_buf", borders.default_box_split_bottom_shadowed_header)
     return rules

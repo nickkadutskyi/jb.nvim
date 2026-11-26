@@ -195,6 +195,19 @@ M.borders = {
 
             { "▕", "DialogFloatBorderOuterShadowedLight" },
         },
+        default_box_split_bottom_shadowed_between = {
+            { "▕", "DialogFloatBorderOuterShadowedLight" }, -- Top Left corner
+            { "▔", "DialogFloatBorderBetween" }, -- Title border
+            { "▏", "DialogFloatBorderOuterShadowedDark" }, -- Top Right corner
+
+            { "▏", "DialogFloatBorderOuterShadowedDark" },
+
+            { " ", "DialogFloatBorderOuterShadowedDark" }, -- Bottom Right corner
+            { "▔", "DialogFloatBorderOuterShadowedDark" }, -- Footer border
+            { " ", "DialogFloatBorderOuterShadowedLight" }, -- Bottom Left corner
+
+            { "▕", "DialogFloatBorderOuterShadowedLight" },
+        },
         default_box_split_bottom = {
             { "▕", "DialogFloatBorderOuter" },
             { " ", "DialogFloatBorder" }, -- Title border
